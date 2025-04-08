@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_powershell_amsi_bypass_0",
+  "original_command": "System.Management.Automation.AmsiUtils",
+  "evasions": {
+    "insertion": "System.Management.Automation.AmsiUtils # bypass",
+    "substitution": "System.Management.Automation.AmsiUtils",
+    "omission": "System.Management.Automation.AmsiUtils",
+    "reordering": "System.Management.Automation.AmsiUtils",
+    "recoding": "<recoding not applicable>"
+  }
+}

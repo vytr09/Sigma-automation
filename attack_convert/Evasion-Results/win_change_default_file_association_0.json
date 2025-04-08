@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_change_default_file_association_0",
+  "original_command": "cmd",
+  "evasions": {
+    "insertion": "cmd # bypass",
+    "substitution": "cmd",
+    "omission": "cmd",
+    "reordering": "cmd",
+    "recoding": "<recoding not applicable>"
+  }
+}

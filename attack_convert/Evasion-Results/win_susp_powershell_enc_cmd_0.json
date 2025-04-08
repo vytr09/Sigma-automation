@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_powershell_enc_cmd_0",
+  "original_command": "-e JAB",
+  "evasions": {
+    "insertion": "-e JAB # bypass",
+    "substitution": "-e JAB",
+    "omission": "-e JAB",
+    "reordering": "-e JAB",
+    "recoding": "<recoding not applicable>"
+  }
+}

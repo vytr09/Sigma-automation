@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_babyshark_0",
+  "original_command": "reg query \"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\"",
+  "evasions": {
+    "insertion": "reg query \"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\" # bypass",
+    "substitution": "reg query \"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\"",
+    "omission": "reg query \"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\"",
+    "reordering": "reg \"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal query Server Client\\Default\"",
+    "recoding": "<recoding not applicable>"
+  }
+}

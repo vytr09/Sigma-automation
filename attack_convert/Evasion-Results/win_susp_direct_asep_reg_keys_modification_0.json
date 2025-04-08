@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_direct_asep_reg_keys_modification_0",
+  "original_command": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "evasions": {
+    "insertion": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\Run # bypass",
+    "substitution": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "omission": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "reordering": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "recoding": "<recoding not applicable>"
+  }
+}

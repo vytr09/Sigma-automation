@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_unc2452_ps_0",
+  "original_command": "Invoke-WMIMethod win32_process -name create -argumentlist",
+  "evasions": {
+    "insertion": "Invoke-WMIMethod win32_process -name create -argumentlist # bypass",
+    "substitution": "Invoke-WMIMethod win32_process -name create -argumentlist",
+    "omission": "Invoke-WMIMethod win32_process -name create -argumentlist",
+    "reordering": "Invoke-WMIMethod -name win32_process create -argumentlist",
+    "recoding": "<recoding not applicable>"
+  }
+}

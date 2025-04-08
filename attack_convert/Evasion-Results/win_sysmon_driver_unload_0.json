@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_sysmon_driver_unload_0",
+  "original_command": "fltmc.exe unload",
+  "evasions": {
+    "insertion": "fltmc.exe unload # bypass",
+    "substitution": "fltmc.exe unload",
+    "omission": "fltmc.exe unload",
+    "reordering": "fltmc.exe unload",
+    "recoding": "<recoding not applicable>"
+  }
+}

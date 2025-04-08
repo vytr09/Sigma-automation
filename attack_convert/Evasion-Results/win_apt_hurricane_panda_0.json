@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_hurricane_panda_0",
+  "original_command": "localgroup administrators admin /add",
+  "evasions": {
+    "insertion": "localgroup administrators admin /add # bypass",
+    "substitution": "localgroup administrators admin /add",
+    "omission": "localgroup administrators admin /add",
+    "reordering": "localgroup admin administrators /add",
+    "recoding": "<recoding not applicable>"
+  }
+}

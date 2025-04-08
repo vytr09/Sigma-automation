@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_sysvol_access_0",
+  "original_command": "\\SYSVOL\\\\ \\policies\\\\",
+  "evasions": {
+    "insertion": "\\SYSVOL\\\\ \\policies\\\\ # bypass",
+    "substitution": "\\SYSVOL\\\\ \\policies\\\\",
+    "omission": "\\SYSVOL\\\\ \\policies\\\\",
+    "reordering": "\\SYSVOL\\\\ \\policies\\\\",
+    "recoding": "<recoding not applicable>"
+  }
+}

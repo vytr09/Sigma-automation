@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_bginfo_0",
+  "original_command": "bginfo.exe /popup",
+  "evasions": {
+    "insertion": "bginfo.exe /popup # bypass",
+    "substitution": "bginfo.exe /popup",
+    "omission": "bginfo.exe /popup",
+    "reordering": "bginfo.exe /popup",
+    "recoding": "<recoding not applicable>"
+  }
+}

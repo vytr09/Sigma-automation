@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_msiexec_web_install_0",
+  "original_command": "msiexec ://",
+  "evasions": {
+    "insertion": "msiexec :// # bypass",
+    "substitution": "msiexec ://",
+    "omission": "msiexec ://",
+    "reordering": "msiexec ://",
+    "recoding": "<recoding not applicable>"
+  }
+}

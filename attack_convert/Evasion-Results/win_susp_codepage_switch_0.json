@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_codepage_switch_0",
+  "original_command": "chcp 936",
+  "evasions": {
+    "insertion": "chcp 936 # bypass",
+    "substitution": "chcp 936",
+    "omission": "chcp 936",
+    "reordering": "chcp 936",
+    "recoding": "<recoding not applicable>"
+  }
+}

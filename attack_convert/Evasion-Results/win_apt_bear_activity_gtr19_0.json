@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_bear_activity_gtr19_0",
+  "original_command": "xcopy.exe /S /E /C /Q /H \\\\",
+  "evasions": {
+    "insertion": "xcopy.exe /S /E /C /Q /H \\\\ # bypass",
+    "substitution": "xcopy.exe /S /E /C /Q /H \\\\",
+    "omission": "xcopy.exe /S /E /C /Q /H \\\\",
+    "reordering": "xcopy.exe /E /S /C /Q /H \\\\",
+    "recoding": "<recoding not applicable>"
+  }
+}

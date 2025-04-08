@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_new_service_creation_0",
+  "original_command": "sc.exe create",
+  "evasions": {
+    "insertion": "sc.exe create # bypass",
+    "substitution": "sc.exe create",
+    "omission": "sc.exe create",
+    "reordering": "sc.exe create",
+    "recoding": "<recoding not applicable>"
+  }
+}

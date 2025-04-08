@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_regsvr32_flags_anomaly_0",
+  "original_command": "regsvr32.exe /i:",
+  "evasions": {
+    "insertion": "regsvr32.exe /i: # bypass",
+    "substitution": "regsvr32.exe /i:",
+    "omission": "regsvr32.exe /i:",
+    "reordering": "regsvr32.exe /i:",
+    "recoding": "<recoding not applicable>"
+  }
+}

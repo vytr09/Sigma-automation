@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_wmi_execution_0",
+  "original_command": "wmic.exe /NODE: process call create",
+  "evasions": {
+    "insertion": "wmic.exe /NODE: process call create # bypass",
+    "substitution": "wmic.exe /NODE: process call create",
+    "omission": "wmic.exe /NODE: process call create",
+    "reordering": "wmic.exe process /NODE: call create",
+    "recoding": "<recoding not applicable>"
+  }
+}

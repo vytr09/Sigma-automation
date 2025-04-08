@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_fsutil_usage_0",
+  "original_command": "fsutil.exe deletejournal",
+  "evasions": {
+    "insertion": "fsutil.exe deletejournal # bypass",
+    "substitution": "fsutil.exe deletejournal",
+    "omission": "fsutil.exe deletejournal",
+    "reordering": "fsutil.exe deletejournal",
+    "recoding": "<recoding not applicable>"
+  }
+}

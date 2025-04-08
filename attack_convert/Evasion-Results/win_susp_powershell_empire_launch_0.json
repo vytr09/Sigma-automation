@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_powershell_empire_launch_0",
+  "original_command": "-NoP -sta -NonI -W Hidden -Enc",
+  "evasions": {
+    "insertion": "-NoP -sta -NonI -W Hidden -Enc # bypass",
+    "substitution": "-NoP -sta -NonI -W Hidden -Enc",
+    "omission": "-NoP -sta -NonI -W Hidden -Enc",
+    "reordering": "-NoP -NonI -sta -W Hidden -Enc",
+    "recoding": "<recoding not applicable>"
+  }
+}

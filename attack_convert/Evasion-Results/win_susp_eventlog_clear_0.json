@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_eventlog_clear_0",
+  "original_command": "powershell.exe Clear-EventLog",
+  "evasions": {
+    "insertion": "powershell.exe Clear-EventLog # bypass",
+    "substitution": "powershell.exe Clear-EventLog",
+    "omission": "powershell.exe Clear-EventLog",
+    "reordering": "powershell.exe Clear-EventLog",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAQwBsAGUAYQByAC0ARQB2AGUAbgB0AEwAbwBnAA=="
+  }
+}

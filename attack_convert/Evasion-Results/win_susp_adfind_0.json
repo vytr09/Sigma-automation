@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_adfind_0",
+  "original_command": "adfind.exe objectcategory",
+  "evasions": {
+    "insertion": "adfind.exe objectcategory # bypass",
+    "substitution": "adfind.exe objectcategory",
+    "omission": "adfind.exe objectcategory",
+    "reordering": "adfind.exe objectcategory",
+    "recoding": "<recoding not applicable>"
+  }
+}

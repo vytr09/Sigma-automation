@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_powershell_suspicious_parameter_variation_0",
+  "original_command": "Powershell.exe -windowstyle h",
+  "evasions": {
+    "insertion": "Powershell.exe -windowstyle h # bypass",
+    "substitution": "Powershell.exe -windowstyle h",
+    "omission": "Powershell.exe -windowstyle h",
+    "reordering": "Powershell.exe h -windowstyle",
+    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB3AGkAbgBkAG8AdwBzAHQAeQBsAGUAIABoAA=="
+  }
+}

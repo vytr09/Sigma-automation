@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_cmdkey_recon_0",
+  "original_command": "cmdkey.exe /list",
+  "evasions": {
+    "insertion": "cmdkey.exe /list # bypass",
+    "substitution": "cmdkey.exe /list",
+    "omission": "cmdkey.exe /list",
+    "reordering": "cmdkey.exe /list",
+    "recoding": "<recoding not applicable>"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_squirrel_lolbin_0",
+  "original_command": "update.exe --processStart .exe",
+  "evasions": {
+    "insertion": "update.exe --processStart .exe # bypass",
+    "substitution": "update.exe -processStart .exe",
+    "omission": "update.exe --processStart .exe",
+    "reordering": "update.exe .exe --processStart",
+    "recoding": "<recoding not applicable>"
+  }
+}

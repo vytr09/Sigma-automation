@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_mal_adwind_0",
+  "original_command": "\\AppData\\Roaming\\Oracle \\java .exe",
+  "evasions": {
+    "insertion": "\\AppData\\Roaming\\Oracle \\java .exe # bypass",
+    "substitution": "\\AppData\\Roaming\\Oracle \\java .exe",
+    "omission": "\\AppData\\Roaming\\Oracle \\java .exe",
+    "reordering": "\\AppData\\Roaming\\Oracle .exe \\java",
+    "recoding": "<recoding not applicable>"
+  }
+}

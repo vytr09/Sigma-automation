@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_run_powershell_script_from_ads_0",
+  "original_command": "powershell.exe Get-Content",
+  "evasions": {
+    "insertion": "powershell.exe Get-Content # bypass",
+    "substitution": "powershell.exe Get-Content",
+    "omission": "powershell.exe Get-Content",
+    "reordering": "powershell.exe Get-Content",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBDAG8AbgB0AGUAbgB0AA=="
+  }
+}

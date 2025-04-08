@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_powershell_xor_commandline_0",
+  "original_command": "bxor",
+  "evasions": {
+    "insertion": "bxor # bypass",
+    "substitution": "bxor",
+    "omission": "bxor",
+    "reordering": "bxor",
+    "recoding": "<recoding not applicable>"
+  }
+}
