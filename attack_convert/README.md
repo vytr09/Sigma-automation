@@ -6,7 +6,7 @@ This tool is designed to **generate original and evasion attack commands** based
 
 ## 📁 Folder Structure
 
-```json
+```plaintext
 Sigma-automation/
 ├── attack_convert/
 │   ├── main.py                    # Entry point to generate evasion commands
