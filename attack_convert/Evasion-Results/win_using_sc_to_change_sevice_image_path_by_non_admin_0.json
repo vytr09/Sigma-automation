@@ -1,11 +1,11 @@
 {
   "rule_name": "win_using_sc_to_change_sevice_image_path_by_non_admin_0",
-  "original_command": "sc.exe failure command",
+  "original_command": "sc.exe config binPath",
   "evasions": {
-    "insertion": "sc.exe failure command # bypass",
-    "substitution": "sc.exe failure command",
-    "omission": "sc.exe failure command",
-    "reordering": "sc.exe command failure",
+    "insertion": "sc.exe\tconfig\tbinPath",
+    "substitution": "sc.exe config binPath #substitution",
+    "omission": "sc config binPath",
+    "reordering": "sc.exe binPath config",
     "recoding": "<recoding not applicable>"
   }
 }

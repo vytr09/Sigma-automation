@@ -2,10 +2,10 @@
   "rule_name": "win_susp_recon_activity_0",
   "original_command": "net group \\\"enterprise admins\\\" /domain",
   "evasions": {
-    "insertion": "net group \\\"enterprise admins\\\" /domain # bypass",
-    "substitution": "net group \\\"enterprise admins\\\" /domain",
-    "omission": "net group \\\"enterprise admins\\\" /domain",
-    "reordering": "net \\\"enterprise group admins\\\" /domain",
+    "insertion": "#hijack net group \\\"enterprise admins\\\" /domain",
+    "substitution": "net group \\\"enterprise admins\\\" /domain #substitution",
+    "omission": "net group \\\"enterprise admins\\\" /domain # omission",
+    "reordering": "net /domain admins\\\" \\\"enterprise group",
     "recoding": "<recoding not applicable>"
   }
 }

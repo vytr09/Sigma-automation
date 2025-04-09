@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_desktopimgdownldr_0",
-  "original_command": "/lockscreenurl: reg delete \\PersonalizationCSP",
+  "original_command": "reg delete \\PersonalizationCSP",
   "evasions": {
-    "insertion": "/lockscreenurl: reg delete \\PersonalizationCSP # bypass",
-    "substitution": "/lockscreenurl: reg delete \\PersonalizationCSP",
-    "omission": "/lockscreenurl: reg delete \\PersonalizationCSP",
-    "reordering": "/lockscreenurl: delete reg \\PersonalizationCSP",
+    "insertion": "#hijack reg delete \\PersonalizationCSP",
+    "substitution": "reg delete \\PersonalizationCSP #substitution",
+    "omission": "reg delete \\PersonalizationCSP # omission",
+    "reordering": "reg \\PersonalizationCSP delete",
     "recoding": "<recoding not applicable>"
   }
 }

@@ -2,9 +2,9 @@
   "rule_name": "win_susp_bginfo_0",
   "original_command": "bginfo.exe /popup /nolicprompt",
   "evasions": {
-    "insertion": "bginfo.exe /popup /nolicprompt # bypass",
-    "substitution": "bginfo.exe /popup /nolicprompt",
-    "omission": "bginfo.exe /popup /nolicprompt",
+    "insertion": "bginfo.exe #injected /popup /nolicprompt",
+    "substitution": "bginfo.exe /popup /nolicprompt #substitution",
+    "omission": "bginfo /popup /nolicprompt",
     "reordering": "bginfo.exe /nolicprompt /popup",
     "recoding": "<recoding not applicable>"
   }

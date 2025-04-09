@@ -2,9 +2,9 @@
   "rule_name": "win_susp_curl_start_combo_0",
   "original_command": "curl start",
   "evasions": {
-    "insertion": "curl start # bypass",
-    "substitution": "curl start",
-    "omission": "curl start",
+    "insertion": "curl #injected start",
+    "substitution": "curl start #substitution",
+    "omission": "curl start # omission",
     "reordering": "curl start",
     "recoding": "<recoding not applicable>"
   }

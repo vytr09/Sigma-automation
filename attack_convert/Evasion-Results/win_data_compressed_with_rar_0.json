@@ -2,9 +2,9 @@
   "rule_name": "win_data_compressed_with_rar_0",
   "original_command": "rar.exe a",
   "evasions": {
-    "insertion": "rar.exe a # bypass",
-    "substitution": "rar.exe a",
-    "omission": "rar.exe a",
+    "insertion": "rar.exe \"a\"",
+    "substitution": "rar.exe a #substitution",
+    "omission": "rar a",
     "reordering": "rar.exe a",
     "recoding": "<recoding not applicable>"
   }

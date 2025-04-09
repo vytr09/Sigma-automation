@@ -2,10 +2,10 @@
   "rule_name": "win_hack_koadic_0",
   "original_command": "cmd.exe /q /c chcp",
   "evasions": {
-    "insertion": "cmd.exe /q /c chcp # bypass",
-    "substitution": "cmd.exe /q /c chcp",
-    "omission": "cmd.exe /q /c chcp",
-    "reordering": "cmd.exe /c /q chcp",
+    "insertion": "#hijack cmd.exe /q /c chcp",
+    "substitution": "cmd.exe /q -c chcp",
+    "omission": "cmd /q chcp",
+    "reordering": "cmd.exe chcp /c /q",
     "recoding": "<recoding not applicable>"
   }
 }

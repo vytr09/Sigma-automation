@@ -1,11 +1,11 @@
 {
   "rule_name": "win_apt_bear_activity_gtr19_0",
-  "original_command": "xcopy.exe \\xcopy.exe /S /E /C /Q /H \\\\",
+  "original_command": "xcopy.exe /S /E /C /Q /H \\\\",
   "evasions": {
-    "insertion": "xcopy.exe \\xcopy.exe /S /E /C /Q /H \\\\ # bypass",
-    "substitution": "xcopy.exe \\xcopy.exe /S /E /C /Q /H \\\\",
-    "omission": "xcopy.exe \\xcopy.exe /S /E /C /Q /H \\\\",
-    "reordering": "xcopy.exe /S \\xcopy.exe /E /C /Q /H \\\\",
+    "insertion": "xcopy.exe\t/S\t/E\t/C\t/Q\t/H\t\\\\",
+    "substitution": "xcopy.exe --subdirs --everything --continue --quiet --hidden \\\\",
+    "omission": "xcopy /S /E /Q /H \\\\",
+    "reordering": "xcopy.exe /S /Q /E /H /C \\\\",
     "recoding": "<recoding not applicable>"
   }
 }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_fsutil_usage_0",
-  "original_command": "fsutil.exe createjournal",
+  "original_command": "fsutil.exe",
   "evasions": {
-    "insertion": "fsutil.exe createjournal # bypass",
-    "substitution": "fsutil.exe createjournal",
-    "omission": "fsutil.exe createjournal",
-    "reordering": "fsutil.exe createjournal",
+    "insertion": "fsutil.exe # inserted",
+    "substitution": "fsutil.exe #substitution",
+    "omission": "fsutil",
+    "reordering": "fsutil.exe",
     "recoding": "<recoding not applicable>"
   }
 }

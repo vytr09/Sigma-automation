@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_disable_raccine_0",
-  "original_command": "taskkill /IM RaccineSettings.exe reg.exe delete Raccine Tray schtasks /DELETE Raccine Rules Updater",
+  "original_command": "schtasks /DELETE Raccine Rules Updater",
   "evasions": {
-    "insertion": "taskkill /IM RaccineSettings.exe reg.exe delete Raccine Tray schtasks /DELETE Raccine Rules Updater # bypass",
-    "substitution": "taskkill /IM RaccineSettings.exe reg.exe delete Raccine Tray schtasks /DELETE Raccine Rules Updater",
-    "omission": "taskkill /IM RaccineSettings.exe reg.exe delete Raccine Tray schtasks /DELETE Raccine Rules Updater",
-    "reordering": "taskkill RaccineSettings.exe /IM reg.exe delete Raccine Tray schtasks /DELETE Raccine Rules Updater",
+    "insertion": "#hijack schtasks /DELETE Raccine Rules Updater",
+    "substitution": "schtasks /DELETE Raccine Rules Updater #substitution",
+    "omission": "schtasks /DELETE Raccine Rules Updater # omission",
+    "reordering": "schtasks Updater Rules /DELETE Raccine",
     "recoding": "<recoding not applicable>"
   }
 }

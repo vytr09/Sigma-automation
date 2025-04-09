@@ -2,9 +2,9 @@
   "rule_name": "win_commandline_path_traversal_0",
   "original_command": "/../../",
   "evasions": {
-    "insertion": "/../../ # bypass",
-    "substitution": "/../../",
-    "omission": "/../../",
+    "insertion": "/../../ # inserted",
+    "substitution": "/../../ #substitution",
+    "omission": "/../../ # omission",
     "reordering": "/../../",
     "recoding": "<recoding not applicable>"
   }

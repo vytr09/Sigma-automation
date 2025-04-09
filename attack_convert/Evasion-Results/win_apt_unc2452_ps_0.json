@@ -1,11 +1,11 @@
 {
   "rule_name": "win_apt_unc2452_ps_0",
-  "original_command": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows wmic /node: process call create \\",
+  "original_command": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows",
   "evasions": {
-    "insertion": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows wmic /node: process call create \\ # bypass",
-    "substitution": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows wmic /node: process call create \\",
-    "omission": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows wmic /node: process call create \\",
-    "reordering": "Invoke-WMIMethod -name win32_process create -argumentlist rundll32 c:\\windows wmic /node: process call create \\",
+    "insertion": "Invoke-WMIMethod #inserted win32_process -name create -argumentlist rundll32 c:\\windows",
+    "substitution": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows #substitution",
+    "omission": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows # omission",
+    "reordering": "Invoke-WMIMethod win32_process rundll32 c:\\windows -argumentlist create -name",
     "recoding": "<recoding not applicable>"
   }
 }

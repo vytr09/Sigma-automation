@@ -2,9 +2,9 @@
   "rule_name": "win_susp_psr_capture_screenshots_0",
   "original_command": "Psr.exe /start",
   "evasions": {
-    "insertion": "Psr.exe /start # bypass",
-    "substitution": "Psr.exe /start",
-    "omission": "Psr.exe /start",
+    "insertion": "Psr.exe #injected /start",
+    "substitution": "Psr.exe /start #substitution",
+    "omission": "Psr /start",
     "reordering": "Psr.exe /start",
     "recoding": "<recoding not applicable>"
   }

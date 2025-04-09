@@ -110,9 +110,27 @@ def combine_command(exe: str | None, cmd: str) -> str:
 
 # ===== Main API =====
 def extract_first_command_line(filter_str: str) -> str:
-    raw_fragments = extract_raw_fragments(filter_str)
-    cleaned_commands = [clean_command(frag) for frag in raw_fragments if frag.strip()]
-    best_command = prioritize_command(cleaned_commands)
-    executable = extract_executable(filter_str)
-    full_command = combine_command(executable, best_command)
-    return full_command if full_command else "<no command found>"
+    best_full_command = ""
+    max_len = 0
+
+    for clause in split_or_clauses(filter_str):
+        raw_fragments = extract_raw_fragments(clause)
+        cleaned_commands = [clean_command(frag) for frag in raw_fragments if frag.strip()]
+        best_command = prioritize_command(cleaned_commands)
+        executable = extract_executable(clause)
+        full_command = combine_command(executable, best_command)
+
+        if len(full_command) > max_len:
+            best_full_command = full_command
+            max_len = len(full_command)
+
+    return best_full_command if best_full_command else "<no command found>"
+
+def split_or_clauses(filter_str: str) -> list[str]:
+    """
+    Splits filter string into OR branches for independent processing.
+    """
+    filter_str = filter_str.strip()
+    if filter_str.startswith('(') and filter_str.endswith(')'):
+        filter_str = filter_str[1:-1]
+    return re.split(r'\)\s+OR\s+\(', filter_str)

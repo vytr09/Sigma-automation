@@ -2,9 +2,9 @@
   "rule_name": "win_susp_explorer_break_proctree_0",
   "original_command": "explorer.exe /root,",
   "evasions": {
-    "insertion": "explorer.exe /root, # bypass",
-    "substitution": "explorer.exe /root,",
-    "omission": "explorer.exe /root,",
+    "insertion": "#hijack explorer.exe /root,",
+    "substitution": "explorer.exe /root, #substitution",
+    "omission": "explorer /root,",
     "reordering": "explorer.exe /root,",
     "recoding": "<recoding not applicable>"
   }

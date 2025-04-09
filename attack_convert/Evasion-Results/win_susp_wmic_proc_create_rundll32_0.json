@@ -2,10 +2,10 @@
   "rule_name": "win_susp_wmic_proc_create_rundll32_0",
   "original_command": "process call create rundll32",
   "evasions": {
-    "insertion": "process call create rundll32 # bypass",
-    "substitution": "process call create rundll32",
-    "omission": "process call create rundll32",
-    "reordering": "process create call rundll32",
+    "insertion": "process \"call create rundll32\"",
+    "substitution": "process call create rundll32 #substitution",
+    "omission": "process call create rundll32 # omission",
+    "reordering": "process rundll32 call create",
     "recoding": "<recoding not applicable>"
   }
 }

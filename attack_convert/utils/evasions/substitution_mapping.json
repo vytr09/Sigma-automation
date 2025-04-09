@@ -1,0 +1,136 @@
+{
+  "powershell": {
+    "-Command": "-C",
+    "-NoProfile": "-nop",
+    "-ExecutionPolicy": "-ep",
+    "-WindowStyle": "-w",
+    "-EncodedCommand": "-enc",
+    "-InputFormat": "-in",
+    "-OutputFormat": "-out",
+    "-NonInteractive": "-ni",
+    "-File": "-f"
+  },
+  "powershell.exe": {
+    "-Command": "-C",
+    "-NoProfile": "-nop",
+    "-ExecutionPolicy": "-ep",
+    "-WindowStyle": "-w",
+    "-EncodedCommand": "-enc",
+    "-InputFormat": "-in",
+    "-OutputFormat": "-out",
+    "-NonInteractive": "-ni",
+    "-File": "-f"
+  },
+  "cmd": {
+    "/c": "-c",
+    "/C": "-c",
+    "/k": "-k"
+  },
+  "curl": {
+    "-O": "--remote-name",
+    "-o": "--output",
+    "-L": "--location",
+    "-s": "--silent",
+    "-S": "--show-error",
+    "-k": "--insecure",
+    "-H": "--header",
+    "-d": "--data",
+    "-X": "--request",
+    "-u": "--user",
+    "--url": "-U"
+  },
+  "wget": {
+    "-O": "--output-document",
+    "-q": "--quiet",
+    "--no-check-certificate": "-k",
+    "--user-agent": "-U"
+  },
+  "schtasks": {
+    "/create": "--create",
+    "/delete": "--delete",
+    "/query": "--query",
+    "/tn": "--taskname",
+    "/sc": "--schedule",
+    "/tr": "--taskrun",
+    "/ru": "--runas",
+    "/f": "--force"
+  },
+  "regsvr32": {
+    "/s": "/silent",
+    "/i": "/install",
+    "/n": "/noreg",
+    "/u": "/unregister",
+    "/e": "/elevated"
+  },
+  "netsh": {
+    "add rule": "add-rule",
+    "advfirewall": "adv-fw",
+    "firewall": "fw",
+    "show": "display"
+  },
+  "procdump": {
+    "-ma": "-M",
+    "-accepteula": "--accept",
+    "-n": "--instances",
+    "-s": "--silent"
+  },
+  "xcopy": {
+    "/S": "--subdirs",
+    "/E": "--everything",
+    "/C": "--continue",
+    "/Q": "--quiet",
+    "/H": "--hidden",
+    "/Y": "--overwrite",
+    "/D": "--date"
+  },
+  "robocopy": {
+    "/MIR": "--mirror",
+    "/S": "--subdirs",
+    "/E": "--everything",
+    "/Z": "--restartable",
+    "/NP": "--no-progress"
+  },
+  "cscript": {
+    "//nologo": "--no-logo",
+    "//B": "--batch",
+    "//E:vbscript": "--engine-vbs"
+  },
+  "wscript": {
+    "//nologo": "--no-logo",
+    "//E:jscript": "--engine-js"
+  },
+  "mshta": {
+    "javascript:": "js:",
+    "vbscript:": "vbs:",
+    "http:": "hxxp:"
+  },
+  "bcdedit": {
+    "/set": "--set",
+    "bootstatuspolicy": "bspolicy",
+    "ignoreallfailures": "ignore-all",
+    "recoveryenabled": "recovery",
+    "/deletevalue": "--delval"
+  },
+  "taskkill": {
+    "/IM": "--image",
+    "/F": "--force",
+    "/T": "--tree"
+  },
+  "rundll32": {
+    "shell32.dll,Control_RunDLL": "run-control",
+    "url.dll,OpenURL": "open-url"
+  },
+  "java": {
+    "-jar": "--run-jar",
+    "-cp": "--classpath",
+    "-D": "--define"
+  },
+  "python": {
+    "-m": "--module",
+    "-c": "--code"
+  },
+  "wget.exe": {
+    "-O": "--output-document",
+    "--no-check-certificate": "-k"
+  }
+}

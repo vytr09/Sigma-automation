@@ -1,11 +1,11 @@
 {
   "rule_name": "win_powersploit_empire_schtasks_0",
-  "original_command": "schtasks /Create /SC ONLOGON /TN Updater /TR powershell",
+  "original_command": "schtasks /Create /SC Updater /TN Updater /TR powershell",
   "evasions": {
-    "insertion": "schtasks /Create /SC ONLOGON /TN Updater /TR powershell # bypass",
-    "substitution": "schtasks /Create /SC ONLOGON /TN Updater /TR powershell",
-    "omission": "schtasks /Create /SC ONLOGON /TN Updater /TR powershell",
-    "reordering": "schtasks /SC /Create ONLOGON /TN Updater /TR powershell",
-    "recoding": "powershell.exe -EncodedCommand cwBjAGgAdABhAHMAawBzACAALwBDAHIAZQBhAHQAZQAgAC8AUwBDACAATwBOAEwATwBHAE8ATgAgAC8AVABOACAAVQBwAGQAYQB0AGUAcgAgAC8AVABSACAAcABvAHcAZQByAHMAaABlAGwAbAA="
+    "insertion": "schtasks\t/Create\t/SC\tUpdater\t/TN\tUpdater\t/TR\tpowershell",
+    "substitution": "schtasks /Create /SC Updater /TN Updater /TR powershell #substitution",
+    "omission": "schtasks /Create /SC Updater /TN Updater /TR powershell # omission",
+    "reordering": "schtasks /Create /SC Updater Updater /TN /TR powershell",
+    "recoding": "powershell.exe -EncodedCommand cwBjAGgAdABhAHMAawBzACAALwBDAHIAZQBhAHQAZQAgAC8AUwBDACAAVQBwAGQAYQB0AGUAcgAgAC8AVABOACAAVQBwAGQAYQB0AGUAcgAgAC8AVABSACAAcABvAHcAZQByAHMAaABlAGwAbAA="
   }
 }

@@ -2,9 +2,9 @@
   "rule_name": "win_apt_elise_0",
   "original_command": "cmd.exe \\Windows\\Caches\\NavShExt.dll \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting",
   "evasions": {
-    "insertion": "cmd.exe \\Windows\\Caches\\NavShExt.dll \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting # bypass",
-    "substitution": "cmd.exe \\Windows\\Caches\\NavShExt.dll \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting",
-    "omission": "cmd.exe \\Windows\\Caches\\NavShExt.dll \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting",
+    "insertion": "cmd.exe #inserted \\Windows\\Caches\\NavShExt.dll \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting",
+    "substitution": "cmd.exe \\Windows\\Caches\\NavShExt.dll \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting #substitution",
+    "omission": "cmd \\Windows\\Caches\\NavShExt.dll MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting",
     "reordering": "cmd.exe \\AppData\\Roaming\\MICROS\\~1\\Windows\\Caches\\NavShExt.dll,Setting \\Windows\\Caches\\NavShExt.dll",
     "recoding": "<recoding not applicable>"
   }

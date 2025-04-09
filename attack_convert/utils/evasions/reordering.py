@@ -1,8 +1,27 @@
-def evasive_reordering(command):
+import random
+
+def evasive_reordering(command: str) -> str:
+    """
+    Evasion technique: Reordering command-line arguments while preserving semantics.
+    The executable stays in place.
+    """
     if not command:
         return None
-    parts = command.split()
-    if len(parts) > 2:
-        reordered = parts[:1] + parts[2:3] + parts[1:2] + parts[3:]
-        return " ".join(reordered)
-    return command
+
+    tokens = command.split()
+    if len(tokens) <= 2:
+        return command  # Nothing to reorder
+
+    exe = tokens[0]
+    args = tokens[1:]
+
+    if len(args) == 2:
+        # Swap two args
+        reordered = [exe] + [args[1], args[0]]
+    else:
+        # Shuffle arguments
+        args_shuffled = args[:]
+        random.shuffle(args_shuffled)
+        reordered = [exe] + args_shuffled
+
+    return " ".join(reordered)

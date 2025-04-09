@@ -2,9 +2,9 @@
   "rule_name": "win_susp_sysprep_appdata_0",
   "original_command": "\\sysprep.exe \\AppData\\\\",
   "evasions": {
-    "insertion": "\\sysprep.exe \\AppData\\\\ # bypass",
-    "substitution": "\\sysprep.exe \\AppData\\\\",
-    "omission": "\\sysprep.exe \\AppData\\\\",
+    "insertion": "\\sysprep.exe ^ \\AppData\\\\",
+    "substitution": "\\sysprep.exe \\AppData\\\\ #substitution",
+    "omission": "\\sysprep \\AppData\\\\",
     "reordering": "\\sysprep.exe \\AppData\\\\",
     "recoding": "<recoding not applicable>"
   }

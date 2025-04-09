@@ -2,9 +2,9 @@
   "rule_name": "win_mal_adwind_2",
   "original_command": "<no command found>",
   "evasions": {
-    "insertion": "<no command found> # bypass",
-    "substitution": "<no command found>",
-    "omission": "<no command found>",
+    "insertion": "<no\tcommand\tfound>",
+    "substitution": "<no command found> #substitution",
+    "omission": "<no command found> # omission",
     "reordering": "<no found> command",
     "recoding": "<recoding not applicable>"
   }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_control_panel_item_0",
-  "original_command": ".cpl reg add CurrentVersion\\\\Control Panel\\\\CPLs",
+  "original_command": "reg add CurrentVersion\\\\Control Panel\\\\CPLs",
   "evasions": {
-    "insertion": ".cpl reg add CurrentVersion\\\\Control Panel\\\\CPLs # bypass",
-    "substitution": ".cpl reg add CurrentVersion\\\\Control Panel\\\\CPLs",
-    "omission": ".cpl reg add CurrentVersion\\\\Control Panel\\\\CPLs",
-    "reordering": ".cpl add reg CurrentVersion\\\\Control Panel\\\\CPLs",
+    "insertion": "reg add && CurrentVersion\\\\Control Panel\\\\CPLs",
+    "substitution": "reg add CurrentVersion\\\\Control Panel\\\\CPLs #substitution",
+    "omission": "reg add CurrentVersion\\\\Control Panel\\\\CPLs # omission",
+    "reordering": "reg CurrentVersion\\\\Control add Panel\\\\CPLs",
     "recoding": "<recoding not applicable>"
   }
 }

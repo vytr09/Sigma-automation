@@ -2,9 +2,9 @@
   "rule_name": "win_susp_csc_folder_0",
   "original_command": "csc.exe \\Windows\\Temp\\\\",
   "evasions": {
-    "insertion": "csc.exe \\Windows\\Temp\\\\ # bypass",
-    "substitution": "csc.exe \\Windows\\Temp\\\\",
-    "omission": "csc.exe \\Windows\\Temp\\\\",
+    "insertion": "csc.exe\n\\Windows\\Temp\\\\",
+    "substitution": "csc.exe \\Windows\\Temp\\\\ #substitution",
+    "omission": "csc \\Windows\\Temp\\\\",
     "reordering": "csc.exe \\Windows\\Temp\\\\",
     "recoding": "<recoding not applicable>"
   }

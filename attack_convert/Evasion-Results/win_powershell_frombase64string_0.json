@@ -2,9 +2,9 @@
   "rule_name": "win_powershell_frombase64string_0",
   "original_command": "::FromBase64String(",
   "evasions": {
-    "insertion": "::FromBase64String( # bypass",
-    "substitution": "::FromBase64String(",
-    "omission": "::FromBase64String(",
+    "insertion": "::FromBase64String( # inserted",
+    "substitution": "::FromBase64String( #substitution",
+    "omission": "::FromBase64String( # omission",
     "reordering": "::FromBase64String(",
     "recoding": "<recoding not applicable>"
   }

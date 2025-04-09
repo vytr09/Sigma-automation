@@ -2,9 +2,9 @@
   "rule_name": "win_susp_copy_lateral_movement_0",
   "original_command": "copy \\ADMIN$",
   "evasions": {
-    "insertion": "copy \\ADMIN$ # bypass",
-    "substitution": "copy \\ADMIN$",
-    "omission": "copy \\ADMIN$",
+    "insertion": "copy ^ \\ADMIN$",
+    "substitution": "copy \\ADMIN$ #substitution",
+    "omission": "copy \\ADMIN$ # omission",
     "reordering": "copy \\ADMIN$",
     "recoding": "<recoding not applicable>"
   }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_remote_time_discovery_0",
-  "original_command": "net.exe \\powershell.exe Get-Date",
+  "original_command": "powershell.exe Get-Date",
   "evasions": {
-    "insertion": "net.exe \\powershell.exe Get-Date # bypass",
-    "substitution": "net.exe \\powershell.exe Get-Date",
-    "omission": "net.exe \\powershell.exe Get-Date",
-    "reordering": "net.exe Get-Date \\powershell.exe",
-    "recoding": "powershell.exe -EncodedCommand bgBlAHQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBEAGEAdABlAA=="
+    "insertion": "#hijack powershell.exe Get-Date",
+    "substitution": "powershell.exe Get-Date #substitution",
+    "omission": "powershell Get-Date",
+    "reordering": "powershell.exe Get-Date",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBEAGEAdABlAA=="
   }
 }
