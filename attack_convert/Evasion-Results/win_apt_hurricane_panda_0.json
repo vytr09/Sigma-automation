@@ -1,11 +1,11 @@
 {
   "rule_name": "win_apt_hurricane_panda_0",
-  "original_command": "localgroup administrators admin /add",
+  "original_command": "\\Win64.exe",
   "evasions": {
-    "insertion": "localgroup administrators admin /add # bypass",
-    "substitution": "localgroup administrators admin /add",
-    "omission": "localgroup administrators admin /add",
-    "reordering": "localgroup admin administrators /add",
+    "insertion": "\\Win64.exe # bypass",
+    "substitution": "\\Win64.exe",
+    "omission": "\\Win64.exe",
+    "reordering": "\\Win64.exe",
     "recoding": "<recoding not applicable>"
   }
 }

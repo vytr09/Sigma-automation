@@ -1,11 +1,11 @@
 {
   "rule_name": "win_bootconf_mod_0",
-  "original_command": "bcdedit.exe set",
+  "original_command": "bcdedit.exe ignoreallfailures",
   "evasions": {
-    "insertion": "bcdedit.exe set # bypass",
-    "substitution": "bcdedit.exe set",
-    "omission": "bcdedit.exe set",
-    "reordering": "bcdedit.exe set",
+    "insertion": "bcdedit.exe ignoreallfailures # bypass",
+    "substitution": "bcdedit.exe ignoreallfailures",
+    "omission": "bcdedit.exe ignoreallfailures",
+    "reordering": "bcdedit.exe ignoreallfailures",
     "recoding": "<recoding not applicable>"
   }
 }

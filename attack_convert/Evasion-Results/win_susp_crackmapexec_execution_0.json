@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_crackmapexec_execution_0",
-  "original_command": "cmd.exe /Q /c 1> \\\\ \\ \\ 2>&1",
+  "original_command": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\"",
   "evasions": {
-    "insertion": "cmd.exe /Q /c 1> \\\\ \\ \\ 2>&1 # bypass",
-    "substitution": "cmd.exe /Q /c 1> \\\\ \\ \\ 2>&1",
-    "omission": "cmd.exe /Q /c 1> \\\\ \\ \\ 2>&1",
-    "reordering": "cmd.exe /c /Q 1> \\\\ \\ \\ 2>&1",
-    "recoding": "<recoding not applicable>"
+    "insertion": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\" # bypass",
+    "substitution": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\"",
+    "omission": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\"",
+    "reordering": "powershell.exe bypass -exec -noni -nop -w 1 -C \\\"",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBlAHgAZQBjACAAYgB5AHAAYQBzAHMAIAAtAG4AbwBuAGkAIAAtAG4AbwBwACAALQB3ACAAMQAgAC0AQwAgAFwAIgA="
   }
 }

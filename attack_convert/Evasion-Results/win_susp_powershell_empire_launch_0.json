@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_powershell_empire_launch_0",
-  "original_command": "-NoP -sta -NonI -W Hidden -Enc",
+  "original_command": "-nop -exec bypass -EncodedCommand SQB",
   "evasions": {
-    "insertion": "-NoP -sta -NonI -W Hidden -Enc # bypass",
-    "substitution": "-NoP -sta -NonI -W Hidden -Enc",
-    "omission": "-NoP -sta -NonI -W Hidden -Enc",
-    "reordering": "-NoP -NonI -sta -W Hidden -Enc",
+    "insertion": "-nop -exec bypass -EncodedCommand SQB # bypass",
+    "substitution": "-nop -exec bypass -EncodedCommand SQB",
+    "omission": "-nop -exec bypass -EncodedCommand SQB",
+    "reordering": "-nop bypass -exec -EncodedCommand SQB",
     "recoding": "<recoding not applicable>"
   }
 }

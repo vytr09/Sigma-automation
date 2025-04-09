@@ -1,11 +1,11 @@
 {
   "rule_name": "win_crime_snatch_ransomware_0",
-  "original_command": "shutdown /r /f /t 00",
+  "original_command": "net stop SuperBackupMan",
   "evasions": {
-    "insertion": "shutdown /r /f /t 00 # bypass",
-    "substitution": "shutdown /r /f /t 00",
-    "omission": "shutdown /r /f /t 00",
-    "reordering": "shutdown /f /r /t 00",
+    "insertion": "net stop SuperBackupMan # bypass",
+    "substitution": "net stop SuperBackupMan",
+    "omission": "net stop SuperBackupMan",
+    "reordering": "net SuperBackupMan stop",
     "recoding": "<recoding not applicable>"
   }
 }

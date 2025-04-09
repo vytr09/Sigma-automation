@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_ps_appdata_0",
-  "original_command": "/c powershell \\AppData\\Local\\",
+  "original_command": "/c powershell \\AppData\\Roaming\\\\",
   "evasions": {
-    "insertion": "/c powershell \\AppData\\Local\\ # bypass",
-    "substitution": "/c powershell \\AppData\\Local\\",
-    "omission": "/c powershell \\AppData\\Local\\",
-    "reordering": "/c \\AppData\\Local\\ powershell",
-    "recoding": "powershell.exe -EncodedCommand LwBjACAAcABvAHcAZQByAHMAaABlAGwAbAAgAFwAQQBwAHAARABhAHQAYQBcAEwAbwBjAGEAbABcAA=="
+    "insertion": "/c powershell \\AppData\\Roaming\\\\ # bypass",
+    "substitution": "/c powershell \\AppData\\Roaming\\\\",
+    "omission": "/c powershell \\AppData\\Roaming\\\\",
+    "reordering": "/c \\AppData\\Roaming\\\\ powershell",
+    "recoding": "powershell.exe -EncodedCommand LwBjACAAcABvAHcAZQByAHMAaABlAGwAbAAgAFwAQQBwAHAARABhAHQAYQBcAFIAbwBhAG0AaQBuAGcAXABcAA=="
   }
 }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_query_registry_0",
-  "original_command": "reg.exe query",
+  "original_command": "reg.exe currentVersion\\shellServiceObjectDelayLoad",
   "evasions": {
-    "insertion": "reg.exe query # bypass",
-    "substitution": "reg.exe query",
-    "omission": "reg.exe query",
-    "reordering": "reg.exe query",
+    "insertion": "reg.exe currentVersion\\shellServiceObjectDelayLoad # bypass",
+    "substitution": "reg.exe currentVersion\\shellServiceObjectDelayLoad",
+    "omission": "reg.exe currentVersion\\shellServiceObjectDelayLoad",
+    "reordering": "reg.exe currentVersion\\shellServiceObjectDelayLoad",
     "recoding": "<recoding not applicable>"
   }
 }

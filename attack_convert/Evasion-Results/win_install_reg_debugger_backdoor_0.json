@@ -1,11 +1,11 @@
 {
   "rule_name": "win_install_reg_debugger_backdoor_0",
-  "original_command": "\\CurrentVersion\\Image File Execution Options\\sethc.exe",
+  "original_command": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe",
   "evasions": {
-    "insertion": "\\CurrentVersion\\Image File Execution Options\\sethc.exe # bypass",
-    "substitution": "\\CurrentVersion\\Image File Execution Options\\sethc.exe",
-    "omission": "\\CurrentVersion\\Image File Execution Options\\sethc.exe",
-    "reordering": "\\CurrentVersion\\Image Execution File Options\\sethc.exe",
+    "insertion": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe # bypass",
+    "substitution": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe",
+    "omission": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe",
+    "reordering": "\\CurrentVersion\\Image Execution File Options\\displayswitch.exe",
     "recoding": "<recoding not applicable>"
   }
 }

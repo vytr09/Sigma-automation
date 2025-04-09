@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_certutil_encode_0",
-  "original_command": "certutil -f -encode",
+  "original_command": "certutil.exe -encode -f",
   "evasions": {
-    "insertion": "certutil -f -encode # bypass",
-    "substitution": "certutil -f -encode",
-    "omission": "certutil -f -encode",
-    "reordering": "certutil -encode -f",
+    "insertion": "certutil.exe -encode -f # bypass",
+    "substitution": "certutil.exe -encode -f",
+    "omission": "certutil.exe -encode -f",
+    "reordering": "certutil.exe -f -encode",
     "recoding": "<recoding not applicable>"
   }
 }

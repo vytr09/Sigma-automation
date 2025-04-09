@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_crackmapexec_powershell_obfuscation_0",
-  "original_command": "join split",
+  "original_command": "powershell.exe",
   "evasions": {
-    "insertion": "join split # bypass",
-    "substitution": "join split",
-    "omission": "join split",
-    "reordering": "join split",
-    "recoding": "<recoding not applicable>"
+    "insertion": "powershell.exe # bypass",
+    "substitution": "powershell.exe",
+    "omission": "powershell.exe",
+    "reordering": "powershell.exe",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlAA=="
   }
 }

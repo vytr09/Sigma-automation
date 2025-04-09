@@ -1,11 +1,11 @@
 {
   "rule_name": "win_apt_zxshell_0",
-  "original_command": "rundll32.exe ,zxFunction",
+  "original_command": "rundll32.exe ,RemoteDiskXXXXX",
   "evasions": {
-    "insertion": "rundll32.exe ,zxFunction # bypass",
-    "substitution": "rundll32.exe ,zxFunction",
-    "omission": "rundll32.exe ,zxFunction",
-    "reordering": "rundll32.exe ,zxFunction",
+    "insertion": "rundll32.exe ,RemoteDiskXXXXX # bypass",
+    "substitution": "rundll32.exe ,RemoteDiskXXXXX",
+    "omission": "rundll32.exe ,RemoteDiskXXXXX",
+    "reordering": "rundll32.exe ,RemoteDiskXXXXX",
     "recoding": "<recoding not applicable>"
   }
 }

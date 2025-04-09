@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_wmic_security_product_uninstall_0",
-  "original_command": "Antivirus",
+  "original_command": "wmic",
   "evasions": {
-    "insertion": "Antivirus # bypass",
-    "substitution": "Antivirus",
-    "omission": "Antivirus",
-    "reordering": "Antivirus",
+    "insertion": "wmic # bypass",
+    "substitution": "wmic",
+    "omission": "wmic",
+    "reordering": "wmic",
     "recoding": "<recoding not applicable>"
   }
 }

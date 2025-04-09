@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_disable_raccine_0",
-  "original_command": "taskkill",
+  "original_command": "/IM RaccineSettings.exe",
   "evasions": {
-    "insertion": "taskkill # bypass",
-    "substitution": "taskkill",
-    "omission": "taskkill",
-    "reordering": "taskkill",
+    "insertion": "/IM RaccineSettings.exe # bypass",
+    "substitution": "/IM RaccineSettings.exe",
+    "omission": "/IM RaccineSettings.exe",
+    "reordering": "/IM RaccineSettings.exe",
     "recoding": "<recoding not applicable>"
   }
 }

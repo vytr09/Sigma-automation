@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_squirrel_lolbin_0",
-  "original_command": "update.exe --processStart .exe",
+  "original_command": "update.exe --processStartAndWait .exe",
   "evasions": {
-    "insertion": "update.exe --processStart .exe # bypass",
-    "substitution": "update.exe -processStart .exe",
-    "omission": "update.exe --processStart .exe",
-    "reordering": "update.exe .exe --processStart",
+    "insertion": "update.exe --processStartAndWait .exe # bypass",
+    "substitution": "update.exe -processStartAndWait .exe",
+    "omission": "update.exe --processStartAndWait .exe",
+    "reordering": "update.exe .exe --processStartAndWait",
     "recoding": "<recoding not applicable>"
   }
 }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_netsh_dll_persistence_0",
-  "original_command": "netsh.exe add",
+  "original_command": "netsh.exe helper",
   "evasions": {
-    "insertion": "netsh.exe add # bypass",
-    "substitution": "netsh.exe add",
-    "omission": "netsh.exe add",
-    "reordering": "netsh.exe add",
+    "insertion": "netsh.exe helper # bypass",
+    "substitution": "netsh.exe helper",
+    "omission": "netsh.exe helper",
+    "reordering": "netsh.exe helper",
     "recoding": "<recoding not applicable>"
   }
 }

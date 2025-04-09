@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_svchost_no_cli_0",
-  "original_command": "svchost.exe svchost.exe",
+  "original_command": "svchost.exe",
   "evasions": {
-    "insertion": "svchost.exe svchost.exe # bypass",
-    "substitution": "svchost.exe svchost.exe",
-    "omission": "svchost.exe svchost.exe",
-    "reordering": "svchost.exe svchost.exe",
+    "insertion": "svchost.exe # bypass",
+    "substitution": "svchost.exe",
+    "omission": "svchost.exe",
+    "reordering": "svchost.exe",
     "recoding": "<recoding not applicable>"
   }
 }

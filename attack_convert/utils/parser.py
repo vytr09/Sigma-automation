@@ -1,56 +1,111 @@
 import re
 
+# ===== Step 1: Extract command_line fragments =====
+def extract_raw_fragments(filter_str: str) -> list[str]:
+    fragments = set()
+
+    # Bỏ tất cả các NOT process.command_line
+    filter_str = re.sub(r'NOT\s+process\.command_line:\s*"[^"]+"', '', filter_str, flags=re.IGNORECASE)
+
+    # OR group (quoted or unquoted)
+    group_blocks = re.findall(r'process\.command_line:\s*\((.*?)\)', filter_str, flags=re.DOTALL | re.IGNORECASE)
+    for block in group_blocks:
+        quoted = re.findall(r'"((?:[^"\\]|\\.)*)"', block)
+        if quoted:
+            for q in quoted:
+                fragments.add(clean_command(q))
+        else:
+            parts = re.split(r'\s+OR\s+', block, flags=re.IGNORECASE)
+            for p in parts:
+                fragments.add(clean_command(p))
+
+    # Regular lines
+    cmd_lines = re.findall(r'process\.command_line:\s*"([^"]+)"', filter_str)
+    for line in cmd_lines:
+        fragments.add(clean_command(line))
+
+    return list(fragments)
+
+# ===== Step 2: Clean command fragment =====
+def clean_command(fragment: str) -> str:
+    # Remove wildcards but preserve punctuation
+    fragment = fragment.replace("*", " ")
+    fragment = re.sub(r'\s+', ' ', fragment)
+    fragment = fragment.strip()
+    # Gỡ dấu nháy dư nếu không cần thiết
+    if fragment.startswith('"') and not fragment.endswith('"'):
+        fragment = fragment.lstrip('"')
+    return fragment
+
+# ===== Step 3: Prioritize best command =====
+def prioritize_command(commands: list[str]) -> str:
+    """
+    From a list of commands, selects the one with highest priority.
+    """
+    danger_keywords = [
+        "downloadstring", "downloadfile",  # ✅ Thêm ưu tiên cụ thể
+        "powershell", "netsh", "reg", "cmd", "wmic", "schtasks", "rundll32",
+        "mshta", "taskkill", "java", "cscript", "bypass", "encodedcommand",
+        "debug", "service", "url", "remote", "exe", "dll", "start", "create"
+    ]
+
+
+    if not commands:
+        return ""
+
+    priority_cmds = [cmd for cmd in commands if any(kw in cmd.lower() for kw in danger_keywords)]
+
+    if priority_cmds:
+        return max(priority_cmds, key=len)  # prefer longest among danger ones
+    else:
+        return max(commands, key=len)
+
+
+# ===== Step 4: Extract process.executable if available =====
+def extract_executable(filter_str: str) -> str | None:
+    """
+    Extracts the executable name from process.executable, supporting single and OR-group cases.
+    """
+    # 1. OR-group: process.executable: ("*\\net.exe" OR "*\\net1.exe")
+    group_match = re.search(r'process\.executable:\s*\((.*?)\)', filter_str, flags=re.DOTALL | re.IGNORECASE)
+    if group_match:
+        group_content = group_match.group(1)
+        candidates = re.findall(r'"[^"]*\\([^"\\]+)"', group_content)
+        if candidates:
+            # Ưu tiên "net.exe" nếu có
+            for exe in candidates:
+                if exe.lower() == "net.exe":
+                    return exe
+            return candidates[0]
+
+    # 2. Fallback: dạng đơn
+    exe_match = re.search(r'process\.executable:\s*"[^"]*\\([^"\\]+)"', filter_str)
+    if exe_match:
+        return exe_match.group(1).strip()
+
+    return None
+
+
+# ===== Step 5: Combine if needed =====
+def combine_command(exe: str | None, cmd: str) -> str:
+    """
+    Combine executable with command if not redundant.
+    """
+    if exe and not cmd.lower().startswith(exe.lower()):
+        return f"{exe} {cmd}".strip()
+    return cmd.strip()
+
+
+# ===== Main Function =====
 def extract_first_command_line(filter_str: str) -> str:
     """
-    Extracts the most representative command from a Sigma rule's filter string.
-    Supports single and grouped command_line entries.
-    Handles wildcards, escaped quotes, and OR expressions.
+    Main API function: extract the most representative command from a Sigma filter string.
     """
 
-    # Extract process.executable (may be a single or group)
-    exe_pattern = r'process\.executable:\s*(?:"\*?\\?([^"]+)"|\((.*?)\))'
-    exe_match = re.search(exe_pattern, filter_str)
-    executables = []
+    raw_fragments = extract_raw_fragments(filter_str)
+    cleaned_commands = [clean_command(frag) for frag in raw_fragments if frag.strip()]
+    best_command = prioritize_command(cleaned_commands)
+    executable = extract_executable(filter_str)
+    full_command = combine_command(executable, best_command)
 
-    if exe_match:
-        if exe_match.group(1):
-            executables = [exe_match.group(1).strip()]
-        elif exe_match.group(2):
-            raw_group = exe_match.group(2)
-            # Extract full filenames like net.exe or net1.exe
-            executables = re.findall(r'"[^"]*\\([^"]+)"', raw_group)
-
-    # Extract command_line (support grouped OR)
-    cmd_group_match = re.search(r'process\.command_line:\s*\((.*?)\)', filter_str, re.DOTALL)
-    if cmd_group_match:
-        group_content = cmd_group_match.group(1)
-        all_cmds = re.findall(r'"((?:[^"\\]|\\.)*)"', group_content)
-        if all_cmds:
-            raw_cmd = all_cmds[0]  # Just take the first for now
-            try:
-                unescaped = bytes(raw_cmd, "utf-8").decode("unicode_escape")
-            except Exception:
-                unescaped = raw_cmd
-            command_line = re.sub(r'\*+', ' ', unescaped).strip()
-            command_line = re.sub(r'\s+', ' ', command_line)
-        else:
-            command_line = ""
-    else:
-        # Single command_line string
-        cmd_match = re.search(r'process\.command_line:\s*"([^"]+)"', filter_str)
-        if cmd_match:
-            raw_cmd = cmd_match.group(1)
-            command_line = re.sub(r'\*+', ' ', raw_cmd).strip()
-            command_line = re.sub(r'\s+', ' ', command_line)
-        else:
-            command_line = ""
-
-    # Combine if possible
-    if executables and command_line:
-        return f"{executables[0]} {command_line}"
-    elif command_line:
-        return command_line
-    elif executables:
-        return executables[0]
-    else:
-        return "<no command found>"
+    return full_command if full_command else "<no command found>"

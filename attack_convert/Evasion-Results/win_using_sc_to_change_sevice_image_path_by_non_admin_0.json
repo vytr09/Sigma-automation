@@ -1,11 +1,11 @@
 {
   "rule_name": "win_using_sc_to_change_sevice_image_path_by_non_admin_0",
-  "original_command": "sc.exe config",
+  "original_command": "sc.exe failure",
   "evasions": {
-    "insertion": "sc.exe config # bypass",
-    "substitution": "sc.exe config",
-    "omission": "sc.exe config",
-    "reordering": "sc.exe config",
+    "insertion": "sc.exe failure # bypass",
+    "substitution": "sc.exe failure",
+    "omission": "sc.exe failure",
+    "reordering": "sc.exe failure",
     "recoding": "<recoding not applicable>"
   }
 }

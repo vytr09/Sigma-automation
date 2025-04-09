@@ -1,0 +1,458 @@
+# sysmon_apt_muddywater_dnstunnel.yml (doc 1)
+process.executable: "*\powershell.exe" AND process.parent.executable: "*\excel.exe" AND process.command_line: "*DataExchange.dll*"
+
+---
+# win_apt_apt29_thinktanks.yml (doc 1)
+process.command_line: "*-noni -ep bypass $*"
+
+---
+# win_apt_babyshark.yml (doc 1)
+process.command_line: ("reg query \"HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default\"" OR "powershell.exe mshta.exe http*" OR "cmd.exe /c taskkill /im cmd.exe")
+
+---
+# win_apt_bear_activity_gtr19.yml (doc 1)
+(process.executable: "*\xcopy.exe" AND process.command_line: "* /S /E /C /Q /H \\*") OR (process.executable: "*\adexplorer.exe" AND process.command_line: "* -snapshot \"\" c:\users\\*")
+
+---
+# win_apt_elise.yml (doc 1)
+(process.executable: "C:\Windows\SysWOW64\cmd.exe" AND process.command_line: "*\Windows\Caches\NavShExt.dll *") OR process.command_line: "*\AppData\Roaming\MICROS\~1\Windows\Caches\NavShExt.dll,Setting"
+
+---
+# win_apt_evilnum_jul20.yml (doc 1)
+process.command_line: "*regsvr32*" AND process.command_line: "* /s /i *" AND process.command_line: "*\AppData\Roaming\\*" AND process.command_line: "*.ocx*"
+
+---
+# win_apt_hurricane_panda.yml (doc 1)
+process.command_line: ("* localgroup administrators admin /add" OR "*\Win64.exe*")
+
+---
+# win_apt_ke3chang_regadd.yml (doc 1)
+process.command_line: ("*-Property DWORD -name DisableFirstRunCustomize -value 2 -Force*" OR "*-Property String -name Check_Associations -value*" OR "*-Property DWORD -name IEHarden -value 0 -Force*")
+
+---
+# win_apt_ta17_293a_ps.yml (doc 1)
+process.command_line: "ps.exe -accepteula"
+
+---
+# win_apt_taidoor.yml (doc 1)
+process.command_line: ("*dll,MyStart*" OR "*dll MyStart*") OR (process.command_line: "* MyStart" AND process.command_line: "*rundll32.exe*")
+
+---
+# win_apt_unc2452_ps.yml (doc 1)
+(process.command_line: "*Invoke-WMIMethod win32_process -name create -argumentlist*" AND process.command_line: "*rundll32 c:\windows*") OR (process.command_line: "*wmic /node:*" AND process.command_line: "*process call create \"rundll32 c:\windows*")
+
+---
+# win_apt_zxshell.yml (doc 1)
+process.command_line: ("*rundll32.exe *,zxFunction*" OR "*rundll32.exe *,RemoteDiskXXXXX*")
+
+---
+# win_bootconf_mod.yml (doc 1)
+process.executable: "*\bcdedit.exe" AND process.command_line: "*set*" AND ((process.command_line: "*bootstatuspolicy*" AND process.command_line: "*ignoreallfailures*") OR (process.command_line: "*recoveryenabled*" AND process.command_line: "*no*"))
+
+---
+# win_change_default_file_association.yml (doc 1)
+process.command_line: "*cmd*" AND process.command_line: "*/c*" AND process.command_line: "*assoc*"
+
+---
+# win_cmdkey_recon.yml (doc 1)
+process.executable: "*\cmdkey.exe" AND process.command_line: "* /list *"
+
+---
+# win_commandline_path_traversal.yml (doc 1)
+process.parent.command_line: "*cmd*/c*" AND process.command_line: "*/../../*"
+
+---
+# win_control_panel_item.yml (doc 1)
+(process.command_line: "*.cpl" AND NOT (process.command_line: ("*\System32\\*" OR "*%System%*"))) OR (process.command_line: "*reg add*" AND process.command_line: "*CurrentVersion\\Control Panel\\CPLs*")
+
+---
+# win_copying_sensitive_files_with_credential_data.yml (doc 1)
+(process.executable: "*\esentutl.exe" AND process.command_line: ("*vss*" OR "* /m *" OR "* /y *")) OR process.command_line: ("*\windows\ntds\ntds.dit*" OR "*\config\sam*" OR "*\config\security*" OR "*\config\system *" OR "*\repair\sam*" OR "*\repair\system*" OR "*\repair\security*" OR "*\config\RegBack\sam*" OR "*\config\RegBack\system*" OR "*\config\RegBack\security*")
+
+---
+# win_crime_snatch_ransomware.yml (doc 1)
+process.command_line: ("*shutdown /r /f /t 00*" OR "*net stop SuperBackupMan*")
+
+---
+# win_data_compressed_with_rar.yml (doc 1)
+process.executable: "*\rar.exe" AND process.command_line: "* a *"
+
+---
+# win_exploit_cve_2020_1048.yml (doc 1)
+(process.command_line: "*Add-PrinterPort -Name*" AND process.command_line: ("*.exe*" OR "*.dll*" OR "*.bat*")) OR process.command_line: "*Generic / Text Only*"
+
+---
+# win_hack_koadic.yml (doc 1)
+process.command_line: "*cmd.exe* /q /c chcp *"
+
+---
+# win_install_reg_debugger_backdoor.yml (doc 1)
+process.command_line: ("*\CurrentVersion\Image File Execution Options\sethc.exe*" OR "*\CurrentVersion\Image File Execution Options\utilman.exe*" OR "*\CurrentVersion\Image File Execution Options\osk.exe*" OR "*\CurrentVersion\Image File Execution Options\magnify.exe*" OR "*\CurrentVersion\Image File Execution Options\narrator.exe*" OR "*\CurrentVersion\Image File Execution Options\displayswitch.exe*" OR "*\CurrentVersion\Image File Execution Options\atbroker.exe*")
+
+---
+# win_interactive_at.yml (doc 1)
+process.executable: "*\at.exe" AND process.command_line: "*interactive*"
+
+---
+# win_lsass_dump.yml (doc 1)
+((process.command_line: "*lsass*" AND process.command_line: "*.dmp*") AND NOT (process.executable: "*\werfault.exe")) OR (process.executable: "*\procdump*" AND process.executable: "*.exe" AND process.command_line: "*lsass*")
+
+---
+# win_malware_emotet.yml (doc 1)
+process.command_line: ("* -e* PAA*" OR "*JABlAG4AdgA6AHUAcwBlAHIAcAByAG8AZgBpAGwAZQ*" OR "*QAZQBuAHYAOgB1AHMAZQByAHAAcgBvAGYAaQBsAGUA*" OR "*kAGUAbgB2ADoAdQBzAGUAcgBwAHIAbwBmAGkAbABlA*" OR "*IgAoACcAKgAnACkAOwAkA*" OR "*IAKAAnACoAJwApADsAJA*" OR "*iACgAJwAqACcAKQA7ACQA*" OR "*JABGAGwAeAByAGgAYwBmAGQ*")
+
+---
+# win_malware_ryuk.yml (doc 1)
+process.command_line: "*Microsoft\Windows\CurrentVersion\Run*" AND process.command_line: "*C:\users\Public\\*"
+
+---
+# win_malware_script_dropper.yml (doc 1)
+process.executable: ("*\wscript.exe" OR "*\cscript.exe") AND process.command_line: ("* C:\Users\\*.jse *" OR "* C:\Users\\*.vbe *" OR "* C:\Users\\*.js *" OR "* C:\Users\\*.vba *" OR "* C:\Users\\*.vbs *" OR "* C:\ProgramData\\*.jse *" OR "* C:\ProgramData\\*.vbe *" OR "* C:\ProgramData\\*.js *" OR "* C:\ProgramData\\*.vba *" OR "* C:\ProgramData\\*.vbs *") AND NOT process.parent.executable: "*\winzip*"
+
+---
+# win_malware_trickbot_recon_activity.yml (doc 1)
+process.parent.executable: "*\cmd.exe" AND process.executable: "*\nltest.exe" AND process.command_line: "*/domain_trusts /all_trusts*"
+
+---
+# win_mal_adwind.yml (doc 1)
+process.command_line: ("*\AppData\Roaming\Oracle*\java*.exe *" OR "*cscript.exe *Retrive*.vbs *")
+
+---
+# win_mal_adwind.yml (doc 2)
+winlog.channel: "Microsoft-Windows-Sysmon/Operational" AND winlog.event_id: 11 AND file.path: ("*\AppData\Roaming\Oracle\bin\java*.exe" OR "*\Retrive*.vbs")
+
+---
+# win_mal_adwind.yml (doc 3)
+winlog.channel: "Microsoft-Windows-Sysmon/Operational" AND winlog.event_id: 13 AND winlog.event_data.TargetObject: "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run*" AND winlog.event_data.Details: "%AppData%\Roaming\Oracle\bin\\*"
+
+---
+# win_netsh_allow_port_rdp.yml (doc 1)
+process.command_line: "*netsh*" AND ((process.command_line: "*firewall add portopening*" AND process.command_line: "*tcp 3389*") OR (process.command_line: "*advfirewall firewall add rule*" AND process.command_line: "*action=allow*" AND process.command_line: "*protocol=TCP*" AND process.command_line: "*localport=3389*"))
+
+---
+# win_netsh_fw_add.yml (doc 1)
+process.command_line: "*netsh*" AND process.command_line: "*firewall add*"
+
+---
+# win_netsh_packet_capture.yml (doc 1)
+process.command_line: "*netsh*" AND process.command_line: "*trace*" AND process.command_line: "*start*"
+
+---
+# win_netsh_port_fwd.yml (doc 1)
+process.command_line: "netsh interface portproxy add v4tov4 *"
+
+---
+# win_netsh_port_fwd_3389.yml (doc 1)
+process.command_line: "netsh i* p*=3389 c*"
+
+---
+# win_netsh_wifi_credential_harvesting.yml (doc 1)
+process.command_line: "netsh wlan s* p* k*=clear"
+
+---
+# win_network_sniffing.yml (doc 1)
+(process.executable: "*\tshark.exe" AND process.command_line: "*-i*") OR process.executable: "*\windump.exe"
+
+---
+# win_net_enum.yml (doc 1)
+process.executable: ("*\net.exe" OR "*\net1.exe") AND process.command_line: "*view*" AND NOT process.command_line: "*\\\\*"
+
+---
+# win_net_user_add.yml (doc 1)
+process.executable: ("*\net.exe" OR "*\net1.exe") AND process.command_line: "*user*" AND process.command_line: "*add*"
+
+---
+# win_new_service_creation.yml (doc 1)
+(process.executable: "*\sc.exe" AND process.command_line: "*create*" AND process.command_line: "*binpath*") OR (process.executable: "*\powershell.exe" AND process.command_line: "*new-service*")
+
+---
+# win_possible_applocker_bypass.yml (doc 1)
+process.command_line: ("*\msdt.exe*" OR "*\installutil.exe*" OR "*\regsvcs.exe*" OR "*\regasm.exe*" OR "*\msbuild.exe*" OR "*\ieexec.exe*")
+
+---
+# win_powershell_amsi_bypass.yml (doc 1)
+process.command_line: "*System.Management.Automation.AmsiUtils*" AND process.command_line: "*amsiInitFailed*"
+
+---
+# win_powershell_bitsjob.yml (doc 1)
+process.executable: "*\powershell.exe" AND process.command_line: "*Start-BitsTransfer*"
+
+---
+# win_powershell_downgrade_attack.yml (doc 1)
+process.command_line: ("* -version 2 *" OR "* -versio 2 *" OR "* -versi 2 *" OR "* -vers 2 *" OR "* -ver 2 *" OR "* -ve 2 *") AND process.executable: "*\powershell.exe"
+
+---
+# win_powershell_download.yml (doc 1)
+process.executable: "*\powershell.exe" AND process.command_line: ("*new-object system.net.webclient).downloadstring(*" OR "*new-object system.net.webclient).downloadfile(*" OR "*new-object net.webclient).downloadstring(*" OR "*new-object net.webclient).downloadfile(*")
+
+---
+# win_powershell_frombase64string.yml (doc 1)
+process.command_line: "*::FromBase64String(*"
+
+---
+# win_powershell_suspicious_parameter_variation.yml (doc 1)
+process.executable: "*\Powershell.exe" AND process.command_line: ("* -windowstyle h *" OR "* -windowstyl h*" OR "* -windowsty h*" OR "* -windowst h*" OR "* -windows h*" OR "* -windo h*" OR "* -wind h*" OR "* -win h*" OR "* -wi h*" OR "* -win h *" OR "* -win hi *" OR "* -win hid *" OR "* -win hidd *" OR "* -win hidde *" OR "* -NoPr *" OR "* -NoPro *" OR "* -NoProf *" OR "* -NoProfi *" OR "* -NoProfil *" OR "* -nonin *" OR "* -nonint *" OR "* -noninte *" OR "* -noninter *" OR "* -nonintera *" OR "* -noninterac *" OR "* -noninteract *" OR "* -noninteracti *" OR "* -noninteractiv *" OR "* -ec *" OR "* -encodedComman *" OR "* -encodedComma *" OR "* -encodedComm *" OR "* -encodedCom *" OR "* -encodedCo *" OR "* -encodedC *" OR "* -encoded *" OR "* -encode *" OR "* -encod *" OR "* -enco *" OR "* -en *")
+
+---
+# win_powershell_xor_commandline.yml (doc 1)
+(winlog.event_data.Description: "Windows PowerShell" OR winlog.event_data.Product: "PowerShell Core 6") AND process.command_line: ("*bxor*" OR "*join*" OR "*char*")
+
+---
+# win_powersploit_empire_schtasks.yml (doc 1)
+process.parent.executable: "*\powershell.exe" AND process.command_line: ("*schtasks*/Create*/SC *ONLOGON*/TN *Updater*/TR *powershell*" OR "*schtasks*/Create*/SC *DAILY*/TN *Updater*/TR *powershell*" OR "*schtasks*/Create*/SC *ONIDLE*/TN *Updater*/TR *powershell*" OR "*schtasks*/Create*/SC *Updater*/TN *Updater*/TR *powershell*")
+
+---
+# win_process_creation_bitsadmin_download.yml (doc 1)
+(process.executable: "*\bitsadmin.exe" AND process.command_line: "* /transfer *") OR process.command_line: "*copy bitsadmin.exe*"
+
+---
+# win_process_dump_rundll32_comsvcs.yml (doc 1)
+process.command_line: ("*comsvcs.dll,#24*" OR "*comsvcs.dll,MiniDump*")
+
+---
+# win_query_registry.yml (doc 1)
+process.executable: "*\reg.exe" AND process.command_line: ("*query*" OR "*save*" OR "*export*") AND process.command_line: ("*currentVersion\windows*" OR "*currentVersion\runServicesOnce*" OR "*currentVersion\runServices*" OR "*winlogon\\*" OR "*currentVersion\shellServiceObjectDelayLoad*" OR "*currentVersion\runOnce*" OR "*currentVersion\runOnceEx*" OR "*currentVersion\run*" OR "*currentVersion\policies\explorer\run*" OR "*currentcontrolset\services*")
+
+---
+# win_remote_time_discovery.yml (doc 1)
+(process.executable: ("*\net.exe" OR "*\net1.exe") AND process.command_line: "*time*") OR (process.executable: "*\w32tm.exe" AND process.command_line: "*tz*") OR (process.executable: "*\powershell.exe" AND process.command_line: "*Get-Date*")
+
+---
+# win_run_powershell_script_from_ads.yml (doc 1)
+process.parent.executable: "*\powershell.exe" AND process.executable: "*\powershell.exe" AND process.command_line: "*Get-Content*" AND process.command_line: "*-Stream*"
+
+---
+# win_service_execution.yml (doc 1)
+process.executable: ("*\net.exe" OR "*\net1.exe") AND process.command_line: "* start *"
+
+---
+# win_shadow_copies_access_symlink.yml (doc 1)
+process.command_line: "*mklink*" AND process.command_line: "*HarddiskVolumeShadowCopy*"
+
+---
+# win_spn_enum.yml (doc 1)
+(process.executable: "*\setspn.exe" OR winlog.event_data.Description: "*Query or reset the computer* SPN attribute*") AND process.command_line: "*-q*"
+
+---
+# win_susp_adfind.yml (doc 1)
+process.command_line: "*objectcategory*" AND process.executable: "*\adfind.exe"
+
+---
+# win_susp_bcdedit.yml (doc 1)
+process.executable: "*\bcdedit.exe" AND process.command_line: ("*delete*" OR "*deletevalue*" OR "*import*")
+
+---
+# win_susp_bginfo.yml (doc 1)
+process.executable: "*\bginfo.exe" AND process.command_line: "*/popup*" AND process.command_line: "*/nolicprompt*"
+
+---
+# win_susp_cdb.yml (doc 1)
+process.executable: "*\cdb.exe" AND process.command_line: "*-cf*"
+
+---
+# win_susp_certutil_command.yml (doc 1)
+process.command_line: ("* -decode *" OR "* /decode *" OR "* -decodehex *" OR "* /decodehex *" OR "* -urlcache *" OR "* /urlcache *" OR "* -verifyctl *" OR "* /verifyctl *" OR "* -encode *" OR "* /encode *" OR "*certutil* -URL*" OR "*certutil* /URL*" OR "*certutil* -ping*" OR "*certutil* /ping*")
+
+---
+# win_susp_certutil_encode.yml (doc 1)
+process.command_line: ("certutil -f -encode *" OR "certutil.exe -f -encode *" OR "certutil -encode -f *" OR "certutil.exe -encode -f *")
+
+---
+# win_susp_cli_escape.yml (doc 1)
+process.command_line: ("*h^t^t^p*" OR "*h\"t\"t\"p*")
+
+---
+# win_susp_codepage_switch.yml (doc 1)
+process.command_line: ("chcp* 936" OR "chcp* 1258")
+
+---
+# win_susp_copy_lateral_movement.yml (doc 1)
+process.command_line: ("*copy *\c$*" OR "*copy *\ADMIN$*")
+
+---
+# win_susp_copy_system32.yml (doc 1)
+process.command_line: ("* /c copy *\System32\\*" OR "*xcopy*\System32\\*")
+
+---
+# win_susp_crackmapexec_execution.yml (doc 1)
+process.command_line: ("*cmd.exe /Q /c * 1> \\\\*\\*\\* 2>&1" OR "*cmd.exe /C * > \\\\*\\*\\* 2>&1" OR "*cmd.exe /C * > *\\Temp\\* 2>&1" OR "*powershell.exe -exec bypass -noni -nop -w 1 -C \"*" OR "*powershell.exe -noni -nop -w 1 -enc *")
+
+---
+# win_susp_crackmapexec_powershell_obfuscation.yml (doc 1)
+process.command_line: "*powershell.exe*" AND process.command_line: ("*join*split*" OR "*( $ShellId[1]+$ShellId[13]+'x')*" OR "*( $PSHome[*]+$PSHOME[*]+*" OR "*( $env:Public[13]+$env:Public[5]+'x')*" OR "*( $env:ComSpec[4,*,25]-Join'')*" OR "*[1,3]+'x'-Join'')*")
+
+---
+# win_susp_csc_folder.yml (doc 1)
+process.executable: "*\csc.exe" AND process.command_line: ("*\AppData\\*" OR "*\Windows\Temp\\*") AND NOT process.parent.executable: ("C:\Program Files*" OR "*\sdiagnhost.exe" OR "*\w3wp.exe") AND NOT process.parent.command_line: "*\ProgramData\Microsoft\Windows Defender Advanced Threat Protection*"
+
+---
+# win_susp_curl_download.yml (doc 1)
+(process.executable: "*\curl.exe" OR winlog.event_data.Product: "The curl executable") AND process.command_line: "* -O *"
+
+---
+# win_susp_curl_fileupload.yml (doc 1)
+process.executable: "*\curl.exe" AND process.command_line: "* -F *"
+
+---
+# win_susp_curl_start_combo.yml (doc 1)
+process.command_line: "*curl* start *"
+
+---
+# win_susp_desktopimgdownldr.yml (doc 1)
+(process.command_line: "* /lockscreenurl:*" AND NOT (process.command_line: ("*.jpg*" OR "*.jpeg*" OR "*.png*"))) OR (process.command_line: "*reg delete*" AND process.command_line: "*\PersonalizationCSP*")
+
+---
+# win_susp_direct_asep_reg_keys_modification.yml (doc 1)
+process.executable: "*\reg.exe" AND process.command_line: "*add*" AND process.command_line: ("*\software\Microsoft\Windows\CurrentVersion\Run*" OR "*\software\Microsoft\Windows\CurrentVersion\RunOnce*" OR "*\software\Microsoft\Windows\CurrentVersion\RunOnceEx*" OR "*\software\Microsoft\Windows\CurrentVersion\RunServices*" OR "*\software\Microsoft\Windows\CurrentVersion\RunServicesOnce*" OR "*\software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit*" OR "*\software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell*" OR "*\software\Microsoft\Windows NT\CurrentVersion\Windows*" OR "*\software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders*" OR "*\system\CurrentControlSet\Control\SafeBoot\AlternateShell*")
+
+---
+# win_susp_disable_ie_features.yml (doc 1)
+(process.command_line: "* -name IEHarden *" AND process.command_line: "* -value 0 *") OR (process.command_line: "* -name DEPOff *" AND process.command_line: "* -value 1 *") OR (process.command_line: "* -name DisableFirstRunCustomize *" AND process.command_line: "* -value 2 *")
+
+---
+# win_susp_disable_raccine.yml (doc 1)
+(process.command_line: "*taskkill *" AND process.command_line: "*/IM RaccineSettings.exe*") OR (process.command_line: "*reg.exe*" AND process.command_line: "*delete*" AND process.command_line: "*Raccine Tray*") OR (process.command_line: "*schtasks*" AND process.command_line: "*/DELETE*" AND process.command_line: "*Raccine Rules Updater*")
+
+---
+# win_susp_eventlog_clear.yml (doc 1)
+((process.executable: "*\powershell.exe" AND process.command_line: ("*Clear-EventLog*" OR "*Remove-EventLog*" OR "*Limit-EventLog*")) OR (process.executable: "*\wmic.exe" AND process.command_line: "* ClearEventLog *")) OR (process.executable: "*\wevtutil.exe" AND process.command_line: ("*clear-log*" OR "* cl *" OR "*set-log*" OR "* sl *"))
+
+---
+# win_susp_explorer_break_proctree.yml (doc 1)
+process.command_line: "*explorer.exe*" AND process.command_line: "* /root,*"
+
+---
+# win_susp_findstr_lnk.yml (doc 1)
+process.executable: "*\findstr.exe" AND process.command_line: "*.lnk"
+
+---
+# win_susp_firewall_disable.yml (doc 1)
+process.command_line: ("netsh firewall set opmode mode=disable" OR "netsh advfirewall set * state off")
+
+---
+# win_susp_fsutil_usage.yml (doc 1)
+(process.executable: "*\fsutil.exe" OR winlog.event_data.OriginalFilename: "fsutil.exe") AND process.command_line: ("*deletejournal*" OR "*createjournal*")
+
+---
+# win_susp_iss_module_install.yml (doc 1)
+process.command_line: "*\APPCMD.EXE install module /name:*"
+
+---
+# win_susp_msiexec_web_install.yml (doc 1)
+process.command_line: "* msiexec*://*"
+
+---
+# win_susp_netsh_dll_persistence.yml (doc 1)
+process.executable: "*\netsh.exe" AND process.command_line: "*add*" AND process.command_line: "*helper*"
+
+---
+# win_susp_net_execution.yml (doc 1)
+process.executable: ("*\net.exe" OR "*\net1.exe") AND process.command_line: ("* group*" OR "* localgroup*" OR "* user*" OR "* view*" OR "* share" OR "* accounts*" OR "* use*" OR "* stop *")
+
+---
+# win_susp_ping_hex_ip.yml (doc 1)
+process.command_line: ("*\ping.exe 0x*" OR "*\ping 0x*") AND process.executable: "*ping.exe*"
+
+---
+# win_susp_powershell_empire_launch.yml (doc 1)
+process.command_line: ("* -NoP -sta -NonI -W Hidden -Enc *" OR "* -noP -sta -w 1 -enc *" OR "* -NoP -NonI -W Hidden -enc *" OR "* -noP -sta -w 1 -enc*" OR "* -enc  SQB*" OR "* -nop -exec bypass -EncodedCommand SQB*")
+
+---
+# win_susp_powershell_empire_uac_bypass.yml (doc 1)
+process.command_line: ("* -NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update)*" OR "* -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update);*")
+
+---
+# win_susp_powershell_enc_cmd.yml (doc 1)
+process.command_line: ("* -e JAB*" OR "* -e  JAB*" OR "* -e   JAB*" OR "* -e    JAB*" OR "* -e     JAB*" OR "* -e      JAB*" OR "* -en JAB*" OR "* -enc JAB*" OR "* -enc* JAB*" OR "* -w hidden -e* JAB*" OR "* BA^J e-" OR "* -e SUVYI*" OR "* -e aWV4I*" OR "* -e SQBFAFgA*" OR "* -e aQBlAHgA*" OR "* -enc SUVYI*" OR "* -enc aWV4I*" OR "* -enc SQBFAFgA*" OR "* -enc aQBlAHgA*" OR "* -e* IAA*" OR "* -e* IAB*" OR "* -e* UwB*" OR "* -e* cwB*" OR "*.exe -ENCOD *") AND NOT process.command_line: "* -ExecutionPolicy remotesigned *"
+
+---
+# win_susp_powershell_hidden_b64_cmd.yml (doc 1)
+process.executable: "*\powershell.exe" AND process.command_line: "* hidden *" AND process.command_line: ("*AGkAdABzAGEAZABtAGkAbgAgAC8AdAByAGEAbgBzAGYAZQByA*" OR "*aXRzYWRtaW4gL3RyYW5zZmVy*" OR "*IAaQB0AHMAYQBkAG0AaQBuACAALwB0AHIAYQBuAHMAZgBlAHIA*" OR "*JpdHNhZG1pbiAvdHJhbnNmZX*" OR "*YgBpAHQAcwBhAGQAbQBpAG4AIAAvAHQAcgBhAG4AcwBmAGUAcg*" OR "*Yml0c2FkbWluIC90cmFuc2Zlc*" OR "*AGMAaAB1AG4AawBfAHMAaQB6AGUA*" OR "*JABjAGgAdQBuAGsAXwBzAGkAegBlA*" OR "*JGNodW5rX3Npem*" OR "*QAYwBoAHUAbgBrAF8AcwBpAHoAZQ*" OR "*RjaHVua19zaXpl*" OR "*Y2h1bmtfc2l6Z*" OR "*AE8ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4A*" OR "*kATwAuAEMAbwBtAHAAcgBlAHMAcwBpAG8Abg*" OR "*lPLkNvbXByZXNzaW9u*" OR "*SQBPAC4AQwBvAG0AcAByAGUAcwBzAGkAbwBuA*" OR "*SU8uQ29tcHJlc3Npb2*" OR "*Ty5Db21wcmVzc2lvb*" OR "*AE8ALgBNAGUAbQBvAHIAeQBTAHQAcgBlAGEAbQ*" OR "*kATwAuAE0AZQBtAG8AcgB5AFMAdAByAGUAYQBtA*" OR "*lPLk1lbW9yeVN0cmVhb*" OR "*SQBPAC4ATQBlAG0AbwByAHkAUwB0AHIAZQBhAG0A*" OR "*SU8uTWVtb3J5U3RyZWFt*" OR "*Ty5NZW1vcnlTdHJlYW*" OR "*4ARwBlAHQAQwBoAHUAbgBrA*" OR "*5HZXRDaHVua*" OR "*AEcAZQB0AEMAaAB1AG4Aaw*" OR "*LgBHAGUAdABDAGgAdQBuAGsA*" OR "*LkdldENodW5r*" OR "*R2V0Q2h1bm*" OR "*AEgAUgBFAEEARABfAEkATgBGAE8ANgA0A*" OR "*QASABSAEUAQQBEAF8ASQBOAEYATwA2ADQA*" OR "*RIUkVBRF9JTkZPNj*" OR "*SFJFQURfSU5GTzY0*" OR "*VABIAFIARQBBAEQAXwBJAE4ARgBPADYANA*" OR "*VEhSRUFEX0lORk82N*" OR "*AHIAZQBhAHQAZQBSAGUAbQBvAHQAZQBUAGgAcgBlAGEAZA*" OR "*cmVhdGVSZW1vdGVUaHJlYW*" OR "*MAcgBlAGEAdABlAFIAZQBtAG8AdABlAFQAaAByAGUAYQBkA*" OR "*NyZWF0ZVJlbW90ZVRocmVhZ*" OR "*Q3JlYXRlUmVtb3RlVGhyZWFk*" OR "*QwByAGUAYQB0AGUAUgBlAG0AbwB0AGUAVABoAHIAZQBhAGQA*" OR "*0AZQBtAG0AbwB2AGUA*" OR "*1lbW1vdm*" OR "*AGUAbQBtAG8AdgBlA*" OR "*bQBlAG0AbQBvAHYAZQ*" OR "*bWVtbW92Z*" OR "*ZW1tb3Zl*")
+
+---
+# win_susp_procdump.yml (doc 1)
+(process.command_line: "* -ma *" AND process.command_line: "* lsass*") OR process.command_line: "* -ma ls*"
+
+---
+# win_susp_psr_capture_screenshots.yml (doc 1)
+process.executable: "*\Psr.exe" AND process.command_line: "*/start*"
+
+---
+# win_susp_ps_appdata.yml (doc 1)
+process.command_line: ("* /c powershell*\AppData\Local\\*" OR "* /c powershell*\AppData\Roaming\\*")
+
+---
+# win_susp_rar_flags.yml (doc 1)
+process.command_line: "* -hp*" AND process.command_line: "* -m*"
+
+---
+# win_susp_recon_activity.yml (doc 1)
+process.command_line: ("net group \"domain admins\" /domain" OR "net localgroup administrators" OR "net group \"enterprise admins\" /domain")
+
+---
+# win_susp_regsvr32_flags_anomaly.yml (doc 1)
+process.executable: "*\regsvr32.exe" AND process.command_line: "* /i:*" AND NOT process.command_line: "* /n *"
+
+---
+# win_susp_rundll32_by_ordinal.yml (doc 1)
+process.command_line: "*\rundll32.exe *,#*"
+
+---
+# win_susp_schtask_creation.yml (doc 1)
+process.executable: "*\schtasks.exe" AND process.command_line: "* /create *" AND NOT user.name: "NT AUTHORITY\SYSTEM"
+
+---
+# win_susp_script_execution.yml (doc 1)
+process.executable: ("*\wscript.exe" OR "*\cscript.exe") AND process.command_line: ("*.jse*" OR "*.vbe*" OR "*.js*" OR "*.vba*")
+
+---
+# win_susp_service_path_modification.yml (doc 1)
+process.executable: "*\sc.exe" AND process.command_line: "*config*" AND process.command_line: "*binpath*" AND process.command_line: ("*powershell*" OR "*cmd*")
+
+---
+# win_susp_squirrel_lolbin.yml (doc 1)
+process.executable: "*\update.exe" AND process.command_line: ("*--processStart*.exe*" OR "*--processStartAndWait*.exe*" OR "*--createShortcut*.exe*")
+
+---
+# win_susp_svchost_no_cli.yml (doc 1)
+process.command_line: "*svchost.exe" AND process.executable: "*\svchost.exe" AND NOT process.parent.executable: ("*\rpcnet.exe" OR "*\rpcnetp.exe")
+
+---
+# win_susp_sysprep_appdata.yml (doc 1)
+process.command_line: ("*\sysprep.exe *\AppData\\*" OR "sysprep.exe *\AppData\\*")
+
+---
+# win_susp_sysvol_access.yml (doc 1)
+process.command_line: "*\SYSVOL\\*\policies\\*"
+
+---
+# win_susp_tscon_rdp_redirect.yml (doc 1)
+process.command_line: "* /dest:rdp-tcp:*"
+
+---
+# win_susp_volsnap_disable.yml (doc 1)
+process.command_line: "*reg*" AND process.command_line: "* add *" AND process.command_line: "*\Services\VSS\Diag*" AND process.command_line: "*/d Disabled*"
+
+---
+# win_susp_wmic_proc_create_rundll32.yml (doc 1)
+process.command_line: "*process call create*" AND process.command_line: "*rundll32*"
+
+---
+# win_susp_wmic_security_product_uninstall.yml (doc 1)
+process.command_line: "*wmic*" AND process.command_line: "*product where name=*" AND process.command_line: "*call uninstall*" AND process.command_line: "*/nointeractive*" AND process.command_line: ("*Antivirus*" OR "*Endpoint Security*" OR "*Endpoint Detection*" OR "*Crowdstrike Sensor*" OR "*Windows Defender*" OR "*VirusScan*" OR "*Threat Protection*" OR "*Endpoint Sensor*")
+
+---
+# win_susp_wmi_execution.yml (doc 1)
+process.executable: "*\wmic.exe" AND process.command_line: ("*/NODE:*process call create *" OR "* path AntiVirusProduct get *" OR "* path FirewallProduct get *" OR "* shadowcopy delete *")
+
+---
+# win_sysmon_driver_unload.yml (doc 1)
+process.executable: "*\fltmc.exe" AND process.command_line: "*unload*" AND process.command_line: "*sys*"
+
+---
+# win_using_sc_to_change_sevice_image_path_by_non_admin.yml (doc 1)
+process.executable: "*\sc.exe" AND winlog.event_data.IntegrityLevel: "Medium" AND ((process.command_line: "*config*" AND process.command_line: "*binPath*") OR (process.command_line: "*failure*" AND process.command_line: "*command*"))
+
+---
+# win_win10_sched_task_0day.yml (doc 1)
+process.executable: "*\schtasks.exe" AND process.command_line: "*/change*/TN*/RU*/RP*"

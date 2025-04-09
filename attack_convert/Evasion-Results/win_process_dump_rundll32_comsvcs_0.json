@@ -1,11 +1,11 @@
 {
   "rule_name": "win_process_dump_rundll32_comsvcs_0",
-  "original_command": "comsvcs.dll,#24",
+  "original_command": "comsvcs.dll,MiniDump",
   "evasions": {
-    "insertion": "comsvcs.dll,#24 # bypass",
-    "substitution": "comsvcs.dll,#24",
-    "omission": "comsvcs.dll,#24",
-    "reordering": "comsvcs.dll,#24",
+    "insertion": "comsvcs.dll,MiniDump # bypass",
+    "substitution": "comsvcs.dll,MiniDump",
+    "omission": "comsvcs.dll,MiniDump",
+    "reordering": "comsvcs.dll,MiniDump",
     "recoding": "<recoding not applicable>"
   }
 }

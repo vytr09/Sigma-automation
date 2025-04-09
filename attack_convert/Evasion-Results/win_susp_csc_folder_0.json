@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_csc_folder_0",
-  "original_command": "csc.exe \\AppData\\",
+  "original_command": "csc.exe \\Windows\\Temp\\\\",
   "evasions": {
-    "insertion": "csc.exe \\AppData\\ # bypass",
-    "substitution": "csc.exe \\AppData\\",
-    "omission": "csc.exe \\AppData\\",
-    "reordering": "csc.exe \\AppData\\",
+    "insertion": "csc.exe \\Windows\\Temp\\\\ # bypass",
+    "substitution": "csc.exe \\Windows\\Temp\\\\",
+    "omission": "csc.exe \\Windows\\Temp\\\\",
+    "reordering": "csc.exe \\Windows\\Temp\\\\",
     "recoding": "<recoding not applicable>"
   }
 }
