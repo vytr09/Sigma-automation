@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_wmic_security_product_uninstall_0",
-  "original_command": "wmic",
+  "original_command": "wmic product where name= call uninstall /nointeractive",
   "evasions": {
-    "insertion": "wmic # bypass",
-    "substitution": "wmic",
-    "omission": "wmic",
-    "reordering": "wmic",
+    "insertion": "wmic product where name= call uninstall /nointeractive # bypass",
+    "substitution": "wmic product where name= call uninstall /nointeractive",
+    "omission": "wmic product where name= call uninstall /nointeractive",
+    "reordering": "wmic where product name= call uninstall /nointeractive",
     "recoding": "<recoding not applicable>"
   }
 }

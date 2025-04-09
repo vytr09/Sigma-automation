@@ -1,11 +1,11 @@
 {
   "rule_name": "win_net_user_add_0",
-  "original_command": "net.exe user",
+  "original_command": "net.exe user add",
   "evasions": {
-    "insertion": "net.exe user # bypass",
-    "substitution": "net.exe user",
-    "omission": "net.exe user",
-    "reordering": "net.exe user",
+    "insertion": "net.exe user add # bypass",
+    "substitution": "net.exe user add",
+    "omission": "net.exe user add",
+    "reordering": "net.exe add user",
     "recoding": "<recoding not applicable>"
   }
 }

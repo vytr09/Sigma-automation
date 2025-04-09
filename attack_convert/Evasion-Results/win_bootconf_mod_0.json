@@ -1,11 +1,11 @@
 {
   "rule_name": "win_bootconf_mod_0",
-  "original_command": "bcdedit.exe ignoreallfailures",
+  "original_command": "bcdedit.exe set bootstatuspolicy ignoreallfailures",
   "evasions": {
-    "insertion": "bcdedit.exe ignoreallfailures # bypass",
-    "substitution": "bcdedit.exe ignoreallfailures",
-    "omission": "bcdedit.exe ignoreallfailures",
-    "reordering": "bcdedit.exe ignoreallfailures",
+    "insertion": "bcdedit.exe set bootstatuspolicy ignoreallfailures # bypass",
+    "substitution": "bcdedit.exe set bootstatuspolicy ignoreallfailures",
+    "omission": "bcdedit.exe set bootstatuspolicy ignoreallfailures",
+    "reordering": "bcdedit.exe bootstatuspolicy set ignoreallfailures",
     "recoding": "<recoding not applicable>"
   }
 }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_procdump_0",
-  "original_command": "-ma ls",
+  "original_command": "-ma lsass -ma ls",
   "evasions": {
-    "insertion": "-ma ls # bypass",
-    "substitution": "-ma ls",
-    "omission": "-ma ls",
-    "reordering": "-ma ls",
+    "insertion": "-ma lsass -ma ls # bypass",
+    "substitution": "-ma lsass -ma ls",
+    "omission": "-ma lsass -ma ls",
+    "reordering": "-ma -ma lsass ls",
     "recoding": "<recoding not applicable>"
   }
 }

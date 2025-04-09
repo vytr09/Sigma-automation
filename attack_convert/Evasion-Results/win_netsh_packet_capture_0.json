@@ -1,11 +1,11 @@
 {
   "rule_name": "win_netsh_packet_capture_0",
-  "original_command": "netsh",
+  "original_command": "netsh trace start",
   "evasions": {
-    "insertion": "netsh # bypass",
-    "substitution": "netsh",
-    "omission": "netsh",
-    "reordering": "netsh",
+    "insertion": "netsh trace start # bypass",
+    "substitution": "netsh trace start",
+    "omission": "netsh trace start",
+    "reordering": "netsh start trace",
     "recoding": "<recoding not applicable>"
   }
 }

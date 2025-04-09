@@ -1,11 +1,11 @@
 {
   "rule_name": "win_shadow_copies_access_symlink_0",
-  "original_command": "HarddiskVolumeShadowCopy",
+  "original_command": "mklink HarddiskVolumeShadowCopy",
   "evasions": {
-    "insertion": "HarddiskVolumeShadowCopy # bypass",
-    "substitution": "HarddiskVolumeShadowCopy",
-    "omission": "HarddiskVolumeShadowCopy",
-    "reordering": "HarddiskVolumeShadowCopy",
+    "insertion": "mklink HarddiskVolumeShadowCopy # bypass",
+    "substitution": "mklink HarddiskVolumeShadowCopy",
+    "omission": "mklink HarddiskVolumeShadowCopy",
+    "reordering": "mklink HarddiskVolumeShadowCopy",
     "recoding": "<recoding not applicable>"
   }
 }

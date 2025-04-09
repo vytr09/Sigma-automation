@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_disable_ie_features_0",
-  "original_command": "-name DisableFirstRunCustomize",
+  "original_command": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2",
   "evasions": {
-    "insertion": "-name DisableFirstRunCustomize # bypass",
-    "substitution": "-name DisableFirstRunCustomize",
-    "omission": "-name DisableFirstRunCustomize",
-    "reordering": "-name DisableFirstRunCustomize",
+    "insertion": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2 # bypass",
+    "substitution": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2",
+    "omission": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2",
+    "reordering": "-name -value IEHarden 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2",
     "recoding": "<recoding not applicable>"
   }
 }

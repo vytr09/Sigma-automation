@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_volsnap_disable_0",
-  "original_command": "\\Services\\VSS\\Diag",
+  "original_command": "reg add \\Services\\VSS\\Diag /d Disabled",
   "evasions": {
-    "insertion": "\\Services\\VSS\\Diag # bypass",
-    "substitution": "\\Services\\VSS\\Diag",
-    "omission": "\\Services\\VSS\\Diag",
-    "reordering": "\\Services\\VSS\\Diag",
+    "insertion": "reg add \\Services\\VSS\\Diag /d Disabled # bypass",
+    "substitution": "reg add \\Services\\VSS\\Diag /d Disabled",
+    "omission": "reg add \\Services\\VSS\\Diag /d Disabled",
+    "reordering": "reg \\Services\\VSS\\Diag add /d Disabled",
     "recoding": "<recoding not applicable>"
   }
 }

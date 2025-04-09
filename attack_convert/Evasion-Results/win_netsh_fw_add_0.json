@@ -1,11 +1,11 @@
 {
   "rule_name": "win_netsh_fw_add_0",
-  "original_command": "netsh",
+  "original_command": "netsh firewall add",
   "evasions": {
-    "insertion": "netsh # bypass",
-    "substitution": "netsh",
-    "omission": "netsh",
-    "reordering": "netsh",
+    "insertion": "netsh firewall add # bypass",
+    "substitution": "netsh firewall add",
+    "omission": "netsh firewall add",
+    "reordering": "netsh add firewall",
     "recoding": "<recoding not applicable>"
   }
 }

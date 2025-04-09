@@ -1,11 +1,11 @@
 {
   "rule_name": "win_new_service_creation_0",
-  "original_command": "sc.exe new-service",
+  "original_command": "sc.exe \\powershell.exe new-service",
   "evasions": {
-    "insertion": "sc.exe new-service # bypass",
-    "substitution": "sc.exe new-service",
-    "omission": "sc.exe new-service",
-    "reordering": "sc.exe new-service",
-    "recoding": "<recoding not applicable>"
+    "insertion": "sc.exe \\powershell.exe new-service # bypass",
+    "substitution": "sc.exe \\powershell.exe new-service",
+    "omission": "sc.exe \\powershell.exe new-service",
+    "reordering": "sc.exe new-service \\powershell.exe",
+    "recoding": "powershell.exe -EncodedCommand cwBjAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAG4AZQB3AC0AcwBlAHIAdgBpAGMAZQA="
   }
 }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_rar_flags_0",
-  "original_command": "-hp",
+  "original_command": "-hp -m",
   "evasions": {
-    "insertion": "-hp # bypass",
-    "substitution": "-hp",
-    "omission": "-hp",
-    "reordering": "-hp",
+    "insertion": "-hp -m # bypass",
+    "substitution": "-hp -m",
+    "omission": "-hp -m",
+    "reordering": "-hp -m",
     "recoding": "<recoding not applicable>"
   }
 }

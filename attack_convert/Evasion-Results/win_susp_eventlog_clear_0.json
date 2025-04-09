@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_eventlog_clear_0",
-  "original_command": "powershell.exe Remove-EventLog",
+  "original_command": "powershell.exe \\wmic.exe ClearEventLog",
   "evasions": {
-    "insertion": "powershell.exe Remove-EventLog # bypass",
-    "substitution": "powershell.exe Remove-EventLog",
-    "omission": "powershell.exe Remove-EventLog",
-    "reordering": "powershell.exe Remove-EventLog",
-    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUgBlAG0AbwB2AGUALQBFAHYAZQBuAHQATABvAGcA"
+    "insertion": "powershell.exe \\wmic.exe ClearEventLog # bypass",
+    "substitution": "powershell.exe \\wmic.exe ClearEventLog",
+    "omission": "powershell.exe \\wmic.exe ClearEventLog",
+    "reordering": "powershell.exe ClearEventLog \\wmic.exe",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXAB3AG0AaQBjAC4AZQB4AGUAIABDAGwAZQBhAHIARQB2AGUAbgB0AEwAbwBnAA=="
   }
 }

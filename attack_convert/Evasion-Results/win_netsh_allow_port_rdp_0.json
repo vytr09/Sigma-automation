@@ -1,11 +1,11 @@
 {
   "rule_name": "win_netsh_allow_port_rdp_0",
-  "original_command": "netsh",
+  "original_command": "netsh firewall add portopening tcp 3389 advfirewall firewall add rule action=allow protocol=TCP localport=3389",
   "evasions": {
-    "insertion": "netsh # bypass",
-    "substitution": "netsh",
-    "omission": "netsh",
-    "reordering": "netsh",
+    "insertion": "netsh firewall add portopening tcp 3389 advfirewall firewall add rule action=allow protocol=TCP localport=3389 # bypass",
+    "substitution": "netsh firewall add portopening tcp 3389 advfirewall firewall add rule action=allow protocol=TCP localport=3389",
+    "omission": "netsh firewall add portopening tcp 3389 advfirewall firewall add rule action=allow protocol=TCP localport=3389",
+    "reordering": "netsh add firewall portopening tcp 3389 advfirewall firewall add rule action=allow protocol=TCP localport=3389",
     "recoding": "<recoding not applicable>"
   }
 }
