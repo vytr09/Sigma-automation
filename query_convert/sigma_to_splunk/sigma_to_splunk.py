@@ -2,6 +2,14 @@ import os
 import yaml
 import re
 
+# # Thư mục chứa file .yml
+# input_dir = 'input_rules'
+# # Thư mục để lưu truy vấn Splunk sau khi convert
+# output_dir = 'output_queries'
+
+# # Tạo thư mục output nếu chưa có
+# os.makedirs(output_dir, exist_ok=True)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 events_dir = os.path.join(BASE_DIR, "data", "events", "windows", "process_creation")
@@ -58,16 +66,40 @@ def convert_filter_to_splunk(filter_str):
 
     # Thay AND thành | search
     filter_str = filter_str.replace("AND", "| search")
+    # print(f"[DEBUG] filter_str: {filter_str}")
 
-    # # Bước xử lý OR trong các chuỗi có dấu ngoặc: field=(val1 OR val2)
-    # def convert_or_block_to_in(match):
-    #     field = match.group(1)
-    #     or_values = match.group(2)
-    #     values = [v.strip().strip('"') for v in or_values.split("OR")]
-    #     quoted_values = ', '.join([f'"{v}"' for v in values])
-    #     return f'{field} IN ({quoted_values})'
+    # Bước xử lý OR trong các chuỗi có dấu ngoặc: field=(val1 OR val2)
+    def convert_or_block_to_in(match):
+        field = match.group(1)
+        or_values = match.group(2)
 
-    # filter_str = re.sub(r'(\b[\w\.]+)=\(([^()]+)\)', convert_or_block_to_in, filter_str)
+        values = [v.strip().strip('"') for v in or_values.split("OR")]
+
+        quoted_values = ', '.join([f'"{v}"' for v in values])
+        return f'{field} IN ({quoted_values})'
+
+    # Thử tìm OR với biểu thức field: (val1 OR val2)
+    print(f"[DEBUG] FILTER_STR:\n{filter_str}\n")
+
+    matches = re.findall(r'([\w\.]+):\s*\(\s*((?:.|\n)*?)\s*\)', filter_str, flags=re.DOTALL)
+    print(f"[DEBUG] Có {len(matches)} match(es) cho field:(val1 OR val2): {matches}")
+
+    filter_str = re.sub(r'([\w\.]+):\s*\(\s*((?:.|\n)*?)\s*\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
+
+    # # Dạng 1: field IN (val1 OR val2)
+    # in_matches = re.findall(r'(\b[\w\.]+)\s+IN\s+\((.*?)\)', filter_str, flags=re.DOTALL)
+    # print(f"[DEBUG] IN matches: {in_matches}")
+    # filter_str = re.sub(r'(\b[\w\.]+)\s+IN\s+\((.*?)\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
+
+    # # Dạng 2: field: (val1 OR val2)
+    # colon_matches = re.findall(r'(\b[\w\.]+):\s*\((.*?)\)', filter_str, flags=re.DOTALL)
+    # print(f"[DEBUG] Colon matches: {colon_matches}")
+    # filter_str = re.sub(r'(\b[\w\.]+):\s*\((.*?)\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
+
+    # # Dạng 3: field = (val1 OR val2)
+    # equal_matches = re.findall(r'(\b[\w\.]+)\s*=\s*\((.*?)\)', filter_str, flags=re.DOTALL)
+    # print(f"[DEBUG] Equal matches: {equal_matches}")
+    # filter_str = re.sub(r'(\b[\w\.]+)\s*=\s*\((.*?)\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
 
     def replace_field_value(match):
         field = match.group(1)
@@ -84,6 +116,30 @@ def convert_filter_to_splunk(filter_str):
     # Chuyển field: "value" → field="value"
     filter_str = re.sub(r'(\b[\w\.]+):\s*(?:"(.*?)"|\((.*?)\))', replace_field_value, filter_str)
 
+    def trim_outer_wildcard_spaces(s):
+        pattern = re.compile(r'(\bProcess_Command_Line\s*=\s*")([^"]+)(")')
+
+        def clean_value(match):
+            field, val, end = match.groups()
+
+            if '*' in val:
+                # Bỏ khoảng trắng sau dấu * đầu tiên nếu đứng đầu
+                if val.startswith('* '):
+                    val = '*' + val[2:]
+
+                # Bỏ khoảng trắng trước dấu * nếu đứng cuối
+                if val.endswith(' *'):
+                    val = val[:-2] + '*'
+
+                # Có thể kết hợp .strip() nếu cần
+                return f'{field}{val}{end}'
+
+            return match.group(0)
+
+        return pattern.sub(clean_value, s)
+
+    filter_str = trim_outer_wildcard_spaces(filter_str)
+
     # # Xử lý OR và loại bỏ dấu ngoặc ()
     # def expand_or_clauses(filter_str):
     #     or_pattern = re.compile(r'(\b[\w\.]+)=\((.*?)\)')
@@ -98,16 +154,6 @@ def convert_filter_to_splunk(filter_str):
     #     return or_pattern.sub(replace_or, filter_str)
 
     # filter_str = expand_or_clauses(filter_str)
-
-    # Bước xử lý OR trong các chuỗi có dấu ngoặc: field=(val1 OR val2)
-    def convert_or_block_to_in(match):
-        field = match.group(1)
-        or_values = match.group(2)
-        values = [v.strip().strip('"') for v in or_values.split("OR")]
-        quoted_values = ', '.join([f'"{v}"' for v in values])
-        return f'{field} IN ({quoted_values})'
-
-    filter_str = re.sub(r'(\b[\w\.]+)=\(([^()]+)\)', convert_or_block_to_in, filter_str)
 
     # Xử lý đặc biệt cho cụm như: netsh wlan s* p* k*=clear → thêm * sau mỗi từ chưa có * và không phải biểu thức gán
     def process_special_command_line(s):
