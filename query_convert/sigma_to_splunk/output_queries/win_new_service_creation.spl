@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search (New_Process_Name="*\\sc.exe" | search Process_Command_Line="*create*" | search Process_Command_Line="*binpath*") OR (New_Process_Name="*\\powershell.exe" | search Process_Command_Line="*new-service*")
+| table _time, New_Process_Name, Process_Command_Line

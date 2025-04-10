@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search New_Process_Name="*\\csc.exe" | search Process_Command_Line IN ("*\\AppData\\*", "*\\Windows\\Temp\\*") | search NOT process.parent.executable IN ("C:\\Program Files*", "*\\sdiagnhost.exe", "*\\w3wp.exe") | search NOT process.parent.command_line="*\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection*"
+| table _time, New_Process_Name, Process_Command_Line

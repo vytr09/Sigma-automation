@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search process.parent.executable="*\\powershell.exe" | search New_Process_Name="*\\powershell.exe" | search Process_Command_Line="*Get-Content*" | search Process_Command_Line="*-Stream*"
+| table _time, New_Process_Name, Process_Command_Line

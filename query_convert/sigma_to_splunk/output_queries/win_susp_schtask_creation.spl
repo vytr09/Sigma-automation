@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search New_Process_Name="*\\schtasks.exe" | search Process_Command_Line="*/create*" | search NOT user.name="NT AUTHORITY\\SYSTEM"
+| table _time, New_Process_Name, Process_Command_Line

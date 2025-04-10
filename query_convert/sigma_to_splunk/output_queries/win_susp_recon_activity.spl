@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search Process_Command_Line IN ("net group \"domain admins\" /domain", "net localgroup administrators", "net group \"enterprise admins\" /domain")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search process.parent.executable="*\\powershell.exe" | search Process_Command_Line IN ("*schtasks*/Create*/SC *ONLOGON*/TN *Updater*/TR *powershell*", "*schtasks*/Create*/SC *DAILY*/TN *Updater*/TR *powershell*", "*schtasks*/Create*/SC *ONIDLE*/TN *Updater*/TR *powershell*", "*schtasks*/Create*/SC *Updater*/TN *Updater*/TR *powershell*")
+| table _time, New_Process_Name, Process_Command_Line

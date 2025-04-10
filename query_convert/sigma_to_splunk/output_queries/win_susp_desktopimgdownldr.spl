@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search (Process_Command_Line="*/lockscreenurl:*" | search NOT (Process_Command_Line IN ("*.jpg*", "*.jpeg*", "*.png*"))) OR (Process_Command_Line="*reg* delete*" | search Process_Command_Line="*\\PersonalizationCSP*")
+| table _time, New_Process_Name, Process_Command_Line

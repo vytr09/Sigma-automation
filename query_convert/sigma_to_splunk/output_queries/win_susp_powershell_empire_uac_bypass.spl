@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search Process_Command_Line IN ("* -NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update").Update)*" OR "* -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update);*")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search ((Process_Command_Line="*lsass*" | search NOT (New_Process_Name="*\\werfault.exe")) OR (New_Process_Name="*\\procdump*" | search New_Process_Name="*.exe" | search Process_Command_Line="*lsass*")
+| table _time, New_Process_Name, Process_Command_Line

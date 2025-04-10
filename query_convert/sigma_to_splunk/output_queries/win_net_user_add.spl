@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search New_Process_Name IN ("*\\net.exe", "*\\net1.exe") | search Process_Command_Line="*user*" | search Process_Command_Line="*add*"
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search New_Process_Name="*\\wmic.exe" | search Process_Command_Line IN ("*/NODE:*process call create *", "* path AntiVirusProduct get *", "* path FirewallProduct get *", "* shadowcopy delete *")
+| table _time, New_Process_Name, Process_Command_Line

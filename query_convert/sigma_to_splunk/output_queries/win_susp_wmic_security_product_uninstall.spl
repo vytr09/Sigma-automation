@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search Process_Command_Line="*wmic*" | search Process_Command_Line="*product* where* name=*" | search Process_Command_Line="*call* uninstall*" | search Process_Command_Line="*/nointeractive*" | search Process_Command_Line IN ("*Antivirus*", "*Endpoint Security*", "*Endpoint Detection*", "*Crowdstrike Sensor*", "*Windows Defender*", "*VirusScan*", "*Threat Protection*", "*Endpoint Sensor*")
+| table _time, New_Process_Name, Process_Command_Line

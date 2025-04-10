@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search Process_Command_Line IN ("*-Property DW", "D -name DisableFirstRunCustomize -value 2 -Force*", "*-Property String -name Check_Associations -value*", "*-Property DW", "D -name IEHarden -value 0 -Force*")
+| table _time, New_Process_Name, Process_Command_Line

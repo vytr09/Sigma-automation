@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search (New_Process_Name="*\\fsutil.exe" OR winlog.event_data.OriginalFilename="fsutil.exe") | search Process_Command_Line IN ("*deletejournal*", "*createjournal*")
+| table _time, New_Process_Name, Process_Command_Line
