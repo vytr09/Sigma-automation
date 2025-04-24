@@ -42,7 +42,7 @@ def run_commandline(cmd: str):
             cmd = f"start /B {cmd} & timeout /t 5 & taskkill /im {tokens[0]} /f"
 
         print(f"[RUNNING] {cmd}")
-        subprocess.run(cmd, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        subprocess.Popen(cmd, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE)
 
     except Exception as e:
         print(f"[ERROR] Failed to run: {cmd} → {e}")
@@ -53,21 +53,36 @@ def run_splunk_query(query: str, since: str, expected_cmd: str) -> bool:
     earliest_str = since_dt.strftime("%Y-%m-%dT%H:%M:%S")
     latest_str = latest_dt.strftime("%Y-%m-%dT%H:%M:%S")
     constrained_query = f'{query} earliest="{earliest_str}" latest="{latest_str}"'
+    full_query = f'"{constrained_query}"'  # escape toàn bộ truy vấn
+
+    # def is_payload_in_output(payload: str, stdout: str) -> bool:
+    #     payload_parts = re.findall(r'[\w.=/-]+', payload.lower())
+    #     for line in stdout.splitlines():
+    #         line = line.lower()
+    #         if all(part in line for part in payload_parts):
+    #             return True
+    #     return False
 
     try:
         result = subprocess.run([
             "C:\\Program Files\\Splunk\\bin\\splunk", "search",
-            constrained_query, "-u", "vy", "-p", "22521709"
+            full_query, "-auth", "Tuyen:Tuyen1630@"
         ], capture_output=True, text=True)
 
+        print("[DEBUG SPLUNK OUTPUT]")
+        print(result.stdout)
+        print(result.stderr)
+
         # Normalize command for loose comparison
-        expected = expected_cmd.lower().replace('"', '').replace("'", '').strip()
+        expected_parts = re.findall(r'[\w.]+', expected_cmd.lower())  # ['cmdkey.exe', 'list']
+
         for line in result.stdout.splitlines():
-            if "Process Command Line" in line or "New Process Name" in line or "CommandLine" in line:
-                cleaned = line.lower().replace('"', '').replace("'", '').strip()
-                if expected in cleaned or cleaned in expected:
+            if "Command Line" in line or "Process_Command_Line" in line or "New_Process_Name" in line:
+                lowered = line.lower()
+                if all(part in lowered for part in expected_parts):
                     return True
         return False
+        # return is_payload_in_output(expected_cmd, result.stdout)
 
     except Exception as e:
         print(f"[ERROR] Splunk query failed → {e}")
