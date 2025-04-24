@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:16:07 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "original", "command": "fsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:16:28 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "insertion", "command": "fsutil.exe # inserted", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:16:46 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "substitution", "command": "fsutil.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:16:59 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "omission", "command": "fsutil", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:17:21 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "reordering", "command": "fsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:17:38 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

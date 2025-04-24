@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:33:49 UTC", "rule": "win_susp_powershell_enc_cmd_0", "phase": "original", "command": ".exe -ENCOD", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:34:06 UTC", "rule": "win_susp_powershell_enc_cmd_0", "phase": "insertion", "command": ".exe\n-ENCOD", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:34:20 UTC", "rule": "win_susp_powershell_enc_cmd_0", "phase": "substitution", "command": ".exe -ENCOD #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:34:32 UTC", "rule": "win_susp_powershell_enc_cmd_0", "phase": "omission", "command": ".exe -ENCOD # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:34:53 UTC", "rule": "win_susp_powershell_enc_cmd_0", "phase": "reordering", "command": ".exe -ENCOD", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:35:10 UTC", "rule": "win_susp_powershell_enc_cmd_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

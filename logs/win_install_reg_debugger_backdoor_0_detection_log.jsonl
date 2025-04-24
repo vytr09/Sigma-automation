@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:56:20 UTC", "rule": "win_install_reg_debugger_backdoor_0", "phase": "original", "command": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:56:26 UTC", "rule": "win_install_reg_debugger_backdoor_0", "phase": "insertion", "command": "\\CurrentVersion\\Image #inserted File Execution Options\\displayswitch.exe", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:56:33 UTC", "rule": "win_install_reg_debugger_backdoor_0", "phase": "substitution", "command": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:56:41 UTC", "rule": "win_install_reg_debugger_backdoor_0", "phase": "omission", "command": "\\CurrentVersion\\Image File Execution Options\\displayswitch", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:56:48 UTC", "rule": "win_install_reg_debugger_backdoor_0", "phase": "reordering", "command": "\\CurrentVersion\\Image Execution Options\\displayswitch.exe File", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:56:55 UTC", "rule": "win_install_reg_debugger_backdoor_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

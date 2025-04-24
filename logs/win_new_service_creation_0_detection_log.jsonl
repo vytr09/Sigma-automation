@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:10:47 UTC", "rule": "win_new_service_creation_0", "phase": "original", "command": "powershell.exe new-service", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:10:55 UTC", "rule": "win_new_service_creation_0", "phase": "insertion", "command": "powershell.exe #inserted new-service", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:11:03 UTC", "rule": "win_new_service_creation_0", "phase": "substitution", "command": "powershell.exe new-service #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:11:10 UTC", "rule": "win_new_service_creation_0", "phase": "omission", "command": "powershell new-service", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:11:17 UTC", "rule": "win_new_service_creation_0", "phase": "reordering", "command": "powershell.exe new-service", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:11:31 UTC", "rule": "win_new_service_creation_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAbgBlAHcALQBzAGUAcgB2AGkAYwBlAA==", "status": "BYPASSED"}

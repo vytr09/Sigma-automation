@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:24:49 UTC", "rule": "win_susp_net_execution_0", "phase": "original", "command": "net.exe localgroup", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:25:28 UTC", "rule": "win_susp_net_execution_0", "phase": "insertion", "command": "net.exe\nlocalgroup", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:25:56 UTC", "rule": "win_susp_net_execution_0", "phase": "substitution", "command": "net.exe localgroup #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:26:10 UTC", "rule": "win_susp_net_execution_0", "phase": "omission", "command": "net localgroup", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:26:35 UTC", "rule": "win_susp_net_execution_0", "phase": "reordering", "command": "net.exe localgroup", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:26:55 UTC", "rule": "win_susp_net_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

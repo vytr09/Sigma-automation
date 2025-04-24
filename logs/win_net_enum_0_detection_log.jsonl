@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:09:10 UTC", "rule": "win_net_enum_0", "phase": "original", "command": "net.exe view", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:09:20 UTC", "rule": "win_net_enum_0", "phase": "insertion", "command": "net.exe \"view\"", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:09:27 UTC", "rule": "win_net_enum_0", "phase": "substitution", "command": "net.exe view #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:09:33 UTC", "rule": "win_net_enum_0", "phase": "omission", "command": "net view", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:09:40 UTC", "rule": "win_net_enum_0", "phase": "reordering", "command": "net.exe view", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:09:47 UTC", "rule": "win_net_enum_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

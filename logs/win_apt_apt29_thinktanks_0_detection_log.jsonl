@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:39:17 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:39:26 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni #inserted -ep bypass $", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:39:37 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:39:44 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:39:50 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:40:02 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

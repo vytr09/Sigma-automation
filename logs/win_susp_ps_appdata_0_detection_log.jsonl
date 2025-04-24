@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:42:14 UTC", "rule": "win_susp_ps_appdata_0", "phase": "original", "command": "/c powershell \\AppData\\Roaming\\\\", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:42:25 UTC", "rule": "win_susp_ps_appdata_0", "phase": "insertion", "command": "/c ^ powershell ^ \\AppData\\Roaming\\\\", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:42:48 UTC", "rule": "win_susp_ps_appdata_0", "phase": "substitution", "command": "/c powershell \\AppData\\Roaming\\\\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:43:08 UTC", "rule": "win_susp_ps_appdata_0", "phase": "omission", "command": "/c powershell \\", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:43:23 UTC", "rule": "win_susp_ps_appdata_0", "phase": "reordering", "command": "/c \\AppData\\Roaming\\\\ powershell", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:43:39 UTC", "rule": "win_susp_ps_appdata_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand LwBjACAAcABvAHcAZQByAHMAaABlAGwAbAAgAFwAQQBwAHAARABhAHQAYQBcAFIAbwBhAG0AaQBuAGcAXABcAA==", "status": "BYPASSED"}

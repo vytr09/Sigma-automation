@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 10:42:32 UTC", "rule": "win_susp_crackmapexec_execution_0", "phase": "original", "command": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\"", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:42:52 UTC", "rule": "win_susp_crackmapexec_execution_0", "phase": "insertion", "command": "powershell.exe ^ -exec ^ bypass ^ -noni ^ -nop ^ -w ^ 1 ^ -C ^ \\\"", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:43:04 UTC", "rule": "win_susp_crackmapexec_execution_0", "phase": "substitution", "command": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\" #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:43:16 UTC", "rule": "win_susp_crackmapexec_execution_0", "phase": "omission", "command": "powershell -exec bypass -noni -nop -w 1 -C \\\"", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:43:24 UTC", "rule": "win_susp_crackmapexec_execution_0", "phase": "reordering", "command": "powershell.exe 1 -nop -w bypass -C -exec \\\" -noni", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:43:33 UTC", "rule": "win_susp_crackmapexec_execution_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBlAHgAZQBjACAAYgB5AHAAYQBzAHMAIAAtAG4AbwBuAGkAIAAtAG4AbwBwACAALQB3ACAAMQAgAC0AQwAgAFwAIgA=", "status": "BYPASSED"}

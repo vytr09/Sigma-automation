@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:47:17 UTC", "rule": "win_apt_unc2452_ps_0", "phase": "original", "command": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:47:23 UTC", "rule": "win_apt_unc2452_ps_0", "phase": "insertion", "command": "Invoke-WMIMethod #inserted win32_process -name create -argumentlist rundll32 c:\\windows", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:47:28 UTC", "rule": "win_apt_unc2452_ps_0", "phase": "substitution", "command": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:47:33 UTC", "rule": "win_apt_unc2452_ps_0", "phase": "omission", "command": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:47:39 UTC", "rule": "win_apt_unc2452_ps_0", "phase": "reordering", "command": "Invoke-WMIMethod win32_process rundll32 c:\\windows -argumentlist create -name", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:47:44 UTC", "rule": "win_apt_unc2452_ps_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

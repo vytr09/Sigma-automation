@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:26:40 UTC", "rule": "win_susp_bcdedit_0", "phase": "original", "command": "bcdedit.exe deletevalue", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:26:46 UTC", "rule": "win_susp_bcdedit_0", "phase": "insertion", "command": "bcdedit.exe #inserted deletevalue", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:26:53 UTC", "rule": "win_susp_bcdedit_0", "phase": "substitution", "command": "bcdedit.exe deletevalue #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:27:19 UTC", "rule": "win_susp_bcdedit_0", "phase": "omission", "command": "bcdedit deletevalue", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:27:26 UTC", "rule": "win_susp_bcdedit_0", "phase": "reordering", "command": "bcdedit.exe deletevalue", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:27:34 UTC", "rule": "win_susp_bcdedit_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

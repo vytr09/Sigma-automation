@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:44:38 UTC", "rule": "win_apt_ke3chang_regadd_0", "phase": "original", "command": "-Property DWORD -name DisableFirstRunCustomize -value 2 -Force", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:44:44 UTC", "rule": "win_apt_ke3chang_regadd_0", "phase": "insertion", "command": "-Property \"DWORD -name DisableFirstRunCustomize -value 2 -Force\"", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:44:52 UTC", "rule": "win_apt_ke3chang_regadd_0", "phase": "substitution", "command": "-Property DWORD -name DisableFirstRunCustomize -value 2 -Force #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:45:02 UTC", "rule": "win_apt_ke3chang_regadd_0", "phase": "omission", "command": "-Property DWORD -name DisableFirstRunCustomize -value 2 -Force # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:45:23 UTC", "rule": "win_apt_ke3chang_regadd_0", "phase": "reordering", "command": "-Property -name DisableFirstRunCustomize 2 DWORD -Force -value", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:45:30 UTC", "rule": "win_apt_ke3chang_regadd_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

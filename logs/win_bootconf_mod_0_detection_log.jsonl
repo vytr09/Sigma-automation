@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:48:36 UTC", "rule": "win_bootconf_mod_0", "phase": "original", "command": "bcdedit.exe set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:48:44 UTC", "rule": "win_bootconf_mod_0", "phase": "insertion", "command": "#hijack bcdedit.exe set bootstatuspolicy ignoreallfailures", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:48:51 UTC", "rule": "win_bootconf_mod_0", "phase": "substitution", "command": "bcdedit.exe set bspolicy ignore-all", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:48:57 UTC", "rule": "win_bootconf_mod_0", "phase": "omission", "command": "bcdedit set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:49:14 UTC", "rule": "win_bootconf_mod_0", "phase": "reordering", "command": "bcdedit.exe set ignoreallfailures bootstatuspolicy", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:49:22 UTC", "rule": "win_bootconf_mod_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

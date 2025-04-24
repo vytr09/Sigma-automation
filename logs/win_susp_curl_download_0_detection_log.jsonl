@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 10:46:21 UTC", "rule": "win_susp_curl_download_0", "phase": "original", "command": "curl.exe -O", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:46:33 UTC", "rule": "win_susp_curl_download_0", "phase": "insertion", "command": "curl.exe\n-O", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:46:43 UTC", "rule": "win_susp_curl_download_0", "phase": "substitution", "command": "curl.exe --remote-name", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:50:44 UTC", "rule": "win_susp_curl_download_0", "phase": "omission", "command": "curl -O", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:50:57 UTC", "rule": "win_susp_curl_download_0", "phase": "reordering", "command": "curl.exe -O", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:51:08 UTC", "rule": "win_susp_curl_download_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

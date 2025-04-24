@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 12:00:02 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "original", "command": "schtasks.exe /change /TN /RU /RP", "status": "DETECTED"}
+{"timestamp": "2025-04-23 12:00:10 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "insertion", "command": "#hijack schtasks.exe /change /TN /RU /RP", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 12:00:17 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "substitution", "command": "schtasks.exe /change /TN /RU /RP #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 12:00:24 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "omission", "command": "schtasks /change /TN /RU /RP", "status": "DETECTED"}
+{"timestamp": "2025-04-23 12:00:31 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "reordering", "command": "schtasks.exe /RP /RU /TN /change", "status": "DETECTED"}
+{"timestamp": "2025-04-23 12:00:46 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

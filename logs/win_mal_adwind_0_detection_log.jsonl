@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:01:48 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "\\AppData\\Roaming\\Oracle \\java .exe", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:01:55 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "\\AppData\\Roaming\\Oracle ^ \\java ^ .exe", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:02:02 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "\\AppData\\Roaming\\Oracle \\java .exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:02:09 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "Oracle \\java .exe", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:02:19 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "\\AppData\\Roaming\\Oracle .exe \\java", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:02:25 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

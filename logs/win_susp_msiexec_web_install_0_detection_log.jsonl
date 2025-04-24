@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:20:35 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "original", "command": "msiexec ://", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:20:56 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "insertion", "command": "msiexec ^ ://", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:21:08 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "substitution", "command": "msiexec :// #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:21:38 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "omission", "command": "msiexec :// # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:21:56 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "reordering", "command": "msiexec ://", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:22:19 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

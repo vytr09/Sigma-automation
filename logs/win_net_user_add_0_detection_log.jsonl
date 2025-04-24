@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:09:54 UTC", "rule": "win_net_user_add_0", "phase": "original", "command": "net.exe user add", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:10:10 UTC", "rule": "win_net_user_add_0", "phase": "insertion", "command": "net.exe #inserted user add", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:10:17 UTC", "rule": "win_net_user_add_0", "phase": "substitution", "command": "net.exe user add #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:10:26 UTC", "rule": "win_net_user_add_0", "phase": "omission", "command": "net user add", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:10:33 UTC", "rule": "win_net_user_add_0", "phase": "reordering", "command": "net.exe add user", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:10:40 UTC", "rule": "win_net_user_add_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

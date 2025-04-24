@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:11:38 UTC", "rule": "win_possible_applocker_bypass_0", "phase": "original", "command": "\\installutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:11:45 UTC", "rule": "win_possible_applocker_bypass_0", "phase": "insertion", "command": "\\installutil.exe # inserted", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:11:59 UTC", "rule": "win_possible_applocker_bypass_0", "phase": "substitution", "command": "\\installutil.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:12:05 UTC", "rule": "win_possible_applocker_bypass_0", "phase": "omission", "command": "\\installutil", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:12:12 UTC", "rule": "win_possible_applocker_bypass_0", "phase": "reordering", "command": "\\installutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-04-23 09:12:26 UTC", "rule": "win_possible_applocker_bypass_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

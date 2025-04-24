@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:03:23 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:03:29 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no\tcommand\tfound>", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:03:36 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:03:43 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:03:50 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no found> command", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:03:56 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

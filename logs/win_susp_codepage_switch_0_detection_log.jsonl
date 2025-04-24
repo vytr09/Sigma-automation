@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 10:39:15 UTC", "rule": "win_susp_codepage_switch_0", "phase": "original", "command": "chcp 1258", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:39:34 UTC", "rule": "win_susp_codepage_switch_0", "phase": "insertion", "command": "#hijack chcp 1258", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:39:42 UTC", "rule": "win_susp_codepage_switch_0", "phase": "substitution", "command": "chcp 1258 #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:40:02 UTC", "rule": "win_susp_codepage_switch_0", "phase": "omission", "command": "chcp 1258 # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:40:14 UTC", "rule": "win_susp_codepage_switch_0", "phase": "reordering", "command": "chcp 1258", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:40:25 UTC", "rule": "win_susp_codepage_switch_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

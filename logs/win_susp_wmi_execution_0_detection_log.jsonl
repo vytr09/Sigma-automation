@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:56:56 UTC", "rule": "win_susp_wmi_execution_0", "phase": "original", "command": "wmic.exe /NODE: process call create", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:57:05 UTC", "rule": "win_susp_wmi_execution_0", "phase": "insertion", "command": "wmic.exe #inserted /NODE: process call create", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:57:14 UTC", "rule": "win_susp_wmi_execution_0", "phase": "substitution", "command": "wmic.exe /NODE: process call create #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:57:21 UTC", "rule": "win_susp_wmi_execution_0", "phase": "omission", "command": "wmic /NODE: process call create", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:57:28 UTC", "rule": "win_susp_wmi_execution_0", "phase": "reordering", "command": "wmic.exe process create /NODE: call", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:57:35 UTC", "rule": "win_susp_wmi_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:49:29 UTC", "rule": "win_change_default_file_association_0", "phase": "original", "command": "cmd /c assoc", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:49:36 UTC", "rule": "win_change_default_file_association_0", "phase": "insertion", "command": "cmd\n/c\nassoc", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:49:43 UTC", "rule": "win_change_default_file_association_0", "phase": "substitution", "command": "cmd -c assoc", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:49:49 UTC", "rule": "win_change_default_file_association_0", "phase": "omission", "command": "cmd assoc", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:49:56 UTC", "rule": "win_change_default_file_association_0", "phase": "reordering", "command": "cmd assoc /c", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:50:03 UTC", "rule": "win_change_default_file_association_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

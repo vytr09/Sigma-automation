@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:49:11 UTC", "rule": "win_susp_service_path_modification_0", "phase": "original", "command": "sc.exe binpath powershell", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:49:18 UTC", "rule": "win_susp_service_path_modification_0", "phase": "insertion", "command": "#hijack sc.exe binpath powershell", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:49:25 UTC", "rule": "win_susp_service_path_modification_0", "phase": "substitution", "command": "sc.exe binpath powershell #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:49:32 UTC", "rule": "win_susp_service_path_modification_0", "phase": "omission", "command": "sc binpath powershell", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:49:40 UTC", "rule": "win_susp_service_path_modification_0", "phase": "reordering", "command": "sc.exe powershell binpath", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:49:49 UTC", "rule": "win_susp_service_path_modification_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cwBjAC4AZQB4AGUAIABiAGkAbgBwAGEAdABoACAAcABvAHcAZQByAHMAaABlAGwAbAA=", "status": "BYPASSED"}

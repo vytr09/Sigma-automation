@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:50:54 UTC", "rule": "win_commandline_path_traversal_0", "phase": "original", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:51:04 UTC", "rule": "win_commandline_path_traversal_0", "phase": "insertion", "command": "/../../ # inserted", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:51:12 UTC", "rule": "win_commandline_path_traversal_0", "phase": "substitution", "command": "/../../ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:51:21 UTC", "rule": "win_commandline_path_traversal_0", "phase": "omission", "command": "/../../ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:51:28 UTC", "rule": "win_commandline_path_traversal_0", "phase": "reordering", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:51:34 UTC", "rule": "win_commandline_path_traversal_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

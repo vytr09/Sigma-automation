@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:13:55 UTC", "rule": "win_susp_firewall_disable_0", "phase": "original", "command": "netsh firewall set opmode mode=disable", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:14:44 UTC", "rule": "win_susp_firewall_disable_0", "phase": "insertion", "command": "netsh firewall #injected set opmode mode=disable", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:15:06 UTC", "rule": "win_susp_firewall_disable_0", "phase": "substitution", "command": "netsh fw set opmode mode=disable", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:15:24 UTC", "rule": "win_susp_firewall_disable_0", "phase": "omission", "command": "netsh firewall set opmode mode=disable # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:15:39 UTC", "rule": "win_susp_firewall_disable_0", "phase": "reordering", "command": "netsh firewall set mode=disable opmode", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:15:49 UTC", "rule": "win_susp_firewall_disable_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

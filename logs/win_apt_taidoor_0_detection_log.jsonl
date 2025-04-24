@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:46:28 UTC", "rule": "win_apt_taidoor_0", "phase": "original", "command": "MyStart rundll32.exe", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:46:35 UTC", "rule": "win_apt_taidoor_0", "phase": "insertion", "command": "MyStart #inserted rundll32.exe", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:46:42 UTC", "rule": "win_apt_taidoor_0", "phase": "substitution", "command": "MyStart rundll32.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:46:48 UTC", "rule": "win_apt_taidoor_0", "phase": "omission", "command": "MyStart rundll32", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:47:05 UTC", "rule": "win_apt_taidoor_0", "phase": "reordering", "command": "MyStart rundll32.exe", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:47:11 UTC", "rule": "win_apt_taidoor_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

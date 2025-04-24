@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:21:08 UTC", "rule": "win_query_registry_0", "phase": "original", "command": "reg.exe currentVersion\\shellServiceObjectDelayLoad", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:21:16 UTC", "rule": "win_query_registry_0", "phase": "insertion", "command": "reg.exe ^ currentVersion\\shellServiceObjectDelayLoad", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:21:23 UTC", "rule": "win_query_registry_0", "phase": "substitution", "command": "reg.exe currentVersion\\shellServiceObjectDelayLoad #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:21:34 UTC", "rule": "win_query_registry_0", "phase": "omission", "command": "reg currentVersion\\shellServiceObjectDelayLoad", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:21:41 UTC", "rule": "win_query_registry_0", "phase": "reordering", "command": "reg.exe currentVersion\\shellServiceObjectDelayLoad", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:21:47 UTC", "rule": "win_query_registry_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

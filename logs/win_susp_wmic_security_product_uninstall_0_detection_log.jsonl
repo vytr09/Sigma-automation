@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:55:59 UTC", "rule": "win_susp_wmic_security_product_uninstall_0", "phase": "original", "command": "wmic product where name= call uninstall /nointeractive", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:56:06 UTC", "rule": "win_susp_wmic_security_product_uninstall_0", "phase": "insertion", "command": "#hijack wmic product where name= call uninstall /nointeractive", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:56:14 UTC", "rule": "win_susp_wmic_security_product_uninstall_0", "phase": "substitution", "command": "wmic product where name= call uninstall /nointeractive #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:56:23 UTC", "rule": "win_susp_wmic_security_product_uninstall_0", "phase": "omission", "command": "wmic product where name= call uninstall /nointeractive # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:56:30 UTC", "rule": "win_susp_wmic_security_product_uninstall_0", "phase": "reordering", "command": "wmic /nointeractive name= where call product uninstall", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:56:37 UTC", "rule": "win_susp_wmic_security_product_uninstall_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

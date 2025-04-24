@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:15:14 UTC", "rule": "win_powershell_download_0", "phase": "original", "command": "powershell.exe new-object system.net.webclient", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:15:20 UTC", "rule": "win_powershell_download_0", "phase": "insertion", "command": "powershell.exe \"new-object system.net.webclient\"", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:15:26 UTC", "rule": "win_powershell_download_0", "phase": "substitution", "command": "powershell.exe new-object system.net.webclient #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:15:36 UTC", "rule": "win_powershell_download_0", "phase": "omission", "command": "powershell new-object system.net.webclient", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:15:45 UTC", "rule": "win_powershell_download_0", "phase": "reordering", "command": "powershell.exe system.net.webclient new-object", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:15:53 UTC", "rule": "win_powershell_download_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAbgBlAHcALQBvAGIAagBlAGMAdAAgAHMAeQBzAHQAZQBtAC4AbgBlAHQALgB3AGUAYgBjAGwAaQBlAG4AdAA=", "status": "BYPASSED"}

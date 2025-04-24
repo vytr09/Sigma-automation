@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 08:47:52 UTC", "rule": "win_apt_zxshell_0", "phase": "original", "command": "rundll32.exe ,RemoteDiskXXXXX", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:47:58 UTC", "rule": "win_apt_zxshell_0", "phase": "insertion", "command": "rundll32.exe \",RemoteDiskXXXXX\"", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:48:05 UTC", "rule": "win_apt_zxshell_0", "phase": "substitution", "command": "rundll32.exe ,RemoteDiskXXXXX #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 08:48:16 UTC", "rule": "win_apt_zxshell_0", "phase": "omission", "command": "rundll32 ,RemoteDiskXXXXX", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:48:23 UTC", "rule": "win_apt_zxshell_0", "phase": "reordering", "command": "rundll32.exe ,RemoteDiskXXXXX", "status": "DETECTED"}
+{"timestamp": "2025-04-23 08:48:30 UTC", "rule": "win_apt_zxshell_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

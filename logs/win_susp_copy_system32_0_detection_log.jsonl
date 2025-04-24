@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 10:41:21 UTC", "rule": "win_susp_copy_system32_0", "phase": "original", "command": "/c copy \\System32\\\\", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:41:29 UTC", "rule": "win_susp_copy_system32_0", "phase": "insertion", "command": "/c \"copy \\System32\\\\\"", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:41:45 UTC", "rule": "win_susp_copy_system32_0", "phase": "substitution", "command": "/c copy \\System32\\\\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:41:57 UTC", "rule": "win_susp_copy_system32_0", "phase": "omission", "command": "/c copy \\System32\\\\ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:42:12 UTC", "rule": "win_susp_copy_system32_0", "phase": "reordering", "command": "/c \\System32\\\\ copy", "status": "DETECTED"}
+{"timestamp": "2025-04-23 10:42:21 UTC", "rule": "win_susp_copy_system32_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

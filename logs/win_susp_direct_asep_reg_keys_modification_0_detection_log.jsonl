@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 10:57:33 UTC", "rule": "win_susp_direct_asep_reg_keys_modification_0", "phase": "original", "command": "reg.exe add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:57:52 UTC", "rule": "win_susp_direct_asep_reg_keys_modification_0", "phase": "insertion", "command": "reg.exe #inserted add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:58:06 UTC", "rule": "win_susp_direct_asep_reg_keys_modification_0", "phase": "substitution", "command": "reg.exe add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:58:31 UTC", "rule": "win_susp_direct_asep_reg_keys_modification_0", "phase": "omission", "command": "reg add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:58:51 UTC", "rule": "win_susp_direct_asep_reg_keys_modification_0", "phase": "reordering", "command": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce add", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 10:59:10 UTC", "rule": "win_susp_direct_asep_reg_keys_modification_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

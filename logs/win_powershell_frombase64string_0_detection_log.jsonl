@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 09:16:05 UTC", "rule": "win_powershell_frombase64string_0", "phase": "original", "command": "::FromBase64String(", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:16:24 UTC", "rule": "win_powershell_frombase64string_0", "phase": "insertion", "command": "::FromBase64String( # inserted", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:16:36 UTC", "rule": "win_powershell_frombase64string_0", "phase": "substitution", "command": "::FromBase64String( #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:16:44 UTC", "rule": "win_powershell_frombase64string_0", "phase": "omission", "command": "::FromBase64String( # omission", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:16:53 UTC", "rule": "win_powershell_frombase64string_0", "phase": "reordering", "command": "::FromBase64String(", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 09:17:03 UTC", "rule": "win_powershell_frombase64string_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-04-23 11:22:40 UTC", "rule": "win_susp_netsh_dll_persistence_0", "phase": "original", "command": "netsh.exe add helper", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:22:56 UTC", "rule": "win_susp_netsh_dll_persistence_0", "phase": "insertion", "command": "netsh.exe \"add helper\"", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:23:12 UTC", "rule": "win_susp_netsh_dll_persistence_0", "phase": "substitution", "command": "netsh.exe add helper #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-04-23 11:23:47 UTC", "rule": "win_susp_netsh_dll_persistence_0", "phase": "omission", "command": "netsh add helper", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:24:07 UTC", "rule": "win_susp_netsh_dll_persistence_0", "phase": "reordering", "command": "netsh.exe helper add", "status": "DETECTED"}
+{"timestamp": "2025-04-23 11:24:20 UTC", "rule": "win_susp_netsh_dll_persistence_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
