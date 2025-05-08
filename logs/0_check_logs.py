@@ -3,6 +3,8 @@ from collections import defaultdict
 
 # File chứa log
 log_file_path = "global_detection_log.txt"
+# File xuất kết quả
+output_file_path = "qualified_rules_output.txt"
 
 # Regex để tách thông tin từ dòng log
 pattern = re.compile(
@@ -54,9 +56,12 @@ for rule, evasion_data in logs_by_rule.items():
     if bypassed_found:
         qualified_rules.append(rule)
 
-# In kết quả
-print("Các rule thỏa điều kiện:")
-for rule in qualified_rules:
-    print("-", rule)
+# In kết quả ra màn hình và ghi vào file
+with open(output_file_path, "w", encoding="utf-8") as out_file:
+    print("Các rule thỏa điều kiện:")
+    for rule in qualified_rules:
+        rule_clean = rule.removesuffix('_0')  # Loại bỏ hậu tố _0
+        out_file.write(f"{rule_clean}\n")
+        print("-", rule_clean)
 
-print("\nTổng số rule thỏa điều kiện:", len(qualified_rules))
+    print("\nTổng số rule thỏa điều kiện:", len(qualified_rules))

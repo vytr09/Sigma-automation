@@ -11,7 +11,8 @@ from datetime import datetime, timedelta
 
 # ========== Config ==========
 EVASION_RESULTS_DIR = "attack_convert/Evasion-Results"
-QUERY_DIR = "query_convert/sigma_to_splunk/output_queries"
+# QUERY_DIR = "query_convert/sigma_to_splunk/output_queries"
+QUERY_DIR = "improved_queries"
 LOG_DIR = "logs"
 GLOBAL_LOG = os.path.join(LOG_DIR, "global_detection_log.txt")
 
