@@ -1,6 +1,26 @@
 import re
 from collections import defaultdict
 
+def is_valid_bypass(phase, command):
+    """Check if a bypass is valid based on the command content."""
+    # If command contains any of these markers, it's not a real bypass
+    invalid_markers = [
+        "#",  # Comment markers
+        "#insertion",
+        "#substitution",
+        "# omission",
+        "<recoding not applicable>",
+        "<substitution not applicable>",
+        "<omission not applicable>"
+    ]
+    
+    # Check if command contains any invalid markers
+    for marker in invalid_markers:
+        if marker in command:
+            return False
+    
+    return True
+
 # File chứa log
 log_file_path = "global_detection_log.txt"
 # File xuất kết quả
@@ -39,19 +59,10 @@ for rule, evasion_data in logs_by_rule.items():
         if phase == "original" or info["status"] != "BYPASSED":
             continue
 
-        command = info["command"]
-
-        # Điều kiện loại bỏ BYPASSED không hợp lệ
-        if phase == "recoding" and command == "<recoding not applicable>":
-            continue
-        if phase == "substitution" and "#substitution" in command:
-            continue
-        if phase == "omission" and "# omission" in command:
-            continue
-
-        # Nếu hợp lệ
-        bypassed_found = True
-        break
+        # Check if this is a valid bypass
+        if is_valid_bypass(phase, info["command"]):
+            bypassed_found = True
+            break
 
     if bypassed_found:
         qualified_rules.append(rule)
