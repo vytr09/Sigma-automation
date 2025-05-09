@@ -15,11 +15,17 @@ def evasive_substitution(command: str) -> str:
         return None
 
     original = command
+    substitution_found = False
+    
     for cmd_name, subs in substitution_map.items():
         if cmd_name.lower() in command.lower():
             for orig_flag, replacement in subs.items():
                 if orig_flag in command:
                     command = command.replace(orig_flag, replacement)
+                    substitution_found = True
+                    break  # Use first valid substitution found
+            if substitution_found:
+                break  # Stop after first substitution
 
-    # If nothing changed → still return marker for substitution attempted
-    return command if command != original else command + " #substitution"
+    # Only mark with #substitution if no valid substitution was found
+    return command if substitution_found else command + " #substitution"
