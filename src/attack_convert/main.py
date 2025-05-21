@@ -14,8 +14,8 @@ output_dir = PROJECT_ROOT / "src" / "attack_convert" / "Evasion-Results"
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # Import after setting up paths
-from attack_convert.utils.parser import extract_first_command_line
-from attack_convert.utils.evasions_core import generate_all_evasions
+from src.attack_convert.utils.parser import extract_first_command_line
+from src.attack_convert.utils.evasions_core import generate_all_evasions
 
 # Load evasion rule list
 with open(evasion_list_file, "r", encoding="utf-8") as f:

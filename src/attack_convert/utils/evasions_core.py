@@ -1,8 +1,8 @@
-from attack_convert.utils.evasions.insertion import evasive_insertion
-from attack_convert.utils.evasions.substitution import evasive_substitution
-from attack_convert.utils.evasions.omission import evasive_omission
-from attack_convert.utils.evasions.reordering import evasive_reordering
-from attack_convert.utils.evasions.recoding import evasive_recoding
+from src.attack_convert.utils.evasions.insertion import evasive_insertion
+from src.attack_convert.utils.evasions.substitution import evasive_substitution
+from src.attack_convert.utils.evasions.omission import evasive_omission
+from src.attack_convert.utils.evasions.reordering import evasive_reordering
+from src.attack_convert.utils.evasions.recoding import evasive_recoding
 
 def generate_all_evasions(original_command):
     return {

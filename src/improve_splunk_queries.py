@@ -3,6 +3,8 @@ import os
 from pathlib import Path
 import logging
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -14,12 +16,12 @@ logging.basicConfig(
 
 def read_qualified_rules():
     """Read the list of qualified rules that were bypassed."""
-    with open("logs/qualified_rules_output.txt", "r") as f:
+    with open(os.path.join(BASE_DIR, "output", "logs", "qualified_rules_output.txt"), "r") as f:
         return [line.strip() for line in f if line.strip()]
 
 def read_detection_log(rule_name):
     """Read the detection log for a specific rule."""
-    log_path = f"logs/{rule_name}_0_detection_log.jsonl"
+    log_path = os.path.join(BASE_DIR, "output", "logs", f"{rule_name}_0_detection_log.jsonl")
     if not os.path.exists(log_path):
         return None
     
@@ -30,7 +32,7 @@ def find_splunk_query(rule_name):
     """Find the corresponding Splunk query for a rule."""
     # Remove _0 suffix if present
     base_name = rule_name.removesuffix('_0')
-    query_path = f"query_convert/sigma_to_splunk/output_queries/{base_name}.spl"
+    query_path = os.path.join(BASE_DIR, "src", "query_convert", "sigma_to_splunk", "output_queries", f"{base_name}.spl")
     
     if not os.path.exists(query_path):
         return None

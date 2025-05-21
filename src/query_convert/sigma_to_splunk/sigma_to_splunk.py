@@ -10,7 +10,8 @@ import re
 # # Tạo thư mục output nếu chưa có
 # os.makedirs(output_dir, exist_ok=True)
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Get the project root directory (go up one more level from src)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 events_dir = os.path.join(BASE_DIR, "data", "events", "windows", "process_creation")
 rules_dir = os.path.join(BASE_DIR, "data", "rules", "windows", "process_creation")
