@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_service_path_modification_0",
+  "original_command": "sc.exe binpath powershell",
+  "evasions": {
+    "insertion": "sc.exe\nbinpath\npowershell",
+    "substitution": "sc.exe binpath powershell",
+    "omission": "sc binpath powershell",
+    "reordering": "sc.exe powershell binpath",
+    "recoding": "powershell.exe -EncodedCommand cwBjAC4AZQB4AGUAIABiAGkAbgBwAGEAdABoACAAcABvAHcAZQByAHMAaABlAGwAbAA="
+  }
+}

@@ -1,0 +1,2 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search ((New_Process_Name="*\\powershell.exe" OR "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUgBlAG0AbwB2AGUALQBFAHYAZQBuAHQATABvAGcA"| search Process_Command_Line IN ("*Clear-EventLog*", "*Remove-EventLog*", "*Limit-EventLog*")) OR (New_Process_Name="*\\wmic.exe"| search Process_Command_Line="*ClearEventLog*")) OR (New_Process_Name="*\\wevtutil.exe"| search Process_Command_Line IN ("*clear-log*", "* cl *", "*set-log*", "* sl *"))  | table _time, New_Process_Name, Process_Command_Line

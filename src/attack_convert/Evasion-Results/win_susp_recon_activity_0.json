@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_recon_activity_0",
+  "original_command": "net group \\\"enterprise admins\\\" /domain",
+  "evasions": {
+    "insertion": "net group && \\\"enterprise admins\\\" /domain",
+    "substitution": "net group \\\"enterprise admins\\\" /domain #substitution",
+    "omission": "net group \\enterprise admins\\ /domain",
+    "reordering": "net /domain group admins\\\" \\\"enterprise",
+    "recoding": "<recoding not applicable>"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_powershell_hidden_b64_cmd_0",
+  "original_command": "powershell.exe hidden IAaQB0AHMAYQBkAG0AaQBuACAALwB0AHIAYQBuAHMAZgBlAHIA",
+  "evasions": {
+    "insertion": "#hijack powershell.exe hidden IAaQB0AHMAYQBkAG0AaQBuACAALwB0AHIAYQBuAHMAZgBlAHIA",
+    "substitution": "powershell.exe hidden IAaQB0AHMAYQBkAG0AaQBuACAALwB0AHIAYQBuAHMAZgBlAHIA #substitution",
+    "omission": "powershell hidden IAaQB0AHMAYQBkAG0AaQBuACAALwB0AHIAYQBuAHMAZgBlAHIA",
+    "reordering": "powershell.exe IAaQB0AHMAYQBkAG0AaQBuACAALwB0AHIAYQBuAHMAZgBlAHIA hidden",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAaABpAGQAZABlAG4AIABJAEEAYQBRAEIAMABBAEgATQBBAFkAUQBCAGsAQQBHADAAQQBhAFEAQgB1AEEAQwBBAEEATAB3AEIAMABBAEgASQBBAFkAUQBCAHUAQQBIAE0AQQBaAGcAQgBsAEEASABJAEEA"
+  }
+}

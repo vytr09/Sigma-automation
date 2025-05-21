@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_curl_fileupload_0",
+  "original_command": "curl.exe -F",
+  "evasions": {
+    "insertion": "curl.exe #inserted -F",
+    "substitution": "curl.exe -F #substitution",
+    "omission": "curl -F",
+    "reordering": "curl.exe -F",
+    "recoding": "<recoding not applicable>"
+  }
+}

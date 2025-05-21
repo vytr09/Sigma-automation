@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_powersploit_empire_schtasks_0",
+  "original_command": "schtasks /Create /SC Updater /TN Updater /TR powershell",
+  "evasions": {
+    "insertion": "#hijack schtasks /Create /SC Updater /TN Updater /TR powershell",
+    "substitution": "schtasks /Create /SC Updater /TN Updater /TR powershell #substitution",
+    "omission": "schtasks /Create /SC Updater /TN Updater /TR powershell # omission",
+    "reordering": "schtasks Updater /Create /SC Updater powershell /TN /TR",
+    "recoding": "powershell.exe -EncodedCommand cwBjAGgAdABhAHMAawBzACAALwBDAHIAZQBhAHQAZQAgAC8AUwBDACAAVQBwAGQAYQB0AGUAcgAgAC8AVABOACAAVQBwAGQAYQB0AGUAcgAgAC8AVABSACAAcABvAHcAZQByAHMAaABlAGwAbAA="
+  }
+}

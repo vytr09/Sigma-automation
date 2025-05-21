@@ -1,0 +1,2 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search New_Process_Name="*\\regsvr32.exe" OR "regsvr32.exe /install:"| search Process_Command_Line="*/i:*"| search NOT Process_Command_Line="*/n*"  | table _time, New_Process_Name, Process_Command_Line

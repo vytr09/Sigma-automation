@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_using_sc_to_change_sevice_image_path_by_non_admin_0",
+  "original_command": "sc.exe config binPath",
+  "evasions": {
+    "insertion": "#hijack sc.exe config binPath",
+    "substitution": "sc.exe config binPath",
+    "omission": "sc config binPath",
+    "reordering": "sc.exe binPath config",
+    "recoding": "<recoding not applicable>"
+  }
+}

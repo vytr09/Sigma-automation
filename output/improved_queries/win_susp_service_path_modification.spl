@@ -1,0 +1,2 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search New_Process_Name="*\\sc.exe" OR "powershell.exe -EncodedCommand cwBjAC4AZQB4AGUAIABiAGkAbgBwAGEAdABoACAAcABvAHcAZQByAHMAaABlAGwAbAA="| search Process_Command_Line="*config*"| search Process_Command_Line="*binpath*"| search Process_Command_Line IN ("*powershell*", "*cmd*")  | table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_evilnum_jul20_0",
+  "original_command": "regsvr32 /s /i \\AppData\\Roaming\\\\ .ocx",
+  "evasions": {
+    "insertion": "regsvr32\t/s\t/i\t\\AppData\\Roaming\\\\\t.ocx",
+    "substitution": "regsvr32 /silent /i \\AppData\\Roaming\\\\ .ocx",
+    "omission": "regsvr32 /s /i \\AppData\\Roaming\\\\ .ocx # omission",
+    "reordering": "regsvr32 .ocx /s \\AppData\\Roaming\\\\ /i",
+    "recoding": "<recoding not applicable>"
+  }
+}

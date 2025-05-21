@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_taidoor_0",
+  "original_command": "MyStart rundll32.exe",
+  "evasions": {
+    "insertion": "MyStart #injected rundll32.exe",
+    "substitution": "MyStart rundll32.exe #substitution",
+    "omission": "MyStart rundll32",
+    "reordering": "MyStart rundll32.exe",
+    "recoding": "<recoding not applicable>"
+  }
+}

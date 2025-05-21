@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_mal_adwind_1",
+  "original_command": "<no command found>",
+  "evasions": {
+    "insertion": "<no #inserted command found>",
+    "substitution": "<no command found> #substitution",
+    "omission": "<no command found> # omission",
+    "reordering": "<no found> command",
+    "recoding": "<recoding not applicable>"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_change_default_file_association_0",
+  "original_command": "cmd /c assoc",
+  "evasions": {
+    "insertion": "cmd \"/c assoc\"",
+    "substitution": "cmd -c assoc",
+    "omission": "cmd /c assoc # omission",
+    "reordering": "cmd assoc /c",
+    "recoding": "<recoding not applicable>"
+  }
+}

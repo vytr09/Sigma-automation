@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_disable_raccine_0",
+  "original_command": "schtasks /DELETE Raccine Rules Updater",
+  "evasions": {
+    "insertion": "schtasks /DELETE #injected Raccine Rules Updater",
+    "substitution": "schtasks /DELETE Raccine Rules Updater #substitution",
+    "omission": "schtasks /DELETE Raccine Rules Updater # omission",
+    "reordering": "schtasks Updater Rules /DELETE Raccine",
+    "recoding": "<recoding not applicable>"
+  }
+}

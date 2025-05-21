@@ -48,67 +48,122 @@ Sigma Automation is a security tool designed to enhance SIEM (Security Informati
 - Windows 10 system
 - Splunk Enterprise installed
 - Sysmon (optional, for enhanced logging)
-- Python 3.x
+- Python 3.10+
 - Required Python packages:
   ```bash
   pip install pyyaml
   ```
 
-### Directory Structure
-- `attack_convert/`: Contains attack generation tools and results
-- `improved_queries/`: Stores enhanced Splunk queries
-- `logs/`: Contains execution and detection logs
-- `query_convert/`: Original Sigma to Splunk query conversions
-- `data/rules/windows/process_creation/`: Place your Sigma rules here
+### Project Structure
+```
+Sigma-automation/
+├── src/                           # Source code
+│   ├── attack_convert/            # Attack generation
+│   │   ├── main.py               # Main attack generator
+│   │   ├── utils/                # Utility functions
+│   │   │   ├── parser.py        # Rule parser
+│   │   │   ├── evasions_core.py # Evasion controller
+│   │   │   └── evasions/        # Evasion techniques
+│   │   └── Evasion-Results/      # Generated attacks
+│   │
+│   ├── query_convert/            # Query conversion
+│   │   └── sigma_to_splunk/      # Sigma to Splunk converter
+│   │       ├── sigma_to_splunk.py # Main converter
+│   │       └── output_queries/    # Generated queries
+│   │
+│   ├── tools/                    # Utility tools
+│   │   ├── all_filters.py       # Extract filters from rules
+│   │   └── filter_rules.py      # Filter rules by properties
+│   │
+│   ├── run_attack_eval.py       # Run attack evaluation
+│   └── improve_splunk_queries.py # Improve Splunk queries
+│
+├── data/                         # Data directory
+│   ├── rules/                    # Sigma rules
+│   │   └── windows/
+│   │       └── process_creation/ # Process creation rules
+│   ├── events/                   # Event data
+│   │   └── windows/
+│   │       └── process_creation/ # Process creation events
+│   └── evasion_possible_rules.txt # Rules to process
+│
+├── output/                       # Output directory
+│   ├── improved_queries/         # Enhanced Splunk queries
+│   ├── logs/                     # Execution logs
+│   └── results/                  # Analysis results
+│
+├── paper/                        # Research paper
+│   └── usenixsecurity24-uetz.pdf # Original paper
+│
+├── example_rules/                # Example Sigma rules
+├── README.md                     # Project documentation
+└── .gitignore                    # Git ignore file
+```
 
-### Complete Usage Flow
+### Running the Tools
 
 1. **Prepare Input Files**
-   - Place your Sigma rule files (`.yml`) in `data/rules/windows/process_creation/`
-   - Create `evasion_possible_rules.txt` listing rules to process (filenames without `.yml`)
+   ```bash
+   # Place Sigma rules in:
+   data/rules/windows/process_creation/
+   
+   # Place event samples in:
+   data/events/windows/process_creation/
+   
+   # Create evasion_possible_rules.txt in data/ directory
+   # List rule names (without .yml) to process
+   ```
 
 2. **Generate Attack Commands**
    ```bash
-   # Set PYTHONPATH to project root
-   set PYTHONPATH=D:\UIT\Nam_3\DACN\Sigma-automation
-   
-   # Run attack generation
-   python -m attack_convert.main
+   # From project root
+   set PYTHONPATH=%CD%
+   python -m src.attack_convert.main
    ```
-   This will generate JSON files in `attack_convert/Evasion-Results/` containing:
-   - Original attack commands
-   - Five evasion variations for each rule
+   Output: `src/attack_convert/Evasion-Results/*.json`
 
 3. **Convert Sigma Rules to Splunk Queries**
    ```bash
-   # Run Sigma to Splunk conversion
-   python -m query_convert.sigma_to_splunk.main
+   # From project root
+   set PYTHONPATH=%CD%
+   python -m src.query_convert.sigma_to_splunk.sigma_to_splunk
    ```
-   This will generate Splunk queries in `query_convert/sigma_to_splunk/output_queries/`
+   Output: `src/query_convert/sigma_to_splunk/output_queries/*.spl`
 
 4. **Run Attack Evaluation**
    ```bash
-   # Execute attacks and test detection
-   python run_attack_eval.py
+   # From project root
+   set PYTHONPATH=%CD%
+   python src/run_attack_eval.py
    ```
-   This will:
-   - Execute original and evasion attacks
-   - Test detection using Splunk queries
-   - Log results in the `logs/` directory
+   Output: `output/logs/*.jsonl` and `output/logs/global_detection_log.txt`
 
 5. **Generate Improved Queries**
    ```bash
-   # Create enhanced Splunk queries
-   python improve_splunk_queries.py
+   # From project root
+   set PYTHONPATH=%CD%
+   python src/improve_splunk_queries.py
    ```
-   This will generate improved queries in `improved_queries/` based on successful evasion attempts
+   Output: `output/improved_queries/*.spl`
+
+6. **Utility Tools**
+   ```bash
+   # Extract filters from rules
+   python src/tools/all_filters.py
+   # Output: output/results/extracted_filters.txt
+   
+   # Filter rules by properties
+   python src/tools/filter_rules.py
+   # Output: data/evasion_possible_rules.txt
+   ```
 
 ### Output Files
-- `attack_convert/Evasion-Results/*.json`: Generated attack commands
-- `query_convert/sigma_to_splunk/output_queries/*.spl`: Original Splunk queries
-- `improved_queries/*.spl`: Enhanced Splunk queries
-- `logs/*.jsonl`: Detailed execution logs
-- `logs/global_detection_log.txt`: Summary of all detection results
+- `src/attack_convert/Evasion-Results/*.json`: Generated attack commands
+- `src/query_convert/sigma_to_splunk/output_queries/*.spl`: Original Splunk queries
+- `output/improved_queries/*.spl`: Enhanced Splunk queries
+- `output/logs/*.jsonl`: Detailed execution logs
+- `output/logs/global_detection_log.txt`: Summary of all detection results
+- `output/results/extracted_filters.txt`: Extracted filters from rules
 
 ## Acknowledgments
 This project implements the first three parts of the research paper "Adaptive Misuse Detection for SIEM Rules" presented at the 33rd USENIX Security Symposium (2024). The paper can be found in the `paper/` directory.

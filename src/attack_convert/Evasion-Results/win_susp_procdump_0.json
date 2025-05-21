@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_procdump_0",
+  "original_command": "-ma lsass -ma ls",
+  "evasions": {
+    "insertion": "-ma\nlsass\n-ma\nls",
+    "substitution": "-ma lsass -ma ls #substitution",
+    "omission": "-ma lsass -ma ls # omission",
+    "reordering": "-ma ls -ma lsass",
+    "recoding": "<recoding not applicable>"
+  }
+}

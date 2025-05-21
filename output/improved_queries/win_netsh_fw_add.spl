@@ -1,0 +1,2 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+| search Process_Command_Line="*netsh*" OR "netsh fw add"| search Process_Command_Line="*firewall* add*"  | table _time, New_Process_Name, Process_Command_Line

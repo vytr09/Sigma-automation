@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_crackmapexec_execution_0",
+  "original_command": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\"",
+  "evasions": {
+    "insertion": "#hijack powershell.exe -exec bypass -noni -nop -w 1 -C \\\"",
+    "substitution": "powershell.exe -exec bypass -noni -nop -w 1 -C \\\" #substitution",
+    "omission": "powershell -exec bypass -noni -nop -w 1 -C \\\"",
+    "reordering": "powershell.exe -C bypass 1 -w -exec -noni \\\" -nop",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBlAHgAZQBjACAAYgB5AHAAYQBzAHMAIAAtAG4AbwBuAGkAIAAtAG4AbwBwACAALQB3ACAAMQAgAC0AQwAgAFwAIgA="
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_susp_powershell_empire_uac_bypass_0",
+  "original_command": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update",
+  "evasions": {
+    "insertion": "#hijack -NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update",
+    "substitution": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update #substitution",
+    "omission": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update # omission",
+    "reordering": "-NoP -c HKCU:Software\\\\Microsoft\\\\Windows $x=$((gp Update Hidden -NonI -w",
+    "recoding": "<recoding not applicable>"
+  }
+}

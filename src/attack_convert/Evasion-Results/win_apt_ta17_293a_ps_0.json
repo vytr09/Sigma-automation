@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_apt_ta17_293a_ps_0",
+  "original_command": "ps.exe -accepteula",
+  "evasions": {
+    "insertion": "ps.exe\n-accepteula",
+    "substitution": "ps.exe -accepteula #substitution",
+    "omission": "ps -accepteula",
+    "reordering": "ps.exe -accepteula",
+    "recoding": "<recoding not applicable>"
+  }
+}

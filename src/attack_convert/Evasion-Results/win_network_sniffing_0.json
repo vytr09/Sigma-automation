@@ -1,0 +1,11 @@
+{
+  "rule_name": "win_network_sniffing_0",
+  "original_command": "tshark.exe \\tshark.exe -i",
+  "evasions": {
+    "insertion": "tshark.exe\n\\tshark.exe\n-i",
+    "substitution": "tshark.exe \\tshark.exe -i #substitution",
+    "omission": "tshark \\tshark -i",
+    "reordering": "tshark.exe -i \\tshark.exe",
+    "recoding": "<recoding not applicable>"
+  }
+}
