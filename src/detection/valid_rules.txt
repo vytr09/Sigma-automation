@@ -1,0 +1,7 @@
+sysmon_apt_muddywater_dnstunnel_0
+win_apt_zxshell_0
+win_susp_codepage_switch_0
+win_susp_curl_start_combo_0
+win_susp_explorer_break_proctree_0
+win_susp_svchost_no_cli_0
+win_netsh_port_fwd_0
