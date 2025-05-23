@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search (Process_Command_Line="*taskkill*" | search Process_Command_Line="*/IM* RaccineSettings.exe*") OR (Process_Command_Line="*reg.exe*" | search Process_Command_Line="*delete*" | search Process_Command_Line="*Raccine* Tray*") OR (Process_Command_Line="*schtasks*" | search Process_Command_Line="*/DELETE*" | search Process_Command_Line="*Raccine* Rules* Updater*")
+| search (Process_Command_Line="*taskkill *" | search Process_Command_Line="*/IM* RaccineSettings.exe*") OR (Process_Command_Line="*reg.exe*" | search Process_Command_Line="*delete*" | search Process_Command_Line="*Raccine* Tray*") OR (Process_Command_Line="*schtasks*" | search Process_Command_Line="*/DELETE*" | search Process_Command_Line="*Raccine* Rules* Updater*")
 | table _time, New_Process_Name, Process_Command_Line

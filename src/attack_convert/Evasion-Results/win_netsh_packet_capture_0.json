@@ -2,10 +2,10 @@
   "rule_name": "win_netsh_packet_capture_0",
   "original_command": "netsh trace start",
   "evasions": {
-    "insertion": "netsh\ttrace\tstart",
+    "insertion": "netsh \\\"t\\\"\\\"r\\\"\\\"a\\\"\\\"c\\\"\\\"e\\\" start",
     "substitution": "netsh trace start #substitution",
     "omission": "netsh trace start # omission",
     "reordering": "netsh start trace",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggdHJhY2Ugc3RhcnQ=')) | Invoke-Expression\" "
   }
 }

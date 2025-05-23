@@ -2,10 +2,10 @@
   "rule_name": "win_apt_bear_activity_gtr19_0",
   "original_command": "xcopy.exe /S /E /C /Q /H \\\\",
   "evasions": {
-    "insertion": "#hijack xcopy.exe /S /E /C /Q /H \\\\",
+    "insertion": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"",
     "substitution": "xcopy.exe --subdirs /E /C /Q /H \\\\",
     "omission": "xcopy /S /E /C /Q /H \\\\",
-    "reordering": "xcopy.exe /Q \\\\ /H /S /C /E",
-    "recoding": "<recoding not applicable>"
+    "reordering": "xcopy.exe /S /E /C /Q /H \\\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" "
   }
 }

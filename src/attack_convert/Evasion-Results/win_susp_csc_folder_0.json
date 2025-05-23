@@ -2,10 +2,10 @@
   "rule_name": "win_susp_csc_folder_0",
   "original_command": "csc.exe \\Windows\\Temp\\\\",
   "evasions": {
-    "insertion": "csc.exe\n\\Windows\\Temp\\\\",
+    "insertion": "csc.exe \\\"\\Window\\\"s\\Temp\\\\",
     "substitution": "csc.exe \\Windows\\Temp\\\\ #substitution",
     "omission": "csc \\Windows\\Temp\\\\",
     "reordering": "csc.exe \\Windows\\Temp\\\\",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcV2luZG93c1xUZW1wXFw=')) | Invoke-Expression\" "
   }
 }

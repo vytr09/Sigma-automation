@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search New_Process_Name="*\\update.exe" | search Process_Command_Line IN ("*--processStart*.exe*", "*--processStartAndWait*.exe*", "*--createShortcut*.exe*")
+| search New_Process_Name=".*\\update.exe" | search Process_Command_Line IN ("*--processStart*.exe*", "OR", "*--processStartAndWait*.exe*", "OR", "*--createShortcut*.exe*")
 | table _time, New_Process_Name, Process_Command_Line

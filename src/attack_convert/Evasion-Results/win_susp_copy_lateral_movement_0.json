@@ -2,10 +2,10 @@
   "rule_name": "win_susp_copy_lateral_movement_0",
   "original_command": "copy \\ADMIN$",
   "evasions": {
-    "insertion": "copy\n\\ADMIN$",
+    "insertion": "copy \"\\ADMIN$\"",
     "substitution": "copy \\ADMIN$ #substitution",
     "omission": "copy \\ADMIN$ # omission",
     "reordering": "copy \\ADMIN$",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAYwBvAHAAeQAgAFwAQQBEAE0ASQBOACQA "
   }
 }

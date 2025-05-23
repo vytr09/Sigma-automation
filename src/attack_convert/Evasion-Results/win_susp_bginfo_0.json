@@ -2,10 +2,10 @@
   "rule_name": "win_susp_bginfo_0",
   "original_command": "bginfo.exe /popup /nolicprompt",
   "evasions": {
-    "insertion": "bginfo.exe\t/popup\t/nolicprompt",
+    "insertion": "bginfo.exe /\"{cmd_part1}\" /\"{cmd_part2}\"",
     "substitution": "bginfo.exe /popup /nolicprompt #substitution",
     "omission": "bginfo /popup /nolicprompt",
-    "reordering": "bginfo.exe /nolicprompt /popup",
-    "recoding": "<recoding not applicable>"
+    "reordering": "bginfo.exe /popup /nolicprompt",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmdpbmZvLmV4ZSAvcG9wdXAgL25vbGljcHJvbXB0')) | Invoke-Expression\" "
   }
 }

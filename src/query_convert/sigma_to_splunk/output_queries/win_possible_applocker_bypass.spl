@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search Process_Command_Line IN ("*\\msdt.exe*", "*\\installutil.exe*", "*\\regsvcs.exe*", "*\\regasm.exe*", "*\\msbuild.exe*", "*\\ieexec.exe*")
+| search Process_Command_Line IN ("*\\msdt.exe*", "OR", "*\\installutil.exe*", "OR", "*\\regsvcs.exe*", "OR", "*\\regasm.exe*", "OR", "*\\msbuild.exe*", "OR", "*\\ieexec.exe*")
 | table _time, New_Process_Name, Process_Command_Line

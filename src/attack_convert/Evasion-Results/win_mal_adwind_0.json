@@ -2,10 +2,10 @@
   "rule_name": "win_mal_adwind_0",
   "original_command": "\\AppData\\Roaming\\Oracle \\java .exe",
   "evasions": {
-    "insertion": "\\AppData\\Roaming\\Oracle\t\\java\t.exe",
+    "insertion": "\\\"\\AppData\\Roaming\\Oracle\\\" \\java .exe",
     "substitution": "\\AppData\\Roaming\\Oracle \\java .exe #substitution",
     "omission": "Oracle \\java",
     "reordering": "\\AppData\\Roaming\\Oracle .exe \\java",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcUm9hbWluZ1xPcmFjbGUgXGphdmEgLmV4ZQ==')) | Invoke-Expression\" "
   }
 }

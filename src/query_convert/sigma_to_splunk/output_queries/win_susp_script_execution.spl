@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search New_Process_Name IN ("*\\wscript.exe", "*\\cscript.exe")
+| search New_Process_Name IN (".*\\wscript.exe", "OR", ".*\\cscript.exe") | search Process_Command_Line IN ("*.jse*", "OR", "*.vbe*", "OR", "*.js*", "OR", "*.vba*")
 | table _time, New_Process_Name, Process_Command_Line

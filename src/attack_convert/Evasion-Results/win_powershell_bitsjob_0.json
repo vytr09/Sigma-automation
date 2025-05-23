@@ -2,10 +2,10 @@
   "rule_name": "win_powershell_bitsjob_0",
   "original_command": "powershell.exe Start-BitsTransfer",
   "evasions": {
-    "insertion": "#hijack powershell.exe Start-BitsTransfer",
+    "insertion": "powershell.exe \"S\"\"t\"\"a\"\"r\"\"t\"\"-\"\"B\"\"i\"\"t\"\"s\"\"T\"\"r\"\"a\"\"n\"\"s\"\"f\"\"e\"\"r\"",
     "substitution": "powershell.exe Start-BitsTransfer #substitution",
     "omission": "powershell Start-BitsTransfer",
     "reordering": "powershell.exe Start-BitsTransfer",
-    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUwB0AGEAcgB0AC0AQgBpAHQAcwBUAHIAYQBuAHMAZgBlAHIA"
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUwB0AGEAcgB0AC0AQgBpAHQAcwBUAHIAYQBuAHMAZgBlAHIA "
   }
 }

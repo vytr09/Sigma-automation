@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search Process_Command_Line IN ("* -NoP -sta -NonI -W Hidden -Enc *", "* -noP -sta -w 1 -enc *", "* -NoP -NonI -W Hidden -enc *", "* -noP -sta -w 1 -enc*", "* -enc SQB*", "* -nop -exec bypass -EncodedCommand SQB*")
+| search Process_Command_Line IN ("* -NoP* -sta* -NonI* -W* Hidden* -Enc *", "OR", "* -noP* -sta* -w* 1* -enc *", "OR", "* -NoP* -NonI* -W* Hidden* -enc *", "OR", "* -noP* -sta* -w* 1 -enc*", "OR", "* -enc SQB*", "OR", "* -nop* -exec* bypass* -EncodedCommand SQB*")
 | table _time, New_Process_Name, Process_Command_Line

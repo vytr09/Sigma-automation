@@ -2,10 +2,10 @@
   "rule_name": "win_powershell_xor_commandline_0",
   "original_command": "<no command found>",
   "evasions": {
-    "insertion": "#hijack <no command found>",
+    "insertion": "<no command found>",
     "substitution": "<no command found> #substitution",
     "omission": "<no command found> # omission",
-    "reordering": "<no found> command",
-    "recoding": "<recoding not applicable>"
+    "reordering": "<no command found>",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" "
   }
 }

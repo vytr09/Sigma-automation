@@ -2,10 +2,10 @@
   "rule_name": "win_susp_bcdedit_0",
   "original_command": "bcdedit.exe deletevalue",
   "evasions": {
-    "insertion": "bcdedit.exe #injected deletevalue",
+    "insertion": "bcdedit.exe \\\"deletevalue\\\"",
     "substitution": "bcdedit.exe deletevalue #substitution",
     "omission": "bcdedit deletevalue",
     "reordering": "bcdedit.exe deletevalue",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmNkZWRpdC5leGUgZGVsZXRldmFsdWU=')) | Invoke-Expression\" "
   }
 }

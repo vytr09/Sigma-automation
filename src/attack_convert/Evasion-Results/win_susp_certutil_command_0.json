@@ -2,10 +2,10 @@
   "rule_name": "win_susp_certutil_command_0",
   "original_command": "certutil /URL",
   "evasions": {
-    "insertion": "certutil #inserted /URL",
+    "insertion": "certutil /\"{cmd_part[:mid]}\"{cmd_part[mid:]}",
     "substitution": "certutil /URL #substitution",
     "omission": "certutil /URL # omission",
     "reordering": "certutil /URL",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y2VydHV0aWwgL1VSTA==')) | Invoke-Expression\" "
   }
 }

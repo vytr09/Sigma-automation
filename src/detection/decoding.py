@@ -16,7 +16,6 @@ def decode_base64_string(b64_string: str, encoding_hint: str | None = None) -> s
         if encoding_hint == "utf16le":
             return decoded_bytes.decode("utf-16le")
 
-        # Nếu không có hint → thử utf-8 trước, fallback sang utf-16le
         try:
             return decoded_bytes.decode("utf-8")
         except UnicodeDecodeError:

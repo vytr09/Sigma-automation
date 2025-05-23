@@ -2,10 +2,10 @@
   "rule_name": "win_sysmon_driver_unload_0",
   "original_command": "fltmc.exe unload sys",
   "evasions": {
-    "insertion": "fltmc.exe ^ unload ^ sys",
+    "insertion": "fltmc.exe \\\"unl\\\"oad sys",
     "substitution": "fltmc.exe unload sys #substitution",
     "omission": "fltmc unload sys",
     "reordering": "fltmc.exe sys unload",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Zmx0bWMuZXhlIHVubG9hZCBzeXM=')) | Invoke-Expression\" "
   }
 }

@@ -2,10 +2,10 @@
   "rule_name": "win_netsh_fw_add_0",
   "original_command": "netsh firewall add",
   "evasions": {
-    "insertion": "netsh #inserted firewall add",
+    "insertion": "netsh firewall \\\"a\\\"dd",
     "substitution": "netsh fw add",
     "omission": "netsh firewall add # omission",
     "reordering": "netsh add firewall",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggZmlyZXdhbGwgYWRk')) | Invoke-Expression\" "
   }
 }

@@ -1,11 +1,11 @@
 {
   "rule_name": "win_susp_certutil_encode_0",
-  "original_command": "certutil.exe -f -encode",
+  "original_command": "certutil.exe -encode -f",
   "evasions": {
-    "insertion": "certutil.exe \"-f -encode\"",
-    "substitution": "certutil.exe -f --encode",
-    "omission": "certutil -f -encode",
-    "reordering": "certutil.exe -encode -f",
-    "recoding": "<recoding not applicable>"
+    "insertion": "certutil.exe \"-encode\" -f",
+    "substitution": "certutil.exe --encode -f",
+    "omission": "certutil.exe -encode -f # omission",
+    "reordering": "certutil.exe -f -encode",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y2VydHV0aWwuZXhlIC1lbmNvZGUgLWY=')) | Invoke-Expression\" "
   }
 }

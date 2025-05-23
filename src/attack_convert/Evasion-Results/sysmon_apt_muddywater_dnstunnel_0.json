@@ -2,10 +2,10 @@
   "rule_name": "sysmon_apt_muddywater_dnstunnel_0",
   "original_command": "powershell.exe DataExchange.dll",
   "evasions": {
-    "insertion": "powershell.exe\nDataExchange.dll",
+    "insertion": "powershell.exe \"D\"\"a\"\"t\"\"a\"\"E\"\"x\"\"c\"\"h\"\"a\"\"n\"\"g\"\"e\"\".\"\"d\"\"l\"\"l\"",
     "substitution": "powershell.exe DataExchange.dll #substitution",
     "omission": "powershell DataExchange.dll",
     "reordering": "powershell.exe DataExchange.dll",
-    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARABhAHQAYQBFAHgAYwBoAGEAbgBnAGUALgBkAGwAbAA="
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARABhAHQAYQBFAHgAYwBoAGEAbgBnAGUALgBkAGwAbAA= "
   }
 }

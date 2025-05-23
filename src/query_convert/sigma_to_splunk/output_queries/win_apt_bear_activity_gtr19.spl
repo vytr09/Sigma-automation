@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search (New_Process_Name="*\\xcopy.exe" | search Process_Command_Line="*/S* /E* /C* /Q* /H* \\*") OR (New_Process_Name="*\\adexplorer.exe" | search Process_Command_Line="*-snapshot* \\*"\" c:\\users\\*")
+| search (New_Process_Name=".*\\xcopy.exe" | search Process_Command_Line="* /S* /E* /C* /Q* /H* \\*") OR (New_Process_Name=".*\\adexplorer.exe" | search Process_Command_Line="* -snapshot* \\*"\" c:\\users\\*")
 | table _time, New_Process_Name, Process_Command_Line

@@ -2,10 +2,10 @@
   "rule_name": "win_susp_codepage_switch_0",
   "original_command": "chcp 1258",
   "evasions": {
-    "insertion": "chcp #injected 1258",
+    "insertion": "chcp \"12\"58",
     "substitution": "chcp 1258 #substitution",
     "omission": "chcp 1258 # omission",
     "reordering": "chcp 1258",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y2hjcCAxMjU4')) | Invoke-Expression\" "
   }
 }

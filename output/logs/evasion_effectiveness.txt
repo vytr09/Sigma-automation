@@ -1,0 +1,132 @@
+=== Thống kê hiệu quả của các kỹ thuật evasion ===
+
+Evasion Type: recoding
+Tổng số lần thử: 76
+Số lần bypass thành công: 76
+Tỷ lệ thành công: 100.00%
+Số rule bị ảnh hưởng: 76
+Các rule bị ảnh hưởng:
+  - sysmon_apt_muddywater_dnstunnel_0
+  - win_apt_apt29_thinktanks_0
+  - win_apt_hurricane_panda_0
+  - win_apt_ta17_293a_ps_0
+  - win_bootconf_mod_0
+  - win_change_default_file_association_0
+  - win_commandline_path_traversal_0
+  - win_crime_snatch_ransomware_0
+  - win_data_compressed_with_rar_0
+  - win_exploit_cve_2020_1048_0
+  - win_hack_koadic_0
+  - win_interactive_at_0
+  - win_malware_emotet_0
+  - win_malware_trickbot_recon_activity_0
+  - win_net_enum_0
+  - win_net_user_add_0
+  - win_netsh_fw_add_0
+  - win_netsh_packet_capture_0
+  - win_netsh_port_fwd_0
+  - win_network_sniffing_0
+  - win_new_service_creation_0
+  - win_possible_applocker_bypass_0
+  - win_powershell_amsi_bypass_0
+  - win_powershell_bitsjob_0
+  - win_powershell_downgrade_attack_0
+  - win_powershell_suspicious_parameter_variation_0
+  - win_powersploit_empire_schtasks_0
+  - win_process_creation_bitsadmin_download_0
+  - win_process_dump_rundll32_comsvcs_0
+  - win_remote_time_discovery_0
+  - win_run_powershell_script_from_ads_0
+  - win_service_execution_0
+  - win_shadow_copies_access_symlink_0
+  - win_spn_enum_0
+  - win_susp_bcdedit_0
+  - win_susp_bginfo_0
+  - win_susp_cdb_0
+  - win_susp_certutil_command_0
+  - win_susp_certutil_encode_0
+  - win_susp_codepage_switch_0
+  - win_susp_copy_lateral_movement_0
+  - win_susp_copy_system32_0
+  - win_susp_curl_download_0
+  - win_susp_curl_fileupload_0
+  - win_susp_curl_start_combo_0
+  - win_susp_desktopimgdownldr_0
+  - win_susp_disable_ie_features_0
+  - win_susp_disable_raccine_0
+  - win_susp_eventlog_clear_0
+  - win_susp_explorer_break_proctree_0
+  - win_susp_findstr_lnk_0
+  - win_susp_fsutil_usage_0
+  - win_susp_iss_module_install_0
+  - win_susp_msiexec_web_install_0
+  - win_susp_net_execution_0
+  - win_susp_netsh_dll_persistence_0
+  - win_susp_ping_hex_ip_0
+  - win_susp_powershell_empire_launch_0
+  - win_susp_powershell_enc_cmd_0
+  - win_susp_powershell_hidden_b64_cmd_0
+  - win_susp_procdump_0
+  - win_susp_psr_capture_screenshots_0
+  - win_susp_regsvr32_flags_anomaly_0
+  - win_susp_rundll32_by_ordinal_0
+  - win_susp_script_execution_0
+  - win_susp_service_path_modification_0
+  - win_susp_squirrel_lolbin_0
+  - win_susp_svchost_no_cli_0
+  - win_susp_sysprep_appdata_0
+  - win_susp_sysvol_access_0
+  - win_susp_tscon_rdp_redirect_0
+  - win_susp_wmi_execution_0
+  - win_susp_wmic_proc_create_rundll32_0
+  - win_sysmon_driver_unload_0
+  - win_using_sc_to_change_sevice_image_path_by_non_admin_0
+  - win_win10_sched_task_0day_0
+
+Evasion Type: insertion
+Tổng số lần thử: 76
+Số lần bypass thành công: 8
+Tỷ lệ thành công: 10.53%
+Số rule bị ảnh hưởng: 8
+Các rule bị ảnh hưởng:
+  - win_change_default_file_association_0
+  - win_malware_trickbot_recon_activity_0
+  - win_net_user_add_0
+  - win_powershell_amsi_bypass_0
+  - win_susp_bginfo_0
+  - win_susp_certutil_command_0
+  - win_susp_psr_capture_screenshots_0
+  - win_susp_svchost_no_cli_0
+
+Evasion Type: substitution
+Tổng số lần thử: 76
+Số lần bypass thành công: 5
+Tỷ lệ thành công: 6.58%
+Số rule bị ảnh hưởng: 5
+Các rule bị ảnh hưởng:
+  - win_bootconf_mod_0
+  - win_netsh_fw_add_0
+  - win_susp_curl_download_0
+  - win_susp_desktopimgdownldr_0
+  - win_susp_regsvr32_flags_anomaly_0
+
+Evasion Type: omission
+Tổng số lần thử: 76
+Số lần bypass thành công: 3
+Tỷ lệ thành công: 3.95%
+Số rule bị ảnh hưởng: 3
+Các rule bị ảnh hưởng:
+  - win_network_sniffing_0
+  - win_susp_script_execution_0
+  - win_using_sc_to_change_sevice_image_path_by_non_admin_0
+
+Evasion Type: reordering
+Tổng số lần thử: 76
+Số lần bypass thành công: 3
+Tỷ lệ thành công: 3.95%
+Số rule bị ảnh hưởng: 3
+Các rule bị ảnh hưởng:
+  - win_netsh_fw_add_0
+  - win_powershell_amsi_bypass_0
+  - win_shadow_copies_access_symlink_0
+

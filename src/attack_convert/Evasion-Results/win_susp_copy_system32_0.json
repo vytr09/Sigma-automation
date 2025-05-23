@@ -2,10 +2,10 @@
   "rule_name": "win_susp_copy_system32_0",
   "original_command": "/c copy \\System32\\\\",
   "evasions": {
-    "insertion": "/c #inserted copy \\System32\\\\",
+    "insertion": "/c copy \\\"\\System32\\\\\\\"",
     "substitution": "/c copy \\System32\\\\ #substitution",
     "omission": "/c copy \\System32\\\\ # omission",
-    "reordering": "/c \\System32\\\\ copy",
-    "recoding": "<recoding not applicable>"
+    "reordering": "/c copy \\System32\\\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2MgY29weSBcU3lzdGVtMzJcXA==')) | Invoke-Expression\" "
   }
 }

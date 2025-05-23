@@ -3,7 +3,6 @@
 import os
 import json
 import time
-import shlex
 import subprocess
 import re
 from typing import Optional
@@ -14,6 +13,7 @@ EVASION_RESULTS_DIR = os.path.join("src", "attack_convert", "Evasion-Results")
 QUERY_DIR = os.path.join("src", "query_convert", "sigma_to_splunk","output_queries")
 LOG_DIR = os.path.join("output", "logs")
 GLOBAL_LOG = os.path.join(LOG_DIR, "global_detection_log.txt")
+COMMAND_TIMEOUT = 2  # Reduced timeout for commands
 
 # ========== Helper Functions ==========
 def load_target_rules(path=os.path.join("data", "evasion_possible_rules.txt")) -> list[str]:
@@ -30,19 +30,26 @@ def get_current_time_iso() -> str:
 
 def run_commandline(cmd: str):
     try:
-        # Nếu là lệnh đơn giản, thêm `& exit` để tránh block
+        # Convert command to PowerShell format
         if "cmd.exe" in cmd.lower() or "powershell" in cmd.lower():
-            if "exit" not in cmd.lower():
-                cmd += " & exit"
-        
-        # Nếu là một executable không có tham số (ví dụ: "notepad"), thêm timeout
-        tokens = shlex.split(cmd)
-        if len(tokens) == 1:
-            # ví dụ: notepad → không tham số → likely mở GUI
-            cmd = f"start /B {cmd} & timeout /t 5 & taskkill /im {tokens[0]} /f"
+            # If it's already a PowerShell command, use it directly
+            ps_cmd = cmd
+        else:
+            # For other commands, wrap them in PowerShell
+            # Escape quotes and special characters
+            escaped_cmd = cmd.replace('"', '`"')
+            ps_cmd = f'powershell.exe -Command "{escaped_cmd}"'
 
-        print(f"[RUNNING] {cmd}")
-        subprocess.Popen(cmd, shell=True, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        print(f"[RUNNING] {ps_cmd}")
+        
+        # Use PowerShell to execute the command
+        subprocess.Popen(
+            ps_cmd,
+            shell=True,
+            creationflags=subprocess.CREATE_NEW_CONSOLE,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
 
     except Exception as e:
         print(f"[ERROR] Failed to run: {cmd} → {e}")
@@ -55,34 +62,41 @@ def run_splunk_query(query: str, since: str, expected_cmd: str) -> bool:
     constrained_query = f'{query} earliest="{earliest_str}" latest="{latest_str}"'
     full_query = f'"{constrained_query}"'  # escape toàn bộ truy vấn
 
-    # def is_payload_in_output(payload: str, stdout: str) -> bool:
-    #     payload_parts = re.findall(r'[\w.=/-]+', payload.lower())
-    #     for line in stdout.splitlines():
-    #         line = line.lower()
-    #         if all(part in line for part in payload_parts):
-    #             return True
-    #     return False
-
     try:
         result = subprocess.run([
             "C:\\Program Files\\Splunk\\bin\\splunk", "search",
             full_query, "-auth", "vy:22521709"
         ], capture_output=True, text=True)
 
-        print("[DEBUG SPLUNK OUTPUT]")
-        print(result.stdout)
-        print(result.stderr)
+        # print("\n[DEBUG SPLUNK OUTPUT]")
+        # print("Query:", full_query)
+        print("Expected command:", expected_cmd)
+        print("Output:", result.stdout)
+        if result.stderr:
+            print("Error:", result.stderr)
+
+        # Check if query returned any results
+        if not result.stdout.strip():
+            print("[DEBUG] No results returned from Splunk")
+            return False
 
         # Normalize command for loose comparison
-        expected_parts = re.findall(r'[\w.]+', expected_cmd.lower())  # ['cmdkey.exe', 'list']
+        expected_parts = re.findall(r'[\w.]+', expected_cmd.lower())
+        found_match = False
 
         for line in result.stdout.splitlines():
             if "Command Line" in line or "Process_Command_Line" in line or "New_Process_Name" in line:
                 lowered = line.lower()
                 if all(part in lowered for part in expected_parts):
-                    return True
-        return False
-        # return is_payload_in_output(expected_cmd, result.stdout)
+                    found_match = True
+                    print(f"[DEBUG] Found matching line: {line}")
+                    break
+
+        if not found_match:
+            print("[DEBUG] No matching command found in results")
+            return False
+
+        return True
 
     except Exception as e:
         print(f"[ERROR] Splunk query failed → {e}")
@@ -137,21 +151,31 @@ def process_attack_file(file_path: str):
     if not query:
         return
     print(f"\n==== Processing Rule: {rule_name} ====")
+    print(f"Original command: {original_cmd}")
 
     # --- Original Attack ---
     timestamp = get_current_time_iso()
     run_commandline(original_cmd)
-    time.sleep(3)
-    detected = run_splunk_query(query, timestamp, original_cmd)  # ← sửa ở đây
+    time.sleep(COMMAND_TIMEOUT)
+    detected = run_splunk_query(query, timestamp, original_cmd)
     log_detection(rule_name, "original", original_cmd, detected)
 
     # --- Evasion Attempts ---
-    for evasion_type, evasion_cmd in evasions.items():
-        timestamp = get_current_time_iso()
-        run_commandline(evasion_cmd)
-        time.sleep(3)
-        detected = run_splunk_query(query, timestamp, evasion_cmd)  # ← sửa ở đây
-        log_detection(rule_name, evasion_type, evasion_cmd, detected)
+    if detected:
+        # Only run evasions if original command was detected
+        for evasion_type, evasion_cmd in evasions.items():
+            print(f"\nTrying evasion: {evasion_type}")
+            print(f"Command: {evasion_cmd}")
+            timestamp = get_current_time_iso()
+            run_commandline(evasion_cmd)
+            time.sleep(COMMAND_TIMEOUT)
+            detected = run_splunk_query(query, timestamp, evasion_cmd)
+            log_detection(rule_name, evasion_type, evasion_cmd, detected)
+    else:
+        # If original command bypassed, log all evasions as bypassed without running them
+        print(f"[SKIP] Original command bypassed detection, skipping evasion attempts for {rule_name}")
+        for evasion_type, evasion_cmd in evasions.items():
+            log_detection(rule_name, evasion_type, evasion_cmd, False)
 
 def run_all_attacks():
     print("[*] Starting automated attack execution...\n")

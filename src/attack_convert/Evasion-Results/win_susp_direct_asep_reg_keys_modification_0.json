@@ -2,10 +2,10 @@
   "rule_name": "win_susp_direct_asep_reg_keys_modification_0",
   "original_command": "reg.exe add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce",
   "evasions": {
-    "insertion": "reg.exe add && \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce",
+    "insertion": "reg.exe add \\software\\Microsoft\\Windows\\C\"urrentVersion\\RunServicesOnce\"",
     "substitution": "reg.exe add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce",
     "omission": "reg.exe add \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce # omission",
     "reordering": "reg.exe \\software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce add",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnLmV4ZSBhZGQgXHNvZnR3YXJlXE1pY3Jvc29mdFxXaW5kb3dzXEN1cnJlbnRWZXJzaW9uXFJ1blNlcnZpY2VzT25jZQ==')) | Invoke-Expression\" "
   }
 }

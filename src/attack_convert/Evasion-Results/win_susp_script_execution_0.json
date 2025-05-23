@@ -2,10 +2,10 @@
   "rule_name": "win_susp_script_execution_0",
   "original_command": "wscript.exe .vba",
   "evasions": {
-    "insertion": "wscript.exe\t.vba",
+    "insertion": "wscript.exe \\\".vba\\\"",
     "substitution": "wscript.exe .vba #substitution",
     "omission": "wscript .vba",
     "reordering": "wscript.exe .vba",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgLnZiYQ==')) | Invoke-Expression\" "
   }
 }

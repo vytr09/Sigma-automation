@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search New_Process_Name="*\\powershell.exe" | search Process_Command_Line IN ("*new-object system.net.webclient").downloadstring(*" OR "*new-object system.net.webclient).downloadfile(*" OR "*new-object net.webclient).downloadstring(*" OR "*new-object net.webclient).downloadfile(*")
+| search New_Process_Name=".*\\powershell.exe" | search Process_Command_Line IN ("*new-object system.net.webclient*").downloadstring(*" OR "*new-object system.net.webclient).downloadfile(*" OR "*new-object net.webclient).downloadstring(*" OR "*new-object net.webclient).downloadfile(*")
 | table _time, New_Process_Name, Process_Command_Line

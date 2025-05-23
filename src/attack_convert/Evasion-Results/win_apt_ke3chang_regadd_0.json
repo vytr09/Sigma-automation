@@ -2,10 +2,10 @@
   "rule_name": "win_apt_ke3chang_regadd_0",
   "original_command": "-Property DWORD -name DisableFirstRunCustomize -value 2 -Force",
   "evasions": {
-    "insertion": "-Property ^ DWORD ^ -name ^ DisableFirstRunCustomize ^ -value ^ 2 ^ -Force",
+    "insertion": "-Property DWORD -name DisableFirst\"RunCustomize\" -value 2 -Force",
     "substitution": "-Property DWORD -name DisableFirstRunCustomize -value 2 -Force #substitution",
     "omission": "-Property DWORD -name DisableFirstRunCustomize -value 2 -Force # omission",
-    "reordering": "-Property -value -name 2 DisableFirstRunCustomize DWORD -Force",
-    "recoding": "<recoding not applicable>"
+    "reordering": "-Property DWORD -name DisableFirstRunCustomize -Force 2 -value",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LVByb3BlcnR5IERXT1JEIC1uYW1lIERpc2FibGVGaXJzdFJ1bkN1c3RvbWl6ZSAtdmFsdWUgMiAtRm9yY2U=')) | Invoke-Expression\" "
   }
 }

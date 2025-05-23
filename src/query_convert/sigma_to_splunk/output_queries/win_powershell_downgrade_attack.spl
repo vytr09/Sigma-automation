@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search Process_Command_Line IN ("* -version 2 *", "* -versio 2 *", "* -versi 2 *", "* -vers 2 *", "* -ver 2 *", "* -ve 2 *") | search New_Process_Name="*\\powershell.exe"
+| search Process_Command_Line IN ("* -version* 2 *", "OR", "* -versio* 2 *", "OR", "* -versi* 2 *", "OR", "* -vers* 2 *", "OR", "* -ver* 2 *", "OR", "* -ve* 2 *") | search New_Process_Name=".*\\powershell.exe"
 | table _time, New_Process_Name, Process_Command_Line

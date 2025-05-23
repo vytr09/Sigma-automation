@@ -2,10 +2,10 @@
   "rule_name": "win_net_enum_0",
   "original_command": "net.exe view",
   "evasions": {
-    "insertion": "#hijack net.exe view",
+    "insertion": "net.exe vi\"ew\"",
     "substitution": "net.exe view #substitution",
     "omission": "net view",
     "reordering": "net.exe view",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSB2aWV3')) | Invoke-Expression\" "
   }
 }

@@ -2,10 +2,10 @@
   "rule_name": "win_powershell_downgrade_attack_0",
   "original_command": "powershell.exe -version 2",
   "evasions": {
-    "insertion": "#hijack powershell.exe -version 2",
+    "insertion": "powershell.exe -ver\\\"sion\\\" 2",
     "substitution": "powershell.exe -version 2 #substitution",
     "omission": "powershell -version 2",
     "reordering": "powershell.exe 2 -version",
-    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB2AGUAcgBzAGkAbwBuACAAMgA="
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB2AGUAcgBzAGkAbwBuACAAMgA= "
   }
 }

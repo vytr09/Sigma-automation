@@ -17,8 +17,6 @@ def load_valid_rules(path: str) -> list[str]:
 def extract_rule_and_command(line: str) -> tuple[str, str] | None:
     """
     Trích xuất rule name và command line từ một dòng log.
-    Ví dụ:
-    [2025-05-19 17:29:10 UTC] sysmon_apt_muddywater_dnstunnel_0 [recoding]: BYPASSED → powershell.exe -EncodedCommand ABC123==
     """
     match = re.search(r"\] ([^\[\]:]+) \[.*\]: .*→ (.+)$", line)
     if match:

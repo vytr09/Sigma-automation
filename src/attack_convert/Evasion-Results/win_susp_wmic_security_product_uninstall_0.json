@@ -2,10 +2,10 @@
   "rule_name": "win_susp_wmic_security_product_uninstall_0",
   "original_command": "wmic product where name= call uninstall /nointeractive",
   "evasions": {
-    "insertion": "wmic product && where name= call uninstall /nointeractive",
+    "insertion": "wmic product \"where\" name= call uninstall /nointeractive",
     "substitution": "wmic product where name= --call uninstall /nointeractive",
     "omission": "wmic product where name= call uninstall /nointeractive # omission",
-    "reordering": "wmic /nointeractive name= call where uninstall product",
-    "recoding": "<recoding not applicable>"
+    "reordering": "wmic product where name= call uninstall /nointeractive",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYyBwcm9kdWN0IHdoZXJlIG5hbWU9IGNhbGwgdW5pbnN0YWxsIC9ub2ludGVyYWN0aXZl')) | Invoke-Expression\" "
   }
 }

@@ -2,10 +2,10 @@
   "rule_name": "win_install_reg_debugger_backdoor_0",
   "original_command": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe",
   "evasions": {
-    "insertion": "\\CurrentVersion\\Image File #injected Execution Options\\displayswitch.exe",
+    "insertion": "\\CurrentVersion\\Image File Execution \"O\"\"p\"\"t\"\"i\"\"o\"\"n\"\"s\"\"\\\"\"d\"\"i\"\"s\"\"p\"\"l\"\"a\"\"y\"\"s\"\"w\"\"i\"\"t\"\"c\"\"h\"\".\"\"e\"\"x\"\"e\"",
     "substitution": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe #substitution",
     "omission": "\\CurrentVersion\\Image File Execution Options\\displayswitch",
     "reordering": "\\CurrentVersion\\Image Options\\displayswitch.exe Execution File",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEN1cnJlbnRWZXJzaW9uXEltYWdlIEZpbGUgRXhlY3V0aW9uIE9wdGlvbnNcZGlzcGxheXN3aXRjaC5leGU=')) | Invoke-Expression\" "
   }
 }

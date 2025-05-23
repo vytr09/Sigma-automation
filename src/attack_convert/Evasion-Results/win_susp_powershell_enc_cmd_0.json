@@ -2,10 +2,10 @@
   "rule_name": "win_susp_powershell_enc_cmd_0",
   "original_command": ".exe -ENCOD",
   "evasions": {
-    "insertion": "#hijack .exe -ENCOD",
+    "insertion": ".exe \\\"-\\\"\\\"E\\\"\\\"N\\\"\\\"C\\\"\\\"O\\\"\\\"D\\\"",
     "substitution": ".exe -ENCOD #substitution",
     "omission": ".exe -ENCOD # omission",
     "reordering": ".exe -ENCOD",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LmV4ZSAtRU5DT0Q=')) | Invoke-Expression\" "
   }
 }

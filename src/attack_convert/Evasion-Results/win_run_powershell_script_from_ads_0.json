@@ -2,10 +2,10 @@
   "rule_name": "win_run_powershell_script_from_ads_0",
   "original_command": "powershell.exe Get-Content -Stream",
   "evasions": {
-    "insertion": "powershell.exe\tGet-Content\t-Stream",
+    "insertion": "powershell.exe Get-Content \\\"-Stream\\\"",
     "substitution": "powershell.exe Get-Content -Stream #substitution",
     "omission": "powershell Get-Content -Stream",
     "reordering": "powershell.exe -Stream Get-Content",
-    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBDAG8AbgB0AGUAbgB0ACAALQBTAHQAcgBlAGEAbQA="
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBDAG8AbgB0AGUAbgB0ACAALQBTAHQAcgBlAGEAbQA= "
   }
 }

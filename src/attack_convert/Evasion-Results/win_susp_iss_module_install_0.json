@@ -2,10 +2,10 @@
   "rule_name": "win_susp_iss_module_install_0",
   "original_command": "\\APPCMD.EXE install module /name:",
   "evasions": {
-    "insertion": "\\APPCMD.EXE\tinstall\tmodule\t/name:",
+    "insertion": "\\APPCMD.EXE install \\\"module\\\" \\\"/name:\\\"",
     "substitution": "\\APPCMD.EXE install module /name: #substitution",
     "omission": "\\APPCMD install module /name:",
-    "reordering": "\\APPCMD.EXE install /name: module",
-    "recoding": "<recoding not applicable>"
+    "reordering": "\\APPCMD.EXE install module /name:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFQUENNRC5FWEUgaW5zdGFsbCBtb2R1bGUgL25hbWU6')) | Invoke-Expression\" "
   }
 }

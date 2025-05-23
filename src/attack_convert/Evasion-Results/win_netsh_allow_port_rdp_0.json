@@ -2,10 +2,10 @@
   "rule_name": "win_netsh_allow_port_rdp_0",
   "original_command": "advfirewall firewall add rule action=allow protocol=TCP localport=3389",
   "evasions": {
-    "insertion": "advfirewall firewall && add rule action=allow protocol=TCP localport=3389",
+    "insertion": "advfirewall \\\"f\\\"\\\"i\\\"\\\"r\\\"\\\"e\\\"\\\"w\\\"\\\"a\\\"\\\"l\\\"\\\"l\\\" add rule action=allow protocol=TCP localport=3389",
     "substitution": "advfirewall firewall add rule action=allow protocol=TCP localport=3389 #substitution",
     "omission": "advfirewall firewall add rule action=allow protocol=TCP localport=3389 # omission",
-    "reordering": "advfirewall action=allow localport=3389 rule add protocol=TCP firewall",
-    "recoding": "<recoding not applicable>"
+    "reordering": "advfirewall firewall protocol=TCP rule action=allow add localport=3389",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWR2ZmlyZXdhbGwgZmlyZXdhbGwgYWRkIHJ1bGUgYWN0aW9uPWFsbG93IHByb3RvY29sPVRDUCBsb2NhbHBvcnQ9MzM4OQ==')) | Invoke-Expression\" "
   }
 }

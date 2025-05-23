@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search Process_Command_Line IN ("* -decode *", "* /decode *", "* -decodehex *", "* /decodehex *", "* -urlcache *", "* /urlcache *", "* -verifyctl *", "* /verifyctl *", "* -encode *", "* /encode *", "*certutil* -URL*", "*certutil* /URL*", "*certutil* -ping*", "*certutil* /ping*")
+| search Process_Command_Line IN ("* -decode *", "OR", "* /decode *", "OR", "* -decodehex *", "OR", "* /decodehex *", "OR", "* -urlcache *", "OR", "* /urlcache *", "OR", "* -verifyctl *", "OR", "* /verifyctl *", "OR", "* -encode *", "OR", "* /encode *", "OR", "*certutil* -URL*", "OR", "*certutil* /URL*", "OR", "*certutil* -ping*", "OR", "*certutil* /ping*")
 | table _time, New_Process_Name, Process_Command_Line

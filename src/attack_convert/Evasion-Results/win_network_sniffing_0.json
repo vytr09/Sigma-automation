@@ -2,10 +2,10 @@
   "rule_name": "win_network_sniffing_0",
   "original_command": "tshark.exe \\tshark.exe -i",
   "evasions": {
-    "insertion": "tshark.exe\n\\tshark.exe\n-i",
+    "insertion": "tshark.exe \\tshark.exe \\\"-\\\"\\\"i\\\"",
     "substitution": "tshark.exe \\tshark.exe -i #substitution",
     "omission": "tshark \\tshark -i",
     "reordering": "tshark.exe -i \\tshark.exe",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHNoYXJrLmV4ZSBcdHNoYXJrLmV4ZSAtaQ==')) | Invoke-Expression\" "
   }
 }

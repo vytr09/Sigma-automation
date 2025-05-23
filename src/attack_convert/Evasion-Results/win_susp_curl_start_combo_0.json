@@ -2,10 +2,10 @@
   "rule_name": "win_susp_curl_start_combo_0",
   "original_command": "curl start",
   "evasions": {
-    "insertion": "curl #injected start",
+    "insertion": "curl \"st\"art",
     "substitution": "curl start #substitution",
     "omission": "curl start # omission",
     "reordering": "curl start",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3VybCBzdGFydA==')) | Invoke-Expression\" "
   }
 }

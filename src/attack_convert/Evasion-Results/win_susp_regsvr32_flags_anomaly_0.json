@@ -2,10 +2,10 @@
   "rule_name": "win_susp_regsvr32_flags_anomaly_0",
   "original_command": "regsvr32.exe /i:",
   "evasions": {
-    "insertion": "regsvr32.exe #inserted /i:",
+    "insertion": "regsvr32.exe /\"i\"\":\"",
     "substitution": "regsvr32.exe /install:",
     "omission": "regsvr32 /i:",
     "reordering": "regsvr32.exe /i:",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnc3ZyMzIuZXhlIC9pOg==')) | Invoke-Expression\" "
   }
 }

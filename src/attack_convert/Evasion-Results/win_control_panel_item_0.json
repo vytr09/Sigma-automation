@@ -2,10 +2,10 @@
   "rule_name": "win_control_panel_item_0",
   "original_command": "reg add CurrentVersion\\\\Control Panel\\\\CPLs",
   "evasions": {
-    "insertion": "reg ^ add ^ CurrentVersion\\\\Control ^ Panel\\\\CPLs",
+    "insertion": "reg add \"CurrentVers\"ion\\\\Control Panel\\\\CPLs",
     "substitution": "reg add CurrentVersion\\\\Control Panel\\\\CPLs",
     "omission": "reg add CurrentVersion\\\\Control Panel\\\\CPLs # omission",
-    "reordering": "reg Panel\\\\CPLs add CurrentVersion\\\\Control",
-    "recoding": "<recoding not applicable>"
+    "reordering": "reg add Panel\\\\CPLs CurrentVersion\\\\Control",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBDdXJyZW50VmVyc2lvblxcQ29udHJvbCBQYW5lbFxcQ1BMcw==')) | Invoke-Expression\" "
   }
 }

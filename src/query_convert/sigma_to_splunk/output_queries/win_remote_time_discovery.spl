@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search (New_Process_Name IN ("*\\net.exe", "*\\net1.exe") | search Process_Command_Line="*time*") OR (New_Process_Name="*\\w32tm.exe" | search Process_Command_Line="*tz*") OR (New_Process_Name="*\\powershell.exe" | search Process_Command_Line="*Get-Date*")
+| search (New_Process_Name IN (".*\\net.exe", "OR", ".*\\net1.exe") | search Process_Command_Line="*time*") OR (New_Process_Name=".*\\w32tm.exe" | search Process_Command_Line="*tz*") OR (New_Process_Name=".*\\powershell.exe" | search Process_Command_Line="*Get-Date*")
 | table _time, New_Process_Name, Process_Command_Line

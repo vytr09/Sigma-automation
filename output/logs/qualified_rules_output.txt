@@ -2,11 +2,8 @@ sysmon_apt_muddywater_dnstunnel
 win_apt_apt29_thinktanks
 win_apt_hurricane_panda
 win_apt_ta17_293a_ps
-win_apt_taidoor
-win_apt_zxshell
 win_bootconf_mod
 win_change_default_file_association
-win_cmdkey_recon
 win_commandline_path_traversal
 win_crime_snatch_ransomware
 win_data_compressed_with_rar
@@ -35,7 +32,6 @@ win_run_powershell_script_from_ads
 win_service_execution
 win_shadow_copies_access_symlink
 win_spn_enum
-win_susp_adfind
 win_susp_bcdedit
 win_susp_bginfo
 win_susp_cdb
@@ -52,6 +48,7 @@ win_susp_disable_ie_features
 win_susp_disable_raccine
 win_susp_eventlog_clear
 win_susp_explorer_break_proctree
+win_susp_findstr_lnk
 win_susp_fsutil_usage
 win_susp_iss_module_install
 win_susp_msiexec_web_install
@@ -63,9 +60,9 @@ win_susp_powershell_enc_cmd
 win_susp_powershell_hidden_b64_cmd
 win_susp_procdump
 win_susp_psr_capture_screenshots
-win_susp_rar_flags
 win_susp_regsvr32_flags_anomaly
 win_susp_rundll32_by_ordinal
+win_susp_script_execution
 win_susp_service_path_modification
 win_susp_squirrel_lolbin
 win_susp_svchost_no_cli

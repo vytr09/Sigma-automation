@@ -2,10 +2,10 @@
   "rule_name": "win_hack_koadic_0",
   "original_command": "cmd.exe /q /c chcp",
   "evasions": {
-    "insertion": "cmd.exe ^ /q ^ /c ^ chcp",
+    "insertion": "cmd.exe /q /c \"ch\"cp",
     "substitution": "cmd.exe /q -c chcp",
     "omission": "cmd /q /c chcp",
-    "reordering": "cmd.exe /c /q chcp",
-    "recoding": "<recoding not applicable>"
+    "reordering": "cmd.exe /q /c chcp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21kLmV4ZSAvcSAvYyBjaGNw')) | Invoke-Expression\" "
   }
 }

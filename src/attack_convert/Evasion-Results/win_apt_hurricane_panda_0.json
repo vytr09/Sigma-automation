@@ -2,10 +2,10 @@
   "rule_name": "win_apt_hurricane_panda_0",
   "original_command": "\\Win64.exe",
   "evasions": {
-    "insertion": "\\Win64.exe # inserted",
+    "insertion": "\\\"\\Win64.exe\\\"",
     "substitution": "\\Win64.exe #substitution",
     "omission": "\\Win64",
     "reordering": "\\Win64.exe",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdpbjY0LmV4ZQ==')) | Invoke-Expression\" "
   }
 }

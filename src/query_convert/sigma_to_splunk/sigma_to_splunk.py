@@ -30,6 +30,16 @@ field_mappings = {
     "process.executable": "New_Process_Name",
     "process.command_line": "Process_Command_Line",
     "user.name": "user.name",
+    "process.parent.executable": "Parent_Process_Name",
+    "process.parent.command_line": "Parent_Process_Command_Line",
+    "process.current_directory": "Current_Directory",
+    "process.integrity_level": "Process_Integrity_Level",
+    "process.creation_time": "Process_Creation_Time",
+    "process.id": "Process_ID",
+    "process.parent.id": "Parent_Process_ID",
+    "process.parent.creation_time": "Parent_Process_Creation_Time",
+    "process.parent.integrity_level": "Parent_Process_Integrity_Level",
+    "process.parent.current_directory": "Parent_Current_Directory"
 }
 
 def enhance_netsh_pattern(value):
@@ -48,59 +58,105 @@ def enhance_netsh_pattern(value):
         return ' '.join(new_words)
     return value
 
+def enhance_command_line_pattern(value):
+    # Handle special cases for command line patterns
+    if "netsh" in value:
+        return enhance_netsh_pattern(value)
+    elif "powershell" in value:
+        # Preserve important PowerShell patterns
+        value = re.sub(r'-enc(?:odedcommand)?\s+([A-Za-z0-9+/=]+)', r'-enc \1', value)
+        value = re.sub(r'-e(?:c)?\s+([A-Za-z0-9+/=]+)', r'-e \1', value)
+        value = re.sub(r'-w(?:indowstyle)?\s+hidden', r'-w hidden', value)
+        value = re.sub(r'-nop(?:rofile)?', r'-nop', value)
+        value = re.sub(r'-noni(?:nteractive)?', r'-noni', value)
+        value = re.sub(r'-nologo', r'-nologo', value)
+        value = re.sub(r'-ep(?:executionpolicy)?\s+bypass', r'-ep bypass', value)
+    elif "cmd" in value:
+        # Preserve important CMD patterns
+        value = re.sub(r'/c\s+([^"]+)', r'/c \1', value)
+        value = re.sub(r'/k\s+([^"]+)', r'/k \1', value)
+    elif "reg" in value:
+        # Preserve important REG patterns
+        value = re.sub(r'add\s+([^"]+)', r'add \1', value)
+        value = re.sub(r'delete\s+([^"]+)', r'delete \1', value)
+        value = re.sub(r'query\s+([^"]+)', r'query \1', value)
+    elif "wmic" in value:
+        # Preserve important WMIC patterns
+        value = re.sub(r'process\s+call\s+create', r'process call create', value)
+        value = re.sub(r'product\s+where\s+name', r'product where name', value)
+    elif "schtasks" in value:
+        # Preserve important SCHTASKS patterns
+        value = re.sub(r'/create\s+([^"]+)', r'/create \1', value)
+        value = re.sub(r'/delete\s+([^"]+)', r'/delete \1', value)
+        value = re.sub(r'/query\s+([^"]+)', r'/query \1', value)
+    
+    # Handle wildcards more intelligently
+    if "*" in value:
+        parts = value.split()
+        new_parts = []
+        for i, part in enumerate(parts):
+            if "*" in part:
+                new_parts.append(part)
+            else:
+                # Check if next part has wildcard
+                has_next_wildcard = i + 1 < len(parts) and "*" in parts[i + 1]
+                if not has_next_wildcard and not part.endswith("="):
+                    new_parts.append(part + "*")
+                else:
+                    new_parts.append(part)
+        value = " ".join(new_parts)
+    
+    return value
 
 def convert_filter_to_splunk(filter_str):
-
     # Ghép chuỗi lại thành một dòng
     filter_str = filter_str.replace('\n', ' ').replace('\r', ' ')
     filter_str = re.sub(r'\s+', ' ', filter_str)  # loại bỏ khoảng trắng thừa
 
     # Mapping các trường
-    field_mappings = {
-        "process.executable": "New_Process_Name",
-        "process.command_line": "Process_Command_Line",
-        "user.name": "user.name",
-    }
-
     for sigma_field, splunk_field in field_mappings.items():
         filter_str = filter_str.replace(sigma_field, splunk_field)
 
     # Thay AND thành | search
     filter_str = filter_str.replace("AND", "| search")
-    # print(f"[DEBUG] filter_str: {filter_str}")
 
     # Bước xử lý OR trong các chuỗi có dấu ngoặc: field=(val1 OR val2)
     def convert_or_block_to_in(match):
         field = match.group(1)
         or_values = match.group(2)
 
-        values = [v.strip().strip('"') for v in or_values.split("OR")]
+        # Split values while preserving quoted strings
+        values = []
+        current = ""
+        in_quotes = False
+        for char in or_values:
+            if char == '"':
+                in_quotes = not in_quotes
+                current += char
+            elif char == ' ' and not in_quotes:
+                if current.strip():
+                    values.append(current.strip())
+                current = ""
+            else:
+                current += char
+        if current.strip():
+            values.append(current.strip())
+
+        # Clean up values
+        values = [v.strip().strip('"') for v in values if v.strip()]
+        
+        # Handle special cases for command line patterns
+        if field == "Process_Command_Line":
+            values = [enhance_command_line_pattern(v) for v in values]
+        elif field == "New_Process_Name":
+            # Handle executable patterns
+            values = [v.replace("*", ".*") for v in values]
 
         quoted_values = ', '.join([f'"{v}"' for v in values])
         return f'{field} IN ({quoted_values})'
 
-    # Thử tìm OR với biểu thức field: (val1 OR val2)
-    print(f"[DEBUG] FILTER_STR:\n{filter_str}\n")
-
-    matches = re.findall(r'([\w\.]+):\s*\(\s*((?:.|\n)*?)\s*\)', filter_str, flags=re.DOTALL)
-    print(f"[DEBUG] Có {len(matches)} match(es) cho field:(val1 OR val2): {matches}")
-
+    # Process OR blocks
     filter_str = re.sub(r'([\w\.]+):\s*\(\s*((?:.|\n)*?)\s*\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
-
-    # # Dạng 1: field IN (val1 OR val2)
-    # in_matches = re.findall(r'(\b[\w\.]+)\s+IN\s+\((.*?)\)', filter_str, flags=re.DOTALL)
-    # print(f"[DEBUG] IN matches: {in_matches}")
-    # filter_str = re.sub(r'(\b[\w\.]+)\s+IN\s+\((.*?)\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
-
-    # # Dạng 2: field: (val1 OR val2)
-    # colon_matches = re.findall(r'(\b[\w\.]+):\s*\((.*?)\)', filter_str, flags=re.DOTALL)
-    # print(f"[DEBUG] Colon matches: {colon_matches}")
-    # filter_str = re.sub(r'(\b[\w\.]+):\s*\((.*?)\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
-
-    # # Dạng 3: field = (val1 OR val2)
-    # equal_matches = re.findall(r'(\b[\w\.]+)\s*=\s*\((.*?)\)', filter_str, flags=re.DOTALL)
-    # print(f"[DEBUG] Equal matches: {equal_matches}")
-    # filter_str = re.sub(r'(\b[\w\.]+)\s*=\s*\((.*?)\)', convert_or_block_to_in, filter_str, flags=re.DOTALL)
 
     def replace_field_value(match):
         field = match.group(1)
@@ -108,55 +164,20 @@ def convert_filter_to_splunk(filter_str):
         grouped_val = match.group(3)
 
         if quoted_val:
+            if field == "Process_Command_Line":
+                quoted_val = enhance_command_line_pattern(quoted_val)
+            elif field == "New_Process_Name":
+                quoted_val = quoted_val.replace("*", ".*")
             return f'{field}="{quoted_val}"'
         elif grouped_val:
             return f'{field}=({grouped_val})'
         else:
-            return match.group(0)  # fallback
-
-    # Chuyển field: "value" → field="value"
-    filter_str = re.sub(r'(\b[\w\.]+):\s*(?:"(.*?)"|\((.*?)\))', replace_field_value, filter_str)
-
-    def trim_outer_wildcard_spaces(s):
-        pattern = re.compile(r'(\bProcess_Command_Line\s*=\s*")([^"]+)(")')
-
-        def clean_value(match):
-            field, val, end = match.groups()
-
-            if '*' in val:
-                # Bỏ khoảng trắng sau dấu * đầu tiên nếu đứng đầu
-                if val.startswith('* '):
-                    val = '*' + val[2:]
-
-                # Bỏ khoảng trắng trước dấu * nếu đứng cuối
-                if val.endswith(' *'):
-                    val = val[:-2] + '*'
-
-                # Có thể kết hợp .strip() nếu cần
-                return f'{field}{val}{end}'
-
             return match.group(0)
 
-        return pattern.sub(clean_value, s)
+    # Convert field: "value" → field="value"
+    filter_str = re.sub(r'(\b[\w\.]+):\s*(?:"(.*?)"|\((.*?)\))', replace_field_value, filter_str)
 
-    filter_str = trim_outer_wildcard_spaces(filter_str)
-
-    # # Xử lý OR và loại bỏ dấu ngoặc ()
-    # def expand_or_clauses(filter_str):
-    #     or_pattern = re.compile(r'(\b[\w\.]+)=\((.*?)\)')
-
-    #     def replace_or(match):
-    #         field = match.group(1)
-    #         values_str = match.group(2)
-    #         values = [v.strip().strip('"') for v in values_str.split("OR")]
-    #         expanded = ' OR '.join([f'{field}="{v}"' for v in values])
-    #         return expanded
-
-    #     return or_pattern.sub(replace_or, filter_str)
-
-    # filter_str = expand_or_clauses(filter_str)
-
-    # Xử lý đặc biệt cho cụm như: netsh wlan s* p* k*=clear → thêm * sau mỗi từ chưa có * và không phải biểu thức gán
+    # Handle special command line patterns
     def process_special_command_line(s):
         pattern = re.compile(r'Process_Command_Line="([^"]+)"')
 
@@ -193,7 +214,7 @@ def convert_filter_to_splunk(filter_str):
     
     filter_str = process_special_command_line(filter_str)
 
-    # Bỏ điều kiện Process_Command_Line nếu chỉ chứa "*.đuôi*"
+    # Remove blocks with only wildcard patterns
     search_blocks = filter_str.split("| search")
     new_blocks = []
 
@@ -205,18 +226,13 @@ def convert_filter_to_splunk(filter_str):
         if "Process_Command_Line=" in block:
             values = re.findall(r'Process_Command_Line="([^"]+)"', block)
             if all(re.match(r'^\*\.[a-zA-Z0-9]+\*$', v) for v in values):
-                continue  # Bỏ khối này
+                continue
 
         elif "Process_Command_Line IN" in block:
-            # Kiểm tra các giá trị trong IN
             values = re.findall(r'Process_Command_Line\s*IN\s*\(([^)]+)\)', block)
             flattened_values = []
-
             for group in values:
-                # Tách các giá trị trong IN(...)
                 flattened_values.extend([v.strip().strip('"') for v in group.split(',')])
-
-            # Nếu TẤT CẢ các giá trị đều là "*.đuôi*", thì bỏ khối này
             if flattened_values and all(re.match(r'^\*\.[a-zA-Z0-9]+\*$', v) for v in flattened_values):
                 continue
 

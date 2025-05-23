@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search Process_Command_Line IN ("netsh firewall set opmode mode=disable", "netsh advfirewall set * state off")
+| search Process_Command_Line IN ("netsh firewall set opmode mode=disable", "OR", "netsh advfirewall set * state off")
 | table _time, New_Process_Name, Process_Command_Line

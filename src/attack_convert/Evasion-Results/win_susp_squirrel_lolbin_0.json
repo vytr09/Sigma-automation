@@ -2,10 +2,10 @@
   "rule_name": "win_susp_squirrel_lolbin_0",
   "original_command": "update.exe --processStartAndWait .exe",
   "evasions": {
-    "insertion": "update.exe #injected --processStartAndWait .exe",
+    "insertion": "update.exe \\\"-\\\"\\\"-\\\"\\\"p\\\"\\\"r\\\"\\\"o\\\"\\\"c\\\"\\\"e\\\"\\\"s\\\"\\\"s\\\"\\\"S\\\"\\\"t\\\"\\\"a\\\"\\\"r\\\"\\\"t\\\"\\\"A\\\"\\\"n\\\"\\\"d\\\"\\\"W\\\"\\\"a\\\"\\\"i\\\"\\\"t\\\" .exe",
     "substitution": "update.exe --processStartAndWait .exe #substitution",
     "omission": "update --processStartAndWait",
     "reordering": "update.exe .exe --processStartAndWait",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dXBkYXRlLmV4ZSAtLXByb2Nlc3NTdGFydEFuZFdhaXQgLmV4ZQ==')) | Invoke-Expression\" "
   }
 }

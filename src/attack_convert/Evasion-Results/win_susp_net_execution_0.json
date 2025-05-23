@@ -2,10 +2,10 @@
   "rule_name": "win_susp_net_execution_0",
   "original_command": "net.exe localgroup",
   "evasions": {
-    "insertion": "net.exe\nlocalgroup",
+    "insertion": "net.exe \"l\"\"o\"\"c\"\"a\"\"l\"\"g\"\"r\"\"o\"\"u\"\"p\"",
     "substitution": "net.exe localgroup #substitution",
     "omission": "net localgroup",
     "reordering": "net.exe localgroup",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSBsb2NhbGdyb3Vw')) | Invoke-Expression\" "
   }
 }

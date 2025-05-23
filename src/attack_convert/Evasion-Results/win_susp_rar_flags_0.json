@@ -2,10 +2,10 @@
   "rule_name": "win_susp_rar_flags_0",
   "original_command": "-hp -m",
   "evasions": {
-    "insertion": "-hp ^ -m",
+    "insertion": "-hp \\\"-\\\"\\\"m\\\"",
     "substitution": "-hp -m #substitution",
     "omission": "-hp -m # omission",
     "reordering": "-hp -m",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWhwIC1t')) | Invoke-Expression\" "
   }
 }

@@ -1,3 +1,3 @@
 index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search process.parent.command_line="*cmd*/c*" | search Process_Command_Line="*/../../*"
+| search Parent_Process_Command_Line="*cmd*/c*" | search Process_Command_Line="*/../../*"
 | table _time, New_Process_Name, Process_Command_Line

@@ -2,10 +2,10 @@
   "rule_name": "win_susp_disable_ie_features_0",
   "original_command": "-name DisableFirstRunCustomize -value 2",
   "evasions": {
-    "insertion": "-name DisableFirstRunCustomize && -value 2",
+    "insertion": "-name \"D\"\"i\"\"s\"\"a\"\"b\"\"l\"\"e\"\"F\"\"i\"\"r\"\"s\"\"t\"\"R\"\"u\"\"n\"\"C\"\"u\"\"s\"\"t\"\"o\"\"m\"\"i\"\"z\"\"e\" -value 2",
     "substitution": "-name DisableFirstRunCustomize -value 2 #substitution",
     "omission": "-name DisableFirstRunCustomize -value 2 # omission",
-    "reordering": "-name -value DisableFirstRunCustomize 2",
-    "recoding": "<recoding not applicable>"
+    "reordering": "-name DisableFirstRunCustomize 2 -value",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW5hbWUgRGlzYWJsZUZpcnN0UnVuQ3VzdG9taXplIC12YWx1ZSAy')) | Invoke-Expression\" "
   }
 }

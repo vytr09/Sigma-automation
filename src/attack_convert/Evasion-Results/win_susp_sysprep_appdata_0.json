@@ -2,10 +2,10 @@
   "rule_name": "win_susp_sysprep_appdata_0",
   "original_command": "\\sysprep.exe \\AppData\\\\",
   "evasions": {
-    "insertion": "\\sysprep.exe\n\\AppData\\\\",
+    "insertion": "\\\"s\"\"y\"\"s\"\"p\"\"r\"\"e\"\"p\"\".\"\"e\"\"x\"\"e\" \\AppData\\\\",
     "substitution": "\\sysprep.exe \\AppData\\\\ #substitution",
     "omission": "\\sysprep \\AppData\\\\",
     "reordering": "\\sysprep.exe \\AppData\\\\",
-    "recoding": "<recoding not applicable>"
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN5c3ByZXAuZXhlIFxBcHBEYXRhXFw=')) | Invoke-Expression\" "
   }
 }
