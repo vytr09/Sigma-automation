@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 
 # ========== Config ==========
 EVASION_RESULTS_DIR = os.path.join("src", "attack_convert", "Evasion-Results")
-QUERY_DIR = os.path.join("output", "improved_queries")
+QUERY_DIR = os.path.join("src", "query_convert", "sigma_to_splunk","output_queries")
 LOG_DIR = os.path.join("output", "logs")
 GLOBAL_LOG = os.path.join(LOG_DIR, "global_detection_log.txt")
 
@@ -66,7 +66,7 @@ def run_splunk_query(query: str, since: str, expected_cmd: str) -> bool:
     try:
         result = subprocess.run([
             "C:\\Program Files\\Splunk\\bin\\splunk", "search",
-            full_query, "-auth", "Tuyen:Tuyen1630@"
+            full_query, "-auth", "vy:22521709"
         ], capture_output=True, text=True)
 
         print("[DEBUG SPLUNK OUTPUT]")

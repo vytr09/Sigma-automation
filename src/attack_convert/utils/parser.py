@@ -90,7 +90,9 @@ def prioritize_command(commands: list[str]) -> str:
 
 
 # ===== Step 5: Extract executable =====
-def extract_executable(filter_str: str) -> str | None:
+from typing import Optional
+
+def extract_executable(filter_str: str) -> Optional[str]:
     group_match = re.search(r'process\.executable:\s*\((.*?)\)', filter_str, flags=re.DOTALL | re.IGNORECASE)
     if group_match:
         group_content = group_match.group(1)
@@ -102,7 +104,7 @@ def extract_executable(filter_str: str) -> str | None:
 
 
 # ===== Step 6: Combine =====
-def combine_command(exe: str | None, cmd: str) -> str:
+def combine_command(exe: Optional[str], cmd: str) -> str:
     if exe and not cmd.lower().startswith(exe.lower()):
         return f"{exe} {cmd}".strip()
     return cmd.strip()

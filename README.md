@@ -48,7 +48,7 @@ Sigma Automation is a security tool designed to enhance SIEM (Security Informati
 - Windows 10 system
 - Splunk Enterprise installed
 - Sysmon (optional, for enhanced logging)
-- Python 3.10+
+- Python 3.9
 - Required Python packages:
   ```bash
   pip install pyyaml
