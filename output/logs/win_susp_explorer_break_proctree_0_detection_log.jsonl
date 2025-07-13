@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:08:29 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "omission", "command": "explorer /root,", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:09:08 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "reordering", "command": "explorer.exe /root,", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:09:43 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:09:21 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "original", "command": "explorer.exe /root,", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:26 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "insertion", "command": "explorer.exe /\"r\"\"o\"\"o\"\"t\"\",\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:29 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "substitution", "command": "explorer.exe /root, #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:09:33 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "omission", "command": "explorer /root,", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:36 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "reordering", "command": "explorer.exe /root,", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:40 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXhwbG9yZXIuZXhlIC9yb290LA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

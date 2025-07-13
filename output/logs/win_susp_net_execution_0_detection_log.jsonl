@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:26:10 UTC", "rule": "win_susp_net_execution_0", "phase": "omission", "command": "net localgroup", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:26:35 UTC", "rule": "win_susp_net_execution_0", "phase": "reordering", "command": "net.exe localgroup", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:26:55 UTC", "rule": "win_susp_net_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:11:54 UTC", "rule": "win_susp_net_execution_0", "phase": "original", "command": "net.exe localgroup", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:11:59 UTC", "rule": "win_susp_net_execution_0", "phase": "insertion", "command": "net.exe \\\"localgroup\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:12:04 UTC", "rule": "win_susp_net_execution_0", "phase": "substitution", "command": "net.exe localgroup #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:12:08 UTC", "rule": "win_susp_net_execution_0", "phase": "omission", "command": "net localgroup", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:12:13 UTC", "rule": "win_susp_net_execution_0", "phase": "reordering", "command": "net.exe localgroup", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:12:17 UTC", "rule": "win_susp_net_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSBsb2NhbGdyb3Vw')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 09:27:19 UTC", "rule": "win_susp_bcdedit_0", "phase": "omission", "command": "bcdedit deletevalue", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:27:26 UTC", "rule": "win_susp_bcdedit_0", "phase": "reordering", "command": "bcdedit.exe deletevalue", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:27:34 UTC", "rule": "win_susp_bcdedit_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:03:01 UTC", "rule": "win_susp_bcdedit_0", "phase": "original", "command": "bcdedit.exe deletevalue", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:03:05 UTC", "rule": "win_susp_bcdedit_0", "phase": "insertion", "command": "bcdedit.exe \"d\"\"e\"\"l\"\"e\"\"t\"\"e\"\"v\"\"a\"\"l\"\"u\"\"e\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:03:08 UTC", "rule": "win_susp_bcdedit_0", "phase": "substitution", "command": "bcdedit.exe deletevalue #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:03:12 UTC", "rule": "win_susp_bcdedit_0", "phase": "omission", "command": "bcdedit deletevalue", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:03:15 UTC", "rule": "win_susp_bcdedit_0", "phase": "reordering", "command": "bcdedit.exe deletevalue", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:03:19 UTC", "rule": "win_susp_bcdedit_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmNkZWRpdC5leGUgZGVsZXRldmFsdWU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

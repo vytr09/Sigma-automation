@@ -4,3 +4,45 @@
 {"timestamp": "2025-04-23 09:02:09 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "Oracle \\java .exe", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:02:19 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "\\AppData\\Roaming\\Oracle .exe \\java", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:02:25 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "\\AppData\\Roaming\\Oracle \\java .exe", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "\\AppData\\Roaming\\Oracle \\java .e\\\"xe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "\\AppData\\Roaming\\Oracle \\java .exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "Oracle \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "\\AppData\\Roaming\\Oracle .exe \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcUm9hbWluZ1xPcmFjbGUgXGphdmEgLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:54 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "\\AppData\\Roaming\\Oracle \\java .exe", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:54 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "\\AppData\\Roaming\\Oracle \\java .e\\\"xe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:54 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "\\AppData\\Roaming\\Oracle \\java .exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:54 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "Oracle \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:54 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "\\AppData\\Roaming\\Oracle .exe \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:54 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcUm9hbWluZ1xPcmFjbGUgXGphdmEgLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:11 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "cscript.exe Retrive*.vbs", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:11 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "cscript.exe Retriv\"e*.vbs\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:11 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "cscript.exe Retrive*.vbs #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:11 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "cscript Retrive*", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:11 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "cscript.exe Retrive*.vbs", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:11 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjcmlwdC5leGUgUmV0cml2ZSoudmJz')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:36 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "cscript.exe Retrive*.vbs", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:36 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "cscript.exe Retriv\\\"e*.vbs\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:36 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "cscript.exe Retrive*.vbs #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:36 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "cscript Retrive*", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:36 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "cscript.exe Retrive*.vbs", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:36 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjcmlwdC5leGUgUmV0cml2ZSoudmJz')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:53 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "cscript.exe Retrive*.vbs", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:53 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "cscript.exe Retriv\"e*.vbs\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:53 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "cscript.exe Retrive*.vbs #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:53 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "cscript Retrive*", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:53 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "cscript.exe Retrive*.vbs", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:53 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjcmlwdC5leGUgUmV0cml2ZSoudmJz')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:18 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "\\AppData\\Roaming\\Oracle \\java .exe", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:18 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "\\AppData\\Roaming\\Oracle \\\"\\j\\\"ava .exe", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:18 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "\\AppData\\Roaming\\Oracle \\java .exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:18 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "Oracle \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:18 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "\\AppData\\Roaming\\Oracle .exe \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:18 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcUm9hbWluZ1xPcmFjbGUgXGphdmEgLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:10 UTC", "rule": "win_mal_adwind_0", "phase": "original", "command": "\\AppData\\Roaming\\Oracle \\java .exe", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:10 UTC", "rule": "win_mal_adwind_0", "phase": "insertion", "command": "\\AppData\\Roaming\\Oracle \\java \\\".exe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:10 UTC", "rule": "win_mal_adwind_0", "phase": "substitution", "command": "\\AppData\\Roaming\\Oracle \\java .exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:10 UTC", "rule": "win_mal_adwind_0", "phase": "omission", "command": "Oracle \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:10 UTC", "rule": "win_mal_adwind_0", "phase": "reordering", "command": "\\AppData\\Roaming\\Oracle .exe \\java", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:10 UTC", "rule": "win_mal_adwind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcUm9hbWluZ1xPcmFjbGUgXGphdmEgLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

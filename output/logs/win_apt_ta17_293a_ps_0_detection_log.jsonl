@@ -4,3 +4,38 @@
 {"timestamp": "2025-04-23 08:45:57 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:46:04 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:46:20 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:30:23 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:30:31 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-accepteula\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:30:39 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:26 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:31:34 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-accepteula\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:31:43 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:51 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:31:56 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:32:05 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHMuZXhlIC1hY2NlcHRldWxh')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:38:45 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:38:50 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-accepteula\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:38:56 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:39:02 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:39:07 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:39:13 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHMuZXhlIC1hY2NlcHRldWxh')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:47:15 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:47:23 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-accepteula\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:47:31 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:47:40 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:47:48 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:47:56 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHMuZXhlIC1hY2NlcHRldWxh')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:58:35 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:58:43 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-accepteula\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:58:52 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:59:00 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:59:09 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:59:17 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHMuZXhlIC1hY2NlcHRldWxh')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:38:30 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:38:34 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-accepteula\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:49:48 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:49:51 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "ps.exe \\\"-\\\"\\\"a\\\"\\\"c\\\"\\\"c\\\"\\\"e\\\"\\\"p\\\"\\\"t\\\"\\\"e\\\"\\\"u\\\"\\\"l\\\"\\\"a\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:49:54 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:58 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:50:02 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:50:05 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHMuZXhlIC1hY2NlcHRldWxh')) | Invoke-Expression\" ", "status": "BYPASSED"}

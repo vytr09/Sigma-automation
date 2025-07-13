@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 10:53:42 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "omission", "command": "curl start # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:53:55 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "reordering", "command": "curl start", "status": "DETECTED"}
 {"timestamp": "2025-04-23 10:54:48 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:07:17 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "original", "command": "curl start", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:07:20 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "insertion", "command": "curl \\\"start\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:07:24 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "substitution", "command": "curl start #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:07:27 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "omission", "command": "curl start # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:07:31 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "reordering", "command": "curl start", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:07:36 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3VybCBzdGFydA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

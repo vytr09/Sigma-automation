@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:03:28 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "omission", "command": "powershell Remove-EventLog", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:03:45 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "reordering", "command": "powershell.exe Remove-EventLog", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:04:23 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUgBlAG0AbwB2AGUALQBFAHYAZQBuAHQATABvAGcA", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:08:54 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "original", "command": "powershell.exe Remove-EventLog", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:08:58 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "insertion", "command": "powershell.exe Remove-\\\"EventLog\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:04 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "substitution", "command": "powershell.exe Remove-EventLog #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:09:08 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "omission", "command": "powershell Remove-EventLog", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:12 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "reordering", "command": "powershell.exe Remove-EventLog", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:09:17 UTC", "rule": "win_susp_eventlog_clear_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUgBlAG0AbwB2AGUALQBFAHYAZQBuAHQATABvAGcA ", "status": "BYPASSED"}

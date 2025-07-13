@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 09:24:47 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "omission", "command": "mklink HarddiskVolumeShadowCopy # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:24:54 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "reordering", "command": "mklink HarddiskVolumeShadowCopy", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:25:02 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:13 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "original", "command": "mklink HarddiskVolumeShadowCopy", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:02:17 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "insertion", "command": "mklink \\\"HarddiskVolumeShadowCopy\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:02:22 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "substitution", "command": "mklink HarddiskVolumeShadowCopy #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:25 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "omission", "command": "mklink HarddiskVolumeShadowCopy # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:28 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "reordering", "command": "mklink HarddiskVolumeShadowCopy", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:32 UTC", "rule": "win_shadow_copies_access_symlink_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bWtsaW5rIEhhcmRkaXNrVm9sdW1lU2hhZG93Q29weQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

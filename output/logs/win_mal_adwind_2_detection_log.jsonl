@@ -4,3 +4,45 @@
 {"timestamp": "2025-04-23 09:03:43 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:03:50 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no found> command", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:03:56 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:57:19 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:57:19 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:57:19 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:57:19 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:57:19 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:57:19 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:19 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:19 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:19 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:19 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:19 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:19 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:45 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:45 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:45 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:45 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:45 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:45 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:04 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:04 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:04 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:04 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:04 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:04 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:27 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:27 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:27 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:27 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:27 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:27 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:17 UTC", "rule": "win_mal_adwind_2", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:17 UTC", "rule": "win_mal_adwind_2", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:17 UTC", "rule": "win_mal_adwind_2", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:17 UTC", "rule": "win_mal_adwind_2", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:17 UTC", "rule": "win_mal_adwind_2", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:54:17 UTC", "rule": "win_mal_adwind_2", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}

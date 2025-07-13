@@ -4,3 +4,11 @@
 {"timestamp": "2025-04-23 09:08:49 UTC", "rule": "win_network_sniffing_0", "phase": "omission", "command": "tshark \\tshark -i", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:08:55 UTC", "rule": "win_network_sniffing_0", "phase": "reordering", "command": "tshark.exe -i \\tshark.exe", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:09:02 UTC", "rule": "win_network_sniffing_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:34:22 UTC", "rule": "win_network_sniffing_0", "phase": "original", "command": "tshark.exe \\tshark.exe -i", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:34:25 UTC", "rule": "win_network_sniffing_0", "phase": "insertion", "command": "tshark.exe \\tsha\\\"rk.exe\\\" -i", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:55:34 UTC", "rule": "win_network_sniffing_0", "phase": "original", "command": "tshark.exe \\tshark.exe -i", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:55:37 UTC", "rule": "win_network_sniffing_0", "phase": "insertion", "command": "tshark.exe \"\\tshark.exe\" \"-i\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:55:40 UTC", "rule": "win_network_sniffing_0", "phase": "substitution", "command": "tshark.exe \\tshark.exe -i #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:55:44 UTC", "rule": "win_network_sniffing_0", "phase": "omission", "command": "tshark \\tshark -i", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:55:47 UTC", "rule": "win_network_sniffing_0", "phase": "reordering", "command": "tshark.exe -i \\tshark.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:55:50 UTC", "rule": "win_network_sniffing_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHNoYXJrLmV4ZSBcdHNoYXJrLmV4ZSAtaQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

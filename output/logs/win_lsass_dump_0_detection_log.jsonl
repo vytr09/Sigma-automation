@@ -4,3 +4,45 @@
 {"timestamp": "2025-04-23 08:58:13 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault lsass .dmp", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:58:21 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe .dmp lsass", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:58:27 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe lsass \".dmp\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe lsass .dmp #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe .dmp lsass", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIGxzYXNzIC5kbXA=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:40 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:40 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe lsass \".dmp\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:40 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe lsass .dmp #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:40 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:40 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe .dmp lsass", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:56:40 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIGxzYXNzIC5kbXA=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:06:35 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe \\werfault.exe lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:06:39 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe \\werfault.exe \"lsass\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:06:44 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe \\werfault.exe lsass #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:06:48 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault \\werfault lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:06:53 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe lsass \\werfault.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:06:57 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIFx3ZXJmYXVsdC5leGUgbHNhc3M=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:15:03 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe \\werfault.exe lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:15:08 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe \\\"\\\\\"\\\"w\\\"\\\"e\\\"\\\"r\\\"\\\"f\\\"\\\"a\\\"\\\"u\\\"\\\"l\\\"\\\"t\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:15:37 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe \\werfault.exe lsass #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:16:09 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault \\werfault lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:16:15 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe lsass \\werfault.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:16:22 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIFx3ZXJmYXVsdC5leGUgbHNhc3M=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:17 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe \\werfault.exe lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:26:21 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe \\werfault.exe ls\"ass\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:26 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe \\werfault.exe lsass #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:26:30 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault \\werfault lsass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:26:34 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe lsass \\werfault.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:26:39 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIFx3ZXJmYXVsdC5leGUgbHNhc3M=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:04 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:04 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe \\\"lsass\\\" \\\".dmp\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:04 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe lsass .dmp #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:04 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:04 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe .dmp lsass", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:42:04 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIGxzYXNzIC5kbXA=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:53:19 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:53:19 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe \\\"lsass\\\" .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:53:19 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe lsass .dmp #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:53:19 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault lsass .dmp", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:53:19 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe .dmp lsass", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:53:19 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2VyZmF1bHQuZXhlIGxzYXNzIC5kbXA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

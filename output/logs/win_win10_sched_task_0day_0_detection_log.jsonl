@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 12:00:24 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "omission", "command": "schtasks /change /TN /RU /RP", "status": "DETECTED"}
 {"timestamp": "2025-04-23 12:00:31 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "reordering", "command": "schtasks.exe /RP /RU /TN /change", "status": "DETECTED"}
 {"timestamp": "2025-04-23 12:00:46 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:20:27 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "original", "command": "schtasks.exe /change /TN /RU /RP", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:20:30 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "insertion", "command": "schtasks.exe /change /\"T\"\"N\" /\"R\"\"U\" /RP", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:20:34 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "substitution", "command": "schtasks.exe -change /TN /RU /RP", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:20:38 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "omission", "command": "schtasks /change /TN /RU /RP", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:20:41 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "reordering", "command": "schtasks.exe /change /TN /RU /RP", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:20:45 UTC", "rule": "win_win10_sched_task_0day_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2NodGFza3MuZXhlIC9jaGFuZ2UgL1ROIC9SVSAvUlA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

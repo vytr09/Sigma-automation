@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:16:59 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "omission", "command": "fsutil", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:17:21 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "reordering", "command": "fsutil.exe", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:17:38 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:10:12 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "original", "command": "fsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:10:16 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "insertion", "command": "fsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:10:20 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "substitution", "command": "fsutil.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:10:23 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "omission", "command": "fsutil", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:10:27 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "reordering", "command": "fsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:10:30 UTC", "rule": "win_susp_fsutil_usage_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZnN1dGlsLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

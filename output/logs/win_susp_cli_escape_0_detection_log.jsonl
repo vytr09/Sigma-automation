@@ -4,3 +4,39 @@
 {"timestamp": "2025-04-23 10:38:36 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h\\\"t\\\"t\\\"p # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:38:47 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:38:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:58:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:58:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:58:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h\\\"t\\\"t\\\"p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:58:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h\\t\\t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:58:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:58:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aFwidFwidFwicA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h\\\"t\\\"t\\\"p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h\\t\\t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:07:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aFwidFwidFwicA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:17:22 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h\"t\"t\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:17:22 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h\"t\"t\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:17:22 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h\"t\"t\"p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:17:22 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "htt\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:17:22 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\"t\"t\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:17:22 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aCJ0InQicA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:41 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h^t^t^p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:41 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h^t^t^p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:41 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h^t^t^p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:41 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h^t^t^p # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:41 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h^t^t^p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:27:41 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aF50XnRecA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:43:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:43:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:43:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h\\\"t\\\"t\\\"p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:43:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h\\t\\t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:43:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:43:01 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aFwidFwidFwicA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:05:06 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:05:06 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:05:06 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h\\\"t\\\"t\\\"p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:05:06 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h\\t\\t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:05:06 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:05:06 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aFwidFwidFwicA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

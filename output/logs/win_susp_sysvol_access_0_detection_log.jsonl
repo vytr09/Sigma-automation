@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:53:13 UTC", "rule": "win_susp_sysvol_access_0", "phase": "omission", "command": "\\SYSVOL\\\\ \\policies\\\\ # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:53:20 UTC", "rule": "win_susp_sysvol_access_0", "phase": "reordering", "command": "\\SYSVOL\\\\ \\policies\\\\", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:53:34 UTC", "rule": "win_susp_sysvol_access_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:17:55 UTC", "rule": "win_susp_sysvol_access_0", "phase": "original", "command": "\\SYSVOL\\\\ \\policies\\\\", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:18:00 UTC", "rule": "win_susp_sysvol_access_0", "phase": "insertion", "command": "\\SYSVOL\\\\ \"\\\"\"p\"\"o\"\"l\"\"i\"\"c\"\"i\"\"e\"\"s\"\"\\\"\"\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:18:04 UTC", "rule": "win_susp_sysvol_access_0", "phase": "substitution", "command": "\\SYSVOL\\\\ \\policies\\\\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:18:08 UTC", "rule": "win_susp_sysvol_access_0", "phase": "omission", "command": "\\SYSVOL\\\\ \\policies\\\\ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:18:12 UTC", "rule": "win_susp_sysvol_access_0", "phase": "reordering", "command": "\\SYSVOL\\\\ \\policies\\\\", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:18:17 UTC", "rule": "win_susp_sysvol_access_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNZU1ZPTFxcIFxwb2xpY2llc1xc')) | Invoke-Expression\" ", "status": "BYPASSED"}

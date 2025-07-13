@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 09:12:56 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "omission", "command": "System.Management.Automation.AmsiUtils amsiInitFailed # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:13:03 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "reordering", "command": "System.Management.Automation.AmsiUtils amsiInitFailed", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:13:11 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:57:23 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "original", "command": "System.Management.Automation.AmsiUtils amsiInitFailed", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:57:26 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "insertion", "command": "System.Management.Automation.AmsiUtils \\\"amsiIni\\\"tFailed", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:57:30 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "substitution", "command": "System.Management.Automation.AmsiUtils amsiInitFailed #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:57:33 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "omission", "command": "System.Management.Automation.AmsiUtils amsiInitFailed # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:57:36 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "reordering", "command": "System.Management.Automation.AmsiUtils amsiInitFailed", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:57:40 UTC", "rule": "win_powershell_amsi_bypass_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('U3lzdGVtLk1hbmFnZW1lbnQuQXV0b21hdGlvbi5BbXNpVXRpbHMgYW1zaUluaXRGYWlsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

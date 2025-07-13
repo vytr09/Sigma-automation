@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 09:22:20 UTC", "rule": "win_remote_time_discovery_0", "phase": "omission", "command": "powershell Get-Date", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:22:28 UTC", "rule": "win_remote_time_discovery_0", "phase": "reordering", "command": "powershell.exe Get-Date", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:22:41 UTC", "rule": "win_remote_time_discovery_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBEAGEAdABlAA==", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:00:47 UTC", "rule": "win_remote_time_discovery_0", "phase": "original", "command": "powershell.exe Get-Date", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:00:54 UTC", "rule": "win_remote_time_discovery_0", "phase": "insertion", "command": "powershell.exe \\\"Get-Date\\\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:01:09 UTC", "rule": "win_remote_time_discovery_0", "phase": "substitution", "command": "powershell.exe Get-Date #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:01:14 UTC", "rule": "win_remote_time_discovery_0", "phase": "omission", "command": "powershell Get-Date", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:01:19 UTC", "rule": "win_remote_time_discovery_0", "phase": "reordering", "command": "powershell.exe Get-Date", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:01:23 UTC", "rule": "win_remote_time_discovery_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBEAGEAdABlAA== ", "status": "BYPASSED"}

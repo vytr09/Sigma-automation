@@ -4,3 +4,21 @@
 {"timestamp": "2025-04-23 08:51:21 UTC", "rule": "win_commandline_path_traversal_0", "phase": "omission", "command": "/../../ # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 08:51:28 UTC", "rule": "win_commandline_path_traversal_0", "phase": "reordering", "command": "/../../", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:51:34 UTC", "rule": "win_commandline_path_traversal_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "original", "command": "/../../", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "insertion", "command": "/../../", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "substitution", "command": "/../../ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "omission", "command": "/../../ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "reordering", "command": "/../../", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Ly4uLy4uLw==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:42:13 UTC", "rule": "win_commandline_path_traversal_0", "phase": "original", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:42:18 UTC", "rule": "win_commandline_path_traversal_0", "phase": "insertion", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:42:23 UTC", "rule": "win_commandline_path_traversal_0", "phase": "substitution", "command": "/../../ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:42:29 UTC", "rule": "win_commandline_path_traversal_0", "phase": "omission", "command": "/../../ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:42:34 UTC", "rule": "win_commandline_path_traversal_0", "phase": "reordering", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:42:40 UTC", "rule": "win_commandline_path_traversal_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Ly4uLy4uLw==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:51:03 UTC", "rule": "win_commandline_path_traversal_0", "phase": "original", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:51:06 UTC", "rule": "win_commandline_path_traversal_0", "phase": "insertion", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:51:09 UTC", "rule": "win_commandline_path_traversal_0", "phase": "substitution", "command": "/../../ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:51:13 UTC", "rule": "win_commandline_path_traversal_0", "phase": "omission", "command": "/../../ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:51:16 UTC", "rule": "win_commandline_path_traversal_0", "phase": "reordering", "command": "/../../", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:51:20 UTC", "rule": "win_commandline_path_traversal_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Ly4uLy4uLw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

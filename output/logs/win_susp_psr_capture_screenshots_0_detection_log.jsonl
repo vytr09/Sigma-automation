@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:41:40 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "omission", "command": "Psr /start", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:41:51 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "reordering", "command": "Psr.exe /start", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:42:04 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:28 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "original", "command": "Psr.exe /start", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:14:32 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "insertion", "command": "Psr.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:35 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "substitution", "command": "Psr.exe /start #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:39 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "omission", "command": "Psr /start", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:14:43 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "reordering", "command": "Psr.exe /start", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:14:46 UTC", "rule": "win_susp_psr_capture_screenshots_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UHNyLmV4ZSAvc3RhcnQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

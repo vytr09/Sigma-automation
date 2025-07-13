@@ -4,3 +4,66 @@
 {"timestamp": "2025-04-23 08:39:44 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 08:39:50 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep bypass $", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:40:02 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:32:31 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:45:03 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:45:07 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:45:11 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:14 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:18 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:45:27 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:13 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:53:17 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:53:21 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:25 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:28 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:53:36 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:58:09 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:58:17 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:58:24 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:58:32 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:58:41 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 01:58:48 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:21:53 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:22:01 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:28:18 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:28:26 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:28:33 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:28:40 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:28:48 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:28:55 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:06 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:31:16 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:31:22 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:28 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:39 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:31:47 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:11 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:37:16 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:37:22 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:28 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:33 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:37:39 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:44:49 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:44:58 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:45:08 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:16 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:24 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:45:33 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:56:13 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:56:22 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:56:30 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:56:38 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:56:47 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:56:55 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:36:43 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:36:47 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep byp\\\"ass\\\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:36:52 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:36:56 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:01 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni -ep $ bypass", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:37:07 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:48:50 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "original", "command": "-noni -ep bypass $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:48:54 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "insertion", "command": "-noni -ep \"b\"\"y\"\"p\"\"a\"\"s\"\"s\" $", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:48:57 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "substitution", "command": "-noni -ep bypass $ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:01 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "omission", "command": "-noni -ep bypass $ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:04 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "reordering", "command": "-noni $ bypass -ep", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:49:08 UTC", "rule": "win_apt_apt29_thinktanks_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA ", "status": "BYPASSED"}

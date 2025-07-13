@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:30:28 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "omission", "command": "-nop -exec bypass -EncodedCommand SQB # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:30:53 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "reordering", "command": "-nop SQB bypass -exec -EncodedCommand", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:31:10 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:12:46 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "original", "command": "-nop -exec bypass -EncodedCommand SQB", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:12:50 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "insertion", "command": "-nop -exec bypass \\\"-EncodedCommand\\\" SQB", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:12:54 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "substitution", "command": "-nop -exec bypass -EncodedCommand SQB #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:12:58 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "omission", "command": "-nop -exec bypass -EncodedCommand SQB # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:13:02 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "reordering", "command": "-nop SQB bypass -EncodedCommand -exec", "status": "DETECTED"}
+{"timestamp": "2025-05-23 08:13:06 UTC", "rule": "win_susp_powershell_empire_launch_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AcAAgAC0AZQB4AGUAYwAgAGIAeQBwAGEAcwBzACAALQBFAG4AYwBvAGQAZQBkAEMAbwBtAG0AYQBuAGQAIABTAFEAQgA= ", "status": "BYPASSED"}

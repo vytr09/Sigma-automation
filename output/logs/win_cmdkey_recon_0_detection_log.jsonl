@@ -64,3 +64,21 @@
 {"timestamp": "2025-04-23 08:50:34 UTC", "rule": "win_cmdkey_recon_0", "phase": "omission", "command": "cmdkey /list", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:50:41 UTC", "rule": "win_cmdkey_recon_0", "phase": "reordering", "command": "cmdkey.exe /list", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:50:47 UTC", "rule": "win_cmdkey_recon_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_cmdkey_recon_0", "phase": "original", "command": "cmdkey.exe /list", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_cmdkey_recon_0", "phase": "insertion", "command": "cmdkey.exe /\"{cmd_part[:mid]}\"{cmd_part[mid:]}", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_cmdkey_recon_0", "phase": "substitution", "command": "cmdkey.exe /list #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_cmdkey_recon_0", "phase": "omission", "command": "cmdkey /list", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_cmdkey_recon_0", "phase": "reordering", "command": "cmdkey.exe /list", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_cmdkey_recon_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21ka2V5LmV4ZSAvbGlzdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:41:39 UTC", "rule": "win_cmdkey_recon_0", "phase": "original", "command": "cmdkey.exe /list", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:41:44 UTC", "rule": "win_cmdkey_recon_0", "phase": "insertion", "command": "cmdkey.exe /\"{cmd_part[:mid]}\"{cmd_part[mid:]}", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:41:50 UTC", "rule": "win_cmdkey_recon_0", "phase": "substitution", "command": "cmdkey.exe /list #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:41:56 UTC", "rule": "win_cmdkey_recon_0", "phase": "omission", "command": "cmdkey /list", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:42:01 UTC", "rule": "win_cmdkey_recon_0", "phase": "reordering", "command": "cmdkey.exe /list", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:42:07 UTC", "rule": "win_cmdkey_recon_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21ka2V5LmV4ZSAvbGlzdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:59 UTC", "rule": "win_cmdkey_recon_0", "phase": "original", "command": "cmdkey.exe /list", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:59 UTC", "rule": "win_cmdkey_recon_0", "phase": "insertion", "command": "cmdkey.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:59 UTC", "rule": "win_cmdkey_recon_0", "phase": "substitution", "command": "cmdkey.exe /list #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:59 UTC", "rule": "win_cmdkey_recon_0", "phase": "omission", "command": "cmdkey /list", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:59 UTC", "rule": "win_cmdkey_recon_0", "phase": "reordering", "command": "cmdkey.exe /list", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:59 UTC", "rule": "win_cmdkey_recon_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21ka2V5LmV4ZSAvbGlzdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

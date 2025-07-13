@@ -4,3 +4,21 @@
 {"timestamp": "2025-04-23 08:48:57 UTC", "rule": "win_bootconf_mod_0", "phase": "omission", "command": "bcdedit set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:49:14 UTC", "rule": "win_bootconf_mod_0", "phase": "reordering", "command": "bcdedit.exe set ignoreallfailures bootstatuspolicy", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:49:22 UTC", "rule": "win_bootconf_mod_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:05 UTC", "rule": "win_bootconf_mod_0", "phase": "original", "command": "bcdedit.exe set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:32:11 UTC", "rule": "win_bootconf_mod_0", "phase": "insertion", "command": "bcdedit.exe \\\"set\\\" bootstatuspolicy ignoreallfailures", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_bootconf_mod_0", "phase": "substitution", "command": "bcdedit.exe set bspolicy ignoreallfailures", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_bootconf_mod_0", "phase": "omission", "command": "bcdedit set bootstatuspolicy ignoreallfailures", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:32:29 UTC", "rule": "win_bootconf_mod_0", "phase": "reordering", "command": "bcdedit.exe bootstatuspolicy set ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:32:37 UTC", "rule": "win_bootconf_mod_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmNkZWRpdC5leGUgc2V0IGJvb3RzdGF0dXNwb2xpY3kgaWdub3JlYWxsZmFpbHVyZXM=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:40:30 UTC", "rule": "win_bootconf_mod_0", "phase": "original", "command": "bcdedit.exe set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:40:36 UTC", "rule": "win_bootconf_mod_0", "phase": "insertion", "command": "bcdedit.exe \\\"set\\\" bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:40:42 UTC", "rule": "win_bootconf_mod_0", "phase": "substitution", "command": "bcdedit.exe set bspolicy ignoreallfailures", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:40:47 UTC", "rule": "win_bootconf_mod_0", "phase": "omission", "command": "bcdedit set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:40:53 UTC", "rule": "win_bootconf_mod_0", "phase": "reordering", "command": "bcdedit.exe bootstatuspolicy set ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 02:40:59 UTC", "rule": "win_bootconf_mod_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmNkZWRpdC5leGUgc2V0IGJvb3RzdGF0dXNwb2xpY3kgaWdub3JlYWxsZmFpbHVyZXM=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:18 UTC", "rule": "win_bootconf_mod_0", "phase": "original", "command": "bcdedit.exe set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:50:22 UTC", "rule": "win_bootconf_mod_0", "phase": "insertion", "command": "bcdedit.exe set bootstatuspolicy \"i\"\"g\"\"n\"\"o\"\"r\"\"e\"\"a\"\"l\"\"l\"\"f\"\"a\"\"i\"\"l\"\"u\"\"r\"\"e\"\"s\"", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:50:25 UTC", "rule": "win_bootconf_mod_0", "phase": "substitution", "command": "bcdedit.exe set bspolicy ignoreallfailures", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:50:29 UTC", "rule": "win_bootconf_mod_0", "phase": "omission", "command": "bcdedit set bootstatuspolicy ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:50:32 UTC", "rule": "win_bootconf_mod_0", "phase": "reordering", "command": "bcdedit.exe bootstatuspolicy set ignoreallfailures", "status": "DETECTED"}
+{"timestamp": "2025-05-23 07:50:35 UTC", "rule": "win_bootconf_mod_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmNkZWRpdC5leGUgc2V0IGJvb3RzdGF0dXNwb2xpY3kgaWdub3JlYWxsZmFpbHVyZXM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

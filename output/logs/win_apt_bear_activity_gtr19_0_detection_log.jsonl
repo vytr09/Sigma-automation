@@ -4,3 +4,93 @@
 {"timestamp": "2025-04-23 08:41:04 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /Q /H \\\\", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 08:41:10 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /Q /E /H /C \\\\", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 08:41:15 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:49 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:52 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:54 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:57 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:45:59 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:52 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:55 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:57 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:53:59 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:54:01 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:54:04 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:59:31 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:59:37 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:59:44 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:59:49 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 01:59:55 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:00:01 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:29:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:29:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:29:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:29:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:29:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:29:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:05 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:05 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:05 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:05 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:05 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:31:05 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:37:47 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:48 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:48 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:48 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:48 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:48 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:45:48 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:57:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:57:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:57:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:57:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:57:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 02:57:08 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:55:39 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:55:39 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \"\\\"\"\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:55:39 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:55:39 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:55:39 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 06:55:39 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:05:38 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:05:38 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "adexplorer.exe \\adexplorer.exe \\\"-snapshot\\\" \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:05:38 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:05:38 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "adexplorer \\adexplorer -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:05:38 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "adexplorer.exe -snapshot \\adexplorer.exe \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:05:38 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWRleHBsb3Jlci5leGUgXGFkZXhwbG9yZXIuZXhlIC1zbmFwc2hvdCBc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:14:06 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:14:06 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "adexplorer.exe \\\"\\adexplorer.exe\\\" -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:14:06 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:14:06 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "adexplorer \\adexplorer -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:14:06 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "adexplorer.exe \\adexplorer.exe \\ -snapshot", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:14:06 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWRleHBsb3Jlci5leGUgXGFkZXhwbG9yZXIuZXhlIC1zbmFwc2hvdCBc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:25:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:25:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "adexplorer.exe \\\"\\adexpl\\\"orer.exe -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:25:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:25:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "adexplorer \\adexplorer -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:25:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "adexplorer.exe -snapshot \\adexplorer.exe \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:25:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWRleHBsb3Jlci5leGUgXGFkZXhwbG9yZXIuZXhlIC1zbmFwc2hvdCBc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "adexplorer.exe \\\"\\adexpl\\\"orer.exe -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "adexplorer.exe \\adexplorer.exe -snapshot \\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "adexplorer \\adexplorer -snapshot \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "adexplorer.exe -snapshot \\adexplorer.exe \\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:37:16 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWRleHBsb3Jlci5leGUgXGFkZXhwbG9yZXIuZXhlIC1zbmFwc2hvdCBc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:41:02 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:41:02 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /Q /H \\\"\\\\\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:41:02 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:41:02 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:41:02 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:41:02 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:14 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:14 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe /S /E /C /\"Q\" /\"H\" \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:14 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:14 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:14 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 07:49:14 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('eGNvcHkuZXhlIC9TIC9FIC9DIC9RIC9IIFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 09:26:15 UTC", "rule": "win_susp_adfind_0", "phase": "omission", "command": "adfind objectcategory", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:26:23 UTC", "rule": "win_susp_adfind_0", "phase": "reordering", "command": "adfind.exe objectcategory", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:26:32 UTC", "rule": "win_susp_adfind_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:57 UTC", "rule": "win_susp_adfind_0", "phase": "original", "command": "adfind.exe objectcategory", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:57 UTC", "rule": "win_susp_adfind_0", "phase": "insertion", "command": "adfind.exe objectc\\\"ategory\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:57 UTC", "rule": "win_susp_adfind_0", "phase": "substitution", "command": "adfind.exe objectcategory #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:57 UTC", "rule": "win_susp_adfind_0", "phase": "omission", "command": "adfind objectcategory", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:57 UTC", "rule": "win_susp_adfind_0", "phase": "reordering", "command": "adfind.exe objectcategory", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:02:57 UTC", "rule": "win_susp_adfind_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWRmaW5kLmV4ZSBvYmplY3RjYXRlZ29yeQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

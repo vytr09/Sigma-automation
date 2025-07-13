@@ -4,3 +4,9 @@
 {"timestamp": "2025-04-23 11:44:22 UTC", "rule": "win_susp_rar_flags_0", "phase": "omission", "command": "-hp -m # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:44:32 UTC", "rule": "win_susp_rar_flags_0", "phase": "reordering", "command": "-hp -m", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:44:42 UTC", "rule": "win_susp_rar_flags_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:53 UTC", "rule": "win_susp_rar_flags_0", "phase": "original", "command": "-hp -m", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:53 UTC", "rule": "win_susp_rar_flags_0", "phase": "insertion", "command": "-hp \\\"-\\\"\\\"m\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:53 UTC", "rule": "win_susp_rar_flags_0", "phase": "substitution", "command": "-hp -m #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:53 UTC", "rule": "win_susp_rar_flags_0", "phase": "omission", "command": "-hp -m # omission", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:53 UTC", "rule": "win_susp_rar_flags_0", "phase": "reordering", "command": "-hp -m", "status": "BYPASSED"}
+{"timestamp": "2025-05-23 08:14:53 UTC", "rule": "win_susp_rar_flags_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWhwIC1t')) | Invoke-Expression\" ", "status": "BYPASSED"}
