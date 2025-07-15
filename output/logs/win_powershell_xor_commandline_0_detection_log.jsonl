@@ -4,39 +4,3 @@
 {"timestamp": "2025-04-23 09:18:20 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:18:30 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no found> command", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:18:37 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:57:52 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:57:52 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:57:52 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:57:52 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:57:52 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:57:52 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:07:45 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:07:45 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:07:45 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:07:45 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:07:45 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:07:45 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:13 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:13 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:13 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:13 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:13 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:13 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:32 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:32 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:32 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:32 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:32 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:32 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:42:53 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:42:53 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:42:53 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:42:53 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:42:53 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:42:53 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:59:31 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:59:31 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:59:31 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:59:31 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:59:31 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:59:31 UTC", "rule": "win_powershell_xor_commandline_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}

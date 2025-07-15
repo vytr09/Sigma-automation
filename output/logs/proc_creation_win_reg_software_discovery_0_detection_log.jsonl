@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:17:15 UTC", "rule": "proc_creation_win_reg_software_discovery_0", "phase": "original", "command": "\\reg.exe query \\software\\ /v svcversion", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:15 UTC", "rule": "proc_creation_win_reg_software_discovery_0", "phase": "insertion", "command": "\\reg.exe query \\software\\ /v svcve\"rsion\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:15 UTC", "rule": "proc_creation_win_reg_software_discovery_0", "phase": "substitution", "command": "\\reg.exe query \\software\\ /v svcversion", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:15 UTC", "rule": "proc_creation_win_reg_software_discovery_0", "phase": "omission", "command": "\\reg query \\software\\ /v svcversion", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:15 UTC", "rule": "proc_creation_win_reg_software_discovery_0", "phase": "reordering", "command": "\\reg.exe query \\software\\ /v svcversion", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:15 UTC", "rule": "proc_creation_win_reg_software_discovery_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcXVlcnkgXHNvZnR3YXJlXCAvdiBzdmN2ZXJzaW9u')) | Invoke-Expression\" ", "status": "BYPASSED"}

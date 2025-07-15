@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_start_service_0",
+  "original_command": "\\net.exe \\net1.exe net.exe net1.exe start",
+  "evasions": {
+    "insertion": "\\net.exe \"\\\"\"n\"\"e\"\"t\"\"1\"\".\"\"e\"\"x\"\"e\" net.exe net1.exe start",
+    "substitution": "\\net.exe \\net1.exe net.exe net1.exe start #substitution",
+    "omission": "\\net \\net1 net net1 start",
+    "reordering": "\\net.exe \\net1.exe net.exe net1.exe start",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgc3RhcnQ=')) | Invoke-Expression\" "
+  }
+}

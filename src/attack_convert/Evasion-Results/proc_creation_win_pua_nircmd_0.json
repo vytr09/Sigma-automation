@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nircmd_0",
+  "original_command": "\\NirCmd.exe NirCmd.exe execmd .exe script .exe shexec runinteractive exec exec2 show hide",
+  "evasions": {
+    "insertion": "\\NirCmd.exe NirCmd.exe execmd \".\"\"e\"\"x\"\"e\" script .exe shexec runinteractive exec exec2 show hide",
+    "substitution": "\\NirCmd.exe NirCmd.exe execmd .exe script .exe shexec runinteractive exec exec2 show hide #substitution",
+    "omission": "\\NirCmd NirCmd execmd script shexec runinteractive exec exec2 show hide",
+    "reordering": "\\NirCmd.exe NirCmd.exe execmd .exe script .exe shexec runinteractive exec exec2 show hide",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE5pckNtZC5leGUgTmlyQ21kLmV4ZSBleGVjbWQgLmV4ZSBzY3JpcHQgLmV4ZSBzaGV4ZWMgcnVuaW50ZXJhY3RpdmUgZXhlYyBleGVjMiBzaG93IGhpZGU=')) | Invoke-Expression\" "
+  }
+}

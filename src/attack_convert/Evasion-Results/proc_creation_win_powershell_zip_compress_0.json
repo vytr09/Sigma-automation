@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_zip_compress_0",
+  "original_command": "Compress-Archive -Path -DestinationPath $env:TEMP Compress-Archive -Path -DestinationPath \\AppData\\Local\\Temp\\ Compress-Archive -Path -DestinationPath :\\Windows\\Temp\\",
+  "evasions": {
+    "insertion": "Compress-Archive -Path -DestinationPath $env:TEMP Compress-Archive -Path -DestinationPath \\AppData\\Local\\Temp\\ Compress-Archive -Path \"-DestinationPath\" \":\\Windows\\Temp\\\"",
+    "substitution": "Compress-Archive -Path -DestinationPath $env:TEMP Compress-Archive -Path -DestinationPath \\AppData\\Local\\Temp\\ Compress-Archive -Path -DestinationPath :\\Windows\\Temp\\ #substitution",
+    "omission": "Compress-Archive -Path -DestinationPath $env:TEMP Compress-Archive -Path -DestinationPath \\AppData\\Local\\Temp\\ Compress-Archive -Path -DestinationPath :\\Windows\\Temp\\ # omission",
+    "reordering": "Compress-Archive -Path -DestinationPath $env:TEMP Compress-Archive -Path -DestinationPath \\AppData\\Local\\Temp\\ Compress-Archive -Path -DestinationPath :\\Windows\\Temp\\",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAQwBvAG0AcAByAGUAcwBzAC0AQQByAGMAaABpAHYAZQAgAC0AUABhAHQAaAAgAC0ARABlAHMAdABpAG4AYQB0AGkAbwBuAFAAYQB0AGgAIAAkAGUAbgB2ADoAVABFAE0AUAAgAEMAbwBtAHAAcgBlAHMAcwAtAEEAcgBjAGgAaQB2AGUAIAAtAFAAYQB0AGgAIAAtAEQAZQBzAHQAaQBuAGEAdABpAG8AbgBQAGEAdABoACAAXABBAHAAcABEAGEAdABhAFwATABvAGMAYQBsAFwAVABlAG0AcABcACAAQwBvAG0AcAByAGUAcwBzAC0AQQByAGMAaABpAHYAZQAgAC0AUABhAHQAaAAgAC0ARABlAHMAdABpAG4AYQB0AGkAbwBuAFAAYQB0AGgAIAA6AFwAVwBpAG4AZABvAHcAcwBcAFQAZQBtAHAAXAA= "
+  }
+}

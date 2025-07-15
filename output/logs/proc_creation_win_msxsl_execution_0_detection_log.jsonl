@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:13:25 UTC", "rule": "proc_creation_win_msxsl_execution_0", "phase": "original", "command": "\\msxsl.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:13:34 UTC", "rule": "proc_creation_win_msxsl_execution_0", "phase": "insertion", "command": "\\\"\\msxsl.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:13:41 UTC", "rule": "proc_creation_win_msxsl_execution_0", "phase": "substitution", "command": "\\msxsl.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:13:48 UTC", "rule": "proc_creation_win_msxsl_execution_0", "phase": "omission", "command": "\\msxsl", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:13:54 UTC", "rule": "proc_creation_win_msxsl_execution_0", "phase": "reordering", "command": "\\msxsl.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:14:02 UTC", "rule": "proc_creation_win_msxsl_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zeHNsLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

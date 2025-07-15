@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_servu_susp_child_process_0",
+  "original_command": "\\Serv-U.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\schtasks.exe \\regsvr32.exe \\wmic.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\forfiles.exe \\scriptrunner.exe",
+  "evasions": {
+    "insertion": "\\Serv-U.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\\"\\\\\"\\\"s\\\"\\\"h\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" \\bash.exe \\schtasks.exe \\regsvr32.exe \\wmic.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\forfiles.exe \\scriptrunner.exe",
+    "substitution": "\\Serv-U.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\schtasks.exe \\regsvr32.exe \\wmic.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\forfiles.exe \\scriptrunner.exe #substitution",
+    "omission": "\\Serv-U \\cmd \\powershell \\pwsh \\wscript \\cscript \\sh \\bash \\schtasks \\regsvr32 \\wmic \\mshta \\rundll32 \\msiexec \\forfiles \\scriptrunner",
+    "reordering": "\\Serv-U.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\schtasks.exe \\regsvr32.exe \\wmic.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\forfiles.exe \\scriptrunner.exe",
+    "recoding": "powershell.exe -EncodedCommand XABTAGUAcgB2AC0AVQAuAGUAeABlACAAXABjAG0AZAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHMAaAAuAGUAeABlACAAXABiAGEAcwBoAC4AZQB4AGUAIABcAHMAYwBoAHQAYQBzAGsAcwAuAGUAeABlACAAXAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAdwBtAGkAYwAuAGUAeABlACAAXABtAHMAaAB0AGEALgBlAHgAZQAgAFwAcgB1AG4AZABsAGwAMwAyAC4AZQB4AGUAIABcAG0AcwBpAGUAeABlAGMALgBlAHgAZQAgAFwAZgBvAHIAZgBpAGwAZQBzAC4AZQB4AGUAIABcAHMAYwByAGkAcAB0AHIAdQBuAG4AZQByAC4AZQB4AGUA "
+  }
+}

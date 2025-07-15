@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_notepad_local_passwd_discovery_0",
+  "original_command": "\\explorer.exe \\notepad.exe",
+  "evasions": {
+    "insertion": "\\explorer.exe \\\"\\notepad.exe\\\"",
+    "substitution": "\\explorer.exe \\notepad.exe #substitution",
+    "omission": "\\explorer \\notepad",
+    "reordering": "\\explorer.exe \\notepad.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSBcbm90ZXBhZC5leGU=')) | Invoke-Expression\" "
+  }
+}

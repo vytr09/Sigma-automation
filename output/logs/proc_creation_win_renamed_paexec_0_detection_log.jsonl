@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:34:27 UTC", "rule": "proc_creation_win_renamed_paexec_0", "phase": "original", "command": "PAExec.exe \\paexec.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:34:27 UTC", "rule": "proc_creation_win_renamed_paexec_0", "phase": "insertion", "command": "PAExec.exe \"\\paexec.exe\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:34:27 UTC", "rule": "proc_creation_win_renamed_paexec_0", "phase": "substitution", "command": "PAExec.exe \\paexec.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:34:27 UTC", "rule": "proc_creation_win_renamed_paexec_0", "phase": "omission", "command": "PAExec \\paexec", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:34:27 UTC", "rule": "proc_creation_win_renamed_paexec_0", "phase": "reordering", "command": "PAExec.exe \\paexec.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:34:27 UTC", "rule": "proc_creation_win_renamed_paexec_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UEFFeGVjLmV4ZSBccGFleGVjLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

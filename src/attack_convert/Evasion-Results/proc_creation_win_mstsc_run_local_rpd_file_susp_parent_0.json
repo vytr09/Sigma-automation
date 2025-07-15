@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mstsc_run_local_rpd_file_susp_parent_0",
+  "original_command": "\\brave.exe \\CCleanerBrowser.exe \\chrome.exe \\chromium.exe \\firefox.exe \\iexplore.exe \\microsoftedge.exe \\msedge.exe \\opera.exe \\vivaldi.exe \\whale.exe \\outlook.exe \\mstsc.exe mstsc.exe",
+  "evasions": {
+    "insertion": "\\brave.exe \\CCleanerBrowser.exe \\chrome.exe \\chromium.exe \"\\firefox.exe\" \\iexplore.exe \\microsoftedge.exe \\msedge.exe \\opera.exe \\vivaldi.exe \\whale.exe \\outlook.exe \\mstsc.exe mstsc.exe",
+    "substitution": "\\brave.exe \\CCleanerBrowser.exe \\chrome.exe \\chromium.exe \\firefox.exe \\iexplore.exe \\microsoftedge.exe \\msedge.exe \\opera.exe \\vivaldi.exe \\whale.exe \\outlook.exe \\mstsc.exe mstsc.exe #substitution",
+    "omission": "\\brave \\CCleanerBrowser \\chrome \\chromium \\firefox \\iexplore \\microsoftedge \\msedge \\opera \\vivaldi \\whale \\outlook \\mstsc mstsc",
+    "reordering": "\\brave.exe \\CCleanerBrowser.exe \\chrome.exe \\chromium.exe \\firefox.exe \\iexplore.exe \\microsoftedge.exe \\msedge.exe \\opera.exe \\vivaldi.exe \\whale.exe \\outlook.exe \\mstsc.exe mstsc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcQ0NsZWFuZXJCcm93c2VyLmV4ZSBcY2hyb21lLmV4ZSBcY2hyb21pdW0uZXhlIFxmaXJlZm94LmV4ZSBcaWV4cGxvcmUuZXhlIFxtaWNyb3NvZnRlZGdlLmV4ZSBcbXNlZGdlLmV4ZSBcb3BlcmEuZXhlIFx2aXZhbGRpLmV4ZSBcd2hhbGUuZXhlIFxvdXRsb29rLmV4ZSBcbXN0c2MuZXhlIG1zdHNjLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

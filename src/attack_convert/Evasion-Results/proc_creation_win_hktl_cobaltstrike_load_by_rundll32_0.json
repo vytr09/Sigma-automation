@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_cobaltstrike_load_by_rundll32_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE rundll32.exe rundll32 .dll",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE rundll32.exe \\\"rund\\\"ll32 .dll",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE rundll32.exe rundll32 .dll #substitution",
+    "omission": "\\rundll32 RUNDLL32 rundll32 rundll32 .dll",
+    "reordering": "\\rundll32.exe rundll32.exe RUNDLL32.EXE .dll rundll32",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFIAVQBOAEQATABMADMAMgAuAEUAWABFACAAcgB1AG4AZABsAGwAMwAyAC4AZQB4AGUAIAByAHUAbgBkAGwAbAAzADIAIAAuAGQAbABsAA== "
+  }
+}

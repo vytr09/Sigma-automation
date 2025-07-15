@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_wce_0",
+  "original_command": "\\services.exe \\clussvc.exe",
+  "evasions": {
+    "insertion": "\\services.exe \"\\cluss\"vc.exe",
+    "substitution": "\\services.exe \\clussvc.exe #substitution",
+    "omission": "\\services \\clussvc",
+    "reordering": "\\services.exe \\clussvc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNlcnZpY2VzLmV4ZSBcY2x1c3N2Yy5leGU=')) | Invoke-Expression\" "
+  }
+}

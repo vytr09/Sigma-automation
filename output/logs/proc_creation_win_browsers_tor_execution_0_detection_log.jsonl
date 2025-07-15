@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 06:54:18 UTC", "rule": "proc_creation_win_browsers_tor_execution_0", "phase": "original", "command": "\\tor.exe \\Tor Browser\\Browser\\firefox.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:18 UTC", "rule": "proc_creation_win_browsers_tor_execution_0", "phase": "insertion", "command": "\\tor.exe \"\\T\"or Browser\\Browser\\firefox.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:18 UTC", "rule": "proc_creation_win_browsers_tor_execution_0", "phase": "substitution", "command": "\\tor.exe \\Tor Browser\\Browser\\firefox.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:18 UTC", "rule": "proc_creation_win_browsers_tor_execution_0", "phase": "omission", "command": "\\tor \\Tor Browser\\Browser\\firefox", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:18 UTC", "rule": "proc_creation_win_browsers_tor_execution_0", "phase": "reordering", "command": "\\tor.exe \\Tor Browser\\Browser\\firefox.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:18 UTC", "rule": "proc_creation_win_browsers_tor_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRvci5leGUgXFRvciBCcm93c2VyXEJyb3dzZXJcZmlyZWZveC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_set_acl_susp_location_0",
+  "original_command": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path -Path 'C:\\Windows -Path %windir% -Path $env:windir FullControl Allow",
+  "evasions": {
+    "insertion": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path -Path 'C:\\Windows \\\"-\\\"\\\"P\\\"\\\"a\\\"\\\"t\\\"\\\"h\\\" %windir% -Path $env:windir FullControl Allow",
+    "substitution": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path -Path 'C:\\Windows -Path %windir% -Path $env:windir FullControl Allow #substitution",
+    "omission": "PowerShell pwsh.dll \\powershell \\pwsh Set-Acl -AclObject -Path -Path 'C:\\Windows -Path %windir% -Path $env:windir FullControl Allow",
+    "reordering": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path -Path 'C:\\Windows -Path %windir% -Path $env:windir FullControl Allow",
+    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAFMAaABlAGwAbAAuAEUAWABFACAAcAB3AHMAaAAuAGQAbABsACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFMAZQB0AC0AQQBjAGwAIAAtAEEAYwBsAE8AYgBqAGUAYwB0ACAALQBQAGEAdABoACAALQBQAGEAdABoACAAJwBDADoAXABXAGkAbgBkAG8AdwBzACAALQBQAGEAdABoACAAJQB3AGkAbgBkAGkAcgAlACAALQBQAGEAdABoACAAJABlAG4AdgA6AHcAaQBuAGQAaQByACAARgB1AGwAbABDAG8AbgB0AHIAbwBsACAAQQBsAGwAbwB3AA== "
+  }
+}

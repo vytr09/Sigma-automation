@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_invoke_obfuscation_via_use_mhsta_0",
+  "original_command": "set && mshta vbscript:createobject .run (window.close)",
+  "evasions": {
+    "insertion": "set && mshta vbscript:createobject .run (window.close)",
+    "substitution": "set && mshta vbs:createobject .run (window.close)",
+    "omission": "set && mshta vbscript:createobject .run (window.close) # omission",
+    "reordering": "set && mshta vbscript:createobject .run (window.close)",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2V0ICYmIG1zaHRhIHZic2NyaXB0OmNyZWF0ZW9iamVjdCAucnVuICh3aW5kb3cuY2xvc2Up')) | Invoke-Expression\" "
+  }
+}

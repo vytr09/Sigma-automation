@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_imewbdld_download_0",
+  "original_command": "\\IMEWDBLD.exe imewdbld.exe http:// https://",
+  "evasions": {
+    "insertion": "\\IMEWDBLD.exe imewdbld.exe http:// \"h\"\"t\"\"t\"\"p\"\"s\"\":\"\"/\"\"/\"",
+    "substitution": "\\IMEWDBLD.exe imewdbld.exe http:// https:// #substitution",
+    "omission": "\\IMEWDBLD imewdbld http:// https://",
+    "reordering": "\\IMEWDBLD.exe http:// https:// imewdbld.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XElNRVdEQkxELmV4ZSBpbWV3ZGJsZC5leGUgaHR0cDovLyBodHRwczovLw==')) | Invoke-Expression\" "
+  }
+}

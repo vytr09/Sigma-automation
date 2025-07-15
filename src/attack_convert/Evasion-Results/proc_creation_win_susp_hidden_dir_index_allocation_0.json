@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_hidden_dir_index_allocation_0",
+  "original_command": "::$index_allocation",
+  "evasions": {
+    "insertion": "::$index_allocation",
+    "substitution": "::$index_allocation #substitution",
+    "omission": "::$index_allocation # omission",
+    "reordering": "::$index_allocation",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAOgA6ACQAaQBuAGQAZQB4AF8AYQBsAGwAbwBjAGEAdABpAG8AbgA= "
+  }
+}

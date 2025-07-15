@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_pcalua_0",
+  "original_command": "\\pcalua.exe -a",
+  "evasions": {
+    "insertion": "\\pcalua.exe \\\"-\\\"\\\"a\\\"",
+    "substitution": "\\pcalua.exe -a #substitution",
+    "omission": "\\pcalua -a",
+    "reordering": "\\pcalua.exe -a",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBjYWx1YS5leGUgLWE=')) | Invoke-Expression\" "
+  }
+}

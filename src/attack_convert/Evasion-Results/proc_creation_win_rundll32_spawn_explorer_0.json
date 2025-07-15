@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_spawn_explorer_0",
+  "original_command": "\\rundll32.exe \\explorer.exe \\shell32.dll,Control_RunDLL",
+  "evasions": {
+    "insertion": "\\rundll32.exe \\explorer.exe \\\"\\shell32.dll,Control_RunDLL\\\"",
+    "substitution": "\\rundll32.exe \\explorer.exe \\run-control",
+    "omission": "\\rundll32 \\explorer \\shell32.dll,Control_RunDLL",
+    "reordering": "\\rundll32.exe \\explorer.exe \\shell32.dll,Control_RunDLL",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFwAZQB4AHAAbABvAHIAZQByAC4AZQB4AGUAIABcAHMAaABlAGwAbAAzADIALgBkAGwAbAAsAEMAbwBuAHQAcgBvAGwAXwBSAHUAbgBEAEwATAA= "
+  }
+}

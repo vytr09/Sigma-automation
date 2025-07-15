@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dsacls_abuse_permissions_0",
+  "original_command": "\\dsacls.exe DSACLS.EXE /G GR GE GW GA WP WD",
+  "evasions": {
+    "insertion": "\\dsacls.exe DSACLS.EXE /G GR GE GW \"GA\" WP WD",
+    "substitution": "\\dsacls.exe DSACLS.EXE /G GR GE GW GA WP WD #substitution",
+    "omission": "\\dsacls DSACLS /G GR GE GW GA WP WD",
+    "reordering": "\\dsacls.exe DSACLS.EXE /G GR GE GW GA WP WD",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRzYWNscy5leGUgRFNBQ0xTLkVYRSAvRyBHUiBHRSBHVyBHQSBXUCBXRA==')) | Invoke-Expression\" "
+  }
+}

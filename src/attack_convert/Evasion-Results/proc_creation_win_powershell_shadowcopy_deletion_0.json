@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_shadowcopy_deletion_0",
+  "original_command": "Get-WmiObject gwmi Get-CimInstance gcim Win32_ShadowCopy .Delete() Remove-WmiObject rwmi Remove-CimInstance rcim",
+  "evasions": {
+    "insertion": "Get-WmiObject gwmi Get-CimInstance gcim Win32_ShadowCopy \".Del\"ete() Remove-WmiObject rwmi Remove-CimInstance rcim",
+    "substitution": "Get-WmiObject gwmi Get-CimInstance gcim Win32_ShadowCopy .Delete() Remove-WmiObject rwmi Remove-CimInstance rcim #substitution",
+    "omission": "Get-WmiObject gwmi Get-CimInstance gcim Win32_ShadowCopy .Delete() Remove-WmiObject rwmi Remove-CimInstance rcim # omission",
+    "reordering": "Get-WmiObject gwmi Get-CimInstance gcim Win32_ShadowCopy .Delete() Remove-WmiObject rwmi Remove-CimInstance rcim",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R2V0LVdtaU9iamVjdCBnd21pIEdldC1DaW1JbnN0YW5jZSBnY2ltIFdpbjMyX1NoYWRvd0NvcHkgLkRlbGV0ZSgpIFJlbW92ZS1XbWlPYmplY3QgcndtaSBSZW1vdmUtQ2ltSW5zdGFuY2UgcmNpbQ==')) | Invoke-Expression\" "
+  }
+}

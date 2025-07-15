@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_silenttrinity_stager_0",
+  "original_command": "st2stager",
+  "evasions": {
+    "insertion": "st2stager",
+    "substitution": "st2stager #substitution",
+    "omission": "st2stager # omission",
+    "reordering": "st2stager",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c3Qyc3RhZ2Vy')) | Invoke-Expression\" "
+  }
+}

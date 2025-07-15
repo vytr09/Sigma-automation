@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_priv_escalation_via_named_pipe_0",
+  "original_command": "\\cmd.exe \\powershell.exe Cmd.Exe PowerShell.EXE echo > \\\\\\\\.\\\\pipe\\\\",
+  "evasions": {
+    "insertion": "\\cmd.exe \\powershell.exe Cmd.Exe PowerShell.EXE echo > \\\\\\\\.\\\\pipe\\\\",
+    "substitution": "\\cmd.exe \\powershell.exe Cmd.Exe PowerShell.EXE echo > \\\\\\\\.\\\\pipe\\\\ #substitution",
+    "omission": "\\cmd \\powershell Cmd PowerShell echo > \\\\\\\\.\\\\pipe\\\\",
+    "reordering": "\\cmd.exe \\powershell.exe Cmd.Exe PowerShell.EXE echo > \\\\\\\\.\\\\pipe\\\\",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABDAG0AZAAuAEUAeABlACAAUABvAHcAZQByAFMAaABlAGwAbAAuAEUAWABFACAAZQBjAGgAbwAgAD4AIABcAFwAXABcAC4AXABcAHAAaQBwAGUAXABcAA== "
+  }
+}

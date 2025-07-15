@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_eventconsumer_creation_0",
+  "original_command": "ActiveScriptEventConsumer CREATE",
+  "evasions": {
+    "insertion": "ActiveScriptEventConsumer \\\"C\\\"\\\"R\\\"\\\"E\\\"\\\"A\\\"\\\"T\\\"\\\"E\\\"",
+    "substitution": "ActiveScriptEventConsumer CREATE #substitution",
+    "omission": "ActiveScriptEventConsumer CREATE # omission",
+    "reordering": "ActiveScriptEventConsumer CREATE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QWN0aXZlU2NyaXB0RXZlbnRDb25zdW1lciBDUkVBVEU=')) | Invoke-Expression\" "
+  }
+}

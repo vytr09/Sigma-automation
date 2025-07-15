@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:29:13 UTC", "rule": "proc_creation_win_renamed_jusched_0", "phase": "original", "command": "\\jusched.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:29:20 UTC", "rule": "proc_creation_win_renamed_jusched_0", "phase": "insertion", "command": "\\\"\\jusched.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:29:27 UTC", "rule": "proc_creation_win_renamed_jusched_0", "phase": "substitution", "command": "\\jusched.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:29:32 UTC", "rule": "proc_creation_win_renamed_jusched_0", "phase": "omission", "command": "\\jusched", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:29:39 UTC", "rule": "proc_creation_win_renamed_jusched_0", "phase": "reordering", "command": "\\jusched.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:29:46 UTC", "rule": "proc_creation_win_renamed_jusched_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGp1c2NoZWQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

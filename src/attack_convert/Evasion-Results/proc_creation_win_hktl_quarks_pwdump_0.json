@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_quarks_pwdump_0",
+  "original_command": "\\QuarksPwDump.exe",
+  "evasions": {
+    "insertion": "\\\"\\QuarksPwDump.exe\\\"",
+    "substitution": "\\QuarksPwDump.exe #substitution",
+    "omission": "\\QuarksPwDump",
+    "reordering": "\\QuarksPwDump.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFF1YXJrc1B3RHVtcC5leGU=')) | Invoke-Expression\" "
+  }
+}

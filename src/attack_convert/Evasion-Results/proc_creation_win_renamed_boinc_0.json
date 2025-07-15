@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_boinc_0",
+  "original_command": "BOINC.exe \\BOINC.exe",
+  "evasions": {
+    "insertion": "BOINC.exe \\BOIN\"C.exe\"",
+    "substitution": "BOINC.exe \\BOINC.exe #substitution",
+    "omission": "BOINC \\BOINC",
+    "reordering": "BOINC.exe \\BOINC.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Qk9JTkMuZXhlIFxCT0lOQy5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_use_of_te_bin_0",
+  "original_command": "\\te.exe \\te.exe \\te.exe",
+  "evasions": {
+    "insertion": "\\te.exe \\te.exe \\te\".exe\"",
+    "substitution": "\\te.exe \\te.exe \\te.exe #substitution",
+    "omission": "\\te \\te \\te",
+    "reordering": "\\te.exe \\te.exe \\te.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRlLmV4ZSBcdGUuZXhlIFx0ZS5leGU=')) | Invoke-Expression\" "
+  }
+}

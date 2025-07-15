@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_mimikatz_command_line_0",
+  "original_command": "DumpCreds mimikatz ::aadcookie ::detours ::memssp ::mflt ::ncroutemon ::ngcsign ::printnightmare ::skeleton ::preshutdown ::mstsc ::multirdp rpc:: token:: crypto:: dpapi:: sekurlsa:: kerberos:: lsadump:: privilege:: process:: vault::",
+  "evasions": {
+    "insertion": "DumpCreds mimikatz ::aadcookie ::detours ::memssp \"::m\"flt ::ncroutemon ::ngcsign ::printnightmare ::skeleton ::preshutdown ::mstsc ::multirdp rpc:: token:: crypto:: dpapi:: sekurlsa:: kerberos:: lsadump:: privilege:: process:: vault::",
+    "substitution": "DumpCreds mimikatz ::aadcookie ::detours ::memssp ::mflt ::ncroutemon ::ngcsign ::printnightmare ::skeleton ::preshutdown ::mstsc ::multirdp rpc:: token:: crypto:: dpapi:: sekurlsa:: kerberos:: lsadump:: privilege:: process:: vault:: #substitution",
+    "omission": "DumpCreds mimikatz ::aadcookie ::detours ::memssp ::mflt ::ncroutemon ::ngcsign ::printnightmare ::skeleton ::preshutdown ::mstsc ::multirdp rpc:: token:: crypto:: dpapi:: sekurlsa:: kerberos:: lsadump:: privilege:: process:: vault:: # omission",
+    "reordering": "DumpCreds mimikatz ::aadcookie ::detours ::memssp ::mflt ::ncroutemon ::ngcsign ::printnightmare ::skeleton ::preshutdown ::mstsc ::multirdp rpc:: token:: crypto:: dpapi:: sekurlsa:: kerberos:: lsadump:: privilege:: process:: vault::",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RHVtcENyZWRzIG1pbWlrYXR6IDo6YWFkY29va2llIDo6ZGV0b3VycyA6Om1lbXNzcCA6Om1mbHQgOjpuY3JvdXRlbW9uIDo6bmdjc2lnbiA6OnByaW50bmlnaHRtYXJlIDo6c2tlbGV0b24gOjpwcmVzaHV0ZG93biA6Om1zdHNjIDo6bXVsdGlyZHAgcnBjOjogdG9rZW46OiBjcnlwdG86OiBkcGFwaTo6IHNla3VybHNhOjoga2VyYmVyb3M6OiBsc2FkdW1wOjogcHJpdmlsZWdlOjogcHJvY2Vzczo6IHZhdWx0Ojo=')) | Invoke-Expression\" "
+  }
+}

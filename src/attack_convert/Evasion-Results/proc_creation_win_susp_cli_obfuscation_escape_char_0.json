@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_cli_obfuscation_escape_char_0",
+  "original_command": "h^t^t^p h",
+  "evasions": {
+    "insertion": "h^t^t^p \"h\"",
+    "substitution": "h^t^t^p h #substitution",
+    "omission": "h^t^t^p h # omission",
+    "reordering": "h^t^t^p h",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aF50XnRecCBo')) | Invoke-Expression\" "
+  }
+}

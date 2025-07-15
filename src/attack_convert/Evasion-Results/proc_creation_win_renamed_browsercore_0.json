@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_browsercore_0",
+  "original_command": "BrowserCore.exe \\BrowserCore.exe",
+  "evasions": {
+    "insertion": "BrowserCore.exe \\\"B\"\"r\"\"o\"\"w\"\"s\"\"e\"\"r\"\"C\"\"o\"\"r\"\"e\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "BrowserCore.exe \\BrowserCore.exe #substitution",
+    "omission": "BrowserCore \\BrowserCore",
+    "reordering": "BrowserCore.exe \\BrowserCore.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QnJvd3NlckNvcmUuZXhlIFxCcm93c2VyQ29yZS5leGU=')) | Invoke-Expression\" "
+  }
+}

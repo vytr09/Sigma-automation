@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_eventvwr_recentviews_0",
+  "original_command": "\\Event Viewer\\RecentViews \\EventV~1\\RecentViews >",
+  "evasions": {
+    "insertion": "\\Event Viewer\\RecentViews \\EventV~1\\RecentViews >",
+    "substitution": "\\Event Viewer\\RecentViews \\EventV~1\\RecentViews > #substitution",
+    "omission": "\\Event Viewer\\RecentViews \\EventV~1\\RecentViews > # omission",
+    "reordering": "\\Event Viewer\\RecentViews \\EventV~1\\RecentViews >",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEV2ZW50IFZpZXdlclxSZWNlbnRWaWV3cyBcRXZlbnRWfjFcUmVjZW50Vmlld3MgPg==')) | Invoke-Expression\" "
+  }
+}

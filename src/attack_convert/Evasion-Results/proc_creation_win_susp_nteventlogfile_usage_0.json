@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_nteventlogfile_usage_0",
+  "original_command": "Win32_NTEventlogFile .BackupEventlog( .ChangeSecurityPermissions( .ChangeSecurityPermissionsEx( .ClearEventLog( .Delete( .DeleteEx( .Rename( .TakeOwnerShip( .TakeOwnerShipEx(",
+  "evasions": {
+    "insertion": "Win32_NTEventlogFile .BackupEventlog( .ChangeSecurityPermissions( .ChangeSecurityPermissionsEx( \\\".ClearEventLog(\\\" \\\".Delete(\\\" .DeleteEx( .Rename( .TakeOwnerShip( .TakeOwnerShipEx(",
+    "substitution": "Win32_NTEventlogFile .BackupEventlog( .ChangeSecurityPermissions( .ChangeSecurityPermissionsEx( .ClearEventLog( .Delete( .DeleteEx( .Rename( .TakeOwnerShip( .TakeOwnerShipEx( #substitution",
+    "omission": "Win32_NTEventlogFile .BackupEventlog( .ChangeSecurityPermissions( .ChangeSecurityPermissionsEx( .ClearEventLog( .Delete( .DeleteEx( .Rename( .TakeOwnerShip( .TakeOwnerShipEx( # omission",
+    "reordering": "Win32_NTEventlogFile .BackupEventlog( .ChangeSecurityPermissions( .ChangeSecurityPermissionsEx( .ClearEventLog( .Delete( .DeleteEx( .Rename( .TakeOwnerShip( .TakeOwnerShipEx(",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('V2luMzJfTlRFdmVudGxvZ0ZpbGUgLkJhY2t1cEV2ZW50bG9nKCAuQ2hhbmdlU2VjdXJpdHlQZXJtaXNzaW9ucyggLkNoYW5nZVNlY3VyaXR5UGVybWlzc2lvbnNFeCggLkNsZWFyRXZlbnRMb2coIC5EZWxldGUoIC5EZWxldGVFeCggLlJlbmFtZSggLlRha2VPd25lclNoaXAoIC5UYWtlT3duZXJTaGlwRXgo')) | Invoke-Expression\" "
+  }
+}

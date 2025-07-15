@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_pcwutl_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE pcwutl LaunchApplication",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE \\\"pcwutl\\\" LaunchApplication",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE pcwutl LaunchApplication #substitution",
+    "omission": "\\rundll32 RUNDLL32 pcwutl LaunchApplication",
+    "reordering": "\\rundll32.exe pcwutl RUNDLL32.EXE LaunchApplication",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgcGN3dXRsIExhdW5jaEFwcGxpY2F0aW9u')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mstsc_rdp_hijack_shadowing_0",
+  "original_command": "noconsentprompt shadow:",
+  "evasions": {
+    "insertion": "noconsentprompt \"shadow:\"",
+    "substitution": "noconsentprompt shadow: #substitution",
+    "omission": "noconsentprompt shadow: # omission",
+    "reordering": "noconsentprompt shadow:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bm9jb25zZW50cHJvbXB0IHNoYWRvdzo=')) | Invoke-Expression\" "
+  }
+}

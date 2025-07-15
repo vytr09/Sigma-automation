@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mshta_susp_pattern_0",
+  "original_command": "\\mshta.exe MSHTA.EXE \\cmd.exe \\cscript.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\AppData\\Local\\ C:\\ProgramData\\ C:\\Users\\Public\\ C:\\Windows\\Temp\\ .htm .hta",
+  "evasions": {
+    "insertion": "\\mshta.exe MSHTA.EXE \\cmd.exe \\cscript.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \"\\rundll32.exe\" \\wscript.exe \\AppData\\Local\\ C:\\ProgramData\\ C:\\Users\\Public\\ C:\\Windows\\Temp\\ .htm .hta",
+    "substitution": "\\mshta.exe MSHTA.EXE \\cmd.exe \\cscript.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\AppData\\Local\\ C:\\ProgramData\\ C:\\Users\\Public\\ C:\\Windows\\Temp\\ .htm .hta #substitution",
+    "omission": "\\mshta MSHTA \\cmd \\cscript \\powershell \\pwsh \\regsvr32 \\rundll32 \\wscript \\AppData\\Local\\ C:\\ProgramData\\ Temp\\ .htm .hta",
+    "reordering": "\\mshta.exe MSHTA.EXE \\cmd.exe \\cscript.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\AppData\\Local\\ C:\\ProgramData\\ C:\\Users\\Public\\ C:\\Windows\\Temp\\ .htm .hta",
+    "recoding": "powershell.exe -EncodedCommand XABtAHMAaAB0AGEALgBlAHgAZQAgAE0AUwBIAFQAQQAuAEUAWABFACAAXABjAG0AZAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcAB3AHMAaAAuAGUAeABlACAAXAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAcgB1AG4AZABsAGwAMwAyAC4AZQB4AGUAIABcAHcAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAQQBwAHAARABhAHQAYQBcAEwAbwBjAGEAbABcACAAQwA6AFwAUAByAG8AZwByAGEAbQBEAGEAdABhAFwAIABDADoAXABVAHMAZQByAHMAXABQAHUAYgBsAGkAYwBcACAAQwA6AFwAVwBpAG4AZABvAHcAcwBcAFQAZQBtAHAAXAAgAC4AaAB0AG0AIAAuAGgAdABhAA== "
+  }
+}

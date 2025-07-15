@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_handlekatz_0",
+  "original_command": "\\loader.exe --pid: --pid: --outfile: .dmp lsass .obf dump",
+  "evasions": {
+    "insertion": "\\loader.exe --pid: --pid: --outfile: .dmp lsass .obf du\\\"mp\\\"",
+    "substitution": "\\loader.exe --pid: --pid: --outfile: .dmp lsass .obf dump #substitution",
+    "omission": "\\loader --pid: --pid: --outfile: .dmp lsass .obf dump",
+    "reordering": "\\loader.exe --pid: --pid: --outfile: .dmp lsass .obf dump",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxvYWRlci5leGUgLS1waWQ6IC0tcGlkOiAtLW91dGZpbGU6IC5kbXAgbHNhc3MgLm9iZiBkdW1w')) | Invoke-Expression\" "
+  }
+}

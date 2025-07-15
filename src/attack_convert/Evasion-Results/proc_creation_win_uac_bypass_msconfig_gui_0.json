@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_msconfig_gui_0",
+  "original_command": "\\AppData\\Local\\Temp\\pkgmgr.exe",
+  "evasions": {
+    "insertion": "\\AppData\\Local\\Temp\\\"p\"\"k\"\"g\"\"m\"\"g\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\AppData\\Local\\Temp\\pkgmgr.exe #substitution",
+    "omission": "\\AppData\\Local\\Temp\\pkgmgr",
+    "reordering": "\\AppData\\Local\\Temp\\pkgmgr.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcTG9jYWxcVGVtcFxwa2dtZ3IuZXhl')) | Invoke-Expression\" "
+  }
+}

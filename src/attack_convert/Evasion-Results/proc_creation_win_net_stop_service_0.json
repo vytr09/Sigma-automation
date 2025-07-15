@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_stop_service_0",
+  "original_command": "net.exe net1.exe \\net.exe \\net1.exe stop",
+  "evasions": {
+    "insertion": "net.exe net1\".exe\" \\net.exe \\net1.exe stop",
+    "substitution": "net.exe net1.exe \\net.exe \\net1.exe stop #substitution",
+    "omission": "net net1 \\net \\net1 stop",
+    "reordering": "net.exe net1.exe stop \\net.exe \\net1.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSBuZXQxLmV4ZSBcbmV0LmV4ZSBcbmV0MS5leGUgc3RvcA==')) | Invoke-Expression\" "
+  }
+}

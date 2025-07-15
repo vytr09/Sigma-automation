@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_execution_path_0",
+  "original_command": "\\CitrixReceiverUpdater.exe",
+  "evasions": {
+    "insertion": "\\\"C\"\"i\"\"t\"\"r\"\"i\"\"x\"\"R\"\"e\"\"c\"\"e\"\"i\"\"v\"\"e\"\"r\"\"U\"\"p\"\"d\"\"a\"\"t\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\CitrixReceiverUpdater.exe #substitution",
+    "omission": "\\CitrixReceiverUpdater",
+    "reordering": "\\CitrixReceiverUpdater.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENpdHJpeFJlY2VpdmVyVXBkYXRlci5leGU=')) | Invoke-Expression\" "
+  }
+}

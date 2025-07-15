@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_cmstp_0",
+  "original_command": "\\cmstp.exe CMSTP.EXE /s -s /au -au /ni -ni",
+  "evasions": {
+    "insertion": "\\cmstp.exe CMSTP.EXE /s -s /au \"-au\" /ni -ni",
+    "substitution": "\\cmstp.exe CMSTP.EXE /s -s /au -au /ni -ni #substitution",
+    "omission": "\\cmstp CMSTP /s -s /au -au /ni -ni",
+    "reordering": "\\cmstp.exe CMSTP.EXE /s -s /au -au /ni -ni",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtc3RwLmV4ZSBDTVNUUC5FWEUgL3MgLXMgL2F1IC1hdSAvbmkgLW5p')) | Invoke-Expression\" "
+  }
+}

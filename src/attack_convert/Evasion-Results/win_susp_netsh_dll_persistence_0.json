@@ -2,7 +2,7 @@
   "rule_name": "win_susp_netsh_dll_persistence_0",
   "original_command": "netsh.exe add helper",
   "evasions": {
-    "insertion": "netsh.exe add \\\"helper\\\"",
+    "insertion": "netsh.exe add \"hel\"per",
     "substitution": "netsh.exe add helper #substitution",
     "omission": "netsh add helper",
     "reordering": "netsh.exe helper add",

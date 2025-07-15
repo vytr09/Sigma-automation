@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_safetykatz_0",
+  "original_command": "\\SafetyKatz.exe SafetyKatz.exe",
+  "evasions": {
+    "insertion": "\\SafetyKatz.exe SafetyK\\\"atz.exe\\\"",
+    "substitution": "\\SafetyKatz.exe SafetyKatz.exe #substitution",
+    "omission": "\\SafetyKatz SafetyKatz",
+    "reordering": "\\SafetyKatz.exe SafetyKatz.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNhZmV0eUthdHouZXhlIFNhZmV0eUthdHouZXhl')) | Invoke-Expression\" "
+  }
+}

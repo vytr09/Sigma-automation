@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_csexec_0",
+  "original_command": "\\csexec.exe",
+  "evasions": {
+    "insertion": "\\\"\\csexec.exe\\\"",
+    "substitution": "\\csexec.exe #substitution",
+    "omission": "\\csexec",
+    "reordering": "\\csexec.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzZXhlYy5leGU=')) | Invoke-Expression\" "
+  }
+}

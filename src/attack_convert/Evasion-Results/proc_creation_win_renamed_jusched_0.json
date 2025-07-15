@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_jusched_0",
+  "original_command": "\\jusched.exe",
+  "evasions": {
+    "insertion": "\\\"\\jusched.exe\\\"",
+    "substitution": "\\jusched.exe #substitution",
+    "omission": "\\jusched",
+    "reordering": "\\jusched.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGp1c2NoZWQuZXhl')) | Invoke-Expression\" "
+  }
+}

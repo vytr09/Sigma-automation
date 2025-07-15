@@ -4,15 +4,3 @@
 {"timestamp": "2025-04-23 08:55:58 UTC", "rule": "win_hack_koadic_0", "phase": "omission", "command": "cmd /q chcp", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:56:05 UTC", "rule": "win_hack_koadic_0", "phase": "reordering", "command": "cmd.exe chcp /c /q", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:56:11 UTC", "rule": "win_hack_koadic_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:32:44 UTC", "rule": "win_hack_koadic_0", "phase": "original", "command": "cmd.exe /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:32:51 UTC", "rule": "win_hack_koadic_0", "phase": "insertion", "command": "cmd.exe /q /c ch\\\"cp\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:32:57 UTC", "rule": "win_hack_koadic_0", "phase": "substitution", "command": "cmd.exe /q -c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:04 UTC", "rule": "win_hack_koadic_0", "phase": "omission", "command": "cmd /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:12 UTC", "rule": "win_hack_koadic_0", "phase": "reordering", "command": "cmd.exe /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_hack_koadic_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21kLmV4ZSAvcSAvYyBjaGNw')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:52:33 UTC", "rule": "win_hack_koadic_0", "phase": "original", "command": "cmd.exe /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:37 UTC", "rule": "win_hack_koadic_0", "phase": "insertion", "command": "cmd.exe /q /c \"ch\"cp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:41 UTC", "rule": "win_hack_koadic_0", "phase": "substitution", "command": "cmd.exe /q -c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:44 UTC", "rule": "win_hack_koadic_0", "phase": "omission", "command": "cmd /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:48 UTC", "rule": "win_hack_koadic_0", "phase": "reordering", "command": "cmd.exe /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:51 UTC", "rule": "win_hack_koadic_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21kLmV4ZSAvcSAvYyBjaGNw')) | Invoke-Expression\" ", "status": "BYPASSED"}

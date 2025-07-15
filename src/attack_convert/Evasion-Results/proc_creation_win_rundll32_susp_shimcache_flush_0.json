@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_susp_shimcache_flush_0",
+  "original_command": "rundll32 apphelp.dll ShimFlushCache #250 rundll32 kernel32.dll BaseFlushAppcompatCache #46",
+  "evasions": {
+    "insertion": "rundll32 apphelp.dll ShimFlushCache #250 rundll32 kernel32.dll BaseFlushAppcompatCache \"#\"\"4\"\"6\"",
+    "substitution": "rundll32 apphelp.dll ShimFlushCache #250 rundll32 kernel32.dll BaseFlushAppcompatCache #46 #substitution",
+    "omission": "rundll32 apphelp.dll ShimFlushCache #250 rundll32 kernel32.dll BaseFlushAppcompatCache #46 # omission",
+    "reordering": "rundll32 apphelp.dll ShimFlushCache #250 rundll32 kernel32.dll BaseFlushAppcompatCache #46",
+    "recoding": "powershell.exe -EncodedCommand cgB1AG4AZABsAGwAMwAyACAAYQBwAHAAaABlAGwAcAAuAGQAbABsACAAUwBoAGkAbQBGAGwAdQBzAGgAQwBhAGMAaABlACAAIwAyADUAMAAgAHIAdQBuAGQAbABsADMAMgAgAGsAZQByAG4AZQBsADMAMgAuAGQAbABsACAAQgBhAHMAZQBGAGwAdQBzAGgAQQBwAHAAYwBvAG0AcABhAHQAQwBhAGMAaABlACAAIwA0ADYA "
+  }
+}

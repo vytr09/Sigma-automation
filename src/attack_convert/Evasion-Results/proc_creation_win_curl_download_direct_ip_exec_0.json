@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_download_direct_ip_exec_0",
+  "original_command": "\\curl.exe curl.exe http -O --remote-name --output",
+  "evasions": {
+    "insertion": "\\curl.exe curl.exe http -O \\\"--remote-name\\\" --output",
+    "substitution": "\\curl.exe curl.exe http --remote-name --remote-name --output",
+    "omission": "\\curl curl http -O --remote-name --output",
+    "reordering": "\\curl.exe -O curl.exe --output --remote-name http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIGh0dHAgLU8gLS1yZW1vdGUtbmFtZSAtLW91dHB1dA==')) | Invoke-Expression\" "
+  }
+}

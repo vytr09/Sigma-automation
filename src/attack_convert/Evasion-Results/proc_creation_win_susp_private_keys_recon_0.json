@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_private_keys_recon_0",
+  "original_command": "\\cmd.exe Cmd.Exe dir \\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem \\findstr.exe FINDSTR.EXE .key .pgp .gpg .ppk .p12 .pem .pfx .cer .p7b .asc",
+  "evasions": {
+    "insertion": "\\cmd.exe Cmd.Exe dir \\powershell.exe \"\\pws\"h.exe PowerShell.EXE pwsh.dll Get-ChildItem \\findstr.exe FINDSTR.EXE .key .pgp .gpg .ppk .p12 .pem .pfx .cer .p7b .asc",
+    "substitution": "\\cmd.exe Cmd.Exe dir \\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem \\findstr.exe FINDSTR.EXE .key .pgp .gpg .ppk .p12 .pem .pfx .cer .p7b .asc #substitution",
+    "omission": "\\cmd Cmd dir \\powershell \\pwsh PowerShell pwsh.dll Get-ChildItem \\findstr FINDSTR .key .pgp .gpg .ppk .p12 .pem .pfx .cer .p7b .asc",
+    "reordering": "\\cmd.exe Cmd.Exe dir \\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem \\findstr.exe FINDSTR.EXE .key .pgp .gpg .ppk .p12 .pem .pfx .cer .p7b .asc",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAQwBtAGQALgBFAHgAZQAgAGQAaQByACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEcAZQB0AC0AQwBoAGkAbABkAEkAdABlAG0AIABcAGYAaQBuAGQAcwB0AHIALgBlAHgAZQAgAEYASQBOAEQAUwBUAFIALgBFAFgARQAgAC4AawBlAHkAIAAuAHAAZwBwACAALgBnAHAAZwAgAC4AcABwAGsAIAAuAHAAMQAyACAALgBwAGUAbQAgAC4AcABmAHgAIAAuAGMAZQByACAALgBwADcAYgAgAC4AYQBzAGMA "
+  }
+}

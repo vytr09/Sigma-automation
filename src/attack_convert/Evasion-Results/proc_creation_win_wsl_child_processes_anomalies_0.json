@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wsl_child_processes_anomalies_0",
+  "original_command": "\\wsl.exe \\wslhost.exe \\calc.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "\\wsl.exe \\wslhost.exe \\calc.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsv\\\"r32.exe\\\" \\rundll32.exe \\wscript.exe",
+    "substitution": "\\wsl.exe \\wslhost.exe \\calc.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe #substitution",
+    "omission": "\\wsl \\wslhost \\calc \\cmd \\cscript \\mshta \\powershell \\pwsh \\regsvr32 \\rundll32 \\wscript",
+    "reordering": "\\wsl.exe \\wslhost.exe \\calc.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+    "recoding": "powershell.exe -EncodedCommand XAB3AHMAbAAuAGUAeABlACAAXAB3AHMAbABoAG8AcwB0AC4AZQB4AGUAIABcAGMAYQBsAGMALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABtAHMAaAB0AGEALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHIAZQBnAHMAdgByADMAMgAuAGUAeABlACAAXAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlAA== "
+  }
+}

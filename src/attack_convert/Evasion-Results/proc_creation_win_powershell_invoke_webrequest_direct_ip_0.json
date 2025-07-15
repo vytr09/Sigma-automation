@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_invoke_webrequest_direct_ip_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE \"pwsh.dll\" \"curl\" Invoke-WebRequest iwr wget ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9 #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll curl Invoke-WebRequest iwr wget ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAGMAdQByAGwAIABJAG4AdgBvAGsAZQAtAFcAZQBiAFIAZQBxAHUAZQBzAHQAIABpAHcAcgAgAHcAZwBlAHQAIAA6AC8ALwAxACAAOgAvAC8AMgAgADoALwAvADMAIAA6AC8ALwA0ACAAOgAvAC8ANQAgADoALwAvADYAIAA6AC8ALwA3ACAAOgAvAC8AOAAgADoALwAvADkA "
+  }
+}

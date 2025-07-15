@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:14:27 UTC", "rule": "proc_creation_win_sysinternals_procdump_0", "phase": "original", "command": "\\procdump.exe \\procdump64.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:14:35 UTC", "rule": "proc_creation_win_sysinternals_procdump_0", "phase": "insertion", "command": "\\procdump.exe \\procdu\\\"mp64.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:14:40 UTC", "rule": "proc_creation_win_sysinternals_procdump_0", "phase": "substitution", "command": "\\procdump.exe \\procdump64.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:14:46 UTC", "rule": "proc_creation_win_sysinternals_procdump_0", "phase": "omission", "command": "\\procdump \\procdump64", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:14:52 UTC", "rule": "proc_creation_win_sysinternals_procdump_0", "phase": "reordering", "command": "\\procdump.exe \\procdump64.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:14:58 UTC", "rule": "proc_creation_win_sysinternals_procdump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByb2NkdW1wLmV4ZSBccHJvY2R1bXA2NC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_icmluautil_0",
+  "original_command": "\\dllhost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7} /Processid:{D2E7041B-2927-42FB-8E9F-7CE93B6DC937} \\WerFault.exe WerFault.exe",
+  "evasions": {
+    "insertion": "\\dllhost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7} /Processid:{D2E7041B-2927-42FB-8E9F-7CE93B6DC937} \\\"\\\\\"\\\"W\\\"\\\"e\\\"\\\"r\\\"\\\"F\\\"\\\"a\\\"\\\"u\\\"\\\"l\\\"\\\"t\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" WerFault.exe",
+    "substitution": "\\dllhost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7} /Processid:{D2E7041B-2927-42FB-8E9F-7CE93B6DC937} \\WerFault.exe WerFault.exe #substitution",
+    "omission": "\\dllhost /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7} /Processid:{D2E7041B-2927-42FB-8E9F-7CE93B6DC937} \\WerFault WerFault",
+    "reordering": "\\dllhost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7} /Processid:{D2E7041B-2927-42FB-8E9F-7CE93B6DC937} \\WerFault.exe WerFault.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRsbGhvc3QuZXhlIC9Qcm9jZXNzaWQ6ezNFNUZDN0Y5LTlBNTEtNDM2Ny05MDYzLUExMjAyNDRGQkVDN30gL1Byb2Nlc3NpZDp7RDJFNzA0MUItMjkyNy00MkZCLThFOUYtN0NFOTNCNkRDOTM3fSBcV2VyRmF1bHQuZXhlIFdlckZhdWx0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

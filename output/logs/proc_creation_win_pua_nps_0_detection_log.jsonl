@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:53:19 UTC", "rule": "proc_creation_win_pua_nps_0", "phase": "original", "command": "\\npc.exe -server= -vkey= -password= -config=npc", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:19 UTC", "rule": "proc_creation_win_pua_nps_0", "phase": "insertion", "command": "\\npc.exe -server= \"-\"\"v\"\"k\"\"e\"\"y\"\"=\" -password= -config=npc", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:19 UTC", "rule": "proc_creation_win_pua_nps_0", "phase": "substitution", "command": "\\npc.exe -server= -vkey= -password= -config=npc #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:19 UTC", "rule": "proc_creation_win_pua_nps_0", "phase": "omission", "command": "\\npc -server= -vkey= -password= -config=npc", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:19 UTC", "rule": "proc_creation_win_pua_nps_0", "phase": "reordering", "command": "\\npc.exe -server= -vkey= -config=npc -password=", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:19 UTC", "rule": "proc_creation_win_pua_nps_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5wYy5leGUgLXNlcnZlcj0gLXZrZXk9IC1wYXNzd29yZD0gLWNvbmZpZz1ucGM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

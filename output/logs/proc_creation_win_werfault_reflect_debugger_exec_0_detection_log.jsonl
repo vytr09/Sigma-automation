@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:53:43 UTC", "rule": "proc_creation_win_werfault_reflect_debugger_exec_0", "phase": "original", "command": "\\WerFault.exe WerFault.exe -pr", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:53:55 UTC", "rule": "proc_creation_win_werfault_reflect_debugger_exec_0", "phase": "insertion", "command": "\\WerFault.exe WerFault.exe \"-\"\"p\"\"r\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:54:04 UTC", "rule": "proc_creation_win_werfault_reflect_debugger_exec_0", "phase": "substitution", "command": "\\WerFault.exe WerFault.exe -pr #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:54:14 UTC", "rule": "proc_creation_win_werfault_reflect_debugger_exec_0", "phase": "omission", "command": "\\WerFault WerFault -pr", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:54:21 UTC", "rule": "proc_creation_win_werfault_reflect_debugger_exec_0", "phase": "reordering", "command": "\\WerFault.exe -pr WerFault.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:54:29 UTC", "rule": "proc_creation_win_werfault_reflect_debugger_exec_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlckZhdWx0LmV4ZSBXZXJGYXVsdC5leGUgLXBy')) | Invoke-Expression\" ", "status": "BYPASSED"}

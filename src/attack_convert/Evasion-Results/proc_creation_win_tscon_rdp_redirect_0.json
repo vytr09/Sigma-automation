@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tscon_rdp_redirect_0",
+  "original_command": "/dest:rdp-tcp#",
+  "evasions": {
+    "insertion": "/dest:rdp-tcp#",
+    "substitution": "/dest:rdp-tcp# #substitution",
+    "omission": "/dest:rdp-tcp# # omission",
+    "reordering": "/dest:rdp-tcp#",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2Rlc3Q6cmRwLXRjcCM=')) | Invoke-Expression\" "
+  }
+}

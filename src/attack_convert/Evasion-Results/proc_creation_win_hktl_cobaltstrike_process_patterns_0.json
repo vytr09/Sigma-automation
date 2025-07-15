@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_cobaltstrike_process_patterns_0",
+  "original_command": "\\runonce.exe \\dllhost.exe cmd.exe /c echo > \\\\\\\\.\\\\pipe cmd.exe /C echo > \\\\\\\\.\\\\pipe",
+  "evasions": {
+    "insertion": "\\runonce.exe \\dllhost.exe cmd.exe /c echo > \\\\\\\\.\\\\pipe cmd.exe /C echo > \\\\\\\\.\\\\pipe",
+    "substitution": "\\runonce.exe \\dllhost.exe cmd.exe -c echo > \\\\\\\\.\\\\pipe cmd.exe /C echo > \\\\\\\\.\\\\pipe",
+    "omission": "\\runonce \\dllhost cmd /c echo > \\\\\\\\.\\\\pipe cmd /C echo > \\\\\\\\.\\\\pipe",
+    "reordering": "\\runonce.exe \\dllhost.exe cmd.exe /c echo > \\\\\\\\.\\\\pipe cmd.exe /C echo > \\\\\\\\.\\\\pipe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bm9uY2UuZXhlIFxkbGxob3N0LmV4ZSBjbWQuZXhlIC9jIGVjaG8gPiBcXFxcLlxccGlwZSBjbWQuZXhlIC9DIGVjaG8gPiBcXFxcLlxccGlwZQ==')) | Invoke-Expression\" "
+  }
+}

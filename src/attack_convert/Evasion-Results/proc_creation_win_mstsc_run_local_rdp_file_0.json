@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mstsc_run_local_rdp_file_0",
+  "original_command": "\\mstsc.exe mstsc.exe C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+  "evasions": {
+    "insertion": "\\mstsc.exe msts\\\"c.exe\\\" C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+    "substitution": "\\mstsc.exe mstsc.exe C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp #substitution",
+    "omission": "\\mstsc mstsc C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+    "reordering": "\\mstsc.exe mstsc.exe C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zdHNjLmV4ZSBtc3RzYy5leGUgQzpcUHJvZ3JhbURhdGFcTWljcm9zb2Z0XFdTTFx3c2xnLnJkcA==')) | Invoke-Expression\" "
+  }
+}

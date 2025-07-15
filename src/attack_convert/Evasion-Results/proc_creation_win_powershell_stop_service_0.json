@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_stop_service_0",
+  "original_command": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Stop-Service",
+  "evasions": {
+    "insertion": "PowerShell.EXE \\\"pwsh\\\".dll \\powershell.exe \\pwsh.exe Stop-Service",
+    "substitution": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Stop-Service #substitution",
+    "omission": "PowerShell pwsh.dll \\powershell \\pwsh Stop-Service",
+    "reordering": "PowerShell.EXE \\pwsh.exe \\powershell.exe Stop-Service pwsh.dll",
+    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAFMAaABlAGwAbAAuAEUAWABFACAAcAB3AHMAaAAuAGQAbABsACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFMAdABvAHAALQBTAGUAcgB2AGkAYwBlAA== "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mshta_susp_execution_0",
+  "original_command": "\\mshta.exe mshta.exe .7z .avi .bat .bmp .conf .csv .dll .doc .gif .gz .ini .jpe .jpg .json .lnk .log .mkv .mp3 .mp4 .pdf .png .ppt .rar .rtf .svg .tar .tmp .txt .xls .xml .yaml .yml .zip vbscript",
+  "evasions": {
+    "insertion": "\\mshta.exe mshta.exe .7z .avi .bat .bmp .conf .csv .dll .doc .gif .gz .ini .jpe .jpg .json .lnk .log .mkv .mp3 .mp4 .pdf .png .ppt .rar .rtf .svg .tar \\\".tmp\\\" .txt .xls .xml .yaml .yml .zip vbscript",
+    "substitution": "\\mshta.exe mshta.exe .7z .avi .bat .bmp .conf .csv .dll .doc .gif .gz .ini .jpe .jpg .json .lnk .log .mkv .mp3 .mp4 .pdf .png .ppt .rar .rtf .svg .tar .tmp .txt .xls .xml .yaml .yml .zip vbscript #substitution",
+    "omission": "\\mshta mshta .7z .avi .bmp .conf .csv .dll .doc .gif .gz .ini .jpe .jpg .json .lnk .log .mkv .mp3 .mp4 .pdf .png .ppt .rar .rtf .svg .tar .tmp .txt .xls .xml .yaml .yml .zip vbscript",
+    "reordering": "\\mshta.exe mshta.exe .7z .avi .bat .bmp .conf .csv .dll .doc .gif .gz .ini .jpe .jpg .json .lnk .log .mkv .mp3 .mp4 .pdf .png .ppt .rar .rtf .svg .tar .tmp .txt .xls .xml .yaml .yml .zip vbscript",
+    "recoding": "powershell.exe -EncodedCommand XABtAHMAaAB0AGEALgBlAHgAZQAgAG0AcwBoAHQAYQAuAGUAeABlACAALgA3AHoAIAAuAGEAdgBpACAALgBiAGEAdAAgAC4AYgBtAHAAIAAuAGMAbwBuAGYAIAAuAGMAcwB2ACAALgBkAGwAbAAgAC4AZABvAGMAIAAuAGcAaQBmACAALgBnAHoAIAAuAGkAbgBpACAALgBqAHAAZQAgAC4AagBwAGcAIAAuAGoAcwBvAG4AIAAuAGwAbgBrACAALgBsAG8AZwAgAC4AbQBrAHYAIAAuAG0AcAAzACAALgBtAHAANAAgAC4AcABkAGYAIAAuAHAAbgBnACAALgBwAHAAdAAgAC4AcgBhAHIAIAAuAHIAdABmACAALgBzAHYAZwAgAC4AdABhAHIAIAAuAHQAbQBwACAALgB0AHgAdAAgAC4AeABsAHMAIAAuAHgAbQBsACAALgB5AGEAbQBsACAALgB5AG0AbAAgAC4AegBpAHAAIAB2AGIAcwBjAHIAaQBwAHQA "
+  }
+}

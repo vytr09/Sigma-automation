@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:27:36 UTC", "rule": "proc_creation_win_renamed_dctask64_0", "phase": "original", "command": "\\dctask64.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:27:36 UTC", "rule": "proc_creation_win_renamed_dctask64_0", "phase": "insertion", "command": "\"\\dctask64.exe\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:27:36 UTC", "rule": "proc_creation_win_renamed_dctask64_0", "phase": "substitution", "command": "\\dctask64.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:27:36 UTC", "rule": "proc_creation_win_renamed_dctask64_0", "phase": "omission", "command": "\\dctask64", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:27:36 UTC", "rule": "proc_creation_win_renamed_dctask64_0", "phase": "reordering", "command": "\\dctask64.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:27:36 UTC", "rule": "proc_creation_win_renamed_dctask64_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRjdGFzazY0LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

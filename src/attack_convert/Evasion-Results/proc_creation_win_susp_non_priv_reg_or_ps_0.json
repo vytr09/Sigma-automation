@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_non_priv_reg_or_ps_0",
+  "original_command": "reg add powershell set-itemproperty sp new-itemproperty ControlSet Services ImagePath FailureCommand ServiceDLL",
+  "evasions": {
+    "insertion": "reg add powershell set-itemproperty sp new-itemproperty ControlSet Services ImagePath \"FailureCommand\" ServiceDLL",
+    "substitution": "reg add powershell set-itemproperty sp new-itemproperty ControlSet Services ImagePath FailureCommand ServiceDLL",
+    "omission": "reg add powershell set-itemproperty sp new-itemproperty ControlSet Services ImagePath FailureCommand ServiceDLL # omission",
+    "reordering": "reg add powershell set-itemproperty sp new-itemproperty ControlSet Services ImagePath FailureCommand ServiceDLL",
+    "recoding": "powershell.exe -EncodedCommand cgBlAGcAIABhAGQAZAAgAHAAbwB3AGUAcgBzAGgAZQBsAGwAIABzAGUAdAAtAGkAdABlAG0AcAByAG8AcABlAHIAdAB5ACAAcwBwACAAbgBlAHcALQBpAHQAZQBtAHAAcgBvAHAAZQByAHQAeQAgAEMAbwBuAHQAcgBvAGwAUwBlAHQAIABTAGUAcgB2AGkAYwBlAHMAIABJAG0AYQBnAGUAUABhAHQAaAAgAEYAYQBpAGwAdQByAGUAQwBvAG0AbQBhAG4AZAAgAFMAZQByAHYAaQBjAGUARABMAEwA "
+  }
+}

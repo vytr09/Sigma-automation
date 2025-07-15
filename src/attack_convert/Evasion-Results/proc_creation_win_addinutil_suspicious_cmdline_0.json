@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_addinutil_suspicious_cmdline_0",
+  "original_command": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: \\AppData\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ \\Windows\\Temp\\ -AddInRoot:. -AddInRoot: -PipelineRoot:. -PipelineRoot:",
+  "evasions": {
+    "insertion": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: \\AppData\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ \\Windows\\Temp\\ \"-AddInRoot:.\" \"-AddInRoot:\" -PipelineRoot:. -PipelineRoot:",
+    "substitution": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: \\AppData\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ \\Windows\\Temp\\ -AddInRoot:. -AddInRoot: -PipelineRoot:. -PipelineRoot: #substitution",
+    "omission": "\\addinutil AddInUtil -AddInRoot: -PipelineRoot: \\AppData\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ \\Windows\\Temp\\ -AddInRoot:. -AddInRoot: -PipelineRoot:. -PipelineRoot:",
+    "reordering": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: \\AppData\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ \\Windows\\Temp\\ -AddInRoot:. -AddInRoot: -PipelineRoot:. -PipelineRoot:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFkZGludXRpbC5leGUgQWRkSW5VdGlsLmV4ZSAtQWRkSW5Sb290OiAtUGlwZWxpbmVSb290OiBcQXBwRGF0YVxMb2NhbFxUZW1wXCBcRGVza3RvcFwgXERvd25sb2Fkc1wgXFVzZXJzXFB1YmxpY1wgXFdpbmRvd3NcVGVtcFwgLUFkZEluUm9vdDouIC1BZGRJblJvb3Q6IC1QaXBlbGluZVJvb3Q6LiAtUGlwZWxpbmVSb290Og==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:00:33 UTC", "rule": "proc_creation_win_powershell_frombase64string_0", "phase": "original", "command": "::FromBase64String(", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:00:33 UTC", "rule": "proc_creation_win_powershell_frombase64string_0", "phase": "insertion", "command": "::FromBase64String(", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:00:33 UTC", "rule": "proc_creation_win_powershell_frombase64string_0", "phase": "substitution", "command": "::FromBase64String( #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:00:33 UTC", "rule": "proc_creation_win_powershell_frombase64string_0", "phase": "omission", "command": "::FromBase64String( # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:00:33 UTC", "rule": "proc_creation_win_powershell_frombase64string_0", "phase": "reordering", "command": "::FromBase64String(", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:00:33 UTC", "rule": "proc_creation_win_powershell_frombase64string_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OjpGcm9tQmFzZTY0U3RyaW5nKA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

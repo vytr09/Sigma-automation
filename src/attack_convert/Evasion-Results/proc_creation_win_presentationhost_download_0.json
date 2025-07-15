@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_presentationhost_download_0",
+  "original_command": "\\presentationhost.exe PresentationHost.exe http:// https:// ftp://",
+  "evasions": {
+    "insertion": "\\presentationhost.exe \"Presentati\"onHost.exe http:// https:// ftp://",
+    "substitution": "\\presentationhost.exe PresentationHost.exe http:// https:// ftp:// #substitution",
+    "omission": "\\presentationhost PresentationHost http:// https:// ftp://",
+    "reordering": "\\presentationhost.exe https:// http:// ftp:// PresentationHost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByZXNlbnRhdGlvbmhvc3QuZXhlIFByZXNlbnRhdGlvbkhvc3QuZXhlIGh0dHA6Ly8gaHR0cHM6Ly8gZnRwOi8v')) | Invoke-Expression\" "
+  }
+}

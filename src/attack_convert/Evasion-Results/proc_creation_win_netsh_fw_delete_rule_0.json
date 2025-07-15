@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_delete_rule_0",
+  "original_command": "\\netsh.exe netsh.exe firewall delete \\Dropbox.exe name=Dropbox",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe firewall delete \"\\\"\"D\"\"r\"\"o\"\"p\"\"b\"\"o\"\"x\"\".\"\"e\"\"x\"\"e\" name=Dropbox",
+    "substitution": "\\netsh.exe netsh.exe fw delete \\Dropbox.exe name=Dropbox",
+    "omission": "\\netsh netsh firewall delete \\Dropbox name=Dropbox",
+    "reordering": "\\netsh.exe delete firewall \\Dropbox.exe netsh.exe name=Dropbox",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgZmlyZXdhbGwgZGVsZXRlIFxEcm9wYm94LmV4ZSBuYW1lPURyb3Bib3g=')) | Invoke-Expression\" "
+  }
+}

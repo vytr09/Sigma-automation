@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:02:29 UTC", "rule": "proc_creation_win_sc_create_service_0", "phase": "original", "command": "\\sc.exe create binPath", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:02:37 UTC", "rule": "proc_creation_win_sc_create_service_0", "phase": "insertion", "command": "\\sc.exe \"create\" binPath", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:02:43 UTC", "rule": "proc_creation_win_sc_create_service_0", "phase": "substitution", "command": "\\sc.exe create binPath", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:02:49 UTC", "rule": "proc_creation_win_sc_create_service_0", "phase": "omission", "command": "\\sc create binPath", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:02:55 UTC", "rule": "proc_creation_win_sc_create_service_0", "phase": "reordering", "command": "\\sc.exe binPath create", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:03:04 UTC", "rule": "proc_creation_win_sc_create_service_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBjcmVhdGUgYmluUGF0aA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

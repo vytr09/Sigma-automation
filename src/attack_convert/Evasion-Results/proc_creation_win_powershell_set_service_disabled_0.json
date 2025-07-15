@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_set_service_disabled_0",
+  "original_command": "\\powershell.exe PowerShell.EXE Set-Service -StartupType Disabled Manual",
+  "evasions": {
+    "insertion": "\\powershell.exe PowerShell.EXE Set-Service -StartupType \\\"Disabled\\\" Manual",
+    "substitution": "\\powershell.exe PowerShell.EXE Set-Service -startupType Disabled Manual",
+    "omission": "\\powershell PowerShell Set-Service -StartupType Disabled Manual",
+    "reordering": "\\powershell.exe Set-Service Manual Disabled PowerShell.EXE -StartupType",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABTAGUAdAAtAFMAZQByAHYAaQBjAGUAIAAtAFMAdABhAHIAdAB1AHAAVAB5AHAAZQAgAEQAaQBzAGEAYgBsAGUAZAAgAE0AYQBuAHUAYQBsAA== "
+  }
+}

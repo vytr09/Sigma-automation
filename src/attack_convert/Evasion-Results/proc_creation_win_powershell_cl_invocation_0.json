@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_cl_invocation_0",
+  "original_command": "SyncInvoke",
+  "evasions": {
+    "insertion": "SyncInvoke",
+    "substitution": "SyncInvoke #substitution",
+    "omission": "SyncInvoke # omission",
+    "reordering": "SyncInvoke",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('U3luY0ludm9rZQ==')) | Invoke-Expression\" "
+  }
+}

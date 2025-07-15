@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:39:46 UTC", "rule": "proc_creation_win_cmd_dir_execution_0", "phase": "original", "command": "\\cmd.exe Cmd.Exe dir -s", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:39:54 UTC", "rule": "proc_creation_win_cmd_dir_execution_0", "phase": "insertion", "command": "\\cmd.exe \\\"Cmd\\\".Exe dir -s", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:40:06 UTC", "rule": "proc_creation_win_cmd_dir_execution_0", "phase": "substitution", "command": "\\cmd.exe Cmd.Exe dir -s #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:40:15 UTC", "rule": "proc_creation_win_cmd_dir_execution_0", "phase": "omission", "command": "\\cmd Cmd dir -s", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:40:23 UTC", "rule": "proc_creation_win_cmd_dir_execution_0", "phase": "reordering", "command": "\\cmd.exe dir -s Cmd.Exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:40:32 UTC", "rule": "proc_creation_win_cmd_dir_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBkaXIgLXM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_quickassist_execution_0",
+  "original_command": "\\QuickAssist.exe",
+  "evasions": {
+    "insertion": "\"\\QuickAssist.exe\"",
+    "substitution": "\\QuickAssist.exe #substitution",
+    "omission": "\\QuickAssist",
+    "reordering": "\\QuickAssist.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFF1aWNrQXNzaXN0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

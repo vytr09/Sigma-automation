@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mpcmdrun_download_arbitrary_file_0",
+  "original_command": "MpCmdRun.exe \\MpCmdRun.exe MpCmdRun.exe DownloadFile url",
+  "evasions": {
+    "insertion": "MpCmdRun.exe \\MpCmdRun.exe MpCmdRun.exe \"Downlo\"adFile url",
+    "substitution": "MpCmdRun.exe \\MpCmdRun.exe MpCmdRun.exe DownloadFile url #substitution",
+    "omission": "MpCmdRun \\MpCmdRun MpCmdRun DownloadFile url",
+    "reordering": "MpCmdRun.exe DownloadFile url \\MpCmdRun.exe MpCmdRun.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TXBDbWRSdW4uZXhlIFxNcENtZFJ1bi5leGUgTXBDbWRSdW4uZXhlIERvd25sb2FkRmlsZSB1cmw=')) | Invoke-Expression\" "
+  }
+}

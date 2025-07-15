@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_iox_0",
+  "original_command": "\\iox.exe .exe fwd -l .exe fwd -r .exe proxy -l .exe proxy -r",
+  "evasions": {
+    "insertion": "\\iox.exe .exe \"fwd\" \"-l\" .exe fwd -r .exe proxy -l .exe proxy -r",
+    "substitution": "\\iox.exe .exe fwd -l .exe fwd -r .exe proxy -l .exe proxy -r #substitution",
+    "omission": "\\iox fwd -l fwd -r proxy -l proxy -r",
+    "reordering": "\\iox.exe .exe fwd -l .exe fwd -r .exe proxy -l .exe proxy -r",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGlveC5leGUgLmV4ZSBmd2QgLWwgLmV4ZSBmd2QgLXIgLmV4ZSBwcm94eSAtbCAuZXhlIHByb3h5IC1y')) | Invoke-Expression\" "
+  }
+}

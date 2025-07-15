@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_redmimicry_winnti_playbook_0",
+  "original_command": "\\rundll32.exe \\cmd.exe gthread-3.6.dll \\Windows\\Temp\\tmp.bat sigcmm-2.4.dll",
+  "evasions": {
+    "insertion": "\\rundll32.exe \\cmd.exe gthread-3.6.dll \\Windows\\Temp\\tmp.bat \\\"sigcmm-2.4.dll\\\"",
+    "substitution": "\\rundll32.exe \\cmd.exe gthread-3.6.dll \\Windows\\Temp\\tmp.bat sigcmm-2.4.dll #substitution",
+    "omission": "\\rundll32 \\cmd gthread-3.6.dll \\Windows\\Temp\\tmp sigcmm-2.4.dll",
+    "reordering": "\\rundll32.exe gthread-3.6.dll \\cmd.exe \\Windows\\Temp\\tmp.bat sigcmm-2.4.dll",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAGcAdABoAHIAZQBhAGQALQAzAC4ANgAuAGQAbABsACAAXABXAGkAbgBkAG8AdwBzAFwAVABlAG0AcABcAHQAbQBwAC4AYgBhAHQAIABzAGkAZwBjAG0AbQAtADIALgA0AC4AZABsAGwA "
+  }
+}

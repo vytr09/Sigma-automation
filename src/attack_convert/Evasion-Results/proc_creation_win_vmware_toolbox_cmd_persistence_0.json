@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vmware_toolbox_cmd_persistence_0",
+  "original_command": "\\VMwareToolBoxCmd.exe toolbox-cmd.exe script set",
+  "evasions": {
+    "insertion": "\\VMwareToolBoxCmd.exe \\\"t\\\"\\\"o\\\"\\\"o\\\"\\\"l\\\"\\\"b\\\"\\\"o\\\"\\\"x\\\"\\\"-\\\"\\\"c\\\"\\\"m\\\"\\\"d\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" script set",
+    "substitution": "\\VMwareToolBoxCmd.exe toolbox-cmd.exe script set #substitution",
+    "omission": "\\VMwareToolBoxCmd toolbox-cmd script set",
+    "reordering": "\\VMwareToolBoxCmd.exe set toolbox-cmd.exe script",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZNd2FyZVRvb2xCb3hDbWQuZXhlIHRvb2xib3gtY21kLmV4ZSBzY3JpcHQgc2V0')) | Invoke-Expression\" "
+  }
+}

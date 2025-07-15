@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_addinutil_uncommon_child_process_0",
+  "original_command": "\\addinutil.exe :\\Windows\\System32\\conhost.exe :\\Windows\\System32\\werfault.exe :\\Windows\\SysWOW64\\werfault.exe",
+  "evasions": {
+    "insertion": "\\addinutil.exe :\\Windows\\System32\\conhost.exe :\\Windows\\System32\\werfault.exe :\\Windows\\SysWO\\\"W64\\werfault.exe\\\"",
+    "substitution": "\\addinutil.exe :\\Windows\\System32\\conhost.exe :\\Windows\\System32\\werfault.exe :\\Windows\\SysWOW64\\werfault.exe #substitution",
+    "omission": "\\addinutil :\\Windows\\System32\\conhost :\\Windows\\System32\\werfault :\\Windows\\SysWOW64\\werfault",
+    "reordering": "\\addinutil.exe :\\Windows\\System32\\werfault.exe :\\Windows\\System32\\conhost.exe :\\Windows\\SysWOW64\\werfault.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFkZGludXRpbC5leGUgOlxXaW5kb3dzXFN5c3RlbTMyXGNvbmhvc3QuZXhlIDpcV2luZG93c1xTeXN0ZW0zMlx3ZXJmYXVsdC5leGUgOlxXaW5kb3dzXFN5c1dPVzY0XHdlcmZhdWx0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

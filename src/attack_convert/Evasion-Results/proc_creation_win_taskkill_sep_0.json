@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_taskkill_sep_0",
+  "original_command": "taskkill /F /IM ccSvcHst.exe",
+  "evasions": {
+    "insertion": "taskkill /F /IM \\\"ccSvcHst.exe\\\"",
+    "substitution": "taskkill /F --image ccSvcHst.exe",
+    "omission": "taskkill /F /IM ccSvcHst",
+    "reordering": "taskkill /F /IM ccSvcHst.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dGFza2tpbGwgL0YgL0lNIGNjU3ZjSHN0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

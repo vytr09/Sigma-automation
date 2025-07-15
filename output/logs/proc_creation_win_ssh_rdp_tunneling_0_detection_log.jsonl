@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:17:48 UTC", "rule": "proc_creation_win_ssh_rdp_tunneling_0", "phase": "original", "command": "\\ssh.exe :3389", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:17:55 UTC", "rule": "proc_creation_win_ssh_rdp_tunneling_0", "phase": "insertion", "command": "\\\"s\"\"s\"\"h\"\".\"\"e\"\"x\"\"e\" :3389", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:18:03 UTC", "rule": "proc_creation_win_ssh_rdp_tunneling_0", "phase": "substitution", "command": "\\ssh.exe :3389 #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:18:08 UTC", "rule": "proc_creation_win_ssh_rdp_tunneling_0", "phase": "omission", "command": "\\ssh :3389", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:18:14 UTC", "rule": "proc_creation_win_ssh_rdp_tunneling_0", "phase": "reordering", "command": "\\ssh.exe :3389", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:18:20 UTC", "rule": "proc_creation_win_ssh_rdp_tunneling_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNzaC5leGUgOjMzODk=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_download_cradles_0",
+  "original_command": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr",
+  "evasions": {
+    "insertion": ".DownloadString( \".\"\"D\"\"o\"\"w\"\"n\"\"l\"\"o\"\"a\"\"d\"\"F\"\"i\"\"l\"\"e\"\"(\" Invoke-WebRequest iwr",
+    "substitution": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr #substitution",
+    "omission": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr # omission",
+    "reordering": ".DownloadString( .DownloadFile( iwr Invoke-WebRequest",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LkRvd25sb2FkU3RyaW5nKCAuRG93bmxvYWRGaWxlKCBJbnZva2UtV2ViUmVxdWVzdCBpd3I=')) | Invoke-Expression\" "
+  }
+}

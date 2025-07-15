@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:40:32 UTC", "rule": "proc_creation_win_lolbin_register_app_0", "phase": "original", "command": "\\register_app.vbs -register", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:40:39 UTC", "rule": "proc_creation_win_lolbin_register_app_0", "phase": "insertion", "command": "\\register_app.vbs \"-register\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:40:45 UTC", "rule": "proc_creation_win_lolbin_register_app_0", "phase": "substitution", "command": "\\register_app.vbs -register #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:40:51 UTC", "rule": "proc_creation_win_lolbin_register_app_0", "phase": "omission", "command": "\\register_app -register", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:40:56 UTC", "rule": "proc_creation_win_lolbin_register_app_0", "phase": "reordering", "command": "\\register_app.vbs -register", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:41:03 UTC", "rule": "proc_creation_win_lolbin_register_app_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2lzdGVyX2FwcC52YnMgLXJlZ2lzdGVy')) | Invoke-Expression\" ", "status": "BYPASSED"}

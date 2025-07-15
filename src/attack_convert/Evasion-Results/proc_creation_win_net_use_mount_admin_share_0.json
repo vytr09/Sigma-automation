@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_use_mount_admin_share_0",
+  "original_command": "\\net.exe \\net1.exe net.exe net1.exe use \\\\\\\\ \\\\ $",
+  "evasions": {
+    "insertion": "\\net.exe \\net1.exe net.exe net1.exe use \"\\\\\\\\\" \\\\ $",
+    "substitution": "\\net.exe \\net1.exe net.exe net1.exe use \\\\\\\\ \\\\ $ #substitution",
+    "omission": "\\net \\net1 net net1 use \\\\\\\\ \\\\ $",
+    "reordering": "\\net.exe \\net1.exe net.exe net1.exe use \\\\\\\\ \\\\ $",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABuAGUAdAAuAGUAeABlACAAXABuAGUAdAAxAC4AZQB4AGUAIABuAGUAdAAuAGUAeABlACAAbgBlAHQAMQAuAGUAeABlACAAdQBzAGUAIABcAFwAXABcACAAXABcACAAJAA= "
+  }
+}

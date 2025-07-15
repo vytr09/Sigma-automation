@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:47:53 UTC", "rule": "proc_creation_win_lolbin_ttdinject_0", "phase": "original", "command": "ttdinject.exe TTDInject.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:48:00 UTC", "rule": "proc_creation_win_lolbin_ttdinject_0", "phase": "insertion", "command": "ttdinject.exe \\\"TTDInject.EXE\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:48:08 UTC", "rule": "proc_creation_win_lolbin_ttdinject_0", "phase": "substitution", "command": "ttdinject.exe TTDInject.EXE #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:48:15 UTC", "rule": "proc_creation_win_lolbin_ttdinject_0", "phase": "omission", "command": "ttdinject TTDInject", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:48:20 UTC", "rule": "proc_creation_win_lolbin_ttdinject_0", "phase": "reordering", "command": "ttdinject.exe TTDInject.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:48:27 UTC", "rule": "proc_creation_win_lolbin_ttdinject_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHRkaW5qZWN0LmV4ZSBUVERJbmplY3QuRVhF')) | Invoke-Expression\" ", "status": "BYPASSED"}

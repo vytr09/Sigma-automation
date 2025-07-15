@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_defendercheck_0",
+  "original_command": "\\DefenderCheck.exe",
+  "evasions": {
+    "insertion": "\"\\DefenderCheck.exe\"",
+    "substitution": "\\DefenderCheck.exe #substitution",
+    "omission": "\\DefenderCheck",
+    "reordering": "\\DefenderCheck.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XERlZmVuZGVyQ2hlY2suZXhl')) | Invoke-Expression\" "
+  }
+}

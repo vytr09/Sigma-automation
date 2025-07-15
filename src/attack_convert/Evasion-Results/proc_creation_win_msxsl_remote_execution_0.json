@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msxsl_remote_execution_0",
+  "original_command": "\\msxsl.exe http",
+  "evasions": {
+    "insertion": "\\msxsl.exe ht\\\"tp\\\"",
+    "substitution": "\\msxsl.exe http #substitution",
+    "omission": "\\msxsl http",
+    "reordering": "\\msxsl.exe http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zeHNsLmV4ZSBodHRw')) | Invoke-Expression\" "
+  }
+}

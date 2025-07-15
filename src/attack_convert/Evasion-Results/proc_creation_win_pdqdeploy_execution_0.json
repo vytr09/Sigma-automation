@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pdqdeploy_execution_0",
+  "original_command": "PDQDeployConsole.exe",
+  "evasions": {
+    "insertion": "PDQDeployConsole.exe",
+    "substitution": "PDQDeployConsole.exe #substitution",
+    "omission": "PDQDeployConsole",
+    "reordering": "PDQDeployConsole.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UERRRGVwbG95Q29uc29sZS5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_disable_0",
+  "original_command": "\\netsh.exe netsh.exe firewall set opmode disable advfirewall set state off",
+  "evasions": {
+    "insertion": "\\netsh.exe \\\"nets\\\"h.exe firewall set opmode disable advfirewall set state off",
+    "substitution": "\\netsh.exe netsh.exe firewall set opmode disable adv-fw set state off",
+    "omission": "\\netsh netsh firewall set opmode disable advfirewall set state off",
+    "reordering": "\\netsh.exe netsh.exe firewall set opmode disable advfirewall set state off",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgZmlyZXdhbGwgc2V0IG9wbW9kZSBkaXNhYmxlIGFkdmZpcmV3YWxsIHNldCBzdGF0ZSBvZmY=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_parent_explorer_0",
+  "original_command": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE C:\\Windows\\System32\\",
+  "evasions": {
+    "insertion": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE \"C:\\Windows\"\\System32\\",
+    "substitution": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE C:\\Windows\\System32\\ #substitution",
+    "omission": "\\explorer \\rundll32 RUNDLL32",
+    "reordering": "\\explorer.exe RUNDLL32.EXE \\rundll32.exe C:\\Windows\\System32\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSBccnVuZGxsMzIuZXhlIFJVTkRMTDMyLkVYRSBDOlxXaW5kb3dzXFN5c3RlbTMyXA==')) | Invoke-Expression\" "
+  }
+}

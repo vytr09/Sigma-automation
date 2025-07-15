@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_mklink_shadow_copies_access_symlink_0",
+  "original_command": "mklink HarddiskVolumeShadowCopy",
+  "evasions": {
+    "insertion": "mklink \"HarddiskVolumeShadowCopy\"",
+    "substitution": "mklink HarddiskVolumeShadowCopy #substitution",
+    "omission": "mklink HarddiskVolumeShadowCopy # omission",
+    "reordering": "mklink HarddiskVolumeShadowCopy",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bWtsaW5rIEhhcmRkaXNrVm9sdW1lU2hhZG93Q29weQ==')) | Invoke-Expression\" "
+  }
+}

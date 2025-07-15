@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:57:26 UTC", "rule": "proc_creation_win_curl_custom_user_agent_0", "phase": "original", "command": "\\curl.exe curl.exe User-Agent:", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:57:26 UTC", "rule": "proc_creation_win_curl_custom_user_agent_0", "phase": "insertion", "command": "\\curl.exe curl.exe \\\"User-Agent:\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:57:26 UTC", "rule": "proc_creation_win_curl_custom_user_agent_0", "phase": "substitution", "command": "\\curl.exe curl.exe User--user-agentgent:", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:57:26 UTC", "rule": "proc_creation_win_curl_custom_user_agent_0", "phase": "omission", "command": "\\curl curl User-Agent:", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:57:26 UTC", "rule": "proc_creation_win_curl_custom_user_agent_0", "phase": "reordering", "command": "\\curl.exe curl.exe User-Agent:", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:57:26 UTC", "rule": "proc_creation_win_curl_custom_user_agent_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIFVzZXItQWdlbnQ6')) | Invoke-Expression\" ", "status": "BYPASSED"}

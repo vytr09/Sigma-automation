@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_network_sniffing_0",
+  "original_command": "\\tshark.exe -i \\windump.exe",
+  "evasions": {
+    "insertion": "\\\"\\tshark.exe\\\" -i \\windump.exe",
+    "substitution": "\\tshark.exe -i \\windump.exe #substitution",
+    "omission": "\\tshark -i \\windump",
+    "reordering": "\\tshark.exe -i \\windump.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRzaGFyay5leGUgLWkgXHdpbmR1bXAuZXhl')) | Invoke-Expression\" "
+  }
+}

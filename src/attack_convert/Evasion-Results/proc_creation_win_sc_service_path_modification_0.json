@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_service_path_modification_0",
+  "original_command": "\\sc.exe config binPath powershell cmd mshta wscript cscript rundll32 svchost dllhost cmd.exe /c cmd.exe /k cmd.exe /r cmd /c cmd /k cmd /r C:\\Users\\Public \\Downloads\\ \\Desktop\\ \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ C:\\Windows\\TEMP\\ \\AppData\\Local\\Temp",
+  "evasions": {
+    "insertion": "\\sc.exe config bin\"Path\" powershell cmd mshta wscript cscript rundll32 svchost dllhost cmd.exe /c cmd.exe /k cmd.exe /r cmd /c cmd /k cmd /r C:\\Users\\Public \\Downloads\\ \\Desktop\\ \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ C:\\Windows\\TEMP\\ \\AppData\\Local\\Temp",
+    "substitution": "\\sc.exe config binPath powershell cmd mshta wscript cscript rundll32 svchost dllhost cmd.exe -c cmd.exe /k cmd.exe /r cmd -c cmd /k cmd /r C:\\Users\\Public \\Downloads\\ \\Desktop\\ \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ C:\\Windows\\TEMP\\ \\AppData\\Local\\Temp",
+    "omission": "\\sc config binPath powershell cmd mshta wscript cscript rundll32 svchost dllhost cmd /c cmd /k cmd /r cmd /c cmd /k cmd /r Downloads\\ \\Desktop\\ \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ TEMP\\ \\AppData\\Local\\Temp",
+    "reordering": "\\sc.exe config binPath powershell cmd mshta wscript cscript rundll32 svchost dllhost cmd.exe /c cmd.exe /k cmd.exe /r cmd /c cmd /k cmd /r C:\\Users\\Public \\Downloads\\ \\Desktop\\ \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ C:\\Windows\\TEMP\\ \\AppData\\Local\\Temp",
+    "recoding": "powershell.exe -EncodedCommand XABzAGMALgBlAHgAZQAgAGMAbwBuAGYAaQBnACAAYgBpAG4AUABhAHQAaAAgAHAAbwB3AGUAcgBzAGgAZQBsAGwAIABjAG0AZAAgAG0AcwBoAHQAYQAgAHcAcwBjAHIAaQBwAHQAIABjAHMAYwByAGkAcAB0ACAAcgB1AG4AZABsAGwAMwAyACAAcwB2AGMAaABvAHMAdAAgAGQAbABsAGgAbwBzAHQAIABjAG0AZAAuAGUAeABlACAALwBjACAAYwBtAGQALgBlAHgAZQAgAC8AawAgAGMAbQBkAC4AZQB4AGUAIAAvAHIAIABjAG0AZAAgAC8AYwAgAGMAbQBkACAALwBrACAAYwBtAGQAIAAvAHIAIABDADoAXABVAHMAZQByAHMAXABQAHUAYgBsAGkAYwAgAFwARABvAHcAbgBsAG8AYQBkAHMAXAAgAFwARABlAHMAawB0AG8AcABcACAAXABNAGkAYwByAG8AcwBvAGYAdABcAFcAaQBuAGQAbwB3AHMAXABTAHQAYQByAHQAIABNAGUAbgB1AFwAUAByAG8AZwByAGEAbQBzAFwAUwB0AGEAcgB0AHUAcABcACAAQwA6AFwAVwBpAG4AZABvAHcAcwBcAFQARQBNAFAAXAAgAFwAQQBwAHAARABhAHQAYQBcAEwAbwBjAGEAbABcAFQAZQBtAHAA "
+  }
+}

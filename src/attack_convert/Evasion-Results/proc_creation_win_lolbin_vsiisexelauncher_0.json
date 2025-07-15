@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_vsiisexelauncher_0",
+  "original_command": "\\VSIISExeLauncher.exe VSIISExeLauncher.exe -p -a",
+  "evasions": {
+    "insertion": "\\VSIISExeLauncher.exe \"VSIISExeLauncher.exe\" \"-p\" -a",
+    "substitution": "\\VSIISExeLauncher.exe VSIISExeLauncher.exe -p -a #substitution",
+    "omission": "\\VSIISExeLauncher VSIISExeLauncher -p -a",
+    "reordering": "\\VSIISExeLauncher.exe -p -a VSIISExeLauncher.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZTSUlTRXhlTGF1bmNoZXIuZXhlIFZTSUlTRXhlTGF1bmNoZXIuZXhlIC1wIC1h')) | Invoke-Expression\" "
+  }
+}

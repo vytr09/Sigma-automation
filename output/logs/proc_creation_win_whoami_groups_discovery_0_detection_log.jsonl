@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:58:30 UTC", "rule": "proc_creation_win_whoami_groups_discovery_0", "phase": "original", "command": "\\whoami.exe whoami.exe /groups -groups", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:58:39 UTC", "rule": "proc_creation_win_whoami_groups_discovery_0", "phase": "insertion", "command": "\\\"w\"\"h\"\"o\"\"a\"\"m\"\"i\"\".\"\"e\"\"x\"\"e\" whoami.exe /groups -groups", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:58:45 UTC", "rule": "proc_creation_win_whoami_groups_discovery_0", "phase": "substitution", "command": "\\whoami.exe whoami.exe /groups -groups #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:58:51 UTC", "rule": "proc_creation_win_whoami_groups_discovery_0", "phase": "omission", "command": "\\whoami whoami /groups -groups", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:58:57 UTC", "rule": "proc_creation_win_whoami_groups_discovery_0", "phase": "reordering", "command": "\\whoami.exe whoami.exe /groups -groups", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:59:05 UTC", "rule": "proc_creation_win_whoami_groups_discovery_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdob2FtaS5leGUgd2hvYW1pLmV4ZSAvZ3JvdXBzIC1ncm91cHM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

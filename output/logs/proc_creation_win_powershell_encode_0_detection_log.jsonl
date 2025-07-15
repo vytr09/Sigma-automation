@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:55:35 UTC", "rule": "proc_creation_win_powershell_encode_0", "phase": "original", "command": "\\powershell.exe \\pwsh.exe -e -en -enc -enco -ec -Encoding", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:55:35 UTC", "rule": "proc_creation_win_powershell_encode_0", "phase": "insertion", "command": "\\powershell.exe \\pwsh.exe -e -en \"-e\"nc -enco -ec -Encoding", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:55:35 UTC", "rule": "proc_creation_win_powershell_encode_0", "phase": "substitution", "command": "\\powershell.exe \\pwsh.exe -e -en -enc -enco -enc -Encoding", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:55:35 UTC", "rule": "proc_creation_win_powershell_encode_0", "phase": "omission", "command": "\\powershell \\pwsh -e -en -enc -enco -ec -Encoding", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:55:35 UTC", "rule": "proc_creation_win_powershell_encode_0", "phase": "reordering", "command": "\\powershell.exe \\pwsh.exe -e -en -enc -enco -ec -Encoding", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:55:35 UTC", "rule": "proc_creation_win_powershell_encode_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAC0AZQAgAC0AZQBuACAALQBlAG4AYwAgAC0AZQBuAGMAbwAgAC0AZQBjACAALQBFAG4AYwBvAGQAaQBuAGcA ", "status": "BYPASSED"}

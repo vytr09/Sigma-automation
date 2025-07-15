@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:33:15 UTC", "rule": "proc_creation_win_renamed_nircmd_0", "phase": "original", "command": "NirCmd.exe \\nircmd.exe \\nircmdc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:33:21 UTC", "rule": "proc_creation_win_renamed_nircmd_0", "phase": "insertion", "command": "NirCmd.exe \\nirc\\\"md.exe\\\" \\nircmdc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:33:27 UTC", "rule": "proc_creation_win_renamed_nircmd_0", "phase": "substitution", "command": "NirCmd.exe \\nircmd.exe \\nircmdc.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:33:34 UTC", "rule": "proc_creation_win_renamed_nircmd_0", "phase": "omission", "command": "NirCmd \\nircmd \\nircmdc", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:34:05 UTC", "rule": "proc_creation_win_renamed_nircmd_0", "phase": "reordering", "command": "NirCmd.exe \\nircmd.exe \\nircmdc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:34:15 UTC", "rule": "proc_creation_win_renamed_nircmd_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TmlyQ21kLmV4ZSBcbmlyY21kLmV4ZSBcbmlyY21kYy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

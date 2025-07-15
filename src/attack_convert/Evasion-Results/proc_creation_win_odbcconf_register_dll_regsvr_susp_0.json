@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0",
+  "original_command": "\\odbcconf.exe odbcconf.exe REGSVR .dll",
+  "evasions": {
+    "insertion": "\\odbcconf.exe \\\"odbcconf.exe\\\" \\\"REGSVR\\\" .dll",
+    "substitution": "\\odbcconf.exe odbcconf.exe REGSVR .dll #substitution",
+    "omission": "\\odbcconf odbcconf REGSVR .dll",
+    "reordering": "\\odbcconf.exe odbcconf.exe REGSVR .dll",
+    "recoding": "powershell.exe -EncodedCommand XABvAGQAYgBjAGMAbwBuAGYALgBlAHgAZQAgAG8AZABiAGMAYwBvAG4AZgAuAGUAeABlACAAUgBFAEcAUwBWAFIAIAAuAGQAbABsAA== "
+  }
+}

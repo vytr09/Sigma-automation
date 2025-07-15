@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_copy_lateral_movement_0",
+  "original_command": "\\\\\\\\ $ \\Sysvol\\ \\robocopy.exe \\xcopy.exe robocopy.exe XCOPY.EXE \\cmd.exe Cmd.Exe copy PowerShell.EXE pwsh.dll copy-item copy cpi cp move move-item mi mv",
+  "evasions": {
+    "insertion": "\\\\\\\\ $ \\Sysvol\\ \\roboc\"opy.exe\" \\xcopy.exe robocopy.exe XCOPY.EXE \\cmd.exe Cmd.Exe copy PowerShell.EXE pwsh.dll copy-item copy cpi cp move move-item mi mv",
+    "substitution": "\\\\\\\\ $ \\Sysvol\\ \\robocopy.exe \\xcopy.exe robocopy.exe XCOPY.EXE \\cmd.exe Cmd.Exe copy PowerShell.EXE pwsh.dll copy-item copy cpi cp move move-item mi mv #substitution",
+    "omission": "\\\\\\\\ $ \\Sysvol\\ \\robocopy \\xcopy robocopy XCOPY \\cmd Cmd copy PowerShell pwsh.dll copy-item copy cpi cp move move-item mi mv",
+    "reordering": "\\\\\\\\ $ \\Sysvol\\ \\robocopy.exe \\xcopy.exe robocopy.exe XCOPY.EXE \\cmd.exe Cmd.Exe copy PowerShell.EXE pwsh.dll copy-item copy cpi cp move move-item mi mv",
+    "recoding": "powershell.exe -EncodedCommand XABcAFwAXAAgACQAIABcAFMAeQBzAHYAbwBsAFwAIABcAHIAbwBiAG8AYwBvAHAAeQAuAGUAeABlACAAXAB4AGMAbwBwAHkALgBlAHgAZQAgAHIAbwBiAG8AYwBvAHAAeQAuAGUAeABlACAAWABDAE8AUABZAC4ARQBYAEUAIABcAGMAbQBkAC4AZQB4AGUAIABDAG0AZAAuAEUAeABlACAAYwBvAHAAeQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAGMAbwBwAHkALQBpAHQAZQBtACAAYwBvAHAAeQAgAGMAcABpACAAYwBwACAAbQBvAHYAZQAgAG0AbwB2AGUALQBpAHQAZQBtACAAbQBpACAAbQB2AA== "
+  }
+}

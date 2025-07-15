@@ -2,7 +2,7 @@
   "rule_name": "win_susp_iss_module_install_0",
   "original_command": "\\APPCMD.EXE install module /name:",
   "evasions": {
-    "insertion": "\\APPCMD.EXE install \\\"module\\\" \\\"/name:\\\"",
+    "insertion": "\\APPCMD.EXE \\\"install\\\" \\\"module\\\" /name:",
     "substitution": "\\APPCMD.EXE install module /name: #substitution",
     "omission": "\\APPCMD install module /name:",
     "reordering": "\\APPCMD.EXE install module /name:",

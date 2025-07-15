@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_createdump_lolbin_execution_0",
+  "original_command": "\\createdump.exe FX_VER_INTERNALNAME_STR -u --full -f --name .dmp",
+  "evasions": {
+    "insertion": "\\createdump.exe \\\"F\\\"\\\"X\\\"\\\"_\\\"\\\"V\\\"\\\"E\\\"\\\"R\\\"\\\"_\\\"\\\"I\\\"\\\"N\\\"\\\"T\\\"\\\"E\\\"\\\"R\\\"\\\"N\\\"\\\"A\\\"\\\"L\\\"\\\"N\\\"\\\"A\\\"\\\"M\\\"\\\"E\\\"\\\"_\\\"\\\"S\\\"\\\"T\\\"\\\"R\\\" -u --full -f --name .dmp",
+    "substitution": "\\createdump.exe FX_VER_INTERNALNAME_STR -u --full -f --name .dmp #substitution",
+    "omission": "\\createdump FX_VER_INTERNALNAME_STR -u --full -f --name .dmp",
+    "reordering": "\\createdump.exe FX_VER_INTERNALNAME_STR -u --full -f --name .dmp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNyZWF0ZWR1bXAuZXhlIEZYX1ZFUl9JTlRFUk5BTE5BTUVfU1RSIC11IC0tZnVsbCAtZiAtLW5hbWUgLmRtcA==')) | Invoke-Expression\" "
+  }
+}

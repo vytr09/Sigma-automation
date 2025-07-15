@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_process_dump_via_comsvcs_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE rundll32 comsvcs full #- #+ #24 24 MiniDump #65560 24 comsvcs full # ,# , #",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE rundll32 comsvcs full #- #+ #24 24 MiniDump \\\"#65560\\\" \\\"24\\\" comsvcs full # ,# , #",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE rundll32 comsvcs full #- #+ #24 24 MiniDump #65560 24 comsvcs full # ,# , # #substitution",
+    "omission": "\\rundll32 RUNDLL32 rundll32 comsvcs full #- #+ #24 24 MiniDump #65560 24 comsvcs full # ,# , #",
+    "reordering": "\\rundll32.exe RUNDLL32.EXE rundll32 comsvcs full #- #+ #24 24 MiniDump #65560 24 comsvcs full # ,# , #",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgcnVuZGxsMzIgY29tc3ZjcyBmdWxsICMtICMrICMyNCAyNCBNaW5pRHVtcCAjNjU1NjAgMjQgY29tc3ZjcyBmdWxsICMgLCMgLCAj')) | Invoke-Expression\" "
+  }
+}

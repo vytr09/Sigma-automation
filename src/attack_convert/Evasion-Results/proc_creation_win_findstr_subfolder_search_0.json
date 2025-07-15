@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_findstr_subfolder_search_0",
+  "original_command": "findstr findstr.exe FINDSTR.EXE -s -i",
+  "evasions": {
+    "insertion": "findstr findstr.exe FINDSTR.EXE \\\"-\\\"\\\"s\\\" -i",
+    "substitution": "findstr findstr.exe FINDSTR.EXE -s -i #substitution",
+    "omission": "findstr findstr FINDSTR -s -i",
+    "reordering": "findstr -s findstr.exe FINDSTR.EXE -i",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZmluZHN0ciBmaW5kc3RyLmV4ZSBGSU5EU1RSLkVYRSAtcyAtaQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dump64_defender_av_bypass_rename_0",
+  "original_command": "\\dump64.exe procdump -ma -mp",
+  "evasions": {
+    "insertion": "\\dump64.exe procdump -ma \"-\"mp",
+    "substitution": "\\dump64.exe procdump -M -mp",
+    "omission": "\\dump64 procdump -ma -mp",
+    "reordering": "\\dump64.exe -ma -mp procdump",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGR1bXA2NC5leGUgcHJvY2R1bXAgLW1hIC1tcA==')) | Invoke-Expression\" "
+  }
+}

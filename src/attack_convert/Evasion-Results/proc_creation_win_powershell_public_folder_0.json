@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_public_folder_0",
+  "original_command": "\\powershell.exe \\pwsh.exe -f C:\\Users\\Public -f -f %Public% -fi C:\\Users\\Public -fi -fi %Public% -fil C:\\Users\\Public -fil -fil %Public% -file C:\\Users\\Public -file -file %Public%",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe -f \\\"C:\\Users\\Public\\\" -f -f %Public% -fi C:\\Users\\Public -fi -fi %Public% -fil C:\\Users\\Public -fil -fil %Public% -file C:\\Users\\Public -file -file %Public%",
+    "substitution": "\\powershell.exe \\pwsh.exe -f C:\\Users\\Public -f -f %Public% -fi C:\\Users\\Public -fi -fi %Public% -fil C:\\Users\\Public -fil -fil %Public% -file C:\\Users\\Public -file -file %Public% #substitution",
+    "omission": "\\powershell \\pwsh -f Users\\Public -fi -fi %Public% -fil Users\\Public -file -file %Public%",
+    "reordering": "\\powershell.exe \\pwsh.exe -f C:\\Users\\Public -f -f %Public% -fi C:\\Users\\Public -fi -fi %Public% -fil C:\\Users\\Public -fil -fil %Public% -file C:\\Users\\Public -file -file %Public%",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAC0AZgAgAEMAOgBcAFUAcwBlAHIAcwBcAFAAdQBiAGwAaQBjACAALQBmACAALQBmACAAJQBQAHUAYgBsAGkAYwAlACAALQBmAGkAIABDADoAXABVAHMAZQByAHMAXABQAHUAYgBsAGkAYwAgAC0AZgBpACAALQBmAGkAIAAlAFAAdQBiAGwAaQBjACUAIAAtAGYAaQBsACAAQwA6AFwAVQBzAGUAcgBzAFwAUAB1AGIAbABpAGMAIAAtAGYAaQBsACAALQBmAGkAbAAgACUAUAB1AGIAbABpAGMAJQAgAC0AZgBpAGwAZQAgAEMAOgBcAFUAcwBlAHIAcwBcAFAAdQBiAGwAaQBjACAALQBmAGkAbABlACAALQBmAGkAbABlACAAJQBQAHUAYgBsAGkAYwAlAA== "
+  }
+}

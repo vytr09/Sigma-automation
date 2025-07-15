@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharpevtmute_0",
+  "original_command": "\\SharpEvtMute.exe --Filter --Encoded --Filter \\",
+  "evasions": {
+    "insertion": "\\SharpEvtMute.exe --Filter \\\"--Encoded\\\" --Filter \\",
+    "substitution": "\\SharpEvtMute.exe --Filter --Encoded --Filter \\ #substitution",
+    "omission": "\\SharpEvtMute --Filter --Encoded --Filter \\",
+    "reordering": "\\SharpEvtMute.exe --Filter --Filter --Encoded \\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwRXZ0TXV0ZS5leGUgLS1GaWx0ZXIgLS1FbmNvZGVkIC0tRmlsdGVyIFw=')) | Invoke-Expression\" "
+  }
+}

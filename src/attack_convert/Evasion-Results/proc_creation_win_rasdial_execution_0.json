@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rasdial_execution_0",
+  "original_command": "rasdial.exe",
+  "evasions": {
+    "insertion": "rasdial.exe",
+    "substitution": "rasdial.exe #substitution",
+    "omission": "rasdial",
+    "reordering": "rasdial.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmFzZGlhbC5leGU=')) | Invoke-Expression\" "
+  }
+}

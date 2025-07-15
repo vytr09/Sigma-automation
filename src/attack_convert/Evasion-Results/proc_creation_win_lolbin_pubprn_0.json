@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_pubprn_0",
+  "original_command": "\\pubprn.vbs script:",
+  "evasions": {
+    "insertion": "\\\"p\"\"u\"\"b\"\"p\"\"r\"\"n\"\".\"\"v\"\"b\"\"s\" script:",
+    "substitution": "\\pubprn.vbs script: #substitution",
+    "omission": "\\pubprn script:",
+    "reordering": "\\pubprn.vbs script:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHB1YnBybi52YnMgc2NyaXB0Og==')) | Invoke-Expression\" "
+  }
+}

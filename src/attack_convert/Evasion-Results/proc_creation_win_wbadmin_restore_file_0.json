@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wbadmin_restore_file_0",
+  "original_command": "\\wbadmin.exe WBADMIN.EXE recovery recoveryTarget itemtype:File",
+  "evasions": {
+    "insertion": "\\wbadmin.exe WBADMIN.EXE \"recovery\" \"recoveryTarget\" itemtype:File",
+    "substitution": "\\wbadmin.exe WBADMIN.EXE recovery recoveryTarget itemtype:File #substitution",
+    "omission": "\\wbadmin WBADMIN recovery recoveryTarget itemtype:File",
+    "reordering": "\\wbadmin.exe WBADMIN.EXE recovery recoveryTarget itemtype:File",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdiYWRtaW4uZXhlIFdCQURNSU4uRVhFIHJlY292ZXJ5IHJlY292ZXJ5VGFyZ2V0IGl0ZW10eXBlOkZpbGU=')) | Invoke-Expression\" "
+  }
+}

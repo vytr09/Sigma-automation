@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 18:14:17 UTC", "rule": "proc_creation_win_wmic_recon_volume_0", "phase": "original", "command": "\\WMIC.exe wmic.exe volume path win32_logicaldisk", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:14:23 UTC", "rule": "proc_creation_win_wmic_recon_volume_0", "phase": "insertion", "command": "\\WMIC.exe wmic.exe volume \"pa\"th win32_logicaldisk", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:14:29 UTC", "rule": "proc_creation_win_wmic_recon_volume_0", "phase": "substitution", "command": "\\WMIC.exe wmic.exe volume --path win32_logicaldisk", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:14:36 UTC", "rule": "proc_creation_win_wmic_recon_volume_0", "phase": "omission", "command": "\\WMIC wmic volume path win32_logicaldisk", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:14:41 UTC", "rule": "proc_creation_win_wmic_recon_volume_0", "phase": "reordering", "command": "\\WMIC.exe volume win32_logicaldisk path wmic.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:14:48 UTC", "rule": "proc_creation_win_wmic_recon_volume_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdNSUMuZXhlIHdtaWMuZXhlIHZvbHVtZSBwYXRoIHdpbjMyX2xvZ2ljYWxkaXNr')) | Invoke-Expression\" ", "status": "BYPASSED"}

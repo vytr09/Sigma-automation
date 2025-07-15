@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_new_kernel_driver_0",
+  "original_command": "\\sc.exe create config binPath type kernel",
+  "evasions": {
+    "insertion": "\\sc.exe create config binPath ty\"pe\" kernel",
+    "substitution": "\\sc.exe create config binPath type kernel",
+    "omission": "\\sc create config binPath type kernel",
+    "reordering": "\\sc.exe create type binPath config kernel",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBjcmVhdGUgY29uZmlnIGJpblBhdGggdHlwZSBrZXJuZWw=')) | Invoke-Expression\" "
+  }
+}

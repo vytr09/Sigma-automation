@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_remote_debugging_0",
+  "original_command": "--remote-debugging- \\firefox.exe -start-debugger-server",
+  "evasions": {
+    "insertion": "--remote-debugging- \\\"\\firefox.exe\\\" -start-debugger-server",
+    "substitution": "--remote-debugging- \\firefox.exe -start-debugger-server #substitution",
+    "omission": "--remote-debugging- \\firefox -start-debugger-server",
+    "reordering": "--remote-debugging- -start-debugger-server \\firefox.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1yZW1vdGUtZGVidWdnaW5nLSBcZmlyZWZveC5leGUgLXN0YXJ0LWRlYnVnZ2VyLXNlcnZlcg==')) | Invoke-Expression\" "
+  }
+}

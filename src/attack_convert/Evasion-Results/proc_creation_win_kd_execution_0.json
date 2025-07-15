@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_kd_execution_0",
+  "original_command": "\\kd.exe kd.exe",
+  "evasions": {
+    "insertion": "\\\"k\"\"d\"\".\"\"e\"\"x\"\"e\" kd.exe",
+    "substitution": "\\kd.exe kd.exe #substitution",
+    "omission": "\\kd kd",
+    "reordering": "\\kd.exe kd.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGtkLmV4ZSBrZC5leGU=')) | Invoke-Expression\" "
+  }
+}

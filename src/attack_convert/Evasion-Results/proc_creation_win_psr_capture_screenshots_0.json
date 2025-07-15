@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_psr_capture_screenshots_0",
+  "original_command": "\\Psr.exe /start -start",
+  "evasions": {
+    "insertion": "\\Psr.exe /start -st\"art\"",
+    "substitution": "\\Psr.exe /start -start #substitution",
+    "omission": "\\Psr /start -start",
+    "reordering": "\\Psr.exe /start -start",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFBzci5leGUgL3N0YXJ0IC1zdGFydA==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_psexec_paexec_escalate_system_0",
+  "original_command": "-s cmd -s -i cmd -i -s cmd -s pwsh -s -i pwsh -i -s pwsh -s powershell -s -i powershell -i -s powershell psexec paexec accepteula",
+  "evasions": {
+    "insertion": "-s cmd -s -i cmd -i -s cmd -s pwsh -s -i pwsh -i -s pwsh -s powershell \\\"-s\\\" \\\"-i\\\" powershell -i -s powershell psexec paexec accepteula",
+    "substitution": "-s cmd -s -i cmd -i -s cmd -s pwsh -s -i pwsh -i -s pwsh -s powershell -s -i powershell -i -s powershell psexec paexec accepteula #substitution",
+    "omission": "-s cmd -s -i cmd -i -s cmd -s pwsh -s -i pwsh -i -s pwsh -s powershell -s -i powershell -i -s powershell psexec paexec accepteula # omission",
+    "reordering": "-s cmd -s -i cmd -i -s cmd -s pwsh -s -i pwsh -i -s pwsh -s powershell -s -i powershell -i -s powershell psexec paexec accepteula",
+    "recoding": "powershell.exe -EncodedCommand LQBzACAAYwBtAGQAIAAtAHMAIAAtAGkAIABjAG0AZAAgAC0AaQAgAC0AcwAgAGMAbQBkACAALQBzACAAcAB3AHMAaAAgAC0AcwAgAC0AaQAgAHAAdwBzAGgAIAAtAGkAIAAtAHMAIABwAHcAcwBoACAALQBzACAAcABvAHcAZQByAHMAaABlAGwAbAAgAC0AcwAgAC0AaQAgAHAAbwB3AGUAcgBzAGgAZQBsAGwAIAAtAGkAIAAtAHMAIABwAG8AdwBlAHIAcwBoAGUAbABsACAAcABzAGUAeABlAGMAIABwAGEAZQB4AGUAYwAgAGEAYwBjAGUAcAB0AGUAdQBsAGEA "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bitsadmin_download_uncommon_targetfolder_0",
+  "original_command": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile %AppData% %temp% %tmp% \\AppData\\Local\\ C:\\Windows\\Temp\\",
+  "evasions": {
+    "insertion": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile %AppData% %temp% %tmp% \\AppDat\\\"a\\Local\\\\\" C:\\Windows\\Temp\\",
+    "substitution": "\\bitsadmin.exe bitsadmin.exe /transfer --create /addfile %AppData% %temp% %tmp% \\AppData\\Local\\ C:\\Windows\\Temp\\",
+    "omission": "\\bitsadmin bitsadmin /transfer /create /addfile %AppData% %temp% %tmp% \\AppData\\Local\\ Temp\\",
+    "reordering": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile %AppData% %temp% %tmp% \\AppData\\Local\\ C:\\Windows\\Temp\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJpdHNhZG1pbi5leGUgYml0c2FkbWluLmV4ZSAvdHJhbnNmZXIgL2NyZWF0ZSAvYWRkZmlsZSAlQXBwRGF0YSUgJXRlbXAlICV0bXAlIFxBcHBEYXRhXExvY2FsXCBDOlxXaW5kb3dzXFRlbXBc')) | Invoke-Expression\" "
+  }
+}

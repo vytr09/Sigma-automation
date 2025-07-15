@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msra_process_injection_0",
+  "original_command": "\\msra.exe \\arp.exe \\cmd.exe \\net.exe \\netstat.exe \\nslookup.exe \\route.exe \\schtasks.exe \\whoami.exe",
+  "evasions": {
+    "insertion": "\\msra.exe \\arp.exe \"\\cmd.exe\" \\net.exe \\netstat.exe \\nslookup.exe \\route.exe \\schtasks.exe \\whoami.exe",
+    "substitution": "\\msra.exe \\arp.exe \\cmd.exe \\net.exe \\netstat.exe \\nslookup.exe \\route.exe \\schtasks.exe \\whoami.exe #substitution",
+    "omission": "\\msra \\arp \\cmd \\net \\netstat \\nslookup \\route \\schtasks \\whoami",
+    "reordering": "\\msra.exe \\arp.exe \\cmd.exe \\net.exe \\netstat.exe \\nslookup.exe \\route.exe \\schtasks.exe \\whoami.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zcmEuZXhlIFxhcnAuZXhlIFxjbWQuZXhlIFxuZXQuZXhlIFxuZXRzdGF0LmV4ZSBcbnNsb29rdXAuZXhlIFxyb3V0ZS5leGUgXHNjaHRhc2tzLmV4ZSBcd2hvYW1pLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

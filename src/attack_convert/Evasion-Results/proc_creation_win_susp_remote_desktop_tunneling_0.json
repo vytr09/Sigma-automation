@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_remote_desktop_tunneling_0",
+  "original_command": ":3389 -L -P -R -pw -ssh",
+  "evasions": {
+    "insertion": ":3389 -L \"-P\" \"-R\" -pw -ssh",
+    "substitution": ":3389 -L -P -R -pw -ssh #substitution",
+    "omission": ":3389 -L -P -R -pw -ssh # omission",
+    "reordering": ":3389 -ssh -R -P -L -pw",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OjMzODkgLUwgLVAgLVIgLXB3IC1zc2g=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regedit_import_keys_ads_0",
+  "original_command": "\\regedit.exe REGEDIT.EXE /i .reg -e -a -c",
+  "evasions": {
+    "insertion": "\\regedit.exe REGEDIT.EXE /i .reg -e -a \\\"-\\\"\\\"c\\\"",
+    "substitution": "\\regedit.exe REGEDIT.EXE /i .reg -e -a -c #substitution",
+    "omission": "\\regedit REGEDIT /i .reg -e -a -c",
+    "reordering": "\\regedit.exe REGEDIT.EXE /i .reg -e -a -c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2VkaXQuZXhlIFJFR0VESVQuRVhFIC9pIC5yZWcgLWUgLWEgLWM=')) | Invoke-Expression\" "
+  }
+}

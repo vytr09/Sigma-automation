@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmiprvse_spawning_process_0",
+  "original_command": "\\WmiPrvSe.exe \\WmiPrvSE.exe \\WerFault.exe",
+  "evasions": {
+    "insertion": "\\WmiPrvSe.exe \"\\WmiPrvSE.exe\" \\WerFault.exe",
+    "substitution": "\\WmiPrvSe.exe \\WmiPrvSE.exe \\WerFault.exe #substitution",
+    "omission": "\\WmiPrvSe \\WmiPrvSE \\WerFault",
+    "reordering": "\\WmiPrvSe.exe \\WmiPrvSE.exe \\WerFault.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdtaVBydlNlLmV4ZSBcV21pUHJ2U0UuZXhlIFxXZXJGYXVsdC5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tapinstall_execution_0",
+  "original_command": "\\tapinstall.exe",
+  "evasions": {
+    "insertion": "\\\"t\"\"a\"\"p\"\"i\"\"n\"\"s\"\"t\"\"a\"\"l\"\"l\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\tapinstall.exe #substitution",
+    "omission": "\\tapinstall",
+    "reordering": "\\tapinstall.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhcGluc3RhbGwuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_export_certificate_0",
+  "original_command": "Export-PfxCertificate Export-Certificate",
+  "evasions": {
+    "insertion": "Export-PfxCertificate Export-Ce\\\"rtificate\\\"",
+    "substitution": "Export-PfxCertificate Export-Certificate #substitution",
+    "omission": "Export-PfxCertificate Export-Certificate # omission",
+    "reordering": "Export-PfxCertificate Export-Certificate",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RXhwb3J0LVBmeENlcnRpZmljYXRlIEV4cG9ydC1DZXJ0aWZpY2F0ZQ==')) | Invoke-Expression\" "
+  }
+}

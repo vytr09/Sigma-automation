@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_certify_0",
+  "original_command": "\\Certify.exe Certify.exe Certify .exe cas .exe find .exe pkiobjects .exe request .exe download /vulnerable /template: /altname: /domain: /path: /ca:",
+  "evasions": {
+    "insertion": "\\Certify.exe Certify.exe Certify .exe cas .exe find \".exe\" pkiobjects .exe request .exe download /vulnerable /template: /altname: /domain: /path: /ca:",
+    "substitution": "\\Certify.exe Certify.exe Certify .exe cas .exe find .exe pkiobjects .exe request .exe download /vulnerable /template: /altname: /domain: /path: /ca: #substitution",
+    "omission": "\\Certify Certify Certify cas find pkiobjects request download /vulnerable /template: /altname: /domain: /path: /ca:",
+    "reordering": "\\Certify.exe Certify.exe Certify .exe cas .exe find .exe pkiobjects .exe request .exe download /vulnerable /template: /altname: /domain: /path: /ca:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENlcnRpZnkuZXhlIENlcnRpZnkuZXhlIENlcnRpZnkgLmV4ZSBjYXMgLmV4ZSBmaW5kIC5leGUgcGtpb2JqZWN0cyAuZXhlIHJlcXVlc3QgLmV4ZSBkb3dubG9hZCAvdnVsbmVyYWJsZSAvdGVtcGxhdGU6IC9hbHRuYW1lOiAvZG9tYWluOiAvcGF0aDogL2NhOg==')) | Invoke-Expression\" "
+  }
+}

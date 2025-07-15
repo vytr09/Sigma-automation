@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_chromium_headless_debugging_0",
+  "original_command": "--remote-debugging- --user-data-dir --headless",
+  "evasions": {
+    "insertion": "--remote-debugging- --user-data-dir --hea\"dless\"",
+    "substitution": "--remote-debugging- --user-data-dir --headless #substitution",
+    "omission": "--remote-debugging- --user-data-dir --headless # omission",
+    "reordering": "--remote-debugging- --user-data-dir --headless",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1yZW1vdGUtZGVidWdnaW5nLSAtLXVzZXItZGF0YS1kaXIgLS1oZWFkbGVzcw==')) | Invoke-Expression\" "
+  }
+}

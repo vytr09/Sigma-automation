@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_adfind_enumeration_0",
+  "original_command": "lockoutduration lockoutthreshold lockoutobservationwindow maxpwdage minpwdage minpwdlength pwdhistorylength pwdproperties -sc admincountdmp -sc exchaddresses",
+  "evasions": {
+    "insertion": "lockoutduration lockoutthreshold lockoutobservationwindow \"maxpwdage\" \"minpwdage\" minpwdlength pwdhistorylength pwdproperties -sc admincountdmp -sc exchaddresses",
+    "substitution": "lockoutduration lockoutthreshold lockoutobservationwindow maxpwdage minpwdage minpwdlength pwdhistorylength pwdproperties -sc admincountdmp -sc exchaddresses #substitution",
+    "omission": "lockoutduration lockoutthreshold lockoutobservationwindow maxpwdage minpwdage minpwdlength pwdhistorylength pwdproperties -sc admincountdmp -sc exchaddresses # omission",
+    "reordering": "lockoutduration lockoutthreshold lockoutobservationwindow maxpwdage minpwdage minpwdlength pwdhistorylength pwdproperties -sc admincountdmp -sc exchaddresses",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bG9ja291dGR1cmF0aW9uIGxvY2tvdXR0aHJlc2hvbGQgbG9ja291dG9ic2VydmF0aW9ud2luZG93IG1heHB3ZGFnZSBtaW5wd2RhZ2UgbWlucHdkbGVuZ3RoIHB3ZGhpc3RvcnlsZW5ndGggcHdkcHJvcGVydGllcyAtc2MgYWRtaW5jb3VudGRtcCAtc2MgZXhjaGFkZHJlc3Nlcw==')) | Invoke-Expression\" "
+  }
+}

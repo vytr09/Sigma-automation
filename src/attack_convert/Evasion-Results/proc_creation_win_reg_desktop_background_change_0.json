@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_desktop_background_change_0",
+  "original_command": "\\reg.exe reg.exe add Control Panel\\Desktop CurrentVersion\\Policies\\ActiveDesktop CurrentVersion\\Policies\\System /v NoChangingWallpaper /d 1 /v Wallpaper /t REG_SZ /v WallpaperStyle /d 2",
+  "evasions": {
+    "insertion": "\\reg.exe reg.exe add Control Panel\\Desktop CurrentVersion\\Policies\\ActiveDesktop CurrentVersion\\Policies\\System /v NoChangingWallpaper /d 1 /v \"Wallpaper\" \"/t\" REG_SZ /v WallpaperStyle /d 2",
+    "substitution": "\\reg.exe reg.exe add Control Panel\\Desktop CurrentVersion\\Policies\\ActiveDesktop CurrentVersion\\Policies\\System /v NoChangingWallpaper /d 1 /v Wallpaper /t REG_SZ /v WallpaperStyle /d 2",
+    "omission": "\\reg reg add Control Panel\\Desktop CurrentVersion\\Policies\\ActiveDesktop CurrentVersion\\Policies\\System /v NoChangingWallpaper /d 1 /v Wallpaper /t REG_SZ /v WallpaperStyle /d 2",
+    "reordering": "\\reg.exe reg.exe add Control Panel\\Desktop CurrentVersion\\Policies\\ActiveDesktop CurrentVersion\\Policies\\System /v NoChangingWallpaper /d 1 /v Wallpaper /t REG_SZ /v WallpaperStyle /d 2",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnLmV4ZSBhZGQgQ29udHJvbCBQYW5lbFxEZXNrdG9wIEN1cnJlbnRWZXJzaW9uXFBvbGljaWVzXEFjdGl2ZURlc2t0b3AgQ3VycmVudFZlcnNpb25cUG9saWNpZXNcU3lzdGVtIC92IE5vQ2hhbmdpbmdXYWxscGFwZXIgL2QgMSAvdiBXYWxscGFwZXIgL3QgUkVHX1NaIC92IFdhbGxwYXBlclN0eWxlIC9kIDI=')) | Invoke-Expression\" "
+  }
+}

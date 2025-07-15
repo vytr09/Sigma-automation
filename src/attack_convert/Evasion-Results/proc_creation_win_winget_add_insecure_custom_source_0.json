@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winget_add_insecure_custom_source_0",
+  "original_command": "\\winget.exe winget.exe source add http://",
+  "evasions": {
+    "insertion": "\\winget.exe winget.exe sou\"rce\" add http://",
+    "substitution": "\\winget.exe winget.exe source add http:// #substitution",
+    "omission": "\\winget winget source add http://",
+    "reordering": "\\winget.exe source add winget.exe http://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdpbmdldC5leGUgd2luZ2V0LmV4ZSBzb3VyY2UgYWRkIGh0dHA6Ly8=')) | Invoke-Expression\" "
+  }
+}

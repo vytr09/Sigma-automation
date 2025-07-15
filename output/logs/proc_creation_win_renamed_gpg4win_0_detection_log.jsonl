@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:28:29 UTC", "rule": "proc_creation_win_renamed_gpg4win_0", "phase": "original", "command": "gpg.exe \\gpg.exe \\gpg2.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:28:36 UTC", "rule": "proc_creation_win_renamed_gpg4win_0", "phase": "insertion", "command": "gpg.exe \\gpg.exe \"\\gpg2.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:28:43 UTC", "rule": "proc_creation_win_renamed_gpg4win_0", "phase": "substitution", "command": "gpg.exe \\gpg.exe \\gpg2.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:28:49 UTC", "rule": "proc_creation_win_renamed_gpg4win_0", "phase": "omission", "command": "gpg \\gpg \\gpg2", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:28:56 UTC", "rule": "proc_creation_win_renamed_gpg4win_0", "phase": "reordering", "command": "gpg.exe \\gpg2.exe \\gpg.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:29:07 UTC", "rule": "proc_creation_win_renamed_gpg4win_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Z3BnLmV4ZSBcZ3BnLmV4ZSBcZ3BnMi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

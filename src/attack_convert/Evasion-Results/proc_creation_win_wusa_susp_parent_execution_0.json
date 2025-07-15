@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wusa_susp_parent_execution_0",
+  "original_command": "\\wusa.exe .msu",
+  "evasions": {
+    "insertion": "\\wusa.exe \".msu\"",
+    "substitution": "\\wusa.exe .msu #substitution",
+    "omission": "\\wusa .msu",
+    "reordering": "\\wusa.exe .msu",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHd1c2EuZXhlIC5tc3U=')) | Invoke-Expression\" "
+  }
+}

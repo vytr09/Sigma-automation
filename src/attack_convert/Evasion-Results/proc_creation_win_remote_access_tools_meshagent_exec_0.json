@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_meshagent_exec_0",
+  "original_command": "\\meshagent.exe \\cmd.exe \\powershell.exe \\pwsh.exe",
+  "evasions": {
+    "insertion": "\\meshagent.exe \\\"\\cmd\\\".exe \\powershell.exe \\pwsh.exe",
+    "substitution": "\\meshagent.exe \\cmd.exe \\powershell.exe \\pwsh.exe #substitution",
+    "omission": "\\meshagent \\cmd \\powershell \\pwsh",
+    "reordering": "\\meshagent.exe \\pwsh.exe \\powershell.exe \\cmd.exe",
+    "recoding": "powershell.exe -EncodedCommand XABtAGUAcwBoAGEAZwBlAG4AdAAuAGUAeABlACAAXABjAG0AZAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQA= "
+  }
+}

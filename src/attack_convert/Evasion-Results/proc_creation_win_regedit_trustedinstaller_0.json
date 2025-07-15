@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regedit_trustedinstaller_0",
+  "original_command": "\\regedit.exe \\TrustedInstaller.exe \\ProcessHacker.exe",
+  "evasions": {
+    "insertion": "\\regedit.exe \\TrustedInstaller.exe \"\\ProcessH\"acker.exe",
+    "substitution": "\\regedit.exe \\TrustedInstaller.exe \\ProcessHacker.exe #substitution",
+    "omission": "\\regedit \\TrustedInstaller \\ProcessHacker",
+    "reordering": "\\regedit.exe \\ProcessHacker.exe \\TrustedInstaller.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2VkaXQuZXhlIFxUcnVzdGVkSW5zdGFsbGVyLmV4ZSBcUHJvY2Vzc0hhY2tlci5leGU=')) | Invoke-Expression\" "
+  }
+}

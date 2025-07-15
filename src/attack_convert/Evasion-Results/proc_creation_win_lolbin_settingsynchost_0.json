@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_settingsynchost_0",
+  "original_command": "cmd.exe /c RoamDiag.cmd -outputpath",
+  "evasions": {
+    "insertion": "cmd.exe /c RoamDiag.cmd \"-outp\"utpath",
+    "substitution": "cmd.exe -c RoamDiag.cmd -outputpath",
+    "omission": "cmd /c RoamDiag -outputpath",
+    "reordering": "cmd.exe /c RoamDiag.cmd -outputpath",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21kLmV4ZSAvYyBSb2FtRGlhZy5jbWQgLW91dHB1dHBhdGg=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sndvol_susp_child_processes_0",
+  "original_command": "\\SndVol.exe \\rundll32.exe shell32.dll,Control_RunDLL",
+  "evasions": {
+    "insertion": "\\SndVol.exe \\rundll32.exe \\\"s\\\"\\\"h\\\"\\\"e\\\"\\\"l\\\"\\\"l\\\"\\\"3\\\"\\\"2\\\"\\\".\\\"\\\"d\\\"\\\"l\\\"\\\"l\\\"\\\",\\\"\\\"C\\\"\\\"o\\\"\\\"n\\\"\\\"t\\\"\\\"r\\\"\\\"o\\\"\\\"l\\\"\\\"_\\\"\\\"R\\\"\\\"u\\\"\\\"n\\\"\\\"D\\\"\\\"L\\\"\\\"L\\\"",
+    "substitution": "\\SndVol.exe \\rundll32.exe run-control",
+    "omission": "\\SndVol \\rundll32 shell32.dll,Control_RunDLL",
+    "reordering": "\\SndVol.exe shell32.dll,Control_RunDLL \\rundll32.exe",
+    "recoding": "powershell.exe -EncodedCommand XABTAG4AZABWAG8AbAAuAGUAeABlACAAXAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAHMAaABlAGwAbAAzADIALgBkAGwAbAAsAEMAbwBuAHQAcgBvAGwAXwBSAHUAbgBEAEwATAA= "
+  }
+}

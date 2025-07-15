@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_ntdllpipe_redirect_0",
+  "original_command": "type %windir%\\system32\\ntdll.dll type %systemroot%\\system32\\ntdll.dll type c:\\windows\\system32\\ntdll.dll \\\\ntdll.dll > \\\\\\\\.\\\\pipe\\\\",
+  "evasions": {
+    "insertion": "type %windir%\\system32\\ntdll.dll type %systemroot%\\system32\\ntdll.dll type c:\\windows\\system32\\ntdll.dll \\\\ntdll.dll > \\\\\\\\.\\\\pipe\\\\",
+    "substitution": "type %windir%\\system32\\ntdll.dll type %systemroot%\\system32\\ntdll.dll type c:\\windows\\system32\\ntdll.dll \\\\ntdll.dll > \\\\\\\\.\\\\pipe\\\\ #substitution",
+    "omission": "type %windir%\\system32\\ntdll.dll type %systemroot%\\system32\\ntdll.dll type ntdll.dll \\\\ntdll.dll > \\\\\\\\.\\\\pipe\\\\",
+    "reordering": "type %windir%\\system32\\ntdll.dll type %systemroot%\\system32\\ntdll.dll type c:\\windows\\system32\\ntdll.dll \\\\ntdll.dll > \\\\\\\\.\\\\pipe\\\\",
+    "recoding": "powershell.exe -EncodedCommand dAB5AHAAZQAgACUAdwBpAG4AZABpAHIAJQBcAHMAeQBzAHQAZQBtADMAMgBcAG4AdABkAGwAbAAuAGQAbABsACAAdAB5AHAAZQAgACUAcwB5AHMAdABlAG0AcgBvAG8AdAAlAFwAcwB5AHMAdABlAG0AMwAyAFwAbgB0AGQAbABsAC4AZABsAGwAIAB0AHkAcABlACAAYwA6AFwAdwBpAG4AZABvAHcAcwBcAHMAeQBzAHQAZQBtADMAMgBcAG4AdABkAGwAbAAuAGQAbABsACAAXABcAG4AdABkAGwAbAAuAGQAbABsACAAPgAgAFwAXABcAFwALgBcAFwAcABpAHAAZQBcAFwA "
+  }
+}

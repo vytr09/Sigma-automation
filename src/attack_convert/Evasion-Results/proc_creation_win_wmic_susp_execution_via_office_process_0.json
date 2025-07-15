@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_susp_execution_via_office_process_0",
+  "original_command": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.EXE \\EQNEDT32.EXE \\ONENOTE.EXE \\wordpad.exe \\wordview.exe \\wbem\\WMIC.exe wmic.exe process create call regsvr32 rundll32 msiexec mshta verclsid wscript cscript",
+  "evasions": {
+    "insertion": "\\WINWORD.EXE \"\\EXCEL.EXE\" \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.EXE \\EQNEDT32.EXE \\ONENOTE.EXE \\wordpad.exe \\wordview.exe \\wbem\\WMIC.exe wmic.exe process create call regsvr32 rundll32 msiexec mshta verclsid wscript cscript",
+    "substitution": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.EXE \\EQNEDT32.EXE \\ONENOTE.EXE \\wordpad.exe \\wordview.exe \\wbem\\WMIC.exe wmic.exe process create --call regsvr32 rundll32 msiexec mshta verclsid wscript cscript",
+    "omission": "\\WINWORD \\EXCEL \\POWERPNT \\MSPUB \\VISIO \\MSACCESS \\EQNEDT32 \\ONENOTE \\wordpad \\wordview \\wbem\\WMIC wmic process create call regsvr32 rundll32 msiexec mshta verclsid wscript cscript",
+    "reordering": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.EXE \\EQNEDT32.EXE \\ONENOTE.EXE \\wordpad.exe \\wordview.exe \\wbem\\WMIC.exe wmic.exe process create call regsvr32 rundll32 msiexec mshta verclsid wscript cscript",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdJTldPUkQuRVhFIFxFWENFTC5FWEUgXFBPV0VSUE5ULmV4ZSBcTVNQVUIuZXhlIFxWSVNJTy5leGUgXE1TQUNDRVNTLkVYRSBcRVFORURUMzIuRVhFIFxPTkVOT1RFLkVYRSBcd29yZHBhZC5leGUgXHdvcmR2aWV3LmV4ZSBcd2JlbVxXTUlDLmV4ZSB3bWljLmV4ZSBwcm9jZXNzIGNyZWF0ZSBjYWxsIHJlZ3N2cjMyIHJ1bmRsbDMyIG1zaWV4ZWMgbXNodGEgdmVyY2xzaWQgd3NjcmlwdCBjc2NyaXB0')) | Invoke-Expression\" "
+  }
+}

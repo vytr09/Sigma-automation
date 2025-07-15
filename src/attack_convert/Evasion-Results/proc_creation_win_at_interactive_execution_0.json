@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_at_interactive_execution_0",
+  "original_command": "\\at.exe interactive",
+  "evasions": {
+    "insertion": "\\\"a\"\"t\"\".\"\"e\"\"x\"\"e\" interactive",
+    "substitution": "\\at.exe interactive #substitution",
+    "omission": "\\at interactive",
+    "reordering": "\\at.exe interactive",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGF0LmV4ZSBpbnRlcmFjdGl2ZQ==')) | Invoke-Expression\" "
+  }
+}

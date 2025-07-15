@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_spawn_exe_from_users_directory_0",
+  "original_command": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.exe \\EQNEDT32.exe .exe \\Teams.exe",
+  "evasions": {
+    "insertion": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.exe \\EQNEDT32.exe .exe \\\"\\Teams.exe\\\"",
+    "substitution": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.exe \\EQNEDT32.exe .exe \\Teams.exe #substitution",
+    "omission": "\\WINWORD \\EXCEL \\POWERPNT \\MSPUB \\VISIO \\MSACCESS \\EQNEDT32 \\Teams",
+    "reordering": "\\WINWORD.EXE \\EXCEL.EXE \\POWERPNT.exe \\MSPUB.exe \\VISIO.exe \\MSACCESS.exe \\EQNEDT32.exe .exe \\Teams.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdJTldPUkQuRVhFIFxFWENFTC5FWEUgXFBPV0VSUE5ULmV4ZSBcTVNQVUIuZXhlIFxWSVNJTy5leGUgXE1TQUNDRVNTLmV4ZSBcRVFORURUMzIuZXhlIC5leGUgXFRlYW1zLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

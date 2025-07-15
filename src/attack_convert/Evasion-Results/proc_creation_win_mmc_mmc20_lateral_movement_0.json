@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mmc_mmc20_lateral_movement_0",
+  "original_command": "\\svchost.exe \\mmc.exe -Embedding",
+  "evasions": {
+    "insertion": "\\svchost.exe \"\\mmc.exe\" -Embedding",
+    "substitution": "\\svchost.exe \\mmc.exe -Embedding #substitution",
+    "omission": "\\svchost \\mmc -Embedding",
+    "reordering": "\\svchost.exe \\mmc.exe -Embedding",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIFxtbWMuZXhlIC1FbWJlZGRpbmc=')) | Invoke-Expression\" "
+  }
+}

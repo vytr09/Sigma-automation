@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_outlook_enable_unsafe_client_mail_rules_0",
+  "original_command": "\\Outlook\\Security\\EnableUnsafeClientMailRules",
+  "evasions": {
+    "insertion": "\"\\Outlook\\Security\\EnableUnsafeClientMailRules\"",
+    "substitution": "\\Outlook\\Security\\EnableUnsafeClientMailRules #substitution",
+    "omission": "\\Outlook\\Security\\EnableUnsafeClientMailRules # omission",
+    "reordering": "\\Outlook\\Security\\EnableUnsafeClientMailRules",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE91dGxvb2tcU2VjdXJpdHlcRW5hYmxlVW5zYWZlQ2xpZW50TWFpbFJ1bGVz')) | Invoke-Expression\" "
+  }
+}

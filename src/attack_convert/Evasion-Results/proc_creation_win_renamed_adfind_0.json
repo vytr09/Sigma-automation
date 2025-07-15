@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_adfind_0",
+  "original_command": "domainlist trustdmp dcmodes adinfo dclist computer_pwdnotreqd objectcategory= -subnets -f name= -sc u: domainncs dompol oudmp subnetdmp gpodmp fspdmp users_noexpire computers_active computers_pwdnotreqd AdFind.exe \\AdFind.exe",
+  "evasions": {
+    "insertion": "domainlist trustdmp dcmodes adinfo dclist computer_pwdnotreqd objectcategory= -subnets -f name= -sc u: domainncs dompol oudmp subnetdmp gpodmp fspdmp users_noexpire \"computers_active\" \"computers_pwdnotreqd\" AdFind.exe \\AdFind.exe",
+    "substitution": "domainlist trustdmp dcmodes adinfo dclist computer_pwdnotreqd objectcategory= -subnets -f name= -sc u: domainncs dompol oudmp subnetdmp gpodmp fspdmp users_noexpire computers_active computers_pwdnotreqd AdFind.exe \\AdFind.exe #substitution",
+    "omission": "domainlist trustdmp dcmodes adinfo dclist computer_pwdnotreqd objectcategory= -subnets -f name= -sc u: domainncs dompol oudmp subnetdmp gpodmp fspdmp users_noexpire computers_active computers_pwdnotreqd AdFind \\AdFind",
+    "reordering": "domainlist trustdmp dcmodes adinfo dclist computer_pwdnotreqd objectcategory= -subnets -f name= -sc u: domainncs dompol oudmp subnetdmp gpodmp fspdmp users_noexpire computers_active computers_pwdnotreqd AdFind.exe \\AdFind.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZG9tYWlubGlzdCB0cnVzdGRtcCBkY21vZGVzIGFkaW5mbyBkY2xpc3QgY29tcHV0ZXJfcHdkbm90cmVxZCBvYmplY3RjYXRlZ29yeT0gLXN1Ym5ldHMgLWYgbmFtZT0gLXNjIHU6IGRvbWFpbm5jcyBkb21wb2wgb3VkbXAgc3VibmV0ZG1wIGdwb2RtcCBmc3BkbXAgdXNlcnNfbm9leHBpcmUgY29tcHV0ZXJzX2FjdGl2ZSBjb21wdXRlcnNfcHdkbm90cmVxZCBBZEZpbmQuZXhlIFxBZEZpbmQuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_auditpol_nt_resource_kit_usage_0",
+  "original_command": "/logon:none /system:none /sam:none /privilege:none /object:none /process:none /policy:none",
+  "evasions": {
+    "insertion": "/logon:none /system:none /sam:none /privilege:none /object:none /\"p\"\"r\"\"o\"\"c\"\"e\"\"s\"\"s\"\":\"\"n\"\"o\"\"n\"\"e\" /policy:none",
+    "substitution": "/logon:none /system:none /sam:none /privilege:none /object:none /process:none /policy:none #substitution",
+    "omission": "/logon:none /system:none /sam:none /privilege:none /object:none /process:none /policy:none # omission",
+    "reordering": "/logon:none /system:none /sam:none /privilege:none /object:none /process:none /policy:none",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2xvZ29uOm5vbmUgL3N5c3RlbTpub25lIC9zYW06bm9uZSAvcHJpdmlsZWdlOm5vbmUgL29iamVjdDpub25lIC9wcm9jZXNzOm5vbmUgL3BvbGljeTpub25l')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:31:32 UTC", "rule": "proc_creation_win_renamed_msdt_0", "phase": "original", "command": "msdt.exe \\msdt.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:31:39 UTC", "rule": "proc_creation_win_renamed_msdt_0", "phase": "insertion", "command": "msdt.exe \"\\msd\"t.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:31:46 UTC", "rule": "proc_creation_win_renamed_msdt_0", "phase": "substitution", "command": "msdt.exe \\msdt.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:31:56 UTC", "rule": "proc_creation_win_renamed_msdt_0", "phase": "omission", "command": "msdt \\msdt", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:32:07 UTC", "rule": "proc_creation_win_renamed_msdt_0", "phase": "reordering", "command": "msdt.exe \\msdt.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:32:13 UTC", "rule": "proc_creation_win_renamed_msdt_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXNkdC5leGUgXG1zZHQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

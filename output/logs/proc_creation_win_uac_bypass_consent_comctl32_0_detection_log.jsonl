@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:32:06 UTC", "rule": "proc_creation_win_uac_bypass_consent_comctl32_0", "phase": "original", "command": "\\consent.exe \\werfault.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:32:16 UTC", "rule": "proc_creation_win_uac_bypass_consent_comctl32_0", "phase": "insertion", "command": "\\consent.exe \\werfa\"ult.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:32:22 UTC", "rule": "proc_creation_win_uac_bypass_consent_comctl32_0", "phase": "substitution", "command": "\\consent.exe \\werfault.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:32:28 UTC", "rule": "proc_creation_win_uac_bypass_consent_comctl32_0", "phase": "omission", "command": "\\consent \\werfault", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:32:34 UTC", "rule": "proc_creation_win_uac_bypass_consent_comctl32_0", "phase": "reordering", "command": "\\consent.exe \\werfault.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:32:40 UTC", "rule": "proc_creation_win_uac_bypass_consent_comctl32_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNvbnNlbnQuZXhlIFx3ZXJmYXVsdC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

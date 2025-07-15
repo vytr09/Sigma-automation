@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_findstr_download_0",
+  "original_command": "findstr findstr.exe FINDSTR.EXE -v -l \\\\\\\\",
+  "evasions": {
+    "insertion": "findstr findstr.exe FINDSTR.EXE -v \"-l\" \\\\\\\\",
+    "substitution": "findstr findstr.exe FINDSTR.EXE -v -l \\\\\\\\ #substitution",
+    "omission": "findstr findstr FINDSTR -v -l \\\\\\\\",
+    "reordering": "findstr \\\\\\\\ -v findstr.exe -l FINDSTR.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZmluZHN0ciBmaW5kc3RyLmV4ZSBGSU5EU1RSLkVYRSAtdiAtbCBcXFxc')) | Invoke-Expression\" "
+  }
+}

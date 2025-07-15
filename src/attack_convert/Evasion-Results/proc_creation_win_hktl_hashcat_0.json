@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_hashcat_0",
+  "original_command": "\\hashcat.exe -a -m 1000 -r",
+  "evasions": {
+    "insertion": "\\hashcat.exe -a -m \"1\"\"0\"\"0\"\"0\" -r",
+    "substitution": "\\hashcat.exe -a -m 1000 -r #substitution",
+    "omission": "\\hashcat -a -m 1000 -r",
+    "reordering": "\\hashcat.exe -a -m -r 1000",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGhhc2hjYXQuZXhlIC1hIC1tIDEwMDAgLXI=')) | Invoke-Expression\" "
+  }
+}

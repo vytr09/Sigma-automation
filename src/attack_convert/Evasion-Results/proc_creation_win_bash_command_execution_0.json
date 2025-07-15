@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bash_command_execution_0",
+  "original_command": ":\\Windows\\System32\\bash.exe :\\Windows\\SysWOW64\\bash.exe Bash.exe -c",
+  "evasions": {
+    "insertion": ":\\Windows\\System32\\bash.exe :\\Windows\\Sys\\\"WOW64\\bash.exe\\\" Bash.exe -c",
+    "substitution": ":\\Windows\\System32\\bash.exe :\\Windows\\SysWOW64\\bash.exe Bash.exe -c #substitution",
+    "omission": ":\\Windows\\System32\\bash :\\Windows\\SysWOW64\\bash Bash -c",
+    "reordering": ":\\Windows\\System32\\bash.exe :\\Windows\\SysWOW64\\bash.exe Bash.exe -c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OlxXaW5kb3dzXFN5c3RlbTMyXGJhc2guZXhlIDpcV2luZG93c1xTeXNXT1c2NFxiYXNoLmV4ZSBCYXNoLmV4ZSAtYw==')) | Invoke-Expression\" "
+  }
+}

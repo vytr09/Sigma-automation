@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:32:14 UTC", "rule": "proc_creation_win_gup_download_0", "phase": "original", "command": "\\GUP.exe gup.exe -unzipTo http \\notepad++.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:32:21 UTC", "rule": "proc_creation_win_gup_download_0", "phase": "insertion", "command": "\\GUP.exe gup.exe -unzipTo http \\notepa\\\"d++.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:32:26 UTC", "rule": "proc_creation_win_gup_download_0", "phase": "substitution", "command": "\\GUP.exe gup.exe -unzipTo http \\notepad++.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:32:32 UTC", "rule": "proc_creation_win_gup_download_0", "phase": "omission", "command": "\\GUP gup -unzipTo http \\notepad++", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:32:37 UTC", "rule": "proc_creation_win_gup_download_0", "phase": "reordering", "command": "\\GUP.exe -unzipTo http \\notepad++.exe gup.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:32:43 UTC", "rule": "proc_creation_win_gup_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEdVUC5leGUgZ3VwLmV4ZSAtdW56aXBUbyBodHRwIFxub3RlcGFkKysuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_write_protect_for_storage_disabled_0",
+  "original_command": "\\System\\CurrentControlSet\\Control Write Protection 0 storage",
+  "evasions": {
+    "insertion": "\\System\\CurrentControlSet\\Control Write Protection \"0\" storage",
+    "substitution": "\\System\\CurrentControlSet\\Control Write Protection 0 storage #substitution",
+    "omission": "\\System\\CurrentControlSet\\Control Write Protection 0 storage # omission",
+    "reordering": "\\System\\CurrentControlSet\\Control Protection Write storage 0",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbVxDdXJyZW50Q29udHJvbFNldFxDb250cm9sIFdyaXRlIFByb3RlY3Rpb24gMCBzdG9yYWdl')) | Invoke-Expression\" "
+  }
+}

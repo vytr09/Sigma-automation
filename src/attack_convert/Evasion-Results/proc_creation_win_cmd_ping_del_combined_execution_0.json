@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_ping_del_combined_execution_0",
+  "original_command": "-n Nul -f -q ping del",
+  "evasions": {
+    "insertion": "-n Nul -f -q pi\"ng\" del",
+    "substitution": "-n Nul -f -q ping del #substitution",
+    "omission": "-n Nul -f -q ping del # omission",
+    "reordering": "-n del Nul -f -q ping",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW4gTnVsIC1mIC1xIHBpbmcgZGVs')) | Invoke-Expression\" "
+  }
+}

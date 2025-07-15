@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_commandline_path_traversal_evasion_0",
+  "original_command": "\\..\\Windows\\ \\..\\System32\\ \\..\\..\\ .exe\\..\\ \\Google\\Drive\\googledrivesync.exe\\..\\ \\Citrix\\Virtual Smart Card\\Citrix.Authentication.VirtualSmartcard.Launcher.exe\\..\\",
+  "evasions": {
+    "insertion": "\\..\\Windows\\ \\..\\System32\\ \\..\\..\\ .exe\\..\\ \\Google\\Drive\\googledrivesync.exe\\..\\ \\Citrix\\Virtual Smart \"Card\\Citrix.Authentication.VirtualSmartcard.Launcher.exe\\..\\\"",
+    "substitution": "\\..\\Windows\\ \\..\\System32\\ \\..\\..\\ .exe\\..\\ \\Google\\Drive\\googledrivesync.exe\\..\\ \\Citrix\\Virtual Smart Card\\Citrix.Authentication.VirtualSmartcard.Launcher.exe\\..\\ #substitution",
+    "omission": "\\..\\Windows\\ \\..\\System32\\ \\..\\..\\ \\..\\ \\Google\\Drive\\googledrivesync\\..\\ \\Citrix\\Virtual Smart Card\\Citrix.Authentication.VirtualSmartcard.Launcher\\..\\",
+    "reordering": "\\..\\Windows\\ \\..\\System32\\ \\..\\..\\ .exe\\..\\ \\Google\\Drive\\googledrivesync.exe\\..\\ \\Citrix\\Virtual Smart Card\\Citrix.Authentication.VirtualSmartcard.Launcher.exe\\..\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XC4uXFdpbmRvd3NcIFwuLlxTeXN0ZW0zMlwgXC4uXC4uXCAuZXhlXC4uXCBcR29vZ2xlXERyaXZlXGdvb2dsZWRyaXZlc3luYy5leGVcLi5cIFxDaXRyaXhcVmlydHVhbCBTbWFydCBDYXJkXENpdHJpeC5BdXRoZW50aWNhdGlvbi5WaXJ0dWFsU21hcnRjYXJkLkxhdW5jaGVyLmV4ZVwuLlw=')) | Invoke-Expression\" "
+  }
+}

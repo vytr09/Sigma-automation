@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tscon_localsystem_0",
+  "original_command": "\\tscon.exe",
+  "evasions": {
+    "insertion": "\\\"t\"\"s\"\"c\"\"o\"\"n\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\tscon.exe #substitution",
+    "omission": "\\tscon",
+    "reordering": "\\tscon.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRzY29uLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

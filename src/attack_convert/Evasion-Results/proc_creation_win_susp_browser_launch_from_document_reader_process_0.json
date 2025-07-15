@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_browser_launch_from_document_reader_process_0",
+  "original_command": "\\brave.exe \\chrome.exe \\firefox.exe \\msedge.exe \\opera.exe \\maxthon.exe \\seamonkey.exe \\vivaldi.exe http",
+  "evasions": {
+    "insertion": "\\brave.exe \\chrome.exe \\firefox.exe \\msedge.exe \\opera.exe \\\"\\maxth\\\"on.exe \\seamonkey.exe \\vivaldi.exe http",
+    "substitution": "\\brave.exe \\chrome.exe \\firefox.exe \\msedge.exe \\opera.exe \\maxthon.exe \\seamonkey.exe \\vivaldi.exe http #substitution",
+    "omission": "\\brave \\chrome \\firefox \\msedge \\opera \\maxthon \\seamonkey \\vivaldi http",
+    "reordering": "\\brave.exe \\chrome.exe \\firefox.exe \\msedge.exe \\opera.exe \\maxthon.exe \\seamonkey.exe \\vivaldi.exe http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcY2hyb21lLmV4ZSBcZmlyZWZveC5leGUgXG1zZWRnZS5leGUgXG9wZXJhLmV4ZSBcbWF4dGhvbi5leGUgXHNlYW1vbmtleS5leGUgXHZpdmFsZGkuZXhlIGh0dHA=')) | Invoke-Expression\" "
+  }
+}

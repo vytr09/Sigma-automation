@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_msdt_0",
+  "original_command": "msdt.exe \\msdt.exe",
+  "evasions": {
+    "insertion": "msdt.exe \"\\msd\"t.exe",
+    "substitution": "msdt.exe \\msdt.exe #substitution",
+    "omission": "msdt \\msdt",
+    "reordering": "msdt.exe \\msdt.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXNkdC5leGUgXG1zZHQuZXhl')) | Invoke-Expression\" "
+  }
+}

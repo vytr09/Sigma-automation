@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_sysmon_config_update_0",
+  "original_command": "\\Sysmon64.exe \\Sysmon.exe -c",
+  "evasions": {
+    "insertion": "\\Sysmon64.exe \\Sysm\\\"on.exe\\\" -c",
+    "substitution": "\\Sysmon64.exe \\Sysmon.exe -c #substitution",
+    "omission": "\\Sysmon64 \\Sysmon -c",
+    "reordering": "\\Sysmon64.exe -c \\Sysmon.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c21vbjY0LmV4ZSBcU3lzbW9uLmV4ZSAtYw==')) | Invoke-Expression\" "
+  }
+}

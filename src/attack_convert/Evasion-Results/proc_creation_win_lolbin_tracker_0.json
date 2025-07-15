@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_tracker_0",
+  "original_command": "\\tracker.exe /d /c /ERRORREPORT:PROMPT \\Msbuild\\Current\\Bin\\MSBuild.exe \\Msbuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "evasions": {
+    "insertion": "\"\\tracker.exe\" /d /c /ERRORREPORT:PROMPT \\Msbuild\\Current\\Bin\\MSBuild.exe \\Msbuild\\Current\\Bin\\amd64\\MSBuild.exe",
+    "substitution": "\\tracker.exe /d /c /ERRORREPORT:PROMPT \\Msbuild\\Current\\Bin\\MSBuild.exe \\Msbuild\\Current\\Bin\\amd64\\MSBuild.exe #substitution",
+    "omission": "\\tracker /d /c /ERRORREPORT:PROMPT \\Msbuild\\Current\\Bin\\MSBuild \\Msbuild\\Current\\Bin\\amd64\\MSBuild",
+    "reordering": "\\tracker.exe /d /c /ERRORREPORT:PROMPT \\Msbuild\\Current\\Bin\\MSBuild.exe \\Msbuild\\Current\\Bin\\amd64\\MSBuild.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRyYWNrZXIuZXhlIC9kIC9jIC9FUlJPUlJFUE9SVDpQUk9NUFQgXE1zYnVpbGRcQ3VycmVudFxCaW5cTVNCdWlsZC5leGUgXE1zYnVpbGRcQ3VycmVudFxCaW5cYW1kNjRcTVNCdWlsZC5leGU=')) | Invoke-Expression\" "
+  }
+}

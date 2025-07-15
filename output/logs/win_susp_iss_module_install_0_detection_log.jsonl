@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 11:18:44 UTC", "rule": "win_susp_iss_module_install_0", "phase": "omission", "command": "\\APPCMD.EXE install module /name: # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:19:13 UTC", "rule": "win_susp_iss_module_install_0", "phase": "reordering", "command": "\\APPCMD.EXE install /name: module", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:20:07 UTC", "rule": "win_susp_iss_module_install_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:10:37 UTC", "rule": "win_susp_iss_module_install_0", "phase": "original", "command": "\\APPCMD.EXE install module /name:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:10:40 UTC", "rule": "win_susp_iss_module_install_0", "phase": "insertion", "command": "\\APPCMD.EXE ins\\\"tall\\\" module /name:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:10:44 UTC", "rule": "win_susp_iss_module_install_0", "phase": "substitution", "command": "\\APPCMD.EXE install module /name: #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:10:47 UTC", "rule": "win_susp_iss_module_install_0", "phase": "omission", "command": "\\APPCMD install module /name:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:10:51 UTC", "rule": "win_susp_iss_module_install_0", "phase": "reordering", "command": "\\APPCMD.EXE install module /name:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:10:54 UTC", "rule": "win_susp_iss_module_install_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFQUENNRC5FWEUgaW5zdGFsbCBtb2R1bGUgL25hbWU6')) | Invoke-Expression\" ", "status": "BYPASSED"}

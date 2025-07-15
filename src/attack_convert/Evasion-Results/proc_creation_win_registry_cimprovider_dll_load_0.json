@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_cimprovider_dll_load_0",
+  "original_command": "\\register-cimprovider.exe -path dll",
+  "evasions": {
+    "insertion": "\\\"r\"\"e\"\"g\"\"i\"\"s\"\"t\"\"e\"\"r\"\"-\"\"c\"\"i\"\"m\"\"p\"\"r\"\"o\"\"v\"\"i\"\"d\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\" -path dll",
+    "substitution": "\\register-cimprovider.exe -path dll #substitution",
+    "omission": "\\register-cimprovider -path dll",
+    "reordering": "\\register-cimprovider.exe -path dll",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2lzdGVyLWNpbXByb3ZpZGVyLmV4ZSAtcGF0aCBkbGw=')) | Invoke-Expression\" "
+  }
+}

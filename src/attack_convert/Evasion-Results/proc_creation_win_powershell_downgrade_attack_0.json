@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_downgrade_attack_0",
+  "original_command": "\\powershell.exe -version 2 -versio 2 -versi 2 -vers 2 -ver 2 -ve 2 -v 2",
+  "evasions": {
+    "insertion": "\\powershell.exe -version 2 -versio 2 -versi 2 -vers 2 \"-ver\" 2 -ve 2 -v 2",
+    "substitution": "\\powershell.exe -version 2 -versio 2 -versi 2 -vers 2 -ver 2 -ve 2 -v 2 #substitution",
+    "omission": "\\powershell -version 2 -versio 2 -versi 2 -vers 2 -ver 2 -ve 2 -v 2",
+    "reordering": "\\powershell.exe -version 2 -versio 2 -versi 2 -vers 2 -ver 2 -ve 2 -v 2",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIAAtAHYAZQByAHMAaQBvAG4AIAAyACAALQB2AGUAcgBzAGkAbwAgADIAIAAtAHYAZQByAHMAaQAgADIAIAAtAHYAZQByAHMAIAAyACAALQB2AGUAcgAgADIAIAAtAHYAZQAgADIAIAAtAHYAIAAyAA== "
+  }
+}

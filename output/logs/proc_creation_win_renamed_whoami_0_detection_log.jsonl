@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:39:48 UTC", "rule": "proc_creation_win_renamed_whoami_0", "phase": "original", "command": "whoami.exe \\whoami.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:39:57 UTC", "rule": "proc_creation_win_renamed_whoami_0", "phase": "insertion", "command": "whoami.exe \\\"\\whoa\\\"mi.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:40:07 UTC", "rule": "proc_creation_win_renamed_whoami_0", "phase": "substitution", "command": "whoami.exe \\whoami.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:40:14 UTC", "rule": "proc_creation_win_renamed_whoami_0", "phase": "omission", "command": "whoami \\whoami", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:40:19 UTC", "rule": "proc_creation_win_renamed_whoami_0", "phase": "reordering", "command": "whoami.exe \\whoami.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:40:25 UTC", "rule": "proc_creation_win_renamed_whoami_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2hvYW1pLmV4ZSBcd2hvYW1pLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

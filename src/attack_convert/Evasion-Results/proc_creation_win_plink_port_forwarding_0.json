@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_plink_port_forwarding_0",
+  "original_command": "-R",
+  "evasions": {
+    "insertion": "-R",
+    "substitution": "-R #substitution",
+    "omission": "-R # omission",
+    "reordering": "-R",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LVI=')) | Invoke-Expression\" "
+  }
+}

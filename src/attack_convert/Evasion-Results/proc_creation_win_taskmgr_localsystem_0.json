@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_taskmgr_localsystem_0",
+  "original_command": "\\taskmgr.exe",
+  "evasions": {
+    "insertion": "\\\"\\taskmgr.exe\\\"",
+    "substitution": "\\taskmgr.exe #substitution",
+    "omission": "\\taskmgr",
+    "reordering": "\\taskmgr.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhc2ttZ3IuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bitsadmin_download_0",
+  "original_command": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile http",
+  "evasions": {
+    "insertion": "\\bitsadmin.exe bitsadmin.exe /\"{cmd_part1}\" /\"{cmd_part2}\" /addfile http",
+    "substitution": "\\bitsadmin.exe bitsadmin.exe /transfer --create /addfile http",
+    "omission": "\\bitsadmin bitsadmin /transfer /create /addfile http",
+    "reordering": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJpdHNhZG1pbi5leGUgYml0c2FkbWluLmV4ZSAvdHJhbnNmZXIgL2NyZWF0ZSAvYWRkZmlsZSBodHRw')) | Invoke-Expression\" "
+  }
+}

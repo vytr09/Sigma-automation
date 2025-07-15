@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_fsutil_usage_0",
+  "original_command": "\\fsutil.exe fsutil.exe deletejournal createjournal setZeroData",
+  "evasions": {
+    "insertion": "\\fsutil.exe fsutil.exe \"d\"\"e\"\"l\"\"e\"\"t\"\"e\"\"j\"\"o\"\"u\"\"r\"\"n\"\"a\"\"l\" createjournal setZeroData",
+    "substitution": "\\fsutil.exe fsutil.exe deletejournal createjournal setZeroData #substitution",
+    "omission": "\\fsutil fsutil deletejournal createjournal setZeroData",
+    "reordering": "\\fsutil.exe setZeroData deletejournal createjournal fsutil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZzdXRpbC5leGUgZnN1dGlsLmV4ZSBkZWxldGVqb3VybmFsIGNyZWF0ZWpvdXJuYWwgc2V0WmVyb0RhdGE=')) | Invoke-Expression\" "
+  }
+}

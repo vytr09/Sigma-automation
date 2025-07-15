@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_service_0",
+  "original_command": "\\WMIC.exe wmic.exe service",
+  "evasions": {
+    "insertion": "\\WMIC.exe \"wmic.exe\" service",
+    "substitution": "\\WMIC.exe wmic.exe service #substitution",
+    "omission": "\\WMIC wmic service",
+    "reordering": "\\WMIC.exe service wmic.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdNSUMuZXhlIHdtaWMuZXhlIHNlcnZpY2U=')) | Invoke-Expression\" "
+  }
+}

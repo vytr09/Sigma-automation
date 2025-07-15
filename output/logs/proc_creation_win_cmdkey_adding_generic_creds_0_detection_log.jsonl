@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:30:39 UTC", "rule": "proc_creation_win_cmdkey_adding_generic_creds_0", "phase": "original", "command": "\\cmdkey.exe cmdkey.exe -g -u -p", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:30:53 UTC", "rule": "proc_creation_win_cmdkey_adding_generic_creds_0", "phase": "insertion", "command": "\\cmdkey.exe cmdke\"y.exe\" -g -u -p", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:31:04 UTC", "rule": "proc_creation_win_cmdkey_adding_generic_creds_0", "phase": "substitution", "command": "\\cmdkey.exe cmdkey.exe -g -u -p #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:31:15 UTC", "rule": "proc_creation_win_cmdkey_adding_generic_creds_0", "phase": "omission", "command": "\\cmdkey cmdkey -g -u -p", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:31:24 UTC", "rule": "proc_creation_win_cmdkey_adding_generic_creds_0", "phase": "reordering", "command": "\\cmdkey.exe -p -g -u cmdkey.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:31:33 UTC", "rule": "proc_creation_win_cmdkey_adding_generic_creds_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZGtleS5leGUgY21ka2V5LmV4ZSAtZyAtdSAtcA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

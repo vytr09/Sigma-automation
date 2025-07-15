@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_delete_services_0",
+  "original_command": "reg.exe reg.exe delete \\SYSTEM\\CurrentControlSet\\services\\",
+  "evasions": {
+    "insertion": "reg.exe reg.exe del\\\"ete\\\" \\SYSTEM\\CurrentControlSet\\services\\",
+    "substitution": "reg.exe reg.exe delete \\SYSTEM\\CurrentControlSet\\services\\",
+    "omission": "reg reg delete \\SYSTEM\\CurrentControlSet\\services\\",
+    "reordering": "reg.exe reg.exe delete \\SYSTEM\\CurrentControlSet\\services\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnLmV4ZSByZWcuZXhlIGRlbGV0ZSBcU1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XHNlcnZpY2VzXA==')) | Invoke-Expression\" "
+  }
+}

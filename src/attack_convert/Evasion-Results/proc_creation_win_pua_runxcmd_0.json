@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_runxcmd_0",
+  "original_command": "/account=system /account=ti /exec=",
+  "evasions": {
+    "insertion": "/account=system /account=ti /\"{cmd_part[:mid]}\"{cmd_part[mid:]}",
+    "substitution": "/account=system /account=ti /exec= #substitution",
+    "omission": "/account=system /account=ti /exec= # omission",
+    "reordering": "/account=system /account=ti /exec=",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2FjY291bnQ9c3lzdGVtIC9hY2NvdW50PXRpIC9leGVjPQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_susp_sqldumper_activity_0",
+  "original_command": "\\sqldumper.exe 0x0110 0x01100:40",
+  "evasions": {
+    "insertion": "\\sqldumper.exe 0x0110 0x011\\\"00:40\\\"",
+    "substitution": "\\sqldumper.exe 0x0110 0x01100:40 #substitution",
+    "omission": "\\sqldumper 0x0110 0x01100:40",
+    "reordering": "\\sqldumper.exe 0x0110 0x01100:40",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxbGR1bXBlci5leGUgMHgwMTEwIDB4MDExMDA6NDA=')) | Invoke-Expression\" "
+  }
+}

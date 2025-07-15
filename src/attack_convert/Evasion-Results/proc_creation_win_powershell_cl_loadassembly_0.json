@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_cl_loadassembly_0",
+  "original_command": "LoadAssemblyFromPath LoadAssemblyFromNS",
+  "evasions": {
+    "insertion": "LoadAssemblyFromPath LoadAssem\"blyFromNS\"",
+    "substitution": "LoadAssemblyFromPath LoadAssemblyFromNS #substitution",
+    "omission": "LoadAssemblyFromPath LoadAssemblyFromNS # omission",
+    "reordering": "LoadAssemblyFromPath LoadAssemblyFromNS",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TG9hZEFzc2VtYmx5RnJvbVBhdGggTG9hZEFzc2VtYmx5RnJvbU5T')) | Invoke-Expression\" "
+  }
+}

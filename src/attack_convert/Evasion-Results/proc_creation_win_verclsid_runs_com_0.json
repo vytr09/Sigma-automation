@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_verclsid_runs_com_0",
+  "original_command": "\\verclsid.exe verclsid.exe /S /C",
+  "evasions": {
+    "insertion": "\\verclsid.exe verclsid.exe /\"{cmd_part}\" /C",
+    "substitution": "\\verclsid.exe verclsid.exe /S /C #substitution",
+    "omission": "\\verclsid verclsid /S /C",
+    "reordering": "\\verclsid.exe verclsid.exe /S /C",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHZlcmNsc2lkLmV4ZSB2ZXJjbHNpZC5leGUgL1MgL0M=')) | Invoke-Expression\" "
+  }
+}

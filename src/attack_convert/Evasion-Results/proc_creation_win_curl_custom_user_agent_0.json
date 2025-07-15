@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_custom_user_agent_0",
+  "original_command": "\\curl.exe curl.exe User-Agent:",
+  "evasions": {
+    "insertion": "\\curl.exe curl.exe \\\"User-Agent:\\\"",
+    "substitution": "\\curl.exe curl.exe User--user-agentgent:",
+    "omission": "\\curl curl User-Agent:",
+    "reordering": "\\curl.exe curl.exe User-Agent:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIFVzZXItQWdlbnQ6')) | Invoke-Expression\" "
+  }
+}

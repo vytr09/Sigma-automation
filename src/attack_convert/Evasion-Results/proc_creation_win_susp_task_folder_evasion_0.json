@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_task_folder_evasion_0",
+  "original_command": "echo copy type file createnew C:\\Windows\\System32\\Tasks\\ C:\\Windows\\SysWow64\\Tasks\\",
+  "evasions": {
+    "insertion": "echo copy type \"fi\"le createnew C:\\Windows\\System32\\Tasks\\ C:\\Windows\\SysWow64\\Tasks\\",
+    "substitution": "echo copy type file createnew C:\\Windows\\System32\\Tasks\\ C:\\Windows\\SysWow64\\Tasks\\ #substitution",
+    "omission": "echo copy type file createnew Tasks\\ SysWow64\\Tasks\\",
+    "reordering": "echo copy type file createnew C:\\Windows\\System32\\Tasks\\ C:\\Windows\\SysWow64\\Tasks\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZWNobyBjb3B5IHR5cGUgZmlsZSBjcmVhdGVuZXcgQzpcV2luZG93c1xTeXN0ZW0zMlxUYXNrc1wgQzpcV2luZG93c1xTeXNXb3c2NFxUYXNrc1w=')) | Invoke-Expression\" "
+  }
+}

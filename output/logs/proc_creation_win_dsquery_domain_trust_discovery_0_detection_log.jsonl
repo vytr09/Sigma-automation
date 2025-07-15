@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:15:14 UTC", "rule": "proc_creation_win_dsquery_domain_trust_discovery_0", "phase": "original", "command": "\\dsquery.exe dsquery.exe trustedDomain", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:15:21 UTC", "rule": "proc_creation_win_dsquery_domain_trust_discovery_0", "phase": "insertion", "command": "\\dsquery.exe \"dsquery.exe\" \"trustedDomain\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:15:29 UTC", "rule": "proc_creation_win_dsquery_domain_trust_discovery_0", "phase": "substitution", "command": "\\dsquery.exe dsquery.exe trustedDomain #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:15:36 UTC", "rule": "proc_creation_win_dsquery_domain_trust_discovery_0", "phase": "omission", "command": "\\dsquery dsquery trustedDomain", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:15:43 UTC", "rule": "proc_creation_win_dsquery_domain_trust_discovery_0", "phase": "reordering", "command": "\\dsquery.exe trustedDomain dsquery.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:15:57 UTC", "rule": "proc_creation_win_dsquery_domain_trust_discovery_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRzcXVlcnkuZXhlIGRzcXVlcnkuZXhlIHRydXN0ZWREb21haW4=')) | Invoke-Expression\" ", "status": "BYPASSED"}

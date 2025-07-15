@@ -2,10 +2,10 @@
   "rule_name": "win_susp_powershell_empire_launch_0",
   "original_command": "-nop -exec bypass -EncodedCommand SQB",
   "evasions": {
-    "insertion": "-nop -exec \\\"b\\\"\\\"y\\\"\\\"p\\\"\\\"a\\\"\\\"s\\\"\\\"s\\\" -EncodedCommand SQB",
+    "insertion": "-nop -exec bypass -Encode\\\"dCommand\\\" SQB",
     "substitution": "-nop -exec bypass -EncodedCommand SQB #substitution",
     "omission": "-nop -exec bypass -EncodedCommand SQB # omission",
-    "reordering": "-nop -EncodedCommand bypass -exec SQB",
+    "reordering": "-nop -exec SQB -EncodedCommand bypass",
     "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AcAAgAC0AZQB4AGUAYwAgAGIAeQBwAGEAcwBzACAALQBFAG4AYwBvAGQAZQBkAEMAbwBtAG0AYQBuAGQAIABTAFEAQgA= "
   }
 }

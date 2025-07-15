@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_chromium_headless_exec_0",
+  "original_command": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless",
+  "evasions": {
+    "insertion": "\\brave.exe \"\\chrome.exe\" \"\\msedge.exe\" \\opera.exe \\vivaldi.exe --headless",
+    "substitution": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless #substitution",
+    "omission": "\\brave \\chrome \\msedge \\opera \\vivaldi --headless",
+    "reordering": "\\brave.exe \\opera.exe \\chrome.exe \\msedge.exe \\vivaldi.exe --headless",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcY2hyb21lLmV4ZSBcbXNlZGdlLmV4ZSBcb3BlcmEuZXhlIFx2aXZhbGRpLmV4ZSAtLWhlYWRsZXNz')) | Invoke-Expression\" "
+  }
+}

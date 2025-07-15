@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_mshtml_runhtmlapplication_0",
+  "original_command": "\\..\\ mshtml #135 RunHTMLApplication",
+  "evasions": {
+    "insertion": "\\..\\ mshtml #1\\\"35\\\" RunHTMLApplication",
+    "substitution": "\\..\\ mshtml #135 RunHTMLApplication #substitution",
+    "omission": "\\..\\ mshtml #135 RunHTMLApplication # omission",
+    "reordering": "\\..\\ #135 RunHTMLApplication mshtml",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XC4uXCBtc2h0bWwgIzEzNSBSdW5IVE1MQXBwbGljYXRpb24=')) | Invoke-Expression\" "
+  }
+}

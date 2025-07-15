@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_cmdline_convertto_securestring_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll ConvertTo-SecureString",
+  "evasions": {
+    "insertion": "\\powershell.exe \"\\pwsh.exe\" PowerShell.EXE pwsh.dll ConvertTo-SecureString",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll ConvertTo-SecureString #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll ConvertTo-SecureString",
+    "reordering": "\\powershell.exe ConvertTo-SecureString \\pwsh.exe PowerShell.EXE pwsh.dll",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEMAbwBuAHYAZQByAHQAVABvAC0AUwBlAGMAdQByAGUAUwB0AHIAaQBuAGcA "
+  }
+}

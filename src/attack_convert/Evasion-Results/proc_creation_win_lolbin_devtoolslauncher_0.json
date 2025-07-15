@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_devtoolslauncher_0",
+  "original_command": "\\devtoolslauncher.exe LaunchForDeploy",
+  "evasions": {
+    "insertion": "\\devtoolslauncher.exe \"LaunchF\"orDeploy",
+    "substitution": "\\devtoolslauncher.exe LaunchForDeploy #substitution",
+    "omission": "\\devtoolslauncher LaunchForDeploy",
+    "reordering": "\\devtoolslauncher.exe LaunchForDeploy",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRldnRvb2xzbGF1bmNoZXIuZXhlIExhdW5jaEZvckRlcGxveQ==')) | Invoke-Expression\" "
+  }
+}

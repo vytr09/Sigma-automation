@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_dumpstack_log_evasion_0",
+  "original_command": "\\DumpStack.log -o DumpStack.log",
+  "evasions": {
+    "insertion": "\\DumpStack.log -o \\\"D\\\"\\\"u\\\"\\\"m\\\"\\\"p\\\"\\\"S\\\"\\\"t\\\"\\\"a\\\"\\\"c\\\"\\\"k\\\"\\\".\\\"\\\"l\\\"\\\"o\\\"\\\"g\\\"",
+    "substitution": "\\DumpStack.log -o DumpStack.log #substitution",
+    "omission": "\\DumpStack.log -o DumpStack.log # omission",
+    "reordering": "\\DumpStack.log DumpStack.log -o",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XER1bXBTdGFjay5sb2cgLW8gRHVtcFN0YWNrLmxvZw==')) | Invoke-Expression\" "
+  }
+}

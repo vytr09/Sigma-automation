@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_get_localgroup_member_recon_0",
+  "original_command": "Get-LocalGroupMember domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto",
+  "evasions": {
+    "insertion": "Get-LocalGroupMember domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem \\\"R\\\"\\\"e\\\"\\\"m\\\"\\\"o\\\"\\\"t\\\"\\\"e\\\" Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto",
+    "substitution": "Get-LocalGroupMember domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto #substitution",
+    "omission": "Get-LocalGroupMember domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto # omission",
+    "reordering": "Get-LocalGroupMember domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R2V0LUxvY2FsR3JvdXBNZW1iZXIgZG9tYWluIGFkbWlucyBhZG1pbmlzdHJhdG9yIGFkbWluaXN0cmF0ZXVyIGVudGVycHJpc2UgYWRtaW5zIEV4Y2hhbmdlIFRydXN0ZWQgU3Vic3lzdGVtIFJlbW90ZSBEZXNrdG9wIFVzZXJzIFV0aWxpc2F0ZXVycyBkdSBCdXJlYXUgw6AgZGlzdGFuY2UgVXN1YXJpb3MgZGUgZXNjcml0b3JpbyByZW1vdG8=')) | Invoke-Expression\" "
+  }
+}

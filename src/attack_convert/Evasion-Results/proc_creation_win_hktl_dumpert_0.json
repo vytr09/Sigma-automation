@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_dumpert_0",
+  "original_command": "Dumpert.dll",
+  "evasions": {
+    "insertion": "Dumpert.dll",
+    "substitution": "Dumpert.dll #substitution",
+    "omission": "Dumpert.dll # omission",
+    "reordering": "Dumpert.dll",
+    "recoding": "powershell.exe -EncodedCommand RAB1AG0AcABlAHIAdAAuAGQAbABsAA== "
+  }
+}

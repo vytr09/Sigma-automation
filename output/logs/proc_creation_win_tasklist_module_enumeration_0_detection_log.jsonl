@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:25:18 UTC", "rule": "proc_creation_win_tasklist_module_enumeration_0", "phase": "original", "command": "\\tasklist.exe tasklist.exe -m rdpcorets.dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:25:26 UTC", "rule": "proc_creation_win_tasklist_module_enumeration_0", "phase": "insertion", "command": "\\tasklist.exe \\\"tasklist.exe\\\" \\\"-m\\\" rdpcorets.dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:25:32 UTC", "rule": "proc_creation_win_tasklist_module_enumeration_0", "phase": "substitution", "command": "\\tasklist.exe tasklist.exe -m rdpcorets.dll #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:25:38 UTC", "rule": "proc_creation_win_tasklist_module_enumeration_0", "phase": "omission", "command": "\\tasklist tasklist -m rdpcorets.dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:25:44 UTC", "rule": "proc_creation_win_tasklist_module_enumeration_0", "phase": "reordering", "command": "\\tasklist.exe rdpcorets.dll -m tasklist.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:25:50 UTC", "rule": "proc_creation_win_tasklist_module_enumeration_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XAB0AGEAcwBrAGwAaQBzAHQALgBlAHgAZQAgAHQAYQBzAGsAbABpAHMAdAAuAGUAeABlACAALQBtACAAcgBkAHAAYwBvAHIAZQB0AHMALgBkAGwAbAA= ", "status": "BYPASSED"}

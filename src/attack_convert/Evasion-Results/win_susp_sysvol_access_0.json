@@ -2,7 +2,7 @@
   "rule_name": "win_susp_sysvol_access_0",
   "original_command": "\\SYSVOL\\\\ \\policies\\\\",
   "evasions": {
-    "insertion": "\"\\SYSVOL\\\\\" \\policies\\\\",
+    "insertion": "\\SYSVOL\\\\ \\poli\\\"cies\\\\\\\"",
     "substitution": "\\SYSVOL\\\\ \\policies\\\\ #substitution",
     "omission": "\\SYSVOL\\\\ \\policies\\\\ # omission",
     "reordering": "\\SYSVOL\\\\ \\policies\\\\",

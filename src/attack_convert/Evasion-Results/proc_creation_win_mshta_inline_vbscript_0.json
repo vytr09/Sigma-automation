@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mshta_inline_vbscript_0",
+  "original_command": "Wscript. .Shell .Run",
+  "evasions": {
+    "insertion": "Wscript. .Shell .R\\\"un\\\"",
+    "substitution": "Wscript. .Shell .Run #substitution",
+    "omission": "Wscript. .Shell .Run # omission",
+    "reordering": "Wscript. .Run .Shell",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('V3NjcmlwdC4gLlNoZWxsIC5SdW4=')) | Invoke-Expression\" "
+  }
+}

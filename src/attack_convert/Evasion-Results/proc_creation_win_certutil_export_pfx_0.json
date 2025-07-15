@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_export_pfx_0",
+  "original_command": "\\certutil.exe CertUtil.exe -exportPFX",
+  "evasions": {
+    "insertion": "\\certutil.exe CertUtil.exe \"-expo\"rtPFX",
+    "substitution": "\\certutil.exe CertUtil.exe -exportPFX #substitution",
+    "omission": "\\certutil CertUtil -exportPFX",
+    "reordering": "\\certutil.exe CertUtil.exe -exportPFX",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWV4cG9ydFBGWA==')) | Invoke-Expression\" "
+  }
+}

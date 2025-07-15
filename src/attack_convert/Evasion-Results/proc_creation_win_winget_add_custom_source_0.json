@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winget_add_custom_source_0",
+  "original_command": "\\winget.exe winget.exe source add",
+  "evasions": {
+    "insertion": "\\winget.exe winget.exe sou\\\"rce\\\" add",
+    "substitution": "\\winget.exe winget.exe source add #substitution",
+    "omission": "\\winget winget source add",
+    "reordering": "\\winget.exe source winget.exe add",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdpbmdldC5leGUgd2luZ2V0LmV4ZSBzb3VyY2UgYWRk')) | Invoke-Expression\" "
+  }
+}

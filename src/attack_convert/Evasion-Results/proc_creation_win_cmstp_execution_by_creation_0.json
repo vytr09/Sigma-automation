@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmstp_execution_by_creation_0",
+  "original_command": "\\cmstp.exe",
+  "evasions": {
+    "insertion": "\\\"\\cmstp.exe\\\"",
+    "substitution": "\\cmstp.exe #substitution",
+    "omission": "\\cmstp",
+    "reordering": "\\cmstp.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtc3RwLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

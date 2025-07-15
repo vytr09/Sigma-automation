@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_powertool_0",
+  "original_command": "\\PowerTool.exe \\PowerTool64.exe PowerTool.exe",
+  "evasions": {
+    "insertion": "\\PowerTool.exe \\\"\\PowerTo\\\"ol64.exe PowerTool.exe",
+    "substitution": "\\PowerTool.exe \\PowerTool64.exe PowerTool.exe #substitution",
+    "omission": "\\PowerTool \\PowerTool64 PowerTool",
+    "reordering": "\\PowerTool.exe PowerTool.exe \\PowerTool64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFBvd2VyVG9vbC5leGUgXFBvd2VyVG9vbDY0LmV4ZSBQb3dlclRvb2wuZXhl')) | Invoke-Expression\" "
+  }
+}

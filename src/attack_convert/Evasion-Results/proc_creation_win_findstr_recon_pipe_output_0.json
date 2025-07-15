@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_findstr_recon_pipe_output_0",
+  "original_command": "ipconfig | find net | find netstat | find ping | find systeminfo | find tasklist | find whoami | find",
+  "evasions": {
+    "insertion": "ipconfig | find net | find netstat | find ping | find systeminfo | find tasklist | find whoami | find",
+    "substitution": "ipconfig | find net | find netstat | find ping | find systeminfo | find tasklist | find whoami | find #substitution",
+    "omission": "ipconfig | find net | find netstat | find ping | find systeminfo | find tasklist | find whoami | find # omission",
+    "reordering": "ipconfig | find net | find netstat | find ping | find systeminfo | find tasklist | find whoami | find",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aXBjb25maWcgfCBmaW5kIG5ldCB8IGZpbmQgbmV0c3RhdCB8IGZpbmQgcGluZyB8IGZpbmQgc3lzdGVtaW5mbyB8IGZpbmQgdGFza2xpc3QgfCBmaW5kIHdob2FtaSB8IGZpbmQ=')) | Invoke-Expression\" "
+  }
+}

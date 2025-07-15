@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regedit_export_critical_keys_0",
+  "original_command": "\\regedit.exe REGEDIT.EXE -E hklm hkey_local_machine",
+  "evasions": {
+    "insertion": "\\regedit.exe \\\"REGED\\\"IT.EXE -E hklm hkey_local_machine",
+    "substitution": "\\regedit.exe REGEDIT.EXE -E hklm hkey_local_machine #substitution",
+    "omission": "\\regedit REGEDIT -E hklm hkey_local_machine",
+    "reordering": "\\regedit.exe -E REGEDIT.EXE hkey_local_machine hklm",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2VkaXQuZXhlIFJFR0VESVQuRVhFIC1FIGhrbG0gaGtleV9sb2NhbF9tYWNoaW5l')) | Invoke-Expression\" "
+  }
+}

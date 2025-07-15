@@ -2,7 +2,7 @@
   "rule_name": "win_susp_adfind_0",
   "original_command": "adfind.exe objectcategory",
   "evasions": {
-    "insertion": "adfind.exe \\\"o\\\"\\\"b\\\"\\\"j\\\"\\\"e\\\"\\\"c\\\"\\\"t\\\"\\\"c\\\"\\\"a\\\"\\\"t\\\"\\\"e\\\"\\\"g\\\"\\\"o\\\"\\\"r\\\"\\\"y\\\"",
+    "insertion": "adfind.exe objectc\\\"ategory\\\"",
     "substitution": "adfind.exe objectcategory #substitution",
     "omission": "adfind objectcategory",
     "reordering": "adfind.exe objectcategory",

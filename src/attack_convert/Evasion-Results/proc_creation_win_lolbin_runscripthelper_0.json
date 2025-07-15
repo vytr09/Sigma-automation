@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_runscripthelper_0",
+  "original_command": "\\Runscripthelper.exe surfacecheck",
+  "evasions": {
+    "insertion": "\\Runscripthelper.exe surfac\\\"echeck\\\"",
+    "substitution": "\\Runscripthelper.exe surfacecheck #substitution",
+    "omission": "\\Runscripthelper surfacecheck",
+    "reordering": "\\Runscripthelper.exe surfacecheck",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFJ1bnNjcmlwdGhlbHBlci5leGUgc3VyZmFjZWNoZWNr')) | Invoke-Expression\" "
+  }
+}

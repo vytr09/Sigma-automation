@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_userinit_child_0",
+  "original_command": "\\userinit.exe \\netlogon\\ \\explorer.exe explorer.exe",
+  "evasions": {
+    "insertion": "\\userinit.exe \\\"\\netlogon\\\\\" \\explorer.exe explorer.exe",
+    "substitution": "\\userinit.exe \\netlogon\\ \\explorer.exe explorer.exe #substitution",
+    "omission": "\\userinit \\netlogon\\ \\explorer explorer",
+    "reordering": "\\userinit.exe \\explorer.exe \\netlogon\\ explorer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHVzZXJpbml0LmV4ZSBcbmV0bG9nb25cIFxleHBsb3Jlci5leGUgZXhwbG9yZXIuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_python_adidnsdump_0",
+  "original_command": "\\python.exe adidnsdump",
+  "evasions": {
+    "insertion": "\\python.exe \"adidn\"sdump",
+    "substitution": "\\python.exe adidnsdump #substitution",
+    "omission": "\\python adidnsdump",
+    "reordering": "\\python.exe adidnsdump",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHB5dGhvbi5leGUgYWRpZG5zZHVtcA==')) | Invoke-Expression\" "
+  }
+}

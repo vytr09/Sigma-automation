@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:28:18 UTC", "rule": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0", "phase": "original", "command": "\\odbcconf.exe odbcconf.exe REGSVR .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:28:25 UTC", "rule": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0", "phase": "insertion", "command": "\\odbcconf.exe \\\"odbcconf.exe\\\" \\\"REGSVR\\\" .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:28:31 UTC", "rule": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0", "phase": "substitution", "command": "\\odbcconf.exe odbcconf.exe REGSVR .dll #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:28:37 UTC", "rule": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0", "phase": "omission", "command": "\\odbcconf odbcconf REGSVR .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:28:44 UTC", "rule": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0", "phase": "reordering", "command": "\\odbcconf.exe odbcconf.exe REGSVR .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:28:49 UTC", "rule": "proc_creation_win_odbcconf_register_dll_regsvr_susp_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABvAGQAYgBjAGMAbwBuAGYALgBlAHgAZQAgAG8AZABiAGMAYwBvAG4AZgAuAGUAeABlACAAUgBFAEcAUwBWAFIAIAAuAGQAbABsAA== ", "status": "BYPASSED"}

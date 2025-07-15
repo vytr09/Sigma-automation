@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_service_dir_0",
+  "original_command": "\\services.exe \\svchost.exe",
+  "evasions": {
+    "insertion": "\"\\services.exe\" \\svchost.exe",
+    "substitution": "\\services.exe \\svchost.exe #substitution",
+    "omission": "\\services \\svchost",
+    "reordering": "\\services.exe \\svchost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNlcnZpY2VzLmV4ZSBcc3ZjaG9zdC5leGU=')) | Invoke-Expression\" "
+  }
+}

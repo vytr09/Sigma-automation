@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_child_process_as_system__0",
+  "original_command": "\\rundll32.exe DavSetCookie",
+  "evasions": {
+    "insertion": "\\rundll32.exe \\\"DavSetCookie\\\"",
+    "substitution": "\\rundll32.exe DavSetCookie #substitution",
+    "omission": "\\rundll32 DavSetCookie",
+    "reordering": "\\rundll32.exe DavSetCookie",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBEYXZTZXRDb29raWU=')) | Invoke-Expression\" "
+  }
+}

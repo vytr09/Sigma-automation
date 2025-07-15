@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_iis_susp_module_registration_0",
+  "original_command": "\\w3wp.exe appcmd.exe add module system.enterpriseservices.internal.publish \\powershell.exe gacutil /I",
+  "evasions": {
+    "insertion": "\\\"w\"\"3\"\"w\"\"p\"\".\"\"e\"\"x\"\"e\" appcmd.exe add module system.enterpriseservices.internal.publish \\powershell.exe gacutil /I",
+    "substitution": "\\w3wp.exe appcmd.exe add module system.enterpriseservices.internal.publish \\powershell.exe gacutil /I #substitution",
+    "omission": "\\w3wp appcmd add module system.enterpriseservices.internal.publish \\powershell gacutil /I",
+    "reordering": "\\w3wp.exe appcmd.exe add module system.enterpriseservices.internal.publish \\powershell.exe gacutil /I",
+    "recoding": "powershell.exe -EncodedCommand XAB3ADMAdwBwAC4AZQB4AGUAIABhAHAAcABjAG0AZAAuAGUAeABlACAAYQBkAGQAIABtAG8AZAB1AGwAZQAgAHMAeQBzAHQAZQBtAC4AZQBuAHQAZQByAHAAcgBpAHMAZQBzAGUAcgB2AGkAYwBlAHMALgBpAG4AdABlAHIAbgBhAGwALgBwAHUAYgBsAGkAcwBoACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABnAGEAYwB1AHQAaQBsACAALwBJAA== "
+  }
+}

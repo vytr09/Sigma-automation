@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:54:46 UTC", "rule": "proc_creation_win_wermgr_susp_exec_location_0", "phase": "original", "command": "\\wermgr.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:54:46 UTC", "rule": "proc_creation_win_wermgr_susp_exec_location_0", "phase": "insertion", "command": "\\\"\\wermgr.exe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:54:46 UTC", "rule": "proc_creation_win_wermgr_susp_exec_location_0", "phase": "substitution", "command": "\\wermgr.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:54:46 UTC", "rule": "proc_creation_win_wermgr_susp_exec_location_0", "phase": "omission", "command": "\\wermgr", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:54:46 UTC", "rule": "proc_creation_win_wermgr_susp_exec_location_0", "phase": "reordering", "command": "\\wermgr.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:54:46 UTC", "rule": "proc_creation_win_wermgr_susp_exec_location_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdlcm1nci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

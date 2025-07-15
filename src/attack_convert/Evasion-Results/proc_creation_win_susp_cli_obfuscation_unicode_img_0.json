@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_cli_obfuscation_unicode_img_0",
+  "original_command": "\\cmd.exe \\cscript.exe \\powershell.exe \\powershell_ise.exe \\pwsh.exe \\wscript.exe Cmd.EXE cscript.exe PowerShell.EXE PowerShell_ISE.EXE pwsh.dll wscript.exe ˣ ˪ ˢ ∕ ⁄ ― — ¯ ® ¶ ⠀",
+  "evasions": {
+    "insertion": "\\cmd.exe \\cscript.exe \\powershell.exe \\powershell_ise.exe \\pwsh.exe \\wscript.exe Cmd.EXE cscript.exe PowerShell.EXE PowerShell_ISE.EXE pwsh.dll wscript.exe ˣ \\\"˪\\\" \\\"ˢ\\\" ∕ ⁄ ― — ¯ ® ¶ ⠀",
+    "substitution": "\\cmd.exe \\cscript.exe \\powershell.exe \\powershell_ise.exe \\pwsh.exe \\wscript.exe Cmd.EXE cscript.exe PowerShell.EXE PowerShell_ISE.EXE pwsh.dll wscript.exe ˣ ˪ ˢ ∕ ⁄ ― — ¯ ® ¶ ⠀ #substitution",
+    "omission": "\\cmd \\cscript \\powershell \\powershell_ise \\pwsh \\wscript Cmd cscript PowerShell PowerShell_ISE pwsh.dll wscript ˣ ˪ ˢ ∕ ⁄ ― — ¯ ® ¶ ⠀",
+    "reordering": "\\cmd.exe \\cscript.exe \\powershell.exe \\powershell_ise.exe \\pwsh.exe \\wscript.exe Cmd.EXE cscript.exe PowerShell.EXE PowerShell_ISE.EXE pwsh.dll wscript.exe ˣ ˪ ˢ ∕ ⁄ ― — ¯ ® ¶ ⠀",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbABfAGkAcwBlAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAAQwBtAGQALgBFAFgARQAgAGMAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwAXwBJAFMARQAuAEUAWABFACAAcAB3AHMAaAAuAGQAbABsACAAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAA4wIgAOoCIADiAiAAFSIgAEQgIAAVICAAFCAgAK8AIACuACAAtgAgAAAo "
+  }
+}

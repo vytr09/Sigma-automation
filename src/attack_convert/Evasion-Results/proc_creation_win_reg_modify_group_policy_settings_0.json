@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_modify_group_policy_settings_0",
+  "original_command": "\\reg.exe reg.exe \\SOFTWARE\\Policies\\Microsoft\\Windows\\System GroupPolicyRefreshTimeDC GroupPolicyRefreshTimeOffsetDC GroupPolicyRefreshTime GroupPolicyRefreshTimeOffset EnableSmartScreen ShellSmartScreenLevel",
+  "evasions": {
+    "insertion": "\\reg.exe reg.exe \\SOFTWARE\\Policies\\Microsoft\\Windows\\System GroupPolicyRefreshTimeDC GroupPolicyRefreshTimeOffsetDC GroupPolicyRefreshTime \"GroupPolicyRefreshTimeOffset\" \"EnableSmartScreen\" ShellSmartScreenLevel",
+    "substitution": "\\reg.exe reg.exe \\SOFTWARE\\Policies\\Microsoft\\Windows\\System GroupPolicyRefreshTimeDC GroupPolicyRefreshTimeOffsetDC GroupPolicyRefreshTime GroupPolicyRefreshTimeOffset EnableSmartScreen ShellSmartScreenLevel #substitution",
+    "omission": "\\reg reg \\SOFTWARE\\Policies\\Microsoft\\Windows\\System GroupPolicyRefreshTimeDC GroupPolicyRefreshTimeOffsetDC GroupPolicyRefreshTime GroupPolicyRefreshTimeOffset EnableSmartScreen ShellSmartScreenLevel",
+    "reordering": "\\reg.exe reg.exe \\SOFTWARE\\Policies\\Microsoft\\Windows\\System GroupPolicyRefreshTimeDC GroupPolicyRefreshTimeOffsetDC GroupPolicyRefreshTime GroupPolicyRefreshTimeOffset EnableSmartScreen ShellSmartScreenLevel",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnLmV4ZSBcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcU3lzdGVtIEdyb3VwUG9saWN5UmVmcmVzaFRpbWVEQyBHcm91cFBvbGljeVJlZnJlc2hUaW1lT2Zmc2V0REMgR3JvdXBQb2xpY3lSZWZyZXNoVGltZSBHcm91cFBvbGljeVJlZnJlc2hUaW1lT2Zmc2V0IEVuYWJsZVNtYXJ0U2NyZWVuIFNoZWxsU21hcnRTY3JlZW5MZXZlbA==')) | Invoke-Expression\" "
+  }
+}

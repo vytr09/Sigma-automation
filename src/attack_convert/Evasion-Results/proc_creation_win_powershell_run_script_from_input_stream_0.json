@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_run_script_from_input_stream_0",
+  "original_command": "\\powershell.exe \\pwsh.exe",
+  "evasions": {
+    "insertion": "\\powershell.exe \\\"\\pws\\\"h.exe",
+    "substitution": "\\powershell.exe \\pwsh.exe #substitution",
+    "omission": "\\powershell \\pwsh",
+    "reordering": "\\powershell.exe \\pwsh.exe",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQA= "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_java_susp_child_process_0",
+  "original_command": "\\java.exe \\AppVLP.exe \\bitsadmin.exe \\certutil.exe \\cscript.exe \\curl.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\mshta.exe \\net.exe \\net1.exe \\query.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\systeminfo.exe \\whoami.exe \\wmic.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "\\java.exe \\AppVLP.exe \\bitsadmin.exe \\certutil.exe \\cscript.exe \\curl.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\mshta.exe \\net.exe \\net1.exe \\query.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schta\\\"sks.exe\\\" \\scrcons.exe \\scriptrunner.exe \\sh.exe \\systeminfo.exe \\whoami.exe \\wmic.exe \\wscript.exe",
+    "substitution": "\\java.exe \\AppVLP.exe \\bitsadmin.exe \\certutil.exe \\cscript.exe \\curl.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\mshta.exe \\net.exe \\net1.exe \\query.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\systeminfo.exe \\whoami.exe \\wmic.exe \\wscript.exe",
+    "omission": "\\java \\AppVLP \\bitsadmin \\certutil \\cscript \\curl \\forfiles \\hh \\mftrace \\mshta \\net \\net1 \\query \\reg \\regsvr32 \\rundll32 \\schtasks \\scrcons \\scriptrunner \\sh \\systeminfo \\whoami \\wmic \\wscript",
+    "reordering": "\\java.exe \\AppVLP.exe \\bitsadmin.exe \\certutil.exe \\cscript.exe \\curl.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\mshta.exe \\net.exe \\net1.exe \\query.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\systeminfo.exe \\whoami.exe \\wmic.exe \\wscript.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGphdmEuZXhlIFxBcHBWTFAuZXhlIFxiaXRzYWRtaW4uZXhlIFxjZXJ0dXRpbC5leGUgXGNzY3JpcHQuZXhlIFxjdXJsLmV4ZSBcZm9yZmlsZXMuZXhlIFxoaC5leGUgXG1mdHJhY2UuZXhlIFxtc2h0YS5leGUgXG5ldC5leGUgXG5ldDEuZXhlIFxxdWVyeS5leGUgXHJlZy5leGUgXHJlZ3N2cjMyLmV4ZSBccnVuZGxsMzIuZXhlIFxzY2h0YXNrcy5leGUgXHNjcmNvbnMuZXhlIFxzY3JpcHRydW5uZXIuZXhlIFxzaC5leGUgXHN5c3RlbWluZm8uZXhlIFx3aG9hbWkuZXhlIFx3bWljLmV4ZSBcd3NjcmlwdC5leGU=')) | Invoke-Expression\" "
+  }
+}

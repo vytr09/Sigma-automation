@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_screensaver_0",
+  "original_command": "\\reg.exe HKEY_CURRENT_USER\\Control Panel\\Desktop HKCU\\Control Panel\\Desktop /v ScreenSaveActive /t REG_SZ /d 1 /f /v ScreenSaveTimeout /t REG_SZ /d /f /v ScreenSaverIsSecure /t REG_SZ /d 0 /f /v SCRNSAVE.EXE /t REG_SZ /d .scr /f",
+  "evasions": {
+    "insertion": "\\reg.exe HKEY_CURRENT_USER\\Control Panel\\Desktop \\\"HKCU\\C\\\"ontrol Panel\\Desktop /v ScreenSaveActive /t REG_SZ /d 1 /f /v ScreenSaveTimeout /t REG_SZ /d /f /v ScreenSaverIsSecure /t REG_SZ /d 0 /f /v SCRNSAVE.EXE /t REG_SZ /d .scr /f",
+    "substitution": "\\reg.exe HKEY_CURRENT_USER\\Control Panel\\Desktop HKCU\\Control Panel\\Desktop /v ScreenSaveActive /t REG_SZ /d 1 /f /v ScreenSaveTimeout /t REG_SZ /d /f /v ScreenSaverIsSecure /t REG_SZ /d 0 /f /v SCRNSAVE.EXE /t REG_SZ /d .scr /f",
+    "omission": "\\reg HKEY_CURRENT_USER\\Control Panel\\Desktop HKCU\\Control Panel\\Desktop /v ScreenSaveActive /t REG_SZ /d 1 /f /v ScreenSaveTimeout /t REG_SZ /d /f /v ScreenSaverIsSecure /t REG_SZ /d 0 /f /v SCRNSAVE /t REG_SZ /d .scr /f",
+    "reordering": "\\reg.exe HKEY_CURRENT_USER\\Control Panel\\Desktop HKCU\\Control Panel\\Desktop /v ScreenSaveActive /t REG_SZ /d 1 /f /v ScreenSaveTimeout /t REG_SZ /d /f /v ScreenSaverIsSecure /t REG_SZ /d 0 /f /v SCRNSAVE.EXE /t REG_SZ /d .scr /f",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgSEtFWV9DVVJSRU5UX1VTRVJcQ29udHJvbCBQYW5lbFxEZXNrdG9wIEhLQ1VcQ29udHJvbCBQYW5lbFxEZXNrdG9wIC92IFNjcmVlblNhdmVBY3RpdmUgL3QgUkVHX1NaIC9kIDEgL2YgL3YgU2NyZWVuU2F2ZVRpbWVvdXQgL3QgUkVHX1NaIC9kIC9mIC92IFNjcmVlblNhdmVySXNTZWN1cmUgL3QgUkVHX1NaIC9kIDAgL2YgL3YgU0NSTlNBVkUuRVhFIC90IFJFR19TWiAvZCAuc2NyIC9m')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_msdt_answer_file_0",
+  "original_command": "\\msdt.exe \\WINDOWS\\diagnostics\\index\\PCWDiagnostic.xml -af /af \\pcwrun.exe",
+  "evasions": {
+    "insertion": "\\msdt.exe \\WINDOWS\\diagnostics\\index\\PCWDiagnostic.xml -af /af \\\"p\"\"c\"\"w\"\"r\"\"u\"\"n\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\msdt.exe \\WINDOWS\\diagnostics\\index\\PCWDiagnostic.xml -af /af \\pcwrun.exe #substitution",
+    "omission": "\\msdt \\WINDOWS\\diagnostics\\index\\PCWDiagnostic.xml -af /af \\pcwrun",
+    "reordering": "\\msdt.exe \\WINDOWS\\diagnostics\\index\\PCWDiagnostic.xml -af /af \\pcwrun.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zZHQuZXhlIFxXSU5ET1dTXGRpYWdub3N0aWNzXGluZGV4XFBDV0RpYWdub3N0aWMueG1sIC1hZiAvYWYgXHBjd3J1bi5leGU=')) | Invoke-Expression\" "
+  }
+}

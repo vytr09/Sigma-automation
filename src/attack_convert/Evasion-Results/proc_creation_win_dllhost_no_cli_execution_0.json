@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dllhost_no_cli_execution_0",
+  "original_command": "\\dllhost.exe",
+  "evasions": {
+    "insertion": "\"\\dllhost.exe\"",
+    "substitution": "\\dllhost.exe #substitution",
+    "omission": "\\dllhost",
+    "reordering": "\\dllhost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRsbGhvc3QuZXhl')) | Invoke-Expression\" "
+  }
+}

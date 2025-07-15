@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_susp_grpconv_0",
+  "original_command": "grpconv.exe -o grpconv -o",
+  "evasions": {
+    "insertion": "grpconv.exe \\\"-o\\\" \\\"grpconv\\\" -o",
+    "substitution": "grpconv.exe -o grpconv -o #substitution",
+    "omission": "grpconv -o grpconv -o",
+    "reordering": "grpconv.exe -o -o grpconv",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Z3JwY29udi5leGUgLW8gZ3JwY29udiAtbw==')) | Invoke-Expression\" "
+  }
+}

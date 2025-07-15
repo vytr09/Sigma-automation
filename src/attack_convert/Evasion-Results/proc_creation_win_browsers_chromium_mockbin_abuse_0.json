@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_chromium_mockbin_abuse_0",
+  "original_command": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless ://run.mocky ://mockbin",
+  "evasions": {
+    "insertion": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --hea\"dless\" ://run.mocky ://mockbin",
+    "substitution": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless ://run.mocky ://mockbin #substitution",
+    "omission": "\\brave \\chrome \\msedge \\opera \\vivaldi --headless ://run.mocky ://mockbin",
+    "reordering": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless ://run.mocky ://mockbin",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcY2hyb21lLmV4ZSBcbXNlZGdlLmV4ZSBcb3BlcmEuZXhlIFx2aXZhbGRpLmV4ZSAtLWhlYWRsZXNzIDovL3J1bi5tb2NreSA6Ly9tb2NrYmlu')) | Invoke-Expression\" "
+  }
+}

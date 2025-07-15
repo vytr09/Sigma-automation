@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_crackmapexec_execution_patterns_0",
+  "original_command": "cmd.exe /Q /c 1> \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\Temp\\\\ 2>&1 powershell.exe -exec bypass -noni -nop -w 1 -C powershell.exe -noni -nop -w 1 -enc",
+  "evasions": {
+    "insertion": "cmd.exe /Q /c 1> \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\Temp\\\\ 2>&1 powershell.exe -exec bypass -noni -nop -w 1 -C powershell.exe -noni -nop -w 1 -enc",
+    "substitution": "cmd.exe /Q /c 1> \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\Temp\\\\ 2>&1 powershell.exe -exec bypass -noni -nop -w 1 -C powershell.exe -noni -nop -w 1 -encc",
+    "omission": "cmd /Q /c 1> \\\\\\\\ \\\\ \\\\ 2>&1 cmd /C > \\\\\\\\ \\\\ \\\\ 2>&1 cmd /C > \\\\Temp\\\\ 2>&1 powershell -exec bypass -noni -nop -w 1 -C powershell -noni -nop -w 1 -enc",
+    "reordering": "cmd.exe /Q /c 1> \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\\\\\ \\\\ \\\\ 2>&1 cmd.exe /C > \\\\Temp\\\\ 2>&1 powershell.exe -exec bypass -noni -nop -w 1 -C powershell.exe -noni -nop -w 1 -enc",
+    "recoding": "powershell.exe -EncodedCommand YwBtAGQALgBlAHgAZQAgAC8AUQAgAC8AYwAgADEAPgAgAFwAXABcAFwAIABcAFwAIABcAFwAIAAyAD4AJgAxACAAYwBtAGQALgBlAHgAZQAgAC8AQwAgAD4AIABcAFwAXABcACAAXABcACAAXABcACAAMgA+ACYAMQAgAGMAbQBkAC4AZQB4AGUAIAAvAEMAIAA+ACAAXABcAFQAZQBtAHAAXABcACAAMgA+ACYAMQAgAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAC0AZQB4AGUAYwAgAGIAeQBwAGEAcwBzACAALQBuAG8AbgBpACAALQBuAG8AcAAgAC0AdwAgADEAIAAtAEMAIABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIAAtAG4AbwBuAGkAIAAtAG4AbwBwACAALQB3ACAAMQAgAC0AZQBuAGMA "
+  }
+}

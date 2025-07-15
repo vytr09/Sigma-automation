@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_use_of_vsjitdebugger_bin_0",
+  "original_command": "\\vsjitdebugger.exe \\vsimmersiveactivatehelper .exe \\devenv.exe",
+  "evasions": {
+    "insertion": "\\vsjitdebugger.exe \\vsimmersiveactivatehelper \".exe\" \"\\devenv.exe\"",
+    "substitution": "\\vsjitdebugger.exe \\vsimmersiveactivatehelper .exe \\devenv.exe #substitution",
+    "omission": "\\vsjitdebugger \\vsimmersiveactivatehelper \\devenv",
+    "reordering": "\\vsjitdebugger.exe \\devenv.exe .exe \\vsimmersiveactivatehelper",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHZzaml0ZGVidWdnZXIuZXhlIFx2c2ltbWVyc2l2ZWFjdGl2YXRlaGVscGVyIC5leGUgXGRldmVudi5leGU=')) | Invoke-Expression\" "
+  }
+}

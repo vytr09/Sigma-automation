@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_calc_uncommon_exec_0",
+  "original_command": "\\calc.exe \\calc.exe",
+  "evasions": {
+    "insertion": "\\calc.exe \\\"\\cal\\\"c.exe",
+    "substitution": "\\calc.exe \\calc.exe #substitution",
+    "omission": "\\calc \\calc",
+    "reordering": "\\calc.exe \\calc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNhbGMuZXhlIFxjYWxjLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

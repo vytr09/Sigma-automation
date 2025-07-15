@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ntdsutil_usage_0",
+  "original_command": "\\ntdsutil.exe",
+  "evasions": {
+    "insertion": "\"\\ntdsutil.exe\"",
+    "substitution": "\\ntdsutil.exe #substitution",
+    "omission": "\\ntdsutil",
+    "reordering": "\\ntdsutil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG50ZHN1dGlsLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

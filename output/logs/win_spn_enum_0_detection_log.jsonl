@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 09:25:32 UTC", "rule": "win_spn_enum_0", "phase": "omission", "command": "setspn -q", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:25:39 UTC", "rule": "win_spn_enum_0", "phase": "reordering", "command": "setspn.exe -q", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:25:46 UTC", "rule": "win_spn_enum_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:02:36 UTC", "rule": "win_spn_enum_0", "phase": "original", "command": "setspn.exe -q", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:02:40 UTC", "rule": "win_spn_enum_0", "phase": "insertion", "command": "setspn.exe \"-\"\"q\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:02:43 UTC", "rule": "win_spn_enum_0", "phase": "substitution", "command": "setspn.exe -q #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:02:47 UTC", "rule": "win_spn_enum_0", "phase": "omission", "command": "setspn -q", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:02:50 UTC", "rule": "win_spn_enum_0", "phase": "reordering", "command": "setspn.exe -q", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:02:54 UTC", "rule": "win_spn_enum_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2V0c3BuLmV4ZSAtcQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

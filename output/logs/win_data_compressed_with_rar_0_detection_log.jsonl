@@ -4,15 +4,3 @@
 {"timestamp": "2025-04-23 08:54:18 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "omission", "command": "rar a", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:54:25 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "reordering", "command": "rar.exe a", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:54:47 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:32:38 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "original", "command": "rar.exe a", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:32:45 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "insertion", "command": "rar.exe \"a\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:32:51 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "substitution", "command": "rar.exe a #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:32:57 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "omission", "command": "rar a", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:04 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "reordering", "command": "rar.exe a", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:11 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmFyLmV4ZSBh')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:51:51 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "original", "command": "rar.exe a", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:51:55 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "insertion", "command": "rar.exe \"a\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:51:58 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "substitution", "command": "rar.exe a #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:52:02 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "omission", "command": "rar a", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:05 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "reordering", "command": "rar.exe a", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:52:09 UTC", "rule": "win_data_compressed_with_rar_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmFyLmV4ZSBh')) | Invoke-Expression\" ", "status": "BYPASSED"}

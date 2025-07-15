@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_uninstall_application_0",
+  "original_command": "\\WMIC.exe wmic.exe call uninstall",
+  "evasions": {
+    "insertion": "\\\"\\WMIC.exe\\\" wmic.exe call uninstall",
+    "substitution": "\\WMIC.exe wmic.exe --call uninstall",
+    "omission": "\\WMIC wmic call uninstall",
+    "reordering": "\\WMIC.exe uninstall wmic.exe call",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdNSUMuZXhlIHdtaWMuZXhlIGNhbGwgdW5pbnN0YWxs')) | Invoke-Expression\" "
+  }
+}

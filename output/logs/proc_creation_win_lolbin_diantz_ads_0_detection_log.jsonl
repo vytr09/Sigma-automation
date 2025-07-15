@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:29:45 UTC", "rule": "proc_creation_win_lolbin_diantz_ads_0", "phase": "original", "command": "diantz.exe .cab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:29:45 UTC", "rule": "proc_creation_win_lolbin_diantz_ads_0", "phase": "insertion", "command": "diantz.exe \".c\"ab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:29:45 UTC", "rule": "proc_creation_win_lolbin_diantz_ads_0", "phase": "substitution", "command": "diantz.exe .cab #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:29:45 UTC", "rule": "proc_creation_win_lolbin_diantz_ads_0", "phase": "omission", "command": "diantz .cab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:29:45 UTC", "rule": "proc_creation_win_lolbin_diantz_ads_0", "phase": "reordering", "command": "diantz.exe .cab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:29:45 UTC", "rule": "proc_creation_win_lolbin_diantz_ads_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZGlhbnR6LmV4ZSAuY2Fi')) | Invoke-Expression\" ", "status": "BYPASSED"}

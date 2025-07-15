@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_fsutil_drive_enumeration_0",
+  "original_command": "\\fsutil.exe fsutil.exe drives",
+  "evasions": {
+    "insertion": "\\fsutil.exe \"f\"\"s\"\"u\"\"t\"\"i\"\"l\"\".\"\"e\"\"x\"\"e\" drives",
+    "substitution": "\\fsutil.exe fsutil.exe drives #substitution",
+    "omission": "\\fsutil fsutil drives",
+    "reordering": "\\fsutil.exe drives fsutil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZzdXRpbC5leGUgZnN1dGlsLmV4ZSBkcml2ZXM=')) | Invoke-Expression\" "
+  }
+}

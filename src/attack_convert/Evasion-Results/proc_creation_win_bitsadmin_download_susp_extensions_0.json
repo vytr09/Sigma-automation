@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bitsadmin_download_susp_extensions_0",
+  "original_command": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile .7z .asax .ashx .asmx .asp .aspx .bat .cfm .cgi .chm .cmd .dll .gif .jpeg .jpg .jsp .jspx .log .png .ps1 .psm1 .rar .scf .sct .txt .vbe .vbs .war .wsf .wsh .xll .zip",
+  "evasions": {
+    "insertion": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile .7z .asax .ashx .asmx .asp .aspx \\\".bat\\\" \\\".cfm\\\" .cgi .chm .cmd .dll .gif .jpeg .jpg .jsp .jspx .log .png .ps1 .psm1 .rar .scf .sct .txt .vbe .vbs .war .wsf .wsh .xll .zip",
+    "substitution": "\\bitsadmin.exe bitsadmin.exe /transfer -create /addfile .7z .asax .ashx .asmx .asp .aspx .bat .cfm .cgi .chm .cmd .dll .gif .jpeg .jpg .jsp .jspx .log .png .ps1 .psm1 .rar .scf .sct .txt .vbe .vbs .war .wsf .wsh .xll .zip",
+    "omission": "\\bitsadmin bitsadmin /transfer /create /addfile .7z .asax .ashx .asmx .asp .aspx .cfm .cgi .chm .dll .gif .jpeg .jpg .jsp .jspx .log .png .psm1 .rar .scf .sct .txt .vbe .war .wsf .wsh .xll .zip",
+    "reordering": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile .7z .asax .ashx .asmx .asp .aspx .bat .cfm .cgi .chm .cmd .dll .gif .jpeg .jpg .jsp .jspx .log .png .ps1 .psm1 .rar .scf .sct .txt .vbe .vbs .war .wsf .wsh .xll .zip",
+    "recoding": "powershell.exe -EncodedCommand XABiAGkAdABzAGEAZABtAGkAbgAuAGUAeABlACAAYgBpAHQAcwBhAGQAbQBpAG4ALgBlAHgAZQAgAC8AdAByAGEAbgBzAGYAZQByACAALwBjAHIAZQBhAHQAZQAgAC8AYQBkAGQAZgBpAGwAZQAgAC4ANwB6ACAALgBhAHMAYQB4ACAALgBhAHMAaAB4ACAALgBhAHMAbQB4ACAALgBhAHMAcAAgAC4AYQBzAHAAeAAgAC4AYgBhAHQAIAAuAGMAZgBtACAALgBjAGcAaQAgAC4AYwBoAG0AIAAuAGMAbQBkACAALgBkAGwAbAAgAC4AZwBpAGYAIAAuAGoAcABlAGcAIAAuAGoAcABnACAALgBqAHMAcAAgAC4AagBzAHAAeAAgAC4AbABvAGcAIAAuAHAAbgBnACAALgBwAHMAMQAgAC4AcABzAG0AMQAgAC4AcgBhAHIAIAAuAHMAYwBmACAALgBzAGMAdAAgAC4AdAB4AHQAIAAuAHYAYgBlACAALgB2AGIAcwAgAC4AdwBhAHIAIAAuAHcAcwBmACAALgB3AHMAaAAgAC4AeABsAGwAIAAuAHoAaQBwAA== "
+  }
+}

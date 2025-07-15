@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_forfiles_proxy_execution__0",
+  "original_command": "\\forfiles.exe forfiles.exe -c",
+  "evasions": {
+    "insertion": "\\forfiles.exe \"forfiles.exe\" -c",
+    "substitution": "\\forfiles.exe forfiles.exe -c #substitution",
+    "omission": "\\forfiles forfiles -c",
+    "reordering": "\\forfiles.exe forfiles.exe -c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZvcmZpbGVzLmV4ZSBmb3JmaWxlcy5leGUgLWM=')) | Invoke-Expression\" "
+  }
+}

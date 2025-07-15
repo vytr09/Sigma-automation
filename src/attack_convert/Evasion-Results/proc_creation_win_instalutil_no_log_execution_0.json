@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_instalutil_no_log_execution_0",
+  "original_command": "\\InstallUtil.exe /logfile= /LogToConsole=false",
+  "evasions": {
+    "insertion": "\\\"I\"\"n\"\"s\"\"t\"\"a\"\"l\"\"l\"\"U\"\"t\"\"i\"\"l\"\".\"\"e\"\"x\"\"e\" /logfile= /LogToConsole=false",
+    "substitution": "\\InstallUtil.exe /logfile= /LogToConsole=false #substitution",
+    "omission": "\\InstallUtil /logfile= /LogToConsole=false",
+    "reordering": "\\InstallUtil.exe /logfile= /LogToConsole=false",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEluc3RhbGxVdGlsLmV4ZSAvbG9nZmlsZT0gL0xvZ1RvQ29uc29sZT1mYWxzZQ==')) | Invoke-Expression\" "
+  }
+}

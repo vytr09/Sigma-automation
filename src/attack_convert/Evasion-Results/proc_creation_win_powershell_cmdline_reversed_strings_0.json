@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_cmdline_reversed_strings_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll hctac kaerb dnammoc ekovn eliFd rahc etirw golon tninon eddih tpircS ssecorp llehsrewop esnopser daolnwod tneilCbeW tneilc ptth elifotevas 46esab htaPpmeTteG tcejbO maerts hcaerof retupmoc -EncodedCommand -enc",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll hctac ka\\\"erb\\\" dnammoc ekovn eliFd rahc etirw golon tninon eddih tpircS ssecorp llehsrewop esnopser daolnwod tneilCbeW tneilc ptth elifotevas 46esab htaPpmeTteG tcejbO maerts hcaerof retupmoc -EncodedCommand -enc",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll hctac kaerb dnammoc ekovn eliFd rahc etirw golon tninon eddih tpircS ssecorp llehsrewop esnopser daolnwod tneilCbeW tneilc ptth elifotevas 46esab htaPpmeTteG tcejbO maerts hcaerof retupmoc -enc -enc",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll hctac kaerb dnammoc ekovn eliFd rahc etirw golon tninon eddih tpircS ssecorp llehsrewop esnopser daolnwod tneilCbeW tneilc ptth elifotevas 46esab htaPpmeTteG tcejbO maerts hcaerof retupmoc -EncodedCommand -enc",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll hctac kaerb dnammoc ekovn eliFd rahc etirw golon tninon eddih tpircS ssecorp llehsrewop esnopser daolnwod tneilCbeW tneilc ptth elifotevas 46esab htaPpmeTteG tcejbO maerts hcaerof retupmoc -EncodedCommand -enc",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAGgAYwB0AGEAYwAgAGsAYQBlAHIAYgAgAGQAbgBhAG0AbQBvAGMAIABlAGsAbwB2AG4AIABlAGwAaQBGAGQAIAByAGEAaABjACAAZQB0AGkAcgB3ACAAZwBvAGwAbwBuACAAdABuAGkAbgBvAG4AIABlAGQAZABpAGgAIAB0AHAAaQByAGMAUwAgAHMAcwBlAGMAbwByAHAAIABsAGwAZQBoAHMAcgBlAHcAbwBwACAAZQBzAG4AbwBwAHMAZQByACAAZABhAG8AbABuAHcAbwBkACAAdABuAGUAaQBsAEMAYgBlAFcAIAB0AG4AZQBpAGwAYwAgAHAAdAB0AGgAIABlAGwAaQBmAG8AdABlAHYAYQBzACAANAA2AGUAcwBhAGIAIABoAHQAYQBQAHAAbQBlAFQAdABlAEcAIAB0AGMAZQBqAGIATwAgAG0AYQBlAHIAdABzACAAaABjAGEAZQByAG8AZgAgAHIAZQB0AHUAcABtAG8AYwAgAC0ARQBuAGMAbwBkAGUAZABDAG8AbQBtAGEAbgBkACAALQBlAG4AYwA= "
+  }
+}

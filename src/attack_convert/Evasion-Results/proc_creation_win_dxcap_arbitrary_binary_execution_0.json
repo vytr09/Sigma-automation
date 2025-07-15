@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dxcap_arbitrary_binary_execution_0",
+  "original_command": "\\DXCap.exe DXCap.exe -c",
+  "evasions": {
+    "insertion": "\\DXCap.exe DXCap.exe \\\"-\\\"\\\"c\\\"",
+    "substitution": "\\DXCap.exe DXCap.exe -c #substitution",
+    "omission": "\\DXCap DXCap -c",
+    "reordering": "\\DXCap.exe -c DXCap.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XERYQ2FwLmV4ZSBEWENhcC5leGUgLWM=')) | Invoke-Expression\" "
+  }
+}

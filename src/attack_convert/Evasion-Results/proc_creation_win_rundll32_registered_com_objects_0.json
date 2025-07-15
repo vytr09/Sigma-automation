@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_registered_com_objects_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE -sta -localserver { }",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE \\\"-\\\"\\\"s\\\"\\\"t\\\"\\\"a\\\" -localserver { }",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE -sta -localserver { } #substitution",
+    "omission": "\\rundll32 RUNDLL32 -sta -localserver { }",
+    "reordering": "\\rundll32.exe { -localserver -sta } RUNDLL32.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgLXN0YSAtbG9jYWxzZXJ2ZXIgeyB9')) | Invoke-Expression\" "
+  }
+}

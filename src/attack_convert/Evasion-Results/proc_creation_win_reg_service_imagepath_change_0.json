@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_service_imagepath_change_0",
+  "original_command": "\\reg.exe add SYSTEM\\CurrentControlSet\\Services\\ ImagePath -d",
+  "evasions": {
+    "insertion": "\\\"r\"\"e\"\"g\"\".\"\"e\"\"x\"\"e\" add SYSTEM\\CurrentControlSet\\Services\\ ImagePath -d",
+    "substitution": "\\reg.exe add SYSTEM\\CurrentControlSet\\Services\\ ImagePath -d",
+    "omission": "\\reg add SYSTEM\\CurrentControlSet\\Services\\ ImagePath -d",
+    "reordering": "\\reg.exe -d SYSTEM\\CurrentControlSet\\Services\\ add ImagePath",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgYWRkIFNZU1RFTVxDdXJyZW50Q29udHJvbFNldFxTZXJ2aWNlc1wgSW1hZ2VQYXRoIC1k')) | Invoke-Expression\" "
+  }
+}

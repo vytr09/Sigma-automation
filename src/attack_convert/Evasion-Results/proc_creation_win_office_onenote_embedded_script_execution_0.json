@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_onenote_embedded_script_execution_0",
+  "original_command": "\\onenote.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\exported\\ \\onenoteofflinecache_files\\",
+  "evasions": {
+    "insertion": "\\onenote.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pws\"h.exe\" \\wscript.exe \\exported\\ \\onenoteofflinecache_files\\",
+    "substitution": "\\onenote.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\exported\\ \\onenoteofflinecache_files\\ #substitution",
+    "omission": "\\onenote \\cmd \\cscript \\mshta \\powershell \\pwsh \\wscript \\exported\\ \\onenoteofflinecache_files\\",
+    "reordering": "\\onenote.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\exported\\ \\onenoteofflinecache_files\\",
+    "recoding": "powershell.exe -EncodedCommand XABvAG4AZQBuAG8AdABlAC4AZQB4AGUAIABcAGMAbQBkAC4AZQB4AGUAIABcAGMAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAbQBzAGgAdABhAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcAB3AHMAaAAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAGUAeABwAG8AcgB0AGUAZABcACAAXABvAG4AZQBuAG8AdABlAG8AZgBmAGwAaQBuAGUAYwBhAGMAaABlAF8AZgBpAGwAZQBzAFwA "
+  }
+}

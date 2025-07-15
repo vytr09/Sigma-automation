@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_anydesk_silent_install_0",
+  "original_command": "--install --start-with-win --silent",
+  "evasions": {
+    "insertion": "--install --start-\"with-win\" --silent",
+    "substitution": "--install --start-with-win --silent #substitution",
+    "omission": "--install --start-with-win --silent # omission",
+    "reordering": "--install --silent --start-with-win",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1pbnN0YWxsIC0tc3RhcnQtd2l0aC13aW4gLS1zaWxlbnQ=')) | Invoke-Expression\" "
+  }
+}

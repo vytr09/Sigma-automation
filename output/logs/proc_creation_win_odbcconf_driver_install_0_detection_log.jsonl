@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:25:46 UTC", "rule": "proc_creation_win_odbcconf_driver_install_0", "phase": "original", "command": "\\odbcconf.exe odbcconf.exe INSTALLDRIVER .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:25:54 UTC", "rule": "proc_creation_win_odbcconf_driver_install_0", "phase": "insertion", "command": "\\odbcconf.exe odbcconf.exe INSTALLDRIVER \".dll\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:26:01 UTC", "rule": "proc_creation_win_odbcconf_driver_install_0", "phase": "substitution", "command": "\\odbcconf.exe odbcconf.exe INSTALLDRIVER .dll #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:26:08 UTC", "rule": "proc_creation_win_odbcconf_driver_install_0", "phase": "omission", "command": "\\odbcconf odbcconf INSTALLDRIVER .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:26:19 UTC", "rule": "proc_creation_win_odbcconf_driver_install_0", "phase": "reordering", "command": "\\odbcconf.exe .dll INSTALLDRIVER odbcconf.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:26:25 UTC", "rule": "proc_creation_win_odbcconf_driver_install_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABvAGQAYgBjAGMAbwBuAGYALgBlAHgAZQAgAG8AZABiAGMAYwBvAG4AZgAuAGUAeABlACAASQBOAFMAVABBAEwATABEAFIASQBWAEUAUgAgAC4AZABsAGwA ", "status": "BYPASSED"}

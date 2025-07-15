@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msiexec_embedding_0",
+  "original_command": "\\powershell.exe \\pwsh.exe \\cmd.exe MsiExec.exe -Embedding :\\Windows\\System32\\cmd.exe C:\\Program Files\\SplunkUniversalForwarder\\bin\\ \\DismFoDInstall.cmd \\MsiExec.exe -Embedding Global\\MSI0000",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe \\cmd.exe MsiExec.exe -Embedding \\\":\\Windows\\System32\\cmd.exe\\\" C:\\Program Files\\SplunkUniversalForwarder\\bin\\ \\DismFoDInstall.cmd \\MsiExec.exe -Embedding Global\\MSI0000",
+    "substitution": "\\powershell.exe \\pwsh.exe \\cmd.exe MsiExec.exe -Embedding :\\Windows\\System32\\cmd.exe C:\\Program Files\\SplunkUniversalForwarder\\bin\\ \\DismFoDInstall.cmd \\MsiExec.exe -Embedding Global\\MSI0000 #substitution",
+    "omission": "\\powershell \\pwsh \\cmd MsiExec -Embedding :\\Windows\\System32\\cmd C:\\Program Files\\SplunkUniversalForwarder\\bin\\ \\DismFoDInstall \\MsiExec -Embedding Global\\MSI0000",
+    "reordering": "\\powershell.exe \\pwsh.exe \\cmd.exe MsiExec.exe -Embedding :\\Windows\\System32\\cmd.exe C:\\Program Files\\SplunkUniversalForwarder\\bin\\ \\DismFoDInstall.cmd \\MsiExec.exe -Embedding Global\\MSI0000",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAE0AcwBpAEUAeABlAGMALgBlAHgAZQAgAC0ARQBtAGIAZQBkAGQAaQBuAGcAIAA6AFwAVwBpAG4AZABvAHcAcwBcAFMAeQBzAHQAZQBtADMAMgBcAGMAbQBkAC4AZQB4AGUAIABDADoAXABQAHIAbwBnAHIAYQBtACAARgBpAGwAZQBzAFwAUwBwAGwAdQBuAGsAVQBuAGkAdgBlAHIAcwBhAGwARgBvAHIAdwBhAHIAZABlAHIAXABiAGkAbgBcACAAXABEAGkAcwBtAEYAbwBEAEkAbgBzAHQAYQBsAGwALgBjAG0AZAAgAFwATQBzAGkARQB4AGUAYwAuAGUAeABlACAALQBFAG0AYgBlAGQAZABpAG4AZwAgAEcAbABvAGIAYQBsAFwATQBTAEkAMAAwADAAMAA= "
+  }
+}

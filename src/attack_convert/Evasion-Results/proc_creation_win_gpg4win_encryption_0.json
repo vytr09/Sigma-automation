@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_gpg4win_encryption_0",
+  "original_command": "\\gpg.exe \\gpg2.exe -c passphrase",
+  "evasions": {
+    "insertion": "\\gpg.exe \\gpg2.exe \\\"-c\\\" passphrase",
+    "substitution": "\\gpg.exe \\gpg2.exe -c passphrase #substitution",
+    "omission": "\\gpg \\gpg2 -c passphrase",
+    "reordering": "\\gpg.exe passphrase -c \\gpg2.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwZy5leGUgXGdwZzIuZXhlIC1jIHBhc3NwaHJhc2U=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vsdiagnostics_execution_proxy_0",
+  "original_command": "\\VSDiagnostics.exe VSDiagnostics.exe start /launch: -launch:",
+  "evasions": {
+    "insertion": "\\VSDiagnostics.exe \"V\"\"S\"\"D\"\"i\"\"a\"\"g\"\"n\"\"o\"\"s\"\"t\"\"i\"\"c\"\"s\"\".\"\"e\"\"x\"\"e\" start /launch: -launch:",
+    "substitution": "\\VSDiagnostics.exe VSDiagnostics.exe start /launch: -launch: #substitution",
+    "omission": "\\VSDiagnostics VSDiagnostics start /launch: -launch:",
+    "reordering": "\\VSDiagnostics.exe VSDiagnostics.exe start /launch: -launch:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZTRGlhZ25vc3RpY3MuZXhlIFZTRGlhZ25vc3RpY3MuZXhlIHN0YXJ0IC9sYXVuY2g6IC1sYXVuY2g6')) | Invoke-Expression\" "
+  }
+}

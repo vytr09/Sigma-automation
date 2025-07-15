@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_shutdown_logoff_0",
+  "original_command": "\\shutdown.exe /l",
+  "evasions": {
+    "insertion": "\\\"s\"\"h\"\"u\"\"t\"\"d\"\"o\"\"w\"\"n\"\".\"\"e\"\"x\"\"e\" /l",
+    "substitution": "\\shutdown.exe /l #substitution",
+    "omission": "\\shutdown /l",
+    "reordering": "\\shutdown.exe /l",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNodXRkb3duLmV4ZSAvbA==')) | Invoke-Expression\" "
+  }
+}

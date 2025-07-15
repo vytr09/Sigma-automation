@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_defender_exclusion_0",
+  "original_command": "\\reg.exe SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths ADD /t REG_DWORD /v /d 0",
+  "evasions": {
+    "insertion": "\\reg.exe SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths ADD /t REG_DWORD /\"{cmd_part}\" /d 0",
+    "substitution": "\\reg.exe SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths ADD /t REG_DWORD /v /d 0",
+    "omission": "\\reg SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths ADD /t REG_DWORD /v /d 0",
+    "reordering": "\\reg.exe SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths ADD /t REG_DWORD /v /d 0",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgRGVmZW5kZXJcRXhjbHVzaW9uc1xQYXRocyBTT0ZUV0FSRVxNaWNyb3NvZnRcTWljcm9zb2Z0IEFudGltYWx3YXJlXEV4Y2x1c2lvbnNcUGF0aHMgQUREIC90IFJFR19EV09SRCAvdiAvZCAw')) | Invoke-Expression\" "
+  }
+}

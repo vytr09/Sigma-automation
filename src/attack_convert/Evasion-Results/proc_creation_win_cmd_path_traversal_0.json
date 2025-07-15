@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_path_traversal_0",
+  "original_command": "\\cmd.exe \\cmd.exe cmd.exe /c /k /r /c /k /r /../../ \\Tasktop\\keycloak\\bin\\/../../jre\\bin\\java",
+  "evasions": {
+    "insertion": "\\cmd.exe \\cmd.exe cmd.exe /c /k /r /c /k /r /../../ \\Tasktop\\keycloak\\bi\\\"n\\/../../jre\\bin\\java\\\"",
+    "substitution": "\\cmd.exe \\cmd.exe cmd.exe -c /k /r -c /k /r /../../ \\Tasktop\\keycloak\\bin\\/../../jre\\bin\\java",
+    "omission": "\\cmd \\cmd cmd /c /k /r /c /k /r /../../ \\Tasktop\\keycloak\\bin\\/../../jre\\bin\\java",
+    "reordering": "\\cmd.exe \\cmd.exe cmd.exe /c /k /r /c /k /r /../../ \\Tasktop\\keycloak\\bin\\/../../jre\\bin\\java",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgXGNtZC5leGUgY21kLmV4ZSAvYyAvayAvciAvYyAvayAvciAvLi4vLi4vIFxUYXNrdG9wXGtleWNsb2FrXGJpblwvLi4vLi4vanJlXGJpblxqYXZh')) | Invoke-Expression\" "
+  }
+}

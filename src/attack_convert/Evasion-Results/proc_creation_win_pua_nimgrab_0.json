@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nimgrab_0",
+  "original_command": "\\nimgrab.exe",
+  "evasions": {
+    "insertion": "\"\\nimgrab.exe\"",
+    "substitution": "\\nimgrab.exe #substitution",
+    "omission": "\\nimgrab",
+    "reordering": "\\nimgrab.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5pbWdyYWIuZXhl')) | Invoke-Expression\" "
+  }
+}

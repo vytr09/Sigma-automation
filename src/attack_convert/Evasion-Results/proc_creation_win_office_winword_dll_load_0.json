@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_winword_dll_load_0",
+  "original_command": "\\WINWORD.exe WinWord.exe /l .dll",
+  "evasions": {
+    "insertion": "\\WINWORD.exe WinWord.exe /l \".\"\"d\"\"l\"\"l\"",
+    "substitution": "\\WINWORD.exe WinWord.exe /l .dll #substitution",
+    "omission": "\\WINWORD WinWord /l .dll",
+    "reordering": "\\WINWORD.exe WinWord.exe /l .dll",
+    "recoding": "powershell.exe -EncodedCommand XABXAEkATgBXAE8AUgBEAC4AZQB4AGUAIABXAGkAbgBXAG8AcgBkAC4AZQB4AGUAIAAvAGwAIAAuAGQAbABsAA== "
+  }
+}

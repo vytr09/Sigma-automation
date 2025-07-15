@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolscript_register_app_0",
+  "original_command": "\\cscript.exe \\wscript.exe cscript.exe wscript.exe .vbs -register",
+  "evasions": {
+    "insertion": "\\\"c\"\"s\"\"c\"\"r\"\"i\"\"p\"\"t\"\".\"\"e\"\"x\"\"e\" \\wscript.exe cscript.exe wscript.exe .vbs -register",
+    "substitution": "\\cscript.exe \\wscript.exe cscript.exe wscript.exe .vbs -register #substitution",
+    "omission": "\\cscript \\wscript cscript wscript -register",
+    "reordering": "\\cscript.exe \\wscript.exe cscript.exe -register .vbs wscript.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzY3JpcHQuZXhlIFx3c2NyaXB0LmV4ZSBjc2NyaXB0LmV4ZSB3c2NyaXB0LmV4ZSAudmJzIC1yZWdpc3Rlcg==')) | Invoke-Expression\" "
+  }
+}

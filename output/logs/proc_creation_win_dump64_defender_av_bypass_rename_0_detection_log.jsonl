@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:16:38 UTC", "rule": "proc_creation_win_dump64_defender_av_bypass_rename_0", "phase": "original", "command": "\\dump64.exe procdump -ma -mp", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:16:38 UTC", "rule": "proc_creation_win_dump64_defender_av_bypass_rename_0", "phase": "insertion", "command": "\\dump64.exe procdump -ma \"-\"mp", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:16:38 UTC", "rule": "proc_creation_win_dump64_defender_av_bypass_rename_0", "phase": "substitution", "command": "\\dump64.exe procdump -M -mp", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:16:38 UTC", "rule": "proc_creation_win_dump64_defender_av_bypass_rename_0", "phase": "omission", "command": "\\dump64 procdump -ma -mp", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:16:38 UTC", "rule": "proc_creation_win_dump64_defender_av_bypass_rename_0", "phase": "reordering", "command": "\\dump64.exe -ma -mp procdump", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:16:38 UTC", "rule": "proc_creation_win_dump64_defender_av_bypass_rename_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGR1bXA2NC5leGUgcHJvY2R1bXAgLW1hIC1tcA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

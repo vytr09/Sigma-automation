@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_dosfuscation_0",
+  "original_command": "^^ ^|^ ,;, ;;;; ;; ;; (,(, %COMSPEC:~ c^m^d ^c^m^d c^md cm^d ^cm^d s^et s^e^t se^t",
+  "evasions": {
+    "insertion": "^^ ^|^ ,;, ;;;; ;; ;; (,(, %COMSPEC:~ c^m^d ^c^m^d c^md cm^d ^cm^d s^et s^e^t se^t",
+    "substitution": "^^ ^|^ ,;, ;;;; ;; ;; (,(, %COMSPEC:~ c^m^d ^c^m^d c^md cm^d ^cm^d s^et s^e^t se^t #substitution",
+    "omission": "^^ ^|^ ,;, ;;;; ;; ;; (,(, %COMSPEC:~ c^m^d ^c^m^d c^md cm^d ^cm^d s^et s^e^t se^t # omission",
+    "reordering": "^^ ^|^ ,;, ;;;; ;; ;; (,(, %COMSPEC:~ c^m^d ^c^m^d c^md cm^d ^cm^d s^et s^e^t se^t",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Xl4gXnxeICw7LCA7Ozs7IDs7IDs7ICgsKCwgJUNPTVNQRUM6fiBjXm1eZCBeY15tXmQgY15tZCBjbV5kIF5jbV5kIHNeZXQgc15lXnQgc2VedA==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_taskmgr_susp_child_process_0",
+  "original_command": "\\taskmgr.exe :\\Windows\\System32\\mmc.exe :\\Windows\\System32\\resmon.exe :\\Windows\\System32\\Taskmgr.exe",
+  "evasions": {
+    "insertion": "\\taskmgr.exe :\\Windows\\System32\\mmc.exe :\\Windows\\System32\\resmon.exe \":\"\"\\\"\"W\"\"i\"\"n\"\"d\"\"o\"\"w\"\"s\"\"\\\"\"S\"\"y\"\"s\"\"t\"\"e\"\"m\"\"3\"\"2\"\"\\\"\"T\"\"a\"\"s\"\"k\"\"m\"\"g\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\taskmgr.exe :\\Windows\\System32\\mmc.exe :\\Windows\\System32\\resmon.exe :\\Windows\\System32\\Taskmgr.exe #substitution",
+    "omission": "\\taskmgr :\\Windows\\System32\\mmc :\\Windows\\System32\\resmon :\\Windows\\System32\\Taskmgr",
+    "reordering": "\\taskmgr.exe :\\Windows\\System32\\Taskmgr.exe :\\Windows\\System32\\resmon.exe :\\Windows\\System32\\mmc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhc2ttZ3IuZXhlIDpcV2luZG93c1xTeXN0ZW0zMlxtbWMuZXhlIDpcV2luZG93c1xTeXN0ZW0zMlxyZXNtb24uZXhlIDpcV2luZG93c1xTeXN0ZW0zMlxUYXNrbWdyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

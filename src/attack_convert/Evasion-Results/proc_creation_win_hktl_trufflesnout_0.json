@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_trufflesnout_0",
+  "original_command": "TruffleSnout.exe \\TruffleSnout.exe",
+  "evasions": {
+    "insertion": "TruffleSnout.exe \\Truffle\"Snout.exe\"",
+    "substitution": "TruffleSnout.exe \\TruffleSnout.exe #substitution",
+    "omission": "TruffleSnout \\TruffleSnout",
+    "reordering": "TruffleSnout.exe \\TruffleSnout.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('VHJ1ZmZsZVNub3V0LmV4ZSBcVHJ1ZmZsZVNub3V0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_imagingdevices_unusual_parents_0",
+  "original_command": "\\WmiPrvSE.exe \\svchost.exe \\dllhost.exe \\ImagingDevices.exe \\ImagingDevices.exe",
+  "evasions": {
+    "insertion": "\\WmiPrvSE.exe \"\\svcho\"st.exe \\dllhost.exe \\ImagingDevices.exe \\ImagingDevices.exe",
+    "substitution": "\\WmiPrvSE.exe \\svchost.exe \\dllhost.exe \\ImagingDevices.exe \\ImagingDevices.exe #substitution",
+    "omission": "\\WmiPrvSE \\svchost \\dllhost \\ImagingDevices \\ImagingDevices",
+    "reordering": "\\WmiPrvSE.exe \\dllhost.exe \\svchost.exe \\ImagingDevices.exe \\ImagingDevices.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdtaVBydlNFLmV4ZSBcc3ZjaG9zdC5leGUgXGRsbGhvc3QuZXhlIFxJbWFnaW5nRGV2aWNlcy5leGUgXEltYWdpbmdEZXZpY2VzLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

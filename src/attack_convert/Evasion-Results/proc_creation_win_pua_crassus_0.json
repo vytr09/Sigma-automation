@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_crassus_0",
+  "original_command": "\\Crassus.exe Crassus.exe Crassus",
+  "evasions": {
+    "insertion": "\\Crassus.exe Crassus.exe \\\"Crassus\\\"",
+    "substitution": "\\Crassus.exe Crassus.exe Crassus #substitution",
+    "omission": "\\Crassus Crassus Crassus",
+    "reordering": "\\Crassus.exe Crassus.exe Crassus",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENyYXNzdXMuZXhlIENyYXNzdXMuZXhlIENyYXNzdXM=')) | Invoke-Expression\" "
+  }
+}

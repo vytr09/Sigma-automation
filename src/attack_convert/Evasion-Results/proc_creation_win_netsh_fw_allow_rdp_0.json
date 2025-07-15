@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_allow_rdp_0",
+  "original_command": "\\netsh.exe netsh.exe firewall add tcp 3389 portopening allow",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe firewall add \\\"tcp\\\" \\\"3389\\\" portopening allow",
+    "substitution": "\\netsh.exe netsh.exe fw add tcp 3389 portopening allow",
+    "omission": "\\netsh netsh firewall add tcp 3389 portopening allow",
+    "reordering": "\\netsh.exe netsh.exe firewall add tcp 3389 portopening allow",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgZmlyZXdhbGwgYWRkIHRjcCAzMzg5IHBvcnRvcGVuaW5nIGFsbG93')) | Invoke-Expression\" "
+  }
+}

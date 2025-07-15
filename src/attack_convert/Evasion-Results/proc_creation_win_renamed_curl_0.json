@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_curl_0",
+  "original_command": "curl.exe",
+  "evasions": {
+    "insertion": "curl.exe",
+    "substitution": "curl.exe #substitution",
+    "omission": "curl",
+    "reordering": "curl.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3VybC5leGU=')) | Invoke-Expression\" "
+  }
+}

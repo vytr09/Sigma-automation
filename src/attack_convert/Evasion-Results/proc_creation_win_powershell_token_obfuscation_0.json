@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_token_obfuscation_0",
+  "original_command": "${env:path}",
+  "evasions": {
+    "insertion": "${env:path}",
+    "substitution": "${env:path} #substitution",
+    "omission": "${env:path} # omission",
+    "reordering": "${env:path}",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAJAB7AGUAbgB2ADoAcABhAHQAaAB9AA== "
+  }
+}

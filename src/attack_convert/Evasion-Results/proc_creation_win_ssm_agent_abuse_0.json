@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ssm_agent_abuse_0",
+  "original_command": "\\amazon-ssm-agent.exe -register -code -id -region",
+  "evasions": {
+    "insertion": "\\amazon-ssm-agent.exe \\\"-reg\\\"ister -code -id -region",
+    "substitution": "\\amazon-ssm-agent.exe -register -code -id -region #substitution",
+    "omission": "\\amazon-ssm-agent -register -code -id -region",
+    "reordering": "\\amazon-ssm-agent.exe -code -register -region -id",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFtYXpvbi1zc20tYWdlbnQuZXhlIC1yZWdpc3RlciAtY29kZSAtaWQgLXJlZ2lvbg==')) | Invoke-Expression\" "
+  }
+}

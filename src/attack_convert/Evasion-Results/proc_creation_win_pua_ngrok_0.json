@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_ngrok_0",
+  "original_command": "tcp 139 tcp 445 tcp 3389 tcp 5985 tcp 5986 start --all --config .yml ngrok.exe tcp http authtoken .exe authtoken .exe start --all",
+  "evasions": {
+    "insertion": "tcp 1\"39\" tcp 445 tcp 3389 tcp 5985 tcp 5986 start --all --config .yml ngrok.exe tcp http authtoken .exe authtoken .exe start --all",
+    "substitution": "tcp 139 tcp 445 tcp 3389 tcp 5985 tcp 5986 start --all --config .yml ngrok.exe tcp http authtoken .exe authtoken .exe start --all #substitution",
+    "omission": "tcp 139 tcp 445 tcp 3389 tcp 5985 tcp 5986 start --all --config .yml ngrok tcp http authtoken authtoken start --all",
+    "reordering": "tcp 139 tcp 445 tcp 3389 tcp 5985 tcp 5986 start --all --config .yml ngrok.exe tcp http authtoken .exe authtoken .exe start --all",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dGNwIDEzOSB0Y3AgNDQ1IHRjcCAzMzg5IHRjcCA1OTg1IHRjcCA1OTg2IHN0YXJ0IC0tYWxsIC0tY29uZmlnIC55bWwgbmdyb2suZXhlIHRjcCBodHRwIGF1dGh0b2tlbiAuZXhlIGF1dGh0b2tlbiAuZXhlIHN0YXJ0IC0tYWxs')) | Invoke-Expression\" "
+  }
+}

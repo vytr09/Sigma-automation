@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_get_clipboard_0",
+  "original_command": "Get-Clipboard",
+  "evasions": {
+    "insertion": "Get-Clipboard",
+    "substitution": "Get-Clipboard #substitution",
+    "omission": "Get-Clipboard # omission",
+    "reordering": "Get-Clipboard",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R2V0LUNsaXBib2FyZA==')) | Invoke-Expression\" "
+  }
+}

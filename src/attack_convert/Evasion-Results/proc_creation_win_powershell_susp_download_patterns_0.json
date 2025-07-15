@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_susp_download_patterns_0",
+  "original_command": "IEX ((New-Object Net.WebClient).DownloadString IEX (New-Object Net.WebClient).DownloadString IEX((New-Object Net.WebClient).DownloadString IEX(New-Object Net.WebClient).DownloadString -command (New-Object System.Net.WebClient).DownloadFile( -c (New-Object System.Net.WebClient).DownloadFile(",
+  "evasions": {
+    "insertion": "IEX ((New-Object Net.WebClient).DownloadString IEX (New-Object Net.WebClient).DownloadString \\\"IEX((New-Object\\\" Net.WebClient).DownloadString IEX(New-Object Net.WebClient).DownloadString -command (New-Object System.Net.WebClient).DownloadFile( -c (New-Object System.Net.WebClient).DownloadFile(",
+    "substitution": "IEX ((New-Object Net.WebClient).DownloadString IEX (New-Object Net.WebClient).DownloadString IEX((New-Object Net.WebClient).DownloadString IEX(New-Object Net.WebClient).DownloadString -command (New-Object System.Net.WebClient).DownloadFile( -c (New-Object System.Net.WebClient).DownloadFile( #substitution",
+    "omission": "IEX ((New-Object Net.WebClient).DownloadString IEX (New-Object Net.WebClient).DownloadString IEX((New-Object Net.WebClient).DownloadString IEX(New-Object Net.WebClient).DownloadString -command (New-Object System.Net.WebClient).DownloadFile( -c (New-Object System.Net.WebClient).DownloadFile( # omission",
+    "reordering": "IEX ((New-Object Net.WebClient).DownloadString IEX (New-Object Net.WebClient).DownloadString IEX((New-Object Net.WebClient).DownloadString IEX(New-Object Net.WebClient).DownloadString -command (New-Object System.Net.WebClient).DownloadFile( -c (New-Object System.Net.WebClient).DownloadFile(",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SUVYICgoTmV3LU9iamVjdCBOZXQuV2ViQ2xpZW50KS5Eb3dubG9hZFN0cmluZyBJRVggKE5ldy1PYmplY3QgTmV0LldlYkNsaWVudCkuRG93bmxvYWRTdHJpbmcgSUVYKChOZXctT2JqZWN0IE5ldC5XZWJDbGllbnQpLkRvd25sb2FkU3RyaW5nIElFWChOZXctT2JqZWN0IE5ldC5XZWJDbGllbnQpLkRvd25sb2FkU3RyaW5nIC1jb21tYW5kIChOZXctT2JqZWN0IFN5c3RlbS5OZXQuV2ViQ2xpZW50KS5Eb3dubG9hZEZpbGUoIC1jIChOZXctT2JqZWN0IFN5c3RlbS5OZXQuV2ViQ2xpZW50KS5Eb3dubG9hZEZpbGUo')) | Invoke-Expression\" "
+  }
+}

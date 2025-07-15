@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_werfault_reflect_debugger_exec_0",
+  "original_command": "\\WerFault.exe WerFault.exe -pr",
+  "evasions": {
+    "insertion": "\\WerFault.exe WerFault.exe \"-\"\"p\"\"r\"",
+    "substitution": "\\WerFault.exe WerFault.exe -pr #substitution",
+    "omission": "\\WerFault WerFault -pr",
+    "reordering": "\\WerFault.exe -pr WerFault.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlckZhdWx0LmV4ZSBXZXJGYXVsdC5leGUgLXBy')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:23:55 UTC", "rule": "proc_creation_win_finger_execution_0", "phase": "original", "command": "finger.exe \\finger.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:24:08 UTC", "rule": "proc_creation_win_finger_execution_0", "phase": "insertion", "command": "finger.exe \"\\finger.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:24:17 UTC", "rule": "proc_creation_win_finger_execution_0", "phase": "substitution", "command": "finger.exe \\finger.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:24:24 UTC", "rule": "proc_creation_win_finger_execution_0", "phase": "omission", "command": "finger \\finger", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:24:35 UTC", "rule": "proc_creation_win_finger_execution_0", "phase": "reordering", "command": "finger.exe \\finger.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:24:42 UTC", "rule": "proc_creation_win_finger_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZmluZ2VyLmV4ZSBcZmluZ2VyLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

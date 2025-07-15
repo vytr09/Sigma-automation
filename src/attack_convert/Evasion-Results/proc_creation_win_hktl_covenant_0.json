@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_covenant_0",
+  "original_command": "-Sta -Nop -Window Hidden -Command -EncodedCommand sv o (New-Object IO.MemorySteam);sv d mshta file.hta GruntHTTP -EncodedCommand cwB2ACAAbwAgA",
+  "evasions": {
+    "insertion": "-Sta -Nop -Window Hidden \\\"-\\\"\\\"C\\\"\\\"o\\\"\\\"m\\\"\\\"m\\\"\\\"a\\\"\\\"n\\\"\\\"d\\\" -EncodedCommand sv o (New-Object IO.MemorySteam);sv d mshta file.hta GruntHTTP -EncodedCommand cwB2ACAAbwAgA",
+    "substitution": "-Sta -Nop -Window Hidden -Command -EncodedCommand sv o (New-Object IO.MemorySteam);sv d mshta file.hta GruntHTTP -EncodedCommand cwB2ACAAbwAgA #substitution",
+    "omission": "-Sta -Nop -Window Hidden -Command -EncodedCommand sv o (New-Object IO.MemorySteam);sv d mshta file.hta GruntHTTP -EncodedCommand cwB2ACAAbwAgA # omission",
+    "reordering": "-Sta -Nop -Window Hidden -Command -EncodedCommand sv o (New-Object IO.MemorySteam);sv d mshta file.hta GruntHTTP -EncodedCommand cwB2ACAAbwAgA",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBTAHQAYQAgAC0ATgBvAHAAIAAtAFcAaQBuAGQAbwB3ACAASABpAGQAZABlAG4AIAAtAEMAbwBtAG0AYQBuAGQAIAAtAEUAbgBjAG8AZABlAGQAQwBvAG0AbQBhAG4AZAAgAHMAdgAgAG8AIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABJAE8ALgBNAGUAbQBvAHIAeQBTAHQAZQBhAG0AKQA7AHMAdgAgAGQAIABtAHMAaAB0AGEAIABmAGkAbABlAC4AaAB0AGEAIABHAHIAdQBuAHQASABUAFQAUAAgAC0ARQBuAGMAbwBkAGUAZABDAG8AbQBtAGEAbgBkACAAYwB3AEIAMgBBAEMAQQBBAGIAdwBBAGcAQQA= "
+  }
+}

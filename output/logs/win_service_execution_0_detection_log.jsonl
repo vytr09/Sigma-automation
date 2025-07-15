@@ -58,9 +58,3 @@
 {"timestamp": "2025-04-23 09:24:04 UTC", "rule": "win_service_execution_0", "phase": "omission", "command": "net start", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:24:11 UTC", "rule": "win_service_execution_0", "phase": "reordering", "command": "net.exe start", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:24:19 UTC", "rule": "win_service_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:01:51 UTC", "rule": "win_service_execution_0", "phase": "original", "command": "net.exe start", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:01:55 UTC", "rule": "win_service_execution_0", "phase": "insertion", "command": "net.exe \"s\"\"t\"\"a\"\"r\"\"t\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:01:58 UTC", "rule": "win_service_execution_0", "phase": "substitution", "command": "net.exe start #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:02:02 UTC", "rule": "win_service_execution_0", "phase": "omission", "command": "net start", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:02:06 UTC", "rule": "win_service_execution_0", "phase": "reordering", "command": "net.exe start", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:02:09 UTC", "rule": "win_service_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSBzdGFydA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

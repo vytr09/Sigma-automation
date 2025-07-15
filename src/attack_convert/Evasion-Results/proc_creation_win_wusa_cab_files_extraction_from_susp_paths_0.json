@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wusa_cab_files_extraction_from_susp_paths_0",
+  "original_command": "\\wusa.exe /extract: :\\PerfLogs\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\Appdata\\Local\\Temp\\",
+  "evasions": {
+    "insertion": "\\wusa.exe /extract: :\\PerfLogs\\ \\\":\\Users\\Public\\\\\" :\\Windows\\Temp\\ \\Appdata\\Local\\Temp\\",
+    "substitution": "\\wusa.exe /extract: :\\PerfLogs\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\Appdata\\Local\\Temp\\ #substitution",
+    "omission": "\\wusa /extract: :\\PerfLogs\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\Appdata\\Local\\Temp\\",
+    "reordering": "\\wusa.exe /extract: :\\PerfLogs\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\Appdata\\Local\\Temp\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHd1c2EuZXhlIC9leHRyYWN0OiA6XFBlcmZMb2dzXCA6XFVzZXJzXFB1YmxpY1wgOlxXaW5kb3dzXFRlbXBcIFxBcHBkYXRhXExvY2FsXFRlbXBc')) | Invoke-Expression\" "
+  }
+}

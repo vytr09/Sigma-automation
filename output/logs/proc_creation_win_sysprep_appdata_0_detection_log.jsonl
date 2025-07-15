@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:20:22 UTC", "rule": "proc_creation_win_sysprep_appdata_0", "phase": "original", "command": "\\sysprep.exe \\AppData\\", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:20:30 UTC", "rule": "proc_creation_win_sysprep_appdata_0", "phase": "insertion", "command": "\\sysprep.exe \"\\\"\"A\"\"p\"\"p\"\"D\"\"a\"\"t\"\"a\"\"\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:20:37 UTC", "rule": "proc_creation_win_sysprep_appdata_0", "phase": "substitution", "command": "\\sysprep.exe \\AppData\\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:20:47 UTC", "rule": "proc_creation_win_sysprep_appdata_0", "phase": "omission", "command": "\\sysprep \\AppData\\", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:20:53 UTC", "rule": "proc_creation_win_sysprep_appdata_0", "phase": "reordering", "command": "\\sysprep.exe \\AppData\\", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:21:00 UTC", "rule": "proc_creation_win_sysprep_appdata_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN5c3ByZXAuZXhlIFxBcHBEYXRhXA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

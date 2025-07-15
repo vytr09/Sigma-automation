@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_volume_0",
+  "original_command": "\\WMIC.exe wmic.exe volume path win32_logicaldisk",
+  "evasions": {
+    "insertion": "\\WMIC.exe wmic.exe volume \"pa\"th win32_logicaldisk",
+    "substitution": "\\WMIC.exe wmic.exe volume --path win32_logicaldisk",
+    "omission": "\\WMIC wmic volume path win32_logicaldisk",
+    "reordering": "\\WMIC.exe volume win32_logicaldisk path wmic.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdNSUMuZXhlIHdtaWMuZXhlIHZvbHVtZSBwYXRoIHdpbjMyX2xvZ2ljYWxkaXNr')) | Invoke-Expression\" "
+  }
+}

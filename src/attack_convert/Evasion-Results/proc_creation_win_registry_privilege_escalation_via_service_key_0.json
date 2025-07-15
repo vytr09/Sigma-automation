@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_privilege_escalation_via_service_key_0",
+  "original_command": "ControlSet services \\ImagePath \\FailureCommand \\ServiceDll",
+  "evasions": {
+    "insertion": "ControlSet services \\\"\\Imag\\\"ePath \\FailureCommand \\ServiceDll",
+    "substitution": "ControlSet services \\ImagePath \\FailureCommand \\ServiceDll #substitution",
+    "omission": "ControlSet services \\ImagePath \\FailureCommand \\ServiceDll # omission",
+    "reordering": "ControlSet services \\ImagePath \\ServiceDll \\FailureCommand",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q29udHJvbFNldCBzZXJ2aWNlcyBcSW1hZ2VQYXRoIFxGYWlsdXJlQ29tbWFuZCBcU2VydmljZURsbA==')) | Invoke-Expression\" "
+  }
+}

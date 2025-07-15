@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ultravnc_susp_execution_0",
+  "original_command": "-autoreconnect -connect -id:",
+  "evasions": {
+    "insertion": "-autoreconnect \\\"-\\\"\\\"c\\\"\\\"o\\\"\\\"n\\\"\\\"n\\\"\\\"e\\\"\\\"c\\\"\\\"t\\\" -id:",
+    "substitution": "-autoreconnect -connect -id: #substitution",
+    "omission": "-autoreconnect -connect -id: # omission",
+    "reordering": "-autoreconnect -id: -connect",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWF1dG9yZWNvbm5lY3QgLWNvbm5lY3QgLWlkOg==')) | Invoke-Expression\" "
+  }
+}

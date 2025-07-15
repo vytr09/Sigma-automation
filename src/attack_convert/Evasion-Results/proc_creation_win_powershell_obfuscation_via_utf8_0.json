@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_obfuscation_via_utf8_0",
+  "original_command": "[char]0x (WCHAR)0x",
+  "evasions": {
+    "insertion": "[char]0x \"(\"\"W\"\"C\"\"H\"\"A\"\"R\"\")\"\"0\"\"x\"",
+    "substitution": "[char]0x (WCHAR)0x #substitution",
+    "omission": "[char]0x (WCHAR)0x # omission",
+    "reordering": "[char]0x (WCHAR)0x",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('W2NoYXJdMHggKFdDSEFSKTB4')) | Invoke-Expression\" "
+  }
+}

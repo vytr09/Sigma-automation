@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_disable_service_0",
+  "original_command": "\\sc.exe sc.exe config start disabled demand",
+  "evasions": {
+    "insertion": "\\sc.exe sc.exe config start \"disabled\" \"demand\"",
+    "substitution": "\\sc.exe sc.exe config start disabled demand",
+    "omission": "\\sc sc config start disabled demand",
+    "reordering": "\\sc.exe start sc.exe disabled demand config",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgY29uZmlnIHN0YXJ0IGRpc2FibGVkIGRlbWFuZA==')) | Invoke-Expression\" "
+  }
+}

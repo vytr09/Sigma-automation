@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_shadow_copies_creation_0",
+  "original_command": "\\powershell.exe \\pwsh.exe \\wmic.exe \\vssadmin.exe PowerShell.EXE pwsh.dll wmic.exe VSSADMIN.EXE shadow create",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe \\wmic.exe \\vssadmin.exe PowerShell.EXE pwsh.dll wmic.exe VSSADMIN.EXE shadow \"create\"",
+    "substitution": "\\powershell.exe \\pwsh.exe \\wmic.exe \\vssadmin.exe PowerShell.EXE pwsh.dll wmic.exe VSSADMIN.EXE shadow --create",
+    "omission": "\\powershell \\pwsh \\wmic \\vssadmin PowerShell pwsh.dll wmic VSSADMIN shadow create",
+    "reordering": "\\powershell.exe \\pwsh.exe \\wmic.exe \\vssadmin.exe PowerShell.EXE pwsh.dll wmic.exe VSSADMIN.EXE shadow create",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAdwBtAGkAYwAuAGUAeABlACAAXAB2AHMAcwBhAGQAbQBpAG4ALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAHcAbQBpAGMALgBlAHgAZQAgAFYAUwBTAEEARABNAEkATgAuAEUAWABFACAAcwBoAGEAZABvAHcAIABjAHIAZQBhAHQAZQA= "
+  }
+}

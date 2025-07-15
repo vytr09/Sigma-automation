@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_conhost_legacy_option_0",
+  "original_command": "conhost.exe 0xffffffff -ForceV1",
+  "evasions": {
+    "insertion": "conhost.exe \\\"0xffffffff\\\" -ForceV1",
+    "substitution": "conhost.exe 0xffffffff -ForceV1 #substitution",
+    "omission": "conhost 0xffffffff -ForceV1",
+    "reordering": "conhost.exe -ForceV1 0xffffffff",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29uaG9zdC5leGUgMHhmZmZmZmZmZiAtRm9yY2VWMQ==')) | Invoke-Expression\" "
+  }
+}

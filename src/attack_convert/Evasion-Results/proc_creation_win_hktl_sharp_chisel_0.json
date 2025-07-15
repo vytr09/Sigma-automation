@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharp_chisel_0",
+  "original_command": "\\SharpChisel.exe",
+  "evasions": {
+    "insertion": "\\\"\\SharpChisel.exe\\\"",
+    "substitution": "\\SharpChisel.exe #substitution",
+    "omission": "\\SharpChisel",
+    "reordering": "\\SharpChisel.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwQ2hpc2VsLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

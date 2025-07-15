@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_copy_system_dir_0",
+  "original_command": "\\cmd.exe copy \\powershell.exe \\pwsh.exe copy-item copy cpi cp \\robocopy.exe \\xcopy.exe robocopy.exe XCOPY.EXE \\System32 \\SysWOW64 \\WinSxS",
+  "evasions": {
+    "insertion": "\\cmd.exe copy \\powershell.exe \\pwsh.exe copy-item copy cpi cp \\robocopy.exe \"\\xcopy.exe\" \"robocopy.exe\" XCOPY.EXE \\System32 \\SysWOW64 \\WinSxS",
+    "substitution": "\\cmd.exe copy \\powershell.exe \\pwsh.exe copy-item copy cpi cp \\robocopy.exe \\xcopy.exe robocopy.exe XCOPY.EXE \\System32 \\SysWOW64 \\WinSxS #substitution",
+    "omission": "\\cmd copy \\powershell \\pwsh copy-item copy cpi cp \\robocopy \\xcopy robocopy XCOPY \\System32 \\SysWOW64 \\WinSxS",
+    "reordering": "\\cmd.exe copy \\powershell.exe \\pwsh.exe copy-item copy cpi cp \\robocopy.exe \\xcopy.exe robocopy.exe XCOPY.EXE \\System32 \\SysWOW64 \\WinSxS",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAYwBvAHAAeQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABjAG8AcAB5AC0AaQB0AGUAbQAgAGMAbwBwAHkAIABjAHAAaQAgAGMAcAAgAFwAcgBvAGIAbwBjAG8AcAB5AC4AZQB4AGUAIABcAHgAYwBvAHAAeQAuAGUAeABlACAAcgBvAGIAbwBjAG8AcAB5AC4AZQB4AGUAIABYAEMATwBQAFkALgBFAFgARQAgAFwAUwB5AHMAdABlAG0AMwAyACAAXABTAHkAcwBXAE8AVwA2ADQAIABcAFcAaQBuAFMAeABTAA== "
+  }
+}

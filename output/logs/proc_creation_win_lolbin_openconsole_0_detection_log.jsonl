@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:34:46 UTC", "rule": "proc_creation_win_lolbin_openconsole_0", "phase": "original", "command": "OpenConsole.exe \\OpenConsole.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:34:46 UTC", "rule": "proc_creation_win_lolbin_openconsole_0", "phase": "insertion", "command": "OpenConsole.exe \\\"O\"\"p\"\"e\"\"n\"\"C\"\"o\"\"n\"\"s\"\"o\"\"l\"\"e\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:34:46 UTC", "rule": "proc_creation_win_lolbin_openconsole_0", "phase": "substitution", "command": "OpenConsole.exe \\OpenConsole.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:34:46 UTC", "rule": "proc_creation_win_lolbin_openconsole_0", "phase": "omission", "command": "OpenConsole \\OpenConsole", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:34:46 UTC", "rule": "proc_creation_win_lolbin_openconsole_0", "phase": "reordering", "command": "OpenConsole.exe \\OpenConsole.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:34:46 UTC", "rule": "proc_creation_win_lolbin_openconsole_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('T3BlbkNvbnNvbGUuZXhlIFxPcGVuQ29uc29sZS5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

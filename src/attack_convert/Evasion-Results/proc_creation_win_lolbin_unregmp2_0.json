@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_unregmp2_0",
+  "original_command": "\\unregmp2.exe unregmp2.exe /HideWMP",
+  "evasions": {
+    "insertion": "\\unregmp2.exe \"u\"\"n\"\"r\"\"e\"\"g\"\"m\"\"p\"\"2\"\".\"\"e\"\"x\"\"e\" /HideWMP",
+    "substitution": "\\unregmp2.exe unregmp2.exe /HideWMP #substitution",
+    "omission": "\\unregmp2 unregmp2 /HideWMP",
+    "reordering": "\\unregmp2.exe unregmp2.exe /HideWMP",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHVucmVnbXAyLmV4ZSB1bnJlZ21wMi5leGUgL0hpZGVXTVA=')) | Invoke-Expression\" "
+  }
+}

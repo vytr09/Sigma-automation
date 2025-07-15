@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_tor_execution_0",
+  "original_command": "\\tor.exe \\Tor Browser\\Browser\\firefox.exe",
+  "evasions": {
+    "insertion": "\\tor.exe \"\\T\"or Browser\\Browser\\firefox.exe",
+    "substitution": "\\tor.exe \\Tor Browser\\Browser\\firefox.exe #substitution",
+    "omission": "\\tor \\Tor Browser\\Browser\\firefox",
+    "reordering": "\\tor.exe \\Tor Browser\\Browser\\firefox.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRvci5leGUgXFRvciBCcm93c2VyXEJyb3dzZXJcZmlyZWZveC5leGU=')) | Invoke-Expression\" "
+  }
+}

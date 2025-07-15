@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_java_remote_debugging_0",
+  "original_command": "transport=dt_socket,address= jre1. jdk1. address=127.0.0.1 address=localhost",
+  "evasions": {
+    "insertion": "transport=dt_socket,address= \\\"jre1.\\\" jdk1. address=127.0.0.1 address=localhost",
+    "substitution": "transport=dt_socket,address= jre1. jdk1. address=127.0.0.1 address=localhost #substitution",
+    "omission": "transport=dt_socket,address= jre1. jdk1. address=127.0.0.1 address=localhost # omission",
+    "reordering": "transport=dt_socket,address= jdk1. address=127.0.0.1 address=localhost jre1.",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHJhbnNwb3J0PWR0X3NvY2tldCxhZGRyZXNzPSBqcmUxLiBqZGsxLiBhZGRyZXNzPTEyNy4wLjAuMSBhZGRyZXNzPWxvY2FsaG9zdA==')) | Invoke-Expression\" "
+  }
+}

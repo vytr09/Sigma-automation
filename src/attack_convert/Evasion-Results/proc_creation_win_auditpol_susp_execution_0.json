@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_auditpol_susp_execution_0",
+  "original_command": "\\auditpol.exe AUDITPOL.EXE disable clear remove restore",
+  "evasions": {
+    "insertion": "\"\\auditpol.exe\" AUDITPOL.EXE disable clear remove restore",
+    "substitution": "\\auditpol.exe AUDITPOL.EXE disable clear remove restore #substitution",
+    "omission": "\\auditpol AUDITPOL disable clear remove restore",
+    "reordering": "\\auditpol.exe clear restore disable AUDITPOL.EXE remove",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGF1ZGl0cG9sLmV4ZSBBVURJVFBPTC5FWEUgZGlzYWJsZSBjbGVhciByZW1vdmUgcmVzdG9yZQ==')) | Invoke-Expression\" "
+  }
+}

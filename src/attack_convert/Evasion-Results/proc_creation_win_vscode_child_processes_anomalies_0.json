@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vscode_child_processes_anomalies_0",
+  "original_command": "\\code.exe \\calc.exe \\regsvr32.exe \\rundll32.exe \\cscript.exe \\wscript.exe \\powershell.exe \\pwsh.exe \\cmd.exe Invoke-Expressions IEX Invoke-Command ICM DownloadString rundll32 regsvr32 wscript cscript",
+  "evasions": {
+    "insertion": "\\code.exe \\calc.exe \"\\regsvr32.exe\" \\rundll32.exe \\cscript.exe \\wscript.exe \\powershell.exe \\pwsh.exe \\cmd.exe Invoke-Expressions IEX Invoke-Command ICM DownloadString rundll32 regsvr32 wscript cscript",
+    "substitution": "\\code.exe \\calc.exe \\regsvr32.exe \\rundll32.exe \\cscript.exe \\wscript.exe \\powershell.exe \\pwsh.exe \\cmd.exe Invoke-Expressions IEX Invoke-C ICM DownloadString rundll32 regsvr32 wscript cscript",
+    "omission": "\\code \\calc \\regsvr32 \\rundll32 \\cscript \\wscript \\powershell \\pwsh \\cmd Invoke-Expressions IEX Invoke-Command ICM DownloadString rundll32 regsvr32 wscript cscript",
+    "reordering": "\\code.exe \\calc.exe \\regsvr32.exe \\rundll32.exe \\cscript.exe \\wscript.exe \\powershell.exe \\pwsh.exe \\cmd.exe Invoke-Expressions IEX Invoke-Command ICM DownloadString rundll32 regsvr32 wscript cscript",
+    "recoding": "powershell.exe -EncodedCommand XABjAG8AZABlAC4AZQB4AGUAIABcAGMAYQBsAGMALgBlAHgAZQAgAFwAcgBlAGcAcwB2AHIAMwAyAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHcAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAGMAbQBkAC4AZQB4AGUAIABJAG4AdgBvAGsAZQAtAEUAeABwAHIAZQBzAHMAaQBvAG4AcwAgAEkARQBYACAASQBuAHYAbwBrAGUALQBDAG8AbQBtAGEAbgBkACAASQBDAE0AIABEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAIAByAHUAbgBkAGwAbAAzADIAIAByAGUAZwBzAHYAcgAzADIAIAB3AHMAYwByAGkAcAB0ACAAYwBzAGMAcgBpAHAAdAA= "
+  }
+}

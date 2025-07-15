@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharp_dpapi_execution_0",
+  "original_command": "\\SharpDPAPI.exe SharpDPAPI.exe backupkey blob certificates credentials keepass masterkeys rdg vaults { }: /file: /machine /mkfile: /password: /pvk: /server: /target: /unprotect",
+  "evasions": {
+    "insertion": "\\SharpDPAPI.exe SharpDPAPI.exe backupkey blob certificates credentials keepass masterkeys rdg \\\"v\\\"\\\"a\\\"\\\"u\\\"\\\"l\\\"\\\"t\\\"\\\"s\\\" { }: /file: /machine /mkfile: /password: /pvk: /server: /target: /unprotect",
+    "substitution": "\\SharpDPAPI.exe SharpDPAPI.exe backupkey blob certificates credentials keepass masterkeys rdg vaults { }: /file: /machine /mkfile: /password: /pvk: /server: /target: /unprotect #substitution",
+    "omission": "\\SharpDPAPI SharpDPAPI backupkey blob certificates credentials keepass masterkeys rdg vaults { }: /file: /machine /mkfile: /password: /pvk: /server: /target: /unprotect",
+    "reordering": "\\SharpDPAPI.exe SharpDPAPI.exe backupkey blob certificates credentials keepass masterkeys rdg vaults { }: /file: /machine /mkfile: /password: /pvk: /server: /target: /unprotect",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwRFBBUEkuZXhlIFNoYXJwRFBBUEkuZXhlIGJhY2t1cGtleSBibG9iIGNlcnRpZmljYXRlcyBjcmVkZW50aWFscyBrZWVwYXNzIG1hc3RlcmtleXMgcmRnIHZhdWx0cyB7IH06IC9maWxlOiAvbWFjaGluZSAvbWtmaWxlOiAvcGFzc3dvcmQ6IC9wdms6IC9zZXJ2ZXI6IC90YXJnZXQ6IC91bnByb3RlY3Q=')) | Invoke-Expression\" "
+  }
+}

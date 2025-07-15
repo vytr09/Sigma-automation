@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 06:56:53 UTC", "rule": "proc_creation_win_certoc_download_0", "phase": "original", "command": "\\certoc.exe CertOC.exe -GetCACAPS http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:57:03 UTC", "rule": "proc_creation_win_certoc_download_0", "phase": "insertion", "command": "\\certoc.exe \\\"CertOC.exe\\\" \\\"-GetCACAPS\\\" http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:57:10 UTC", "rule": "proc_creation_win_certoc_download_0", "phase": "substitution", "command": "\\certoc.exe CertOC.exe -GetCACAPS http #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:57:16 UTC", "rule": "proc_creation_win_certoc_download_0", "phase": "omission", "command": "\\certoc CertOC -GetCACAPS http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:57:22 UTC", "rule": "proc_creation_win_certoc_download_0", "phase": "reordering", "command": "\\certoc.exe CertOC.exe http -GetCACAPS", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:57:31 UTC", "rule": "proc_creation_win_certoc_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnRvYy5leGUgQ2VydE9DLmV4ZSAtR2V0Q0FDQVBTIGh0dHA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_sdclt_0",
+  "original_command": "sdclt.exe",
+  "evasions": {
+    "insertion": "sdclt.exe",
+    "substitution": "sdclt.exe #substitution",
+    "omission": "sdclt",
+    "reordering": "sdclt.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2RjbHQuZXhl')) | Invoke-Expression\" "
+  }
+}

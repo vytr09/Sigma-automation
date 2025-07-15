@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_lsass_dmp_cli_keywords_0",
+  "original_command": "lsass.dmp lsass.zip lsass.rar Andrew.dmp Coredump.dmp NotLSASS.zip lsass_2 lsassdump lsassdmp lsass .dmp SQLDmpr .mdmp nanodump .dmp",
+  "evasions": {
+    "insertion": "lsass.dmp lsass.zip lsass.rar Andrew.dmp Coredump.dmp \"NotLSA\"SS.zip lsass_2 lsassdump lsassdmp lsass .dmp SQLDmpr .mdmp nanodump .dmp",
+    "substitution": "lsass.dmp lsass.zip lsass.rar Andrew.dmp Coredump.dmp NotLSASS.zip lsass_2 lsassdump lsassdmp lsass .dmp SQLDmpr .mdmp nanodump .dmp #substitution",
+    "omission": "lsass.dmp lsass.zip lsass.rar Andrew.dmp Coredump.dmp NotLSASS.zip lsass_2 lsassdump lsassdmp lsass .dmp SQLDmpr .mdmp nanodump .dmp # omission",
+    "reordering": "lsass.dmp lsass.zip lsass.rar Andrew.dmp Coredump.dmp NotLSASS.zip lsass_2 lsassdump lsassdmp lsass .dmp SQLDmpr .mdmp nanodump .dmp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bHNhc3MuZG1wIGxzYXNzLnppcCBsc2Fzcy5yYXIgQW5kcmV3LmRtcCBDb3JlZHVtcC5kbXAgTm90TFNBU1MuemlwIGxzYXNzXzIgbHNhc3NkdW1wIGxzYXNzZG1wIGxzYXNzIC5kbXAgU1FMRG1wciAubWRtcCBuYW5vZHVtcCAuZG1w')) | Invoke-Expression\" "
+  }
+}

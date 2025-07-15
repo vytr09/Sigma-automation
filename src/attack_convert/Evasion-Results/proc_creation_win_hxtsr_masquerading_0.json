@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hxtsr_masquerading_0",
+  "original_command": "\\hxtsr.exe \\hxtsr.exe",
+  "evasions": {
+    "insertion": "\\hxtsr.exe \\\"\\hxtsr.exe\\\"",
+    "substitution": "\\hxtsr.exe \\hxtsr.exe #substitution",
+    "omission": "\\hxtsr \\hxtsr",
+    "reordering": "\\hxtsr.exe \\hxtsr.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGh4dHNyLmV4ZSBcaHh0c3IuZXhl')) | Invoke-Expression\" "
+  }
+}

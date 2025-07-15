@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_query_session_exfil_0",
+  "original_command": ":\\Windows\\System32\\query.exe session > process >",
+  "evasions": {
+    "insertion": ":\\Windows\\System32\\query.exe session > process >",
+    "substitution": ":\\Windows\\System32\\query.exe session > process > #substitution",
+    "omission": ":\\Windows\\System32\\query session > process >",
+    "reordering": ":\\Windows\\System32\\query.exe session > process >",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OlxXaW5kb3dzXFN5c3RlbTMyXHF1ZXJ5LmV4ZSBzZXNzaW9uID4gcHJvY2VzcyA+')) | Invoke-Expression\" "
+  }
+}

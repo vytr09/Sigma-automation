@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_fltmc_unload_driver_sysmon_0",
+  "original_command": "\\fltMC.exe fltMC.exe unload sysmon",
+  "evasions": {
+    "insertion": "\\fltMC.exe fltMC.exe unl\\\"oad\\\" sysmon",
+    "substitution": "\\fltMC.exe fltMC.exe unload sysmon #substitution",
+    "omission": "\\fltMC fltMC unload sysmon",
+    "reordering": "\\fltMC.exe fltMC.exe unload sysmon",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZsdE1DLmV4ZSBmbHRNQy5leGUgdW5sb2FkIHN5c21vbg==')) | Invoke-Expression\" "
+  }
+}

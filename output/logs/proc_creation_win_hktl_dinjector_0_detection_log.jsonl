@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:40:23 UTC", "rule": "proc_creation_win_hktl_dinjector_0", "phase": "original", "command": "/am51 /password", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:40:29 UTC", "rule": "proc_creation_win_hktl_dinjector_0", "phase": "insertion", "command": "/am51 /{cmd_part[:mid]}\"{cmd_part[mid:]}\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:40:34 UTC", "rule": "proc_creation_win_hktl_dinjector_0", "phase": "substitution", "command": "/am51 /password #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:40:40 UTC", "rule": "proc_creation_win_hktl_dinjector_0", "phase": "omission", "command": "/am51 /password # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:40:45 UTC", "rule": "proc_creation_win_hktl_dinjector_0", "phase": "reordering", "command": "/am51 /password", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:40:51 UTC", "rule": "proc_creation_win_hktl_dinjector_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2FtNTEgL3Bhc3N3b3Jk')) | Invoke-Expression\" ", "status": "BYPASSED"}

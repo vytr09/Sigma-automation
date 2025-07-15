@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pressanykey_lolbin_execution_0",
+  "original_command": "\\Microsoft.NodejsTools.PressAnyKey.exe",
+  "evasions": {
+    "insertion": "\\\"M\"\"i\"\"c\"\"r\"\"o\"\"s\"\"o\"\"f\"\"t\"\".\"\"N\"\"o\"\"d\"\"e\"\"j\"\"s\"\"T\"\"o\"\"o\"\"l\"\"s\"\".\"\"P\"\"r\"\"e\"\"s\"\"s\"\"A\"\"n\"\"y\"\"K\"\"e\"\"y\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\Microsoft.NodejsTools.PressAnyKey.exe #substitution",
+    "omission": "\\Microsoft.NodejsTools.PressAnyKey",
+    "reordering": "\\Microsoft.NodejsTools.PressAnyKey.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1pY3Jvc29mdC5Ob2RlanNUb29scy5QcmVzc0FueUtleS5leGU=')) | Invoke-Expression\" "
+  }
+}

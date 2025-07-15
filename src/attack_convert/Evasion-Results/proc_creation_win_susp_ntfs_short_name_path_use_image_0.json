@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_ntfs_short_name_path_use_image_0",
+  "original_command": "\\WebEx\\WebexHost.exe \\thor\\thor64.exe ~1\\unzip.exe ~1\\7zG.exe",
+  "evasions": {
+    "insertion": "\\WebEx\\WebexHost.exe \"\\thor\\thor64.exe\" ~1\\unzip.exe ~1\\7zG.exe",
+    "substitution": "\\WebEx\\WebexHost.exe \\thor\\thor64.exe ~1\\unzip.exe ~1\\7zG.exe #substitution",
+    "omission": "\\WebEx\\WebexHost \\thor\\thor64 ~1\\unzip ~1\\7zG",
+    "reordering": "\\WebEx\\WebexHost.exe ~1\\7zG.exe ~1\\unzip.exe \\thor\\thor64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlYkV4XFdlYmV4SG9zdC5leGUgXHRob3JcdGhvcjY0LmV4ZSB+MVx1bnppcC5leGUgfjFcN3pHLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

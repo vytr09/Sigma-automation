@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_iis_appcmd_susp_rewrite_rule_0",
+  "original_command": "\\appcmd.exe appcmd.exe set config section:system.webServer/rewrite/globalRules commit:",
+  "evasions": {
+    "insertion": "\\appcmd.exe appcmd.exe set config \\\"section:system.webServ\\\"er/rewrite/globalRules commit:",
+    "substitution": "\\appcmd.exe appcmd.exe set config section:system.webServer-rewrite/globalRules commit:",
+    "omission": "\\appcmd appcmd set config section:system.webServer/rewrite/globalRules commit:",
+    "reordering": "\\appcmd.exe appcmd.exe set config section:system.webServer/rewrite/globalRules commit:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFwcGNtZC5leGUgYXBwY21kLmV4ZSBzZXQgY29uZmlnIHNlY3Rpb246c3lzdGVtLndlYlNlcnZlci9yZXdyaXRlL2dsb2JhbFJ1bGVzIGNvbW1pdDo=')) | Invoke-Expression\" "
+  }
+}

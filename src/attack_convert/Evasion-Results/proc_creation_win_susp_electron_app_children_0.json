@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_electron_app_children_0",
+  "original_command": "\\chrome.exe \\discord.exe \\GitHubDesktop.exe \\keybase.exe \\msedge.exe \\msedgewebview2.exe \\msteams.exe \\slack.exe \\teams.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\whoami.exe \\wscript.exe \\Discord.exe \\cmd.exe \\NVSMI\\nvidia-smi.exe",
+  "evasions": {
+    "insertion": "\\chrome.exe \\discord.exe \\GitHubDesktop.exe \\keybase.exe \\msedge.exe \\msedgewebview2.exe \\msteams.exe \\slack.exe \\\"\\teams.exe\\\" \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\whoami.exe \\wscript.exe \\Discord.exe \\cmd.exe \\NVSMI\\nvidia-smi.exe",
+    "substitution": "\\chrome.exe \\discord.exe \\GitHubDesktop.exe \\keybase.exe \\msedge.exe \\msedgewebview2.exe \\msteams.exe \\slack.exe \\teams.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\whoami.exe \\wscript.exe \\Discord.exe \\cmd.exe \\NVSMI\\nvidia-smi.exe #substitution",
+    "omission": "\\chrome \\discord \\GitHubDesktop \\keybase \\msedge \\msedgewebview2 \\msteams \\slack \\teams \\cmd \\cscript \\mshta \\powershell \\pwsh \\regsvr32 \\whoami \\wscript \\Discord \\cmd \\NVSMI\\nvidia-smi",
+    "reordering": "\\chrome.exe \\discord.exe \\GitHubDesktop.exe \\keybase.exe \\msedge.exe \\msedgewebview2.exe \\msteams.exe \\slack.exe \\teams.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\whoami.exe \\wscript.exe \\Discord.exe \\cmd.exe \\NVSMI\\nvidia-smi.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAGgAcgBvAG0AZQAuAGUAeABlACAAXABkAGkAcwBjAG8AcgBkAC4AZQB4AGUAIABcAEcAaQB0AEgAdQBiAEQAZQBzAGsAdABvAHAALgBlAHgAZQAgAFwAawBlAHkAYgBhAHMAZQAuAGUAeABlACAAXABtAHMAZQBkAGcAZQAuAGUAeABlACAAXABtAHMAZQBkAGcAZQB3AGUAYgB2AGkAZQB3ADIALgBlAHgAZQAgAFwAbQBzAHQAZQBhAG0AcwAuAGUAeABlACAAXABzAGwAYQBjAGsALgBlAHgAZQAgAFwAdABlAGEAbQBzAC4AZQB4AGUAIABcAGMAbQBkAC4AZQB4AGUAIABcAGMAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAbQBzAGgAdABhAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcAB3AHMAaAAuAGUAeABlACAAXAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAdwBoAG8AYQBtAGkALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABEAGkAcwBjAG8AcgBkAC4AZQB4AGUAIABcAGMAbQBkAC4AZQB4AGUAIABcAE4AVgBTAE0ASQBcAG4AdgBpAGQAaQBhAC0AcwBtAGkALgBlAHgAZQA= "
+  }
+}

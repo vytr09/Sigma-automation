@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powercfg_execution_0",
+  "original_command": "\\powercfg.exe PowerCfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK -change -standby-timeout-",
+  "evasions": {
+    "insertion": "\\powercfg.exe PowerCfg.exe /setacvalueindex SCHEME_CURRENT \"SUB_\"VIDEO VIDEOCONLOCK -change -standby-timeout-",
+    "substitution": "\\powercfg.exe PowerCfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK -change -standby-timeout- #substitution",
+    "omission": "\\powercfg PowerCfg /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK -change -standby-timeout-",
+    "reordering": "\\powercfg.exe PowerCfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK -change -standby-timeout-",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBvd2VyY2ZnLmV4ZSBQb3dlckNmZy5leGUgL3NldGFjdmFsdWVpbmRleCBTQ0hFTUVfQ1VSUkVOVCBTVUJfVklERU8gVklERU9DT05MT0NLIC1jaGFuZ2UgLXN0YW5kYnktdGltZW91dC0=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regsvr32_susp_parent_0",
+  "original_command": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\regsvr32.exe",
+  "evasions": {
+    "insertion": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\\"\\regsvr32.exe\\\"",
+    "substitution": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\regsvr32.exe #substitution",
+    "omission": "\\cmd \\cscript \\mshta \\powershell_ise \\powershell \\pwsh \\wscript \\regsvr32",
+    "reordering": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\regsvr32.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAG0AcwBoAHQAYQAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAF8AaQBzAGUALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHcAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAcgBlAGcAcwB2AHIAMwAyAC4AZQB4AGUA "
+  }
+}

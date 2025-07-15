@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_pester_0",
+  "original_command": "\\powershell.exe \\pwsh.exe \\WindowsPowerShell\\Modules\\Pester\\ { Invoke-Pester -EnableExit ; { Get-Help",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe \\\"\\\\\"\\\"W\\\"\\\"i\\\"\\\"n\\\"\\\"d\\\"\\\"o\\\"\\\"w\\\"\\\"s\\\"\\\"P\\\"\\\"o\\\"\\\"w\\\"\\\"e\\\"\\\"r\\\"\\\"S\\\"\\\"h\\\"\\\"e\\\"\\\"l\\\"\\\"l\\\"\\\"\\\\\"\\\"M\\\"\\\"o\\\"\\\"d\\\"\\\"u\\\"\\\"l\\\"\\\"e\\\"\\\"s\\\"\\\"\\\\\"\\\"P\\\"\\\"e\\\"\\\"s\\\"\\\"t\\\"\\\"e\\\"\\\"r\\\"\\\"\\\\\" { Invoke-Pester -EnableExit ; { Get-Help",
+    "substitution": "\\powershell.exe \\pwsh.exe \\WindowsPowerShell\\Modules\\Pester\\ { Invoke-Pester -EnableExit ; { Get-Help #substitution",
+    "omission": "\\powershell \\pwsh \\WindowsPowerShell\\Modules\\Pester\\ { Invoke-Pester -EnableExit ; { Get-Help",
+    "reordering": "\\powershell.exe \\pwsh.exe \\WindowsPowerShell\\Modules\\Pester\\ { Invoke-Pester -EnableExit ; { Get-Help",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAVwBpAG4AZABvAHcAcwBQAG8AdwBlAHIAUwBoAGUAbABsAFwATQBvAGQAdQBsAGUAcwBcAFAAZQBzAHQAZQByAFwAIAB7ACAASQBuAHYAbwBrAGUALQBQAGUAcwB0AGUAcgAgAC0ARQBuAGEAYgBsAGUARQB4AGkAdAAgADsAIAB7ACAARwBlAHQALQBIAGUAbABwAA== "
+  }
+}

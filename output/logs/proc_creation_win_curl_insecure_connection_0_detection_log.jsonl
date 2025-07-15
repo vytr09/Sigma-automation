@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:59:06 UTC", "rule": "proc_creation_win_curl_insecure_connection_0", "phase": "original", "command": "\\curl.exe curl.exe --insecure", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:59:06 UTC", "rule": "proc_creation_win_curl_insecure_connection_0", "phase": "insertion", "command": "\\curl.exe \"c\"\"u\"\"r\"\"l\"\".\"\"e\"\"x\"\"e\" --insecure", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:59:06 UTC", "rule": "proc_creation_win_curl_insecure_connection_0", "phase": "substitution", "command": "\\curl.exe curl.exe ---includensecure", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:59:06 UTC", "rule": "proc_creation_win_curl_insecure_connection_0", "phase": "omission", "command": "\\curl curl --insecure", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:59:06 UTC", "rule": "proc_creation_win_curl_insecure_connection_0", "phase": "reordering", "command": "\\curl.exe curl.exe --insecure", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:59:06 UTC", "rule": "proc_creation_win_curl_insecure_connection_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIC0taW5zZWN1cmU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_import_from_suspicious_paths_0",
+  "original_command": "\\reg.exe reg.exe import C:\\Users\\ %temp% %tmp% %appdata% \\AppData\\Local\\Temp\\ C:\\Windows\\Temp\\ C:\\ProgramData\\",
+  "evasions": {
+    "insertion": "\\reg.exe reg.exe import C:\\Users\\ %temp% %tmp% %appdata% \\\"\\AppData\\Local\\Temp\\\\\" \\\"C:\\Windows\\Temp\\\\\" C:\\ProgramData\\",
+    "substitution": "\\reg.exe reg.exe import C:\\Users\\ %temp% %tmp% %appdata% \\AppData\\Local\\Temp\\ C:\\Windows\\Temp\\ C:\\ProgramData\\ #substitution",
+    "omission": "\\reg reg import AppData\\Local\\Temp\\ Temp\\ C:\\ProgramData\\",
+    "reordering": "\\reg.exe reg.exe import C:\\Users\\ %temp% %tmp% %appdata% \\AppData\\Local\\Temp\\ C:\\Windows\\Temp\\ C:\\ProgramData\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnLmV4ZSBpbXBvcnQgQzpcVXNlcnNcICV0ZW1wJSAldG1wJSAlYXBwZGF0YSUgXEFwcERhdGFcTG9jYWxcVGVtcFwgQzpcV2luZG93c1xUZW1wXCBDOlxQcm9ncmFtRGF0YVw=')) | Invoke-Expression\" "
+  }
+}

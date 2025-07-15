@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:36:12 UTC", "rule": "proc_creation_win_renamed_rurat_0", "phase": "original", "command": "\\rutserv.exe \\rfusclient.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:36:19 UTC", "rule": "proc_creation_win_renamed_rurat_0", "phase": "insertion", "command": "\"\\rutserv.exe\" \\rfusclient.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:36:25 UTC", "rule": "proc_creation_win_renamed_rurat_0", "phase": "substitution", "command": "\\rutserv.exe \\rfusclient.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:36:32 UTC", "rule": "proc_creation_win_renamed_rurat_0", "phase": "omission", "command": "\\rutserv \\rfusclient", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:36:38 UTC", "rule": "proc_creation_win_renamed_rurat_0", "phase": "reordering", "command": "\\rutserv.exe \\rfusclient.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:36:44 UTC", "rule": "proc_creation_win_renamed_rurat_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1dHNlcnYuZXhlIFxyZnVzY2xpZW50LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

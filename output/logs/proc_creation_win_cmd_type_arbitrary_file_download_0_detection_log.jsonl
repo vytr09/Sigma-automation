@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:48:26 UTC", "rule": "proc_creation_win_cmd_type_arbitrary_file_download_0", "phase": "original", "command": "type > \\\\\\\\ type \\\\\\\\ >", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:48:26 UTC", "rule": "proc_creation_win_cmd_type_arbitrary_file_download_0", "phase": "insertion", "command": "type > \\\\\\\\ type \\\\\\\\ >", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:48:26 UTC", "rule": "proc_creation_win_cmd_type_arbitrary_file_download_0", "phase": "substitution", "command": "type > \\\\\\\\ type \\\\\\\\ > #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:48:26 UTC", "rule": "proc_creation_win_cmd_type_arbitrary_file_download_0", "phase": "omission", "command": "type > \\\\\\\\ type \\\\\\\\ > # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:48:26 UTC", "rule": "proc_creation_win_cmd_type_arbitrary_file_download_0", "phase": "reordering", "command": "type > \\\\\\\\ type \\\\\\\\ >", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:48:26 UTC", "rule": "proc_creation_win_cmd_type_arbitrary_file_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHlwZSA+IFxcXFwgdHlwZSBcXFxcID4=')) | Invoke-Expression\" ", "status": "BYPASSED"}

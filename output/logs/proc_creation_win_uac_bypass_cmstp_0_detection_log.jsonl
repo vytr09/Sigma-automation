@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:30:36 UTC", "rule": "proc_creation_win_uac_bypass_cmstp_0", "phase": "original", "command": "\\cmstp.exe CMSTP.EXE /s -s /au -au /ni -ni", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:30:43 UTC", "rule": "proc_creation_win_uac_bypass_cmstp_0", "phase": "insertion", "command": "\\cmstp.exe CMSTP.EXE /s -s /au \"-au\" /ni -ni", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:30:50 UTC", "rule": "proc_creation_win_uac_bypass_cmstp_0", "phase": "substitution", "command": "\\cmstp.exe CMSTP.EXE /s -s /au -au /ni -ni #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:30:56 UTC", "rule": "proc_creation_win_uac_bypass_cmstp_0", "phase": "omission", "command": "\\cmstp CMSTP /s -s /au -au /ni -ni", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:31:03 UTC", "rule": "proc_creation_win_uac_bypass_cmstp_0", "phase": "reordering", "command": "\\cmstp.exe CMSTP.EXE /s -s /au -au /ni -ni", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:31:11 UTC", "rule": "proc_creation_win_uac_bypass_cmstp_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtc3RwLmV4ZSBDTVNUUC5FWEUgL3MgLXMgL2F1IC1hdSAvbmkgLW5p')) | Invoke-Expression\" ", "status": "BYPASSED"}

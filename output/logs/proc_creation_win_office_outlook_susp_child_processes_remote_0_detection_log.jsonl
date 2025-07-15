@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:31:43 UTC", "rule": "proc_creation_win_office_outlook_susp_child_processes_remote_0", "phase": "original", "command": "\\outlook.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:31:50 UTC", "rule": "proc_creation_win_office_outlook_susp_child_processes_remote_0", "phase": "insertion", "command": "\"\\outlook.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:31:55 UTC", "rule": "proc_creation_win_office_outlook_susp_child_processes_remote_0", "phase": "substitution", "command": "\\outlook.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:32:02 UTC", "rule": "proc_creation_win_office_outlook_susp_child_processes_remote_0", "phase": "omission", "command": "\\outlook", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:32:08 UTC", "rule": "proc_creation_win_office_outlook_susp_child_processes_remote_0", "phase": "reordering", "command": "\\outlook.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:32:15 UTC", "rule": "proc_creation_win_office_outlook_susp_child_processes_remote_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG91dGxvb2suZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msiexec_dll_0",
+  "original_command": "\\msiexec.exe \\msiexec.exe -z .dll",
+  "evasions": {
+    "insertion": "\\msiexec.exe \\msiexec.exe -z .d\"ll\"",
+    "substitution": "\\msiexec.exe \\msiexec.exe -z .dll #substitution",
+    "omission": "\\msiexec \\msiexec -z .dll",
+    "reordering": "\\msiexec.exe \\msiexec.exe -z .dll",
+    "recoding": "powershell.exe -EncodedCommand XABtAHMAaQBlAHgAZQBjAC4AZQB4AGUAIABcAG0AcwBpAGUAeABlAGMALgBlAHgAZQAgAC0AegAgAC4AZABsAGwA "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:03:45 UTC", "rule": "proc_creation_win_regedit_import_keys_ads_0", "phase": "original", "command": "\\regedit.exe REGEDIT.EXE /i .reg -e -a -c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:03:45 UTC", "rule": "proc_creation_win_regedit_import_keys_ads_0", "phase": "insertion", "command": "\\regedit.exe REGEDIT.EXE /i .reg -e -a \\\"-\\\"\\\"c\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:03:45 UTC", "rule": "proc_creation_win_regedit_import_keys_ads_0", "phase": "substitution", "command": "\\regedit.exe REGEDIT.EXE /i .reg -e -a -c #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:03:45 UTC", "rule": "proc_creation_win_regedit_import_keys_ads_0", "phase": "omission", "command": "\\regedit REGEDIT /i .reg -e -a -c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:03:45 UTC", "rule": "proc_creation_win_regedit_import_keys_ads_0", "phase": "reordering", "command": "\\regedit.exe REGEDIT.EXE /i .reg -e -a -c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:03:45 UTC", "rule": "proc_creation_win_regedit_import_keys_ads_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2VkaXQuZXhlIFJFR0VESVQuRVhFIC9pIC5yZWcgLWUgLWEgLWM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

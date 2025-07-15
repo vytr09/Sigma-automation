@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_clip_execution_0",
+  "original_command": "\\clip.exe clip.exe",
+  "evasions": {
+    "insertion": "\\clip.exe \\\"clip\\\".exe",
+    "substitution": "\\clip.exe clip.exe #substitution",
+    "omission": "\\clip clip",
+    "reordering": "\\clip.exe clip.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsaXAuZXhlIGNsaXAuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hostname_execution_0",
+  "original_command": "\\HOSTNAME.EXE",
+  "evasions": {
+    "insertion": "\\\"H\"\"O\"\"S\"\"T\"\"N\"\"A\"\"M\"\"E\"\".\"\"E\"\"X\"\"E\"",
+    "substitution": "\\HOSTNAME.EXE #substitution",
+    "omission": "\\HOSTNAME",
+    "reordering": "\\HOSTNAME.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEhPU1ROQU1FLkVYRQ==')) | Invoke-Expression\" "
+  }
+}

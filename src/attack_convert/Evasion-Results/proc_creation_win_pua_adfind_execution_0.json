@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_adfind_execution_0",
+  "original_command": "\\AdFind.exe AdFind.exe",
+  "evasions": {
+    "insertion": "\\AdFind.exe AdFin\"d.exe\"",
+    "substitution": "\\AdFind.exe AdFind.exe #substitution",
+    "omission": "\\AdFind AdFind",
+    "reordering": "\\AdFind.exe AdFind.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFkRmluZC5leGUgQWRGaW5kLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

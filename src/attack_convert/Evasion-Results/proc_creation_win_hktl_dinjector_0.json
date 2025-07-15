@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_dinjector_0",
+  "original_command": "/am51 /password",
+  "evasions": {
+    "insertion": "/am51 /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
+    "substitution": "/am51 /password #substitution",
+    "omission": "/am51 /password # omission",
+    "reordering": "/am51 /password",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2FtNTEgL3Bhc3N3b3Jk')) | Invoke-Expression\" "
+  }
+}

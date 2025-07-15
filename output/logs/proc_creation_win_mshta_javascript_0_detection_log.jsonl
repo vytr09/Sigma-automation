@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:00:26 UTC", "rule": "proc_creation_win_mshta_javascript_0", "phase": "original", "command": "\\mshta.exe MSHTA.EXE javascript", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:00:42 UTC", "rule": "proc_creation_win_mshta_javascript_0", "phase": "insertion", "command": "\\mshta.exe MSHTA.EXE \"javascript\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:00:49 UTC", "rule": "proc_creation_win_mshta_javascript_0", "phase": "substitution", "command": "\\mshta.exe MSHTA.EXE javascript #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:00:55 UTC", "rule": "proc_creation_win_mshta_javascript_0", "phase": "omission", "command": "\\mshta MSHTA javascript", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:01:03 UTC", "rule": "proc_creation_win_mshta_javascript_0", "phase": "reordering", "command": "\\mshta.exe javascript MSHTA.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:01:11 UTC", "rule": "proc_creation_win_mshta_javascript_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaHRhLmV4ZSBNU0hUQS5FWEUgamF2YXNjcmlwdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

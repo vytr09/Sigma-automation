@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regasm_no_flag_or_dll_execution_0",
+  "original_command": "\\RegAsm.exe RegAsm.exe",
+  "evasions": {
+    "insertion": "\\RegAsm.exe \"RegAs\"m.exe",
+    "substitution": "\\RegAsm.exe RegAsm.exe #substitution",
+    "omission": "\\RegAsm RegAsm",
+    "reordering": "\\RegAsm.exe RegAsm.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFJlZ0FzbS5leGUgUmVnQXNtLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

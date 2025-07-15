@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:20:22 UTC", "rule": "proc_creation_win_explorer_nouaccheck_0", "phase": "original", "command": "\\explorer.exe /NOUACCHECK", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:20:22 UTC", "rule": "proc_creation_win_explorer_nouaccheck_0", "phase": "insertion", "command": "\\explorer.exe /\"{cmd_part}\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:20:22 UTC", "rule": "proc_creation_win_explorer_nouaccheck_0", "phase": "substitution", "command": "\\explorer.exe /NOUACCHECK #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:20:22 UTC", "rule": "proc_creation_win_explorer_nouaccheck_0", "phase": "omission", "command": "\\explorer /NOUACCHECK", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:20:22 UTC", "rule": "proc_creation_win_explorer_nouaccheck_0", "phase": "reordering", "command": "\\explorer.exe /NOUACCHECK", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:20:22 UTC", "rule": "proc_creation_win_explorer_nouaccheck_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSAvTk9VQUNDSEVDSw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

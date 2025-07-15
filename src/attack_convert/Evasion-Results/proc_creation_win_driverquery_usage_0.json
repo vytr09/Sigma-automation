@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_driverquery_usage_0",
+  "original_command": "driverquery.exe drvqry.exe \\cscript.exe \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "driverquery.exe drvqry.exe \\cscript.exe \\mshta.exe \"\\regsvr32.exe\" \"\\rundll32.exe\" \\wscript.exe",
+    "substitution": "driverquery.exe drvqry.exe \\cscript.exe \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+    "omission": "driverquery drvqry \\cscript \\mshta \\regsvr32 \\rundll32 \\wscript",
+    "reordering": "driverquery.exe drvqry.exe \\cscript.exe \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZHJpdmVycXVlcnkuZXhlIGRydnFyeS5leGUgXGNzY3JpcHQuZXhlIFxtc2h0YS5leGUgXHJlZ3N2cjMyLmV4ZSBccnVuZGxsMzIuZXhlIFx3c2NyaXB0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

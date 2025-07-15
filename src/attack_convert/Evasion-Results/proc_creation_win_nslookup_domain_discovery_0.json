@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_nslookup_domain_discovery_0",
+  "original_command": "nslookup _ldap._tcp.dc._msdcs.",
+  "evasions": {
+    "insertion": "nslookup _ldap._tcp\\\".dc._msdcs.\\\"",
+    "substitution": "nslookup _ldap._tcp.dc._msdcs. #substitution",
+    "omission": "nslookup _ldap._tcp.dc._msdcs. # omission",
+    "reordering": "nslookup _ldap._tcp.dc._msdcs.",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bnNsb29rdXAgX2xkYXAuX3RjcC5kYy5fbXNkY3Mu')) | Invoke-Expression\" "
+  }
+}

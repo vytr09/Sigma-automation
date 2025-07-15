@@ -2,7 +2,7 @@
   "rule_name": "win_susp_ps_appdata_0",
   "original_command": "/c powershell \\AppData\\Roaming\\\\",
   "evasions": {
-    "insertion": "/c powershell \\\"\\AppData\\\\\"Roaming\\\\",
+    "insertion": "/c \"p\"\"o\"\"w\"\"e\"\"r\"\"s\"\"h\"\"e\"\"l\"\"l\" \\AppData\\Roaming\\\\",
     "substitution": "/c powershell \\AppData\\Roaming\\\\ #substitution",
     "omission": "/c powershell \\AppData\\Roaming\\\\ # omission",
     "reordering": "/c powershell \\AppData\\Roaming\\\\",

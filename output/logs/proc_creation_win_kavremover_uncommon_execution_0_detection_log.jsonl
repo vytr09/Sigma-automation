@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:20:59 UTC", "rule": "proc_creation_win_kavremover_uncommon_execution_0", "phase": "original", "command": "run run-cmd \\cleanapi.exe \\kavremover.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:21:10 UTC", "rule": "proc_creation_win_kavremover_uncommon_execution_0", "phase": "insertion", "command": "run run-cmd \"\\cleanapi.exe\" \\kavremover.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:21:16 UTC", "rule": "proc_creation_win_kavremover_uncommon_execution_0", "phase": "substitution", "command": "run run-cmd \\cleanapi.exe \\kavremover.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:21:22 UTC", "rule": "proc_creation_win_kavremover_uncommon_execution_0", "phase": "omission", "command": "run run-cmd \\cleanapi \\kavremover", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:21:27 UTC", "rule": "proc_creation_win_kavremover_uncommon_execution_0", "phase": "reordering", "command": "run run-cmd \\cleanapi.exe \\kavremover.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:21:34 UTC", "rule": "proc_creation_win_kavremover_uncommon_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuIHJ1bi1jbWQgXGNsZWFuYXBpLmV4ZSBca2F2cmVtb3Zlci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

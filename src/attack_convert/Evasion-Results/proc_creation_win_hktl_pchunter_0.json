@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_pchunter_0",
+  "original_command": "\\PCHunter64.exe \\PCHunter32.exe PCHunter.exe",
+  "evasions": {
+    "insertion": "\\PCHunter64.exe \\PCHunter32.exe \"PCHunt\"er.exe",
+    "substitution": "\\PCHunter64.exe \\PCHunter32.exe PCHunter.exe #substitution",
+    "omission": "\\PCHunter64 \\PCHunter32 PCHunter",
+    "reordering": "\\PCHunter64.exe PCHunter.exe \\PCHunter32.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFBDSHVudGVyNjQuZXhlIFxQQ0h1bnRlcjMyLmV4ZSBQQ0h1bnRlci5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_aspnet_compiler_susp_paths_0",
+  "original_command": "\\aspnet_compiler.exe \\Users\\Public\\ \\AppData\\Local\\Temp\\ \\AppData\\Local\\Roaming\\ :\\Temp\\ :\\Windows\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\",
+  "evasions": {
+    "insertion": "\\aspnet_compiler.exe \"\\Users\\\"Public\\ \\AppData\\Local\\Temp\\ \\AppData\\Local\\Roaming\\ :\\Temp\\ :\\Windows\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\",
+    "substitution": "\\aspnet_compiler.exe \\Users\\Public\\ \\AppData\\Local\\Temp\\ \\AppData\\Local\\Roaming\\ :\\Temp\\ :\\Windows\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ #substitution",
+    "omission": "\\aspnet_compiler \\Users\\Public\\ \\AppData\\Local\\Temp\\ \\AppData\\Local\\Roaming\\ :\\Temp\\ :\\Windows\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\",
+    "reordering": "\\aspnet_compiler.exe \\Users\\Public\\ \\AppData\\Local\\Temp\\ \\AppData\\Local\\Roaming\\ :\\Temp\\ :\\Windows\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFzcG5ldF9jb21waWxlci5leGUgXFVzZXJzXFB1YmxpY1wgXEFwcERhdGFcTG9jYWxcVGVtcFwgXEFwcERhdGFcTG9jYWxcUm9hbWluZ1wgOlxUZW1wXCA6XFdpbmRvd3NcVGVtcFwgOlxXaW5kb3dzXFN5c3RlbTMyXFRhc2tzXCA6XFdpbmRvd3NcVGFza3Nc')) | Invoke-Expression\" "
+  }
+}

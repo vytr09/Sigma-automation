@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vslsagent_agentextensionpath_load_0",
+  "original_command": "\\vsls-agent.exe --agentExtensionPath Microsoft.VisualStudio.LiveShare.Agent.",
+  "evasions": {
+    "insertion": "\\vsls-agent.exe \"--agentExt\"ensionPath Microsoft.VisualStudio.LiveShare.Agent.",
+    "substitution": "\\vsls-agent.exe --agentExtensionPath Microsoft.VisualStudio.LiveShare.Agent. #substitution",
+    "omission": "\\vsls-agent --agentExtensionPath Microsoft.VisualStudio.LiveShare.Agent.",
+    "reordering": "\\vsls-agent.exe --agentExtensionPath Microsoft.VisualStudio.LiveShare.Agent.",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHZzbHMtYWdlbnQuZXhlIC0tYWdlbnRFeHRlbnNpb25QYXRoIE1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTGl2ZVNoYXJlLkFnZW50Lg==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:27:42 UTC", "rule": "proc_creation_win_fsutil_drive_enumeration_0", "phase": "original", "command": "\\fsutil.exe fsutil.exe drives", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:27:50 UTC", "rule": "proc_creation_win_fsutil_drive_enumeration_0", "phase": "insertion", "command": "\\fsutil.exe \"f\"\"s\"\"u\"\"t\"\"i\"\"l\"\".\"\"e\"\"x\"\"e\" drives", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:27:57 UTC", "rule": "proc_creation_win_fsutil_drive_enumeration_0", "phase": "substitution", "command": "\\fsutil.exe fsutil.exe drives #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:28:05 UTC", "rule": "proc_creation_win_fsutil_drive_enumeration_0", "phase": "omission", "command": "\\fsutil fsutil drives", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:28:12 UTC", "rule": "proc_creation_win_fsutil_drive_enumeration_0", "phase": "reordering", "command": "\\fsutil.exe drives fsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:28:19 UTC", "rule": "proc_creation_win_fsutil_drive_enumeration_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZzdXRpbC5leGUgZnN1dGlsLmV4ZSBkcml2ZXM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

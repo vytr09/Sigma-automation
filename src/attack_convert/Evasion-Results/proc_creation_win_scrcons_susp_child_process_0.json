@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_scrcons_susp_child_process_0",
+  "original_command": "\\scrcons.exe \\svchost.exe \\dllhost.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\schtasks.exe \\regsvr32.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\msbuild.exe",
+  "evasions": {
+    "insertion": "\\scrcons.exe \\svchost.exe \\dllhost.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \"\\schtasks.exe\" \\regsvr32.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\msbuild.exe",
+    "substitution": "\\scrcons.exe \\svchost.exe \\dllhost.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\schtasks.exe \\regsvr32.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\msbuild.exe #substitution",
+    "omission": "\\scrcons \\svchost \\dllhost \\powershell \\pwsh \\wscript \\cscript \\schtasks \\regsvr32 \\mshta \\rundll32 \\msiexec \\msbuild",
+    "reordering": "\\scrcons.exe \\svchost.exe \\dllhost.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\schtasks.exe \\regsvr32.exe \\mshta.exe \\rundll32.exe \\msiexec.exe \\msbuild.exe",
+    "recoding": "powershell.exe -EncodedCommand XABzAGMAcgBjAG8AbgBzAC4AZQB4AGUAIABcAHMAdgBjAGgAbwBzAHQALgBlAHgAZQAgAFwAZABsAGwAaABvAHMAdAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHMAYwBoAHQAYQBzAGsAcwAuAGUAeABlACAAXAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAbQBzAGgAdABhAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAXABtAHMAaQBlAHgAZQBjAC4AZQB4AGUAIABcAG0AcwBiAHUAaQBsAGQALgBlAHgAZQA= "
+  }
+}

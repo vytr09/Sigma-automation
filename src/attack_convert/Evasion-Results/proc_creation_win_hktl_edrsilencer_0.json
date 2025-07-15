@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_edrsilencer_0",
+  "original_command": "\\EDRSilencer.exe EDRSilencer.exe EDRSilencer",
+  "evasions": {
+    "insertion": "\\EDRSilencer.exe \\\"EDRSile\\\"ncer.exe EDRSilencer",
+    "substitution": "\\EDRSilencer.exe EDRSilencer.exe EDRSilencer #substitution",
+    "omission": "\\EDRSilencer EDRSilencer EDRSilencer",
+    "reordering": "\\EDRSilencer.exe EDRSilencer EDRSilencer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEVEUlNpbGVuY2VyLmV4ZSBFRFJTaWxlbmNlci5leGUgRURSU2lsZW5jZXI=')) | Invoke-Expression\" "
+  }
+}

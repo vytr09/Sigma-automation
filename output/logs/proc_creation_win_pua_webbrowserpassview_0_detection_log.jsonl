@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:55:02 UTC", "rule": "proc_creation_win_pua_webbrowserpassview_0", "phase": "original", "command": "\\WebBrowserPassView.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:55:08 UTC", "rule": "proc_creation_win_pua_webbrowserpassview_0", "phase": "insertion", "command": "\\\"\\WebBrowserPassView.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:55:14 UTC", "rule": "proc_creation_win_pua_webbrowserpassview_0", "phase": "substitution", "command": "\\WebBrowserPassView.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:55:20 UTC", "rule": "proc_creation_win_pua_webbrowserpassview_0", "phase": "omission", "command": "\\WebBrowserPassView", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:55:26 UTC", "rule": "proc_creation_win_pua_webbrowserpassview_0", "phase": "reordering", "command": "\\WebBrowserPassView.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:55:33 UTC", "rule": "proc_creation_win_pua_webbrowserpassview_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlYkJyb3dzZXJQYXNzVmlldy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

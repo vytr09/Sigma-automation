@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_deviceenroller_dll_sideloading_0",
+  "original_command": "\\deviceenroller.exe deviceenroller.exe /PhoneDeepLink",
+  "evasions": {
+    "insertion": "\\deviceenroller.exe \"deviceenroller.exe\" /PhoneDeepLink",
+    "substitution": "\\deviceenroller.exe deviceenroller.exe /PhoneDeepLink #substitution",
+    "omission": "\\deviceenroller deviceenroller /PhoneDeepLink",
+    "reordering": "\\deviceenroller.exe deviceenroller.exe /PhoneDeepLink",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRldmljZWVucm9sbGVyLmV4ZSBkZXZpY2VlbnJvbGxlci5leGUgL1Bob25lRGVlcExpbms=')) | Invoke-Expression\" "
+  }
+}

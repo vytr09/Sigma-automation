@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ruby_inline_command_execution_0",
+  "original_command": "\\ruby.exe ruby.exe -e",
+  "evasions": {
+    "insertion": "\\ruby.exe \\\"ruby.exe\\\" \\\"-e\\\"",
+    "substitution": "\\ruby.exe ruby.exe -e #substitution",
+    "omission": "\\ruby ruby -e",
+    "reordering": "\\ruby.exe ruby.exe -e",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1YnkuZXhlIHJ1YnkuZXhlIC1l')) | Invoke-Expression\" "
+  }
+}

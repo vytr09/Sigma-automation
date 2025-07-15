@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_chromium_load_extension_0",
+  "original_command": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --load-extension=",
+  "evasions": {
+    "insertion": "\\brave.exe \\chrome.exe \\msedge.exe \\\"\\opera.exe\\\" \\vivaldi.exe --load-extension=",
+    "substitution": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --load-extension= #substitution",
+    "omission": "\\brave \\chrome \\msedge \\opera \\vivaldi --load-extension=",
+    "reordering": "\\brave.exe --load-extension= \\vivaldi.exe \\chrome.exe \\opera.exe \\msedge.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcY2hyb21lLmV4ZSBcbXNlZGdlLmV4ZSBcb3BlcmEuZXhlIFx2aXZhbGRpLmV4ZSAtLWxvYWQtZXh0ZW5zaW9uPQ==')) | Invoke-Expression\" "
+  }
+}

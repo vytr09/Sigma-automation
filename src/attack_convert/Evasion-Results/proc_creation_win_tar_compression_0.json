@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tar_compression_0",
+  "original_command": "\\tar.exe bsdtar -c -r -u",
+  "evasions": {
+    "insertion": "\\tar.exe \\\"bsdtar\\\" \\\"-c\\\" -r -u",
+    "substitution": "\\tar.exe bsdtar -c -r -u #substitution",
+    "omission": "\\tar bsdtar -c -r -u",
+    "reordering": "\\tar.exe bsdtar -c -u -r",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhci5leGUgYnNkdGFyIC1jIC1yIC11')) | Invoke-Expression\" "
+  }
+}

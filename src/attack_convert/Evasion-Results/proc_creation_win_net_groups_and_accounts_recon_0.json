@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_groups_and_accounts_recon_0",
+  "original_command": "\\net.exe \\net1.exe net.exe net1.exe group localgroup domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto /do /add accounts /do",
+  "evasions": {
+    "insertion": "\\net.exe \\net1.exe net.exe net1.exe group localgroup domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto /do /add \"a\"\"c\"\"c\"\"o\"\"u\"\"n\"\"t\"\"s\" /do",
+    "substitution": "\\net.exe \\net1.exe net.exe net1.exe group localgroup domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto /do /add accounts /do #substitution",
+    "omission": "\\net \\net1 net net1 group localgroup domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto /do /add accounts /do",
+    "reordering": "\\net.exe \\net1.exe net.exe net1.exe group localgroup domain admins administrator administrateur enterprise admins Exchange Trusted Subsystem Remote Desktop Users Utilisateurs du Bureau à distance Usuarios de escritorio remoto /do /add accounts /do",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgZ3JvdXAgbG9jYWxncm91cCBkb21haW4gYWRtaW5zIGFkbWluaXN0cmF0b3IgYWRtaW5pc3RyYXRldXIgZW50ZXJwcmlzZSBhZG1pbnMgRXhjaGFuZ2UgVHJ1c3RlZCBTdWJzeXN0ZW0gUmVtb3RlIERlc2t0b3AgVXNlcnMgVXRpbGlzYXRldXJzIGR1IEJ1cmVhdSDDoCBkaXN0YW5jZSBVc3VhcmlvcyBkZSBlc2NyaXRvcmlvIHJlbW90byAvZG8gL2FkZCBhY2NvdW50cyAvZG8=')) | Invoke-Expression\" "
+  }
+}

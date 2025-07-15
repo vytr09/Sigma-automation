@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:10:05 UTC", "rule": "proc_creation_win_regsvr32_network_pattern_0", "phase": "original", "command": "\\regsvr32.exe REGSVR32.EXE /i -i ftp http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:10:13 UTC", "rule": "proc_creation_win_regsvr32_network_pattern_0", "phase": "insertion", "command": "\\regsvr32.exe REGSVR32.EXE /i -i ftp \"h\"\"t\"\"t\"\"p\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:10:19 UTC", "rule": "proc_creation_win_regsvr32_network_pattern_0", "phase": "substitution", "command": "\\regsvr32.exe REGSVR32.EXE /install -i ftp http", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:10:25 UTC", "rule": "proc_creation_win_regsvr32_network_pattern_0", "phase": "omission", "command": "\\regsvr32 REGSVR32 /i -i ftp http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:10:32 UTC", "rule": "proc_creation_win_regsvr32_network_pattern_0", "phase": "reordering", "command": "\\regsvr32.exe REGSVR32.EXE /i -i ftp http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:10:38 UTC", "rule": "proc_creation_win_regsvr32_network_pattern_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ3N2cjMyLmV4ZSBSRUdTVlIzMi5FWEUgL2kgLWkgZnRwIGh0dHA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

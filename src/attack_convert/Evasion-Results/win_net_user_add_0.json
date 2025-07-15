@@ -2,7 +2,7 @@
   "rule_name": "win_net_user_add_0",
   "original_command": "net.exe user add",
   "evasions": {
-    "insertion": "net.exe \"u\"\"s\"\"e\"\"r\" add",
+    "insertion": "net.exe user \\\"add\\\"",
     "substitution": "net.exe user add #substitution",
     "omission": "net user add",
     "reordering": "net.exe add user",

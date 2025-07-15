@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:41:02 UTC", "rule": "proc_creation_win_vaultcmd_list_creds_0", "phase": "original", "command": "\\VaultCmd.exe VAULTCMD.EXE /listcreds:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:41:09 UTC", "rule": "proc_creation_win_vaultcmd_list_creds_0", "phase": "insertion", "command": "\\VaultCmd.exe VAULTC\"MD.EXE\" /listcreds:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:41:15 UTC", "rule": "proc_creation_win_vaultcmd_list_creds_0", "phase": "substitution", "command": "\\VaultCmd.exe VAULTCMD.EXE /listcreds: #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:41:22 UTC", "rule": "proc_creation_win_vaultcmd_list_creds_0", "phase": "omission", "command": "\\VaultCmd VAULTCMD /listcreds:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:41:28 UTC", "rule": "proc_creation_win_vaultcmd_list_creds_0", "phase": "reordering", "command": "\\VaultCmd.exe VAULTCMD.EXE /listcreds:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:41:34 UTC", "rule": "proc_creation_win_vaultcmd_list_creds_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZhdWx0Q21kLmV4ZSBWQVVMVENNRC5FWEUgL2xpc3RjcmVkczo=')) | Invoke-Expression\" ", "status": "BYPASSED"}

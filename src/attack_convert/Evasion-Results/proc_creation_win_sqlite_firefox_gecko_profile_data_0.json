@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sqlite_firefox_gecko_profile_data_0",
+  "original_command": "\\sqlite.exe \\sqlite3.exe cookies.sqlite places.sqlite",
+  "evasions": {
+    "insertion": "\\sqlite.exe \\\"\\sqlite3.exe\\\" \\\"cookies.sqlite\\\" places.sqlite",
+    "substitution": "\\sqlite.exe \\sqlite3.exe cookies.sqlite places.sqlite #substitution",
+    "omission": "\\sqlite \\sqlite3 cookies.sqlite places.sqlite",
+    "reordering": "\\sqlite.exe cookies.sqlite places.sqlite \\sqlite3.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxbGl0ZS5leGUgXHNxbGl0ZTMuZXhlIGNvb2tpZXMuc3FsaXRlIHBsYWNlcy5zcWxpdGU=')) | Invoke-Expression\" "
+  }
+}

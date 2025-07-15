@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_product_class_0",
+  "original_command": "\\wmic.exe wmic.exe AntiVirusProduct AntiSpywareProduct FirewallProduct",
+  "evasions": {
+    "insertion": "\\wmic.exe \\\"wmic\\\".exe AntiVirusProduct AntiSpywareProduct FirewallProduct",
+    "substitution": "\\wmic.exe wmic.exe --antivirus AntiSpywareProduct FirewallProduct",
+    "omission": "\\wmic wmic AntiVirusProduct AntiSpywareProduct FirewallProduct",
+    "reordering": "\\wmic.exe wmic.exe AntiVirusProduct AntiSpywareProduct FirewallProduct",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIEFudGlWaXJ1c1Byb2R1Y3QgQW50aVNweXdhcmVQcm9kdWN0IEZpcmV3YWxsUHJvZHVjdA==')) | Invoke-Expression\" "
+  }
+}

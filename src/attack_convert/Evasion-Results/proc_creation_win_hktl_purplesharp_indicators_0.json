@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_purplesharp_indicators_0",
+  "original_command": "PurpleSharp.exe xyz123456.exe PurpleSharp",
+  "evasions": {
+    "insertion": "PurpleSharp.exe \"xyz123\"456.exe PurpleSharp",
+    "substitution": "PurpleSharp.exe xyz123456.exe PurpleSharp #substitution",
+    "omission": "PurpleSharp xyz123456 PurpleSharp",
+    "reordering": "PurpleSharp.exe PurpleSharp xyz123456.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UHVycGxlU2hhcnAuZXhlIHh5ejEyMzQ1Ni5leGUgUHVycGxlU2hhcnA=')) | Invoke-Expression\" "
+  }
+}

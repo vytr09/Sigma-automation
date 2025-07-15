@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dnscmd_install_new_server_level_plugin_dll_0",
+  "original_command": "\\dnscmd.exe /config /serverlevelplugindll",
+  "evasions": {
+    "insertion": "\\dnscmd.exe /\"c\"\"o\"\"n\"\"f\"\"i\"\"g\" /serverlevelplugindll",
+    "substitution": "\\dnscmd.exe -config /serverlevelplugindll",
+    "omission": "\\dnscmd /config /serverlevelplugindll",
+    "reordering": "\\dnscmd.exe /config /serverlevelplugindll",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRuc2NtZC5leGUgL2NvbmZpZyAvc2VydmVybGV2ZWxwbHVnaW5kbGw=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_presentationhost_uncommon_location_exec_0",
+  "original_command": "\\presentationhost.exe PresentationHost.exe .xbap C:\\Windows\\ C:\\Program Files",
+  "evasions": {
+    "insertion": "\\presentationhost.exe PresentationHost.exe \".x\"bap C:\\Windows\\ C:\\Program Files",
+    "substitution": "\\presentationhost.exe PresentationHost.exe .xbap C:\\Windows\\ C:\\Program Files #substitution",
+    "omission": "\\presentationhost PresentationHost .xbap C:\\Program Files",
+    "reordering": "\\presentationhost.exe PresentationHost.exe C:\\Program .xbap C:\\Windows\\ Files",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByZXNlbnRhdGlvbmhvc3QuZXhlIFByZXNlbnRhdGlvbkhvc3QuZXhlIC54YmFwIEM6XFdpbmRvd3NcIEM6XFByb2dyYW0gRmlsZXM=')) | Invoke-Expression\" "
+  }
+}

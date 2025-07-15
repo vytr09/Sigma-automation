@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_runexehelper_0",
+  "original_command": "\\runexehelper.exe",
+  "evasions": {
+    "insertion": "\\\"r\"\"u\"\"n\"\"e\"\"x\"\"e\"\"h\"\"e\"\"l\"\"p\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\runexehelper.exe #substitution",
+    "omission": "\\runexehelper",
+    "reordering": "\\runexehelper.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmV4ZWhlbHBlci5leGU=')) | Invoke-Expression\" "
+  }
+}

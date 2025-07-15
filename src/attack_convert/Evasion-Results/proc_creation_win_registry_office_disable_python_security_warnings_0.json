@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_office_disable_python_security_warnings_0",
+  "original_command": "\\Microsoft\\Office\\ \\Excel\\Security PythonFunctionWarnings 0",
+  "evasions": {
+    "insertion": "\\Microsoft\\Office\\ \\Excel\\Security PythonFunctionWarnings \"0\"",
+    "substitution": "\\Microsoft\\Office\\ \\Excel\\Security PythonFunctionWarnings 0 #substitution",
+    "omission": "\\Microsoft\\Office\\ \\Excel\\Security PythonFunctionWarnings 0 # omission",
+    "reordering": "\\Microsoft\\Office\\ PythonFunctionWarnings 0 \\Excel\\Security",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1pY3Jvc29mdFxPZmZpY2VcIFxFeGNlbFxTZWN1cml0eSBQeXRob25GdW5jdGlvbldhcm5pbmdzIDA=')) | Invoke-Expression\" "
+  }
+}

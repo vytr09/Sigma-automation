@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rdrleakdiag_process_dumping_0",
+  "original_command": "\\rdrleakdiag.exe RdrLeakDiag.exe /memdmp fullmemdmp /o /p",
+  "evasions": {
+    "insertion": "\\rdrleakdiag.exe \"R\"\"d\"\"r\"\"L\"\"e\"\"a\"\"k\"\"D\"\"i\"\"a\"\"g\"\".\"\"e\"\"x\"\"e\" /memdmp fullmemdmp /o /p",
+    "substitution": "\\rdrleakdiag.exe RdrLeakDiag.exe /memdmp fullmemdmp /o /p #substitution",
+    "omission": "\\rdrleakdiag RdrLeakDiag /memdmp fullmemdmp /o /p",
+    "reordering": "\\rdrleakdiag.exe RdrLeakDiag.exe /memdmp fullmemdmp /o /p",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJkcmxlYWtkaWFnLmV4ZSBSZHJMZWFrRGlhZy5leGUgL21lbWRtcCBmdWxsbWVtZG1wIC9vIC9w')) | Invoke-Expression\" "
+  }
+}

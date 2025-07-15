@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_netscan_0",
+  "original_command": "\\netscan.exe",
+  "evasions": {
+    "insertion": "\"\\netscan.exe\"",
+    "substitution": "\\netscan.exe #substitution",
+    "omission": "\\netscan",
+    "reordering": "\\netscan.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNjYW4uZXhl')) | Invoke-Expression\" "
+  }
+}

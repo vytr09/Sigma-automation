@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mshta_javascript_0",
+  "original_command": "\\mshta.exe MSHTA.EXE javascript",
+  "evasions": {
+    "insertion": "\\mshta.exe MSHTA.EXE \"javascript\"",
+    "substitution": "\\mshta.exe MSHTA.EXE javascript #substitution",
+    "omission": "\\mshta MSHTA javascript",
+    "reordering": "\\mshta.exe javascript MSHTA.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaHRhLmV4ZSBNU0hUQS5FWEUgamF2YXNjcmlwdA==')) | Invoke-Expression\" "
+  }
+}

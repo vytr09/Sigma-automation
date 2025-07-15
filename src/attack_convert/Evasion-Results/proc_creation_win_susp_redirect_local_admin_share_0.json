@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_redirect_local_admin_share_0",
+  "original_command": "> \\\\\\\\127.0.0.1\\\\admin$\\\\ \\\\\\\\localhost\\\\admin$\\\\",
+  "evasions": {
+    "insertion": "> \\\\\\\\127.0.0.1\\\\admin$\\\\ \\\\\\\\localhost\\\\admin$\\\\",
+    "substitution": "> \\\\\\\\127.0.0.1\\\\admin$\\\\ \\\\\\\\localhost\\\\admin$\\\\ #substitution",
+    "omission": "> \\\\\\\\127.0.0.1\\\\admin$\\\\ \\\\\\\\localhost\\\\admin$\\\\ # omission",
+    "reordering": "> \\\\\\\\127.0.0.1\\\\admin$\\\\ \\\\\\\\localhost\\\\admin$\\\\",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAPgAgAFwAXABcAFwAMQAyADcALgAwAC4AMAAuADEAXABcAGEAZABtAGkAbgAkAFwAXAAgAFwAXABcAFwAbABvAGMAYQBsAGgAbwBzAHQAXABcAGEAZABtAGkAbgAkAFwAXAA= "
+  }
+}

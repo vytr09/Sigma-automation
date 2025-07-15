@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_inveigh_0",
+  "original_command": "\\Inveigh.exe \\Inveigh.exe \\Inveigh.dll -SpooferIP -ReplyToIPs -ReplyToDomains -ReplyToMACs -SnifferIP",
+  "evasions": {
+    "insertion": "\\Inveigh.exe \\Inveigh.exe \\Inveigh.dll -SpooferIP -ReplyToIPs -ReplyToDomains \\\"-\\\"\\\"R\\\"\\\"e\\\"\\\"p\\\"\\\"l\\\"\\\"y\\\"\\\"T\\\"\\\"o\\\"\\\"M\\\"\\\"A\\\"\\\"C\\\"\\\"s\\\" -SnifferIP",
+    "substitution": "\\Inveigh.exe \\Inveigh.exe \\Inveigh.dll -SpooferIP -ReplyToIPs -ReplyToDomains -ReplyToMACs -SnifferIP #substitution",
+    "omission": "\\Inveigh \\Inveigh \\Inveigh.dll -SpooferIP -ReplyToIPs -ReplyToDomains -ReplyToMACs -SnifferIP",
+    "reordering": "\\Inveigh.exe \\Inveigh.exe \\Inveigh.dll -SpooferIP -ReplyToIPs -ReplyToDomains -ReplyToMACs -SnifferIP",
+    "recoding": "powershell.exe -EncodedCommand XABJAG4AdgBlAGkAZwBoAC4AZQB4AGUAIABcAEkAbgB2AGUAaQBnAGgALgBlAHgAZQAgAFwASQBuAHYAZQBpAGcAaAAuAGQAbABsACAALQBTAHAAbwBvAGYAZQByAEkAUAAgAC0AUgBlAHAAbAB5AFQAbwBJAFAAcwAgAC0AUgBlAHAAbAB5AFQAbwBEAG8AbQBhAGkAbgBzACAALQBSAGUAcABsAHkAVABvAE0AQQBDAHMAIAAtAFMAbgBpAGYAZgBlAHIASQBQAA== "
+  }
+}

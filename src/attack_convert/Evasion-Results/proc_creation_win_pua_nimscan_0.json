@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nimscan_0",
+  "original_command": "\\NimScan.exe",
+  "evasions": {
+    "insertion": "\\\"N\"\"i\"\"m\"\"S\"\"c\"\"a\"\"n\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\NimScan.exe #substitution",
+    "omission": "\\NimScan",
+    "reordering": "\\NimScan.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE5pbVNjYW4uZXhl')) | Invoke-Expression\" "
+  }
+}

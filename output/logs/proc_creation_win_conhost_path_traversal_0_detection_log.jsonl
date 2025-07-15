@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:52:33 UTC", "rule": "proc_creation_win_conhost_path_traversal_0", "phase": "original", "command": "conhost /../../", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:52:44 UTC", "rule": "proc_creation_win_conhost_path_traversal_0", "phase": "insertion", "command": "conhost /{cmd_part[:mid]}\"{cmd_part[mid:]}\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:52:52 UTC", "rule": "proc_creation_win_conhost_path_traversal_0", "phase": "substitution", "command": "conhost /../../ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:53:00 UTC", "rule": "proc_creation_win_conhost_path_traversal_0", "phase": "omission", "command": "conhost /../../ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:53:12 UTC", "rule": "proc_creation_win_conhost_path_traversal_0", "phase": "reordering", "command": "conhost /../../", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:53:21 UTC", "rule": "proc_creation_win_conhost_path_traversal_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29uaG9zdCAvLi4vLi4v')) | Invoke-Expression\" ", "status": "BYPASSED"}

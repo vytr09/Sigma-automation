@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:54:08 UTC", "rule": "proc_creation_win_mpcmdrun_dll_sideload_defender_0", "phase": "original", "command": "\\MpCmdRun.exe \\NisSrv.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:54:08 UTC", "rule": "proc_creation_win_mpcmdrun_dll_sideload_defender_0", "phase": "insertion", "command": "\"\\MpCmdRun.exe\" \\NisSrv.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:54:08 UTC", "rule": "proc_creation_win_mpcmdrun_dll_sideload_defender_0", "phase": "substitution", "command": "\\MpCmdRun.exe \\NisSrv.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:54:08 UTC", "rule": "proc_creation_win_mpcmdrun_dll_sideload_defender_0", "phase": "omission", "command": "\\MpCmdRun \\NisSrv", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:54:08 UTC", "rule": "proc_creation_win_mpcmdrun_dll_sideload_defender_0", "phase": "reordering", "command": "\\MpCmdRun.exe \\NisSrv.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:54:08 UTC", "rule": "proc_creation_win_mpcmdrun_dll_sideload_defender_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1wQ21kUnVuLmV4ZSBcTmlzU3J2LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

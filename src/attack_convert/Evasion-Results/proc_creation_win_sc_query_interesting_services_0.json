@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_query_interesting_services_0",
+  "original_command": "\\sc.exe sc.exe query termservice",
+  "evasions": {
+    "insertion": "\\sc.exe \"s\"\"c\"\".\"\"e\"\"x\"\"e\" query termservice",
+    "substitution": "\\sc.exe sc.exe query termservice",
+    "omission": "\\sc sc query termservice",
+    "reordering": "\\sc.exe termservice sc.exe query",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgcXVlcnkgdGVybXNlcnZpY2U=')) | Invoke-Expression\" "
+  }
+}

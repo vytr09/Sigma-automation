@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_gmer_0",
+  "original_command": "\\gmer.exe",
+  "evasions": {
+    "insertion": "\\\"g\"\"m\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\gmer.exe #substitution",
+    "omission": "\\gmer",
+    "reordering": "\\gmer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdtZXIuZXhl')) | Invoke-Expression\" "
+  }
+}

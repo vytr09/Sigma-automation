@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_conhost_susp_child_process_0",
+  "original_command": "\\conhost.exe :\\Windows\\System32\\conhost.exe",
+  "evasions": {
+    "insertion": "\\conhost.exe :\\Windows\\Syste\\\"m32\\conhost.exe\\\"",
+    "substitution": "\\conhost.exe :\\Windows\\System32\\conhost.exe #substitution",
+    "omission": "\\conhost :\\Windows\\System32\\conhost",
+    "reordering": "\\conhost.exe :\\Windows\\System32\\conhost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNvbmhvc3QuZXhlIDpcV2luZG93c1xTeXN0ZW0zMlxjb25ob3N0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

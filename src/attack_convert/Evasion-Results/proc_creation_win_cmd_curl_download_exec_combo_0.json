@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_curl_download_exec_combo_0",
+  "original_command": "-c curl http -o &",
+  "evasions": {
+    "insertion": "-c curl http -o &",
+    "substitution": "-c curl http --output &",
+    "omission": "-c curl http -o & # omission",
+    "reordering": "-c curl http -o &",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWMgY3VybCBodHRwIC1vICY=')) | Invoke-Expression\" "
+  }
+}

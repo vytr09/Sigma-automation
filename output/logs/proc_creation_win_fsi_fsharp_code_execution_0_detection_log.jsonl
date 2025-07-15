@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:27:35 UTC", "rule": "proc_creation_win_fsi_fsharp_code_execution_0", "phase": "original", "command": "\\fsi.exe \\fsianycpu.exe fsi.exe fsianycpu.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:27:35 UTC", "rule": "proc_creation_win_fsi_fsharp_code_execution_0", "phase": "insertion", "command": "\\fsi.exe \\fsianycpu.exe fsi\".exe\" fsianycpu.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:27:35 UTC", "rule": "proc_creation_win_fsi_fsharp_code_execution_0", "phase": "substitution", "command": "\\fsi.exe \\fsianycpu.exe fsi.exe fsianycpu.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:27:35 UTC", "rule": "proc_creation_win_fsi_fsharp_code_execution_0", "phase": "omission", "command": "\\fsi \\fsianycpu fsi fsianycpu", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:27:35 UTC", "rule": "proc_creation_win_fsi_fsharp_code_execution_0", "phase": "reordering", "command": "\\fsi.exe fsi.exe fsianycpu.exe \\fsianycpu.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:27:35 UTC", "rule": "proc_creation_win_fsi_fsharp_code_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZzaS5leGUgXGZzaWFueWNwdS5leGUgZnNpLmV4ZSBmc2lhbnljcHUuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

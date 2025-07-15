@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_disable_defender_av_security_monitoring_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll -DisableBehaviorMonitoring $true -DisableRuntimeMonitoring $true \\sc.exe sc.exe stop WinDefend delete WinDefend config WinDefend start=disabled",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerSh\\\"ell.EXE\\\" pwsh.dll -DisableBehaviorMonitoring $true -DisableRuntimeMonitoring $true \\sc.exe sc.exe stop WinDefend delete WinDefend config WinDefend start=disabled",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll -DisableBehaviorMonitoring $true -DisableRuntimeMonitoring $true \\sc.exe sc.exe stop WinDefend delete WinDefend config WinDefend start=disabled",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll -DisableBehaviorMonitoring $true -DisableRuntimeMonitoring $true \\sc sc stop WinDefend delete WinDefend config WinDefend start=disabled",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll -DisableBehaviorMonitoring $true -DisableRuntimeMonitoring $true \\sc.exe sc.exe stop WinDefend delete WinDefend config WinDefend start=disabled",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAC0ARABpAHMAYQBiAGwAZQBCAGUAaABhAHYAaQBvAHIATQBvAG4AaQB0AG8AcgBpAG4AZwAgACQAdAByAHUAZQAgAC0ARABpAHMAYQBiAGwAZQBSAHUAbgB0AGkAbQBlAE0AbwBuAGkAdABvAHIAaQBuAGcAIAAkAHQAcgB1AGUAIABcAHMAYwAuAGUAeABlACAAcwBjAC4AZQB4AGUAIABzAHQAbwBwACAAVwBpAG4ARABlAGYAZQBuAGQAIABkAGUAbABlAHQAZQAgAFcAaQBuAEQAZQBmAGUAbgBkACAAYwBvAG4AZgBpAGcAIABXAGkAbgBEAGUAZgBlAG4AZAAgAHMAdABhAHIAdAA9AGQAaQBzAGEAYgBsAGUAZAA= "
+  }
+}

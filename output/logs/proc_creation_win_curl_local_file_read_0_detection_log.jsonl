@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:01:23 UTC", "rule": "proc_creation_win_curl_local_file_read_0", "phase": "original", "command": "\\curl.exe curl.exe file:///", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:01:36 UTC", "rule": "proc_creation_win_curl_local_file_read_0", "phase": "insertion", "command": "\\curl.exe curl\\\".exe\\\" file:///", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:01:46 UTC", "rule": "proc_creation_win_curl_local_file_read_0", "phase": "substitution", "command": "\\curl.exe curl.exe file:/// #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:01:57 UTC", "rule": "proc_creation_win_curl_local_file_read_0", "phase": "omission", "command": "\\curl curl file:///", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:02:11 UTC", "rule": "proc_creation_win_curl_local_file_read_0", "phase": "reordering", "command": "\\curl.exe curl.exe file:///", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:02:21 UTC", "rule": "proc_creation_win_curl_local_file_read_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIGZpbGU6Ly8v')) | Invoke-Expression\" ", "status": "BYPASSED"}

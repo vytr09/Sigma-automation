@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_soaphound_execution_0",
+  "original_command": "--buildcache --bhdump --certdump --dnsdump -c --cachefilename -o --outputdirectory",
+  "evasions": {
+    "insertion": "--buildcache --bhdump --certdump --dnsdump \"-c\" \"--cachefilename\" -o --outputdirectory",
+    "substitution": "--buildcache --bhdump --certdump --dnsdump -c --cachefilename -o --outputdirectory #substitution",
+    "omission": "--buildcache --bhdump --certdump --dnsdump -c --cachefilename -o --outputdirectory # omission",
+    "reordering": "--buildcache --bhdump --certdump --dnsdump -c --cachefilename -o --outputdirectory",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1idWlsZGNhY2hlIC0tYmhkdW1wIC0tY2VydGR1bXAgLS1kbnNkdW1wIC1jIC0tY2FjaGVmaWxlbmFtZSAtbyAtLW91dHB1dGRpcmVjdG9yeQ==')) | Invoke-Expression\" "
+  }
+}

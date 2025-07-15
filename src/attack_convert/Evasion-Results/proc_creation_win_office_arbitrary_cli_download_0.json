@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_arbitrary_cli_download_0",
+  "original_command": "\\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe http:// https://",
+  "evasions": {
+    "insertion": "\\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe htt\\\"p://\\\" https://",
+    "substitution": "\\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe http:// https:// #substitution",
+    "omission": "\\EXCEL \\POWERPNT \\WINWORD Excel POWERPNT WinWord http:// https://",
+    "reordering": "\\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe http:// https://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEVYQ0VMLkVYRSBcUE9XRVJQTlQuRVhFIFxXSU5XT1JELmV4ZSBFeGNlbC5leGUgUE9XRVJQTlQuRVhFIFdpbldvcmQuZXhlIGh0dHA6Ly8gaHR0cHM6Ly8=')) | Invoke-Expression\" "
+  }
+}

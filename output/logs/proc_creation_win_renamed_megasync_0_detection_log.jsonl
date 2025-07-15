@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:30:48 UTC", "rule": "proc_creation_win_renamed_megasync_0", "phase": "original", "command": "megasync.exe \\megasync.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:30:56 UTC", "rule": "proc_creation_win_renamed_megasync_0", "phase": "insertion", "command": "megasync.exe \"\\megasync.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:31:04 UTC", "rule": "proc_creation_win_renamed_megasync_0", "phase": "substitution", "command": "megasync.exe \\megasync.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:31:10 UTC", "rule": "proc_creation_win_renamed_megasync_0", "phase": "omission", "command": "megasync \\megasync", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:31:17 UTC", "rule": "proc_creation_win_renamed_megasync_0", "phase": "reordering", "command": "megasync.exe \\megasync.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:31:23 UTC", "rule": "proc_creation_win_renamed_megasync_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bWVnYXN5bmMuZXhlIFxtZWdhc3luYy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

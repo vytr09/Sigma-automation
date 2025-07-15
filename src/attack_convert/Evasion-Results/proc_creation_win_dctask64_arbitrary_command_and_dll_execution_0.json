@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dctask64_arbitrary_command_and_dll_execution_0",
+  "original_command": "\\dctask64.exe executecmd64 invokeexe injectDll",
+  "evasions": {
+    "insertion": "\\dctask64.exe executecmd64 \"invokeexe\" \"injectDll\"",
+    "substitution": "\\dctask64.exe executecmd64 invokeexe injectDll #substitution",
+    "omission": "\\dctask64 executecmd64 invokeexe injectDll",
+    "reordering": "\\dctask64.exe executecmd64 injectDll invokeexe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRjdGFzazY0LmV4ZSBleGVjdXRlY21kNjQgaW52b2tlZXhlIGluamVjdERsbA==')) | Invoke-Expression\" "
+  }
+}

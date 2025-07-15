@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_del_greedy_deletion_0",
+  "original_command": "\\cmd.exe Cmd.Exe del erase \\\\\\ .au3 \\\\\\ .dll \\\\\\ .exe \\\\\\ .js",
+  "evasions": {
+    "insertion": "\\cmd.exe Cmd.Exe del erase \\\\\\ .au3 \\\\\\ .dll \\\\\\ .exe \\\"\\\\\"\\\"\\\\\"\\\"\\\\\" .js",
+    "substitution": "\\cmd.exe Cmd.Exe del erase \\\\\\ .au3 \\\\\\ .dll \\\\\\ .exe \\\\\\ .js #substitution",
+    "omission": "\\cmd Cmd del erase \\\\\\ .au3 \\\\\\ .dll \\\\\\ \\\\\\",
+    "reordering": "\\cmd.exe Cmd.Exe del erase \\\\\\ .au3 \\\\\\ .dll \\\\\\ .exe \\\\\\ .js",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAQwBtAGQALgBFAHgAZQAgAGQAZQBsACAAZQByAGEAcwBlACAAXABcAFwAIAAuAGEAdQAzACAAXABcAFwAIAAuAGQAbABsACAAXABcAFwAIAAuAGUAeABlACAAXABcAFwAIAAuAGoAcwA= "
+  }
+}

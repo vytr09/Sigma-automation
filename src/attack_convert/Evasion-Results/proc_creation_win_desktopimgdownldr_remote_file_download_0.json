@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_desktopimgdownldr_remote_file_download_0",
+  "original_command": "\\desktopimgdownldr.exe \\desktopimgdownldr.exe /lockscreenurl:http",
+  "evasions": {
+    "insertion": "\\desktopimgdownldr.exe \\\"\\desktopimg\\\"downldr.exe /lockscreenurl:http",
+    "substitution": "\\desktopimgdownldr.exe \\desktopimgdownldr.exe /lockscreenurl:http #substitution",
+    "omission": "\\desktopimgdownldr \\desktopimgdownldr /lockscreenurl:http",
+    "reordering": "\\desktopimgdownldr.exe \\desktopimgdownldr.exe /lockscreenurl:http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRlc2t0b3BpbWdkb3dubGRyLmV4ZSBcZGVza3RvcGltZ2Rvd25sZHIuZXhlIC9sb2Nrc2NyZWVudXJsOmh0dHA=')) | Invoke-Expression\" "
+  }
+}

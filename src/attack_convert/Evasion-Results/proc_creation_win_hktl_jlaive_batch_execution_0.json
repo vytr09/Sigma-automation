@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_jlaive_batch_execution_0",
+  "original_command": "\\cmd.exe \\xcopy.exe powershell.exe .bat.exe \\xcopy.exe pwsh.exe .bat.exe \\attrib.exe +s +h .bat.exe",
+  "evasions": {
+    "insertion": "\\cmd.exe \\xcopy.exe powershell.exe .bat.exe \\xcopy.exe pwsh.exe .bat.exe \\attr\\\"ib.exe\\\" +s +h .bat.exe",
+    "substitution": "\\cmd.exe \\xcopy.exe powershell.exe .bat.exe \\xcopy.exe pwsh.exe .bat.exe \\attrib.exe +s +h .bat.exe",
+    "omission": "\\cmd \\xcopy powershell \\xcopy pwsh \\attrib +s +h",
+    "reordering": "\\cmd.exe \\xcopy.exe powershell.exe .bat.exe \\xcopy.exe pwsh.exe .bat.exe \\attrib.exe +s +h .bat.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXAB4AGMAbwBwAHkALgBlAHgAZQAgAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAC4AYgBhAHQALgBlAHgAZQAgAFwAeABjAG8AcAB5AC4AZQB4AGUAIABwAHcAcwBoAC4AZQB4AGUAIAAuAGIAYQB0AC4AZQB4AGUAIABcAGEAdAB0AHIAaQBiAC4AZQB4AGUAIAArAHMAIAArAGgAIAAuAGIAYQB0AC4AZQB4AGUA "
+  }
+}

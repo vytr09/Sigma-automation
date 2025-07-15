@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_sysinternals_procdump_0",
+  "original_command": "procdump -ma -mp /accepteula \\procdump.exe \\procdump64.exe",
+  "evasions": {
+    "insertion": "procdump -ma -mp /accepteula \\procdump.exe \\\"\\procdu\\\"mp64.exe",
+    "substitution": "procdump -M -mp /accepteula \\procdump.exe \\procdump64.exe",
+    "omission": "procdump -ma -mp /accepteula \\procdump \\procdump64",
+    "reordering": "procdump -ma -mp /accepteula \\procdump.exe \\procdump64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHJvY2R1bXAgLW1hIC1tcCAvYWNjZXB0ZXVsYSBccHJvY2R1bXAuZXhlIFxwcm9jZHVtcDY0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

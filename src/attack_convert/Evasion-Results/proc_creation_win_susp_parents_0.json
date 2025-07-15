@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_parents_0",
+  "original_command": "\\minesweeper.exe \\winver.exe \\bitsadmin.exe \\csrss.exe \\certutil.exe \\eventvwr.exe \\calc.exe \\notepad.exe \\WerFault.exe \\wermgr.exe \\conhost.exe \\mmc.exe \\win32calc.exe \\notepad.exe",
+  "evasions": {
+    "insertion": "\\minesweeper.exe \\winver.exe \\bitsadmin.exe \\csrss.exe \\certutil.exe \\eventvwr.exe \\calc.exe \\notepad.exe \\\"\\WerFault.exe\\\" \\\"\\wermgr.exe\\\" \\conhost.exe \\mmc.exe \\win32calc.exe \\notepad.exe",
+    "substitution": "\\minesweeper.exe \\winver.exe \\bitsadmin.exe \\csrss.exe \\certutil.exe \\eventvwr.exe \\calc.exe \\notepad.exe \\WerFault.exe \\wermgr.exe \\conhost.exe \\mmc.exe \\win32calc.exe \\notepad.exe #substitution",
+    "omission": "\\minesweeper \\winver \\bitsadmin \\csrss \\certutil \\eventvwr \\calc \\notepad \\WerFault \\wermgr \\conhost \\mmc \\win32calc \\notepad",
+    "reordering": "\\minesweeper.exe \\winver.exe \\bitsadmin.exe \\csrss.exe \\certutil.exe \\eventvwr.exe \\calc.exe \\notepad.exe \\WerFault.exe \\wermgr.exe \\conhost.exe \\mmc.exe \\win32calc.exe \\notepad.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1pbmVzd2VlcGVyLmV4ZSBcd2ludmVyLmV4ZSBcYml0c2FkbWluLmV4ZSBcY3Nyc3MuZXhlIFxjZXJ0dXRpbC5leGUgXGV2ZW50dndyLmV4ZSBcY2FsYy5leGUgXG5vdGVwYWQuZXhlIFxXZXJGYXVsdC5leGUgXHdlcm1nci5leGUgXGNvbmhvc3QuZXhlIFxtbWMuZXhlIFx3aW4zMmNhbGMuZXhlIFxub3RlcGFkLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

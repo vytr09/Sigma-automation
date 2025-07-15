@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_ieinstal_0",
+  "original_command": "\\ieinstal.exe consent.exe",
+  "evasions": {
+    "insertion": "\\ieinstal.exe \\\"conse\\\"nt.exe",
+    "substitution": "\\ieinstal.exe consent.exe #substitution",
+    "omission": "\\ieinstal consent",
+    "reordering": "\\ieinstal.exe consent.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGllaW5zdGFsLmV4ZSBjb25zZW50LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_link_uncommon_parent_process_0",
+  "original_command": "\\link.exe LINK /",
+  "evasions": {
+    "insertion": "\\link.exe \"LINK\" \"/\"",
+    "substitution": "\\link.exe LINK / #substitution",
+    "omission": "\\link LINK /",
+    "reordering": "\\link.exe LINK /",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxpbmsuZXhlIExJTksgLw==')) | Invoke-Expression\" "
+  }
+}

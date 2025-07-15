@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_extrac32_0",
+  "original_command": "extrac32.exe \\extrac32.exe extrac32.exe .cab /C /Y \\\\\\\\",
+  "evasions": {
+    "insertion": "extrac32.exe \"\\extrac32.exe\" extrac32.exe .cab /C /Y \\\\\\\\",
+    "substitution": "extrac32.exe \\extrac32.exe extrac32.exe .cab /C /Y \\\\\\\\ #substitution",
+    "omission": "extrac32 \\extrac32 extrac32 .cab /C /Y \\\\\\\\",
+    "reordering": "extrac32.exe \\extrac32.exe extrac32.exe .cab /C /Y \\\\\\\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXh0cmFjMzIuZXhlIFxleHRyYWMzMi5leGUgZXh0cmFjMzIuZXhlIC5jYWIgL0MgL1kgXFxcXA==')) | Invoke-Expression\" "
+  }
+}

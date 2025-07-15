@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:25:56 UTC", "rule": "proc_creation_win_taskmgr_localsystem_0", "phase": "original", "command": "\\taskmgr.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:26:04 UTC", "rule": "proc_creation_win_taskmgr_localsystem_0", "phase": "insertion", "command": "\\\"\\taskmgr.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:26:13 UTC", "rule": "proc_creation_win_taskmgr_localsystem_0", "phase": "substitution", "command": "\\taskmgr.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:26:19 UTC", "rule": "proc_creation_win_taskmgr_localsystem_0", "phase": "omission", "command": "\\taskmgr", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:26:25 UTC", "rule": "proc_creation_win_taskmgr_localsystem_0", "phase": "reordering", "command": "\\taskmgr.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:26:31 UTC", "rule": "proc_creation_win_taskmgr_localsystem_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhc2ttZ3IuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

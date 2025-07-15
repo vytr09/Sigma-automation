@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_explorer_folder_shortcut_via_shell_binary_0",
+  "original_command": "\\cmd.exe \\powershell.exe \\pwsh.exe \\explorer.exe shell:mycomputerfolder",
+  "evasions": {
+    "insertion": "\\cmd.exe \\powershell.exe \\pwsh.exe \\\"\\explorer.exe\\\" \\\"shell:mycomputerfolder\\\"",
+    "substitution": "\\cmd.exe \\powershell.exe \\pwsh.exe \\explorer.exe shell:mycomputerfolder #substitution",
+    "omission": "\\cmd \\powershell \\pwsh \\explorer shell:mycomputerfolder",
+    "reordering": "\\cmd.exe \\explorer.exe \\powershell.exe shell:mycomputerfolder \\pwsh.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAZQB4AHAAbABvAHIAZQByAC4AZQB4AGUAIABzAGgAZQBsAGwAOgBtAHkAYwBvAG0AcAB1AHQAZQByAGYAbwBsAGQAZQByAA== "
+  }
+}

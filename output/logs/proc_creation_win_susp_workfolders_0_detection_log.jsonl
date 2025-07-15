@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:11:33 UTC", "rule": "proc_creation_win_susp_workfolders_0", "phase": "original", "command": "\\control.exe \\WorkFolders.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:11:33 UTC", "rule": "proc_creation_win_susp_workfolders_0", "phase": "insertion", "command": "\\control.exe \\\"\\WorkFol\\\"ders.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:11:33 UTC", "rule": "proc_creation_win_susp_workfolders_0", "phase": "substitution", "command": "\\control.exe \\WorkFolders.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:11:33 UTC", "rule": "proc_creation_win_susp_workfolders_0", "phase": "omission", "command": "\\control \\WorkFolders", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:11:33 UTC", "rule": "proc_creation_win_susp_workfolders_0", "phase": "reordering", "command": "\\control.exe \\WorkFolders.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:11:33 UTC", "rule": "proc_creation_win_susp_workfolders_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNvbnRyb2wuZXhlIFxXb3JrRm9sZGVycy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

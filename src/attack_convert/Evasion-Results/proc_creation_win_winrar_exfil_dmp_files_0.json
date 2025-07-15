@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winrar_exfil_dmp_files_0",
+  "original_command": "\\rar.exe \\winrar.exe .dmp .dump .hdmp",
+  "evasions": {
+    "insertion": "\\rar.exe \\winrar.exe \".dmp\" \".dump\" .hdmp",
+    "substitution": "\\rar.exe \\winrar.exe .dmp .dump .hdmp #substitution",
+    "omission": "\\rar \\winrar .dmp .dump .hdmp",
+    "reordering": "\\rar.exe \\winrar.exe .hdmp .dmp .dump",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJhci5leGUgXHdpbnJhci5leGUgLmRtcCAuZHVtcCAuaGRtcA==')) | Invoke-Expression\" "
+  }
+}

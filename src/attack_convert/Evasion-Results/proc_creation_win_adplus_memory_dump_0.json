@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_adplus_memory_dump_0",
+  "original_command": "\\adplus.exe Adplus.exe -hang -pn -pmn -p -po -c -sc",
+  "evasions": {
+    "insertion": "\\adplus.exe Adplus.exe \\\"-h\\\"ang -pn -pmn -p -po -c -sc",
+    "substitution": "\\adplus.exe Adplus.exe -hang -pn -pmn -p -po -c -sc #substitution",
+    "omission": "\\adplus Adplus -hang -pn -pmn -p -po -c -sc",
+    "reordering": "\\adplus.exe Adplus.exe -hang -pn -pmn -p -po -c -sc",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFkcGx1cy5leGUgQWRwbHVzLmV4ZSAtaGFuZyAtcG4gLXBtbiAtcCAtcG8gLWMgLXNj')) | Invoke-Expression\" "
+  }
+}

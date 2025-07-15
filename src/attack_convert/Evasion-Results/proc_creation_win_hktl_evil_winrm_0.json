@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_evil_winrm_0",
+  "original_command": "\\ruby.exe -i -u -p",
+  "evasions": {
+    "insertion": "\\ruby.exe -i \\\"-u\\\" -p",
+    "substitution": "\\ruby.exe -i -u -p #substitution",
+    "omission": "\\ruby -i -u -p",
+    "reordering": "\\ruby.exe -u -i -p",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1YnkuZXhlIC1pIC11IC1w')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:02:29 UTC", "rule": "proc_creation_win_certutil_encode_0", "phase": "original", "command": "\\certutil.exe CertUtil.exe -encode", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:02:35 UTC", "rule": "proc_creation_win_certutil_encode_0", "phase": "insertion", "command": "\\certutil.exe CertUtil.exe \\\"-\\\"\\\"e\\\"\\\"n\\\"\\\"c\\\"\\\"o\\\"\\\"d\\\"\\\"e\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:02:40 UTC", "rule": "proc_creation_win_certutil_encode_0", "phase": "substitution", "command": "\\certutil.exe CertUtil.exe --encode", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:02:45 UTC", "rule": "proc_creation_win_certutil_encode_0", "phase": "omission", "command": "\\certutil.exe CertUtil.exe -encode # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:02:52 UTC", "rule": "proc_creation_win_certutil_encode_0", "phase": "reordering", "command": "\\certutil.exe -encode CertUtil.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:02:57 UTC", "rule": "proc_creation_win_certutil_encode_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWVuY29kZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

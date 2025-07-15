@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dism_enable_powershell_web_access_feature_0",
+  "original_command": "\\dism.exe DISM.EXE WindowsPowerShellWebAccess /online /enable-feature",
+  "evasions": {
+    "insertion": "\\dism.exe DISM.EXE WindowsPowerShellWebAccess /{cmd_part[:mid]}\"{cmd_part[mid:]}\" /enable-feature",
+    "substitution": "\\dism.exe DISM.EXE WindowsPowerShellWebAccess /online /enable-feature #substitution",
+    "omission": "\\dism DISM WindowsPowerShellWebAccess /online /enable-feature",
+    "reordering": "\\dism.exe DISM.EXE WindowsPowerShellWebAccess /online /enable-feature",
+    "recoding": "powershell.exe -EncodedCommand XABkAGkAcwBtAC4AZQB4AGUAIABEAEkAUwBNAC4ARQBYAEUAIABXAGkAbgBkAG8AdwBzAFAAbwB3AGUAcgBTAGgAZQBsAGwAVwBlAGIAQQBjAGMAZQBzAHMAIAAvAG8AbgBsAGkAbgBlACAALwBlAG4AYQBiAGwAZQAtAGYAZQBhAHQAdQByAGUA "
+  }
+}

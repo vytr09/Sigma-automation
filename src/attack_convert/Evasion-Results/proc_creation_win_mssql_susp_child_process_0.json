@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mssql_susp_child_process_0",
+  "original_command": "\\sqlservr.exe \\bash.exe \\bitsadmin.exe \\cmd.exe \\netstat.exe \\nltest.exe \\ping.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\sh.exe \\systeminfo.exe \\tasklist.exe \\wsl.exe DATEV_DBENGINE\\MSSQL\\Binn\\sqlservr.exe",
+  "evasions": {
+    "insertion": "\\sqlservr.exe \\bash.exe \\bitsadmin.exe \\cmd.exe \\\"\\netstat.exe\\\" \\nltest.exe \\ping.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\sh.exe \\systeminfo.exe \\tasklist.exe \\wsl.exe DATEV_DBENGINE\\MSSQL\\Binn\\sqlservr.exe",
+    "substitution": "\\sqlservr.exe \\bash.exe \\bitsadmin.exe \\cmd.exe \\netstat.exe \\nltest.exe \\ping.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\sh.exe \\systeminfo.exe \\tasklist.exe \\wsl.exe DATEV_DBENGINE\\MSSQL\\Binn\\sqlservr.exe #substitution",
+    "omission": "\\sqlservr \\bash \\bitsadmin \\cmd \\netstat \\nltest \\ping \\powershell \\pwsh \\regsvr32 \\rundll32 \\sh \\systeminfo \\tasklist \\wsl DATEV_DBENGINE\\MSSQL\\Binn\\sqlservr",
+    "reordering": "\\sqlservr.exe \\bash.exe \\bitsadmin.exe \\cmd.exe \\netstat.exe \\nltest.exe \\ping.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\sh.exe \\systeminfo.exe \\tasklist.exe \\wsl.exe DATEV_DBENGINE\\MSSQL\\Binn\\sqlservr.exe",
+    "recoding": "powershell.exe -EncodedCommand XABzAHEAbABzAGUAcgB2AHIALgBlAHgAZQAgAFwAYgBhAHMAaAAuAGUAeABlACAAXABiAGkAdABzAGEAZABtAGkAbgAuAGUAeABlACAAXABjAG0AZAAuAGUAeABlACAAXABuAGUAdABzAHQAYQB0AC4AZQB4AGUAIABcAG4AbAB0AGUAcwB0AC4AZQB4AGUAIABcAHAAaQBuAGcALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHIAZQBnAHMAdgByADMAMgAuAGUAeABlACAAXAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFwAcwBoAC4AZQB4AGUAIABcAHMAeQBzAHQAZQBtAGkAbgBmAG8ALgBlAHgAZQAgAFwAdABhAHMAawBsAGkAcwB0AC4AZQB4AGUAIABcAHcAcwBsAC4AZQB4AGUAIABEAEEAVABFAFYAXwBEAEIARQBOAEcASQBOAEUAXABNAFMAUwBRAEwAXABCAGkAbgBuAFwAcwBxAGwAcwBlAHIAdgByAC4AZQB4AGUA "
+  }
+}

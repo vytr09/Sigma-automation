@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_printbrm_0",
+  "original_command": "\\PrintBrm.exe -f .zip",
+  "evasions": {
+    "insertion": "\\\"\\PrintBrm.exe\\\" -f .zip",
+    "substitution": "\\PrintBrm.exe -f .zip #substitution",
+    "omission": "\\PrintBrm -f .zip",
+    "reordering": "\\PrintBrm.exe -f .zip",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFByaW50QnJtLmV4ZSAtZiAuemlw')) | Invoke-Expression\" "
+  }
+}

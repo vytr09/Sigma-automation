@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_encode_0",
+  "original_command": "\\certutil.exe CertUtil.exe -encode",
+  "evasions": {
+    "insertion": "\\certutil.exe CertUtil.exe \\\"-\\\"\\\"e\\\"\\\"n\\\"\\\"c\\\"\\\"o\\\"\\\"d\\\"\\\"e\\\"",
+    "substitution": "\\certutil.exe CertUtil.exe --encode",
+    "omission": "\\certutil.exe CertUtil.exe -encode # omission",
+    "reordering": "\\certutil.exe -encode CertUtil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWVuY29kZQ==')) | Invoke-Expression\" "
+  }
+}

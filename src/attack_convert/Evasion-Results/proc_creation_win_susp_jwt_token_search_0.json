@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_jwt_token_search_0",
+  "original_command": "eyJ0eXAiOi eyJhbGciOi eyJ0eX 'eyJ0eX' eyJhbG 'eyJhbG'",
+  "evasions": {
+    "insertion": "eyJ0eXAiOi eyJhbGciOi eyJ0eX 'eyJ0eX' \"eyJhbG\" \"'eyJhbG'\"",
+    "substitution": "eyJ0eXAiOi eyJhbGciOi eyJ0eX 'eyJ0eX' eyJhbG 'eyJhbG' #substitution",
+    "omission": "eyJ0eXAiOi eyJhbGciOi eyJ0eX 'eyJ0eX' eyJhbG 'eyJhbG' # omission",
+    "reordering": "eyJ0eXAiOi eyJ0eX 'eyJ0eX' eyJhbGciOi eyJhbG 'eyJhbG'",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXlKMGVYQWlPaSBleUpoYkdjaU9pIGV5SjBlWCAnZXlKMGVYJyBleUpoYkcgJ2V5SmhiRyc=')) | Invoke-Expression\" "
+  }
+}

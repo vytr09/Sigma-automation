@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_invoke_webrequest_download_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget -ur -o \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ %AppData% %Public% %Temp% %tmp% :\\Windows\\",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget -ur -o \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ \\\"%AppData%\\\" \\\"%Public%\\\" %Temp% %tmp% :\\Windows\\",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget -ur --output \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ %AppData% %Public% %Temp% %tmp% :\\Windows\\",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll curl Invoke-WebRequest iwr wget -ur -o \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ %AppData% %Public% %Temp% %tmp% :\\Windows\\",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll curl Invoke-WebRequest iwr wget -ur -o \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ %AppData% %Public% %Temp% %tmp% :\\Windows\\",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAGMAdQByAGwAIABJAG4AdgBvAGsAZQAtAFcAZQBiAFIAZQBxAHUAZQBzAHQAIABpAHcAcgAgAHcAZwBlAHQAIAAtAHUAcgAgAC0AbwAgAFwAQQBwAHAARABhAHQAYQBcACAAXABEAGUAcwBrAHQAbwBwAFwAIABcAFQAZQBtAHAAXAAgAFwAVQBzAGUAcgBzAFwAUAB1AGIAbABpAGMAXAAgACUAQQBwAHAARABhAHQAYQAlACAAJQBQAHUAYgBsAGkAYwAlACAAJQBUAGUAbQBwACUAIAAlAHQAbQBwACUAIAA6AFwAVwBpAG4AZABvAHcAcwBcAA== "
+  }
+}

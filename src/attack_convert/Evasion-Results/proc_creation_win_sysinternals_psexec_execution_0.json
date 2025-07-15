@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_psexec_execution_0",
+  "original_command": "\\psexec.exe psexec.c",
+  "evasions": {
+    "insertion": "\\psexec.exe \\\"psex\\\"ec.c",
+    "substitution": "\\psexec.exe psexec.c #substitution",
+    "omission": "\\psexec psexec.c",
+    "reordering": "\\psexec.exe psexec.c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBzZXhlYy5leGUgcHNleGVjLmM=')) | Invoke-Expression\" "
+  }
+}

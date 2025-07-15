@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_rules_discovery_0",
+  "original_command": "\\netsh.exe netsh.exe netsh show firewall config state rule name=all",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe netsh show \"fire\"wall config state rule name=all",
+    "substitution": "\\netsh.exe netsh.exe netsh show fw config state rule name=all",
+    "omission": "\\netsh netsh netsh show firewall config state rule name=all",
+    "reordering": "\\netsh.exe netsh.exe netsh show firewall config state rule name=all",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgbmV0c2ggc2hvdyBmaXJld2FsbCBjb25maWcgc3RhdGUgcnVsZSBuYW1lPWFsbA==')) | Invoke-Expression\" "
+  }
+}

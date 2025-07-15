@@ -2,10 +2,10 @@
   "rule_name": "win_apt_unc2452_ps_0",
   "original_command": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows",
   "evasions": {
-    "insertion": "Invoke-WMIMethod win32_process \\\"-\\\"\\\"n\\\"\\\"a\\\"\\\"m\\\"\\\"e\\\" create -argumentlist rundll32 c:\\windows",
+    "insertion": "Invoke-WMIMethod win32_process -n\\\"ame\\\" create -argumentlist rundll32 c:\\windows",
     "substitution": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows #substitution",
     "omission": "Invoke-WMIMethod win32_process -name create -argumentlist rundll32 c:\\windows # omission",
-    "reordering": "Invoke-WMIMethod win32_process -name create c:\\windows rundll32 -argumentlist",
+    "reordering": "Invoke-WMIMethod win32_process -name c:\\windows -argumentlist rundll32 create",
     "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW52b2tlLVdNSU1ldGhvZCB3aW4zMl9wcm9jZXNzIC1uYW1lIGNyZWF0ZSAtYXJndW1lbnRsaXN0IHJ1bmRsbDMyIGM6XHdpbmRvd3M=')) | Invoke-Expression\" "
   }
 }

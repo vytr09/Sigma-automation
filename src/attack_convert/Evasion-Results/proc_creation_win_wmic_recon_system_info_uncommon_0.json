@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_system_info_uncommon_0",
+  "original_command": "wmic.exe \\WMIC.exe LOGICALDISK get Name,Size,FreeSpace os get Caption,OSArchitecture,Version",
+  "evasions": {
+    "insertion": "wmic.exe \\WMIC.exe \"LOGICALDISK\" \"get\" Name,Size,FreeSpace os get Caption,OSArchitecture,Version",
+    "substitution": "wmic.exe \\WMIC.exe LOGICALDISK --get Name,Size,FreeSpace os --get Caption,OSArchitecture,Version",
+    "omission": "wmic \\WMIC LOGICALDISK get Name,Size,FreeSpace os get Caption,OSArchitecture,Version",
+    "reordering": "wmic.exe \\WMIC.exe LOGICALDISK get Name,Size,FreeSpace os get Caption,OSArchitecture,Version",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYy5leGUgXFdNSUMuZXhlIExPR0lDQUxESVNLIGdldCBOYW1lLFNpemUsRnJlZVNwYWNlIG9zIGdldCBDYXB0aW9uLE9TQXJjaGl0ZWN0dXJlLFZlcnNpb24=')) | Invoke-Expression\" "
+  }
+}

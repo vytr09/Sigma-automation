@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_powersploit_empire_default_schtasks_0",
+  "original_command": "\\powershell.exe \\pwsh.exe \\schtasks.exe /Create powershell.exe -NonI /TN Updater /TR /SC ONLOGON /SC DAILY /ST /SC ONIDLE /SC HOURLY",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe \\schtasks.exe /Create powershell.exe -NonI /TN Updater /TR /SC \"ONL\"OGON /SC DAILY /ST /SC ONIDLE /SC HOURLY",
+    "substitution": "\\powershell.exe \\pwsh.exe \\schtasks.exe /Create powershell.exe -NonI /TN Updater /TR /SC ONLOGON /SC DAILY /ST /SC ONIDLE /SC HOURLY #substitution",
+    "omission": "\\powershell \\pwsh \\schtasks /Create powershell -NonI /TN Updater /TR /SC ONLOGON /SC DAILY /ST /SC ONIDLE /SC HOURLY",
+    "reordering": "\\powershell.exe \\pwsh.exe \\schtasks.exe /Create powershell.exe -NonI /TN Updater /TR /SC ONLOGON /SC DAILY /ST /SC ONIDLE /SC HOURLY",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcwBjAGgAdABhAHMAawBzAC4AZQB4AGUAIAAvAEMAcgBlAGEAdABlACAAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBOAG8AbgBJACAALwBUAE4AIABVAHAAZABhAHQAZQByACAALwBUAFIAIAAvAFMAQwAgAE8ATgBMAE8ARwBPAE4AIAAvAFMAQwAgAEQAQQBJAEwAWQAgAC8AUwBUACAALwBTAEMAIABPAE4ASQBEAEwARQAgAC8AUwBDACAASABPAFUAUgBMAFkA "
+  }
+}

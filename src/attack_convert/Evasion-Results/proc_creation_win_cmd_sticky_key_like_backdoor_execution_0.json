@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_sticky_key_like_backdoor_execution_0",
+  "original_command": "\\winlogon.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\wt.exe sethc.exe utilman.exe osk.exe Magnify.exe Narrator.exe DisplaySwitch.exe",
+  "evasions": {
+    "insertion": "\\winlogon.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\wt.exe sethc.exe utilman.exe osk.exe Magnify.exe \"Narrat\"or.exe DisplaySwitch.exe",
+    "substitution": "\\winlogon.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\wt.exe sethc.exe utilman.exe osk.exe Magnify.exe Narrator.exe DisplaySwitch.exe #substitution",
+    "omission": "\\winlogon \\cmd \\cscript \\mshta \\powershell \\pwsh \\regsvr32 \\rundll32 \\wscript \\wt sethc utilman osk Magnify Narrator DisplaySwitch",
+    "reordering": "\\winlogon.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe \\wt.exe sethc.exe utilman.exe osk.exe Magnify.exe Narrator.exe DisplaySwitch.exe",
+    "recoding": "powershell.exe -EncodedCommand XAB3AGkAbgBsAG8AZwBvAG4ALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABtAHMAaAB0AGEALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHIAZQBnAHMAdgByADMAMgAuAGUAeABlACAAXAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXAB3AHQALgBlAHgAZQAgAHMAZQB0AGgAYwAuAGUAeABlACAAdQB0AGkAbABtAGEAbgAuAGUAeABlACAAbwBzAGsALgBlAHgAZQAgAE0AYQBnAG4AaQBmAHkALgBlAHgAZQAgAE4AYQByAHIAYQB0AG8AcgAuAGUAeABlACAARABpAHMAcABsAGEAeQBTAHcAaQB0AGMAaAAuAGUAeABlAA== "
+  }
+}

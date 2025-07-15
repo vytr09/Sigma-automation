@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmdl32_arbitrary_file_download_0",
+  "original_command": "\\cmdl32.exe CMDL32.EXE /vpn /lan",
+  "evasions": {
+    "insertion": "\\cmdl32.exe \"C\"\"M\"\"D\"\"L\"\"3\"\"2\"\".\"\"E\"\"X\"\"E\" /vpn /lan",
+    "substitution": "\\cmdl32.exe CMDL32.EXE -vpn /lan",
+    "omission": "\\cmdl32 CMDL32 /vpn /lan",
+    "reordering": "\\cmdl32.exe CMDL32.EXE /vpn /lan",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZGwzMi5leGUgQ01ETDMyLkVYRSAvdnBuIC9sYW4=')) | Invoke-Expression\" "
+  }
+}

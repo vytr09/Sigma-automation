@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_create_service_0",
+  "original_command": "New-Service -BinaryPathName",
+  "evasions": {
+    "insertion": "New-Service \\\"-Binary\\\"PathName",
+    "substitution": "New-Service -BinaryPathName #substitution",
+    "omission": "New-Service -BinaryPathName # omission",
+    "reordering": "New-Service -BinaryPathName",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TmV3LVNlcnZpY2UgLUJpbmFyeVBhdGhOYW1l')) | Invoke-Expression\" "
+  }
+}

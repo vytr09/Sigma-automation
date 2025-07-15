@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_whoami_parent_anomaly_0",
+  "original_command": "\\whoami.exe whoami.exe \\cmd.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe :\\Program Files\\Microsoft Monitoring Agent\\Agent\\MonitoringHost.exe",
+  "evasions": {
+    "insertion": "\\whoami.exe whoami.exe \\cmd.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe \":\\Program\" Files\\Microsoft Monitoring Agent\\Agent\\MonitoringHost.exe",
+    "substitution": "\\whoami.exe whoami.exe \\cmd.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe :\\Program Files\\Microsoft Monitoring Agent\\Agent\\MonitoringHost.exe #substitution",
+    "omission": "\\whoami whoami \\cmd \\powershell_ise \\powershell \\pwsh :\\Program Files\\Microsoft Monitoring Agent\\Agent\\MonitoringHost",
+    "reordering": "\\whoami.exe whoami.exe \\cmd.exe \\powershell_ise.exe \\powershell.exe \\pwsh.exe :\\Program Files\\Microsoft Monitoring Agent\\Agent\\MonitoringHost.exe",
+    "recoding": "powershell.exe -EncodedCommand XAB3AGgAbwBhAG0AaQAuAGUAeABlACAAdwBoAG8AYQBtAGkALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbABfAGkAcwBlAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcAB3AHMAaAAuAGUAeABlACAAOgBcAFAAcgBvAGcAcgBhAG0AIABGAGkAbABlAHMAXABNAGkAYwByAG8AcwBvAGYAdAAgAE0AbwBuAGkAdABvAHIAaQBuAGcAIABBAGcAZQBuAHQAXABBAGcAZQBuAHQAXABNAG8AbgBpAHQAbwByAGkAbgBnAEgAbwBzAHQALgBlAHgAZQA= "
+  }
+}

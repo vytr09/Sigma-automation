@@ -4,39 +4,3 @@
 {"timestamp": "2025-04-23 10:45:50 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\Windows\\Temp\\\\", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:45:59 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:46:12 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:58:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\Windows\\Temp\\\\*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:58:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe \"\\\"\"W\"\"i\"\"n\"\"d\"\"o\"\"w\"\"s\"\"\\\"\"T\"\"e\"\"m\"\"p\"\"\\\"\"\\\"\"*\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:58:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\Windows\\Temp\\\\* #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:58:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\Windows\\Temp\\\\*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:58:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\Windows\\Temp\\\\*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:58:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcV2luZG93c1xUZW1wXFwq')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:08:07 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\csc.exe \\Windows\\Temp*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:08:07 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe \\\"\\\\\"\\\"c\\\"\\\"s\\\"\\\"c\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" \\Windows\\Temp*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:08:07 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\csc.exe \\Windows\\Temp* #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:08:07 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\csc \\Windows\\Temp*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:08:07 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\Windows\\Temp* \\csc.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:08:07 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcY3NjLmV4ZSBcV2luZG93c1xUZW1wKg==')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:36 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\csc.exe \\AppData*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:36 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe \\csc.exe \\\"\\\\\"\\\"A\\\"\\\"p\\\"\\\"p\\\"\\\"D\\\"\\\"a\\\"\\\"t\\\"\\\"a\\\"\\\"*\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:36 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\csc.exe \\AppData* #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:36 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\csc \\AppData*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:36 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\AppData* \\csc.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:17:36 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcY3NjLmV4ZSBcQXBwRGF0YSo=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:53 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\csc.exe \\AppData*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:53 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe \"\\\"\"c\"\"s\"\"c\"\".\"\"e\"\"x\"\"e\" \\AppData*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:53 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\csc.exe \\AppData* #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:53 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\csc \\AppData*", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:53 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\AppData* \\csc.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:27:53 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcY3NjLmV4ZSBcQXBwRGF0YSo=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:43:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:43:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe \"\\Windows\\Temp\\\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:43:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\Windows\\Temp\\\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:43:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:43:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:43:15 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcV2luZG93c1xUZW1wXFw=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:29 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:29 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe \"\\Window\"s\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:29 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\Windows\\Temp\\\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:29 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:29 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:29 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3NjLmV4ZSBcV2luZG93c1xUZW1wXFw=')) | Invoke-Expression\" ", "status": "BYPASSED"}

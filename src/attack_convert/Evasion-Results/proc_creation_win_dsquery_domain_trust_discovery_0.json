@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dsquery_domain_trust_discovery_0",
+  "original_command": "\\dsquery.exe dsquery.exe trustedDomain",
+  "evasions": {
+    "insertion": "\\dsquery.exe \"dsquery.exe\" \"trustedDomain\"",
+    "substitution": "\\dsquery.exe dsquery.exe trustedDomain #substitution",
+    "omission": "\\dsquery dsquery trustedDomain",
+    "reordering": "\\dsquery.exe trustedDomain dsquery.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRzcXVlcnkuZXhlIGRzcXVlcnkuZXhlIHRydXN0ZWREb21haW4=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_type_arbitrary_file_download_0",
+  "original_command": "type > \\\\\\\\ type \\\\\\\\ >",
+  "evasions": {
+    "insertion": "type > \\\\\\\\ type \\\\\\\\ >",
+    "substitution": "type > \\\\\\\\ type \\\\\\\\ > #substitution",
+    "omission": "type > \\\\\\\\ type \\\\\\\\ > # omission",
+    "reordering": "type > \\\\\\\\ type \\\\\\\\ >",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHlwZSA+IFxcXFwgdHlwZSBcXFxcID4=')) | Invoke-Expression\" "
+  }
+}

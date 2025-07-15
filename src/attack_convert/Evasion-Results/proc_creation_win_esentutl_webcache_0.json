@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_esentutl_webcache_0",
+  "original_command": "\\esentutl.exe esentutl.exe -r \\Windows\\WebCache",
+  "evasions": {
+    "insertion": "\\esentutl.exe esentu\\\"tl.exe\\\" -r \\Windows\\WebCache",
+    "substitution": "\\esentutl.exe esentutl.exe -r \\Windows\\WebCache #substitution",
+    "omission": "\\esentutl esentutl -r \\Windows\\WebCache",
+    "reordering": "\\esentutl.exe \\Windows\\WebCache -r esentutl.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGVzZW50dXRsLmV4ZSBlc2VudHV0bC5leGUgLXIgXFdpbmRvd3NcV2ViQ2FjaGU=')) | Invoke-Expression\" "
+  }
+}

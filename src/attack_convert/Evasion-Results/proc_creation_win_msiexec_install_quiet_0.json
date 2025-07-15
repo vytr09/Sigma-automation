@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msiexec_install_quiet_0",
+  "original_command": "\\msiexec.exe msiexec.exe -i -package -a -j -q",
+  "evasions": {
+    "insertion": "\\msiexec.exe msiex\"ec.exe\" -i -package -a -j -q",
+    "substitution": "\\msiexec.exe msiexec.exe -i -package -a -j -q #substitution",
+    "omission": "\\msiexec msiexec -i -package -a -j -q",
+    "reordering": "\\msiexec.exe msiexec.exe -i -package -a -j -q",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaWV4ZWMuZXhlIG1zaWV4ZWMuZXhlIC1pIC1wYWNrYWdlIC1hIC1qIC1x')) | Invoke-Expression\" "
+  }
+}

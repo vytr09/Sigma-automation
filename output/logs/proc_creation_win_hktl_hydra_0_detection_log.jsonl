@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:45:23 UTC", "rule": "proc_creation_win_hktl_hydra_0", "phase": "original", "command": "-u -p ^USER^ ^PASS^", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:45:31 UTC", "rule": "proc_creation_win_hktl_hydra_0", "phase": "insertion", "command": "-u -p ^USER^ \"^PASS^\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:45:37 UTC", "rule": "proc_creation_win_hktl_hydra_0", "phase": "substitution", "command": "-u -p ^USER^ ^PASS^ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:45:43 UTC", "rule": "proc_creation_win_hktl_hydra_0", "phase": "omission", "command": "-u -p ^USER^ ^PASS^ # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:45:49 UTC", "rule": "proc_creation_win_hktl_hydra_0", "phase": "reordering", "command": "-u -p ^USER^ ^PASS^", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:45:55 UTC", "rule": "proc_creation_win_hktl_hydra_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LXUgLXAgXlVTRVJeIF5QQVNTXg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

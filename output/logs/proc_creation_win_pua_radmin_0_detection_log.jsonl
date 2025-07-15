@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:53:49 UTC", "rule": "proc_creation_win_pua_radmin_0", "phase": "original", "command": "Radmin.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:49 UTC", "rule": "proc_creation_win_pua_radmin_0", "phase": "insertion", "command": "Radmin.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:49 UTC", "rule": "proc_creation_win_pua_radmin_0", "phase": "substitution", "command": "Radmin.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:49 UTC", "rule": "proc_creation_win_pua_radmin_0", "phase": "omission", "command": "Radmin", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:49 UTC", "rule": "proc_creation_win_pua_radmin_0", "phase": "reordering", "command": "Radmin.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:49 UTC", "rule": "proc_creation_win_pua_radmin_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UmFkbWluLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

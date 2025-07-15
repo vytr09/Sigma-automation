@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_w32tm_0",
+  "original_command": "\\w32tm.exe w32time.dll /stripchart /computer: /period: /dataonly /samples:",
+  "evasions": {
+    "insertion": "\\w32tm.exe w32ti\\\"me.dll\\\" /stripchart /computer: /period: /dataonly /samples:",
+    "substitution": "\\w32tm.exe w32time.dll /stripchart /computer: /period: /dataonly /samples: #substitution",
+    "omission": "\\w32tm w32time.dll /stripchart /computer: /period: /dataonly /samples:",
+    "reordering": "\\w32tm.exe w32time.dll /stripchart /computer: /period: /dataonly /samples:",
+    "recoding": "powershell.exe -EncodedCommand XAB3ADMAMgB0AG0ALgBlAHgAZQAgAHcAMwAyAHQAaQBtAGUALgBkAGwAbAAgAC8AcwB0AHIAaQBwAGMAaABhAHIAdAAgAC8AYwBvAG0AcAB1AHQAZQByADoAIAAvAHAAZQByAGkAbwBkADoAIAAvAGQAYQB0AGEAbwBuAGwAeQAgAC8AcwBhAG0AcABsAGUAcwA6AA== "
+  }
+}

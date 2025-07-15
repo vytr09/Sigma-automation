@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tpmvscmgr_add_virtual_smartcard_0",
+  "original_command": "\\tpmvscmgr.exe TpmVscMgr.exe create",
+  "evasions": {
+    "insertion": "\\tpmvscmgr.exe \\\"T\\\"\\\"p\\\"\\\"m\\\"\\\"V\\\"\\\"s\\\"\\\"c\\\"\\\"M\\\"\\\"g\\\"\\\"r\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" create",
+    "substitution": "\\tpmvscmgr.exe TpmVscMgr.exe create",
+    "omission": "\\tpmvscmgr TpmVscMgr create",
+    "reordering": "\\tpmvscmgr.exe TpmVscMgr.exe create",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRwbXZzY21nci5leGUgVHBtVnNjTWdyLmV4ZSBjcmVhdGU=')) | Invoke-Expression\" "
+  }
+}

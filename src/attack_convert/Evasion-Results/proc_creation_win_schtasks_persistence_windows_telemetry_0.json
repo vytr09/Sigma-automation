@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_persistence_windows_telemetry_0",
+  "original_command": "\\schtasks.exe schtasks.exe run \\Application Experience\\Microsoft Compatibility Appraiser",
+  "evasions": {
+    "insertion": "\\schtasks.exe schtasks.exe run \"\\Application\" Experience\\Microsoft Compatibility Appraiser",
+    "substitution": "\\schtasks.exe schtasks.exe run \\Application Experience\\Microsoft Compatibility Appraiser #substitution",
+    "omission": "\\schtasks schtasks run \\Application Experience\\Microsoft Compatibility Appraiser",
+    "reordering": "\\schtasks.exe schtasks.exe run \\Application Experience\\Microsoft Compatibility Appraiser",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSBzY2h0YXNrcy5leGUgcnVuIFxBcHBsaWNhdGlvbiBFeHBlcmllbmNlXE1pY3Jvc29mdCBDb21wYXRpYmlsaXR5IEFwcHJhaXNlcg==')) | Invoke-Expression\" "
+  }
+}

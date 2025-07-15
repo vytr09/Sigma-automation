@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:51:50 UTC", "rule": "proc_creation_win_pua_nimscan_0", "phase": "original", "command": "\\NimScan.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:51:50 UTC", "rule": "proc_creation_win_pua_nimscan_0", "phase": "insertion", "command": "\\\"N\"\"i\"\"m\"\"S\"\"c\"\"a\"\"n\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:51:50 UTC", "rule": "proc_creation_win_pua_nimscan_0", "phase": "substitution", "command": "\\NimScan.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:51:50 UTC", "rule": "proc_creation_win_pua_nimscan_0", "phase": "omission", "command": "\\NimScan", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:51:50 UTC", "rule": "proc_creation_win_pua_nimscan_0", "phase": "reordering", "command": "\\NimScan.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:51:50 UTC", "rule": "proc_creation_win_pua_nimscan_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE5pbVNjYW4uZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:04:41 UTC", "rule": "proc_creation_win_devinit_lolbin_usage_0", "phase": "original", "command": "-t msi-install -i http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:04:47 UTC", "rule": "proc_creation_win_devinit_lolbin_usage_0", "phase": "insertion", "command": "-t \"msi-i\"nstall -i http", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:04:53 UTC", "rule": "proc_creation_win_devinit_lolbin_usage_0", "phase": "substitution", "command": "-t msi-install -i http #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:04:58 UTC", "rule": "proc_creation_win_devinit_lolbin_usage_0", "phase": "omission", "command": "-t msi-install -i http # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:05:08 UTC", "rule": "proc_creation_win_devinit_lolbin_usage_0", "phase": "reordering", "command": "-t http -i msi-install", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:05:14 UTC", "rule": "proc_creation_win_devinit_lolbin_usage_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LXQgbXNpLWluc3RhbGwgLWkgaHR0cA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

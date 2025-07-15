@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_sysinternals_debugview_0",
+  "original_command": "Dbgview.exe \\Dbgview.exe",
+  "evasions": {
+    "insertion": "Dbgview.exe \\\"\\Dbgvi\\\"ew.exe",
+    "substitution": "Dbgview.exe \\Dbgview.exe #substitution",
+    "omission": "Dbgview \\Dbgview",
+    "reordering": "Dbgview.exe \\Dbgview.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RGJndmlldy5leGUgXERiZ3ZpZXcuZXhl')) | Invoke-Expression\" "
+  }
+}

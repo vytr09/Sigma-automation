@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_accesschk_check_permissions_0",
+  "original_command": "Reports effective permissions \\accesschk.exe \\accesschk64.exe accesschk.exe uwcqv kwsu qwsu uwdqs",
+  "evasions": {
+    "insertion": "Reports effective permissions \\accesschk.exe \\accesschk64.exe access\\\"chk.exe\\\" uwcqv kwsu qwsu uwdqs",
+    "substitution": "Reports effective permissions \\accesschk.exe \\accesschk64.exe accesschk.exe uwcqv kwsu qwsu uwdqs #substitution",
+    "omission": "Reports effective permissions \\accesschk \\accesschk64 accesschk uwcqv kwsu qwsu uwdqs",
+    "reordering": "Reports effective permissions \\accesschk.exe \\accesschk64.exe accesschk.exe uwcqv kwsu qwsu uwdqs",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UmVwb3J0cyBlZmZlY3RpdmUgcGVybWlzc2lvbnMgXGFjY2Vzc2Noay5leGUgXGFjY2Vzc2NoazY0LmV4ZSBhY2Nlc3NjaGsuZXhlIHV3Y3F2IGt3c3UgcXdzdSB1d2Rxcw==')) | Invoke-Expression\" "
+  }
+}

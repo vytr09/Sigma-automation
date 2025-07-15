@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msdt_susp_parent_0",
+  "original_command": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe \\wsl.exe \\msdt.exe msdt.exe",
+  "evasions": {
+    "insertion": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schta\"sks.exe\" \\wmic.exe \\wscript.exe \\wsl.exe \\msdt.exe msdt.exe",
+    "substitution": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe \\wsl.exe \\msdt.exe msdt.exe #substitution",
+    "omission": "\\cmd \\cscript \\mshta \\powershell \\pwsh \\regsvr32 \\rundll32 \\schtasks \\wmic \\wscript \\wsl \\msdt msdt",
+    "reordering": "\\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe \\wsl.exe \\msdt.exe msdt.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAG0AcwBoAHQAYQAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcgBlAGcAcwB2AHIAMwAyAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAXABzAGMAaAB0AGEAcwBrAHMALgBlAHgAZQAgAFwAdwBtAGkAYwAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHcAcwBsAC4AZQB4AGUAIABcAG0AcwBkAHQALgBlAHgAZQAgAG0AcwBkAHQALgBlAHgAZQA= "
+  }
+}

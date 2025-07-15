@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:54:17 UTC", "rule": "proc_creation_win_hktl_powertool_0", "phase": "original", "command": "\\PowerTool.exe \\PowerTool64.exe PowerTool.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:54:17 UTC", "rule": "proc_creation_win_hktl_powertool_0", "phase": "insertion", "command": "\\PowerTool.exe \\\"\\PowerTo\\\"ol64.exe PowerTool.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:54:17 UTC", "rule": "proc_creation_win_hktl_powertool_0", "phase": "substitution", "command": "\\PowerTool.exe \\PowerTool64.exe PowerTool.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:54:17 UTC", "rule": "proc_creation_win_hktl_powertool_0", "phase": "omission", "command": "\\PowerTool \\PowerTool64 PowerTool", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:54:17 UTC", "rule": "proc_creation_win_hktl_powertool_0", "phase": "reordering", "command": "\\PowerTool.exe PowerTool.exe \\PowerTool64.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:54:17 UTC", "rule": "proc_creation_win_hktl_powertool_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFBvd2VyVG9vbC5leGUgXFBvd2VyVG9vbDY0LmV4ZSBQb3dlclRvb2wuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_download_0",
+  "original_command": "\\certutil.exe CertUtil.exe urlcache verifyctl http",
+  "evasions": {
+    "insertion": "\\\"\\certutil.exe\\\" CertUtil.exe urlcache verifyctl http",
+    "substitution": "\\certutil.exe CertUtil.exe urlcache verifyctl http #substitution",
+    "omission": "\\certutil CertUtil urlcache verifyctl http",
+    "reordering": "\\certutil.exe urlcache verifyctl CertUtil.exe http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgdXJsY2FjaGUgdmVyaWZ5Y3RsIGh0dHA=')) | Invoke-Expression\" "
+  }
+}

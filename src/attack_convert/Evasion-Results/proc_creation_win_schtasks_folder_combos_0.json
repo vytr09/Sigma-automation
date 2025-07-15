@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_folder_combos_0",
+  "original_command": "\\schtasks.exe schtasks.exe /create powershell pwsh cmd /c cmd /k cmd /r cmd.exe /c cmd.exe /k cmd.exe /r C:\\ProgramData\\ %ProgramData%",
+  "evasions": {
+    "insertion": "\\schtasks.exe schtasks.exe /create powershell pwsh cmd /c cmd /k cmd /r cmd.exe \\\"/c\\\" \\\"cmd.exe\\\" /k cmd.exe /r C:\\ProgramData\\ %ProgramData%",
+    "substitution": "\\schtasks.exe schtasks.exe -create powershell pwsh cmd -c cmd /k cmd /r cmd.exe -c cmd.exe /k cmd.exe /r C:\\ProgramData\\ %ProgramData%",
+    "omission": "\\schtasks schtasks /create powershell pwsh cmd /c cmd /k cmd /r cmd /c cmd /k cmd /r C:\\ProgramData\\ %ProgramData%",
+    "reordering": "\\schtasks.exe schtasks.exe /create powershell pwsh cmd /c cmd /k cmd /r cmd.exe /c cmd.exe /k cmd.exe /r C:\\ProgramData\\ %ProgramData%",
+    "recoding": "powershell.exe -EncodedCommand XABzAGMAaAB0AGEAcwBrAHMALgBlAHgAZQAgAHMAYwBoAHQAYQBzAGsAcwAuAGUAeABlACAALwBjAHIAZQBhAHQAZQAgAHAAbwB3AGUAcgBzAGgAZQBsAGwAIABwAHcAcwBoACAAYwBtAGQAIAAvAGMAIABjAG0AZAAgAC8AawAgAGMAbQBkACAALwByACAAYwBtAGQALgBlAHgAZQAgAC8AYwAgAGMAbQBkAC4AZQB4AGUAIAAvAGsAIABjAG0AZAAuAGUAeABlACAALwByACAAQwA6AFwAUAByAG8AZwByAGEAbQBEAGEAdABhAFwAIAAlAFAAcgBvAGcAcgBhAG0ARABhAHQAYQAlAA== "
+  }
+}

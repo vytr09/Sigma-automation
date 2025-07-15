@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_devinit_lolbin_usage_0",
+  "original_command": "-t msi-install -i http",
+  "evasions": {
+    "insertion": "-t \"msi-i\"nstall -i http",
+    "substitution": "-t msi-install -i http #substitution",
+    "omission": "-t msi-install -i http # omission",
+    "reordering": "-t http -i msi-install",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LXQgbXNpLWluc3RhbGwgLWkgaHR0cA==')) | Invoke-Expression\" "
+  }
+}

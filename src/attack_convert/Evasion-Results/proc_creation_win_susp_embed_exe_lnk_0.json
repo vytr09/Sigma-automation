@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_embed_exe_lnk_0",
+  "original_command": "powershell .lnk",
+  "evasions": {
+    "insertion": "powershell \".l\"nk",
+    "substitution": "powershell .lnk #substitution",
+    "omission": "powershell .lnk # omission",
+    "reordering": "powershell .lnk",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAgAC4AbABuAGsA "
+  }
+}

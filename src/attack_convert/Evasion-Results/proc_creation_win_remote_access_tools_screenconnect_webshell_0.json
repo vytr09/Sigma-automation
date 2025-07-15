@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_screenconnect_webshell_0",
+  "original_command": "\\ScreenConnect.Service.exe \\cmd.exe \\csc.exe",
+  "evasions": {
+    "insertion": "\\ScreenConnect.Service.exe \"\\cmd.exe\" \\csc.exe",
+    "substitution": "\\ScreenConnect.Service.exe \\cmd.exe \\csc.exe #substitution",
+    "omission": "\\ScreenConnect.Service \\cmd \\csc",
+    "reordering": "\\ScreenConnect.Service.exe \\cmd.exe \\csc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNjcmVlbkNvbm5lY3QuU2VydmljZS5leGUgXGNtZC5leGUgXGNzYy5leGU=')) | Invoke-Expression\" "
+  }
+}

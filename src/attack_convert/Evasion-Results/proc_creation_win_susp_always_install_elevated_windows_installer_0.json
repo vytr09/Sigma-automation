@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_always_install_elevated_windows_installer_0",
+  "original_command": "tmp \\msiexec.exe",
+  "evasions": {
+    "insertion": "tmp \"\\msiexec.exe\"",
+    "substitution": "tmp \\msiexec.exe #substitution",
+    "omission": "tmp \\msiexec",
+    "reordering": "tmp \\msiexec.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dG1wIFxtc2lleGVjLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

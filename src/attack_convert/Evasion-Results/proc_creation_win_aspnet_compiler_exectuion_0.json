@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_aspnet_compiler_exectuion_0",
+  "original_command": "\\aspnet_compiler.exe",
+  "evasions": {
+    "insertion": "\\\"a\"\"s\"\"p\"\"n\"\"e\"\"t\"\"_\"\"c\"\"o\"\"m\"\"p\"\"i\"\"l\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\aspnet_compiler.exe #substitution",
+    "omission": "\\aspnet_compiler",
+    "reordering": "\\aspnet_compiler.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFzcG5ldF9jb21waWxlci5leGU=')) | Invoke-Expression\" "
+  }
+}

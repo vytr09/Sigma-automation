@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tar_extraction_0",
+  "original_command": "\\tar.exe bsdtar -x",
+  "evasions": {
+    "insertion": "\\tar.exe \\\"b\\\"\\\"s\\\"\\\"d\\\"\\\"t\\\"\\\"a\\\"\\\"r\\\" -x",
+    "substitution": "\\tar.exe bsdtar -x #substitution",
+    "omission": "\\tar bsdtar -x",
+    "reordering": "\\tar.exe -x bsdtar",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhci5leGUgYnNkdGFyIC14')) | Invoke-Expression\" "
+  }
+}

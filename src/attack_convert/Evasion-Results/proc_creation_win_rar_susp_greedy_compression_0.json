@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rar_susp_greedy_compression_0",
+  "original_command": "\\rar.exe .exe a a -m -hp -r ?:\\\\\\ . ?:\\\\\\\\\\ . ?:\\$Recycle.bin\\ ?:\\PerfLogs\\ ?:\\Temp ?:\\Users\\Public\\ ?:\\Windows\\ %public%",
+  "evasions": {
+    "insertion": "\\rar.exe .exe a a -m -hp -r ?:\\\\\\ . ?:\\\\\\\\\\ . ?:\\$Recycle.bin\\ ?:\\PerfLogs\\ ?:\\Temp ?:\\Users\\Public\\ \\\"?:\\Wi\\\"ndows\\ %public%",
+    "substitution": "\\rar.exe .exe a a -m --header-password -r ?:\\\\\\ . ?:\\\\\\\\\\ . ?:\\$Recycle.bin\\ ?:\\PerfLogs\\ ?:\\Temp ?:\\Users\\Public\\ ?:\\Windows\\ %public%",
+    "omission": "\\rar a a -m -hp -r ?:\\\\\\ . ?:\\\\\\\\\\ . ?:\\$Recycle.bin\\ ?:\\PerfLogs\\ ?:\\Temp ?:\\Users\\Public\\ ?:\\Windows\\ %public%",
+    "reordering": "\\rar.exe .exe a a -m -hp -r ?:\\\\\\ . ?:\\\\\\\\\\ . ?:\\$Recycle.bin\\ ?:\\PerfLogs\\ ?:\\Temp ?:\\Users\\Public\\ ?:\\Windows\\ %public%",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXAByAGEAcgAuAGUAeABlACAALgBlAHgAZQAgAGEAIABhACAALQBtACAALQBoAHAAIAAtAHIAIAA/ADoAXABcAFwAIAAuACAAPwA6AFwAXABcAFwAXAAgAC4AIAA/ADoAXAAkAFIAZQBjAHkAYwBsAGUALgBiAGkAbgBcACAAPwA6AFwAUABlAHIAZgBMAG8AZwBzAFwAIAA/ADoAXABUAGUAbQBwACAAPwA6AFwAVQBzAGUAcgBzAFwAUAB1AGIAbABpAGMAXAAgAD8AOgBcAFcAaQBuAGQAbwB3AHMAXAAgACUAcAB1AGIAbABpAGMAJQA= "
+  }
+}

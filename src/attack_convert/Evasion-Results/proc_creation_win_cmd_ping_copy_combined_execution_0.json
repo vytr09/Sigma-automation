@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_ping_copy_combined_execution_0",
+  "original_command": "\\cmd.exe Cmd.Exe ping copy -n -y",
+  "evasions": {
+    "insertion": "\\cmd.exe Cmd.Exe ping copy -n \"-\"\"y\"",
+    "substitution": "\\cmd.exe Cmd.Exe ping copy -n -y #substitution",
+    "omission": "\\cmd Cmd ping copy -n -y",
+    "reordering": "\\cmd.exe ping Cmd.Exe -y -n copy",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBwaW5nIGNvcHkgLW4gLXk=')) | Invoke-Expression\" "
+  }
+}

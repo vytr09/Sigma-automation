@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_net_use_and_exec_combo_0",
+  "original_command": "Cmd.EXE net use http & start /b \\DavWWWRoot\\ .exe .dll .bat .vbs .ps1",
+  "evasions": {
+    "insertion": "Cmd.EXE net use http & start /b \\DavWWWRoot\\ .exe .dll .bat .vbs .ps1",
+    "substitution": "Cmd.EXE net use http & start /b \\DavWWWRoot\\ .exe .dll .bat .vbs .ps1 #substitution",
+    "omission": "Cmd net use http & start /b \\DavWWWRoot\\ .dll",
+    "reordering": "Cmd.EXE net use http & start /b \\DavWWWRoot\\ .exe .dll .bat .vbs .ps1",
+    "recoding": "powershell.exe -EncodedCommand QwBtAGQALgBFAFgARQAgAG4AZQB0ACAAdQBzAGUAIABoAHQAdABwACAAJgAgAHMAdABhAHIAdAAgAC8AYgAgAFwARABhAHYAVwBXAFcAUgBvAG8AdABcACAALgBlAHgAZQAgAC4AZABsAGwAIAAuAGIAYQB0ACAALgB2AGIAcwAgAC4AcABzADEA "
+  }
+}

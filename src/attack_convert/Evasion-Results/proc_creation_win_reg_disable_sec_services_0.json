@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_disable_sec_services_0",
+  "original_command": "reg add d 4 v Start \\AppIDSvc \\MsMpSvc \\NisSrv \\SecurityHealthService \\Sense \\UsoSvc \\WdBoot \\WdFilter \\WdNisDrv \\WdNisSvc \\WinDefend \\wscsvc \\wuauserv",
+  "evasions": {
+    "insertion": "reg add d 4 v Start \\AppIDSvc \\MsMpSvc \\NisSrv \\SecurityHealthService \\Sense \\UsoSvc \\WdBoot \\\"\\\\\"\\\"W\\\"\\\"d\\\"\\\"F\\\"\\\"i\\\"\\\"l\\\"\\\"t\\\"\\\"e\\\"\\\"r\\\" \\WdNisDrv \\WdNisSvc \\WinDefend \\wscsvc \\wuauserv",
+    "substitution": "reg add d 4 v Start \\AppIDSvc \\MsMpSvc \\NisSrv \\SecurityHealthService \\Sense \\UsoSvc \\WdBoot \\WdFilter \\WdNisDrv \\WdNisSvc \\WinDefend \\wscsvc \\wuauserv",
+    "omission": "reg add d 4 v Start \\AppIDSvc \\MsMpSvc \\NisSrv \\SecurityHealthService \\Sense \\UsoSvc \\WdBoot \\WdFilter \\WdNisDrv \\WdNisSvc \\WinDefend \\wscsvc \\wuauserv # omission",
+    "reordering": "reg add d 4 v Start \\AppIDSvc \\MsMpSvc \\NisSrv \\SecurityHealthService \\Sense \\UsoSvc \\WdBoot \\WdFilter \\WdNisDrv \\WdNisSvc \\WinDefend \\wscsvc \\wuauserv",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBkIDQgdiBTdGFydCBcQXBwSURTdmMgXE1zTXBTdmMgXE5pc1NydiBcU2VjdXJpdHlIZWFsdGhTZXJ2aWNlIFxTZW5zZSBcVXNvU3ZjIFxXZEJvb3QgXFdkRmlsdGVyIFxXZE5pc0RydiBcV2ROaXNTdmMgXFdpbkRlZmVuZCBcd3Njc3ZjIFx3dWF1c2Vydg==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_agentexecutor_potential_abuse_0",
+  "original_command": "AgentExecutor.exe -powershell -remediationScript \\Microsoft.Management.Services.IntuneWindowsAgent.exe",
+  "evasions": {
+    "insertion": "AgentExecutor.exe -powershell -remediationScript \\\"M\"\"i\"\"c\"\"r\"\"o\"\"s\"\"o\"\"f\"\"t\"\".\"\"M\"\"a\"\"n\"\"a\"\"g\"\"e\"\"m\"\"e\"\"n\"\"t\"\".\"\"S\"\"e\"\"r\"\"v\"\"i\"\"c\"\"e\"\"s\"\".\"\"I\"\"n\"\"t\"\"u\"\"n\"\"e\"\"W\"\"i\"\"n\"\"d\"\"o\"\"w\"\"s\"\"A\"\"g\"\"e\"\"n\"\"t\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "AgentExecutor.exe -powershell -remediationScript \\Microsoft.Management.Services.IntuneWindowsAgent.exe #substitution",
+    "omission": "AgentExecutor -powershell -remediationScript \\Microsoft.Management.Services.IntuneWindowsAgent",
+    "reordering": "AgentExecutor.exe -powershell -remediationScript \\Microsoft.Management.Services.IntuneWindowsAgent.exe",
+    "recoding": "powershell.exe -EncodedCommand QQBnAGUAbgB0AEUAeABlAGMAdQB0AG8AcgAuAGUAeABlACAALQBwAG8AdwBlAHIAcwBoAGUAbABsACAALQByAGUAbQBlAGQAaQBhAHQAaQBvAG4AUwBjAHIAaQBwAHQAIABcAE0AaQBjAHIAbwBzAG8AZgB0AC4ATQBhAG4AYQBnAGUAbQBlAG4AdAAuAFMAZQByAHYAaQBjAGUAcwAuAEkAbgB0AHUAbgBlAFcAaQBuAGQAbwB3AHMAQQBnAGUAbgB0AC4AZQB4AGUA "
+  }
+}

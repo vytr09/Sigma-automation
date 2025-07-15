@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_diskshadow_script_mode_susp_location_0",
+  "original_command": "diskshadow.exe \\diskshadow.exe -s :\\Temp\\ :\\Windows\\Temp\\ \\AppData\\Local\\ \\AppData\\Roaming\\ \\ProgramData\\ \\Users\\Public\\",
+  "evasions": {
+    "insertion": "diskshadow.exe \\diskshadow.exe -s :\\Temp\\ :\\Windows\\Temp\\ \\AppData\\Local\\ \"\\AppData\\Roaming\\\" \\ProgramData\\ \\Users\\Public\\",
+    "substitution": "diskshadow.exe \\diskshadow.exe -s :\\Temp\\ :\\Windows\\Temp\\ \\AppData\\Local\\ \\AppData\\Roaming\\ \\ProgramData\\ \\Users\\Public\\ #substitution",
+    "omission": "diskshadow \\diskshadow -s :\\Temp\\ :\\Windows\\Temp\\ \\AppData\\Local\\ \\ProgramData\\ \\Users\\Public\\",
+    "reordering": "diskshadow.exe \\diskshadow.exe -s :\\Temp\\ :\\Windows\\Temp\\ \\AppData\\Local\\ \\AppData\\Roaming\\ \\ProgramData\\ \\Users\\Public\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZGlza3NoYWRvdy5leGUgXGRpc2tzaGFkb3cuZXhlIC1zIDpcVGVtcFwgOlxXaW5kb3dzXFRlbXBcIFxBcHBEYXRhXExvY2FsXCBcQXBwRGF0YVxSb2FtaW5nXCBcUHJvZ3JhbURhdGFcIFxVc2Vyc1xQdWJsaWNc')) | Invoke-Expression\" "
+  }
+}

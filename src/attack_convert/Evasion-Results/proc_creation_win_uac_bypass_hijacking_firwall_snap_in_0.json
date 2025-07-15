@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_hijacking_firwall_snap_in_0",
+  "original_command": "\\mmc.exe WF.msc \\WerFault.exe",
+  "evasions": {
+    "insertion": "\\mmc.exe WF.msc \\\"\\WerFault.exe\\\"",
+    "substitution": "\\mmc.exe WF.msc \\WerFault.exe #substitution",
+    "omission": "\\mmc WF.msc \\WerFault",
+    "reordering": "\\mmc.exe \\WerFault.exe WF.msc",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1tYy5leGUgV0YubXNjIFxXZXJGYXVsdC5leGU=')) | Invoke-Expression\" "
+  }
+}

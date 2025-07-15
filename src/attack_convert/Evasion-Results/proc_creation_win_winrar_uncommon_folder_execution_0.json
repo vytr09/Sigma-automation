@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winrar_uncommon_folder_execution_0",
+  "original_command": "\\rar.exe \\winrar.exe \\UnRAR.exe",
+  "evasions": {
+    "insertion": "\\rar.exe \\winrar.exe \\\"U\"\"n\"\"R\"\"A\"\"R\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\rar.exe \\winrar.exe \\UnRAR.exe #substitution",
+    "omission": "\\rar \\winrar \\UnRAR",
+    "reordering": "\\rar.exe \\UnRAR.exe \\winrar.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJhci5leGUgXHdpbnJhci5leGUgXFVuUkFSLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

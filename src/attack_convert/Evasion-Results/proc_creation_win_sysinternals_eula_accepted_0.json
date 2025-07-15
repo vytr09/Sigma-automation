@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_eula_accepted_0",
+  "original_command": "-accepteula",
+  "evasions": {
+    "insertion": "-accepteula",
+    "substitution": "-accepteula #substitution",
+    "omission": "-accepteula # omission",
+    "reordering": "-accepteula",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWFjY2VwdGV1bGE=')) | Invoke-Expression\" "
+  }
+}

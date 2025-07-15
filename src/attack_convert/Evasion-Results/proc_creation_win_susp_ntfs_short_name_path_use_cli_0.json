@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_ntfs_short_name_path_use_cli_0",
+  "original_command": "~1\\ ~2\\ \\WebEx\\WebexHost.exe \\thor\\thor64.exe \\veam.backup.shell.exe \\winget.exe \\Everything\\Everything.exe \\appdata\\local\\webex\\webex64\\meetings\\wbxreport.exe C:\\Program Files\\Git\\post-install.bat C:\\Program Files\\Git\\cmd\\scalar.exe",
+  "evasions": {
+    "insertion": "~1\\ ~2\\ \\\"\\WebEx\\WebexHost.exe\\\" \\thor\\thor64.exe \\veam.backup.shell.exe \\winget.exe \\Everything\\Everything.exe \\appdata\\local\\webex\\webex64\\meetings\\wbxreport.exe C:\\Program Files\\Git\\post-install.bat C:\\Program Files\\Git\\cmd\\scalar.exe",
+    "substitution": "~1\\ ~2\\ \\WebEx\\WebexHost.exe \\thor\\thor64.exe \\veam.backup.shell.exe \\winget.exe \\Everything\\Everything.exe \\appdata\\local\\webex\\webex64\\meetings\\wbxreport.exe C:\\Program Files\\Git\\post-install.bat C:\\Program Files\\Git\\cmd\\scalar.exe #substitution",
+    "omission": "~1\\ ~2\\ \\WebEx\\WebexHost \\thor\\thor64 \\veam.backup.shell \\winget \\Everything\\Everything \\appdata\\local\\webex\\webex64\\meetings\\wbxreport C:\\Program Files\\Git\\post-install C:\\Program Files\\Git\\cmd\\scalar",
+    "reordering": "~1\\ ~2\\ \\WebEx\\WebexHost.exe \\thor\\thor64.exe \\veam.backup.shell.exe \\winget.exe \\Everything\\Everything.exe \\appdata\\local\\webex\\webex64\\meetings\\wbxreport.exe C:\\Program Files\\Git\\post-install.bat C:\\Program Files\\Git\\cmd\\scalar.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('fjFcIH4yXCBcV2ViRXhcV2ViZXhIb3N0LmV4ZSBcdGhvclx0aG9yNjQuZXhlIFx2ZWFtLmJhY2t1cC5zaGVsbC5leGUgXHdpbmdldC5leGUgXEV2ZXJ5dGhpbmdcRXZlcnl0aGluZy5leGUgXGFwcGRhdGFcbG9jYWxcd2ViZXhcd2ViZXg2NFxtZWV0aW5nc1x3YnhyZXBvcnQuZXhlIEM6XFByb2dyYW0gRmlsZXNcR2l0XHBvc3QtaW5zdGFsbC5iYXQgQzpcUHJvZ3JhbSBGaWxlc1xHaXRcY21kXHNjYWxhci5leGU=')) | Invoke-Expression\" "
+  }
+}

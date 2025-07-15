@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_impersonate_0",
+  "original_command": "impersonate.exe list exec adduser",
+  "evasions": {
+    "insertion": "impersonate.exe list exec \"a\"\"d\"\"d\"\"u\"\"s\"\"e\"\"r\"",
+    "substitution": "impersonate.exe list exec adduser #substitution",
+    "omission": "impersonate list exec adduser",
+    "reordering": "impersonate.exe list adduser exec",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aW1wZXJzb25hdGUuZXhlIGxpc3QgZXhlYyBhZGR1c2Vy')) | Invoke-Expression\" "
+  }
+}

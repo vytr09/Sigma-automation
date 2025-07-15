@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_sys_0",
+  "original_command": "rundll32.exe .sys, .sys",
+  "evasions": {
+    "insertion": "rundll32.exe .sys, \".s\"ys",
+    "substitution": "rundll32.exe .sys, .sys #substitution",
+    "omission": "rundll32 .sys, .sys",
+    "reordering": "rundll32.exe .sys, .sys",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuZGxsMzIuZXhlIC5zeXMsIC5zeXM=')) | Invoke-Expression\" "
+  }
+}

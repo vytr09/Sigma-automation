@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_lnk_exec_hidden_cmd_0",
+  "original_command": "\\explorer.exe .lnk \\u0009 \\u000A \\u0011 \\u0012 \\u0013 \\u000B \\u000C \\u000D",
+  "evasions": {
+    "insertion": "\\explorer.exe .lnk \\u0009 \\u000A \\u0011 \\u0012 \\u0013 \\u000B \\\"\\u000C\\\" \\u000D",
+    "substitution": "\\explorer.exe .lnk \\u0009 \\u000A \\u0011 \\u0012 \\u0013 \\u000B \\u000C \\u000D #substitution",
+    "omission": "\\explorer .lnk \\u0009 \\u000A \\u0011 \\u0012 \\u0013 \\u000B \\u000C \\u000D",
+    "reordering": "\\explorer.exe .lnk \\u0009 \\u000A \\u0011 \\u0012 \\u0013 \\u000B \\u000C \\u000D",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSAubG5rIFx1MDAwOSBcdTAwMEEgXHUwMDExIFx1MDAxMiBcdTAwMTMgXHUwMDBCIFx1MDAwQyBcdTAwMEQ=')) | Invoke-Expression\" "
+  }
+}

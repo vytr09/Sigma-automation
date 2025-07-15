@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_esentutl_params_0",
+  "original_command": "esentutl /p",
+  "evasions": {
+    "insertion": "esentutl /\"p\"",
+    "substitution": "esentutl /p #substitution",
+    "omission": "esentutl /p # omission",
+    "reordering": "esentutl /p",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXNlbnR1dGwgL3A=')) | Invoke-Expression\" "
+  }
+}

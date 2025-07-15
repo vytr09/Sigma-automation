@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wscript_cscript_susp_child_processes_0",
+  "original_command": "\\wscript.exe \\cscript.exe \\cmd.exe \\powershell.exe \\pwsh.exe mshta http rundll32 regsvr32 msiexec \\rundll32.exe \\rundll32.exe UpdatePerUserSystemParameters PrintUIEntry ClearMyTracksByProcess",
+  "evasions": {
+    "insertion": "\\wscript.exe \\cscript.exe \\cmd.exe \\powershell.exe \\pwsh.exe mshta http rundll32 regsvr32 msiexec \\rundll32.exe \\rundll32.exe UpdatePerUserSystemParameters PrintUIEntry \"ClearMyTracksByProcess\"",
+    "substitution": "\\wscript.exe \\cscript.exe \\cmd.exe \\powershell.exe \\pwsh.exe mshta http rundll32 regsvr32 msiexec \\rundll32.exe \\rundll32.exe UpdatePerUserSystemParameters PrintUIEntry ClearMyTracksByProcess #substitution",
+    "omission": "\\wscript \\cscript \\cmd \\powershell \\pwsh mshta http rundll32 regsvr32 msiexec \\rundll32 \\rundll32 UpdatePerUserSystemParameters PrintUIEntry ClearMyTracksByProcess",
+    "reordering": "\\wscript.exe \\cscript.exe \\cmd.exe \\powershell.exe \\pwsh.exe mshta http rundll32 regsvr32 msiexec \\rundll32.exe \\rundll32.exe UpdatePerUserSystemParameters PrintUIEntry ClearMyTracksByProcess",
+    "recoding": "powershell.exe -EncodedCommand XAB3AHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAGMAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABtAHMAaAB0AGEAIABoAHQAdABwACAAcgB1AG4AZABsAGwAMwAyACAAcgBlAGcAcwB2AHIAMwAyACAAbQBzAGkAZQB4AGUAYwAgAFwAcgB1AG4AZABsAGwAMwAyAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAVQBwAGQAYQB0AGUAUABlAHIAVQBzAGUAcgBTAHkAcwB0AGUAbQBQAGEAcgBhAG0AZQB0AGUAcgBzACAAUAByAGkAbgB0AFUASQBFAG4AdAByAHkAIABDAGwAZQBhAHIATQB5AFQAcgBhAGMAawBzAEIAeQBQAHIAbwBjAGUAcwBzAA== "
+  }
+}

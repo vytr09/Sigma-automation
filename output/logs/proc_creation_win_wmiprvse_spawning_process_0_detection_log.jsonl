@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 18:20:29 UTC", "rule": "proc_creation_win_wmiprvse_spawning_process_0", "phase": "original", "command": "\\WmiPrvSe.exe \\WmiPrvSE.exe \\WerFault.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:20:41 UTC", "rule": "proc_creation_win_wmiprvse_spawning_process_0", "phase": "insertion", "command": "\\WmiPrvSe.exe \"\\WmiPrvSE.exe\" \\WerFault.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:20:49 UTC", "rule": "proc_creation_win_wmiprvse_spawning_process_0", "phase": "substitution", "command": "\\WmiPrvSe.exe \\WmiPrvSE.exe \\WerFault.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 18:20:55 UTC", "rule": "proc_creation_win_wmiprvse_spawning_process_0", "phase": "omission", "command": "\\WmiPrvSe \\WmiPrvSE \\WerFault", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:21:01 UTC", "rule": "proc_creation_win_wmiprvse_spawning_process_0", "phase": "reordering", "command": "\\WmiPrvSe.exe \\WmiPrvSE.exe \\WerFault.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:21:10 UTC", "rule": "proc_creation_win_wmiprvse_spawning_process_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdtaVBydlNlLmV4ZSBcV21pUHJ2U0UuZXhlIFxXZXJGYXVsdC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

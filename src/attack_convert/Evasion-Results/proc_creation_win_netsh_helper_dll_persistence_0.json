@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_helper_dll_persistence_0",
+  "original_command": "netsh.exe \\netsh.exe add helper",
+  "evasions": {
+    "insertion": "netsh.exe \\\"\\nets\\\"h.exe add helper",
+    "substitution": "netsh.exe \\netsh.exe add helper #substitution",
+    "omission": "netsh \\netsh add helper",
+    "reordering": "netsh.exe \\netsh.exe add helper",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2guZXhlIFxuZXRzaC5leGUgYWRkIGhlbHBlcg==')) | Invoke-Expression\" "
+  }
+}

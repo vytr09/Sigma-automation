@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cdb_arbitrary_command_execution_0",
+  "original_command": "\\cdb.exe CDB.Exe -c -cf",
+  "evasions": {
+    "insertion": "\\cdb.exe \\\"CDB\\\".Exe -c -cf",
+    "substitution": "\\cdb.exe CDB.Exe -c -cf #substitution",
+    "omission": "\\cdb CDB -c -cf",
+    "reordering": "\\cdb.exe -c -cf CDB.Exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNkYi5leGUgQ0RCLkV4ZSAtYyAtY2Y=')) | Invoke-Expression\" "
+  }
+}

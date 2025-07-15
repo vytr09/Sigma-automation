@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sliver_c2_execution_pattern_0",
+  "original_command": "-NoExit -Command [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8",
+  "evasions": {
+    "insertion": "-NoExit \"-Com\"mand [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8",
+    "substitution": "-NoExit -Command [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8 #substitution",
+    "omission": "-NoExit -Command [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8 # omission",
+    "reordering": "-NoExit -Command [Console]::OutputEncoding=[Text.UTF8Encoding]::UTF8",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LU5vRXhpdCAtQ29tbWFuZCBbQ29uc29sZV06Ok91dHB1dEVuY29kaW5nPVtUZXh0LlVURjhFbmNvZGluZ106OlVURjg=')) | Invoke-Expression\" "
+  }
+}

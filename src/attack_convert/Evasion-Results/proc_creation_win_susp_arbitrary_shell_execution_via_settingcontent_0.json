@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_arbitrary_shell_execution_via_settingcontent_0",
+  "original_command": ".SettingContent-ms immersivecontrolpanel",
+  "evasions": {
+    "insertion": ".SettingContent-ms \\\"immersivecontrolpanel\\\"",
+    "substitution": ".SettingContent-ms immersivecontrolpanel #substitution",
+    "omission": ".SettingContent-ms immersivecontrolpanel # omission",
+    "reordering": ".SettingContent-ms immersivecontrolpanel",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LlNldHRpbmdDb250ZW50LW1zIGltbWVyc2l2ZWNvbnRyb2xwYW5lbA==')) | Invoke-Expression\" "
+  }
+}

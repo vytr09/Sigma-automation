@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_conhost_path_traversal_0",
+  "original_command": "conhost /../../",
+  "evasions": {
+    "insertion": "conhost /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
+    "substitution": "conhost /../../ #substitution",
+    "omission": "conhost /../../ # omission",
+    "reordering": "conhost /../../",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29uaG9zdCAvLi4vLi4v')) | Invoke-Expression\" "
+  }
+}

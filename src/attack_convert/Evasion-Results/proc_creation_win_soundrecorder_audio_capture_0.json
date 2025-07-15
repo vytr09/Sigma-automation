@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_soundrecorder_audio_capture_0",
+  "original_command": "\\SoundRecorder.exe /FILE",
+  "evasions": {
+    "insertion": "\\SoundRecorder.exe /\"{cmd_part}\"",
+    "substitution": "\\SoundRecorder.exe /FILE #substitution",
+    "omission": "\\SoundRecorder /FILE",
+    "reordering": "\\SoundRecorder.exe /FILE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNvdW5kUmVjb3JkZXIuZXhlIC9GSUxF')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:31:40 UTC", "rule": "proc_creation_win_susp_execution_path_0", "phase": "original", "command": "\\CitrixReceiverUpdater.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:31:40 UTC", "rule": "proc_creation_win_susp_execution_path_0", "phase": "insertion", "command": "\\\"C\"\"i\"\"t\"\"r\"\"i\"\"x\"\"R\"\"e\"\"c\"\"e\"\"i\"\"v\"\"e\"\"r\"\"U\"\"p\"\"d\"\"a\"\"t\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:31:40 UTC", "rule": "proc_creation_win_susp_execution_path_0", "phase": "substitution", "command": "\\CitrixReceiverUpdater.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:31:40 UTC", "rule": "proc_creation_win_susp_execution_path_0", "phase": "omission", "command": "\\CitrixReceiverUpdater", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:31:40 UTC", "rule": "proc_creation_win_susp_execution_path_0", "phase": "reordering", "command": "\\CitrixReceiverUpdater.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:31:40 UTC", "rule": "proc_creation_win_susp_execution_path_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENpdHJpeFJlY2VpdmVyVXBkYXRlci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

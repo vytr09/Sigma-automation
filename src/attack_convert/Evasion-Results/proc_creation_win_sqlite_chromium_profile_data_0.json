@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sqlite_chromium_profile_data_0",
+  "original_command": "\\sqlite.exe \\sqlite3.exe \\User Data\\ \\Opera Software\\ \\ChromiumViewer\\ Login Data Cookies Web Data History Bookmarks",
+  "evasions": {
+    "insertion": "\\sqlite.exe \\sqlite3.exe \\User \"Data\\\" \\Opera Software\\ \\ChromiumViewer\\ Login Data Cookies Web Data History Bookmarks",
+    "substitution": "\\sqlite.exe \\sqlite3.exe \\User Data\\ \\Opera Software\\ \\ChromiumViewer\\ Login Data Cookies Web Data History Bookmarks #substitution",
+    "omission": "\\sqlite \\sqlite3 \\User Data\\ \\Opera Software\\ \\ChromiumViewer\\ Login Data Cookies Web Data History Bookmarks",
+    "reordering": "\\sqlite.exe \\sqlite3.exe \\User Data\\ \\Opera Software\\ \\ChromiumViewer\\ Login Data Cookies Web Data History Bookmarks",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxbGl0ZS5leGUgXHNxbGl0ZTMuZXhlIFxVc2VyIERhdGFcIFxPcGVyYSBTb2Z0d2FyZVwgXENocm9taXVtVmlld2VyXCBMb2dpbiBEYXRhIENvb2tpZXMgV2ViIERhdGEgSGlzdG9yeSBCb29rbWFya3M=')) | Invoke-Expression\" "
+  }
+}

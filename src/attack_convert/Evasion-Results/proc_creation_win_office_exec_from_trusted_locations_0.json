@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_exec_from_trusted_locations_0",
+  "original_command": "\\explorer.exe \\dopus.exe \\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe \\AppData\\Roaming\\Microsoft\\Templates \\AppData\\Roaming\\Microsoft\\Word\\Startup\\ \\Microsoft Office\\root\\Templates\\ \\Microsoft Office\\Templates\\",
+  "evasions": {
+    "insertion": "\\explorer.exe \\dopus.exe \\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe \\AppData\\Roaming\\M\\\"icrosoft\\Templates\\\" \\AppData\\Roaming\\Microsoft\\Word\\Startup\\ \\Microsoft Office\\root\\Templates\\ \\Microsoft Office\\Templates\\",
+    "substitution": "\\explorer.exe \\dopus.exe \\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe \\AppData\\Roaming\\Microsoft\\Templates \\AppData\\Roaming\\Microsoft\\Word\\Startup\\ \\Microsoft Office\\root\\Templates\\ \\Microsoft Office\\Templates\\ #substitution",
+    "omission": "\\explorer \\dopus \\EXCEL \\POWERPNT \\WINWORD Excel POWERPNT WinWord Microsoft\\Templates Microsoft\\Word\\Startup\\ \\Microsoft Office\\root\\Templates\\ \\Microsoft Office\\Templates\\",
+    "reordering": "\\explorer.exe \\dopus.exe \\EXCEL.EXE \\POWERPNT.EXE \\WINWORD.exe Excel.exe POWERPNT.EXE WinWord.exe \\AppData\\Roaming\\Microsoft\\Templates \\AppData\\Roaming\\Microsoft\\Word\\Startup\\ \\Microsoft Office\\root\\Templates\\ \\Microsoft Office\\Templates\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSBcZG9wdXMuZXhlIFxFWENFTC5FWEUgXFBPV0VSUE5ULkVYRSBcV0lOV09SRC5leGUgRXhjZWwuZXhlIFBPV0VSUE5ULkVYRSBXaW5Xb3JkLmV4ZSBcQXBwRGF0YVxSb2FtaW5nXE1pY3Jvc29mdFxUZW1wbGF0ZXMgXEFwcERhdGFcUm9hbWluZ1xNaWNyb3NvZnRcV29yZFxTdGFydHVwXCBcTWljcm9zb2Z0IE9mZmljZVxyb290XFRlbXBsYXRlc1wgXE1pY3Jvc29mdCBPZmZpY2VcVGVtcGxhdGVzXA==')) | Invoke-Expression\" "
+  }
+}

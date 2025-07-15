@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:56:18 UTC", "rule": "proc_creation_win_python_adidnsdump_0", "phase": "original", "command": "\\python.exe adidnsdump", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:56:25 UTC", "rule": "proc_creation_win_python_adidnsdump_0", "phase": "insertion", "command": "\\python.exe \"adidn\"sdump", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:56:30 UTC", "rule": "proc_creation_win_python_adidnsdump_0", "phase": "substitution", "command": "\\python.exe adidnsdump #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:56:36 UTC", "rule": "proc_creation_win_python_adidnsdump_0", "phase": "omission", "command": "\\python adidnsdump", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:56:42 UTC", "rule": "proc_creation_win_python_adidnsdump_0", "phase": "reordering", "command": "\\python.exe adidnsdump", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:56:48 UTC", "rule": "proc_creation_win_python_adidnsdump_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHB5dGhvbi5leGUgYWRpZG5zZHVtcA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

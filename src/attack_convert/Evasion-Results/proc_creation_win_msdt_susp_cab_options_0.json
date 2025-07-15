@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msdt_susp_cab_options_0",
+  "original_command": "\\msdt.exe msdt.exe -cab",
+  "evasions": {
+    "insertion": "\\msdt.exe \\\"m\\\"\\\"s\\\"\\\"d\\\"\\\"t\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" -cab",
+    "substitution": "\\msdt.exe msdt.exe -cab #substitution",
+    "omission": "\\msdt msdt -cab",
+    "reordering": "\\msdt.exe msdt.exe -cab",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zZHQuZXhlIG1zZHQuZXhlIC1jYWI=')) | Invoke-Expression\" "
+  }
+}

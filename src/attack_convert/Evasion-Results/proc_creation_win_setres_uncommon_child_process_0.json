@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_setres_uncommon_child_process_0",
+  "original_command": "\\setres.exe C:\\Windows\\System32\\choice.exe C:\\Windows\\SysWOW64\\choice.exe",
+  "evasions": {
+    "insertion": "\\setres.exe C:\\Windows\\Syst\"em32\\choice.exe\" C:\\Windows\\SysWOW64\\choice.exe",
+    "substitution": "\\setres.exe C:\\Windows\\System32\\choice.exe C:\\Windows\\SysWOW64\\choice.exe #substitution",
+    "omission": "\\setres choice SysWOW64\\choice",
+    "reordering": "\\setres.exe C:\\Windows\\SysWOW64\\choice.exe C:\\Windows\\System32\\choice.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNldHJlcy5leGUgQzpcV2luZG93c1xTeXN0ZW0zMlxjaG9pY2UuZXhlIEM6XFdpbmRvd3NcU3lzV09XNjRcY2hvaWNlLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

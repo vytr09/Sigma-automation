@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ping_hex_ip_0",
+  "original_command": "\\ping.exe 0x",
+  "evasions": {
+    "insertion": "\\ping.exe \"0x\"",
+    "substitution": "\\ping.exe 0x #substitution",
+    "omission": "\\ping 0x",
+    "reordering": "\\ping.exe 0x",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBpbmcuZXhlIDB4')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_tttracer_mod_load_0",
+  "original_command": "\\tttracer.exe",
+  "evasions": {
+    "insertion": "\"\\tttracer.exe\"",
+    "substitution": "\\tttracer.exe #substitution",
+    "omission": "\\tttracer",
+    "reordering": "\\tttracer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHR0dHJhY2VyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

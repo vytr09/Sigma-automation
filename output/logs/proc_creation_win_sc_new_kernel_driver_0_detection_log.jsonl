@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:03:55 UTC", "rule": "proc_creation_win_sc_new_kernel_driver_0", "phase": "original", "command": "\\sc.exe create config binPath type kernel", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:04:09 UTC", "rule": "proc_creation_win_sc_new_kernel_driver_0", "phase": "insertion", "command": "\\sc.exe create config binPath ty\"pe\" kernel", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:04:16 UTC", "rule": "proc_creation_win_sc_new_kernel_driver_0", "phase": "substitution", "command": "\\sc.exe create config binPath type kernel", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:04:33 UTC", "rule": "proc_creation_win_sc_new_kernel_driver_0", "phase": "omission", "command": "\\sc create config binPath type kernel", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:04:57 UTC", "rule": "proc_creation_win_sc_new_kernel_driver_0", "phase": "reordering", "command": "\\sc.exe create type binPath config kernel", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:05:08 UTC", "rule": "proc_creation_win_sc_new_kernel_driver_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBjcmVhdGUgY29uZmlnIGJpblBhdGggdHlwZSBrZXJuZWw=')) | Invoke-Expression\" ", "status": "BYPASSED"}

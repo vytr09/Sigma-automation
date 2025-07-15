@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vmware_toolbox_cmd_persistence_susp_0",
+  "original_command": "\\VMwareToolBoxCmd.exe toolbox-cmd.exe script set :\\PerfLogs\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp",
+  "evasions": {
+    "insertion": "\\VMwareToolBoxCmd.exe toolbox-cmd.exe script set :\\PerfLogs\\ \":\"\"\\\"\"T\"\"e\"\"m\"\"p\"\"\\\" :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp",
+    "substitution": "\\VMwareToolBoxCmd.exe toolbox-cmd.exe script set :\\PerfLogs\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp #substitution",
+    "omission": "\\VMwareToolBoxCmd toolbox-cmd script set :\\PerfLogs\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp",
+    "reordering": "\\VMwareToolBoxCmd.exe toolbox-cmd.exe script set :\\PerfLogs\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZNd2FyZVRvb2xCb3hDbWQuZXhlIHRvb2xib3gtY21kLmV4ZSBzY3JpcHQgc2V0IDpcUGVyZkxvZ3NcIDpcVGVtcFwgOlxXaW5kb3dzXFN5c3RlbTMyXFRhc2tzXCA6XFdpbmRvd3NcVGFza3NcIDpcV2luZG93c1xUZW1wXCBcQXBwRGF0YVxMb2NhbFxUZW1w')) | Invoke-Expression\" "
+  }
+}

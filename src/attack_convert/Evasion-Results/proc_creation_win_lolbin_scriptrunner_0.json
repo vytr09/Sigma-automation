@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_scriptrunner_0",
+  "original_command": "\\ScriptRunner.exe ScriptRunner.exe -appvscript",
+  "evasions": {
+    "insertion": "\\ScriptRunner.exe ScriptRu\"nner.exe\" -appvscript",
+    "substitution": "\\ScriptRunner.exe ScriptRunner.exe -appvscript #substitution",
+    "omission": "\\ScriptRunner ScriptRunner -appvscript",
+    "reordering": "\\ScriptRunner.exe -appvscript ScriptRunner.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNjcmlwdFJ1bm5lci5leGUgU2NyaXB0UnVubmVyLmV4ZSAtYXBwdnNjcmlwdA==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_csi_use_of_csharp_console_0",
+  "original_command": "\\csi.exe \\powershell.exe \\pwsh.exe \\powershell_ise.exe csi.exe",
+  "evasions": {
+    "insertion": "\\csi.exe \\powershell.exe \\pwsh.exe \\\"p\"\"o\"\"w\"\"e\"\"r\"\"s\"\"h\"\"e\"\"l\"\"l\"\"_\"\"i\"\"s\"\"e\"\".\"\"e\"\"x\"\"e\" csi.exe",
+    "substitution": "\\csi.exe \\powershell.exe \\pwsh.exe \\powershell_ise.exe csi.exe #substitution",
+    "omission": "\\csi \\powershell \\pwsh \\powershell_ise csi",
+    "reordering": "\\csi.exe \\powershell.exe \\powershell_ise.exe \\pwsh.exe csi.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAHMAaQAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbABfAGkAcwBlAC4AZQB4AGUAIABjAHMAaQAuAGUAeABlAA== "
+  }
+}

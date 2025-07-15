@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_runonce_execution_0",
+  "original_command": "\\runonce.exe /AlternateShellStartup",
+  "evasions": {
+    "insertion": "\\runonce.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
+    "substitution": "\\runonce.exe /AlternateShellStartup #substitution",
+    "omission": "\\runonce /AlternateShellStartup",
+    "reordering": "\\runonce.exe /AlternateShellStartup",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bm9uY2UuZXhlIC9BbHRlcm5hdGVTaGVsbFN0YXJ0dXA=')) | Invoke-Expression\" "
+  }
+}

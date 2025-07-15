@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:12:47 UTC", "rule": "proc_creation_win_sysinternals_adexplorer_execution_0", "phase": "original", "command": "\\ADExplorer.exe AdExp snapshot", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:12:53 UTC", "rule": "proc_creation_win_sysinternals_adexplorer_execution_0", "phase": "insertion", "command": "\\ADExplorer.exe AdExp \"snap\"shot", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:12:59 UTC", "rule": "proc_creation_win_sysinternals_adexplorer_execution_0", "phase": "substitution", "command": "\\ADExplorer.exe AdExp snapshot #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:13:07 UTC", "rule": "proc_creation_win_sysinternals_adexplorer_execution_0", "phase": "omission", "command": "\\ADExplorer AdExp snapshot", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:13:13 UTC", "rule": "proc_creation_win_sysinternals_adexplorer_execution_0", "phase": "reordering", "command": "\\ADExplorer.exe snapshot AdExp", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:13:19 UTC", "rule": "proc_creation_win_sysinternals_adexplorer_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFERXhwbG9yZXIuZXhlIEFkRXhwIHNuYXBzaG90')) | Invoke-Expression\" ", "status": "BYPASSED"}

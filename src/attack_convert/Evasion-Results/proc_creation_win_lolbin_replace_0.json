@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_replace_0",
+  "original_command": "\\replace.exe -a",
+  "evasions": {
+    "insertion": "\"\\replace.exe\" -a",
+    "substitution": "\\replace.exe -a #substitution",
+    "omission": "\\replace -a",
+    "reordering": "\\replace.exe -a",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlcGxhY2UuZXhlIC1h')) | Invoke-Expression\" "
+  }
+}

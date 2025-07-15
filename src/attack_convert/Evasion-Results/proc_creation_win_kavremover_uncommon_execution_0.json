@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_kavremover_uncommon_execution_0",
+  "original_command": "run run-cmd \\cleanapi.exe \\kavremover.exe",
+  "evasions": {
+    "insertion": "run run-cmd \"\\cleanapi.exe\" \\kavremover.exe",
+    "substitution": "run run-cmd \\cleanapi.exe \\kavremover.exe #substitution",
+    "omission": "run run-cmd \\cleanapi \\kavremover",
+    "reordering": "run run-cmd \\cleanapi.exe \\kavremover.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuIHJ1bi1jbWQgXGNsZWFuYXBpLmV4ZSBca2F2cmVtb3Zlci5leGU=')) | Invoke-Expression\" "
+  }
+}

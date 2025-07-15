@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_fsutil_symlinkevaluation_0",
+  "original_command": "\\fsutil.exe fsutil.exe behavior set SymlinkEvaluation",
+  "evasions": {
+    "insertion": "\\fsutil.exe fsuti\\\"l.exe\\\" behavior set SymlinkEvaluation",
+    "substitution": "\\fsutil.exe fsutil.exe behavior set SymlinkEvaluation #substitution",
+    "omission": "\\fsutil fsutil behavior set SymlinkEvaluation",
+    "reordering": "\\fsutil.exe fsutil.exe set SymlinkEvaluation behavior",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZzdXRpbC5leGUgZnN1dGlsLmV4ZSBiZWhhdmlvciBzZXQgU3ltbGlua0V2YWx1YXRpb24=')) | Invoke-Expression\" "
+  }
+}

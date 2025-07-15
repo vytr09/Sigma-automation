@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:04:56 UTC", "rule": "proc_creation_win_hktl_stracciatella_execution_0", "phase": "original", "command": "\\Stracciatella.exe Stracciatella.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:56 UTC", "rule": "proc_creation_win_hktl_stracciatella_execution_0", "phase": "insertion", "command": "\\Stracciatella.exe \\\"Stracciatella.exe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:56 UTC", "rule": "proc_creation_win_hktl_stracciatella_execution_0", "phase": "substitution", "command": "\\Stracciatella.exe Stracciatella.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:56 UTC", "rule": "proc_creation_win_hktl_stracciatella_execution_0", "phase": "omission", "command": "\\Stracciatella Stracciatella", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:56 UTC", "rule": "proc_creation_win_hktl_stracciatella_execution_0", "phase": "reordering", "command": "\\Stracciatella.exe Stracciatella.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:56 UTC", "rule": "proc_creation_win_hktl_stracciatella_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN0cmFjY2lhdGVsbGEuZXhlIFN0cmFjY2lhdGVsbGEuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

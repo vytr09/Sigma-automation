@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_snapins_hafnium_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-PSSnapin Microsoft.Exchange.Powershell.Snapin Microsoft.Exchange.Management.PowerShell.SnapIn $exserver=Get-ExchangeServer ([Environment]::MachineName) -ErrorVariable exerr 2> $null",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-PSSnapin Microsoft.Exchange.Powershell.Snapin Microsoft.Exchange.Management.PowerShell.SnapIn $exserver=Get-ExchangeServer ([Environment]::MachineName) -ErrorVariable exerr 2> $null",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-PSSnapin Microsoft.Exchange.Powershell.Snapin Microsoft.Exchange.Management.PowerShell.SnapIn $exserver=Get-ExchangeServer ([Environment]::MachineName) -ErrorVariable exerr 2> $null #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll Add-PSSnapin Microsoft.Exchange.Powershell.Snapin Microsoft.Exchange.Management.PowerShell.SnapIn $exserver=Get-ExchangeServer ([Environment]::MachineName) -ErrorVariable exerr 2> $null",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-PSSnapin Microsoft.Exchange.Powershell.Snapin Microsoft.Exchange.Management.PowerShell.SnapIn $exserver=Get-ExchangeServer ([Environment]::MachineName) -ErrorVariable exerr 2> $null",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEEAZABkAC0AUABTAFMAbgBhAHAAaQBuACAATQBpAGMAcgBvAHMAbwBmAHQALgBFAHgAYwBoAGEAbgBnAGUALgBQAG8AdwBlAHIAcwBoAGUAbABsAC4AUwBuAGEAcABpAG4AIABNAGkAYwByAG8AcwBvAGYAdAAuAEUAeABjAGgAYQBuAGcAZQAuAE0AYQBuAGEAZwBlAG0AZQBuAHQALgBQAG8AdwBlAHIAUwBoAGUAbABsAC4AUwBuAGEAcABJAG4AIAAkAGUAeABzAGUAcgB2AGUAcgA9AEcAZQB0AC0ARQB4AGMAaABhAG4AZwBlAFMAZQByAHYAZQByACAAKABbAEUAbgB2AGkAcgBvAG4AbQBlAG4AdABdADoAOgBNAGEAYwBoAGkAbgBlAE4AYQBtAGUAKQAgAC0ARQByAHIAbwByAFYAYQByAGkAYQBiAGwAZQAgAGUAeABlAHIAcgAgADIAPgAgACQAbgB1AGwAbAA= "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:39:30 UTC", "rule": "proc_creation_win_ultravnc_susp_execution_0", "phase": "original", "command": "-autoreconnect -connect -id:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:39:37 UTC", "rule": "proc_creation_win_ultravnc_susp_execution_0", "phase": "insertion", "command": "-autoreconnect \\\"-\\\"\\\"c\\\"\\\"o\\\"\\\"n\\\"\\\"n\\\"\\\"e\\\"\\\"c\\\"\\\"t\\\" -id:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:39:43 UTC", "rule": "proc_creation_win_ultravnc_susp_execution_0", "phase": "substitution", "command": "-autoreconnect -connect -id: #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:39:49 UTC", "rule": "proc_creation_win_ultravnc_susp_execution_0", "phase": "omission", "command": "-autoreconnect -connect -id: # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:39:56 UTC", "rule": "proc_creation_win_ultravnc_susp_execution_0", "phase": "reordering", "command": "-autoreconnect -id: -connect", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:40:05 UTC", "rule": "proc_creation_win_ultravnc_susp_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWF1dG9yZWNvbm5lY3QgLWNvbm5lY3QgLWlkOg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

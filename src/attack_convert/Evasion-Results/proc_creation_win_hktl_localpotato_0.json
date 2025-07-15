@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_localpotato_0",
+  "original_command": "\\LocalPotato.exe .exe -i C:\\ -o Windows\\",
+  "evasions": {
+    "insertion": "\\LocalPotato.exe .exe -i \\\"C:\\\\\" -o Windows\\",
+    "substitution": "\\LocalPotato.exe .exe -i C:\\ -o Windows\\ #substitution",
+    "omission": "\\LocalPotato -i C:\\ -o Windows\\",
+    "reordering": "\\LocalPotato.exe -o C:\\ .exe -i Windows\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XExvY2FsUG90YXRvLmV4ZSAuZXhlIC1pIEM6XCAtbyBXaW5kb3dzXA==')) | Invoke-Expression\" "
+  }
+}

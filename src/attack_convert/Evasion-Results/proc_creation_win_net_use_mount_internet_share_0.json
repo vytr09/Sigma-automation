@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_use_mount_internet_share_0",
+  "original_command": "\\net.exe \\net1.exe net.exe net1.exe use http",
+  "evasions": {
+    "insertion": "\\net.exe \"\\net1.exe\" net.exe net1.exe use http",
+    "substitution": "\\net.exe \\net1.exe net.exe net1.exe use http #substitution",
+    "omission": "\\net \\net1 net net1 use http",
+    "reordering": "\\net.exe net1.exe http use \\net1.exe net.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgdXNlIGh0dHA=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_service_manipulation_0",
+  "original_command": "wmic.exe \\WMIC.exe service call stopservice startservice",
+  "evasions": {
+    "insertion": "wmic.exe \\\"\\WMIC.exe\\\" service call stopservice startservice",
+    "substitution": "wmic.exe \\WMIC.exe service --call stopservice startservice",
+    "omission": "wmic \\WMIC service call stopservice startservice",
+    "reordering": "wmic.exe \\WMIC.exe startservice stopservice call service",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYy5leGUgXFdNSUMuZXhlIHNlcnZpY2UgY2FsbCBzdG9wc2VydmljZSBzdGFydHNlcnZpY2U=')) | Invoke-Expression\" "
+  }
+}

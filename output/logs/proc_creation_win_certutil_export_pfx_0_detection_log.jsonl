@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:03:51 UTC", "rule": "proc_creation_win_certutil_export_pfx_0", "phase": "original", "command": "\\certutil.exe CertUtil.exe -exportPFX", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:04:00 UTC", "rule": "proc_creation_win_certutil_export_pfx_0", "phase": "insertion", "command": "\\certutil.exe CertUtil.exe \"-expo\"rtPFX", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:04:07 UTC", "rule": "proc_creation_win_certutil_export_pfx_0", "phase": "substitution", "command": "\\certutil.exe CertUtil.exe -exportPFX #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:04:16 UTC", "rule": "proc_creation_win_certutil_export_pfx_0", "phase": "omission", "command": "\\certutil CertUtil -exportPFX", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:04:24 UTC", "rule": "proc_creation_win_certutil_export_pfx_0", "phase": "reordering", "command": "\\certutil.exe CertUtil.exe -exportPFX", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:04:32 UTC", "rule": "proc_creation_win_certutil_export_pfx_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWV4cG9ydFBGWA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

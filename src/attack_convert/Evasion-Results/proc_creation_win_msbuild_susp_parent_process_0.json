@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msbuild_susp_parent_process_0",
+  "original_command": "\\MSBuild.exe MSBuild.exe \\devenv.exe \\cmd.exe \\msbuild.exe \\python.exe \\explorer.exe \\nuget.exe",
+  "evasions": {
+    "insertion": "\\MSBuild.exe MSBuild.exe \\devenv.exe \\cmd.exe \"\\msbuild.exe\" \\python.exe \\explorer.exe \\nuget.exe",
+    "substitution": "\\MSBuild.exe MSBuild.exe \\devenv.exe \\cmd.exe \\msbuild.exe \\python.exe \\explorer.exe \\nuget.exe #substitution",
+    "omission": "\\MSBuild MSBuild \\devenv \\cmd \\msbuild \\python \\explorer \\nuget",
+    "reordering": "\\MSBuild.exe MSBuild.exe \\devenv.exe \\cmd.exe \\msbuild.exe \\python.exe \\explorer.exe \\nuget.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1TQnVpbGQuZXhlIE1TQnVpbGQuZXhlIFxkZXZlbnYuZXhlIFxjbWQuZXhlIFxtc2J1aWxkLmV4ZSBccHl0aG9uLmV4ZSBcZXhwbG9yZXIuZXhlIFxudWdldC5leGU=')) | Invoke-Expression\" "
+  }
+}

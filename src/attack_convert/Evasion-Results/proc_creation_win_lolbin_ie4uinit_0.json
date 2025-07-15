@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_ie4uinit_0",
+  "original_command": "\\ie4uinit.exe IE4UINIT.EXE",
+  "evasions": {
+    "insertion": "\\ie4uinit.exe \"IE4UIN\"IT.EXE",
+    "substitution": "\\ie4uinit.exe IE4UINIT.EXE #substitution",
+    "omission": "\\ie4uinit IE4UINIT",
+    "reordering": "\\ie4uinit.exe IE4UINIT.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGllNHVpbml0LmV4ZSBJRTRVSU5JVC5FWEU=')) | Invoke-Expression\" "
+  }
+}

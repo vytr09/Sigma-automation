@@ -4,10 +4,3 @@
 {"timestamp": "2025-04-23 09:09:33 UTC", "rule": "win_net_enum_0", "phase": "omission", "command": "net view", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:09:40 UTC", "rule": "win_net_enum_0", "phase": "reordering", "command": "net.exe view", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:09:47 UTC", "rule": "win_net_enum_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:25 UTC", "rule": "win_net_enum_0", "phase": "original", "command": "net.exe view", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:55:54 UTC", "rule": "win_net_enum_0", "phase": "original", "command": "net.exe view", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:55:57 UTC", "rule": "win_net_enum_0", "phase": "insertion", "command": "net.exe vi\"ew\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:56:01 UTC", "rule": "win_net_enum_0", "phase": "substitution", "command": "net.exe view #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:56:05 UTC", "rule": "win_net_enum_0", "phase": "omission", "command": "net view", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:56:08 UTC", "rule": "win_net_enum_0", "phase": "reordering", "command": "net.exe view", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:56:12 UTC", "rule": "win_net_enum_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSB2aWV3')) | Invoke-Expression\" ", "status": "BYPASSED"}

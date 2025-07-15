@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sysmoneop_0",
+  "original_command": "\\SysmonEOP.exe",
+  "evasions": {
+    "insertion": "\\\"\\SysmonEOP.exe\\\"",
+    "substitution": "\\SysmonEOP.exe #substitution",
+    "omission": "\\SysmonEOP",
+    "reordering": "\\SysmonEOP.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c21vbkVPUC5leGU=')) | Invoke-Expression\" "
+  }
+}

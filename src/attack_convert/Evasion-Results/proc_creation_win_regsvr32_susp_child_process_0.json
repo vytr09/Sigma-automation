@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regsvr32_susp_child_process_0",
+  "original_command": "\\regsvr32.exe \\calc.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\schtasks.exe \\werfault.exe \\wscript.exe \\werfault.exe -u -p",
+  "evasions": {
+    "insertion": "\\regsvr32.exe \\calc.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net\".exe\" \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\schtasks.exe \\werfault.exe \\wscript.exe \\werfault.exe -u -p",
+    "substitution": "\\regsvr32.exe \\calc.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\schtasks.exe \\werfault.exe \\wscript.exe \\werfault.exe /u -p",
+    "omission": "\\regsvr32 \\calc \\cscript \\explorer \\mshta \\net \\net1 \\nltest \\notepad \\powershell \\pwsh \\reg \\schtasks \\werfault \\wscript \\werfault -u -p",
+    "reordering": "\\regsvr32.exe \\calc.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\schtasks.exe \\werfault.exe \\wscript.exe \\werfault.exe -u -p",
+    "recoding": "powershell.exe -EncodedCommand XAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAYwBhAGwAYwAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAGUAeABwAGwAbwByAGUAcgAuAGUAeABlACAAXABtAHMAaAB0AGEALgBlAHgAZQAgAFwAbgBlAHQALgBlAHgAZQAgAFwAbgBlAHQAMQAuAGUAeABlACAAXABuAGwAdABlAHMAdAAuAGUAeABlACAAXABuAG8AdABlAHAAYQBkAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcAB3AHMAaAAuAGUAeABlACAAXAByAGUAZwAuAGUAeABlACAAXABzAGMAaAB0AGEAcwBrAHMALgBlAHgAZQAgAFwAdwBlAHIAZgBhAHUAbAB0AC4AZQB4AGUAIABcAHcAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAdwBlAHIAZgBhAHUAbAB0AC4AZQB4AGUAIAAtAHUAIAAtAHAA "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sdclt_child_process_0",
+  "original_command": "\\sdclt.exe",
+  "evasions": {
+    "insertion": "\\\"\\sdclt.exe\\\"",
+    "substitution": "\\sdclt.exe #substitution",
+    "omission": "\\sdclt",
+    "reordering": "\\sdclt.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNkY2x0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

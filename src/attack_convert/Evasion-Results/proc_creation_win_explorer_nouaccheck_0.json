@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_explorer_nouaccheck_0",
+  "original_command": "\\explorer.exe /NOUACCHECK",
+  "evasions": {
+    "insertion": "\\explorer.exe /\"{cmd_part}\"",
+    "substitution": "\\explorer.exe /NOUACCHECK #substitution",
+    "omission": "\\explorer /NOUACCHECK",
+    "reordering": "\\explorer.exe /NOUACCHECK",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSAvTk9VQUNDSEVDSw==')) | Invoke-Expression\" "
+  }
+}

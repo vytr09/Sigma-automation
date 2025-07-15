@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regini_ads_0",
+  "original_command": "\\regini.exe REGINI.EXE",
+  "evasions": {
+    "insertion": "\\regini.exe \"R\"\"E\"\"G\"\"I\"\"N\"\"I\"\".\"\"E\"\"X\"\"E\"",
+    "substitution": "\\regini.exe REGINI.EXE #substitution",
+    "omission": "\\regini REGINI",
+    "reordering": "\\regini.exe REGINI.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2luaS5leGUgUkVHSU5JLkVYRQ==')) | Invoke-Expression\" "
+  }
+}

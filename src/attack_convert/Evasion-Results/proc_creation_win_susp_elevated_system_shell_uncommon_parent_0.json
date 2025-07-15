@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_elevated_system_shell_uncommon_parent_0",
+  "original_command": "\\powershell.exe \\powershell_ise.exe \\pwsh.exe \\cmd.exe PowerShell.EXE powershell_ise.EXE pwsh.dll Cmd.Exe :\\ManageEngine\\ADManager Plus\\pgsql\\bin\\postgres.exe \\cmd.exe :\\WINDOWS\\system32\\cmd.exe /c :\\IBM\\SpectrumProtect\\webserver\\scripts\\",
+  "evasions": {
+    "insertion": "\\powershell.exe \"\\powershell_ise.exe\" \\pwsh.exe \\cmd.exe PowerShell.EXE powershell_ise.EXE pwsh.dll Cmd.Exe :\\ManageEngine\\ADManager Plus\\pgsql\\bin\\postgres.exe \\cmd.exe :\\WINDOWS\\system32\\cmd.exe /c :\\IBM\\SpectrumProtect\\webserver\\scripts\\",
+    "substitution": "\\powershell.exe \\powershell_ise.exe \\pwsh.exe \\cmd.exe PowerShell.EXE powershell_ise.EXE pwsh.dll Cmd.Exe :\\ManageEngine\\ADManager Plus\\pgsql\\bin\\postgres.exe \\cmd.exe :\\WINDOWS\\system32\\cmd.exe -c :\\IBM\\SpectrumProtect\\webserver\\scripts\\",
+    "omission": "\\powershell \\powershell_ise \\pwsh \\cmd PowerShell powershell_ise pwsh.dll Cmd :\\ManageEngine\\ADManager Plus\\pgsql\\bin\\postgres \\cmd :\\WINDOWS\\system32\\cmd /c :\\IBM\\SpectrumProtect\\webserver\\scripts\\",
+    "reordering": "\\powershell.exe \\powershell_ise.exe \\pwsh.exe \\cmd.exe PowerShell.EXE powershell_ise.EXE pwsh.dll Cmd.Exe :\\ManageEngine\\ADManager Plus\\pgsql\\bin\\postgres.exe \\cmd.exe :\\WINDOWS\\system32\\cmd.exe /c :\\IBM\\SpectrumProtect\\webserver\\scripts\\",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwAXwBpAHMAZQAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAGMAbQBkAC4AZQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABwAG8AdwBlAHIAcwBoAGUAbABsAF8AaQBzAGUALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEMAbQBkAC4ARQB4AGUAIAA6AFwATQBhAG4AYQBnAGUARQBuAGcAaQBuAGUAXABBAEQATQBhAG4AYQBnAGUAcgAgAFAAbAB1AHMAXABwAGcAcwBxAGwAXABiAGkAbgBcAHAAbwBzAHQAZwByAGUAcwAuAGUAeABlACAAXABjAG0AZAAuAGUAeABlACAAOgBcAFcASQBOAEQATwBXAFMAXABzAHkAcwB0AGUAbQAzADIAXABjAG0AZAAuAGUAeABlACAALwBjACAAOgBcAEkAQgBNAFwAUwBwAGUAYwB0AHIAdQBtAFAAcgBvAHQAZQBjAHQAXAB3AGUAYgBzAGUAcgB2AGUAcgBcAHMAYwByAGkAcAB0AHMAXAA= "
+  }
+}

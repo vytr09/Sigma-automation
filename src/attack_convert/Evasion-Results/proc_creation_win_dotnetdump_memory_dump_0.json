@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dotnetdump_memory_dump_0",
+  "original_command": "\\dotnet-dump.exe dotnet-dump.dll collect",
+  "evasions": {
+    "insertion": "\\dotnet-dump.exe \"d\"\"o\"\"t\"\"n\"\"e\"\"t\"\"-\"\"d\"\"u\"\"m\"\"p\"\".\"\"d\"\"l\"\"l\" collect",
+    "substitution": "\\dotnet-dump.exe dotnet-dump.dll collect #substitution",
+    "omission": "\\dotnet-dump dotnet-dump.dll collect",
+    "reordering": "\\dotnet-dump.exe dotnet-dump.dll collect",
+    "recoding": "powershell.exe -EncodedCommand XABkAG8AdABuAGUAdAAtAGQAdQBtAHAALgBlAHgAZQAgAGQAbwB0AG4AZQB0AC0AZAB1AG0AcAAuAGQAbABsACAAYwBvAGwAbABlAGMAdAA= "
+  }
+}

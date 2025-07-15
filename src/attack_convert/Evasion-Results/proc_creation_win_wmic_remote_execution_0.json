@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_remote_execution_0",
+  "original_command": "\\WMIC.exe wmic.exe /node: /node:127.0.0.1 /node:localhost",
+  "evasions": {
+    "insertion": "\\WMIC.exe wmic.exe /node: /node:127.0.0.1 /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
+    "substitution": "\\WMIC.exe wmic.exe /node: /node:127.0.0.1 /node:localhost #substitution",
+    "omission": "\\WMIC wmic /node: /node:127.0.0.1 /node:localhost",
+    "reordering": "\\WMIC.exe wmic.exe /node: /node:127.0.0.1 /node:localhost",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdNSUMuZXhlIHdtaWMuZXhlIC9ub2RlOiAvbm9kZToxMjcuMC4wLjEgL25vZGU6bG9jYWxob3N0')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_sdset_deny_service_access_0",
+  "original_command": "\\sc.exe sc.exe sdset D; ;IU ;SU ;BA ;SY ;WD",
+  "evasions": {
+    "insertion": "\\\"s\"\"c\"\".\"\"e\"\"x\"\"e\" sc.exe sdset D; ;IU ;SU ;BA ;SY ;WD",
+    "substitution": "\\sc.exe sc.exe sdset D; ;IU ;SU ;BA ;SY ;WD #substitution",
+    "omission": "\\sc sc sdset D; ;IU ;SU ;BA ;SY ;WD",
+    "reordering": "\\sc.exe sc.exe sdset D; ;IU ;SU ;BA ;SY ;WD",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgc2RzZXQgRDsgO0lVIDtTVSA7QkEgO1NZIDtXRA==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_cookie_hijacking_0",
+  "original_command": "\\curl.exe curl.exe --cookie-jar",
+  "evasions": {
+    "insertion": "\\curl.exe curl.exe \\\"--cook\\\"ie-jar",
+    "substitution": "\\curl.exe curl.exe ---cookie-jarookie-jar",
+    "omission": "\\curl curl --cookie-jar",
+    "reordering": "\\curl.exe --cookie-jar curl.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIC0tY29va2llLWphcg==')) | Invoke-Expression\" "
+  }
+}

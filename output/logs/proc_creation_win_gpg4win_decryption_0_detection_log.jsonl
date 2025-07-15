@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:31:07 UTC", "rule": "proc_creation_win_gpg4win_decryption_0", "phase": "original", "command": "\\gpg.exe \\gpg2.exe -d passphrase", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:31:07 UTC", "rule": "proc_creation_win_gpg4win_decryption_0", "phase": "insertion", "command": "\\gpg.exe \"\\gpg2.exe\" -d passphrase", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:31:07 UTC", "rule": "proc_creation_win_gpg4win_decryption_0", "phase": "substitution", "command": "\\gpg.exe \\gpg2.exe -d passphrase #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:31:07 UTC", "rule": "proc_creation_win_gpg4win_decryption_0", "phase": "omission", "command": "\\gpg \\gpg2 -d passphrase", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:31:07 UTC", "rule": "proc_creation_win_gpg4win_decryption_0", "phase": "reordering", "command": "\\gpg.exe passphrase \\gpg2.exe -d", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:31:07 UTC", "rule": "proc_creation_win_gpg4win_decryption_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwZy5leGUgXGdwZzIuZXhlIC1kIHBhc3NwaHJhc2U=')) | Invoke-Expression\" ", "status": "BYPASSED"}

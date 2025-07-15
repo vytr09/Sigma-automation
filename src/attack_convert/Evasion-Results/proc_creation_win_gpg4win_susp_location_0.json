@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_gpg4win_susp_location_0",
+  "original_command": "\\gpg.exe \\gpg2.exe -passphrase :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\",
+  "evasions": {
+    "insertion": "\\gpg.exe \\gpg2.exe -passphrase :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\\"\\AppData\\Local\\Temp\\\\\" \\\"\\AppData\\Roaming\\\\\"",
+    "substitution": "\\gpg.exe \\gpg2.exe -passphrase :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\ #substitution",
+    "omission": "\\gpg \\gpg2 -passphrase :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\",
+    "reordering": "\\gpg.exe \\gpg2.exe -passphrase :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwZy5leGUgXGdwZzIuZXhlIC1wYXNzcGhyYXNlIDpcUGVyZkxvZ3NcIDpcVGVtcFwgOlxVc2Vyc1xQdWJsaWNcIDpcV2luZG93c1xUZW1wXCBcQXBwRGF0YVxMb2NhbFxUZW1wXCBcQXBwRGF0YVxSb2FtaW5nXA==')) | Invoke-Expression\" "
+  }
+}

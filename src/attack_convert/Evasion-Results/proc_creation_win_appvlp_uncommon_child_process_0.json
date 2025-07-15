@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_appvlp_uncommon_child_process_0",
+  "original_command": "\\appvlp.exe :\\Windows\\SysWOW64\\rundll32.exe :\\Windows\\System32\\rundll32.exe \\msoasb.exe \\SKYPESERVER.EXE \\MSOUC.EXE",
+  "evasions": {
+    "insertion": "\\appvlp.exe :\\Windows\\SysWOW64\\rundll32.exe :\\Windows\\System32\\rundll32.exe \\msoasb.exe \\SKYPESERVER.EXE \\\"\\MSOUC.EXE\\\"",
+    "substitution": "\\appvlp.exe :\\Windows\\SysWOW64\\rundll32.exe :\\Windows\\System32\\rundll32.exe \\msoasb.exe \\SKYPESERVER.EXE \\MSOUC.EXE #substitution",
+    "omission": "\\appvlp :\\Windows\\SysWOW64\\rundll32 :\\Windows\\System32\\rundll32 \\msoasb \\SKYPESERVER \\MSOUC",
+    "reordering": "\\appvlp.exe \\MSOUC.EXE :\\Windows\\SysWOW64\\rundll32.exe \\msoasb.exe \\SKYPESERVER.EXE :\\Windows\\System32\\rundll32.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFwcHZscC5leGUgOlxXaW5kb3dzXFN5c1dPVzY0XHJ1bmRsbDMyLmV4ZSA6XFdpbmRvd3NcU3lzdGVtMzJccnVuZGxsMzIuZXhlIFxtc29hc2IuZXhlIFxTS1lQRVNFUlZFUi5FWEUgXE1TT1VDLkVYRQ==')) | Invoke-Expression\" "
+  }
+}

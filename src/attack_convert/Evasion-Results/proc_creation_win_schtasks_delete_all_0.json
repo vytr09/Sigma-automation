@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_delete_all_0",
+  "original_command": "\\schtasks.exe /delete /tn \\ /f",
+  "evasions": {
+    "insertion": "\\schtasks.exe /\"{cmd_part1}\" /\"{cmd_part2}\" \\ /f",
+    "substitution": "\\schtasks.exe -delete /tn \\ /f",
+    "omission": "\\schtasks /delete /tn \\ /f",
+    "reordering": "\\schtasks.exe /delete /tn \\ /f",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvZGVsZXRlIC90biBcIC9m')) | Invoke-Expression\" "
+  }
+}

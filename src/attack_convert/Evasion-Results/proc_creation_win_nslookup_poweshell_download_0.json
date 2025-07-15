@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_nslookup_poweshell_download_0",
+  "original_command": "\\nslookup.exe \\powershell.exe \\pwsh.exe -q=txt -querytype=txt",
+  "evasions": {
+    "insertion": "\\nslookup.exe \"\\powershell.exe\" \\pwsh.exe -q=txt -querytype=txt",
+    "substitution": "\\nslookup.exe \\powershell.exe \\pwsh.exe -q=txt -querytype=txt",
+    "omission": "\\nslookup \\powershell \\pwsh -q=txt -querytype=txt",
+    "reordering": "\\nslookup.exe -querytype=txt -q=txt \\powershell.exe \\pwsh.exe",
+    "recoding": "powershell.exe -EncodedCommand XABuAHMAbABvAG8AawB1AHAALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIAAtAHEAPQB0AHgAdAAgAC0AcQB1AGUAcgB5AHQAeQBwAGUAPQB0AHgAdAA= "
+  }
+}

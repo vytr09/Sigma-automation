@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_relay_attacks_tools_0",
+  "original_command": "Invoke-Tater smbrelay ntlmrelay cme smb /ntlm:NTLMhash Invoke-PetitPotam .exe -t -p .exe -c",
+  "evasions": {
+    "insertion": "Invoke-Tater smbrelay ntlmrelay cme smb /ntlm:NTLMhash Invoke-PetitPotam .exe -t \\\"-\\\"\\\"p\\\" .exe -c",
+    "substitution": "Invoke-Tater smbrelay ntlmrelay cme smb /ntlm:NTLMhash Invoke-PetitPotam .exe -t -p .exe -c #substitution",
+    "omission": "Invoke-Tater smbrelay ntlmrelay cme smb /ntlm:NTLMhash Invoke-PetitPotam -t -p -c",
+    "reordering": "Invoke-Tater smbrelay ntlmrelay cme smb /ntlm:NTLMhash Invoke-PetitPotam .exe -t -p .exe -c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW52b2tlLVRhdGVyIHNtYnJlbGF5IG50bG1yZWxheSBjbWUgc21iIC9udGxtOk5UTE1oYXNoIEludm9rZS1QZXRpdFBvdGFtIC5leGUgLXQgLXAgLmV4ZSAtYw==')) | Invoke-Expression\" "
+  }
+}

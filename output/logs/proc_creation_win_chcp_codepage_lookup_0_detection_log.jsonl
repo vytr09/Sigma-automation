@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:05:19 UTC", "rule": "proc_creation_win_chcp_codepage_lookup_0", "phase": "original", "command": "\\cmd.exe -c -r -k \\chcp.com", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:05:25 UTC", "rule": "proc_creation_win_chcp_codepage_lookup_0", "phase": "insertion", "command": "\\cmd.exe -c -r -k \\\"\\chcp.com\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:05:31 UTC", "rule": "proc_creation_win_chcp_codepage_lookup_0", "phase": "substitution", "command": "\\cmd.exe -c -r -k \\chcp.com #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:05:39 UTC", "rule": "proc_creation_win_chcp_codepage_lookup_0", "phase": "omission", "command": "\\cmd -c -r -k \\chcp.com", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:05:48 UTC", "rule": "proc_creation_win_chcp_codepage_lookup_0", "phase": "reordering", "command": "\\cmd.exe -r \\chcp.com -c -k", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:05:57 UTC", "rule": "proc_creation_win_chcp_codepage_lookup_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgLWMgLXIgLWsgXGNoY3AuY29t')) | Invoke-Expression\" ", "status": "BYPASSED"}

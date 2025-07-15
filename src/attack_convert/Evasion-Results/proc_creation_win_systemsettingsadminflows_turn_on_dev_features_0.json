@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_systemsettingsadminflows_turn_on_dev_features_0",
+  "original_command": "\\SystemSettingsAdminFlows.exe SystemSettingsAdminFlows.EXE TurnOnDeveloperFeatures DeveloperUnlock EnableSideloading",
+  "evasions": {
+    "insertion": "\\SystemSettingsAdminFlows.exe SystemSettingsAdminFlows.EXE TurnOnDeveloperFeatures DeveloperUnlock \"E\"\"n\"\"a\"\"b\"\"l\"\"e\"\"S\"\"i\"\"d\"\"e\"\"l\"\"o\"\"a\"\"d\"\"i\"\"n\"\"g\"",
+    "substitution": "\\SystemSettingsAdminFlows.exe SystemSettingsAdminFlows.EXE TurnOnDeveloperFeatures DeveloperUnlock EnableSideloading #substitution",
+    "omission": "\\SystemSettingsAdminFlows SystemSettingsAdminFlows TurnOnDeveloperFeatures DeveloperUnlock EnableSideloading",
+    "reordering": "\\SystemSettingsAdminFlows.exe TurnOnDeveloperFeatures SystemSettingsAdminFlows.EXE EnableSideloading DeveloperUnlock",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbVNldHRpbmdzQWRtaW5GbG93cy5leGUgU3lzdGVtU2V0dGluZ3NBZG1pbkZsb3dzLkVYRSBUdXJuT25EZXZlbG9wZXJGZWF0dXJlcyBEZXZlbG9wZXJVbmxvY2sgRW5hYmxlU2lkZWxvYWRpbmc=')) | Invoke-Expression\" "
+  }
+}

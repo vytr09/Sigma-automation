@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_3proxy_execution_0",
+  "original_command": "\\3proxy.exe .exe -i127.0.0.1 -p",
+  "evasions": {
+    "insertion": "\\3proxy.exe .e\"xe\" -i127.0.0.1 -p",
+    "substitution": "\\3proxy.exe .exe -i127.0.0.1 -p #substitution",
+    "omission": "\\3proxy -i127.0.0.1 -p",
+    "reordering": "\\3proxy.exe -p -i127.0.0.1 .exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XDNwcm94eS5leGUgLmV4ZSAtaTEyNy4wLjAuMSAtcA==')) | Invoke-Expression\" "
+  }
+}

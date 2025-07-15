@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:05:14 UTC", "rule": "proc_creation_win_sc_query_interesting_services_0", "phase": "original", "command": "\\sc.exe sc.exe query termservice", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:05:22 UTC", "rule": "proc_creation_win_sc_query_interesting_services_0", "phase": "insertion", "command": "\\sc.exe \"s\"\"c\"\".\"\"e\"\"x\"\"e\" query termservice", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:05:29 UTC", "rule": "proc_creation_win_sc_query_interesting_services_0", "phase": "substitution", "command": "\\sc.exe sc.exe query termservice", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:05:35 UTC", "rule": "proc_creation_win_sc_query_interesting_services_0", "phase": "omission", "command": "\\sc sc query termservice", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:05:41 UTC", "rule": "proc_creation_win_sc_query_interesting_services_0", "phase": "reordering", "command": "\\sc.exe termservice sc.exe query", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:05:47 UTC", "rule": "proc_creation_win_sc_query_interesting_services_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgcXVlcnkgdGVybXNlcnZpY2U=')) | Invoke-Expression\" ", "status": "BYPASSED"}

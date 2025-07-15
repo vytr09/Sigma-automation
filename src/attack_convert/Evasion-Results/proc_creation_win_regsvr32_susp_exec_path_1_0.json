@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regsvr32_susp_exec_path_1_0",
+  "original_command": "\\regsvr32.exe REGSVR32.EXE :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\",
+  "evasions": {
+    "insertion": "\\regsvr32.exe \\\"REGSVR32.EXE\\\" \\\":\\ProgramData\\\\\" :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\",
+    "substitution": "\\regsvr32.exe REGSVR32.EXE :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\ #substitution",
+    "omission": "\\regsvr32 REGSVR32 :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\",
+    "reordering": "\\regsvr32.exe REGSVR32.EXE :\\ProgramData\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ \\AppData\\Roaming\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ3N2cjMyLmV4ZSBSRUdTVlIzMi5FWEUgOlxQcm9ncmFtRGF0YVwgOlxUZW1wXCA6XFVzZXJzXFB1YmxpY1wgOlxXaW5kb3dzXFRlbXBcIFxBcHBEYXRhXExvY2FsXFRlbXBcIFxBcHBEYXRhXFJvYW1pbmdc')) | Invoke-Expression\" "
+  }
+}

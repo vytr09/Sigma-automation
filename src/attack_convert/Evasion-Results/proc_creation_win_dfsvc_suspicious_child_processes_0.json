@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dfsvc_suspicious_child_processes_0",
+  "original_command": "\\calc.exe \\cmd.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\werfault.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "\\calc.exe \\cmd.exe \\\"\\cscript.exe\\\" \\\"\\explorer.exe\\\" \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\werfault.exe \\wscript.exe",
+    "substitution": "\\calc.exe \\cmd.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\werfault.exe \\wscript.exe #substitution",
+    "omission": "\\calc \\cmd \\cscript \\explorer \\mshta \\net \\net1 \\nltest \\notepad \\powershell \\pwsh \\reg \\regsvr32 \\rundll32 \\schtasks \\werfault \\wscript",
+    "reordering": "\\calc.exe \\cmd.exe \\cscript.exe \\explorer.exe \\mshta.exe \\net.exe \\net1.exe \\nltest.exe \\notepad.exe \\powershell.exe \\pwsh.exe \\reg.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\werfault.exe \\wscript.exe",
+    "recoding": "powershell.exe -EncodedCommand XABjAGEAbABjAC4AZQB4AGUAIABcAGMAbQBkAC4AZQB4AGUAIABcAGMAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAZQB4AHAAbABvAHIAZQByAC4AZQB4AGUAIABcAG0AcwBoAHQAYQAuAGUAeABlACAAXABuAGUAdAAuAGUAeABlACAAXABuAGUAdAAxAC4AZQB4AGUAIABcAG4AbAB0AGUAcwB0AC4AZQB4AGUAIABcAG4AbwB0AGUAcABhAGQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHIAZQBnAC4AZQB4AGUAIABcAHIAZQBnAHMAdgByADMAMgAuAGUAeABlACAAXAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFwAcwBjAGgAdABhAHMAawBzAC4AZQB4AGUAIABcAHcAZQByAGYAYQB1AGwAdAAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUA "
+  }
+}

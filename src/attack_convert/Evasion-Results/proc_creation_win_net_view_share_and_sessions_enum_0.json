@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_view_share_and_sessions_enum_0",
+  "original_command": "\\net.exe \\net1.exe net.exe net1.exe view \\\\\\\\",
+  "evasions": {
+    "insertion": "\\net.exe \\net1.exe net.exe net1.exe \\\"view\\\" \\\"\\\\\\\\\\\"",
+    "substitution": "\\net.exe \\net1.exe net.exe net1.exe view \\\\\\\\ #substitution",
+    "omission": "\\net \\net1 net net1 view \\\\\\\\",
+    "reordering": "\\net.exe view \\net1.exe net.exe \\\\\\\\ net1.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgdmlldyBcXFxc')) | Invoke-Expression\" "
+  }
+}

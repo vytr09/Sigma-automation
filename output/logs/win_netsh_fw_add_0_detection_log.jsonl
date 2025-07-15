@@ -4,15 +4,3 @@
 {"timestamp": "2025-04-23 09:05:10 UTC", "rule": "win_netsh_fw_add_0", "phase": "omission", "command": "netsh firewall add # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:05:20 UTC", "rule": "win_netsh_fw_add_0", "phase": "reordering", "command": "netsh add firewall", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:05:27 UTC", "rule": "win_netsh_fw_add_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:33:40 UTC", "rule": "win_netsh_fw_add_0", "phase": "original", "command": "netsh firewall add", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:48 UTC", "rule": "win_netsh_fw_add_0", "phase": "insertion", "command": "netsh \\\"firewall\\\" add", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:56 UTC", "rule": "win_netsh_fw_add_0", "phase": "substitution", "command": "netsh fw add", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:06 UTC", "rule": "win_netsh_fw_add_0", "phase": "omission", "command": "netsh firewall add # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:15 UTC", "rule": "win_netsh_fw_add_0", "phase": "reordering", "command": "netsh add firewall", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:23 UTC", "rule": "win_netsh_fw_add_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggZmlyZXdhbGwgYWRk')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:24 UTC", "rule": "win_netsh_fw_add_0", "phase": "original", "command": "netsh firewall add", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:54:28 UTC", "rule": "win_netsh_fw_add_0", "phase": "insertion", "command": "netsh firewall \"a\"dd", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:54:32 UTC", "rule": "win_netsh_fw_add_0", "phase": "substitution", "command": "netsh fw add", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:35 UTC", "rule": "win_netsh_fw_add_0", "phase": "omission", "command": "netsh firewall add # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:38 UTC", "rule": "win_netsh_fw_add_0", "phase": "reordering", "command": "netsh add firewall", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:54:42 UTC", "rule": "win_netsh_fw_add_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggZmlyZXdhbGwgYWRk')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_configsecuritypolicy_download_file_0",
+  "original_command": "ConfigSecurityPolicy.exe \\ConfigSecurityPolicy.exe ConfigSecurityPolicy.exe ftp:// http:// https://",
+  "evasions": {
+    "insertion": "ConfigSecurityPolicy.exe \\ConfigSecurityPolicy.exe ConfigSecurityPolicy.exe ftp:// \\\"http://\\\" \\\"https://\\\"",
+    "substitution": "ConfigSecurityPolicy.exe \\ConfigSecurityPolicy.exe ConfigSecurityPolicy.exe ftp:// http:// https:// #substitution",
+    "omission": "ConfigSecurityPolicy \\ConfigSecurityPolicy ConfigSecurityPolicy ftp:// http:// https://",
+    "reordering": "ConfigSecurityPolicy.exe ConfigSecurityPolicy.exe http:// ftp:// \\ConfigSecurityPolicy.exe https://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q29uZmlnU2VjdXJpdHlQb2xpY3kuZXhlIFxDb25maWdTZWN1cml0eVBvbGljeS5leGUgQ29uZmlnU2VjdXJpdHlQb2xpY3kuZXhlIGZ0cDovLyBodHRwOi8vIGh0dHBzOi8v')) | Invoke-Expression\" "
+  }
+}

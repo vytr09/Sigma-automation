@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_finger_execution_0",
+  "original_command": "finger.exe \\finger.exe",
+  "evasions": {
+    "insertion": "finger.exe \"\\finger.exe\"",
+    "substitution": "finger.exe \\finger.exe #substitution",
+    "omission": "finger \\finger",
+    "reordering": "finger.exe \\finger.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZmluZ2VyLmV4ZSBcZmluZ2VyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_encoding_patterns_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll ToInt ToDecimal ToByte ToUint ToSingle ToSByte ToChar ToString String char join split join",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll ToInt ToDecimal ToByte ToUint ToSingle ToSByte ToChar ToString String char join split \"jo\"in",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll ToInt ToDecimal ToByte ToUint ToSingle ToSByte ToChar ToString String char join split join #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll ToInt ToDecimal ToByte ToUint ToSingle ToSByte ToChar ToString String char join split join",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll ToInt ToDecimal ToByte ToUint ToSingle ToSByte ToChar ToString String char join split join",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAFQAbwBJAG4AdAAgAFQAbwBEAGUAYwBpAG0AYQBsACAAVABvAEIAeQB0AGUAIABUAG8AVQBpAG4AdAAgAFQAbwBTAGkAbgBnAGwAZQAgAFQAbwBTAEIAeQB0AGUAIABUAG8AQwBoAGEAcgAgAFQAbwBTAHQAcgBpAG4AZwAgAFMAdAByAGkAbgBnACAAYwBoAGEAcgAgAGoAbwBpAG4AIABzAHAAbABpAHQAIABqAG8AaQBuAA== "
+  }
+}

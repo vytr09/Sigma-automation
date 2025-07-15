@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:46:18 UTC", "rule": "proc_creation_win_hktl_impersonate_0", "phase": "original", "command": "impersonate.exe list exec adduser", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:46:18 UTC", "rule": "proc_creation_win_hktl_impersonate_0", "phase": "insertion", "command": "impersonate.exe list exec \"a\"\"d\"\"d\"\"u\"\"s\"\"e\"\"r\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:46:18 UTC", "rule": "proc_creation_win_hktl_impersonate_0", "phase": "substitution", "command": "impersonate.exe list exec adduser #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:46:18 UTC", "rule": "proc_creation_win_hktl_impersonate_0", "phase": "omission", "command": "impersonate list exec adduser", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:46:18 UTC", "rule": "proc_creation_win_hktl_impersonate_0", "phase": "reordering", "command": "impersonate.exe list adduser exec", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:46:18 UTC", "rule": "proc_creation_win_hktl_impersonate_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aW1wZXJzb25hdGUuZXhlIGxpc3QgZXhlYyBhZGR1c2Vy')) | Invoke-Expression\" ", "status": "BYPASSED"}

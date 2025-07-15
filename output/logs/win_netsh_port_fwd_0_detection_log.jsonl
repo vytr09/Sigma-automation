@@ -4,14 +4,3 @@
 {"timestamp": "2025-04-23 09:06:40 UTC", "rule": "win_netsh_port_fwd_0", "phase": "omission", "command": "netsh interface portproxy add v4tov4 # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 09:06:47 UTC", "rule": "win_netsh_port_fwd_0", "phase": "reordering", "command": "netsh v4tov4 interface add portproxy", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:06:54 UTC", "rule": "win_netsh_port_fwd_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:33:55 UTC", "rule": "win_netsh_port_fwd_0", "phase": "original", "command": "netsh interface portproxy add v4tov4", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:34:06 UTC", "rule": "win_netsh_port_fwd_0", "phase": "insertion", "command": "netsh interface portproxy add v4t\\\"ov4\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:34:15 UTC", "rule": "win_netsh_port_fwd_0", "phase": "substitution", "command": "netsh interface portproxy add v4tov4 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:22 UTC", "rule": "win_netsh_port_fwd_0", "phase": "omission", "command": "netsh interface portproxy add v4tov4 # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:34:24 UTC", "rule": "win_netsh_port_fwd_0", "phase": "reordering", "command": "netsh add portproxy interface v4tov4", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:55:06 UTC", "rule": "win_netsh_port_fwd_0", "phase": "original", "command": "netsh interface portproxy add v4tov4", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:55:09 UTC", "rule": "win_netsh_port_fwd_0", "phase": "insertion", "command": "netsh inte\"rface\" portproxy add v4tov4", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:55:12 UTC", "rule": "win_netsh_port_fwd_0", "phase": "substitution", "command": "netsh interface portproxy add v4tov4 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:55:16 UTC", "rule": "win_netsh_port_fwd_0", "phase": "omission", "command": "netsh interface portproxy add v4tov4 # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:55:19 UTC", "rule": "win_netsh_port_fwd_0", "phase": "reordering", "command": "netsh portproxy interface add v4tov4", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:55:23 UTC", "rule": "win_netsh_port_fwd_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggaW50ZXJmYWNlIHBvcnRwcm94eSBhZGQgdjR0b3Y0')) | Invoke-Expression\" ", "status": "BYPASSED"}

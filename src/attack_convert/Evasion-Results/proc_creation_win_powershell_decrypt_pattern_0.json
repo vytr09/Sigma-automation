@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_decrypt_pattern_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem dir gci ls Get-Content gc cat type ReadAllBytes ^| \\ .lnk -Recurse -Skip -ExpandProperty \\ .lnk WriteAllBytes .length",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem dir gci ls Get-Content gc cat type ReadAllBytes ^| \\ .lnk -Recurse -Skip -ExpandProperty \\ .lnk WriteAllBytes .length",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem dir gci ls Get-Content gc cat type ReadAllBytes ^| \\ .lnk -Recurse -Skip -ExpandProperty \\ .lnk WriteAllBytes .length #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll Get-ChildItem dir gci ls Get-Content gc cat type ReadAllBytes ^| \\ .lnk -Recurse -Skip -ExpandProperty \\ .lnk WriteAllBytes .length",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Get-ChildItem dir gci ls Get-Content gc cat type ReadAllBytes ^| \\ .lnk -Recurse -Skip -ExpandProperty \\ .lnk WriteAllBytes .length",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEcAZQB0AC0AQwBoAGkAbABkAEkAdABlAG0AIABkAGkAcgAgAGcAYwBpACAAbABzACAARwBlAHQALQBDAG8AbgB0AGUAbgB0ACAAZwBjACAAYwBhAHQAIAB0AHkAcABlACAAUgBlAGEAZABBAGwAbABCAHkAdABlAHMAIABeAHwAIABcACAALgBsAG4AawAgAC0AUgBlAGMAdQByAHMAZQAgAC0AUwBrAGkAcAAgAC0ARQB4AHAAYQBuAGQAUAByAG8AcABlAHIAdAB5ACAAXAAgAC4AbABuAGsAIABXAHIAaQB0AGUAQQBsAGwAQgB5AHQAZQBzACAALgBsAGUAbgBnAHQAaAA= "
+  }
+}

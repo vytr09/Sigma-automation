@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_svchost_uncommon_parent_process_0",
+  "original_command": "\\svchost.exe \\Mrt.exe \\MsMpEng.exe \\ngen.exe \\rpcnet.exe \\services.exe \\TiWorker.exe",
+  "evasions": {
+    "insertion": "\\svchost.exe \\Mrt.exe \\MsMpEng.exe \"\\ngen.exe\" \\rpcnet.exe \\services.exe \\TiWorker.exe",
+    "substitution": "\\svchost.exe \\Mrt.exe \\MsMpEng.exe \\ngen.exe \\rpcnet.exe \\services.exe \\TiWorker.exe #substitution",
+    "omission": "\\svchost \\Mrt \\MsMpEng \\ngen \\rpcnet \\services \\TiWorker",
+    "reordering": "\\svchost.exe \\Mrt.exe \\MsMpEng.exe \\ngen.exe \\rpcnet.exe \\services.exe \\TiWorker.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIFxNcnQuZXhlIFxNc01wRW5nLmV4ZSBcbmdlbi5leGUgXHJwY25ldC5leGUgXHNlcnZpY2VzLmV4ZSBcVGlXb3JrZXIuZXhl')) | Invoke-Expression\" "
+  }
+}

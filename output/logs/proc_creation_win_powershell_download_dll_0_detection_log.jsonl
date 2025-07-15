@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:50:19 UTC", "rule": "proc_creation_win_powershell_download_dll_0", "phase": "original", "command": "Invoke-WebRequest IWR http OutFile .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:50:36 UTC", "rule": "proc_creation_win_powershell_download_dll_0", "phase": "insertion", "command": "Invoke-WebRequest IWR \"ht\"tp OutFile .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:50:49 UTC", "rule": "proc_creation_win_powershell_download_dll_0", "phase": "substitution", "command": "Invoke-WebRequest IWR http OutFile .dll #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:50:56 UTC", "rule": "proc_creation_win_powershell_download_dll_0", "phase": "omission", "command": "Invoke-WebRequest IWR http OutFile .dll # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:51:02 UTC", "rule": "proc_creation_win_powershell_download_dll_0", "phase": "reordering", "command": "Invoke-WebRequest http IWR OutFile .dll", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:51:10 UTC", "rule": "proc_creation_win_powershell_download_dll_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand SQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAASQBXAFIAIABoAHQAdABwACAATwB1AHQARgBpAGwAZQAgAC4AZABsAGwA ", "status": "BYPASSED"}

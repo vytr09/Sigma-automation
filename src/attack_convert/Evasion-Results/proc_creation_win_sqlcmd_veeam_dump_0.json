@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sqlcmd_veeam_dump_0",
+  "original_command": "\\sqlcmd.exe SELECT TOP [VeeamBackup].[dbo].[Credentials]",
+  "evasions": {
+    "insertion": "\\sqlcmd.exe SEL\"ECT\" TOP [VeeamBackup].[dbo].[Credentials]",
+    "substitution": "\\sqlcmd.exe SELECT TOP [VeeamBackup].[dbo].[Credentials] #substitution",
+    "omission": "\\sqlcmd SELECT TOP [VeeamBackup].[dbo].[Credentials]",
+    "reordering": "\\sqlcmd.exe SELECT [VeeamBackup].[dbo].[Credentials] TOP",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxbGNtZC5leGUgU0VMRUNUIFRPUCBbVmVlYW1CYWNrdXBdLltkYm9dLltDcmVkZW50aWFsc10=')) | Invoke-Expression\" "
+  }
+}

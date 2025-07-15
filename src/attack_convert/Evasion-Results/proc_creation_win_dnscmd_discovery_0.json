@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dnscmd_discovery_0",
+  "original_command": "\\dnscmd.exe /enumrecords /enumzones /ZonePrint /info",
+  "evasions": {
+    "insertion": "\\dnscmd.exe /enumrecords /enumzones /ZonePrint /\"{cmd_part}\"",
+    "substitution": "\\dnscmd.exe -enumrecords -enumzones /ZonePrint /info",
+    "omission": "\\dnscmd /enumrecords /enumzones /ZonePrint /info",
+    "reordering": "\\dnscmd.exe /enumrecords /enumzones /ZonePrint /info",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRuc2NtZC5leGUgL2VudW1yZWNvcmRzIC9lbnVtem9uZXMgL1pvbmVQcmludCAvaW5mbw==')) | Invoke-Expression\" "
+  }
+}

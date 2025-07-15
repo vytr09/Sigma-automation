@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_cleanwipe_0",
+  "original_command": "\\SepRemovalToolNative_x64.exe \\CATClean.exe --uninstall \\NetInstaller.exe -r \\WFPUnins.exe /uninstall /enterprise",
+  "evasions": {
+    "insertion": "\\\"S\"\"e\"\"p\"\"R\"\"e\"\"m\"\"o\"\"v\"\"a\"\"l\"\"T\"\"o\"\"o\"\"l\"\"N\"\"a\"\"t\"\"i\"\"v\"\"e\"\"_\"\"x\"\"6\"\"4\"\".\"\"e\"\"x\"\"e\" \\CATClean.exe --uninstall \\NetInstaller.exe -r \\WFPUnins.exe /uninstall /enterprise",
+    "substitution": "\\SepRemovalToolNative_x64.exe \\CATClean.exe --uninstall \\NetInstaller.exe -r \\WFPUnins.exe /uninstall /enterprise #substitution",
+    "omission": "\\SepRemovalToolNative_x64 \\CATClean --uninstall \\NetInstaller -r \\WFPUnins /uninstall /enterprise",
+    "reordering": "\\SepRemovalToolNative_x64.exe \\CATClean.exe --uninstall \\NetInstaller.exe -r \\WFPUnins.exe /uninstall /enterprise",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNlcFJlbW92YWxUb29sTmF0aXZlX3g2NC5leGUgXENBVENsZWFuLmV4ZSAtLXVuaW5zdGFsbCBcTmV0SW5zdGFsbGVyLmV4ZSAtciBcV0ZQVW5pbnMuZXhlIC91bmluc3RhbGwgL2VudGVycHJpc2U=')) | Invoke-Expression\" "
+  }
+}

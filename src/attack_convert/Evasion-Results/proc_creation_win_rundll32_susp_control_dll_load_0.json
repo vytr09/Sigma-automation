@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_susp_control_dll_load_0",
+  "original_command": "\\System32\\control.exe \\rundll32.exe RUNDLL32.EXE Shell32.dll",
+  "evasions": {
+    "insertion": "\\System32\\control.exe \\\"\\rundll32.exe\\\" RUNDLL32.EXE Shell32.dll",
+    "substitution": "\\System32\\control.exe \\rundll32.exe RUNDLL32.EXE Shell32.dll #substitution",
+    "omission": "\\System32\\control \\rundll32 RUNDLL32 Shell32.dll",
+    "reordering": "\\System32\\control.exe \\rundll32.exe Shell32.dll RUNDLL32.EXE",
+    "recoding": "powershell.exe -EncodedCommand XABTAHkAcwB0AGUAbQAzADIAXABjAG8AbgB0AHIAbwBsAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAUgBVAE4ARABMAEwAMwAyAC4ARQBYAEUAIABTAGgAZQBsAGwAMwAyAC4AZABsAGwA "
+  }
+}

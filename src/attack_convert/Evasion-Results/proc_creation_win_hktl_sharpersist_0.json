@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharpersist_0",
+  "original_command": "\\SharPersist.exe -t schtask -c -t startupfolder -c -t reg -c -m add -t service -c -m add -t schtask -c -m add",
+  "evasions": {
+    "insertion": "\\SharPersist.exe -t schtask -c -t startupfolder -c -t reg -c -m \"a\"dd -t service -c -m add -t schtask -c -m add",
+    "substitution": "\\SharPersist.exe -t schtask -c -t startupfolder -c -t reg -c -m add -t service -c -m add -t schtask -c -m add",
+    "omission": "\\SharPersist -t schtask -c -t startupfolder -c -t reg -c -m add -t service -c -m add -t schtask -c -m add",
+    "reordering": "\\SharPersist.exe -t schtask -c -t startupfolder -c -t reg -c -m add -t service -c -m add -t schtask -c -m add",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJQZXJzaXN0LmV4ZSAtdCBzY2h0YXNrIC1jIC10IHN0YXJ0dXBmb2xkZXIgLWMgLXQgcmVnIC1jIC1tIGFkZCAtdCBzZXJ2aWNlIC1jIC1tIGFkZCAtdCBzY2h0YXNrIC1jIC1tIGFkZA==')) | Invoke-Expression\" "
+  }
+}

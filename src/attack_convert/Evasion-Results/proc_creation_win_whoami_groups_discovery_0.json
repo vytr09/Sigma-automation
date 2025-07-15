@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_whoami_groups_discovery_0",
+  "original_command": "\\whoami.exe whoami.exe /groups -groups",
+  "evasions": {
+    "insertion": "\\\"w\"\"h\"\"o\"\"a\"\"m\"\"i\"\".\"\"e\"\"x\"\"e\" whoami.exe /groups -groups",
+    "substitution": "\\whoami.exe whoami.exe /groups -groups #substitution",
+    "omission": "\\whoami whoami /groups -groups",
+    "reordering": "\\whoami.exe whoami.exe /groups -groups",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdob2FtaS5leGUgd2hvYW1pLmV4ZSAvZ3JvdXBzIC1ncm91cHM=')) | Invoke-Expression\" "
+  }
+}

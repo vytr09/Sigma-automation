@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_alternate_data_streams_0",
+  "original_command": "txt: type > makecab .cab reg export regedit /E esentutl /y /d /o",
+  "evasions": {
+    "insertion": "txt: type > makecab .cab reg export regedit /E esentutl /y /d /o",
+    "substitution": "txt: type > makecab .cab reg export regedit /E esentutl /y /d /o",
+    "omission": "txt: type > makecab .cab reg export regedit /E esentutl /y /d /o # omission",
+    "reordering": "txt: type > makecab .cab reg export regedit /E esentutl /y /d /o",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHh0OiB0eXBlID4gbWFrZWNhYiAuY2FiIHJlZyBleHBvcnQgcmVnZWRpdCAvRSBlc2VudHV0bCAveSAvZCAvbw==')) | Invoke-Expression\" "
+  }
+}

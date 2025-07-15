@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_manage_bde_0",
+  "original_command": "\\wscript.exe wscript.exe manage-bde.wsf \\cscript.exe \\wscript.exe manage-bde.wsf \\cmd.exe",
+  "evasions": {
+    "insertion": "\\wscript.exe wscript.exe manage-bde.wsf \\cscript.exe \\wscript.exe manage-bde.wsf \\cmd\\\".exe\\\"",
+    "substitution": "\\wscript.exe wscript.exe manage-bde.wsf \\cscript.exe \\wscript.exe manage-bde.wsf \\cmd.exe #substitution",
+    "omission": "\\wscript wscript manage-bde.wsf \\cscript \\wscript manage-bde.wsf \\cmd",
+    "reordering": "\\wscript.exe wscript.exe manage-bde.wsf \\cscript.exe \\wscript.exe manage-bde.wsf \\cmd.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdzY3JpcHQuZXhlIHdzY3JpcHQuZXhlIG1hbmFnZS1iZGUud3NmIFxjc2NyaXB0LmV4ZSBcd3NjcmlwdC5leGUgbWFuYWdlLWJkZS53c2YgXGNtZC5leGU=')) | Invoke-Expression\" "
+  }
+}

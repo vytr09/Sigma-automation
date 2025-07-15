@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_c3_rundll32_pattern_0",
+  "original_command": "rundll32.exe .dll StartNodeRelay",
+  "evasions": {
+    "insertion": "rundll32.exe \".dll\" \"StartNodeRelay\"",
+    "substitution": "rundll32.exe .dll StartNodeRelay #substitution",
+    "omission": "rundll32 .dll StartNodeRelay",
+    "reordering": "rundll32.exe StartNodeRelay .dll",
+    "recoding": "powershell.exe -EncodedCommand cgB1AG4AZABsAGwAMwAyAC4AZQB4AGUAIAAuAGQAbABsACAAUwB0AGEAcgB0AE4AbwBkAGUAUgBlAGwAYQB5AA== "
+  }
+}

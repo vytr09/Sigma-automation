@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regsvr32_flags_anomaly_0",
+  "original_command": "\\regsvr32.exe -i: -n",
+  "evasions": {
+    "insertion": "\\\"r\"\"e\"\"g\"\"s\"\"v\"\"r\"\"3\"\"2\"\".\"\"e\"\"x\"\"e\" -i: -n",
+    "substitution": "\\regsvr32.exe -i: -n #substitution",
+    "omission": "\\regsvr32 -i: -n",
+    "reordering": "\\regsvr32.exe -n -i:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ3N2cjMyLmV4ZSAtaTogLW4=')) | Invoke-Expression\" "
+  }
+}

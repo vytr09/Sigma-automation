@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msiexec_install_remote_0",
+  "original_command": "\\msiexec.exe msiexec.exe -i -package -a -j -q http \\\\\\\\",
+  "evasions": {
+    "insertion": "\\msiexec.exe msiexec.exe -i -package \\\"-a\\\" -j -q http \\\\\\\\",
+    "substitution": "\\msiexec.exe msiexec.exe -i -package -a -j -q http \\\\\\\\ #substitution",
+    "omission": "\\msiexec msiexec -i -package -a -j -q http \\\\\\\\",
+    "reordering": "\\msiexec.exe msiexec.exe -i -package -a -j -q http \\\\\\\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaWV4ZWMuZXhlIG1zaWV4ZWMuZXhlIC1pIC1wYWNrYWdlIC1hIC1qIC1xIGh0dHAgXFxcXA==')) | Invoke-Expression\" "
+  }
+}

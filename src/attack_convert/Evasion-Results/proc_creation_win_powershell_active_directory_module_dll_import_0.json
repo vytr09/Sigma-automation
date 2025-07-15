@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_active_directory_module_dll_import_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Import-Module ipmo Microsoft.ActiveDirectory.Management.dll",
+  "evasions": {
+    "insertion": "\\powershell.exe \"\\pwsh.exe\" PowerShell.EXE pwsh.dll Import-Module ipmo Microsoft.ActiveDirectory.Management.dll",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Import-Module ipmo Microsoft.ActiveDirectory.Management.dll #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll Import-Module ipmo Microsoft.ActiveDirectory.Management.dll",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Import-Module ipmo Microsoft.ActiveDirectory.Management.dll",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEkAbQBwAG8AcgB0AC0ATQBvAGQAdQBsAGUAIABpAHAAbQBvACAATQBpAGMAcgBvAHMAbwBmAHQALgBBAGMAdABpAHYAZQBEAGkAcgBlAGMAdABvAHIAeQAuAE0AYQBuAGEAZwBlAG0AZQBuAHQALgBkAGwAbAA= "
+  }
+}

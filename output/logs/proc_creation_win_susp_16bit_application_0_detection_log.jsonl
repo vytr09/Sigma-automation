@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:19:52 UTC", "rule": "proc_creation_win_susp_16bit_application_0", "phase": "original", "command": "\\ntvdm.exe \\csrstub.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:20:06 UTC", "rule": "proc_creation_win_susp_16bit_application_0", "phase": "insertion", "command": "\\ntvdm.exe \"\\\"\"c\"\"s\"\"r\"\"s\"\"t\"\"u\"\"b\"\".\"\"e\"\"x\"\"e\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:20:13 UTC", "rule": "proc_creation_win_susp_16bit_application_0", "phase": "substitution", "command": "\\ntvdm.exe \\csrstub.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:20:20 UTC", "rule": "proc_creation_win_susp_16bit_application_0", "phase": "omission", "command": "\\ntvdm \\csrstub", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:20:27 UTC", "rule": "proc_creation_win_susp_16bit_application_0", "phase": "reordering", "command": "\\ntvdm.exe \\csrstub.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:20:34 UTC", "rule": "proc_creation_win_susp_16bit_application_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG50dmRtLmV4ZSBcY3Nyc3R1Yi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

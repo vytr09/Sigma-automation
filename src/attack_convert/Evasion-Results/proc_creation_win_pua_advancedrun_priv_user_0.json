@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_advancedrun_priv_user_0",
+  "original_command": "/EXEFilename /CommandLine /RunAs 8 /RunAs 4 /RunAs 10 /RunAs 11",
+  "evasions": {
+    "insertion": "/EXEFilename /CommandLine /RunAs 8 /RunAs 4 /RunAs 10 /\"{cmd_part[:mid]}\"{cmd_part[mid:]} 11",
+    "substitution": "/EXEFilename /CommandLine /RunAs 8 /RunAs 4 /RunAs 10 /RunAs 11 #substitution",
+    "omission": "/EXEFilename /CommandLine /RunAs 8 /RunAs 4 /RunAs 10 /RunAs 11 # omission",
+    "reordering": "/EXEFilename /CommandLine /RunAs 8 /RunAs 4 /RunAs 10 /RunAs 11",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L0VYRUZpbGVuYW1lIC9Db21tYW5kTGluZSAvUnVuQXMgOCAvUnVuQXMgNCAvUnVuQXMgMTAgL1J1bkFzIDEx')) | Invoke-Expression\" "
+  }
+}

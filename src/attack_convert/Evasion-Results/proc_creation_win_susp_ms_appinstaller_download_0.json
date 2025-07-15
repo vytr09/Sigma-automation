@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_ms_appinstaller_download_0",
+  "original_command": "ms-appinstaller://?source= http",
+  "evasions": {
+    "insertion": "ms-appinstaller://?source= \\\"ht\\\"tp",
+    "substitution": "ms-appinstaller://?source= http #substitution",
+    "omission": "ms-appinstaller://?source= http # omission",
+    "reordering": "ms-appinstaller://?source= http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXMtYXBwaW5zdGFsbGVyOi8vP3NvdXJjZT0gaHR0cA==')) | Invoke-Expression\" "
+  }
+}

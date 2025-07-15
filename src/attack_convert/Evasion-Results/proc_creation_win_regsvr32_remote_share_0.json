@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regsvr32_remote_share_0",
+  "original_command": "\\regsvr32.exe \\REGSVR32.EXE \\\\\\\\",
+  "evasions": {
+    "insertion": "\\regsvr32.exe \\REGSV\"R32.EXE\" \\\\\\\\",
+    "substitution": "\\regsvr32.exe \\REGSVR32.EXE \\\\\\\\ #substitution",
+    "omission": "\\regsvr32 \\REGSVR32 \\\\\\\\",
+    "reordering": "\\regsvr32.exe \\REGSVR32.EXE \\\\\\\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ3N2cjMyLmV4ZSBcUkVHU1ZSMzIuRVhFIFxcXFw=')) | Invoke-Expression\" "
+  }
+}

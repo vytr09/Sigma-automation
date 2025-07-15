@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 09:10:26 UTC", "rule": "win_net_user_add_0", "phase": "omission", "command": "net user add", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:10:33 UTC", "rule": "win_net_user_add_0", "phase": "reordering", "command": "net.exe add user", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:10:40 UTC", "rule": "win_net_user_add_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:56:15 UTC", "rule": "win_net_user_add_0", "phase": "original", "command": "net.exe user add", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:56:18 UTC", "rule": "win_net_user_add_0", "phase": "insertion", "command": "net.exe user a\\\"dd\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:56:22 UTC", "rule": "win_net_user_add_0", "phase": "substitution", "command": "net.exe user add #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:56:25 UTC", "rule": "win_net_user_add_0", "phase": "omission", "command": "net user add", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:56:28 UTC", "rule": "win_net_user_add_0", "phase": "reordering", "command": "net.exe add user", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:56:32 UTC", "rule": "win_net_user_add_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0LmV4ZSB1c2VyIGFkZA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

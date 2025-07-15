@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_add_user_privileged_group_0",
+  "original_command": "localgroup /add Add-LocalGroupMember -Group Group Policy Creator Owners Schema Admins",
+  "evasions": {
+    "insertion": "localgroup /add Add-LocalGroupMember -Group Group Policy \\\"Creator\\\" \\\"Owners\\\" Schema Admins",
+    "substitution": "localgroup /add Add-LocalGroupMember -Group Group Policy Creator Owners Schema Admins #substitution",
+    "omission": "localgroup /add Add-LocalGroupMember -Group Group Policy Creator Owners Schema Admins # omission",
+    "reordering": "localgroup /add Add-LocalGroupMember -Group Group Policy Creator Owners Schema Admins",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bG9jYWxncm91cCAvYWRkIEFkZC1Mb2NhbEdyb3VwTWVtYmVyIC1Hcm91cCBHcm91cCBQb2xpY3kgQ3JlYXRvciBPd25lcnMgU2NoZW1hIEFkbWlucw==')) | Invoke-Expression\" "
+  }
+}

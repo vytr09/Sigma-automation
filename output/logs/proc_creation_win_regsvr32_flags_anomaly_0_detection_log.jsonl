@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:08:43 UTC", "rule": "proc_creation_win_regsvr32_flags_anomaly_0", "phase": "original", "command": "\\regsvr32.exe -i: -n", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:08:50 UTC", "rule": "proc_creation_win_regsvr32_flags_anomaly_0", "phase": "insertion", "command": "\\\"r\"\"e\"\"g\"\"s\"\"v\"\"r\"\"3\"\"2\"\".\"\"e\"\"x\"\"e\" -i: -n", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:08:57 UTC", "rule": "proc_creation_win_regsvr32_flags_anomaly_0", "phase": "substitution", "command": "\\regsvr32.exe -i: -n #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:09:05 UTC", "rule": "proc_creation_win_regsvr32_flags_anomaly_0", "phase": "omission", "command": "\\regsvr32 -i: -n", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:09:10 UTC", "rule": "proc_creation_win_regsvr32_flags_anomaly_0", "phase": "reordering", "command": "\\regsvr32.exe -n -i:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:09:16 UTC", "rule": "proc_creation_win_regsvr32_flags_anomaly_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ3N2cjMyLmV4ZSAtaTogLW4=')) | Invoke-Expression\" ", "status": "BYPASSED"}

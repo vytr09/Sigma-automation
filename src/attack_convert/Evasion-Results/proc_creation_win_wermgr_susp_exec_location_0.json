@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wermgr_susp_exec_location_0",
+  "original_command": "\\wermgr.exe",
+  "evasions": {
+    "insertion": "\\\"\\wermgr.exe\\\"",
+    "substitution": "\\wermgr.exe #substitution",
+    "omission": "\\wermgr",
+    "reordering": "\\wermgr.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdlcm1nci5leGU=')) | Invoke-Expression\" "
+  }
+}

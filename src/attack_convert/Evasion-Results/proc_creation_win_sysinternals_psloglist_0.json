@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_psloglist_0",
+  "original_command": "psloglist.exe \\psloglist.exe \\psloglist64.exe security application system -d -x -s -c -g",
+  "evasions": {
+    "insertion": "psloglist.exe \\psloglist.exe \\psloglist64.exe \\\"s\\\"\\\"e\\\"\\\"c\\\"\\\"u\\\"\\\"r\\\"\\\"i\\\"\\\"t\\\"\\\"y\\\" application system -d -x -s -c -g",
+    "substitution": "psloglist.exe \\psloglist.exe \\psloglist64.exe security application system -d -x -s -c -g #substitution",
+    "omission": "psloglist \\psloglist \\psloglist64 security application system -d -x -s -c -g",
+    "reordering": "psloglist.exe \\psloglist.exe \\psloglist64.exe security application system -d -x -s -c -g",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHNsb2dsaXN0LmV4ZSBccHNsb2dsaXN0LmV4ZSBccHNsb2dsaXN0NjQuZXhlIHNlY3VyaXR5IGFwcGxpY2F0aW9uIHN5c3RlbSAtZCAteCAtcyAtYyAtZw==')) | Invoke-Expression\" "
+  }
+}

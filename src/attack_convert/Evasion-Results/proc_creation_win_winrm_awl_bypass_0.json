@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winrm_awl_bypass_0",
+  "original_command": "format:pretty format: format: format:text winrm",
+  "evasions": {
+    "insertion": "format:pretty format: \\\"for\\\"mat: format:text winrm",
+    "substitution": "format:pretty format: format: format:text winrm #substitution",
+    "omission": "format:pretty format: format: format:text winrm # omission",
+    "reordering": "format:pretty format: format:text winrm format:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Zm9ybWF0OnByZXR0eSBmb3JtYXQ6IGZvcm1hdDogZm9ybWF0OnRleHQgd2lucm0=')) | Invoke-Expression\" "
+  }
+}

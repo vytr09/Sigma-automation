@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_acccheckconsole_execution_0",
+  "original_command": "\\AccCheckConsole.exe AccCheckConsole.exe -hwnd -process -window",
+  "evasions": {
+    "insertion": "\\AccCheckConsole.exe AccCheckConsole.exe -hwnd -process \\\"-\\\"\\\"w\\\"\\\"i\\\"\\\"n\\\"\\\"d\\\"\\\"o\\\"\\\"w\\\"",
+    "substitution": "\\AccCheckConsole.exe AccCheckConsole.exe -hwnd -process -window #substitution",
+    "omission": "\\AccCheckConsole AccCheckConsole -hwnd -process -window",
+    "reordering": "\\AccCheckConsole.exe -window AccCheckConsole.exe -process -hwnd",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFjY0NoZWNrQ29uc29sZS5leGUgQWNjQ2hlY2tDb25zb2xlLmV4ZSAtaHduZCAtcHJvY2VzcyAtd2luZG93')) | Invoke-Expression\" "
+  }
+}

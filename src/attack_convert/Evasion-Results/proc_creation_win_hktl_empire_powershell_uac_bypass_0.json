@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_empire_powershell_uac_bypass_0",
+  "original_command": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update) -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update);",
+  "evasions": {
+    "insertion": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update) -N\"oP\" -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update);",
+    "substitution": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update) -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update); #substitution",
+    "omission": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update) -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update); # omission",
+    "reordering": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update) -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update);",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBOAG8AUAAgAC0ATgBvAG4ASQAgAC0AdwAgAEgAaQBkAGQAZQBuACAALQBjACAAJAB4AD0AJAAoACgAZwBwACAASABLAEMAVQA6AFMAbwBmAHQAdwBhAHIAZQBcAE0AaQBjAHIAbwBzAG8AZgB0AFwAVwBpAG4AZABvAHcAcwAgAFUAcABkAGEAdABlACkALgBVAHAAZABhAHQAZQApACAALQBOAG8AUAAgAC0ATgBvAG4ASQAgAC0AYwAgACQAeAA9ACQAKAAoAGcAcAAgAEgASwBDAFUAOgBTAG8AZgB0AHcAYQByAGUAXABNAGkAYwByAG8AcwBvAGYAdABcAFcAaQBuAGQAbwB3AHMAIABVAHAAZABhAHQAZQApAC4AVQBwAGQAYQB0AGUAKQA7AA== "
+  }
+}

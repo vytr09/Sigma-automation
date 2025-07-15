@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_exec_data_file_0",
+  "original_command": "iex Invoke-Expression Invoke-Command icm cat get-content type -raw",
+  "evasions": {
+    "insertion": "iex Invoke-Expression Invoke-Command icm cat get-content \\\"type\\\" -raw",
+    "substitution": "iex Invoke-Expression Invoke-Command icm cat get-content type -raw #substitution",
+    "omission": "iex Invoke-Expression Invoke-Command icm cat get-content type -raw # omission",
+    "reordering": "iex Invoke-Expression Invoke-Command icm cat get-content type -raw",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aWV4IEludm9rZS1FeHByZXNzaW9uIEludm9rZS1Db21tYW5kIGljbSBjYXQgZ2V0LWNvbnRlbnQgdHlwZSAtcmF3')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_advanced_ip_scanner_0",
+  "original_command": "advanced_ip_scanner Advanced IP Scanner /portable /lng",
+  "evasions": {
+    "insertion": "advanced_ip_scanner Advanced IP Sca\"nner\" /portable /lng",
+    "substitution": "advanced_ip_scanner Advanced IP Scanner /portable /lng #substitution",
+    "omission": "advanced_ip_scanner Advanced IP Scanner /portable /lng # omission",
+    "reordering": "advanced_ip_scanner Advanced IP Scanner /portable /lng",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWR2YW5jZWRfaXBfc2Nhbm5lciBBZHZhbmNlZCBJUCBTY2FubmVyIC9wb3J0YWJsZSAvbG5n')) | Invoke-Expression\" "
+  }
+}

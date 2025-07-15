@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_gpg4win_0",
+  "original_command": "gpg.exe \\gpg.exe \\gpg2.exe",
+  "evasions": {
+    "insertion": "gpg.exe \\gpg.exe \"\\gpg2.exe\"",
+    "substitution": "gpg.exe \\gpg.exe \\gpg2.exe #substitution",
+    "omission": "gpg \\gpg \\gpg2",
+    "reordering": "gpg.exe \\gpg2.exe \\gpg.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Z3BnLmV4ZSBcZ3BnLmV4ZSBcZ3BnMi5leGU=')) | Invoke-Expression\" "
+  }
+}

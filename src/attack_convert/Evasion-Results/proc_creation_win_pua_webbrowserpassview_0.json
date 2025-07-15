@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_webbrowserpassview_0",
+  "original_command": "\\WebBrowserPassView.exe",
+  "evasions": {
+    "insertion": "\\\"\\WebBrowserPassView.exe\\\"",
+    "substitution": "\\WebBrowserPassView.exe #substitution",
+    "omission": "\\WebBrowserPassView",
+    "reordering": "\\WebBrowserPassView.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlYkJyb3dzZXJQYXNzVmlldy5leGU=')) | Invoke-Expression\" "
+  }
+}

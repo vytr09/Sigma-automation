@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_xwizard_execution_non_default_location_0",
+  "original_command": "\\xwizard.exe xwizard.exe",
+  "evasions": {
+    "insertion": "\\xwizard.exe xwiza\\\"rd.exe\\\"",
+    "substitution": "\\xwizard.exe xwizard.exe #substitution",
+    "omission": "\\xwizard xwizard",
+    "reordering": "\\xwizard.exe xwizard.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHh3aXphcmQuZXhlIHh3aXphcmQuZXhl')) | Invoke-Expression\" "
+  }
+}

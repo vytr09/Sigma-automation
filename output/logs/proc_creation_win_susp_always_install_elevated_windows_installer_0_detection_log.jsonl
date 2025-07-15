@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:21:23 UTC", "rule": "proc_creation_win_susp_always_install_elevated_windows_installer_0", "phase": "original", "command": "tmp \\msiexec.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:21:23 UTC", "rule": "proc_creation_win_susp_always_install_elevated_windows_installer_0", "phase": "insertion", "command": "tmp \"\\msiexec.exe\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:21:23 UTC", "rule": "proc_creation_win_susp_always_install_elevated_windows_installer_0", "phase": "substitution", "command": "tmp \\msiexec.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:21:23 UTC", "rule": "proc_creation_win_susp_always_install_elevated_windows_installer_0", "phase": "omission", "command": "tmp \\msiexec", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:21:23 UTC", "rule": "proc_creation_win_susp_always_install_elevated_windows_installer_0", "phase": "reordering", "command": "tmp \\msiexec.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:21:23 UTC", "rule": "proc_creation_win_susp_always_install_elevated_windows_installer_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dG1wIFxtc2lleGVjLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

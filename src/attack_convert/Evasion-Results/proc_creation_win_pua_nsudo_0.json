@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nsudo_0",
+  "original_command": "\\NSudo.exe \\NSudoLC.exe \\NSudoLG.exe NSudo.exe NSudoLC.exe NSudoLG.exe -U:S -U:T -U:E -P:E -M:S -M:H -U=S -U=T -U=E -P=E -M=S -M=H -ShowWindowMode:Hide",
+  "evasions": {
+    "insertion": "\\NSudo.exe \\NSudoLC.exe \"\\NSudo\"LG.exe NSudo.exe NSudoLC.exe NSudoLG.exe -U:S -U:T -U:E -P:E -M:S -M:H -U=S -U=T -U=E -P=E -M=S -M=H -ShowWindowMode:Hide",
+    "substitution": "\\NSudo.exe \\NSudoLC.exe \\NSudoLG.exe NSudo.exe NSudoLC.exe NSudoLG.exe -U:S -U:T -U:E -P:E -M:S -M:H -U=S -U=T -U=E -P=E -M=S -M=H -ShowWindowMode:Hide #substitution",
+    "omission": "\\NSudo \\NSudoLC \\NSudoLG NSudo NSudoLC NSudoLG -U:S -U:T -U:E -P:E -M:S -M:H -U=S -U=T -U=E -P=E -M=S -M=H -ShowWindowMode:Hide",
+    "reordering": "\\NSudo.exe \\NSudoLC.exe \\NSudoLG.exe NSudo.exe NSudoLC.exe NSudoLG.exe -U:S -U:T -U:E -P:E -M:S -M:H -U=S -U=T -U=E -P=E -M=S -M=H -ShowWindowMode:Hide",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE5TdWRvLmV4ZSBcTlN1ZG9MQy5leGUgXE5TdWRvTEcuZXhlIE5TdWRvLmV4ZSBOU3Vkb0xDLmV4ZSBOU3Vkb0xHLmV4ZSAtVTpTIC1VOlQgLVU6RSAtUDpFIC1NOlMgLU06SCAtVT1TIC1VPVQgLVU9RSAtUD1FIC1NPVMgLU09SCAtU2hvd1dpbmRvd01vZGU6SGlkZQ==')) | Invoke-Expression\" "
+  }
+}

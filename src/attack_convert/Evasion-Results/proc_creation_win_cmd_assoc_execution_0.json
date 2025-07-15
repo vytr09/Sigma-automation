@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_assoc_execution_0",
+  "original_command": "\\cmd.exe Cmd.Exe assoc",
+  "evasions": {
+    "insertion": "\\cmd.exe \\\"Cmd.Exe\\\" \\\"assoc\\\"",
+    "substitution": "\\cmd.exe Cmd.Exe assoc #substitution",
+    "omission": "\\cmd Cmd assoc",
+    "reordering": "\\cmd.exe Cmd.Exe assoc",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBhc3NvYw==')) | Invoke-Expression\" "
+  }
+}

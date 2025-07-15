@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dll_sideload_vmware_xfer_0",
+  "original_command": "\\VMwareXferlogs.exe",
+  "evasions": {
+    "insertion": "\\\"V\"\"M\"\"w\"\"a\"\"r\"\"e\"\"X\"\"f\"\"e\"\"r\"\"l\"\"o\"\"g\"\"s\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\VMwareXferlogs.exe #substitution",
+    "omission": "\\VMwareXferlogs",
+    "reordering": "\\VMwareXferlogs.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZNd2FyZVhmZXJsb2dzLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

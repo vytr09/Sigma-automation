@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wget_download_direct_ip_0",
+  "original_command": "\\wget.exe wget.exe http --output-document",
+  "evasions": {
+    "insertion": "\\wget.exe wget.exe http --output\"-document\"",
+    "substitution": "\\wget.exe wget.exe http --output-document #substitution",
+    "omission": "\\wget wget http --output-document",
+    "reordering": "\\wget.exe --output-document http wget.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdnZXQuZXhlIHdnZXQuZXhlIGh0dHAgLS1vdXRwdXQtZG9jdW1lbnQ=')) | Invoke-Expression\" "
+  }
+}

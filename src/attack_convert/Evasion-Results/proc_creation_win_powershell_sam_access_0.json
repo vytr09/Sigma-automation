@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_sam_access_0",
+  "original_command": "\\HarddiskVolumeShadowCopy System32\\config\\sam Copy-Item cp $_. cpi $_. copy $_. .File]::Copy(",
+  "evasions": {
+    "insertion": "\\HarddiskVolumeShadowCopy System32\\config\\sam Copy-Item cp $_. cpi $_. copy $_. \".File]::Copy(\"",
+    "substitution": "\\HarddiskVolumeShadowCopy System32\\config\\sam Copy-Item cp $_. cpi $_. copy $_. .File]::Copy( #substitution",
+    "omission": "\\HarddiskVolumeShadowCopy System32\\config\\sam Copy-Item cp $_. cpi $_. copy $_. .File]::Copy( # omission",
+    "reordering": "\\HarddiskVolumeShadowCopy System32\\config\\sam Copy-Item cp $_. cpi $_. copy $_. .File]::Copy(",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABIAGEAcgBkAGQAaQBzAGsAVgBvAGwAdQBtAGUAUwBoAGEAZABvAHcAQwBvAHAAeQAgAFMAeQBzAHQAZQBtADMAMgBcAGMAbwBuAGYAaQBnAFwAcwBhAG0AIABDAG8AcAB5AC0ASQB0AGUAbQAgAGMAcAAgACQAXwAuACAAYwBwAGkAIAAkAF8ALgAgAGMAbwBwAHkAIAAkAF8ALgAgAC4ARgBpAGwAZQBdADoAOgBDAG8AcAB5ACgA "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_icacls_deny_0",
+  "original_command": "iCACLS.EXE \\icacls.exe /deny S-1-1-0:",
+  "evasions": {
+    "insertion": "iCACLS.EXE \\icacls.exe /\"{cmd_part}\" S-1-1-0:",
+    "substitution": "iCACLS.EXE \\icacls.exe /deny S-1-1-0: #substitution",
+    "omission": "iCACLS \\icacls /deny S-1-1-0:",
+    "reordering": "iCACLS.EXE \\icacls.exe /deny S-1-1-0:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aUNBQ0xTLkVYRSBcaWNhY2xzLmV4ZSAvZGVueSBTLTEtMS0wOg==')) | Invoke-Expression\" "
+  }
+}

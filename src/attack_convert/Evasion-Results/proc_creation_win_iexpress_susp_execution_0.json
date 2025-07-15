@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_iexpress_susp_execution_0",
+  "original_command": "\\iexpress.exe IEXPRESS.exe /n :\\ProgramData\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\",
+  "evasions": {
+    "insertion": "\\iexpress.exe IEXPRESS.exe /n :\\ProgramData\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\\"\\AppData\\Local\\Temp\\\\\"",
+    "substitution": "\\iexpress.exe IEXPRESS.exe /n :\\ProgramData\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\ #substitution",
+    "omission": "\\iexpress IEXPRESS /n :\\ProgramData\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\",
+    "reordering": "\\iexpress.exe IEXPRESS.exe /n :\\ProgramData\\ :\\Temp\\ :\\Windows\\System32\\Tasks\\ :\\Windows\\Tasks\\ :\\Windows\\Temp\\ \\AppData\\Local\\Temp\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGlleHByZXNzLmV4ZSBJRVhQUkVTUy5leGUgL24gOlxQcm9ncmFtRGF0YVwgOlxUZW1wXCA6XFdpbmRvd3NcU3lzdGVtMzJcVGFza3NcIDpcV2luZG93c1xUYXNrc1wgOlxXaW5kb3dzXFRlbXBcIFxBcHBEYXRhXExvY2FsXFRlbXBc')) | Invoke-Expression\" "
+  }
+}

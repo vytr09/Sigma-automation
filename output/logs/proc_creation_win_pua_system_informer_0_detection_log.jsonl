@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:54:52 UTC", "rule": "proc_creation_win_pua_system_informer_0", "phase": "original", "command": "\\SystemInformer.exe SystemInformer.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:54:52 UTC", "rule": "proc_creation_win_pua_system_informer_0", "phase": "insertion", "command": "\\SystemInformer.exe \\\"SystemInformer.exe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:54:52 UTC", "rule": "proc_creation_win_pua_system_informer_0", "phase": "substitution", "command": "\\SystemInformer.exe SystemInformer.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:54:52 UTC", "rule": "proc_creation_win_pua_system_informer_0", "phase": "omission", "command": "\\SystemInformer SystemInformer", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:54:52 UTC", "rule": "proc_creation_win_pua_system_informer_0", "phase": "reordering", "command": "\\SystemInformer.exe SystemInformer.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:54:52 UTC", "rule": "proc_creation_win_pua_system_informer_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbUluZm9ybWVyLmV4ZSBTeXN0ZW1JbmZvcm1lci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

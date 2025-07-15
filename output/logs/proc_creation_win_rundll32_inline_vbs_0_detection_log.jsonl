@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:41:35 UTC", "rule": "proc_creation_win_rundll32_inline_vbs_0", "phase": "original", "command": "rundll32.exe Execute RegRead window.close", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:41:42 UTC", "rule": "proc_creation_win_rundll32_inline_vbs_0", "phase": "insertion", "command": "rundll32.exe Execute \\\"RegRead\\\" window.close", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:41:49 UTC", "rule": "proc_creation_win_rundll32_inline_vbs_0", "phase": "substitution", "command": "rundll32.exe Execute RegRead window.close #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:41:59 UTC", "rule": "proc_creation_win_rundll32_inline_vbs_0", "phase": "omission", "command": "rundll32 Execute RegRead window.close", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:42:07 UTC", "rule": "proc_creation_win_rundll32_inline_vbs_0", "phase": "reordering", "command": "rundll32.exe window.close Execute RegRead", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:42:14 UTC", "rule": "proc_creation_win_rundll32_inline_vbs_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuZGxsMzIuZXhlIEV4ZWN1dGUgUmVnUmVhZCB3aW5kb3cuY2xvc2U=')) | Invoke-Expression\" ", "status": "BYPASSED"}

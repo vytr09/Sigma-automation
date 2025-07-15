@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_obfuscated_ip_download_0",
+  "original_command": "Invoke-WebRequest iwr wget curl DownloadFile DownloadString 0x //0x .0x .00x http://% %2e",
+  "evasions": {
+    "insertion": "Invoke-WebRequest iwr wget curl DownloadFile \"DownloadString\" 0x //0x .0x .00x http://% %2e",
+    "substitution": "Invoke-WebRequest iwr wget curl DownloadFile DownloadString 0x //0x .0x .00x http://% %2e #substitution",
+    "omission": "Invoke-WebRequest iwr wget curl DownloadFile DownloadString 0x //0x .0x .00x http://% %2e # omission",
+    "reordering": "Invoke-WebRequest iwr wget curl DownloadFile DownloadString 0x //0x .0x .00x http://% %2e",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW52b2tlLVdlYlJlcXVlc3QgaXdyIHdnZXQgY3VybCBEb3dubG9hZEZpbGUgRG93bmxvYWRTdHJpbmcgMHggLy8weCAuMHggLjAweCBodHRwOi8vJSAlMmU=')) | Invoke-Expression\" "
+  }
+}

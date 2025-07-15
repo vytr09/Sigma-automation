@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_system_informer_0",
+  "original_command": "\\SystemInformer.exe SystemInformer.exe",
+  "evasions": {
+    "insertion": "\\SystemInformer.exe \\\"SystemInformer.exe\\\"",
+    "substitution": "\\SystemInformer.exe SystemInformer.exe #substitution",
+    "omission": "\\SystemInformer SystemInformer",
+    "reordering": "\\SystemInformer.exe SystemInformer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbUluZm9ybWVyLmV4ZSBTeXN0ZW1JbmZvcm1lci5leGU=')) | Invoke-Expression\" "
+  }
+}

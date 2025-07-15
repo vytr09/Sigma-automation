@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:42:46 UTC", "rule": "proc_creation_win_lolbin_runscripthelper_0", "phase": "original", "command": "\\Runscripthelper.exe surfacecheck", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:42:53 UTC", "rule": "proc_creation_win_lolbin_runscripthelper_0", "phase": "insertion", "command": "\\Runscripthelper.exe surfac\\\"echeck\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:00 UTC", "rule": "proc_creation_win_lolbin_runscripthelper_0", "phase": "substitution", "command": "\\Runscripthelper.exe surfacecheck #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:43:09 UTC", "rule": "proc_creation_win_lolbin_runscripthelper_0", "phase": "omission", "command": "\\Runscripthelper surfacecheck", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:15 UTC", "rule": "proc_creation_win_lolbin_runscripthelper_0", "phase": "reordering", "command": "\\Runscripthelper.exe surfacecheck", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:21 UTC", "rule": "proc_creation_win_lolbin_runscripthelper_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFJ1bnNjcmlwdGhlbHBlci5leGUgc3VyZmFjZWNoZWNr')) | Invoke-Expression\" ", "status": "BYPASSED"}

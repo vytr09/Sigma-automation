@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0",
+  "original_command": "\\client32.exe client32.exe",
+  "evasions": {
+    "insertion": "\\client32.exe client\"32.exe\"",
+    "substitution": "\\client32.exe client32.exe #substitution",
+    "omission": "\\client32 client32",
+    "reordering": "\\client32.exe client32.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsaWVudDMyLmV4ZSBjbGllbnQzMi5leGU=')) | Invoke-Expression\" "
+  }
+}

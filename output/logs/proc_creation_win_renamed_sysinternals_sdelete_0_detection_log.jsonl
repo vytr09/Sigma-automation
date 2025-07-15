@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:38:29 UTC", "rule": "proc_creation_win_renamed_sysinternals_sdelete_0", "phase": "original", "command": "sdelete.exe \\sdelete.exe \\sdelete64.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:38:37 UTC", "rule": "proc_creation_win_renamed_sysinternals_sdelete_0", "phase": "insertion", "command": "sdelete.exe \"\\sdelete.exe\" \"\\sdelete64.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:38:42 UTC", "rule": "proc_creation_win_renamed_sysinternals_sdelete_0", "phase": "substitution", "command": "sdelete.exe \\sdelete.exe \\sdelete64.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:38:48 UTC", "rule": "proc_creation_win_renamed_sysinternals_sdelete_0", "phase": "omission", "command": "sdelete \\sdelete \\sdelete64", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:38:55 UTC", "rule": "proc_creation_win_renamed_sysinternals_sdelete_0", "phase": "reordering", "command": "sdelete.exe \\sdelete64.exe \\sdelete.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:39:05 UTC", "rule": "proc_creation_win_renamed_sysinternals_sdelete_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2RlbGV0ZS5leGUgXHNkZWxldGUuZXhlIFxzZGVsZXRlNjQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

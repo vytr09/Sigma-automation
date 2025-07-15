@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_radmin_0",
+  "original_command": "Radmin.exe",
+  "evasions": {
+    "insertion": "Radmin.exe",
+    "substitution": "Radmin.exe #substitution",
+    "omission": "Radmin",
+    "reordering": "Radmin.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UmFkbWluLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

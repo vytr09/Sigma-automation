@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_whoami_as_param_0",
+  "original_command": ".exe whoami",
+  "evasions": {
+    "insertion": ".exe \"who\"ami",
+    "substitution": ".exe whoami #substitution",
+    "omission": "whoami",
+    "reordering": ".exe whoami",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LmV4ZSB3aG9hbWk=')) | Invoke-Expression\" "
+  }
+}

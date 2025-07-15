@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_pkgmgr_dism_0",
+  "original_command": "\\pkgmgr.exe \\dism.exe",
+  "evasions": {
+    "insertion": "\\pkgmgr.exe \\dis\\\"m.exe\\\"",
+    "substitution": "\\pkgmgr.exe \\dism.exe #substitution",
+    "omission": "\\pkgmgr \\dism",
+    "reordering": "\\pkgmgr.exe \\dism.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBrZ21nci5leGUgXGRpc20uZXhl')) | Invoke-Expression\" "
+  }
+}

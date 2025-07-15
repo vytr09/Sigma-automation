@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nps_0",
+  "original_command": "\\npc.exe -server= -vkey= -password= -config=npc",
+  "evasions": {
+    "insertion": "\\npc.exe -server= \"-\"\"v\"\"k\"\"e\"\"y\"\"=\" -password= -config=npc",
+    "substitution": "\\npc.exe -server= -vkey= -password= -config=npc #substitution",
+    "omission": "\\npc -server= -vkey= -password= -config=npc",
+    "reordering": "\\npc.exe -server= -vkey= -config=npc -password=",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5wYy5leGUgLXNlcnZlcj0gLXZrZXk9IC1wYXNzd29yZD0gLWNvbmZpZz1ucGM=')) | Invoke-Expression\" "
+  }
+}

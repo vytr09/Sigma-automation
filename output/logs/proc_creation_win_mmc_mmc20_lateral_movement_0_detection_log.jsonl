@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:53:11 UTC", "rule": "proc_creation_win_mmc_mmc20_lateral_movement_0", "phase": "original", "command": "\\svchost.exe \\mmc.exe -Embedding", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:53:18 UTC", "rule": "proc_creation_win_mmc_mmc20_lateral_movement_0", "phase": "insertion", "command": "\\svchost.exe \"\\mmc.exe\" -Embedding", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:53:23 UTC", "rule": "proc_creation_win_mmc_mmc20_lateral_movement_0", "phase": "substitution", "command": "\\svchost.exe \\mmc.exe -Embedding #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:29 UTC", "rule": "proc_creation_win_mmc_mmc20_lateral_movement_0", "phase": "omission", "command": "\\svchost \\mmc -Embedding", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:53:35 UTC", "rule": "proc_creation_win_mmc_mmc20_lateral_movement_0", "phase": "reordering", "command": "\\svchost.exe \\mmc.exe -Embedding", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:53:41 UTC", "rule": "proc_creation_win_mmc_mmc20_lateral_movement_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIFxtbWMuZXhlIC1FbWJlZGRpbmc=')) | Invoke-Expression\" ", "status": "BYPASSED"}

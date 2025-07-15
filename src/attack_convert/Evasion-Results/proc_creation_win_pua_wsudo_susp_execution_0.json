@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_wsudo_susp_execution_0",
+  "original_command": "\\wsudo.exe wsudo.exe \\wsudo-bridge.exe -u System -uSystem -u TrustedInstaller -uTrustedInstaller --ti",
+  "evasions": {
+    "insertion": "\\wsudo.exe wsudo.exe \\wsudo-bridge.exe -u System -uSystem -u TrustedInstaller \\\"-uTrustedInstaller\\\" --ti",
+    "substitution": "\\wsudo.exe wsudo.exe \\wsudo-bridge.exe -u System -uSystem -u TrustedInstaller -uTrustedInstaller --ti #substitution",
+    "omission": "\\wsudo wsudo \\wsudo-bridge -u System -uSystem -u TrustedInstaller -uTrustedInstaller --ti",
+    "reordering": "\\wsudo.exe wsudo.exe \\wsudo-bridge.exe -u System -uSystem -u TrustedInstaller -uTrustedInstaller --ti",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdzdWRvLmV4ZSB3c3Vkby5leGUgXHdzdWRvLWJyaWRnZS5leGUgLXUgU3lzdGVtIC11U3lzdGVtIC11IFRydXN0ZWRJbnN0YWxsZXIgLXVUcnVzdGVkSW5zdGFsbGVyIC0tdGk=')) | Invoke-Expression\" "
+  }
+}

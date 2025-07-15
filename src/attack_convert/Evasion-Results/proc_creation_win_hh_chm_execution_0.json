@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hh_chm_execution_0",
+  "original_command": "HH.exe \\hh.exe .chm",
+  "evasions": {
+    "insertion": "HH.exe \\hh\\\".exe\\\" .chm",
+    "substitution": "HH.exe \\hh.exe .chm #substitution",
+    "omission": "HH \\hh .chm",
+    "reordering": "HH.exe \\hh.exe .chm",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SEguZXhlIFxoaC5leGUgLmNobQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_wfc_0",
+  "original_command": "\\wfc.exe wfc.exe",
+  "evasions": {
+    "insertion": "\\wfc.exe \\\"wfc\\\".exe",
+    "substitution": "\\wfc.exe wfc.exe #substitution",
+    "omission": "\\wfc wfc",
+    "reordering": "\\wfc.exe wfc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdmYy5leGUgd2ZjLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

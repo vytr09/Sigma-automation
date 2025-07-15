@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cloudflared_portable_execution_0",
+  "original_command": "\\cloudflared.exe",
+  "evasions": {
+    "insertion": "\\\"c\"\"l\"\"o\"\"u\"\"d\"\"f\"\"l\"\"a\"\"r\"\"e\"\"d\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\cloudflared.exe #substitution",
+    "omission": "\\cloudflared",
+    "reordering": "\\cloudflared.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsb3VkZmxhcmVkLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

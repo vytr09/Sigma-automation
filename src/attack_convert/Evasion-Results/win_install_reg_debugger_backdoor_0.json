@@ -2,7 +2,7 @@
   "rule_name": "win_install_reg_debugger_backdoor_0",
   "original_command": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe",
   "evasions": {
-    "insertion": "\\CurrentVersion\\Image File Execution \"O\"\"p\"\"t\"\"i\"\"o\"\"n\"\"s\"\"\\\"\"d\"\"i\"\"s\"\"p\"\"l\"\"a\"\"y\"\"s\"\"w\"\"i\"\"t\"\"c\"\"h\"\".\"\"e\"\"x\"\"e\"",
+    "insertion": "\\CurrentVersion\\Image Fi\"le\" Execution Options\\displayswitch.exe",
     "substitution": "\\CurrentVersion\\Image File Execution Options\\displayswitch.exe #substitution",
     "omission": "\\CurrentVersion\\Image File Execution Options\\displayswitch",
     "reordering": "\\CurrentVersion\\Image Options\\displayswitch.exe Execution File",

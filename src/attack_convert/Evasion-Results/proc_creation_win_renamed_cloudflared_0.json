@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_cloudflared_0",
+  "original_command": "tunnel cleanup -config -connector-id tunnel run -config -credentials-contents -credentials-file -token -url tunnel \\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe",
+  "evasions": {
+    "insertion": "tunnel cleanup -config -connector-id tunnel run -config -credentials-contents -credentials-file -token -url tunnel \\cloudflared.exe \\\"\\cloudflared-windows-386.exe\\\" \\cloudflared-windows-amd64.exe",
+    "substitution": "tunnel cleanup -config -connector-id tunnel run -config -credentials-contents -credentials-file -token -url tunnel \\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe #substitution",
+    "omission": "tunnel cleanup -config -connector-id tunnel run -config -credentials-contents -credentials-file -token -url tunnel \\cloudflared \\cloudflared-windows-386 \\cloudflared-windows-amd64",
+    "reordering": "tunnel cleanup -config -connector-id tunnel run -config -credentials-contents -credentials-file -token -url tunnel \\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHVubmVsIGNsZWFudXAgLWNvbmZpZyAtY29ubmVjdG9yLWlkIHR1bm5lbCBydW4gLWNvbmZpZyAtY3JlZGVudGlhbHMtY29udGVudHMgLWNyZWRlbnRpYWxzLWZpbGUgLXRva2VuIC11cmwgdHVubmVsIFxjbG91ZGZsYXJlZC5leGUgXGNsb3VkZmxhcmVkLXdpbmRvd3MtMzg2LmV4ZSBcY2xvdWRmbGFyZWQtd2luZG93cy1hbWQ2NC5leGU=')) | Invoke-Expression\" "
+  }
+}

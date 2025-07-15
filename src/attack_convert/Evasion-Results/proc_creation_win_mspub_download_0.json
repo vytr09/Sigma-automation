@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mspub_download_0",
+  "original_command": "\\MSPUB.exe MSPUB.exe ftp:// http:// https://",
+  "evasions": {
+    "insertion": "\\MSPUB.exe MSPUB.exe ftp:// http:// \\\"https://\\\"",
+    "substitution": "\\MSPUB.exe MSPUB.exe ftp:// http:// https:// #substitution",
+    "omission": "\\MSPUB MSPUB ftp:// http:// https://",
+    "reordering": "\\MSPUB.exe ftp:// http:// https:// MSPUB.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1TUFVCLmV4ZSBNU1BVQi5leGUgZnRwOi8vIGh0dHA6Ly8gaHR0cHM6Ly8=')) | Invoke-Expression\" "
+  }
+}

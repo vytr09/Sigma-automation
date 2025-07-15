@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_chisel_0",
+  "original_command": "\\chisel.exe exe client exe server -socks5 -reverse r: :127.0.0.1: -tls-skip-verify :socks",
+  "evasions": {
+    "insertion": "\\chisel.exe exe client exe server -socks5 -reverse \\\"r\\\"\\\":\\\" :127.0.0.1: -tls-skip-verify :socks",
+    "substitution": "\\chisel.exe exe client exe server -socks5 -reverse r: :127.0.0.1: -tls-skip-verify :socks #substitution",
+    "omission": "\\chisel exe client exe server -socks5 -reverse r: :127.0.0.1: -tls-skip-verify :socks",
+    "reordering": "\\chisel.exe exe client exe server -socks5 -reverse r: :127.0.0.1: -tls-skip-verify :socks",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNoaXNlbC5leGUgZXhlIGNsaWVudCBleGUgc2VydmVyIC1zb2NrczUgLXJldmVyc2UgcjogOjEyNy4wLjAuMTogLXRscy1za2lwLXZlcmlmeSA6c29ja3M=')) | Invoke-Expression\" "
+  }
+}

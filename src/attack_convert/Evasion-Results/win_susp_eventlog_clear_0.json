@@ -2,7 +2,7 @@
   "rule_name": "win_susp_eventlog_clear_0",
   "original_command": "powershell.exe Remove-EventLog",
   "evasions": {
-    "insertion": "powershell.exe \"Remove-EventLog\"",
+    "insertion": "powershell.exe Remove-\"EventLog\"",
     "substitution": "powershell.exe Remove-EventLog #substitution",
     "omission": "powershell Remove-EventLog",
     "reordering": "powershell.exe Remove-EventLog",

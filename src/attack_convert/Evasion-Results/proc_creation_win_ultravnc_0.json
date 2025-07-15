@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ultravnc_0",
+  "original_command": "VNCViewer.exe",
+  "evasions": {
+    "insertion": "VNCViewer.exe",
+    "substitution": "VNCViewer.exe #substitution",
+    "omission": "VNCViewer",
+    "reordering": "VNCViewer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Vk5DVmlld2VyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

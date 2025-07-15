@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mshta_http_0",
+  "original_command": "\\mshta.exe MSHTA.EXE http:// https:// ftp://",
+  "evasions": {
+    "insertion": "\\mshta.exe \"MSHT\"A.EXE http:// https:// ftp://",
+    "substitution": "\\mshta.exe MSHTA.EXE hxxp:// https:// ftp://",
+    "omission": "\\mshta MSHTA http:// https:// ftp://",
+    "reordering": "\\mshta.exe ftp:// http:// https:// MSHTA.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaHRhLmV4ZSBNU0hUQS5FWEUgaHR0cDovLyBodHRwczovLyBmdHA6Ly8=')) | Invoke-Expression\" "
+  }
+}

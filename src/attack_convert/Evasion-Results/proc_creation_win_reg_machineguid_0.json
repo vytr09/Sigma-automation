@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_machineguid_0",
+  "original_command": "\\reg.exe SOFTWARE\\Microsoft\\Cryptography /v MachineGuid",
+  "evasions": {
+    "insertion": "\\reg.exe SOFTWARE\\Microsoft\\Cryptography /v Machi\\\"neGuid\\\"",
+    "substitution": "\\reg.exe SOFTWARE\\Microsoft\\Cryptography /v MachineGuid",
+    "omission": "\\reg SOFTWARE\\Microsoft\\Cryptography /v MachineGuid",
+    "reordering": "\\reg.exe SOFTWARE\\Microsoft\\Cryptography /v MachineGuid",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgU09GVFdBUkVcTWljcm9zb2Z0XENyeXB0b2dyYXBoeSAvdiBNYWNoaW5lR3VpZA==')) | Invoke-Expression\" "
+  }
+}

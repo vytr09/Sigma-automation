@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_extrac32_ads_0",
+  "original_command": "extrac32.exe .cab",
+  "evasions": {
+    "insertion": "extrac32.exe .c\\\"ab\\\"",
+    "substitution": "extrac32.exe .cab #substitution",
+    "omission": "extrac32 .cab",
+    "reordering": "extrac32.exe .cab",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXh0cmFjMzIuZXhlIC5jYWI=')) | Invoke-Expression\" "
+  }
+}

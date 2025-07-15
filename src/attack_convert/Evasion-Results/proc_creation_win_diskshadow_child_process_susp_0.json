@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_diskshadow_child_process_susp_0",
+  "original_command": "\\diskshadow.exe \\certutil.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "\\diskshadow.exe \\certutil.exe \"\\cscript.exe\" \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+    "substitution": "\\diskshadow.exe \\certutil.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe #substitution",
+    "omission": "\\diskshadow \\certutil \\cscript \\mshta \\powershell \\pwsh \\regsvr32 \\rundll32 \\wscript",
+    "reordering": "\\diskshadow.exe \\certutil.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe",
+    "recoding": "powershell.exe -EncodedCommand XABkAGkAcwBrAHMAaABhAGQAbwB3AC4AZQB4AGUAIABcAGMAZQByAHQAdQB0AGkAbAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAG0AcwBoAHQAYQAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcgBlAGcAcwB2AHIAMwAyAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUA "
+  }
+}

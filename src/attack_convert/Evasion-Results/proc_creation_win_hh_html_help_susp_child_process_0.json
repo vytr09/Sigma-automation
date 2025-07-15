@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hh_html_help_susp_child_process_0",
+  "original_command": "\\hh.exe \\CertReq.exe \\CertUtil.exe \\cmd.exe \\cscript.exe \\installutil.exe \\MSbuild.exe \\MSHTA.EXE \\msiexec.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "\\hh.exe \\CertReq.exe \\CertUtil.exe \\cmd.exe \\cscript.exe \\installutil.exe \\MSbuild.exe \\MSHTA.EXE \\msiexec.exe \\powershell.exe \"\\pws\"h.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe",
+    "substitution": "\\hh.exe \\CertReq.exe \\CertUtil.exe \\cmd.exe \\cscript.exe \\installutil.exe \\MSbuild.exe \\MSHTA.EXE \\msiexec.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe #substitution",
+    "omission": "\\hh \\CertReq \\CertUtil \\cmd \\cscript \\installutil \\MSbuild \\MSHTA \\msiexec \\powershell \\pwsh \\regsvr32 \\rundll32 \\schtasks \\wmic \\wscript",
+    "reordering": "\\hh.exe \\CertReq.exe \\CertUtil.exe \\cmd.exe \\cscript.exe \\installutil.exe \\MSbuild.exe \\MSHTA.EXE \\msiexec.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\schtasks.exe \\wmic.exe \\wscript.exe",
+    "recoding": "powershell.exe -EncodedCommand XABoAGgALgBlAHgAZQAgAFwAQwBlAHIAdABSAGUAcQAuAGUAeABlACAAXABDAGUAcgB0AFUAdABpAGwALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABpAG4AcwB0AGEAbABsAHUAdABpAGwALgBlAHgAZQAgAFwATQBTAGIAdQBpAGwAZAAuAGUAeABlACAAXABNAFMASABUAEEALgBFAFgARQAgAFwAbQBzAGkAZQB4AGUAYwAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcgBlAGcAcwB2AHIAMwAyAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAXABzAGMAaAB0AGEAcwBrAHMALgBlAHgAZQAgAFwAdwBtAGkAYwAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUA "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_teams_suspicious_command_line_cred_access_0",
+  "original_command": "\\Microsoft\\Teams\\Cookies \\Microsoft\\Teams\\Local Storage\\leveldb \\Microsoft\\Teams\\current\\Teams.exe",
+  "evasions": {
+    "insertion": "\\Microsoft\\Teams\\Cookies \\Microsoft\\Teams\\Local \\\"S\\\"\\\"t\\\"\\\"o\\\"\\\"r\\\"\\\"a\\\"\\\"g\\\"\\\"e\\\"\\\"\\\\\"\\\"l\\\"\\\"e\\\"\\\"v\\\"\\\"e\\\"\\\"l\\\"\\\"d\\\"\\\"b\\\" \\Microsoft\\Teams\\current\\Teams.exe",
+    "substitution": "\\Microsoft\\Teams\\Cookies \\Microsoft\\Teams\\Local Storage\\leveldb \\Microsoft\\Teams\\current\\Teams.exe #substitution",
+    "omission": "\\Microsoft\\Teams\\Cookies \\Microsoft\\Teams\\Local Storage\\leveldb \\Microsoft\\Teams\\current\\Teams",
+    "reordering": "\\Microsoft\\Teams\\Cookies \\Microsoft\\Teams\\Local Storage\\leveldb \\Microsoft\\Teams\\current\\Teams.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1pY3Jvc29mdFxUZWFtc1xDb29raWVzIFxNaWNyb3NvZnRcVGVhbXNcTG9jYWwgU3RvcmFnZVxsZXZlbGRiIFxNaWNyb3NvZnRcVGVhbXNcY3VycmVudFxUZWFtcy5leGU=')) | Invoke-Expression\" "
+  }
+}

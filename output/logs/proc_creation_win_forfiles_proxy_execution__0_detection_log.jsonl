@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:26:12 UTC", "rule": "proc_creation_win_forfiles_proxy_execution__0", "phase": "original", "command": "\\forfiles.exe forfiles.exe -c", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:26:19 UTC", "rule": "proc_creation_win_forfiles_proxy_execution__0", "phase": "insertion", "command": "\\forfiles.exe \"forfiles.exe\" -c", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:26:25 UTC", "rule": "proc_creation_win_forfiles_proxy_execution__0", "phase": "substitution", "command": "\\forfiles.exe forfiles.exe -c #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:26:37 UTC", "rule": "proc_creation_win_forfiles_proxy_execution__0", "phase": "omission", "command": "\\forfiles forfiles -c", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:26:43 UTC", "rule": "proc_creation_win_forfiles_proxy_execution__0", "phase": "reordering", "command": "\\forfiles.exe forfiles.exe -c", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:26:48 UTC", "rule": "proc_creation_win_forfiles_proxy_execution__0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZvcmZpbGVzLmV4ZSBmb3JmaWxlcy5leGUgLWM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

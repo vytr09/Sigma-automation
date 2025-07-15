@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tasklist_module_enumeration_0",
+  "original_command": "\\tasklist.exe tasklist.exe -m rdpcorets.dll",
+  "evasions": {
+    "insertion": "\\tasklist.exe \\\"tasklist.exe\\\" \\\"-m\\\" rdpcorets.dll",
+    "substitution": "\\tasklist.exe tasklist.exe -m rdpcorets.dll #substitution",
+    "omission": "\\tasklist tasklist -m rdpcorets.dll",
+    "reordering": "\\tasklist.exe rdpcorets.dll -m tasklist.exe",
+    "recoding": "powershell.exe -EncodedCommand XAB0AGEAcwBrAGwAaQBzAHQALgBlAHgAZQAgAHQAYQBzAGsAbABpAHMAdAAuAGUAeABlACAALQBtACAAcgBkAHAAYwBvAHIAZQB0AHMALgBkAGwAbAA= "
+  }
+}

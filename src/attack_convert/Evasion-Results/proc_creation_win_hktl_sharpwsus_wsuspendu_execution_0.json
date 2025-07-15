@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharpwsus_wsuspendu_execution_0",
+  "original_command": "-Inject -PayloadArgs -PayloadFile approve create check delete /payload: /payload= /updateid: /updateid=",
+  "evasions": {
+    "insertion": "-Inject -PayloadArgs -PayloadFile \"approve\" \"create\" check delete /payload: /payload= /updateid: /updateid=",
+    "substitution": "-Inject -PayloadArgs -PayloadFile approve create check delete /payload: /payload= /updateid: /updateid= #substitution",
+    "omission": "-Inject -PayloadArgs -PayloadFile approve create check delete /payload: /payload= /updateid: /updateid= # omission",
+    "reordering": "-Inject -PayloadArgs -PayloadFile approve create check delete /payload: /payload= /updateid: /updateid=",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LUluamVjdCAtUGF5bG9hZEFyZ3MgLVBheWxvYWRGaWxlIGFwcHJvdmUgY3JlYXRlIGNoZWNrIGRlbGV0ZSAvcGF5bG9hZDogL3BheWxvYWQ9IC91cGRhdGVpZDogL3VwZGF0ZWlkPQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msiexec_execute_dll_0",
+  "original_command": "\\msiexec.exe -y \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe",
+  "evasions": {
+    "insertion": "\\msiexec.exe -y \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\\"\\\\\"\\\"M\\\"\\\"s\\\"\\\"i\\\"\\\"E\\\"\\\"x\\\"\\\"e\\\"\\\"c\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\"",
+    "substitution": "\\msiexec.exe -y \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe #substitution",
+    "omission": "\\msiexec -y \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec \\MsiExec",
+    "reordering": "\\msiexec.exe -y \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe \\MsiExec.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaWV4ZWMuZXhlIC15IFxNc2lFeGVjLmV4ZSBcTXNpRXhlYy5leGUgXE1zaUV4ZWMuZXhlIFxNc2lFeGVjLmV4ZSBcTXNpRXhlYy5leGUgXE1zaUV4ZWMuZXhlIFxNc2lFeGVjLmV4ZSBcTXNpRXhlYy5leGUgXE1zaUV4ZWMuZXhlIFxNc2lFeGVjLmV4ZSBcTXNpRXhlYy5leGUgXE1zaUV4ZWMuZXhl')) | Invoke-Expression\" "
+  }
+}

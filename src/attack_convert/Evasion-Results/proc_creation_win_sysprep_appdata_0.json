@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysprep_appdata_0",
+  "original_command": "\\sysprep.exe \\AppData\\",
+  "evasions": {
+    "insertion": "\\sysprep.exe \"\\\"\"A\"\"p\"\"p\"\"D\"\"a\"\"t\"\"a\"\"\\\"",
+    "substitution": "\\sysprep.exe \\AppData\\ #substitution",
+    "omission": "\\sysprep \\AppData\\",
+    "reordering": "\\sysprep.exe \\AppData\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN5c3ByZXAuZXhlIFxBcHBEYXRhXA==')) | Invoke-Expression\" "
+  }
+}

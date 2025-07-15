@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_etw_trace_evasion_0",
+  "original_command": "cl /Trace clear-log /Trace sl /e:false set-log /e:false logman update trace --p -ets Remove-EtwTraceProvider Set-EtwTraceProvider 0x11",
+  "evasions": {
+    "insertion": "cl /Trace clear-log /Trace sl /e:false set-log /e:false logman update trace --p -ets Remove-EtwTraceProvider Set-EtwTra\"ceProvider\" 0x11",
+    "substitution": "cl /Trace clear-log /Trace sl /e:false set-log /e:false logman update trace --p -ets Remove-EtwTraceProvider Set-EtwTraceProvider 0x11 #substitution",
+    "omission": "cl /Trace clear-log /Trace sl /e:false set-log /e:false logman update trace --p -ets Remove-EtwTraceProvider Set-EtwTraceProvider 0x11 # omission",
+    "reordering": "cl /Trace clear-log /Trace sl /e:false set-log /e:false logman update trace --p -ets Remove-EtwTraceProvider Set-EtwTraceProvider 0x11",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y2wgL1RyYWNlIGNsZWFyLWxvZyAvVHJhY2Ugc2wgL2U6ZmFsc2Ugc2V0LWxvZyAvZTpmYWxzZSBsb2dtYW4gdXBkYXRlIHRyYWNlIC0tcCAtZXRzIFJlbW92ZS1FdHdUcmFjZVByb3ZpZGVyIFNldC1FdHdUcmFjZVByb3ZpZGVyIDB4MTE=')) | Invoke-Expression\" "
+  }
+}

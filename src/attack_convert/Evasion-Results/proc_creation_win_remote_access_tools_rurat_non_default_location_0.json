@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_rurat_non_default_location_0",
+  "original_command": "\\rutserv.exe \\rfusclient.exe",
+  "evasions": {
+    "insertion": "\\rutserv.exe \"\\rfuscl\"ient.exe",
+    "substitution": "\\rutserv.exe \\rfusclient.exe #substitution",
+    "omission": "\\rutserv \\rfusclient",
+    "reordering": "\\rutserv.exe \\rfusclient.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1dHNlcnYuZXhlIFxyZnVzY2xpZW50LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:21:02 UTC", "rule": "proc_creation_win_netsh_port_forwarding_3389_0", "phase": "original", "command": "\\netsh.exe netsh.exe i p =3389 c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:21:02 UTC", "rule": "proc_creation_win_netsh_port_forwarding_3389_0", "phase": "insertion", "command": "\\netsh.exe \\\"nets\\\"h.exe i p =3389 c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:21:02 UTC", "rule": "proc_creation_win_netsh_port_forwarding_3389_0", "phase": "substitution", "command": "\\netsh.exe netsh.exe i p =3389 c #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:21:02 UTC", "rule": "proc_creation_win_netsh_port_forwarding_3389_0", "phase": "omission", "command": "\\netsh netsh i p =3389 c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:21:02 UTC", "rule": "proc_creation_win_netsh_port_forwarding_3389_0", "phase": "reordering", "command": "\\netsh.exe i p =3389 netsh.exe c", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:21:02 UTC", "rule": "proc_creation_win_netsh_port_forwarding_3389_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgaSBwID0zMzg5IGM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

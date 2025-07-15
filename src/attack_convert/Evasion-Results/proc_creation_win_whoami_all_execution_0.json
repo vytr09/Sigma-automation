@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_whoami_all_execution_0",
+  "original_command": "\\whoami.exe whoami.exe -all",
+  "evasions": {
+    "insertion": "\\whoami.exe \\\"whoami.exe\\\" \\\"-all\\\"",
+    "substitution": "\\whoami.exe whoami.exe -all #substitution",
+    "omission": "\\whoami whoami -all",
+    "reordering": "\\whoami.exe whoami.exe -all",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdob2FtaS5leGUgd2hvYW1pLmV4ZSAtYWxs')) | Invoke-Expression\" "
+  }
+}

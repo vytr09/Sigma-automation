@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_encode_susp_location_0",
+  "original_command": "\\certutil.exe CertUtil.exe -encode \\AppData\\Roaming\\ \\Desktop\\ \\Local\\Temp\\ \\PerfLogs\\ \\Users\\Public\\ \\Windows\\Temp\\ $Recycle.Bin",
+  "evasions": {
+    "insertion": "\\certutil.exe CertUtil.exe -encode \\AppData\\Roaming\\ \\Desktop\\ \\Local\\Temp\\ \\PerfLogs\\ \\Users\\\"Public\\\" \\Windows\\Temp\\ $Recycle.Bin",
+    "substitution": "\\certutil.exe CertUtil.exe --encode \\AppData\\Roaming\\ \\Desktop\\ \\Local\\Temp\\ \\PerfLogs\\ \\Users\\Public\\ \\Windows\\Temp\\ $Recycle.Bin",
+    "omission": "\\certutil.exe CertUtil.exe -encode \\AppData\\Roaming\\ \\Desktop\\ \\Local\\Temp\\ \\PerfLogs\\ \\Users\\Public\\ \\Windows\\Temp\\ $Recycle.Bin # omission",
+    "reordering": "\\certutil.exe CertUtil.exe -encode \\AppData\\Roaming\\ \\Desktop\\ \\Local\\Temp\\ \\PerfLogs\\ \\Users\\Public\\ \\Windows\\Temp\\ $Recycle.Bin",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABjAGUAcgB0AHUAdABpAGwALgBlAHgAZQAgAEMAZQByAHQAVQB0AGkAbAAuAGUAeABlACAALQBlAG4AYwBvAGQAZQAgAFwAQQBwAHAARABhAHQAYQBcAFIAbwBhAG0AaQBuAGcAXAAgAFwARABlAHMAawB0AG8AcABcACAAXABMAG8AYwBhAGwAXABUAGUAbQBwAFwAIABcAFAAZQByAGYATABvAGcAcwBcACAAXABVAHMAZQByAHMAXABQAHUAYgBsAGkAYwBcACAAXABXAGkAbgBkAG8AdwBzAFwAVABlAG0AcABcACAAJABSAGUAYwB5AGMAbABlAC4AQgBpAG4A "
+  }
+}

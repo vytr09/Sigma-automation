@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_ntlmrelay_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie http spoolss srvsvc /print/pipe/",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie http spoolss srvsvc /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie http spoolss srvsvc /print/pipe/ #substitution",
+    "omission": "\\rundll32 RUNDLL32 davclnt.dll,DavSetCookie http spoolss srvsvc /print/pipe/",
+    "reordering": "\\rundll32.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie http spoolss srvsvc /print/pipe/",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFIAVQBOAEQATABMADMAMgAuAEUAWABFACAAQwA6AFwAdwBpAG4AZABvAHcAcwBcAHMAeQBzAHQAZQBtADMAMgBcAGQAYQB2AGMAbABuAHQALgBkAGwAbAAsAEQAYQB2AFMAZQB0AEMAbwBvAGsAaQBlACAAaAB0AHQAcAAgAHMAcABvAG8AbABzAHMAIABzAHIAdgBzAHYAYwAgAC8AcAByAGkAbgB0AC8AcABpAHAAZQAvAA== "
+  }
+}

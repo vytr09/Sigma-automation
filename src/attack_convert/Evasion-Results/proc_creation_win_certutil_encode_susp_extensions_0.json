@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_encode_susp_extensions_0",
+  "original_command": "\\certutil.exe CertUtil.exe -encode .acl .bat .doc .gif .jpeg .jpg .mp3 .pdf .png .ppt .tmp .xls .xml",
+  "evasions": {
+    "insertion": "\\certutil.exe CertUtil.exe -encode .acl .bat .doc .gif .jpeg .jpg \\\".\\\"\\\"m\\\"\\\"p\\\"\\\"3\\\" .pdf .png .ppt .tmp .xls .xml",
+    "substitution": "\\certutil.exe CertUtil.exe --encode .acl .bat .doc .gif .jpeg .jpg .mp3 .pdf .png .ppt .tmp .xls .xml",
+    "omission": "\\certutil.exe CertUtil.exe -encode .acl .bat .doc .gif .jpeg .jpg .mp3 .pdf .png .ppt .tmp .xls .xml # omission",
+    "reordering": "\\certutil.exe CertUtil.exe -encode .acl .bat .doc .gif .jpeg .jpg .mp3 .pdf .png .ppt .tmp .xls .xml",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWVuY29kZSAuYWNsIC5iYXQgLmRvYyAuZ2lmIC5qcGVnIC5qcGcgLm1wMyAucGRmIC5wbmcgLnBwdCAudG1wIC54bHMgLnhtbA==')) | Invoke-Expression\" "
+  }
+}

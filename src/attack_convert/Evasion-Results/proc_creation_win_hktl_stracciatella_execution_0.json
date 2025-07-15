@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_stracciatella_execution_0",
+  "original_command": "\\Stracciatella.exe Stracciatella.exe",
+  "evasions": {
+    "insertion": "\\Stracciatella.exe \\\"Stracciatella.exe\\\"",
+    "substitution": "\\Stracciatella.exe Stracciatella.exe #substitution",
+    "omission": "\\Stracciatella Stracciatella",
+    "reordering": "\\Stracciatella.exe Stracciatella.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN0cmFjY2lhdGVsbGEuZXhlIFN0cmFjY2lhdGVsbGEuZXhl')) | Invoke-Expression\" "
+  }
+}

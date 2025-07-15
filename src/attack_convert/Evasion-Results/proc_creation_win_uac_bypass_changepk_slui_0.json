@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_changepk_slui_0",
+  "original_command": "\\changepk.exe \\slui.exe",
+  "evasions": {
+    "insertion": "\\changepk.exe \\\"\\\\\"\\\"s\\\"\\\"l\\\"\\\"u\\\"\\\"i\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\"",
+    "substitution": "\\changepk.exe \\slui.exe #substitution",
+    "omission": "\\changepk \\slui",
+    "reordering": "\\changepk.exe \\slui.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNoYW5nZXBrLmV4ZSBcc2x1aS5leGU=')) | Invoke-Expression\" "
+  }
+}

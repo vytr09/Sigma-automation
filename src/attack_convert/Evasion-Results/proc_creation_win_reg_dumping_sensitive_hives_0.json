@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_dumping_sensitive_hives_0",
+  "original_command": "\\reg.exe reg.exe save export ˢave eˣport hklm hk˪m hkey_local_machine hkey_˪ocal_machine hkey_loca˪_machine hkey_˪oca˪_machine \\system \\sam \\security \\ˢystem \\syˢtem \\ˢyˢtem \\ˢam \\ˢecurity",
+  "evasions": {
+    "insertion": "\\reg.exe reg.exe save export ˢave eˣport hklm hk˪m hkey_local_machine hkey_˪ocal_machine hkey_loca˪_machine hkey_˪oca˪_machine \\system \\sam \\security \\ˢystem \\syˢtem \"\\ˢyˢtem\" \\ˢam \\ˢecurity",
+    "substitution": "\\reg.exe reg.exe save export ˢave eˣport hklm hk˪m hkey_local_machine hkey_˪ocal_machine hkey_loca˪_machine hkey_˪oca˪_machine \\system \\sam \\security \\ˢystem \\syˢtem \\ˢyˢtem \\ˢam \\ˢecurity",
+    "omission": "\\reg reg save export ˢave eˣport hklm hk˪m hkey_local_machine hkey_˪ocal_machine hkey_loca˪_machine hkey_˪oca˪_machine \\system \\sam \\security \\ˢystem \\syˢtem \\ˢyˢtem \\ˢam \\ˢecurity",
+    "reordering": "\\reg.exe reg.exe save export ˢave eˣport hklm hk˪m hkey_local_machine hkey_˪ocal_machine hkey_loca˪_machine hkey_˪oca˪_machine \\system \\sam \\security \\ˢystem \\syˢtem \\ˢyˢtem \\ˢam \\ˢecurity",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnLmV4ZSBzYXZlIGV4cG9ydCDLomF2ZSBly6Nwb3J0IGhrbG0gaGvLqm0gaGtleV9sb2NhbF9tYWNoaW5lIGhrZXlfy6pvY2FsX21hY2hpbmUgaGtleV9sb2Nhy6pfbWFjaGluZSBoa2V5X8uqb2Nhy6pfbWFjaGluZSBcc3lzdGVtIFxzYW0gXHNlY3VyaXR5IFzLonlzdGVtIFxzecuidGVtIFzLonnLonRlbSBcy6JhbSBcy6JlY3VyaXR5')) | Invoke-Expression\" "
+  }
+}

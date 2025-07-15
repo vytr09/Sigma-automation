@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bitsadmin_download_direct_ip_0",
+  "original_command": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9 ://7-",
+  "evasions": {
+    "insertion": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile ://1 ://2 ://3 ://4 ://5 :/\\\"/6\\\" ://7 ://8 ://9 ://7-",
+    "substitution": "\\bitsadmin.exe bitsadmin.exe /transfer --create /addfile ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9 ://7-",
+    "omission": "\\bitsadmin bitsadmin /transfer /create /addfile ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9 ://7-",
+    "reordering": "\\bitsadmin.exe bitsadmin.exe /transfer /create /addfile ://1 ://2 ://3 ://4 ://5 ://6 ://7 ://8 ://9 ://7-",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJpdHNhZG1pbi5leGUgYml0c2FkbWluLmV4ZSAvdHJhbnNmZXIgL2NyZWF0ZSAvYWRkZmlsZSA6Ly8xIDovLzIgOi8vMyA6Ly80IDovLzUgOi8vNiA6Ly83IDovLzggOi8vOSA6Ly83LQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wab_execution_from_non_default_location_0",
+  "original_command": "\\wab.exe \\wabmig.exe",
+  "evasions": {
+    "insertion": "\\wab.exe \"\\wabm\"ig.exe",
+    "substitution": "\\wab.exe \\wabmig.exe #substitution",
+    "omission": "\\wab \\wabmig",
+    "reordering": "\\wab.exe \\wabmig.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdhYi5leGUgXHdhYm1pZy5leGU=')) | Invoke-Expression\" "
+  }
+}

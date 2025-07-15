@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_tscon_rdp_session_hijacking_0",
+  "original_command": "\\tscon.exe tscon.exe",
+  "evasions": {
+    "insertion": "\\tscon.exe \\\"tscon.exe\\\"",
+    "substitution": "\\tscon.exe tscon.exe #substitution",
+    "omission": "\\tscon tscon",
+    "reordering": "\\tscon.exe tscon.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRzY29uLmV4ZSB0c2Nvbi5leGU=')) | Invoke-Expression\" "
+  }
+}

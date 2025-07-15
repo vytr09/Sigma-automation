@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_time_discovery_0",
+  "original_command": "\\net.exe \\net1.exe time \\w32tm.exe tz",
+  "evasions": {
+    "insertion": "\\net.exe \\net1.exe time \"\\w32tm.exe\" tz",
+    "substitution": "\\net.exe \\net1.exe time \\w32tm.exe tz #substitution",
+    "omission": "\\net \\net1 time \\w32tm tz",
+    "reordering": "\\net.exe \\net1.exe tz \\w32tm.exe time",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIHRpbWUgXHczMnRtLmV4ZSB0eg==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_mouselock_execution_0",
+  "original_command": "Mouse Lock_",
+  "evasions": {
+    "insertion": "Mouse Lo\"ck_\"",
+    "substitution": "Mouse Lock_ #substitution",
+    "omission": "Mouse Lock_ # omission",
+    "reordering": "Mouse Lock_",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TW91c2UgTG9ja18=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_ftp_0",
+  "original_command": "ftp.exe \\ftp.exe",
+  "evasions": {
+    "insertion": "ftp.exe \\\"f\"\"t\"\"p\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "ftp.exe \\ftp.exe #substitution",
+    "omission": "ftp \\ftp",
+    "reordering": "ftp.exe \\ftp.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZnRwLmV4ZSBcZnRwLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

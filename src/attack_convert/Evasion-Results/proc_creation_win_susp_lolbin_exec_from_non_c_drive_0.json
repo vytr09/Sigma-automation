@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_lolbin_exec_from_non_c_drive_0",
+  "original_command": "\\calc.exe \\certutil.exe \\cmstp.exe \\cscript.exe \\installutil.exe \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe CALC.EXE CertUtil.exe CMSTP.EXE cscript.exe installutil.exe MSHTA.EXE REGSVR32.EXE RUNDLL32.EXE wscript.exe",
+  "evasions": {
+    "insertion": "\\calc.exe \\certutil.exe \\cmstp.exe \\cscript.exe \\\"\\\\\"\\\"i\\\"\\\"n\\\"\\\"s\\\"\\\"t\\\"\\\"a\\\"\\\"l\\\"\\\"l\\\"\\\"u\\\"\\\"t\\\"\\\"i\\\"\\\"l\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe CALC.EXE CertUtil.exe CMSTP.EXE cscript.exe installutil.exe MSHTA.EXE REGSVR32.EXE RUNDLL32.EXE wscript.exe",
+    "substitution": "\\calc.exe \\certutil.exe \\cmstp.exe \\cscript.exe \\installutil.exe \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe CALC.EXE CertUtil.exe CMSTP.EXE cscript.exe installutil.exe MSHTA.EXE REGSVR32.EXE RUNDLL32.EXE wscript.exe #substitution",
+    "omission": "\\calc \\certutil \\cmstp \\cscript \\installutil \\mshta \\regsvr32 \\rundll32 \\wscript CALC CertUtil CMSTP cscript installutil MSHTA REGSVR32 RUNDLL32 wscript",
+    "reordering": "\\calc.exe \\certutil.exe \\cmstp.exe \\cscript.exe \\installutil.exe \\mshta.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe CALC.EXE CertUtil.exe CMSTP.EXE cscript.exe installutil.exe MSHTA.EXE REGSVR32.EXE RUNDLL32.EXE wscript.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNhbGMuZXhlIFxjZXJ0dXRpbC5leGUgXGNtc3RwLmV4ZSBcY3NjcmlwdC5leGUgXGluc3RhbGx1dGlsLmV4ZSBcbXNodGEuZXhlIFxyZWdzdnIzMi5leGUgXHJ1bmRsbDMyLmV4ZSBcd3NjcmlwdC5leGUgQ0FMQy5FWEUgQ2VydFV0aWwuZXhlIENNU1RQLkVYRSBjc2NyaXB0LmV4ZSBpbnN0YWxsdXRpbC5leGUgTVNIVEEuRVhFIFJFR1NWUjMyLkVYRSBSVU5ETEwzMi5FWEUgd3NjcmlwdC5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_explorer_break_process_tree_0",
+  "original_command": "/factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} explorer.exe /root,",
+  "evasions": {
+    "insertion": "/factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} explorer.exe /\"{cmd_part[:mid]}\"{cmd_part[mid:]}",
+    "substitution": "/factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} explorer.exe /root, #substitution",
+    "omission": "/factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} explorer /root,",
+    "reordering": "/factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} explorer.exe /root,",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2ZhY3Rvcnksezc1ZGZmMmI3LTY5MzYtNGMwNi1hOGJiLTY3NmE3YjAwYjI0Yn0gZXhwbG9yZXIuZXhlIC9yb290LA==')) | Invoke-Expression\" "
+  }
+}

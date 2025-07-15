@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_non_interactive_execution_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll :\\Windows\\explorer.exe :\\Windows\\System32\\CompatTelRunner.exe :\\Windows\\SysWOW64\\explorer.exe \\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --ms-enable-electron-run-as-node \\WindowsTerminal.exe",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh\\\".dll\\\" :\\Windows\\explorer.exe :\\Windows\\System32\\CompatTelRunner.exe :\\Windows\\SysWOW64\\explorer.exe \\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --ms-enable-electron-run-as-node \\WindowsTerminal.exe",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll :\\Windows\\explorer.exe :\\Windows\\System32\\CompatTelRunner.exe :\\Windows\\SysWOW64\\explorer.exe \\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --ms-encable-electron-run-as-node \\WindowsTerminal.exe",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll :\\Windows\\explorer :\\Windows\\System32\\CompatTelRunner :\\Windows\\SysWOW64\\explorer \\AppData\\Local\\Programs\\Microsoft VS Code\\Code --ms-enable-electron-run-as-node \\WindowsTerminal",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll :\\Windows\\explorer.exe :\\Windows\\System32\\CompatTelRunner.exe :\\Windows\\SysWOW64\\explorer.exe \\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --ms-enable-electron-run-as-node \\WindowsTerminal.exe",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgADoAXABXAGkAbgBkAG8AdwBzAFwAZQB4AHAAbABvAHIAZQByAC4AZQB4AGUAIAA6AFwAVwBpAG4AZABvAHcAcwBcAFMAeQBzAHQAZQBtADMAMgBcAEMAbwBtAHAAYQB0AFQAZQBsAFIAdQBuAG4AZQByAC4AZQB4AGUAIAA6AFwAVwBpAG4AZABvAHcAcwBcAFMAeQBzAFcATwBXADYANABcAGUAeABwAGwAbwByAGUAcgAuAGUAeABlACAAXABBAHAAcABEAGEAdABhAFwATABvAGMAYQBsAFwAUAByAG8AZwByAGEAbQBzAFwATQBpAGMAcgBvAHMAbwBmAHQAIABWAFMAIABDAG8AZABlAFwAQwBvAGQAZQAuAGUAeABlACAALQAtAG0AcwAtAGUAbgBhAGIAbABlAC0AZQBsAGUAYwB0AHIAbwBuAC0AcgB1AG4ALQBhAHMALQBuAG8AZABlACAAXABXAGkAbgBkAG8AdwBzAFQAZQByAG0AaQBuAGEAbAAuAGUAeABlAA== "
+  }
+}

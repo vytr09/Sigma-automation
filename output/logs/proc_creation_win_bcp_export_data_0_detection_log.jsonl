@@ -1,0 +1,12 @@
+{"timestamp": "2025-06-23 06:11:08 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "original", "command": "\\bcp.exe BCP.exe out queryout", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:11:08 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "insertion", "command": "\"\\bcp.exe\" BCP.exe out queryout", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:11:08 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "substitution", "command": "\\bcp.exe BCP.exe out queryout #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:11:08 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "omission", "command": "\\bcp BCP out queryout", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:11:08 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "reordering", "command": "\\bcp.exe out BCP.exe queryout", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:11:08 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJjcC5leGUgQkNQLmV4ZSBvdXQgcXVlcnlvdXQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:45:23 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "original", "command": "\\bcp.exe BCP.exe out queryout", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:45:29 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "insertion", "command": "\"\\bcp.exe\" BCP.exe out queryout", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:45:36 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "substitution", "command": "\\bcp.exe BCP.exe out queryout #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:45:42 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "omission", "command": "\\bcp BCP out queryout", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:45:47 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "reordering", "command": "\\bcp.exe out BCP.exe queryout", "status": "DETECTED"}
+{"timestamp": "2025-06-23 06:45:53 UTC", "rule": "proc_creation_win_bcp_export_data_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJjcC5leGUgQkNQLmV4ZSBvdXQgcXVlcnlvdXQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

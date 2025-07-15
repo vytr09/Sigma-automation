@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_xor_commandline_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll bxor ForEach for( for -join -join' -join -join` ::Join [char]",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll bxor ForEach for( for -join -join' -join -join` \\\"::J\\\"oin [char]",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll bxor ForEach for( for -join -join' -join -join` ::Join [char] #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll bxor ForEach for( for -join -join' -join -join` ::Join [char]",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll bxor ForEach for( for -join -join' -join -join` ::Join [char]",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAGIAeABvAHIAIABGAG8AcgBFAGEAYwBoACAAZgBvAHIAKAAgAGYAbwByACAALQBqAG8AaQBuACAALQBqAG8AaQBuACcAIAAtAGoAbwBpAG4AIAAtAGoAbwBpAG4AYAAgADoAOgBKAG8AaQBuACAAWwBjAGgAYQByAF0A "
+  }
+}

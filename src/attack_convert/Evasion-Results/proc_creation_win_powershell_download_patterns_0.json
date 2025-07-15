@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_download_patterns_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new-object net.webclient). download string( file(",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new-object net.webclient). download str\"ing(\" file(",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new-object net.webclient). download string( file( #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll new-object net.webclient). download string( file(",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new-object net.webclient). download string( file(",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ACkALgAgAGQAbwB3AG4AbABvAGEAZAAgAHMAdAByAGkAbgBnACgAIABmAGkAbABlACgA "
+  }
+}

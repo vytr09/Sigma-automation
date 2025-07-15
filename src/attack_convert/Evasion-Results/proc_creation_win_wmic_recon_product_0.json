@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_product_0",
+  "original_command": "\\wmic.exe wmic.exe Product",
+  "evasions": {
+    "insertion": "\\wmic.exe \"w\"\"m\"\"i\"\"c\"\".\"\"e\"\"x\"\"e\" Product",
+    "substitution": "\\wmic.exe wmic.exe Product #substitution",
+    "omission": "\\wmic wmic Product",
+    "reordering": "\\wmic.exe Product wmic.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIFByb2R1Y3Q=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_port_forwarding_3389_0",
+  "original_command": "\\netsh.exe netsh.exe i p =3389 c",
+  "evasions": {
+    "insertion": "\\netsh.exe \\\"nets\\\"h.exe i p =3389 c",
+    "substitution": "\\netsh.exe netsh.exe i p =3389 c #substitution",
+    "omission": "\\netsh netsh i p =3389 c",
+    "reordering": "\\netsh.exe i p =3389 netsh.exe c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgaSBwID0zMzg5IGM=')) | Invoke-Expression\" "
+  }
+}

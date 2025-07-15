@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:53:01 UTC", "rule": "proc_creation_win_mftrace_child_process_0", "phase": "original", "command": "\\mftrace.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:02 UTC", "rule": "proc_creation_win_mftrace_child_process_0", "phase": "insertion", "command": "\\\"m\"\"f\"\"t\"\"r\"\"a\"\"c\"\"e\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:02 UTC", "rule": "proc_creation_win_mftrace_child_process_0", "phase": "substitution", "command": "\\mftrace.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:02 UTC", "rule": "proc_creation_win_mftrace_child_process_0", "phase": "omission", "command": "\\mftrace", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:02 UTC", "rule": "proc_creation_win_mftrace_child_process_0", "phase": "reordering", "command": "\\mftrace.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:02 UTC", "rule": "proc_creation_win_mftrace_child_process_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1mdHJhY2UuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

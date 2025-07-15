@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_elavated_msi_spawned_shell_0",
+  "original_command": "\\cmd.exe \\powershell.exe \\pwsh.exe Cmd.Exe PowerShell.EXE pwsh.dll tmp",
+  "evasions": {
+    "insertion": "\\cmd.exe \\powershell.exe \\pwsh.exe Cmd.Exe \"PowerSh\"ell.EXE pwsh.dll tmp",
+    "substitution": "\\cmd.exe \\powershell.exe \\pwsh.exe Cmd.Exe PowerShell.EXE pwsh.dll tmp #substitution",
+    "omission": "\\cmd \\powershell \\pwsh Cmd PowerShell pwsh.dll tmp",
+    "reordering": "\\cmd.exe \\powershell.exe \\pwsh.exe Cmd.Exe PowerShell.EXE pwsh.dll tmp",
+    "recoding": "powershell.exe -EncodedCommand XABjAG0AZAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAEMAbQBkAC4ARQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABwAHcAcwBoAC4AZABsAGwAIAB0AG0AcAA= "
+  }
+}

@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 11:59:35 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "omission", "command": "sc config binPath", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:59:42 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "reordering", "command": "sc.exe binPath config", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:59:49 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:20:06 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "original", "command": "sc.exe config binPath", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:20:09 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "insertion", "command": "sc.exe con\\\"fig\\\" binPath", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:20:13 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "substitution", "command": "sc.exe config binPath", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:20:16 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "omission", "command": "sc config binPath", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:20:20 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "reordering", "command": "sc.exe binPath config", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:20:23 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2MuZXhlIGNvbmZpZyBiaW5QYXRo')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_rclone_execution_0",
+  "original_command": "--config --no-check-certificate copy \\rclone.exe pass user copy sync config lsd remote ls mega pcloud ftp ignore-existing auto-confirm transfers multi-thread-streams no-check-certificate",
+  "evasions": {
+    "insertion": "--config --no-check-certificate copy \\rclone.exe \\\"p\\\"\\\"a\\\"\\\"s\\\"\\\"s\\\" user copy sync config lsd remote ls mega pcloud ftp ignore-existing auto-confirm transfers multi-thread-streams no-check-certificate",
+    "substitution": "--config --no-check-certificate copy \\rclone.exe pass user copy sync config lsd remote ls mega pcloud ftp ignore-existing auto-confirm transfers multi-thread-streams no-check-certificate #substitution",
+    "omission": "--config --no-check-certificate copy \\rclone pass user copy sync config lsd remote ls mega pcloud ftp ignore-existing auto-confirm transfers multi-thread-streams no-check-certificate",
+    "reordering": "--config --no-check-certificate copy \\rclone.exe pass user copy sync config lsd remote ls mega pcloud ftp ignore-existing auto-confirm transfers multi-thread-streams no-check-certificate",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1jb25maWcgLS1uby1jaGVjay1jZXJ0aWZpY2F0ZSBjb3B5IFxyY2xvbmUuZXhlIHBhc3MgdXNlciBjb3B5IHN5bmMgY29uZmlnIGxzZCByZW1vdGUgbHMgbWVnYSBwY2xvdWQgZnRwIGlnbm9yZS1leGlzdGluZyBhdXRvLWNvbmZpcm0gdHJhbnNmZXJzIG11bHRpLXRocmVhZC1zdHJlYW1zIG5vLWNoZWNrLWNlcnRpZmljYXRl')) | Invoke-Expression\" "
+  }
+}

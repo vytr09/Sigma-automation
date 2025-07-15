@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_automated_collection_0",
+  "original_command": ".doc .docx .xls .xlsx .ppt .pptx .rtf .pdf .txt dir /b /s FINDSTR.EXE /e /si",
+  "evasions": {
+    "insertion": ".doc .docx .xls .xlsx .ppt .pptx \".rtf\" \".pdf\" .txt dir /b /s FINDSTR.EXE /e /si",
+    "substitution": ".doc .docx .xls .xlsx .ppt .pptx .rtf .pdf .txt dir /b /s FINDSTR.EXE /e /si #substitution",
+    "omission": ".doc .docx .xls .xlsx .ppt .pptx .rtf .pdf .txt dir /b /s FINDSTR /e /si",
+    "reordering": ".doc .docx .xls .xlsx .ppt .pptx .rtf .pdf .txt dir /b /s FINDSTR.EXE /e /si",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LmRvYyAuZG9jeCAueGxzIC54bHN4IC5wcHQgLnBwdHggLnJ0ZiAucGRmIC50eHQgZGlyIC9iIC9zIEZJTkRTVFIuRVhFIC9lIC9zaQ==')) | Invoke-Expression\" "
+  }
+}

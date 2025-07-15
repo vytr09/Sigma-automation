@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_logman_disable_eventlog_0",
+  "original_command": "\\logman.exe Logman.exe stop delete Circular Kernel Context Logger EventLog- SYSMON TRACE SysmonDnsEtwSession",
+  "evasions": {
+    "insertion": "\\logman.exe Logman.exe stop delete Circular Kernel Context Logger Even\\\"tLog-\\\" SYSMON TRACE SysmonDnsEtwSession",
+    "substitution": "\\logman.exe Logman.exe stop delete Circular Kernel Context Logger EventLog- SYSMON TRACE SysmonDnsEtwSession #substitution",
+    "omission": "\\logman Logman stop delete Circular Kernel Context Logger EventLog- SYSMON TRACE SysmonDnsEtwSession",
+    "reordering": "\\logman.exe Logman.exe stop delete Circular Kernel Context Logger EventLog- SYSMON TRACE SysmonDnsEtwSession",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxvZ21hbi5leGUgTG9nbWFuLmV4ZSBzdG9wIGRlbGV0ZSBDaXJjdWxhciBLZXJuZWwgQ29udGV4dCBMb2dnZXIgRXZlbnRMb2ctIFNZU01PTiBUUkFDRSBTeXNtb25EbnNFdHdTZXNzaW9u')) | Invoke-Expression\" "
+  }
+}

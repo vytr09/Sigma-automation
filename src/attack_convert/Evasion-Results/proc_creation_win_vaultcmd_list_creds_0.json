@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vaultcmd_list_creds_0",
+  "original_command": "\\VaultCmd.exe VAULTCMD.EXE /listcreds:",
+  "evasions": {
+    "insertion": "\\VaultCmd.exe VAULTC\"MD.EXE\" /listcreds:",
+    "substitution": "\\VaultCmd.exe VAULTCMD.EXE /listcreds: #substitution",
+    "omission": "\\VaultCmd VAULTCMD /listcreds:",
+    "reordering": "\\VaultCmd.exe VAULTCMD.EXE /listcreds:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZhdWx0Q21kLmV4ZSBWQVVMVENNRC5FWEUgL2xpc3RjcmVkczo=')) | Invoke-Expression\" "
+  }
+}

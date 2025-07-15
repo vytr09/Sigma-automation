@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 18:05:49 UTC", "rule": "proc_creation_win_wmic_eventconsumer_creation_0", "phase": "original", "command": "ActiveScriptEventConsumer CREATE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:05:56 UTC", "rule": "proc_creation_win_wmic_eventconsumer_creation_0", "phase": "insertion", "command": "ActiveScriptEventConsumer \\\"C\\\"\\\"R\\\"\\\"E\\\"\\\"A\\\"\\\"T\\\"\\\"E\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:06:09 UTC", "rule": "proc_creation_win_wmic_eventconsumer_creation_0", "phase": "substitution", "command": "ActiveScriptEventConsumer CREATE #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 18:06:16 UTC", "rule": "proc_creation_win_wmic_eventconsumer_creation_0", "phase": "omission", "command": "ActiveScriptEventConsumer CREATE # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 18:06:22 UTC", "rule": "proc_creation_win_wmic_eventconsumer_creation_0", "phase": "reordering", "command": "ActiveScriptEventConsumer CREATE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:06:29 UTC", "rule": "proc_creation_win_wmic_eventconsumer_creation_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QWN0aXZlU2NyaXB0RXZlbnRDb25zdW1lciBDUkVBVEU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

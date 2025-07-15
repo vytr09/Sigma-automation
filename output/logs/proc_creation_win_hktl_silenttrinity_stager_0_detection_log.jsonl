@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:04:09 UTC", "rule": "proc_creation_win_hktl_silenttrinity_stager_0", "phase": "original", "command": "st2stager", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:09 UTC", "rule": "proc_creation_win_hktl_silenttrinity_stager_0", "phase": "insertion", "command": "st2stager", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:09 UTC", "rule": "proc_creation_win_hktl_silenttrinity_stager_0", "phase": "substitution", "command": "st2stager #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:09 UTC", "rule": "proc_creation_win_hktl_silenttrinity_stager_0", "phase": "omission", "command": "st2stager # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:09 UTC", "rule": "proc_creation_win_hktl_silenttrinity_stager_0", "phase": "reordering", "command": "st2stager", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:04:09 UTC", "rule": "proc_creation_win_hktl_silenttrinity_stager_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c3Qyc3RhZ2Vy')) | Invoke-Expression\" ", "status": "BYPASSED"}

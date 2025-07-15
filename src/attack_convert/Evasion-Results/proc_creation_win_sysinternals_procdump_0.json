@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_procdump_0",
+  "original_command": "\\procdump.exe \\procdump64.exe",
+  "evasions": {
+    "insertion": "\\procdump.exe \\procdu\\\"mp64.exe\\\"",
+    "substitution": "\\procdump.exe \\procdump64.exe #substitution",
+    "omission": "\\procdump \\procdump64",
+    "reordering": "\\procdump.exe \\procdump64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByb2NkdW1wLmV4ZSBccHJvY2R1bXA2NC5leGU=')) | Invoke-Expression\" "
+  }
+}

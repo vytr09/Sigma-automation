@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:32:06 UTC", "rule": "proc_creation_win_print_remote_file_copy_0", "phase": "original", "command": "\\print.exe /D .exe print.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:32:19 UTC", "rule": "proc_creation_win_print_remote_file_copy_0", "phase": "insertion", "command": "\\print.exe /D \".exe\" \"print.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:32:29 UTC", "rule": "proc_creation_win_print_remote_file_copy_0", "phase": "substitution", "command": "\\print.exe /D .exe print.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:32:41 UTC", "rule": "proc_creation_win_print_remote_file_copy_0", "phase": "omission", "command": "\\print /D print", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:32:51 UTC", "rule": "proc_creation_win_print_remote_file_copy_0", "phase": "reordering", "command": "\\print.exe /D .exe print.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:33:07 UTC", "rule": "proc_creation_win_print_remote_file_copy_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByaW50LmV4ZSAvRCAuZXhlIHByaW50LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

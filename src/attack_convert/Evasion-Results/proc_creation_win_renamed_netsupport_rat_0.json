@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_netsupport_rat_0",
+  "original_command": "client32.exe \\client32.exe",
+  "evasions": {
+    "insertion": "client32.exe \\\"\\\\\"\\\"c\\\"\\\"l\\\"\\\"i\\\"\\\"e\\\"\\\"n\\\"\\\"t\\\"\\\"3\\\"\\\"2\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\"",
+    "substitution": "client32.exe \\client32.exe #substitution",
+    "omission": "client32 \\client32",
+    "reordering": "client32.exe \\client32.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y2xpZW50MzIuZXhlIFxjbGllbnQzMi5leGU=')) | Invoke-Expression\" "
+  }
+}

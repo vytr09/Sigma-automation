@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_adcspwn_0",
+  "original_command": "--adcs --port",
+  "evasions": {
+    "insertion": "--adcs --p\\\"ort\\\"",
+    "substitution": "--adcs --port #substitution",
+    "omission": "--adcs --port # omission",
+    "reordering": "--adcs --port",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1hZGNzIC0tcG9ydA==')) | Invoke-Expression\" "
+  }
+}

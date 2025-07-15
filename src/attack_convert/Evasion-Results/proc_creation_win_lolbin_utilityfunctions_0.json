@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_utilityfunctions_0",
+  "original_command": "UtilityFunctions.ps1 RegSnapin",
+  "evasions": {
+    "insertion": "UtilityFunctions.ps1 RegS\"napin\"",
+    "substitution": "UtilityFunctions.ps1 RegSnapin #substitution",
+    "omission": "UtilityFunctions RegSnapin",
+    "reordering": "UtilityFunctions.ps1 RegSnapin",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('VXRpbGl0eUZ1bmN0aW9ucy5wczEgUmVnU25hcGlu')) | Invoke-Expression\" "
+  }
+}

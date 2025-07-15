@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_susp_process_creation_0",
+  "original_command": "process call create rundll32 bitsadmin regsvr32 cmd.exe /c cmd.exe /k cmd.exe /r cmd /c cmd /k cmd /r powershell pwsh certutil cscript wscript mshta \\Users\\Public\\ \\Windows\\Temp\\ \\AppData\\Local\\ %temp% %tmp% %ProgramData% %appdata% %comspec% %localappdata%",
+  "evasions": {
+    "insertion": "process call create rundll32 bitsadmin regsvr32 cmd.exe /c cmd.exe /k cmd.exe /r cmd /c cmd /k cmd /r powershell pwsh cert\"util\" cscript wscript mshta \\Users\\Public\\ \\Windows\\Temp\\ \\AppData\\Local\\ %temp% %tmp% %ProgramData% %appdata% %comspec% %localappdata%",
+    "substitution": "process call create rundll32 bitsadmin regsvr32 cmd.exe -c cmd.exe /k cmd.exe /r cmd -c cmd /k cmd /r powershell pwsh certutil cscript wscript mshta \\Users\\Public\\ \\Windows\\Temp\\ \\AppData\\Local\\ %temp% %tmp% %ProgramData% %appdata% %comspec% %localappdata%",
+    "omission": "process call create rundll32 bitsadmin regsvr32 cmd /c cmd /k cmd /r cmd /c cmd /k cmd /r powershell pwsh certutil cscript wscript mshta \\Users\\Public\\ \\Windows\\Temp\\ \\AppData\\Local\\ %temp% %tmp% %ProgramData% %appdata% %comspec% %localappdata%",
+    "reordering": "process call create rundll32 bitsadmin regsvr32 cmd.exe /c cmd.exe /k cmd.exe /r cmd /c cmd /k cmd /r powershell pwsh certutil cscript wscript mshta \\Users\\Public\\ \\Windows\\Temp\\ \\AppData\\Local\\ %temp% %tmp% %ProgramData% %appdata% %comspec% %localappdata%",
+    "recoding": "powershell.exe -EncodedCommand cAByAG8AYwBlAHMAcwAgAGMAYQBsAGwAIABjAHIAZQBhAHQAZQAgAHIAdQBuAGQAbABsADMAMgAgAGIAaQB0AHMAYQBkAG0AaQBuACAAcgBlAGcAcwB2AHIAMwAyACAAYwBtAGQALgBlAHgAZQAgAC8AYwAgAGMAbQBkAC4AZQB4AGUAIAAvAGsAIABjAG0AZAAuAGUAeABlACAALwByACAAYwBtAGQAIAAvAGMAIABjAG0AZAAgAC8AawAgAGMAbQBkACAALwByACAAcABvAHcAZQByAHMAaABlAGwAbAAgAHAAdwBzAGgAIABjAGUAcgB0AHUAdABpAGwAIABjAHMAYwByAGkAcAB0ACAAdwBzAGMAcgBpAHAAdAAgAG0AcwBoAHQAYQAgAFwAVQBzAGUAcgBzAFwAUAB1AGIAbABpAGMAXAAgAFwAVwBpAG4AZABvAHcAcwBcAFQAZQBtAHAAXAAgAFwAQQBwAHAARABhAHQAYQBcAEwAbwBjAGEAbABcACAAJQB0AGUAbQBwACUAIAAlAHQAbQBwACUAIAAlAFAAcgBvAGcAcgBhAG0ARABhAHQAYQAlACAAJQBhAHAAcABkAGEAdABhACUAIAAlAGMAbwBtAHMAcABlAGMAJQAgACUAbABvAGMAYQBsAGEAcABwAGQAYQB0AGEAJQA= "
+  }
+}

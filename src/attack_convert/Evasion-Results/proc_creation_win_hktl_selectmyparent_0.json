@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_selectmyparent_0",
+  "original_command": "\\SelectMyParent.exe PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid -spawnto PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid",
+  "evasions": {
+    "insertion": "\\SelectMyParent.exe PPID-spoof ppid_\"spoof\" spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid -spawnto PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid",
+    "substitution": "\\SelectMyParent.exe PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid -spawnto PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid #substitution",
+    "omission": "\\SelectMyParent PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid -spawnto PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid",
+    "reordering": "\\SelectMyParent.exe PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid -spawnto PPID-spoof ppid_spoof spoof-ppid spoof_ppid ppidspoof spoofppid spoofedppid",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNlbGVjdE15UGFyZW50LmV4ZSBQUElELXNwb29mIHBwaWRfc3Bvb2Ygc3Bvb2YtcHBpZCBzcG9vZl9wcGlkIHBwaWRzcG9vZiBzcG9vZnBwaWQgc3Bvb2ZlZHBwaWQgLXNwYXdudG8gUFBJRC1zcG9vZiBwcGlkX3Nwb29mIHNwb29mLXBwaWQgc3Bvb2ZfcHBpZCBwcGlkc3Bvb2Ygc3Bvb2ZwcGlkIHNwb29mZWRwcGlk')) | Invoke-Expression\" "
+  }
+}

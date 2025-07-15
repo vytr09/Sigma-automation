@@ -4,30 +4,3 @@
 {"timestamp": "2025-04-23 08:46:48 UTC", "rule": "win_apt_taidoor_0", "phase": "omission", "command": "MyStart rundll32", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:47:05 UTC", "rule": "win_apt_taidoor_0", "phase": "reordering", "command": "MyStart rundll32.exe", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:47:11 UTC", "rule": "win_apt_taidoor_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:31:53 UTC", "rule": "win_apt_taidoor_0", "phase": "original", "command": "MyStart rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:32:00 UTC", "rule": "win_apt_taidoor_0", "phase": "insertion", "command": "MyStart \"rundll32.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:32:08 UTC", "rule": "win_apt_taidoor_0", "phase": "substitution", "command": "MyStart rundll32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:32:11 UTC", "rule": "win_apt_taidoor_0", "phase": "omission", "command": "MyStart rundll32", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:32:17 UTC", "rule": "win_apt_taidoor_0", "phase": "reordering", "command": "MyStart rundll32.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:32:20 UTC", "rule": "win_apt_taidoor_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TXlTdGFydCBydW5kbGwzMi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:39:19 UTC", "rule": "win_apt_taidoor_0", "phase": "original", "command": "MyStart rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:39:24 UTC", "rule": "win_apt_taidoor_0", "phase": "insertion", "command": "MyStart \"rundll32.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:39:30 UTC", "rule": "win_apt_taidoor_0", "phase": "substitution", "command": "MyStart rundll32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:39:36 UTC", "rule": "win_apt_taidoor_0", "phase": "omission", "command": "MyStart rundll32", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:39:41 UTC", "rule": "win_apt_taidoor_0", "phase": "reordering", "command": "MyStart rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:39:47 UTC", "rule": "win_apt_taidoor_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TXlTdGFydCBydW5kbGwzMi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:48:04 UTC", "rule": "win_apt_taidoor_0", "phase": "original", "command": "MyStart rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:48:12 UTC", "rule": "win_apt_taidoor_0", "phase": "insertion", "command": "MyStart \"rundll32.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:48:21 UTC", "rule": "win_apt_taidoor_0", "phase": "substitution", "command": "MyStart rundll32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:48:29 UTC", "rule": "win_apt_taidoor_0", "phase": "omission", "command": "MyStart rundll32", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:48:38 UTC", "rule": "win_apt_taidoor_0", "phase": "reordering", "command": "MyStart rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:48:52 UTC", "rule": "win_apt_taidoor_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TXlTdGFydCBydW5kbGwzMi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:59:26 UTC", "rule": "win_apt_taidoor_0", "phase": "original", "command": "MyStart rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:59:34 UTC", "rule": "win_apt_taidoor_0", "phase": "insertion", "command": "MyStart \"rundll32.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:59:44 UTC", "rule": "win_apt_taidoor_0", "phase": "substitution", "command": "MyStart rundll32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:50:08 UTC", "rule": "win_apt_taidoor_0", "phase": "original", "command": "MyStart rundll32.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:50:08 UTC", "rule": "win_apt_taidoor_0", "phase": "insertion", "command": "MyStart \"rundll32.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:50:08 UTC", "rule": "win_apt_taidoor_0", "phase": "substitution", "command": "MyStart rundll32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:50:08 UTC", "rule": "win_apt_taidoor_0", "phase": "omission", "command": "MyStart rundll32", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:50:08 UTC", "rule": "win_apt_taidoor_0", "phase": "reordering", "command": "MyStart rundll32.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:50:08 UTC", "rule": "win_apt_taidoor_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TXlTdGFydCBydW5kbGwzMi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

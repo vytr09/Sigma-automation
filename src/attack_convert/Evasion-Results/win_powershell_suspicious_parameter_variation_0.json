@@ -1,11 +1,11 @@
 {
   "rule_name": "win_powershell_suspicious_parameter_variation_0",
-  "original_command": "Powershell.exe -encodedComman",
+  "original_command": "Powershell.exe -windowstyle h",
   "evasions": {
-    "insertion": "Powershell.exe -encode\\\"dComman\\\"",
-    "substitution": "Powershell.exe -enc",
-    "omission": "Powershell.exe -encodedComman # omission",
-    "reordering": "Powershell.exe -encodedComman",
-    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBlAG4AYwBvAGQAZQBkAEMAbwBtAG0AYQBuAA== "
+    "insertion": "Powershell.exe \"-windowstyle\" \"h\"",
+    "substitution": "Powershell.exe -windowstyle h #substitution",
+    "omission": "Powershell -windowstyle h",
+    "reordering": "Powershell.exe h -windowstyle",
+    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB3AGkAbgBkAG8AdwBzAHQAeQBsAGUAIABoAA== "
   }
 }

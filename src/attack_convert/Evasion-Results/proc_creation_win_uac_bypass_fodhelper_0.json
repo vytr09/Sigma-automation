@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_fodhelper_0",
+  "original_command": "\\fodhelper.exe",
+  "evasions": {
+    "insertion": "\"\\fodhelper.exe\"",
+    "substitution": "\\fodhelper.exe #substitution",
+    "omission": "\\fodhelper",
+    "reordering": "\\fodhelper.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZvZGhlbHBlci5leGU=')) | Invoke-Expression\" "
+  }
+}

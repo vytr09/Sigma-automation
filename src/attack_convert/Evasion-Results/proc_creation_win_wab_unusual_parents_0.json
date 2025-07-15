@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wab_unusual_parents_0",
+  "original_command": "\\WmiPrvSE.exe \\svchost.exe \\dllhost.exe \\wab.exe \\wabmig.exe \\wab.exe \\wabmig.exe",
+  "evasions": {
+    "insertion": "\"\\WmiPrvSE.exe\" \\svchost.exe \\dllhost.exe \\wab.exe \\wabmig.exe \\wab.exe \\wabmig.exe",
+    "substitution": "\\WmiPrvSE.exe \\svchost.exe \\dllhost.exe \\wab.exe \\wabmig.exe \\wab.exe \\wabmig.exe #substitution",
+    "omission": "\\WmiPrvSE \\svchost \\dllhost \\wab \\wabmig \\wab \\wabmig",
+    "reordering": "\\WmiPrvSE.exe \\svchost.exe \\dllhost.exe \\wab.exe \\wabmig.exe \\wab.exe \\wabmig.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdtaVBydlNFLmV4ZSBcc3ZjaG9zdC5leGUgXGRsbGhvc3QuZXhlIFx3YWIuZXhlIFx3YWJtaWcuZXhlIFx3YWIuZXhlIFx3YWJtaWcuZXhl')) | Invoke-Expression\" "
+  }
+}

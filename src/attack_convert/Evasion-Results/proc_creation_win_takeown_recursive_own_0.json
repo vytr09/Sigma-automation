@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_takeown_recursive_own_0",
+  "original_command": "\\takeown.exe /f /r",
+  "evasions": {
+    "insertion": "\\takeown.exe /\"{cmd_part1}\" /\"{cmd_part2}\"",
+    "substitution": "\\takeown.exe /f /r #substitution",
+    "omission": "\\takeown /f /r",
+    "reordering": "\\takeown.exe /f /r",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRha2Vvd24uZXhlIC9mIC9y')) | Invoke-Expression\" "
+  }
+}

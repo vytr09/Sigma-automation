@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_network_command_0",
+  "original_command": "ipconfig /all netsh interface show interface arp -a nbtstat -n net config route print",
+  "evasions": {
+    "insertion": "ipconfig /all netsh interface show interface arp \\\"-a\\\" nbtstat -n net config route print",
+    "substitution": "ipconfig /all netsh interface display interface arp -a nbtstat -n net config route print",
+    "omission": "ipconfig /all netsh interface show interface arp -a nbtstat -n net config route print # omission",
+    "reordering": "ipconfig /all netsh interface show interface arp -a nbtstat -n net config route print",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aXBjb25maWcgL2FsbCBuZXRzaCBpbnRlcmZhY2Ugc2hvdyBpbnRlcmZhY2UgYXJwIC1hIG5idHN0YXQgLW4gbmV0IGNvbmZpZyByb3V0ZSBwcmludA==')) | Invoke-Expression\" "
+  }
+}

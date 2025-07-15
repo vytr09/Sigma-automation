@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_network_scan_loop_0",
+  "original_command": "for foreach nslookup ping",
+  "evasions": {
+    "insertion": "for foreach nslookup \\\"p\\\"\\\"i\\\"\\\"n\\\"\\\"g\\\"",
+    "substitution": "for foreach nslookup ping #substitution",
+    "omission": "for foreach nslookup ping # omission",
+    "reordering": "for foreach ping nslookup",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Zm9yIGZvcmVhY2ggbnNsb29rdXAgcGluZw==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_net_user_add_never_expire_0",
+  "original_command": "\\net.exe \\net1.exe net.exe net1.exe user add expires:never",
+  "evasions": {
+    "insertion": "\\net.exe \\net1.exe net.exe net1.exe user add expire\"s:never\"",
+    "substitution": "\\net.exe \\net1.exe net.exe net1.exe user add expires:never #substitution",
+    "omission": "\\net \\net1 net net1 user add expires:never",
+    "reordering": "\\net.exe \\net1.exe net.exe net1.exe user add expires:never",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgdXNlciBhZGQgZXhwaXJlczpuZXZlcg==')) | Invoke-Expression\" "
+  }
+}

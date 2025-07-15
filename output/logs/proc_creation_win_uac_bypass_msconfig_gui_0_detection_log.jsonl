@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:35:35 UTC", "rule": "proc_creation_win_uac_bypass_msconfig_gui_0", "phase": "original", "command": "\\AppData\\Local\\Temp\\pkgmgr.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:35 UTC", "rule": "proc_creation_win_uac_bypass_msconfig_gui_0", "phase": "insertion", "command": "\\AppData\\Local\\Temp\\\"p\"\"k\"\"g\"\"m\"\"g\"\"r\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:35 UTC", "rule": "proc_creation_win_uac_bypass_msconfig_gui_0", "phase": "substitution", "command": "\\AppData\\Local\\Temp\\pkgmgr.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:35 UTC", "rule": "proc_creation_win_uac_bypass_msconfig_gui_0", "phase": "omission", "command": "\\AppData\\Local\\Temp\\pkgmgr", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:35 UTC", "rule": "proc_creation_win_uac_bypass_msconfig_gui_0", "phase": "reordering", "command": "\\AppData\\Local\\Temp\\pkgmgr.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:35 UTC", "rule": "proc_creation_win_uac_bypass_msconfig_gui_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcTG9jYWxcVGVtcFxwa2dtZ3IuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

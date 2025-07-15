@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:18:40 UTC", "rule": "proc_creation_win_sysinternals_psservice_0", "phase": "original", "command": "psservice.exe \\PsService.exe \\PsService64.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:18:40 UTC", "rule": "proc_creation_win_sysinternals_psservice_0", "phase": "insertion", "command": "psservice.exe \\\"\\PsServ\\\"ice.exe \\PsService64.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:18:40 UTC", "rule": "proc_creation_win_sysinternals_psservice_0", "phase": "substitution", "command": "psservice.exe \\PsService.exe \\PsService64.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:18:40 UTC", "rule": "proc_creation_win_sysinternals_psservice_0", "phase": "omission", "command": "psservice \\PsService \\PsService64", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:18:40 UTC", "rule": "proc_creation_win_sysinternals_psservice_0", "phase": "reordering", "command": "psservice.exe \\PsService64.exe \\PsService.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:18:40 UTC", "rule": "proc_creation_win_sysinternals_psservice_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHNzZXJ2aWNlLmV4ZSBcUHNTZXJ2aWNlLmV4ZSBcUHNTZXJ2aWNlNjQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_consent_comctl32_0",
+  "original_command": "\\consent.exe \\werfault.exe",
+  "evasions": {
+    "insertion": "\\consent.exe \\werfa\"ult.exe\"",
+    "substitution": "\\consent.exe \\werfault.exe #substitution",
+    "omission": "\\consent \\werfault",
+    "reordering": "\\consent.exe \\werfault.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNvbnNlbnQuZXhlIFx3ZXJmYXVsdC5leGU=')) | Invoke-Expression\" "
+  }
+}

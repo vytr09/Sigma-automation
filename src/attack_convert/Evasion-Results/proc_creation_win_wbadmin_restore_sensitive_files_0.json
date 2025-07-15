@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wbadmin_restore_sensitive_files_0",
+  "original_command": "\\wbadmin.exe WBADMIN.EXE recovery recoveryTarget itemtype:File \\config\\SAM \\config\\SECURITY \\config\\SYSTEM \\Windows\\NTDS\\NTDS.dit",
+  "evasions": {
+    "insertion": "\\\"\\wbadmin.exe\\\" WBADMIN.EXE recovery recoveryTarget itemtype:File \\config\\SAM \\config\\SECURITY \\config\\SYSTEM \\Windows\\NTDS\\NTDS.dit",
+    "substitution": "\\wbadmin.exe WBADMIN.EXE recovery recoveryTarget itemtype:File \\config\\SAM \\config\\SECURITY \\config\\SYSTEM \\Windows\\NTDS\\NTDS.dit #substitution",
+    "omission": "\\wbadmin WBADMIN recovery recoveryTarget itemtype:File \\config\\SAM \\config\\SECURITY \\config\\SYSTEM \\Windows\\NTDS\\NTDS.dit",
+    "reordering": "\\wbadmin.exe WBADMIN.EXE recovery recoveryTarget itemtype:File \\config\\SAM \\config\\SECURITY \\config\\SYSTEM \\Windows\\NTDS\\NTDS.dit",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdiYWRtaW4uZXhlIFdCQURNSU4uRVhFIHJlY292ZXJ5IHJlY292ZXJ5VGFyZ2V0IGl0ZW10eXBlOkZpbGUgXGNvbmZpZ1xTQU0gXGNvbmZpZ1xTRUNVUklUWSBcY29uZmlnXFNZU1RFTSBcV2luZG93c1xOVERTXE5URFMuZGl0')) | Invoke-Expression\" "
+  }
+}

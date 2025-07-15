@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cloudflared_tunnel_run_0",
+  "original_command": "tunnel run -config -credentials-contents -credentials-file -token",
+  "evasions": {
+    "insertion": "tunnel run -config -credentials-contents \\\"-credentials-file\\\" -token",
+    "substitution": "tunnel run -config -credentials-contents -credentials-file -token #substitution",
+    "omission": "tunnel run -config -credentials-contents -credentials-file -token # omission",
+    "reordering": "tunnel run -config -token -credentials-file -credentials-contents",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHVubmVsIHJ1biAtY29uZmlnIC1jcmVkZW50aWFscy1jb250ZW50cyAtY3JlZGVudGlhbHMtZmlsZSAtdG9rZW4=')) | Invoke-Expression\" "
+  }
+}

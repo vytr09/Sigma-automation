@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_coercedpotato_0",
+  "original_command": "\\CoercedPotato.exe --exploitId",
+  "evasions": {
+    "insertion": "\\CoercedPotato.exe --exp\"loitId\"",
+    "substitution": "\\CoercedPotato.exe --exploitId #substitution",
+    "omission": "\\CoercedPotato --exploitId",
+    "reordering": "\\CoercedPotato.exe --exploitId",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENvZXJjZWRQb3RhdG8uZXhlIC0tZXhwbG9pdElk')) | Invoke-Expression\" "
+  }
+}

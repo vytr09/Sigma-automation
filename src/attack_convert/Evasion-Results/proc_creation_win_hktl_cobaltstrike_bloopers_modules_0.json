@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_cobaltstrike_bloopers_modules_0",
+  "original_command": "Cmd.Exe \\cmd.exe Invoke-UserHunter Invoke-ShareFinder Invoke-Kerberoast Invoke-SMBAutoBrute Invoke-Nightmare zerologon av_query",
+  "evasions": {
+    "insertion": "Cmd.Exe \\cmd.exe Invoke-UserHunter Invoke-ShareFinder Invoke-Kerberoast Invoke-SM\\\"BAutoBrute\\\" Invoke-Nightmare zerologon av_query",
+    "substitution": "Cmd.Exe \\cmd.exe Invoke-UserHunter Invoke-ShareFinder Invoke-Kerberoast Invoke-SMBAutoBrute Invoke-Nightmare zerologon av_query #substitution",
+    "omission": "Cmd \\cmd Invoke-UserHunter Invoke-ShareFinder Invoke-Kerberoast Invoke-SMBAutoBrute Invoke-Nightmare zerologon av_query",
+    "reordering": "Cmd.Exe \\cmd.exe Invoke-UserHunter Invoke-ShareFinder Invoke-Kerberoast Invoke-SMBAutoBrute Invoke-Nightmare zerologon av_query",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q21kLkV4ZSBcY21kLmV4ZSBJbnZva2UtVXNlckh1bnRlciBJbnZva2UtU2hhcmVGaW5kZXIgSW52b2tlLUtlcmJlcm9hc3QgSW52b2tlLVNNQkF1dG9CcnV0ZSBJbnZva2UtTmlnaHRtYXJlIHplcm9sb2dvbiBhdl9xdWVyeQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_one_time_only_midnight_task_0",
+  "original_command": "schtasks.exe wscript vbscript cscript wmic wmic.exe regsvr32.exe powershell \\AppData\\ once 00:00",
+  "evasions": {
+    "insertion": "schtasks.exe wscript vbscript \"cscript\" \"wmic\" wmic.exe regsvr32.exe powershell \\AppData\\ once 00:00",
+    "substitution": "schtasks.exe wscript vbscript cscript wmic wmic.exe regsvr32.exe powershell \\AppData\\ once 00:00 #substitution",
+    "omission": "schtasks wscript vbscript cscript wmic wmic regsvr32 powershell \\AppData\\ once 00:00",
+    "reordering": "schtasks.exe wscript vbscript cscript wmic wmic.exe regsvr32.exe powershell \\AppData\\ once 00:00",
+    "recoding": "powershell.exe -EncodedCommand cwBjAGgAdABhAHMAawBzAC4AZQB4AGUAIAB3AHMAYwByAGkAcAB0ACAAdgBiAHMAYwByAGkAcAB0ACAAYwBzAGMAcgBpAHAAdAAgAHcAbQBpAGMAIAB3AG0AaQBjAC4AZQB4AGUAIAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAHAAbwB3AGUAcgBzAGgAZQBsAGwAIABcAEEAcABwAEQAYQB0AGEAXAAgAG8AbgBjAGUAIAAwADAAOgAwADAA "
+  }
+}

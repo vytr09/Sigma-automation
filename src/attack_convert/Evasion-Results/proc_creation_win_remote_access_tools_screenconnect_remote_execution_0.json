@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_screenconnect_remote_execution_0",
+  "original_command": "\\ScreenConnect.ClientService.exe \\cmd.exe Cmd.Exe \\TEMP\\ScreenConnect\\",
+  "evasions": {
+    "insertion": "\\ScreenConnect.ClientService.exe \\cmd.exe \"C\"\"m\"\"d\"\".\"\"E\"\"x\"\"e\" \\TEMP\\ScreenConnect\\",
+    "substitution": "\\ScreenConnect.ClientService.exe \\cmd.exe Cmd.Exe \\TEMP\\ScreenConnect\\ #substitution",
+    "omission": "\\ScreenConnect.ClientService \\cmd Cmd \\TEMP\\ScreenConnect\\",
+    "reordering": "\\ScreenConnect.ClientService.exe \\TEMP\\ScreenConnect\\ Cmd.Exe \\cmd.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNjcmVlbkNvbm5lY3QuQ2xpZW50U2VydmljZS5leGUgXGNtZC5leGUgQ21kLkV4ZSBcVEVNUFxTY3JlZW5Db25uZWN0XA==')) | Invoke-Expression\" "
+  }
+}

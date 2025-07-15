@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_uacme_0",
+  "original_command": "Akagi.exe Akagi64.exe \\Akagi64.exe \\Akagi.exe",
+  "evasions": {
+    "insertion": "Akagi.exe \"A\"\"k\"\"a\"\"g\"\"i\"\"6\"\"4\"\".\"\"e\"\"x\"\"e\" \\Akagi64.exe \\Akagi.exe",
+    "substitution": "Akagi.exe Akagi64.exe \\Akagi64.exe \\Akagi.exe #substitution",
+    "omission": "Akagi Akagi64 \\Akagi64 \\Akagi",
+    "reordering": "Akagi.exe \\Akagi64.exe \\Akagi.exe Akagi64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QWthZ2kuZXhlIEFrYWdpNjQuZXhlIFxBa2FnaTY0LmV4ZSBcQWthZ2kuZXhl')) | Invoke-Expression\" "
+  }
+}

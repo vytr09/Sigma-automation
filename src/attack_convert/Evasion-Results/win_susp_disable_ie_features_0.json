@@ -2,7 +2,7 @@
   "rule_name": "win_susp_disable_ie_features_0",
   "original_command": "-name DisableFirstRunCustomize -value 2",
   "evasions": {
-    "insertion": "-name \"D\"\"i\"\"s\"\"a\"\"b\"\"l\"\"e\"\"F\"\"i\"\"r\"\"s\"\"t\"\"R\"\"u\"\"n\"\"C\"\"u\"\"s\"\"t\"\"o\"\"m\"\"i\"\"z\"\"e\" -value 2",
+    "insertion": "-name DisableFirstRunCustomize -va\"lue\" 2",
     "substitution": "-name DisableFirstRunCustomize -value 2 #substitution",
     "omission": "-name DisableFirstRunCustomize -value 2 # omission",
     "reordering": "-name DisableFirstRunCustomize 2 -value",

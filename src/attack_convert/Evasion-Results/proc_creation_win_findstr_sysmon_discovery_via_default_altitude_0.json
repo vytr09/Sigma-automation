@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_findstr_sysmon_discovery_via_default_altitude_0",
+  "original_command": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE 385201",
+  "evasions": {
+    "insertion": "\\find.exe \\\"\\findstr.exe\\\" FIND.EXE FINDSTR.EXE 385201",
+    "substitution": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE 385201 #substitution",
+    "omission": "\\find \\findstr FIND FINDSTR 385201",
+    "reordering": "\\find.exe 385201 \\findstr.exe FINDSTR.EXE FIND.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZpbmQuZXhlIFxmaW5kc3RyLmV4ZSBGSU5ELkVYRSBGSU5EU1RSLkVYRSAzODUyMDE=')) | Invoke-Expression\" "
+  }
+}

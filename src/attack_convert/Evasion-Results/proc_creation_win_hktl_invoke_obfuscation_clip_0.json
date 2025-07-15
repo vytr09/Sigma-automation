@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_invoke_obfuscation_clip_0",
+  "original_command": "cmd && clipboard]:: -f /c /r",
+  "evasions": {
+    "insertion": "cmd && clipboard]:: -f /c /r",
+    "substitution": "cmd && clipboard]:: -f -c /r",
+    "omission": "cmd && clipboard]:: -f /c /r # omission",
+    "reordering": "cmd && clipboard]:: -f /c /r",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21kICYmIGNsaXBib2FyZF06OiAtZiAvYyAvcg==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_adexplorer_execution_0",
+  "original_command": "\\ADExplorer.exe AdExp snapshot",
+  "evasions": {
+    "insertion": "\\ADExplorer.exe AdExp \"snap\"shot",
+    "substitution": "\\ADExplorer.exe AdExp snapshot #substitution",
+    "omission": "\\ADExplorer AdExp snapshot",
+    "reordering": "\\ADExplorer.exe snapshot AdExp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFERXhwbG9yZXIuZXhlIEFkRXhwIHNuYXBzaG90')) | Invoke-Expression\" "
+  }
+}

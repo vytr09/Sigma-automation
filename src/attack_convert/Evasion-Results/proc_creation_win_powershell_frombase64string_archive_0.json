@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_frombase64string_archive_0",
+  "original_command": "FromBase64String MemoryStream H4sI",
+  "evasions": {
+    "insertion": "FromBase64String MemoryStream \"H4sI\"",
+    "substitution": "FromBase64String MemoryStream H4sI #substitution",
+    "omission": "FromBase64String MemoryStream H4sI # omission",
+    "reordering": "FromBase64String H4sI MemoryStream",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RnJvbUJhc2U2NFN0cmluZyBNZW1vcnlTdHJlYW0gSDRzSQ==')) | Invoke-Expression\" "
+  }
+}

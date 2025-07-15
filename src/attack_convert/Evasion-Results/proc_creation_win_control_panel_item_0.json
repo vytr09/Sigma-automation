@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_control_panel_item_0",
+  "original_command": "\\reg.exe reg.exe add CurrentVersion\\Control Panel\\CPLs \\System32\\ %System% |C:\\Windows\\system32| regsvr32 /s igfxCPL.cpl",
+  "evasions": {
+    "insertion": "\\reg.exe reg.exe add CurrentVersion\\Control Panel\\CPLs \\System32\\ %System% |C:\\Windows\\system32| regsvr32 /s igfxCPL.cpl",
+    "substitution": "\\reg.exe reg.exe add CurrentVersion\\Control Panel\\CPLs \\System32\\ %System% |C:\\Windows\\system32| regsvr32 /silent igfxCPL.cpl",
+    "omission": "\\reg reg add CurrentVersion\\Control Panel\\CPLs \\System32\\ %System% |system32| regsvr32 /s igfxCPL.cpl",
+    "reordering": "\\reg.exe reg.exe add CurrentVersion\\Control Panel\\CPLs \\System32\\ %System% |C:\\Windows\\system32| regsvr32 /s igfxCPL.cpl",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnLmV4ZSBhZGQgQ3VycmVudFZlcnNpb25cQ29udHJvbCBQYW5lbFxDUExzIFxTeXN0ZW0zMlwgJVN5c3RlbSUgfEM6XFdpbmRvd3Ncc3lzdGVtMzJ8IHJlZ3N2cjMyIC9zIGlnZnhDUEwuY3Bs')) | Invoke-Expression\" "
+  }
+}

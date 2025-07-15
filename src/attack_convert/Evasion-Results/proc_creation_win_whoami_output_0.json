@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_whoami_output_0",
+  "original_command": "\\whoami.exe whoami.exe /FO CSV -FO CSV whoami >",
+  "evasions": {
+    "insertion": "\\whoami.exe whoami.exe /FO CSV -FO CSV whoami >",
+    "substitution": "\\whoami.exe whoami.exe /FO CSV -FO CSV whoami > #substitution",
+    "omission": "\\whoami whoami /FO CSV -FO CSV whoami >",
+    "reordering": "\\whoami.exe whoami.exe /FO CSV -FO CSV whoami >",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdob2FtaS5leGUgd2hvYW1pLmV4ZSAvRk8gQ1NWIC1GTyBDU1Ygd2hvYW1pID4=')) | Invoke-Expression\" "
+  }
+}

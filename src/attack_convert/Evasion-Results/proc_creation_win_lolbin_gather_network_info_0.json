@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_gather_network_info_0",
+  "original_command": "\\cscript.exe \\wscript.exe cscript.exe wscript.exe gatherNetworkInfo.vbs",
+  "evasions": {
+    "insertion": "\\cscript.exe \\\"\\wscri\\\"pt.exe cscript.exe wscript.exe gatherNetworkInfo.vbs",
+    "substitution": "\\cscript.exe \\wscript.exe cscript.exe wscript.exe gatherNetworkInfo.vbs #substitution",
+    "omission": "\\cscript \\wscript cscript wscript gatherNetworkInfo",
+    "reordering": "\\cscript.exe gatherNetworkInfo.vbs wscript.exe \\wscript.exe cscript.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzY3JpcHQuZXhlIFx3c2NyaXB0LmV4ZSBjc2NyaXB0LmV4ZSB3c2NyaXB0LmV4ZSBnYXRoZXJOZXR3b3JrSW5mby52YnM=')) | Invoke-Expression\" "
+  }
+}

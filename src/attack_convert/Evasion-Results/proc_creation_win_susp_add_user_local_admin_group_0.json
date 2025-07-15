@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_add_user_local_admin_group_0",
+  "original_command": "localgroup /add Add-LocalGroupMember -Group administrators administrateur",
+  "evasions": {
+    "insertion": "localgroup /add Add-LocalGroupMember -Group administrators \\\"administrateur\\\"",
+    "substitution": "localgroup /add Add-LocalGroupMember -Group administrators administrateur #substitution",
+    "omission": "localgroup /add Add-LocalGroupMember -Group administrators administrateur # omission",
+    "reordering": "localgroup /add Add-LocalGroupMember -Group administrators administrateur",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bG9jYWxncm91cCAvYWRkIEFkZC1Mb2NhbEdyb3VwTWVtYmVyIC1Hcm91cCBhZG1pbmlzdHJhdG9ycyBhZG1pbmlzdHJhdGV1cg==')) | Invoke-Expression\" "
+  }
+}

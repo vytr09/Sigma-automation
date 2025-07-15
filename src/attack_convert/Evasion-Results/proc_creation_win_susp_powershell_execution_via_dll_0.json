@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_powershell_execution_via_dll_0",
+  "original_command": "\\InstallUtil.exe \\RegAsm.exe \\RegSvcs.exe \\regsvr32.exe \\rundll32.exe InstallUtil.exe RegAsm.exe RegSvcs.exe REGSVR32.EXE RUNDLL32.EXE Default.GetString DownloadString FromBase64String ICM IEX Invoke-Command Invoke-Expression",
+  "evasions": {
+    "insertion": "\\InstallUtil.exe \\RegAsm.exe \\\"\\RegSvcs.exe\\\" \\regsvr32.exe \\rundll32.exe InstallUtil.exe RegAsm.exe RegSvcs.exe REGSVR32.EXE RUNDLL32.EXE Default.GetString DownloadString FromBase64String ICM IEX Invoke-Command Invoke-Expression",
+    "substitution": "\\InstallUtil.exe \\RegAsm.exe \\RegSvcs.exe \\regsvr32.exe \\rundll32.exe InstallUtil.exe RegAsm.exe RegSvcs.exe REGSVR32.EXE RUNDLL32.EXE Default.GetString DownloadString FromBase64String ICM IEX Invoke-Command Invoke-Expression",
+    "omission": "\\InstallUtil \\RegAsm \\RegSvcs \\regsvr32 \\rundll32 InstallUtil RegAsm RegSvcs REGSVR32 RUNDLL32 Default.GetString DownloadString FromBase64String ICM IEX Invoke-Command Invoke-Expression",
+    "reordering": "\\InstallUtil.exe \\RegAsm.exe \\RegSvcs.exe \\regsvr32.exe \\rundll32.exe InstallUtil.exe RegAsm.exe RegSvcs.exe REGSVR32.EXE RUNDLL32.EXE Default.GetString DownloadString FromBase64String ICM IEX Invoke-Command Invoke-Expression",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEluc3RhbGxVdGlsLmV4ZSBcUmVnQXNtLmV4ZSBcUmVnU3Zjcy5leGUgXHJlZ3N2cjMyLmV4ZSBccnVuZGxsMzIuZXhlIEluc3RhbGxVdGlsLmV4ZSBSZWdBc20uZXhlIFJlZ1N2Y3MuZXhlIFJFR1NWUjMyLkVYRSBSVU5ETEwzMi5FWEUgRGVmYXVsdC5HZXRTdHJpbmcgRG93bmxvYWRTdHJpbmcgRnJvbUJhc2U2NFN0cmluZyBJQ00gSUVYIEludm9rZS1Db21tYW5kIEludm9rZS1FeHByZXNzaW9u')) | Invoke-Expression\" "
+  }
+}

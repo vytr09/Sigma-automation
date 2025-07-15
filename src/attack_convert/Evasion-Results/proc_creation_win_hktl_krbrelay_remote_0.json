@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_krbrelay_remote_0",
+  "original_command": "\\RemoteKrbRelay.exe RemoteKrbRelay.exe -clsid -target -victim -smb --smbkeyword interactive secrets service-add -rbcd -cn --computername -chp -chpPass -chpUser -addgroupmember -group -groupuser",
+  "evasions": {
+    "insertion": "\\RemoteKrbRelay.exe RemoteKrbRelay.exe -clsid -target \\\"-victim\\\" -smb --smbkeyword interactive secrets service-add -rbcd -cn --computername -chp -chpPass -chpUser -addgroupmember -group -groupuser",
+    "substitution": "\\RemoteKrbRelay.exe RemoteKrbRelay.exe -clsid -target -victim -smb --smbkeyword interactive secrets service-add -rbcd -cn --computername -chp -chpPass -chpUser -addgroupmember -group -groupuser #substitution",
+    "omission": "\\RemoteKrbRelay RemoteKrbRelay -clsid -target -victim -smb --smbkeyword interactive secrets service-add -rbcd -cn --computername -chp -chpPass -chpUser -addgroupmember -group -groupuser",
+    "reordering": "\\RemoteKrbRelay.exe RemoteKrbRelay.exe -clsid -target -victim -smb --smbkeyword interactive secrets service-add -rbcd -cn --computername -chp -chpPass -chpUser -addgroupmember -group -groupuser",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFJlbW90ZUtyYlJlbGF5LmV4ZSBSZW1vdGVLcmJSZWxheS5leGUgLWNsc2lkIC10YXJnZXQgLXZpY3RpbSAtc21iIC0tc21ia2V5d29yZCBpbnRlcmFjdGl2ZSBzZWNyZXRzIHNlcnZpY2UtYWRkIC1yYmNkIC1jbiAtLWNvbXB1dGVybmFtZSAtY2hwIC1jaHBQYXNzIC1jaHBVc2VyIC1hZGRncm91cG1lbWJlciAtZ3JvdXAgLWdyb3VwdXNlcg==')) | Invoke-Expression\" "
+  }
+}

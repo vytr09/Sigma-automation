@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:36:26 UTC", "rule": "proc_creation_win_plink_port_forwarding_0", "phase": "original", "command": "-R", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:36:36 UTC", "rule": "proc_creation_win_plink_port_forwarding_0", "phase": "insertion", "command": "-R", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:36:42 UTC", "rule": "proc_creation_win_plink_port_forwarding_0", "phase": "substitution", "command": "-R #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:36:48 UTC", "rule": "proc_creation_win_plink_port_forwarding_0", "phase": "omission", "command": "-R # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:36:55 UTC", "rule": "proc_creation_win_plink_port_forwarding_0", "phase": "reordering", "command": "-R", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:37:01 UTC", "rule": "proc_creation_win_plink_port_forwarding_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LVI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

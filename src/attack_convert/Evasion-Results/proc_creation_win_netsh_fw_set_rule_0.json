@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_set_rule_0",
+  "original_command": "\\netsh.exe netsh.exe firewall set",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe \"f\"\"i\"\"r\"\"e\"\"w\"\"a\"\"l\"\"l\" set",
+    "substitution": "\\netsh.exe netsh.exe fw set",
+    "omission": "\\netsh netsh firewall set",
+    "reordering": "\\netsh.exe netsh.exe set firewall",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgZmlyZXdhbGwgc2V0')) | Invoke-Expression\" "
+  }
+}

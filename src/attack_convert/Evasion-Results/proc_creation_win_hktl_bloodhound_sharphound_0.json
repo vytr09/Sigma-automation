@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_bloodhound_sharphound_0",
+  "original_command": "SharpHound -CollectionMethod All --CollectionMethods Session --Loop --Loopduration --PortScanTimeout .exe -c All -d Invoke-Bloodhound Get-BloodHoundData -JsonFolder -ZipFileName DCOnly --NoSaveCache",
+  "evasions": {
+    "insertion": "SharpHound -CollectionMethod All --CollectionMethods Session --Loop --Loopduration --PortScanTimeout .exe -c All -d Invoke-Bloodhound Get-BloodHoundData -JsonFolder -ZipFileName \"DCOnly\" --NoSaveCache",
+    "substitution": "SharpHound -CollectionMethod All --CollectionMethods Session --Loop --Loopduration --PortScanTimeout .exe -c All -d Invoke-Bloodhound Get-BloodHoundData -JsonFolder -ZipFileName DCOnly --NoSaveCache #substitution",
+    "omission": "SharpHound -CollectionMethod All --CollectionMethods Session --Loop --Loopduration --PortScanTimeout -c All -d Invoke-Bloodhound Get-BloodHoundData -JsonFolder -ZipFileName DCOnly --NoSaveCache",
+    "reordering": "SharpHound -CollectionMethod All --CollectionMethods Session --Loop --Loopduration --PortScanTimeout .exe -c All -d Invoke-Bloodhound Get-BloodHoundData -JsonFolder -ZipFileName DCOnly --NoSaveCache",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('U2hhcnBIb3VuZCAtQ29sbGVjdGlvbk1ldGhvZCBBbGwgLS1Db2xsZWN0aW9uTWV0aG9kcyBTZXNzaW9uIC0tTG9vcCAtLUxvb3BkdXJhdGlvbiAtLVBvcnRTY2FuVGltZW91dCAuZXhlIC1jIEFsbCAtZCBJbnZva2UtQmxvb2Rob3VuZCBHZXQtQmxvb2RIb3VuZERhdGEgLUpzb25Gb2xkZXIgLVppcEZpbGVOYW1lIERDT25seSAtLU5vU2F2ZUNhY2hl')) | Invoke-Expression\" "
+  }
+}

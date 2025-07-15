@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mssql_sqltoolsps_susp_execution_0",
+  "original_command": "\\sqltoolsps.exe \\sqltoolsps.exe \\sqltoolsps.exe \\smss.exe",
+  "evasions": {
+    "insertion": "\\\"\\sqltoolsps.exe\\\" \\sqltoolsps.exe \\sqltoolsps.exe \\smss.exe",
+    "substitution": "\\sqltoolsps.exe \\sqltoolsps.exe \\sqltoolsps.exe \\smss.exe #substitution",
+    "omission": "\\sqltoolsps \\sqltoolsps \\sqltoolsps \\smss",
+    "reordering": "\\sqltoolsps.exe \\sqltoolsps.exe \\smss.exe \\sqltoolsps.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxbHRvb2xzcHMuZXhlIFxzcWx0b29sc3BzLmV4ZSBcc3FsdG9vbHNwcy5leGUgXHNtc3MuZXhl')) | Invoke-Expression\" "
+  }
+}

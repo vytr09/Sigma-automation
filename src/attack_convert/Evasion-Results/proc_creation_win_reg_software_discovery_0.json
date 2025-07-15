@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_software_discovery_0",
+  "original_command": "\\reg.exe query \\software\\ /v svcversion",
+  "evasions": {
+    "insertion": "\\reg.exe query \\software\\ /v svcve\"rsion\"",
+    "substitution": "\\reg.exe query \\software\\ /v svcversion",
+    "omission": "\\reg query \\software\\ /v svcversion",
+    "reordering": "\\reg.exe query \\software\\ /v svcversion",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcXVlcnkgXHNvZnR3YXJlXCAvdiBzdmN2ZXJzaW9u')) | Invoke-Expression\" "
+  }
+}

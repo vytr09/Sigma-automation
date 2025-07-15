@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_node_abuse_0",
+  "original_command": "\\node.exe -e --eval .exec( net.socket .connect child_process",
+  "evasions": {
+    "insertion": "\\node.exe -e --eval \\\".exec(\\\" \\\"net.socket\\\" .connect child_process",
+    "substitution": "\\node.exe -e --eval .exec( net.socket .connect child_process #substitution",
+    "omission": "\\node -e --eval .exec( net.socket .connect child_process",
+    "reordering": "\\node.exe -e --eval .exec( net.socket .connect child_process",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5vZGUuZXhlIC1lIC0tZXZhbCAuZXhlYyggbmV0LnNvY2tldCAuY29ubmVjdCBjaGlsZF9wcm9jZXNz')) | Invoke-Expression\" "
+  }
+}

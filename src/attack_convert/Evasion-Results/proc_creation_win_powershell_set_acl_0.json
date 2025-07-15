@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_set_acl_0",
+  "original_command": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path",
+  "evasions": {
+    "insertion": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl \\\"-AclObject\\\" \\\"-Path\\\"",
+    "substitution": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path #substitution",
+    "omission": "PowerShell pwsh.dll \\powershell \\pwsh Set-Acl -AclObject -Path",
+    "reordering": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Set-Acl -AclObject -Path",
+    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAFMAaABlAGwAbAAuAEUAWABFACAAcAB3AHMAaAAuAGQAbABsACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFMAZQB0AC0AQQBjAGwAIAAtAEEAYwBsAE8AYgBqAGUAYwB0ACAALQBQAGEAdABoAA== "
+  }
+}

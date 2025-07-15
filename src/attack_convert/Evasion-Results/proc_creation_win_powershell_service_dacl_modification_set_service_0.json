@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_service_dacl_modification_set_service_0",
+  "original_command": "\\pwsh.exe pwsh.dll -SecurityDescriptorSddl -sd Set-Service D;; ;;;IU ;;;SU ;;;BA ;;;SY ;;;WD",
+  "evasions": {
+    "insertion": "\\pwsh.exe pwsh.dll -SecurityDescriptorSddl -sd Set-Service D;; ;;;IU \\\";;;SU\\\" ;;;BA ;;;SY ;;;WD",
+    "substitution": "\\pwsh.exe pwsh.dll -SecurityDescriptorSddl -sd Set-Service D;; ;;;IU ;;;SU ;;;BA ;;;SY ;;;WD #substitution",
+    "omission": "\\pwsh pwsh.dll -SecurityDescriptorSddl -sd Set-Service D;; ;;;IU ;;;SU ;;;BA ;;;SY ;;;WD",
+    "reordering": "\\pwsh.exe pwsh.dll -SecurityDescriptorSddl -sd Set-Service D;; ;;;IU ;;;SU ;;;BA ;;;SY ;;;WD",
+    "recoding": "powershell.exe -EncodedCommand XABwAHcAcwBoAC4AZQB4AGUAIABwAHcAcwBoAC4AZABsAGwAIAAtAFMAZQBjAHUAcgBpAHQAeQBEAGUAcwBjAHIAaQBwAHQAbwByAFMAZABkAGwAIAAtAHMAZAAgAFMAZQB0AC0AUwBlAHIAdgBpAGMAZQAgAEQAOwA7ACAAOwA7ADsASQBVACAAOwA7ADsAUwBVACAAOwA7ADsAQgBBACAAOwA7ADsAUwBZACAAOwA7ADsAVwBEAA== "
+  }
+}

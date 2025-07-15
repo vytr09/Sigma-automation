@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:05:38 UTC", "rule": "proc_creation_win_susp_right_to_left_override_0", "phase": "original", "command": "\u202e", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:05:45 UTC", "rule": "proc_creation_win_susp_right_to_left_override_0", "phase": "insertion", "command": "\u202e", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:05:52 UTC", "rule": "proc_creation_win_susp_right_to_left_override_0", "phase": "substitution", "command": "\u202e #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:05:58 UTC", "rule": "proc_creation_win_susp_right_to_left_override_0", "phase": "omission", "command": "\u202e # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:06:08 UTC", "rule": "proc_creation_win_susp_right_to_left_override_0", "phase": "reordering", "command": "\u202e", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:06:16 UTC", "rule": "proc_creation_win_susp_right_to_left_override_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('4oCu')) | Invoke-Expression\" ", "status": "BYPASSED"}

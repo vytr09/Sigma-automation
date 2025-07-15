@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msiexec_web_install_0",
+  "original_command": "msiexec ://",
+  "evasions": {
+    "insertion": "msiexec \":\"\"/\"\"/\"",
+    "substitution": "msiexec :// #substitution",
+    "omission": "msiexec :// # omission",
+    "reordering": "msiexec ://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXNpZXhlYyA6Ly8=')) | Invoke-Expression\" "
+  }
+}

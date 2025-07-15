@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:58:44 UTC", "rule": "proc_creation_win_rar_compress_data_0", "phase": "original", "command": "\\rar.exe a", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:58:51 UTC", "rule": "proc_creation_win_rar_compress_data_0", "phase": "insertion", "command": "\\rar.exe \"a\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:59:00 UTC", "rule": "proc_creation_win_rar_compress_data_0", "phase": "substitution", "command": "\\rar.exe a #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:59:07 UTC", "rule": "proc_creation_win_rar_compress_data_0", "phase": "omission", "command": "\\rar a", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:59:13 UTC", "rule": "proc_creation_win_rar_compress_data_0", "phase": "reordering", "command": "\\rar.exe a", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:59:19 UTC", "rule": "proc_creation_win_rar_compress_data_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJhci5leGUgYQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

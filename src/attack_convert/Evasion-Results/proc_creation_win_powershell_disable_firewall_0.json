@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_disable_firewall_0",
+  "original_command": "\\powershell.exe \\pwsh.exe \\powershell_ise.exe PowerShell.EXE pwsh.dll Set-NetFirewallProfile -Enabled False -All Public Domain Private",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe \\powershell_ise.exe PowerShell.EXE pwsh.dll Set-NetFirewallProfile -Enabled False -All Public Domain \"P\"\"r\"\"i\"\"v\"\"a\"\"t\"\"e\"",
+    "substitution": "\\powershell.exe \\pwsh.exe \\powershell_ise.exe PowerShell.EXE pwsh.dll Set-NetFirewallProfile -Enabled False -All Public Domain Private #substitution",
+    "omission": "\\powershell \\pwsh \\powershell_ise PowerShell pwsh.dll Set-NetFirewallProfile -Enabled False -All Public Domain Private",
+    "reordering": "\\powershell.exe \\pwsh.exe \\powershell_ise.exe PowerShell.EXE pwsh.dll Set-NetFirewallProfile -Enabled False -All Public Domain Private",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbABfAGkAcwBlAC4AZQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABwAHcAcwBoAC4AZABsAGwAIABTAGUAdAAtAE4AZQB0AEYAaQByAGUAdwBhAGwAbABQAHIAbwBmAGkAbABlACAALQBFAG4AYQBiAGwAZQBkACAARgBhAGwAcwBlACAALQBBAGwAbAAgAFAAdQBiAGwAaQBjACAARABvAG0AYQBpAG4AIABQAHIAaQB2AGEAdABlAA== "
+  }
+}

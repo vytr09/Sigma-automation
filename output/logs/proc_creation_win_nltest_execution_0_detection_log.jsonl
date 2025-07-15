@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:22:34 UTC", "rule": "proc_creation_win_nltest_execution_0", "phase": "original", "command": "\\nltest.exe nltestrk.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:22:41 UTC", "rule": "proc_creation_win_nltest_execution_0", "phase": "insertion", "command": "\\nltest.exe \\\"nltest\\\"rk.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:22:47 UTC", "rule": "proc_creation_win_nltest_execution_0", "phase": "substitution", "command": "\\nltest.exe nltestrk.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:22:53 UTC", "rule": "proc_creation_win_nltest_execution_0", "phase": "omission", "command": "\\nltest nltestrk", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:22:58 UTC", "rule": "proc_creation_win_nltest_execution_0", "phase": "reordering", "command": "\\nltest.exe nltestrk.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:23:05 UTC", "rule": "proc_creation_win_nltest_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5sdGVzdC5leGUgbmx0ZXN0cmsuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

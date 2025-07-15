@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_procdump_evasion_0",
+  "original_command": "copy procdump move procdump copy .dmp 2.dmp lsass out.dmp copy lsass.exe_ move lsass.exe_",
+  "evasions": {
+    "insertion": "copy procdump move procdump copy .d\\\"mp\\\" 2.dmp lsass out.dmp copy lsass.exe_ move lsass.exe_",
+    "substitution": "copy procdump move procdump copy .dmp 2.dmp lsass out.dmp copy lsass.exe_ move lsass.exe_ #substitution",
+    "omission": "copy procdump move procdump copy .dmp 2.dmp lsass out.dmp copy lsass.exe_ move lsass.exe_ # omission",
+    "reordering": "copy procdump move procdump copy .dmp 2.dmp lsass out.dmp copy lsass.exe_ move lsass.exe_",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29weSBwcm9jZHVtcCBtb3ZlIHByb2NkdW1wIGNvcHkgLmRtcCAyLmRtcCBsc2FzcyBvdXQuZG1wIGNvcHkgbHNhc3MuZXhlXyBtb3ZlIGxzYXNzLmV4ZV8=')) | Invoke-Expression\" "
+  }
+}

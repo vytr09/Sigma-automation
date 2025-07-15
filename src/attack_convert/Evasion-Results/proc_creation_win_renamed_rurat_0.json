@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_rurat_0",
+  "original_command": "\\rutserv.exe \\rfusclient.exe",
+  "evasions": {
+    "insertion": "\"\\rutserv.exe\" \\rfusclient.exe",
+    "substitution": "\\rutserv.exe \\rfusclient.exe #substitution",
+    "omission": "\\rutserv \\rfusclient",
+    "reordering": "\\rutserv.exe \\rfusclient.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1dHNlcnYuZXhlIFxyZnVzY2xpZW50LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

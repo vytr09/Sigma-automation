@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_virtualbox_vboxdrvinst_execution_0",
+  "original_command": "\\VBoxDrvInst.exe driver executeinf",
+  "evasions": {
+    "insertion": "\\VBoxDrvInst.exe \"driver\" executeinf",
+    "substitution": "\\VBoxDrvInst.exe driver executeinf #substitution",
+    "omission": "\\VBoxDrvInst driver executeinf",
+    "reordering": "\\VBoxDrvInst.exe driver executeinf",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZCb3hEcnZJbnN0LmV4ZSBkcml2ZXIgZXhlY3V0ZWluZg==')) | Invoke-Expression\" "
+  }
+}

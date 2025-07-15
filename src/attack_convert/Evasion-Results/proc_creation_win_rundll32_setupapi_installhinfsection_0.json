@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_setupapi_installhinfsection_0",
+  "original_command": "\\runonce.exe \\rundll32.exe setupapi.dll InstallHinfSection",
+  "evasions": {
+    "insertion": "\\runonce.exe \\rundll32.exe \"s\"\"e\"\"t\"\"u\"\"p\"\"a\"\"p\"\"i\"\".\"\"d\"\"l\"\"l\" InstallHinfSection",
+    "substitution": "\\runonce.exe \\rundll32.exe setupapi.dll InstallHinfSection #substitution",
+    "omission": "\\runonce \\rundll32 setupapi.dll InstallHinfSection",
+    "reordering": "\\runonce.exe \\rundll32.exe InstallHinfSection setupapi.dll",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBvAG4AYwBlAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAcwBlAHQAdQBwAGEAcABpAC4AZABsAGwAIABJAG4AcwB0AGEAbABsAEgAaQBuAGYAUwBlAGMAdABpAG8AbgA= "
+  }
+}

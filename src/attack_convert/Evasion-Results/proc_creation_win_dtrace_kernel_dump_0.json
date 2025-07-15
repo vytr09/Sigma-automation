@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dtrace_kernel_dump_0",
+  "original_command": "\\dtrace.exe lkd(0) syscall:::return lkd(",
+  "evasions": {
+    "insertion": "\\dtrace.exe lkd(0) \"syscall:::return\" lkd(",
+    "substitution": "\\dtrace.exe lkd(0) syscall:::return lkd( #substitution",
+    "omission": "\\dtrace lkd(0) syscall:::return lkd(",
+    "reordering": "\\dtrace.exe lkd(0) syscall:::return lkd(",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGR0cmFjZS5leGUgbGtkKDApIHN5c2NhbGw6OjpyZXR1cm4gbGtkKA==')) | Invoke-Expression\" "
+  }
+}

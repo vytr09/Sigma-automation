@@ -2,7 +2,7 @@
   "rule_name": "win_cmdkey_recon_0",
   "original_command": "cmdkey.exe /list",
   "evasions": {
-    "insertion": "cmdkey.exe /\"{cmd_part[:mid]}\"{cmd_part[mid:]}",
+    "insertion": "cmdkey.exe /\"l\"\"i\"\"s\"\"t\"",
     "substitution": "cmdkey.exe /list #substitution",
     "omission": "cmdkey /list",
     "reordering": "cmdkey.exe /list",

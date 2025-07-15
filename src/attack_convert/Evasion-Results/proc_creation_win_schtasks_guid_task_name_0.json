@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_guid_task_name_0",
+  "original_command": "\\schtasks.exe /Create /TN /TN '{ /TN { } }' }",
+  "evasions": {
+    "insertion": "\\schtasks.exe /Create /TN /TN '{ /TN { } \\\"}\\\"\\\"'\\\" }",
+    "substitution": "\\schtasks.exe /Create /TN /TN '{ /TN { } }' } #substitution",
+    "omission": "\\schtasks /Create /TN /TN '{ /TN { } }' }",
+    "reordering": "\\schtasks.exe /Create /TN /TN '{ /TN { } }' }",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvQ3JlYXRlIC9UTiAvVE4gJ3sgL1ROIHsgfSB9JyB9')) | Invoke-Expression\" "
+  }
+}

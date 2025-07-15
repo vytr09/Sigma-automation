@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_x509enrollment_0",
+  "original_command": "X509Enrollment.CBinaryConverter 884e2002-217d-11da-b2a4-000e7bbb2b09",
+  "evasions": {
+    "insertion": "X509Enrollment.CBinaryConverter \\\"8\\\"\\\"8\\\"\\\"4\\\"\\\"e\\\"\\\"2\\\"\\\"0\\\"\\\"0\\\"\\\"2\\\"\\\"-\\\"\\\"2\\\"\\\"1\\\"\\\"7\\\"\\\"d\\\"\\\"-\\\"\\\"1\\\"\\\"1\\\"\\\"d\\\"\\\"a\\\"\\\"-\\\"\\\"b\\\"\\\"2\\\"\\\"a\\\"\\\"4\\\"\\\"-\\\"\\\"0\\\"\\\"0\\\"\\\"0\\\"\\\"e\\\"\\\"7\\\"\\\"b\\\"\\\"b\\\"\\\"b\\\"\\\"2\\\"\\\"b\\\"\\\"0\\\"\\\"9\\\"",
+    "substitution": "X509Enrollment.CBinaryConverter 884e2002-217d-11da-b2a4-000e7bbb2b09 #substitution",
+    "omission": "X509Enrollment.CBinaryConverter 884e2002-217d-11da-b2a4-000e7bbb2b09 # omission",
+    "reordering": "X509Enrollment.CBinaryConverter 884e2002-217d-11da-b2a4-000e7bbb2b09",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('WDUwOUVucm9sbG1lbnQuQ0JpbmFyeUNvbnZlcnRlciA4ODRlMjAwMi0yMTdkLTExZGEtYjJhNC0wMDBlN2JiYjJiMDk=')) | Invoke-Expression\" "
+  }
+}

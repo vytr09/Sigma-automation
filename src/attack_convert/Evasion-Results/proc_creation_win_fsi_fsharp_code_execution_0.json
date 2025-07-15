@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_fsi_fsharp_code_execution_0",
+  "original_command": "\\fsi.exe \\fsianycpu.exe fsi.exe fsianycpu.exe",
+  "evasions": {
+    "insertion": "\\fsi.exe \\fsianycpu.exe fsi\".exe\" fsianycpu.exe",
+    "substitution": "\\fsi.exe \\fsianycpu.exe fsi.exe fsianycpu.exe #substitution",
+    "omission": "\\fsi \\fsianycpu fsi fsianycpu",
+    "reordering": "\\fsi.exe fsi.exe fsianycpu.exe \\fsianycpu.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZzaS5leGUgXGZzaWFueWNwdS5leGUgZnNpLmV4ZSBmc2lhbnljcHUuZXhl')) | Invoke-Expression\" "
+  }
+}

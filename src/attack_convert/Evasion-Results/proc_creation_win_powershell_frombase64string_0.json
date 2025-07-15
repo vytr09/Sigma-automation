@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_frombase64string_0",
+  "original_command": "::FromBase64String(",
+  "evasions": {
+    "insertion": "::FromBase64String(",
+    "substitution": "::FromBase64String( #substitution",
+    "omission": "::FromBase64String( # omission",
+    "reordering": "::FromBase64String(",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OjpGcm9tQmFzZTY0U3RyaW5nKA==')) | Invoke-Expression\" "
+  }
+}

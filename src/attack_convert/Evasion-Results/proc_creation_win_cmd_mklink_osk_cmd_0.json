@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_mklink_osk_cmd_0",
+  "original_command": "\\cmd.exe Cmd.Exe mklink \\osk.exe \\cmd.exe",
+  "evasions": {
+    "insertion": "\\cmd.exe Cmd.Exe mklink \"\\osk.exe\" \\cmd.exe",
+    "substitution": "\\cmd.exe Cmd.Exe mklink \\osk.exe \\cmd.exe #substitution",
+    "omission": "\\cmd Cmd mklink \\osk \\cmd",
+    "reordering": "\\cmd.exe mklink \\cmd.exe Cmd.Exe \\osk.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBta2xpbmsgXG9zay5leGUgXGNtZC5leGU=')) | Invoke-Expression\" "
+  }
+}

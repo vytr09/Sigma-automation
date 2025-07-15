@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_susp_ps_downloadfile_0",
+  "original_command": "powershell .DownloadFile System.Net.WebClient",
+  "evasions": {
+    "insertion": "powershell \\\".DownloadFile\\\" System.Net.WebClient",
+    "substitution": "powershell .DownloadFile System.Net.WebClient #substitution",
+    "omission": "powershell .DownloadFile System.Net.WebClient # omission",
+    "reordering": "powershell .DownloadFile System.Net.WebClient",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAgAC4ARABvAHcAbgBsAG8AYQBkAEYAaQBsAGUAIABTAHkAcwB0AGUAbQAuAE4AZQB0AC4AVwBlAGIAQwBsAGkAZQBuAHQA "
+  }
+}

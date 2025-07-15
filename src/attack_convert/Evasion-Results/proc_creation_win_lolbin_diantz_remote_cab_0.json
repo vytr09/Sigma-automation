@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_diantz_remote_cab_0",
+  "original_command": "diantz.exe \\\\\\\\ .cab",
+  "evasions": {
+    "insertion": "diantz.exe \\\\\\\\ \".\"\"c\"\"a\"\"b\"",
+    "substitution": "diantz.exe \\\\\\\\ .cab #substitution",
+    "omission": "diantz \\\\\\\\ .cab",
+    "reordering": "diantz.exe \\\\\\\\ .cab",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZGlhbnR6LmV4ZSBcXFxcIC5jYWI=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_packet_capture_0",
+  "original_command": "\\netsh.exe netsh.exe trace start",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe trace \\\"st\\\"art",
+    "substitution": "\\netsh.exe netsh.exe trace start #substitution",
+    "omission": "\\netsh netsh trace start",
+    "reordering": "\\netsh.exe start trace netsh.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgdHJhY2Ugc3RhcnQ=')) | Invoke-Expression\" "
+  }
+}

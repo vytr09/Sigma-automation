@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_stop_service_0",
+  "original_command": "sc.exe \\sc.exe stop",
+  "evasions": {
+    "insertion": "sc.exe \\sc.exe \"stop\"",
+    "substitution": "sc.exe \\sc.exe stop",
+    "omission": "sc \\sc stop",
+    "reordering": "sc.exe stop \\sc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2MuZXhlIFxzYy5leGUgc3RvcA==')) | Invoke-Expression\" "
+  }
+}

@@ -2,10 +2,10 @@
   "rule_name": "win_apt_apt29_thinktanks_0",
   "original_command": "-noni -ep bypass $",
   "evasions": {
-    "insertion": "-noni \"-\"\"e\"\"p\" bypass $",
+    "insertion": "-noni -ep \\\"bypass\\\" \\\"$\\\"",
     "substitution": "-noni -ep bypass $ #substitution",
     "omission": "-noni -ep bypass $ # omission",
-    "reordering": "-noni $ bypass -ep",
+    "reordering": "-noni bypass -ep $",
     "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBuAG8AbgBpACAALQBlAHAAIABiAHkAcABhAHMAcwAgACQA "
   }
 }

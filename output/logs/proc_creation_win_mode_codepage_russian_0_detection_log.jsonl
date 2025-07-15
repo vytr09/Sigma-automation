@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:53:54 UTC", "rule": "proc_creation_win_mode_codepage_russian_0", "phase": "original", "command": "\\mode.com MODE.COM con cp select=", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:54 UTC", "rule": "proc_creation_win_mode_codepage_russian_0", "phase": "insertion", "command": "\\mode.com MODE.COM \\\"c\\\"on cp select=", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:54 UTC", "rule": "proc_creation_win_mode_codepage_russian_0", "phase": "substitution", "command": "\\mode.com MODE.COM con cp select= #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:54 UTC", "rule": "proc_creation_win_mode_codepage_russian_0", "phase": "omission", "command": "\\mode.com MODE.COM con cp select= # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:54 UTC", "rule": "proc_creation_win_mode_codepage_russian_0", "phase": "reordering", "command": "\\mode.com select= cp MODE.COM con", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:53:54 UTC", "rule": "proc_creation_win_mode_codepage_russian_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1vZGUuY29tIE1PREUuQ09NIGNvbiBjcCBzZWxlY3Q9')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_fltmc_unload_driver_0",
+  "original_command": "\\fltMC.exe fltMC.exe unload \\endpoint-protection-installer-x64.tmp",
+  "evasions": {
+    "insertion": "\\fltMC.exe fltMC.exe unl\\\"oad\\\" \\endpoint-protection-installer-x64.tmp",
+    "substitution": "\\fltMC.exe fltMC.exe unload \\endpoint-protection-installer-x64.tmp #substitution",
+    "omission": "\\fltMC fltMC unload \\endpoint-protection-installer-x64.tmp",
+    "reordering": "\\fltMC.exe \\endpoint-protection-installer-x64.tmp unload fltMC.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZsdE1DLmV4ZSBmbHRNQy5leGUgdW5sb2FkIFxlbmRwb2ludC1wcm90ZWN0aW9uLWluc3RhbGxlci14NjQudG1w')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:36:36 UTC", "rule": "proc_creation_win_uac_bypass_sdclt_0", "phase": "original", "command": "sdclt.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:36:48 UTC", "rule": "proc_creation_win_uac_bypass_sdclt_0", "phase": "insertion", "command": "sdclt.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:37:00 UTC", "rule": "proc_creation_win_uac_bypass_sdclt_0", "phase": "substitution", "command": "sdclt.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:37:13 UTC", "rule": "proc_creation_win_uac_bypass_sdclt_0", "phase": "omission", "command": "sdclt", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:37:19 UTC", "rule": "proc_creation_win_uac_bypass_sdclt_0", "phase": "reordering", "command": "sdclt.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:37:25 UTC", "rule": "proc_creation_win_uac_bypass_sdclt_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2RjbHQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

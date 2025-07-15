@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_empire_powershell_launch_0",
+  "original_command": "-NoP -sta -NonI -W Hidden -Enc -noP -sta -w 1 -enc -NoP -NonI -W Hidden -enc -noP -sta -w 1 -enc -enc SQB -nop -exec bypass -EncodedCommand",
+  "evasions": {
+    "insertion": "-NoP -sta -NonI -W Hidden -Enc -noP -sta -w 1 -enc -NoP -NonI -W Hidden -enc \\\"-noP\\\" -sta -w 1 -enc -enc SQB -nop -exec bypass -EncodedCommand",
+    "substitution": "-NoP -sta -NonI -W Hidden -Enc -noP -sta -w 1 -enc -NoP -NonI -W Hidden -enc -noP -sta -w 1 -enc -enc SQB -nop -exec bypass -EncodedCommand #substitution",
+    "omission": "-NoP -sta -NonI -W Hidden -Enc -noP -sta -w 1 -enc -NoP -NonI -W Hidden -enc -noP -sta -w 1 -enc -enc SQB -nop -exec bypass -EncodedCommand # omission",
+    "reordering": "-NoP -sta -NonI -W Hidden -Enc -noP -sta -w 1 -enc -NoP -NonI -W Hidden -enc -noP -sta -w 1 -enc -enc SQB -nop -exec bypass -EncodedCommand",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBOAG8AUAAgAC0AcwB0AGEAIAAtAE4AbwBuAEkAIAAtAFcAIABIAGkAZABkAGUAbgAgAC0ARQBuAGMAIAAtAG4AbwBQACAALQBzAHQAYQAgAC0AdwAgADEAIAAtAGUAbgBjACAALQBOAG8AUAAgAC0ATgBvAG4ASQAgAC0AVwAgAEgAaQBkAGQAZQBuACAALQBlAG4AYwAgAC0AbgBvAFAAIAAtAHMAdABhACAALQB3ACAAMQAgAC0AZQBuAGMAIAAtAGUAbgBjACAAUwBRAEIAIAAtAG4AbwBwACAALQBlAHgAZQBjACAAYgB5AHAAYQBzAHMAIAAtAEUAbgBjAG8AZABlAGQAQwBvAG0AbQBhAG4AZAA= "
+  }
+}

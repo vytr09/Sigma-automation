@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_conhost_headless_powershell_0",
+  "original_command": "\\conhost.exe CONHOST.EXE --headless powershell",
+  "evasions": {
+    "insertion": "\\conhost.exe CONHOST.EXE \\\"--headless\\\" powershell",
+    "substitution": "\\conhost.exe CONHOST.EXE --headless powershell #substitution",
+    "omission": "\\conhost CONHOST --headless powershell",
+    "reordering": "\\conhost.exe --headless powershell CONHOST.EXE",
+    "recoding": "powershell.exe -EncodedCommand XABjAG8AbgBoAG8AcwB0AC4AZQB4AGUAIABDAE8ATgBIAE8AUwBUAC4ARQBYAEUAIAAtAC0AaABlAGEAZABsAGUAcwBzACAAcABvAHcAZQByAHMAaABlAGwAbAA= "
+  }
+}

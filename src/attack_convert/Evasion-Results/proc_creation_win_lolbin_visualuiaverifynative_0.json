@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_visualuiaverifynative_0",
+  "original_command": "\\VisualUiaVerifyNative.exe VisualUiaVerifyNative.exe",
+  "evasions": {
+    "insertion": "\\VisualUiaVerifyNative.exe \\\"VisualUiaVer\\\"ifyNative.exe",
+    "substitution": "\\VisualUiaVerifyNative.exe VisualUiaVerifyNative.exe #substitution",
+    "omission": "\\VisualUiaVerifyNative VisualUiaVerifyNative",
+    "reordering": "\\VisualUiaVerifyNative.exe VisualUiaVerifyNative.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZpc3VhbFVpYVZlcmlmeU5hdGl2ZS5leGUgVmlzdWFsVWlhVmVyaWZ5TmF0aXZlLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

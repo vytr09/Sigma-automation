@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_mavinject_0",
+  "original_command": "mavinject32.exe mavinject64.exe \\mavinject32.exe \\mavinject64.exe",
+  "evasions": {
+    "insertion": "mavinject32.exe \"mavinject64.exe\" \\mavinject32.exe \\mavinject64.exe",
+    "substitution": "mavinject32.exe mavinject64.exe \\mavinject32.exe \\mavinject64.exe #substitution",
+    "omission": "mavinject32 mavinject64 \\mavinject32 \\mavinject64",
+    "reordering": "mavinject32.exe \\mavinject32.exe mavinject64.exe \\mavinject64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bWF2aW5qZWN0MzIuZXhlIG1hdmluamVjdDY0LmV4ZSBcbWF2aW5qZWN0MzIuZXhlIFxtYXZpbmplY3Q2NC5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_screenconnect_installation_cli_param_0",
+  "original_command": "e=Access& y=Guest& &p= &c= &k=",
+  "evasions": {
+    "insertion": "e=Access& y=Guest& &p= &c= &k=",
+    "substitution": "e=Access& y=Guest& &p= &c= &k= #substitution",
+    "omission": "e=Access& y=Guest& &p= &c= &k= # omission",
+    "reordering": "e=Access& y=Guest& &p= &c= &k=",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZT1BY2Nlc3MmIHk9R3Vlc3QmICZwPSAmYz0gJms9')) | Invoke-Expression\" "
+  }
+}

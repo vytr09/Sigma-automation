@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_iis_appcmd_susp_module_install_0",
+  "original_command": "\\appcmd.exe appcmd.exe install module -name:",
+  "evasions": {
+    "insertion": "\\appcmd.exe \"appcmd.exe\" install module -name:",
+    "substitution": "\\appcmd.exe appcmd.exe install module -name: #substitution",
+    "omission": "\\appcmd appcmd install module -name:",
+    "reordering": "\\appcmd.exe module appcmd.exe install -name:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFwcGNtZC5leGUgYXBwY21kLmV4ZSBpbnN0YWxsIG1vZHVsZSAtbmFtZTo=')) | Invoke-Expression\" "
+  }
+}

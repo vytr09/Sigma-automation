@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_odbcconf_response_file_susp_0",
+  "original_command": "\\odbcconf.exe odbcconf.exe -f .rsp .exe /E /F",
+  "evasions": {
+    "insertion": "\\odbcconf.exe odbcconf.exe -f .rsp .exe /\"{cmd_part1}\" /\"{cmd_part2}\"",
+    "substitution": "\\odbcconf.exe odbcconf.exe -f .rsp .exe /E /F #substitution",
+    "omission": "\\odbcconf odbcconf -f .rsp /E /F",
+    "reordering": "\\odbcconf.exe odbcconf.exe -f .rsp .exe /E /F",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG9kYmNjb25mLmV4ZSBvZGJjY29uZi5leGUgLWYgLnJzcCAuZXhlIC9FIC9G')) | Invoke-Expression\" "
+  }
+}

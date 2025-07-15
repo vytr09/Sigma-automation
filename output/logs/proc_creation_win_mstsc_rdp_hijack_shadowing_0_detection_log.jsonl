@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:11:21 UTC", "rule": "proc_creation_win_mstsc_rdp_hijack_shadowing_0", "phase": "original", "command": "noconsentprompt shadow:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:11:28 UTC", "rule": "proc_creation_win_mstsc_rdp_hijack_shadowing_0", "phase": "insertion", "command": "noconsentprompt \"shadow:\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:11:34 UTC", "rule": "proc_creation_win_mstsc_rdp_hijack_shadowing_0", "phase": "substitution", "command": "noconsentprompt shadow: #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:11:40 UTC", "rule": "proc_creation_win_mstsc_rdp_hijack_shadowing_0", "phase": "omission", "command": "noconsentprompt shadow: # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:11:46 UTC", "rule": "proc_creation_win_mstsc_rdp_hijack_shadowing_0", "phase": "reordering", "command": "noconsentprompt shadow:", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:11:52 UTC", "rule": "proc_creation_win_mstsc_rdp_hijack_shadowing_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bm9jb25zZW50cHJvbXB0IHNoYWRvdzo=')) | Invoke-Expression\" ", "status": "BYPASSED"}

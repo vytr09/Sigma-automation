@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:27:36 UTC", "rule": "proc_creation_win_tscon_localsystem_0", "phase": "original", "command": "\\tscon.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:27:44 UTC", "rule": "proc_creation_win_tscon_localsystem_0", "phase": "insertion", "command": "\\\"t\"\"s\"\"c\"\"o\"\"n\"\".\"\"e\"\"x\"\"e\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:27:51 UTC", "rule": "proc_creation_win_tscon_localsystem_0", "phase": "substitution", "command": "\\tscon.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:27:58 UTC", "rule": "proc_creation_win_tscon_localsystem_0", "phase": "omission", "command": "\\tscon", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:28:07 UTC", "rule": "proc_creation_win_tscon_localsystem_0", "phase": "reordering", "command": "\\tscon.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:28:17 UTC", "rule": "proc_creation_win_tscon_localsystem_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRzY29uLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

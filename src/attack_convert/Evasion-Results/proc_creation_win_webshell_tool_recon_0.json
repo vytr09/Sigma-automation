@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_webshell_tool_recon_0",
+  "original_command": "\\caddy.exe \\httpd.exe \\nginx.exe \\php-cgi.exe \\w3wp.exe \\ws_tomcatservice.exe \\java.exe \\javaw.exe \\java.exe \\javaw.exe CATALINA_HOME catalina.jar perl --help perl -h python --help python -h python3 --help python3 -h wget --help",
+  "evasions": {
+    "insertion": "\\caddy.exe \\httpd.exe \\nginx.exe \\php-cgi.exe \\w3wp.exe \\ws_tomcatservice.exe \\java.exe \\javaw.exe \\java.exe \\javaw.exe CATALINA_HOME catalina.jar pe\"rl\" --help perl -h python --help python -h python3 --help python3 -h wget --help",
+    "substitution": "\\caddy.exe \\httpd.exe \\nginx.exe \\php--continuegi.exe \\w3wp.exe \\ws_tomcatservice.exe \\java.exe \\javaw.exe \\java.exe \\javaw.exe CATALINA_HOME catalina.jar perl --help perl -h python --help python -h python3 --help python3 -h wget --help",
+    "omission": "\\caddy \\httpd \\nginx \\php-cgi \\w3wp \\ws_tomcatservice \\java \\javaw \\java \\javaw CATALINA_HOME catalina.jar perl --help perl -h python --help python -h python3 --help python3 -h wget --help",
+    "reordering": "\\caddy.exe \\httpd.exe \\nginx.exe \\php-cgi.exe \\w3wp.exe \\ws_tomcatservice.exe \\java.exe \\javaw.exe \\java.exe \\javaw.exe CATALINA_HOME catalina.jar perl --help perl -h python --help python -h python3 --help python3 -h wget --help",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNhZGR5LmV4ZSBcaHR0cGQuZXhlIFxuZ2lueC5leGUgXHBocC1jZ2kuZXhlIFx3M3dwLmV4ZSBcd3NfdG9tY2F0c2VydmljZS5leGUgXGphdmEuZXhlIFxqYXZhdy5leGUgXGphdmEuZXhlIFxqYXZhdy5leGUgQ0FUQUxJTkFfSE9NRSBjYXRhbGluYS5qYXIgcGVybCAtLWhlbHAgcGVybCAtaCBweXRob24gLS1oZWxwIHB5dGhvbiAtaCBweXRob24zIC0taGVscCBweXRob24zIC1oIHdnZXQgLS1oZWxw')) | Invoke-Expression\" "
+  }
+}

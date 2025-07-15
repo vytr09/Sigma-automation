@@ -2,7 +2,7 @@
   "rule_name": "win_hack_koadic_0",
   "original_command": "cmd.exe /q /c chcp",
   "evasions": {
-    "insertion": "cmd.exe /q /c \"ch\"cp",
+    "insertion": "cmd.exe /\"{cmd_part}\" /c chcp",
     "substitution": "cmd.exe /q -c chcp",
     "omission": "cmd /q /c chcp",
     "reordering": "cmd.exe /q /c chcp",

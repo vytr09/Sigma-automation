@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_splwow64_cli_anomaly_0",
+  "original_command": "\\splwow64.exe",
+  "evasions": {
+    "insertion": "\\\"s\"\"p\"\"l\"\"w\"\"o\"\"w\"\"6\"\"4\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\splwow64.exe #substitution",
+    "omission": "\\splwow64",
+    "reordering": "\\splwow64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNwbHdvdzY0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mpcmdrun_dll_sideload_defender_0",
+  "original_command": "\\MpCmdRun.exe \\NisSrv.exe",
+  "evasions": {
+    "insertion": "\"\\MpCmdRun.exe\" \\NisSrv.exe",
+    "substitution": "\\MpCmdRun.exe \\NisSrv.exe #substitution",
+    "omission": "\\MpCmdRun \\NisSrv",
+    "reordering": "\\MpCmdRun.exe \\NisSrv.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1wQ21kUnVuLmV4ZSBcTmlzU3J2LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

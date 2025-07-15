@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_right_to_left_override_0",
+  "original_command": "‮",
+  "evasions": {
+    "insertion": "‮",
+    "substitution": "‮ #substitution",
+    "omission": "‮ # omission",
+    "reordering": "‮",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('4oCu')) | Invoke-Expression\" "
+  }
+}

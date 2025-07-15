@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_advancedrun_0",
+  "original_command": "AdvancedRun.exe /EXEFilename /Run /WindowState 0 /RunAs /CommandLine",
+  "evasions": {
+    "insertion": "AdvancedRun.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\" /Run /WindowState 0 /RunAs /CommandLine",
+    "substitution": "AdvancedRun.exe /EXEFilename /Run /WindowState 0 /RunAs /CommandLine #substitution",
+    "omission": "AdvancedRun /EXEFilename /Run /WindowState 0 /RunAs /CommandLine",
+    "reordering": "AdvancedRun.exe /EXEFilename /Run /WindowState 0 /RunAs /CommandLine",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QWR2YW5jZWRSdW4uZXhlIC9FWEVGaWxlbmFtZSAvUnVuIC9XaW5kb3dTdGF0ZSAwIC9SdW5BcyAvQ29tbWFuZExpbmU=')) | Invoke-Expression\" "
+  }
+}

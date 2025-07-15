@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_obfuscated_ip_via_cli_0",
+  "original_command": "\\ping.exe \\arp.exe 0x //0x .0x .00x http://% %2e",
+  "evasions": {
+    "insertion": "\\ping.exe \"\\arp.exe\" 0x //0x .0x .00x http://% %2e",
+    "substitution": "\\ping.exe \\arp.exe 0x //0x .0x .00x http://% %2e #substitution",
+    "omission": "\\ping \\arp 0x //0x .0x .00x http://% %2e",
+    "reordering": "\\ping.exe \\arp.exe 0x //0x .0x .00x http://% %2e",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBpbmcuZXhlIFxhcnAuZXhlIDB4IC8vMHggLjB4IC4wMHggaHR0cDovLyUgJTJl')) | Invoke-Expression\" "
+  }
+}

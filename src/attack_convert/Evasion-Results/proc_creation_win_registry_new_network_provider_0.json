@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_new_network_provider_0",
+  "original_command": "\\System\\CurrentControlSet\\Services\\ \\NetworkProvider",
+  "evasions": {
+    "insertion": "\\System\\CurrentControlSet\\Services\\ \\\"\\Network\\\"Provider",
+    "substitution": "\\System\\CurrentControlSet\\Services\\ \\NetworkProvider #substitution",
+    "omission": "\\System\\CurrentControlSet\\Services\\ \\NetworkProvider # omission",
+    "reordering": "\\System\\CurrentControlSet\\Services\\ \\NetworkProvider",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbVxDdXJyZW50Q29udHJvbFNldFxTZXJ2aWNlc1wgXE5ldHdvcmtQcm92aWRlcg==')) | Invoke-Expression\" "
+  }
+}

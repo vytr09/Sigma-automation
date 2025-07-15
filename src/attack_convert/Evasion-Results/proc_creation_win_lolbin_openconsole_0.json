@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_openconsole_0",
+  "original_command": "OpenConsole.exe \\OpenConsole.exe",
+  "evasions": {
+    "insertion": "OpenConsole.exe \\\"O\"\"p\"\"e\"\"n\"\"C\"\"o\"\"n\"\"s\"\"o\"\"l\"\"e\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "OpenConsole.exe \\OpenConsole.exe #substitution",
+    "omission": "OpenConsole \\OpenConsole",
+    "reordering": "OpenConsole.exe \\OpenConsole.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('T3BlbkNvbnNvbGUuZXhlIFxPcGVuQ29uc29sZS5leGU=')) | Invoke-Expression\" "
+  }
+}

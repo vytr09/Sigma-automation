@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msdt_arbitrary_command_execution_0",
+  "original_command": "\\msdt.exe msdt.exe IT_BrowseForFile= PCWDiagnostic -af",
+  "evasions": {
+    "insertion": "\\msdt.exe msdt.exe IT_BrowseForFile= PCWDiagnostic \"-\"af",
+    "substitution": "\\msdt.exe msdt.exe IT_BrowseForFile= PCWDiagnostic -af #substitution",
+    "omission": "\\msdt msdt IT_BrowseForFile= PCWDiagnostic -af",
+    "reordering": "\\msdt.exe PCWDiagnostic msdt.exe -af IT_BrowseForFile=",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zZHQuZXhlIG1zZHQuZXhlIElUX0Jyb3dzZUZvckZpbGU9IFBDV0RpYWdub3N0aWMgLWFm')) | Invoke-Expression\" "
+  }
+}

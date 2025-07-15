@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:58:48 UTC", "rule": "proc_creation_win_mshta_http_0", "phase": "original", "command": "\\mshta.exe MSHTA.EXE http:// https:// ftp://", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:58:55 UTC", "rule": "proc_creation_win_mshta_http_0", "phase": "insertion", "command": "\\mshta.exe \"MSHT\"A.EXE http:// https:// ftp://", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:59:02 UTC", "rule": "proc_creation_win_mshta_http_0", "phase": "substitution", "command": "\\mshta.exe MSHTA.EXE hxxp:// https:// ftp://", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:59:10 UTC", "rule": "proc_creation_win_mshta_http_0", "phase": "omission", "command": "\\mshta MSHTA http:// https:// ftp://", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:59:16 UTC", "rule": "proc_creation_win_mshta_http_0", "phase": "reordering", "command": "\\mshta.exe ftp:// http:// https:// MSHTA.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:59:22 UTC", "rule": "proc_creation_win_mshta_http_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaHRhLmV4ZSBNU0hUQS5FWEUgaHR0cDovLyBodHRwczovLyBmdHA6Ly8=')) | Invoke-Expression\" ", "status": "BYPASSED"}

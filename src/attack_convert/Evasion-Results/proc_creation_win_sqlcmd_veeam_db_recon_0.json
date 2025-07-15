@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sqlcmd_veeam_db_recon_0",
+  "original_command": "\\sqlcmd.exe VeeamBackup From BackupRepositories Backups Credentials HostCreds SmbFileShares Ssh_creds VSphereInfo",
+  "evasions": {
+    "insertion": "\\sqlcmd.exe VeeamBackup From BackupRepositories Backups Credentials HostCreds SmbFileShares Ssh_\"creds\" VSphereInfo",
+    "substitution": "\\sqlcmd.exe VeeamBackup From BackupRepositories Backups Credentials HostCreds SmbFileShares Ssh_creds VSphereInfo #substitution",
+    "omission": "\\sqlcmd VeeamBackup From BackupRepositories Backups Credentials HostCreds SmbFileShares Ssh_creds VSphereInfo",
+    "reordering": "\\sqlcmd.exe VeeamBackup From BackupRepositories Backups Credentials HostCreds SmbFileShares Ssh_creds VSphereInfo",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxbGNtZC5leGUgVmVlYW1CYWNrdXAgRnJvbSBCYWNrdXBSZXBvc2l0b3JpZXMgQmFja3VwcyBDcmVkZW50aWFscyBIb3N0Q3JlZHMgU21iRmlsZVNoYXJlcyBTc2hfY3JlZHMgVlNwaGVyZUluZm8=')) | Invoke-Expression\" "
+  }
+}

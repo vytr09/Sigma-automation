@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_git_susp_clone_0",
+  "original_command": "\\git.exe \\git-remote-https.exe git.exe clone git-remote-https exploit Vulns vulnerability RemoteCodeExecution Invoke- CVE- poc- ProofOfConcept proxyshell log4shell eternalblue eternal-blue MS17-",
+  "evasions": {
+    "insertion": "\\git.exe \\git-remote-https.exe git.exe clone git-remote-https exploit Vulns vulnerability RemoteCodeExecution Invoke- CVE- poc- ProofOfConcept proxyshell log4shell eternalblue \\\"eternal-blue\\\" \\\"MS17-\\\"",
+    "substitution": "\\git.exe \\git-remote-https.exe git.exe clone git-remote-https exploit Vulns vulnerability RemoteCodeExecution Invoke- CVE- poc- ProofOfConcept proxyshell log4shell eternalblue eternal-blue MS17- #substitution",
+    "omission": "\\git \\git-remote-https git clone git-remote-https exploit Vulns vulnerability RemoteCodeExecution Invoke- CVE- poc- ProofOfConcept proxyshell log4shell eternalblue eternal-blue MS17-",
+    "reordering": "\\git.exe \\git-remote-https.exe git.exe clone git-remote-https exploit Vulns vulnerability RemoteCodeExecution Invoke- CVE- poc- ProofOfConcept proxyshell log4shell eternalblue eternal-blue MS17-",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdpdC5leGUgXGdpdC1yZW1vdGUtaHR0cHMuZXhlIGdpdC5leGUgY2xvbmUgZ2l0LXJlbW90ZS1odHRwcyBleHBsb2l0IFZ1bG5zIHZ1bG5lcmFiaWxpdHkgUmVtb3RlQ29kZUV4ZWN1dGlvbiBJbnZva2UtIENWRS0gcG9jLSBQcm9vZk9mQ29uY2VwdCBwcm94eXNoZWxsIGxvZzRzaGVsbCBldGVybmFsYmx1ZSBldGVybmFsLWJsdWUgTVMxNy0=')) | Invoke-Expression\" "
+  }
+}

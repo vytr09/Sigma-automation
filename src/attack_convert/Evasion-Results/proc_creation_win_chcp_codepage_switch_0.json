@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_chcp_codepage_switch_0",
+  "original_command": "\\chcp.com",
+  "evasions": {
+    "insertion": "\\\"c\"\"h\"\"c\"\"p\"\".\"\"c\"\"o\"\"m\"",
+    "substitution": "\\chcp.com #substitution",
+    "omission": "\\chcp.com # omission",
+    "reordering": "\\chcp.com",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNoY3AuY29t')) | Invoke-Expression\" "
+  }
+}

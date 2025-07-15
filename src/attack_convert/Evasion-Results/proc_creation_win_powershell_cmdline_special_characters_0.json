@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_cmdline_special_characters_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new EventSource( public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe PowerShell.EXE \"pwsh\".dll new EventSource( public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new EventSource( public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle); #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll new EventSource( public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll new EventSource( public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAG4AZQB3ACAARQB2AGUAbgB0AFMAbwB1AHIAYwBlACgAIABwAHUAYgBsAGkAYwAgAHMAdABhAHQAaQBjACAAZQB4AHQAZQByAG4AIABiAG8AbwBsACAASQBuAHMAdABhAGwAbABFAEwAQQBNAEMAZQByAHQAaQBmAGkAYwBhAHQAZQBJAG4AZgBvACgAUwBhAGYAZQBGAGkAbABlAEgAYQBuAGQAbABlACAAaABhAG4AZABsAGUAKQA7AA== "
+  }
+}

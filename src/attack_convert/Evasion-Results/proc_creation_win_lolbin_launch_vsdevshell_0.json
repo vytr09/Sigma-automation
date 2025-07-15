@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_launch_vsdevshell_0",
+  "original_command": "Launch-VsDevShell.ps1 VsWherePath VsInstallationPath",
+  "evasions": {
+    "insertion": "Launch-VsDevShell.ps1 \"V\"\"s\"\"W\"\"h\"\"e\"\"r\"\"e\"\"P\"\"a\"\"t\"\"h\" VsInstallationPath",
+    "substitution": "Launch-VsDevShell.ps1 VsWherePath VsInstallationPath #substitution",
+    "omission": "Launch-VsDevShell VsWherePath VsInstallationPath",
+    "reordering": "Launch-VsDevShell.ps1 VsWherePath VsInstallationPath",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TGF1bmNoLVZzRGV2U2hlbGwucHMxIFZzV2hlcmVQYXRoIFZzSW5zdGFsbGF0aW9uUGF0aA==')) | Invoke-Expression\" "
+  }
+}

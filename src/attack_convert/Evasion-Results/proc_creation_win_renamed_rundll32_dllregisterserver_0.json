@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_rundll32_dllregisterserver_0",
+  "original_command": "DllRegisterServer \\rundll32.exe",
+  "evasions": {
+    "insertion": "DllRegisterServer \\\"\\rundll32.exe\\\"",
+    "substitution": "DllRegisterServer \\rundll32.exe #substitution",
+    "omission": "DllRegisterServer \\rundll32",
+    "reordering": "DllRegisterServer \\rundll32.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RGxsUmVnaXN0ZXJTZXJ2ZXIgXHJ1bmRsbDMyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

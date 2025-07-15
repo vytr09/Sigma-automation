@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_install_reg_debugger_backdoor_0",
+  "original_command": "\\CurrentVersion\\Image File Execution Options\\ sethc.exe utilman.exe osk.exe magnify.exe narrator.exe displayswitch.exe atbroker.exe HelpPane.exe",
+  "evasions": {
+    "insertion": "\\CurrentVersion\\Image File Execution Options\\ sethc.exe utilman.exe osk.exe magnify.exe \"narrator.exe\" \"displayswitch.exe\" atbroker.exe HelpPane.exe",
+    "substitution": "\\CurrentVersion\\Image File Execution Options\\ sethc.exe utilman.exe osk.exe magnify.exe narrator.exe displayswitch.exe atbroker.exe HelpPane.exe #substitution",
+    "omission": "\\CurrentVersion\\Image File Execution Options\\ sethc utilman osk magnify narrator displayswitch atbroker HelpPane",
+    "reordering": "\\CurrentVersion\\Image File Execution Options\\ sethc.exe utilman.exe osk.exe magnify.exe narrator.exe displayswitch.exe atbroker.exe HelpPane.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEN1cnJlbnRWZXJzaW9uXEltYWdlIEZpbGUgRXhlY3V0aW9uIE9wdGlvbnNcIHNldGhjLmV4ZSB1dGlsbWFuLmV4ZSBvc2suZXhlIG1hZ25pZnkuZXhlIG5hcnJhdG9yLmV4ZSBkaXNwbGF5c3dpdGNoLmV4ZSBhdGJyb2tlci5leGUgSGVscFBhbmUuZXhl')) | Invoke-Expression\" "
+  }
+}

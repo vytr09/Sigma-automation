@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmdkey_recon_0",
+  "original_command": "\\cmdkey.exe cmdkey.exe -l",
+  "evasions": {
+    "insertion": "\\cmdkey.exe \"cmdkey.exe\" -l",
+    "substitution": "\\cmdkey.exe cmdkey.exe -l #substitution",
+    "omission": "\\cmdkey cmdkey -l",
+    "reordering": "\\cmdkey.exe cmdkey.exe -l",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZGtleS5leGUgY21ka2V5LmV4ZSAtbA==')) | Invoke-Expression\" "
+  }
+}

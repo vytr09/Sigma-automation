@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bitsadmin_potential_persistence_0",
+  "original_command": "\\bitsadmin.exe bitsadmin.exe /SetNotifyCmdLine %COMSPEC% cmd.exe regsvr32.exe /Addfile http: https: ftp: ftps:",
+  "evasions": {
+    "insertion": "\\bitsadmin.exe bitsadmin.exe /SetNotifyCmdLine %COMSPEC% cmd.exe \\\"regsvr\\\"32.exe /Addfile http: https: ftp: ftps:",
+    "substitution": "\\bitsadmin.exe bitsadmin.exe /SetNotifyCmdLine %COMSPEC% cmd.exe regsvr32.exe -addfile http: https: ftp: ftps:",
+    "omission": "\\bitsadmin bitsadmin /SetNotifyCmdLine %COMSPEC% cmd regsvr32 /Addfile http: https: ftp: ftps:",
+    "reordering": "\\bitsadmin.exe bitsadmin.exe /SetNotifyCmdLine %COMSPEC% cmd.exe regsvr32.exe /Addfile http: https: ftp: ftps:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJpdHNhZG1pbi5leGUgYml0c2FkbWluLmV4ZSAvU2V0Tm90aWZ5Q21kTGluZSAlQ09NU1BFQyUgY21kLmV4ZSByZWdzdnIzMi5leGUgL0FkZGZpbGUgaHR0cDogaHR0cHM6IGZ0cDogZnRwczo=')) | Invoke-Expression\" "
+  }
+}

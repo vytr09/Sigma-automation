@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 09:14:51 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "omission", "command": "powershell -version 2", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:14:58 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "reordering", "command": "powershell.exe 2 -version", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:15:06 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB2AGUAcgBzAGkAbwBuACAAMgA=", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:58:13 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "original", "command": "powershell.exe -version 2", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:58:20 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "insertion", "command": "powershell.exe -version \\\"2\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:58:24 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "substitution", "command": "powershell.exe -version 2 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:58:28 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "omission", "command": "powershell -version 2", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:58:39 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "reordering", "command": "powershell.exe 2 -version", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:58:43 UTC", "rule": "win_powershell_downgrade_attack_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB2AGUAcgBzAGkAbwBuACAAMgA= ", "status": "BYPASSED"}

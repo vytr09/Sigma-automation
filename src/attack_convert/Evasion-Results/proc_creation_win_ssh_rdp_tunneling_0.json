@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ssh_rdp_tunneling_0",
+  "original_command": "\\ssh.exe :3389",
+  "evasions": {
+    "insertion": "\\\"s\"\"s\"\"h\"\".\"\"e\"\"x\"\"e\" :3389",
+    "substitution": "\\ssh.exe :3389 #substitution",
+    "omission": "\\ssh :3389",
+    "reordering": "\\ssh.exe :3389",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNzaC5leGUgOjMzODk=')) | Invoke-Expression\" "
+  }
+}

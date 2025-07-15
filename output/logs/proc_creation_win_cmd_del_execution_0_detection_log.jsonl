@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:37:48 UTC", "rule": "proc_creation_win_cmd_del_execution_0", "phase": "original", "command": "\\cmd.exe Cmd.Exe del erase -f -s -q", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:37:59 UTC", "rule": "proc_creation_win_cmd_del_execution_0", "phase": "insertion", "command": "\\cmd.exe Cmd.Exe del erase -f \\\"-\\\"\\\"s\\\" -q", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:38:17 UTC", "rule": "proc_creation_win_cmd_del_execution_0", "phase": "substitution", "command": "\\cmd.exe Cmd.Exe del erase -f -s -q #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:38:26 UTC", "rule": "proc_creation_win_cmd_del_execution_0", "phase": "omission", "command": "\\cmd Cmd del erase -f -s -q", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:38:33 UTC", "rule": "proc_creation_win_cmd_del_execution_0", "phase": "reordering", "command": "\\cmd.exe Cmd.Exe del erase -f -s -q", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:38:42 UTC", "rule": "proc_creation_win_cmd_del_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBkZWwgZXJhc2UgLWYgLXMgLXE=')) | Invoke-Expression\" ", "status": "BYPASSED"}

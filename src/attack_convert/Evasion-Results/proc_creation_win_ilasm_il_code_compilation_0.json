@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ilasm_il_code_compilation_0",
+  "original_command": "\\ilasm.exe ilasm.exe /dll /exe",
+  "evasions": {
+    "insertion": "\\ilasm.exe ilasm.exe /dll /\"{cmd_part}\"",
+    "substitution": "\\ilasm.exe ilasm.exe /dll /exe #substitution",
+    "omission": "\\ilasm ilasm /dll /exe",
+    "reordering": "\\ilasm.exe ilasm.exe /dll /exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGlsYXNtLmV4ZSBpbGFzbS5leGUgL2RsbCAvZXhl')) | Invoke-Expression\" "
+  }
+}

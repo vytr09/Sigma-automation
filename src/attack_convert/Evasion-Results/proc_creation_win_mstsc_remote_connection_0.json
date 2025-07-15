@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mstsc_remote_connection_0",
+  "original_command": "\\mstsc.exe mstsc.exe /v: C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+  "evasions": {
+    "insertion": "\\mstsc.exe mstsc.exe /v: \"C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp\"",
+    "substitution": "\\mstsc.exe mstsc.exe /v: C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp #substitution",
+    "omission": "\\mstsc mstsc /v: C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+    "reordering": "\\mstsc.exe mstsc.exe /v: C:\\ProgramData\\Microsoft\\WSL\\wslg.rdp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zdHNjLmV4ZSBtc3RzYy5leGUgL3Y6IEM6XFByb2dyYW1EYXRhXE1pY3Jvc29mdFxXU0xcd3NsZy5yZHA=')) | Invoke-Expression\" "
+  }
+}

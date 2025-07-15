@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:14:56 UTC", "rule": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0", "phase": "original", "command": "InfDefaultInstall.exe .inf", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:15:08 UTC", "rule": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0", "phase": "insertion", "command": "InfDefaultInstall.exe \\\".inf\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:15:15 UTC", "rule": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0", "phase": "substitution", "command": "InfDefaultInstall.exe .inf #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:15:32 UTC", "rule": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0", "phase": "omission", "command": "InfDefaultInstall .inf", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:15:43 UTC", "rule": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0", "phase": "reordering", "command": "InfDefaultInstall.exe .inf", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:15:50 UTC", "rule": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW5mRGVmYXVsdEluc3RhbGwuZXhlIC5pbmY=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vscode_tunnel_service_install_0",
+  "original_command": "tunnel service internal-run tunnel-service.log",
+  "evasions": {
+    "insertion": "tunnel \"service\" internal-run tunnel-service.log",
+    "substitution": "tunnel service internal-run tunnel-service.log #substitution",
+    "omission": "tunnel service internal-run tunnel-service.log # omission",
+    "reordering": "tunnel service internal-run tunnel-service.log",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHVubmVsIHNlcnZpY2UgaW50ZXJuYWwtcnVuIHR1bm5lbC1zZXJ2aWNlLmxvZw==')) | Invoke-Expression\" "
+  }
+}

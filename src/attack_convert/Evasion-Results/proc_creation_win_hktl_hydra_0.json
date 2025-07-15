@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_hydra_0",
+  "original_command": "-u -p ^USER^ ^PASS^",
+  "evasions": {
+    "insertion": "-u -p ^USER^ \"^PASS^\"",
+    "substitution": "-u -p ^USER^ ^PASS^ #substitution",
+    "omission": "-u -p ^USER^ ^PASS^ # omission",
+    "reordering": "-u -p ^USER^ ^PASS^",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LXUgLXAgXlVTRVJeIF5QQVNTXg==')) | Invoke-Expression\" "
+  }
+}

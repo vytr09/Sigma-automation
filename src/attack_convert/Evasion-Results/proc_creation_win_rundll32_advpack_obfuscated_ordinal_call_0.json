@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_advpack_obfuscated_ordinal_call_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE rundll32 advpack #+ 12 #-",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE rundll32 advpack \"#+\" \"12\" #-",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE rundll32 advpack #+ 12 #- #substitution",
+    "omission": "\\rundll32 RUNDLL32 rundll32 advpack #+ 12 #-",
+    "reordering": "\\rundll32.exe RUNDLL32.EXE rundll32 advpack #+ 12 #-",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgcnVuZGxsMzIgYWR2cGFjayAjKyAxMiAjLQ==')) | Invoke-Expression\" "
+  }
+}

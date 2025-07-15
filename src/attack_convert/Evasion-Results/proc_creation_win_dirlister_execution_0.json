@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dirlister_execution_0",
+  "original_command": "DirLister.exe \\dirlister.exe",
+  "evasions": {
+    "insertion": "DirLister.exe \"\\dirlister.exe\"",
+    "substitution": "DirLister.exe \\dirlister.exe #substitution",
+    "omission": "DirLister \\dirlister",
+    "reordering": "DirLister.exe \\dirlister.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RGlyTGlzdGVyLmV4ZSBcZGlybGlzdGVyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

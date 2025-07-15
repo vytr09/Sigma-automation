@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_hotfix_0",
+  "original_command": "wmic.exe \\WMIC.exe qfe",
+  "evasions": {
+    "insertion": "wmic.exe \"\\WMIC.exe\" \"qfe\"",
+    "substitution": "wmic.exe \\WMIC.exe qfe #substitution",
+    "omission": "wmic \\WMIC qfe",
+    "reordering": "wmic.exe qfe \\WMIC.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYy5leGUgXFdNSUMuZXhlIHFmZQ==')) | Invoke-Expression\" "
+  }
+}

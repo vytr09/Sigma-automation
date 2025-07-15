@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_frp_0",
+  "original_command": "\\frpc.exe \\frps.exe \\frpc.ini",
+  "evasions": {
+    "insertion": "\\frpc.exe \\\"\\frps.exe\\\" \\frpc.ini",
+    "substitution": "\\frpc.exe \\frps.exe \\frpc.ini #substitution",
+    "omission": "\\frpc \\frps \\frpc.ini",
+    "reordering": "\\frpc.exe \\frpc.ini \\frps.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZycGMuZXhlIFxmcnBzLmV4ZSBcZnJwYy5pbmk=')) | Invoke-Expression\" "
+  }
+}

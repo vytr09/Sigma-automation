@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 07:35:57 UTC", "rule": "proc_creation_win_cmd_curl_download_exec_combo_0", "phase": "original", "command": "-c curl http -o &", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:36:24 UTC", "rule": "proc_creation_win_cmd_curl_download_exec_combo_0", "phase": "insertion", "command": "-c curl http -o &", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:36:39 UTC", "rule": "proc_creation_win_cmd_curl_download_exec_combo_0", "phase": "substitution", "command": "-c curl http --output &", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:36:53 UTC", "rule": "proc_creation_win_cmd_curl_download_exec_combo_0", "phase": "omission", "command": "-c curl http -o & # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 07:37:23 UTC", "rule": "proc_creation_win_cmd_curl_download_exec_combo_0", "phase": "reordering", "command": "-c curl http -o &", "status": "DETECTED"}
+{"timestamp": "2025-06-23 07:37:39 UTC", "rule": "proc_creation_win_cmd_curl_download_exec_combo_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWMgY3VybCBodHRwIC1vICY=')) | Invoke-Expression\" ", "status": "BYPASSED"}

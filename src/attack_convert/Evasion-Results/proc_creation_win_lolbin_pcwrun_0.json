@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_pcwrun_0",
+  "original_command": "\\pcwrun.exe",
+  "evasions": {
+    "insertion": "\"\\pcwrun.exe\"",
+    "substitution": "\\pcwrun.exe #substitution",
+    "omission": "\\pcwrun",
+    "reordering": "\\pcwrun.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBjd3J1bi5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mssql_veaam_susp_child_processes_0",
+  "original_command": "\\sqlservr.exe VEEAMSQL \\cmd.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\wt.exe -ex bypass cscript DownloadString http:// https:// mshta regsvr32 rundll32 wscript copy \\net.exe \\net1.exe \\netstat.exe \\nltest.exe \\ping.exe \\tasklist.exe \\whoami.exe",
+  "evasions": {
+    "insertion": "\\sqlservr.exe VEEAMSQL \\cmd.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\wt.exe -ex bypass cscript DownloadString http:// https:// mshta regsvr32 \"rundll32\" wscript copy \\net.exe \\net1.exe \\netstat.exe \\nltest.exe \\ping.exe \\tasklist.exe \\whoami.exe",
+    "substitution": "\\sqlservr.exe VEEAMSQL \\cmd.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\wt.exe -ex bypass cscript DownloadString hxxp:// https:// mshta regsvr32 rundll32 wscript copy \\net.exe \\net1.exe \\netstat.exe \\nltest.exe \\ping.exe \\tasklist.exe \\whoami.exe",
+    "omission": "\\sqlservr VEEAMSQL \\cmd \\powershell \\pwsh \\wsl \\wt -ex bypass cscript DownloadString http:// https:// mshta regsvr32 rundll32 wscript copy \\net \\net1 \\netstat \\nltest \\ping \\tasklist \\whoami",
+    "reordering": "\\sqlservr.exe VEEAMSQL \\cmd.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\wt.exe -ex bypass cscript DownloadString http:// https:// mshta regsvr32 rundll32 wscript copy \\net.exe \\net1.exe \\netstat.exe \\nltest.exe \\ping.exe \\tasklist.exe \\whoami.exe",
+    "recoding": "powershell.exe -EncodedCommand XABzAHEAbABzAGUAcgB2AHIALgBlAHgAZQAgAFYARQBFAEEATQBTAFEATAAgAFwAYwBtAGQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHcAcwBsAC4AZQB4AGUAIABcAHcAdAAuAGUAeABlACAALQBlAHgAIABiAHkAcABhAHMAcwAgAGMAcwBjAHIAaQBwAHQAIABEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAIABoAHQAdABwADoALwAvACAAaAB0AHQAcABzADoALwAvACAAbQBzAGgAdABhACAAcgBlAGcAcwB2AHIAMwAyACAAcgB1AG4AZABsAGwAMwAyACAAdwBzAGMAcgBpAHAAdAAgAGMAbwBwAHkAIABcAG4AZQB0AC4AZQB4AGUAIABcAG4AZQB0ADEALgBlAHgAZQAgAFwAbgBlAHQAcwB0AGEAdAAuAGUAeABlACAAXABuAGwAdABlAHMAdAAuAGUAeABlACAAXABwAGkAbgBnAC4AZQB4AGUAIABcAHQAYQBzAGsAbABpAHMAdAAuAGUAeABlACAAXAB3AGgAbwBhAG0AaQAuAGUAeABlAA== "
+  }
+}

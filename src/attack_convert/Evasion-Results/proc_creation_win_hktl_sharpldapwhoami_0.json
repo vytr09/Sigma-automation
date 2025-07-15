@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharpldapwhoami_0",
+  "original_command": "\\SharpLdapWhoami.exe SharpLdapWhoami",
+  "evasions": {
+    "insertion": "\\SharpLdapWhoami.exe \\\"SharpLdapWhoami\\\"",
+    "substitution": "\\SharpLdapWhoami.exe SharpLdapWhoami #substitution",
+    "omission": "\\SharpLdapWhoami SharpLdapWhoami",
+    "reordering": "\\SharpLdapWhoami.exe SharpLdapWhoami",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwTGRhcFdob2FtaS5leGUgU2hhcnBMZGFwV2hvYW1p')) | Invoke-Expression\" "
+  }
+}

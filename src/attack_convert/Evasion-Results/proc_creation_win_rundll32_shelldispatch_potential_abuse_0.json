@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_shelldispatch_potential_abuse_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE RunDll_ShellExecuteW",
+  "evasions": {
+    "insertion": "\\rundll32.exe \"RUNDLL\"32.EXE RunDll_ShellExecuteW",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE RunDll_ShellExecuteW #substitution",
+    "omission": "\\rundll32 RUNDLL32 RunDll_ShellExecuteW",
+    "reordering": "\\rundll32.exe RunDll_ShellExecuteW RUNDLL32.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgUnVuRGxsX1NoZWxsRXhlY3V0ZVc=')) | Invoke-Expression\" "
+  }
+}

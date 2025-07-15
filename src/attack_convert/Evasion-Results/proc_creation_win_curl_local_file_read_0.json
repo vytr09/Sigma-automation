@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_local_file_read_0",
+  "original_command": "\\curl.exe curl.exe file:///",
+  "evasions": {
+    "insertion": "\\curl.exe curl\\\".exe\\\" file:///",
+    "substitution": "\\curl.exe curl.exe file:/// #substitution",
+    "omission": "\\curl curl file:///",
+    "reordering": "\\curl.exe curl.exe file:///",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIGZpbGU6Ly8v')) | Invoke-Expression\" "
+  }
+}

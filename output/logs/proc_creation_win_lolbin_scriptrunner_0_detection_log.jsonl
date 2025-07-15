@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:43:28 UTC", "rule": "proc_creation_win_lolbin_scriptrunner_0", "phase": "original", "command": "\\ScriptRunner.exe ScriptRunner.exe -appvscript", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:35 UTC", "rule": "proc_creation_win_lolbin_scriptrunner_0", "phase": "insertion", "command": "\\ScriptRunner.exe ScriptRu\"nner.exe\" -appvscript", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:41 UTC", "rule": "proc_creation_win_lolbin_scriptrunner_0", "phase": "substitution", "command": "\\ScriptRunner.exe ScriptRunner.exe -appvscript #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:43:47 UTC", "rule": "proc_creation_win_lolbin_scriptrunner_0", "phase": "omission", "command": "\\ScriptRunner ScriptRunner -appvscript", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:53 UTC", "rule": "proc_creation_win_lolbin_scriptrunner_0", "phase": "reordering", "command": "\\ScriptRunner.exe -appvscript ScriptRunner.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:43:59 UTC", "rule": "proc_creation_win_lolbin_scriptrunner_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNjcmlwdFJ1bm5lci5leGUgU2NyaXB0UnVubmVyLmV4ZSAtYXBwdnNjcmlwdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

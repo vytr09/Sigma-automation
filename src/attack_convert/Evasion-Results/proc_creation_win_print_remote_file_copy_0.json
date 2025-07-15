@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_print_remote_file_copy_0",
+  "original_command": "\\print.exe /D .exe print.exe",
+  "evasions": {
+    "insertion": "\\print.exe /D \".exe\" \"print.exe\"",
+    "substitution": "\\print.exe /D .exe print.exe #substitution",
+    "omission": "\\print /D print",
+    "reordering": "\\print.exe /D .exe print.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByaW50LmV4ZSAvRCAuZXhlIHByaW50LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

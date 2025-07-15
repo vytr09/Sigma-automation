@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_vmnat_0",
+  "original_command": "vmnat.exe vmnat.exe",
+  "evasions": {
+    "insertion": "vmnat.exe vmna\\\"t.exe\\\"",
+    "substitution": "vmnat.exe vmnat.exe #substitution",
+    "omission": "vmnat vmnat",
+    "reordering": "vmnat.exe vmnat.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dm1uYXQuZXhlIHZtbmF0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 18:09:27 UTC", "rule": "proc_creation_win_wmic_recon_hotfix_0", "phase": "original", "command": "wmic.exe \\WMIC.exe qfe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:09:35 UTC", "rule": "proc_creation_win_wmic_recon_hotfix_0", "phase": "insertion", "command": "wmic.exe \"\\WMIC.exe\" \"qfe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:09:41 UTC", "rule": "proc_creation_win_wmic_recon_hotfix_0", "phase": "substitution", "command": "wmic.exe \\WMIC.exe qfe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 18:09:47 UTC", "rule": "proc_creation_win_wmic_recon_hotfix_0", "phase": "omission", "command": "wmic \\WMIC qfe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:09:54 UTC", "rule": "proc_creation_win_wmic_recon_hotfix_0", "phase": "reordering", "command": "wmic.exe qfe \\WMIC.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:10:03 UTC", "rule": "proc_creation_win_wmic_recon_hotfix_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYy5leGUgXFdNSUMuZXhlIHFmZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

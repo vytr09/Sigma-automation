@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_16bit_application_0",
+  "original_command": "\\ntvdm.exe \\csrstub.exe",
+  "evasions": {
+    "insertion": "\\ntvdm.exe \"\\\"\"c\"\"s\"\"r\"\"s\"\"t\"\"u\"\"b\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\ntvdm.exe \\csrstub.exe #substitution",
+    "omission": "\\ntvdm \\csrstub",
+    "reordering": "\\ntvdm.exe \\csrstub.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG50dmRtLmV4ZSBcY3Nyc3R1Yi5leGU=')) | Invoke-Expression\" "
+  }
+}

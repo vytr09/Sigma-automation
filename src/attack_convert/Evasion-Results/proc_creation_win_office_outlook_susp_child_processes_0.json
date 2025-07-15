@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_outlook_susp_child_processes_0",
+  "original_command": "\\OUTLOOK.EXE \\AppVLP.exe \\bash.exe \\cmd.exe \\cscript.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\msbuild.exe \\msdt.exe \\mshta.exe \\msiexec.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\svchost.exe \\wmic.exe \\wscript.exe",
+  "evasions": {
+    "insertion": "\\OUTLOOK.EXE \\AppVLP.exe \\bash.exe \\cmd.exe \\cscript.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\msbuild.exe \\msdt.exe \\mshta.exe \\msiexec.exe \\powershell.exe \\\"\\pwsh.exe\\\" \\regsvr32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\svchost.exe \\wmic.exe \\wscript.exe",
+    "substitution": "\\OUTLOOK.EXE \\AppVLP.exe \\bash.exe \\cmd.exe \\cscript.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\msbuild.exe \\msdt.exe \\mshta.exe \\msiexec.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\svchost.exe \\wmic.exe \\wscript.exe #substitution",
+    "omission": "\\OUTLOOK \\AppVLP \\bash \\cmd \\cscript \\forfiles \\hh \\mftrace \\msbuild \\msdt \\mshta \\msiexec \\powershell \\pwsh \\regsvr32 \\schtasks \\scrcons \\scriptrunner \\sh \\svchost \\wmic \\wscript",
+    "reordering": "\\OUTLOOK.EXE \\AppVLP.exe \\bash.exe \\cmd.exe \\cscript.exe \\forfiles.exe \\hh.exe \\mftrace.exe \\msbuild.exe \\msdt.exe \\mshta.exe \\msiexec.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\schtasks.exe \\scrcons.exe \\scriptrunner.exe \\sh.exe \\svchost.exe \\wmic.exe \\wscript.exe",
+    "recoding": "powershell.exe -EncodedCommand XABPAFUAVABMAE8ATwBLAC4ARQBYAEUAIABcAEEAcABwAFYATABQAC4AZQB4AGUAIABcAGIAYQBzAGgALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABmAG8AcgBmAGkAbABlAHMALgBlAHgAZQAgAFwAaABoAC4AZQB4AGUAIABcAG0AZgB0AHIAYQBjAGUALgBlAHgAZQAgAFwAbQBzAGIAdQBpAGwAZAAuAGUAeABlACAAXABtAHMAZAB0AC4AZQB4AGUAIABcAG0AcwBoAHQAYQAuAGUAeABlACAAXABtAHMAaQBlAHgAZQBjAC4AZQB4AGUAIABcAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAFwAcAB3AHMAaAAuAGUAeABlACAAXAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAcwBjAGgAdABhAHMAawBzAC4AZQB4AGUAIABcAHMAYwByAGMAbwBuAHMALgBlAHgAZQAgAFwAcwBjAHIAaQBwAHQAcgB1AG4AbgBlAHIALgBlAHgAZQAgAFwAcwBoAC4AZQB4AGUAIABcAHMAdgBjAGgAbwBzAHQALgBlAHgAZQAgAFwAdwBtAGkAYwAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUA "
+  }
+}

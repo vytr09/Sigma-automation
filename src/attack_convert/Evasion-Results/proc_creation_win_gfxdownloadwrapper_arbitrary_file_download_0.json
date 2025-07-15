@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_gfxdownloadwrapper_arbitrary_file_download_0",
+  "original_command": "\\GfxDownloadWrapper.exe http:// https:// https://gameplayapi.intel.com/",
+  "evasions": {
+    "insertion": "\\GfxDownloadWrapper.exe http:// \"https://\" \"https://gameplayapi.intel.com/\"",
+    "substitution": "\\GfxDownloadWrapper.exe http:// https:// https://gameplayapi.intel.com/ #substitution",
+    "omission": "\\GfxDownloadWrapper http:// https:// https://gameplayapi.intel.com/",
+    "reordering": "\\GfxDownloadWrapper.exe http:// https:// https://gameplayapi.intel.com/",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEdmeERvd25sb2FkV3JhcHBlci5leGUgaHR0cDovLyBodHRwczovLyBodHRwczovL2dhbWVwbGF5YXBpLmludGVsLmNvbS8=')) | Invoke-Expression\" "
+  }
+}

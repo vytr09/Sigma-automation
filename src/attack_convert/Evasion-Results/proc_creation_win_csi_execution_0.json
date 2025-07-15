@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_csi_execution_0",
+  "original_command": "\\csi.exe \\rcsi.exe csi.exe rcsi.exe",
+  "evasions": {
+    "insertion": "\\csi.exe \\\"\\rcsi.exe\\\" csi.exe rcsi.exe",
+    "substitution": "\\csi.exe \\rcsi.exe csi.exe rcsi.exe #substitution",
+    "omission": "\\csi \\rcsi csi rcsi",
+    "reordering": "\\csi.exe rcsi.exe \\rcsi.exe csi.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzaS5leGUgXHJjc2kuZXhlIGNzaS5leGUgcmNzaS5leGU=')) | Invoke-Expression\" "
+  }
+}

@@ -2,7 +2,7 @@
   "rule_name": "win_susp_schtask_creation_0",
   "original_command": "schtasks.exe /create",
   "evasions": {
-    "insertion": "schtasks.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
+    "insertion": "schtasks.exe /\"c\"\"r\"\"e\"\"a\"\"t\"\"e\"",
     "substitution": "schtasks.exe -create",
     "omission": "schtasks /create",
     "reordering": "schtasks.exe /create",

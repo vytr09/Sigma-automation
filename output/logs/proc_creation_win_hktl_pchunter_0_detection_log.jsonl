@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:53:29 UTC", "rule": "proc_creation_win_hktl_pchunter_0", "phase": "original", "command": "\\PCHunter64.exe \\PCHunter32.exe PCHunter.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:53:29 UTC", "rule": "proc_creation_win_hktl_pchunter_0", "phase": "insertion", "command": "\\PCHunter64.exe \\PCHunter32.exe \"PCHunt\"er.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:53:29 UTC", "rule": "proc_creation_win_hktl_pchunter_0", "phase": "substitution", "command": "\\PCHunter64.exe \\PCHunter32.exe PCHunter.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:53:29 UTC", "rule": "proc_creation_win_hktl_pchunter_0", "phase": "omission", "command": "\\PCHunter64 \\PCHunter32 PCHunter", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:53:29 UTC", "rule": "proc_creation_win_hktl_pchunter_0", "phase": "reordering", "command": "\\PCHunter64.exe PCHunter.exe \\PCHunter32.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:53:29 UTC", "rule": "proc_creation_win_hktl_pchunter_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFBDSHVudGVyNjQuZXhlIFxQQ0h1bnRlcjMyLmV4ZSBQQ0h1bnRlci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

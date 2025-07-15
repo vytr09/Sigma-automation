@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_squiblytwo_bypass_0",
+  "original_command": "\\wmic.exe wmic.exe format: http",
+  "evasions": {
+    "insertion": "\\wmic.exe wmic.exe \\\"format:\\\" http",
+    "substitution": "\\wmic.exe wmic.exe format: http #substitution",
+    "omission": "\\wmic wmic format: http",
+    "reordering": "\\wmic.exe format: http wmic.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIGZvcm1hdDogaHR0cA==')) | Invoke-Expression\" "
+  }
+}

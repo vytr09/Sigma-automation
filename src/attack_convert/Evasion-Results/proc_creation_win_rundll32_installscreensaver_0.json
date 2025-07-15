@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_installscreensaver_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE InstallScreenSaver",
+  "evasions": {
+    "insertion": "\\\"r\"\"u\"\"n\"\"d\"\"l\"\"l\"\"3\"\"2\"\".\"\"e\"\"x\"\"e\" RUNDLL32.EXE InstallScreenSaver",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE InstallScreenSaver #substitution",
+    "omission": "\\rundll32 RUNDLL32 InstallScreenSaver",
+    "reordering": "\\rundll32.exe RUNDLL32.EXE InstallScreenSaver",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgSW5zdGFsbFNjcmVlblNhdmVy')) | Invoke-Expression\" "
+  }
+}

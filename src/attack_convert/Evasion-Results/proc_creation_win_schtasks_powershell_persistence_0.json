@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_powershell_persistence_0",
+  "original_command": "-k netsvcs -s Schedule",
+  "evasions": {
+    "insertion": "-k netsvcs -s \\\"Sche\\\"dule",
+    "substitution": "-k netsvcs -s Schedule #substitution",
+    "omission": "-k netsvcs -s Schedule # omission",
+    "reordering": "-k -s Schedule netsvcs",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWsgbmV0c3ZjcyAtcyBTY2hlZHVsZQ==')) | Invoke-Expression\" "
+  }
+}

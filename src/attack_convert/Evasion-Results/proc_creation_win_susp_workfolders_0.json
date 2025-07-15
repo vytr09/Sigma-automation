@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_workfolders_0",
+  "original_command": "\\control.exe \\WorkFolders.exe",
+  "evasions": {
+    "insertion": "\\control.exe \\\"\\WorkFol\\\"ders.exe",
+    "substitution": "\\control.exe \\WorkFolders.exe #substitution",
+    "omission": "\\control \\WorkFolders",
+    "reordering": "\\control.exe \\WorkFolders.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNvbnRyb2wuZXhlIFxXb3JrRm9sZGVycy5leGU=')) | Invoke-Expression\" "
+  }
+}

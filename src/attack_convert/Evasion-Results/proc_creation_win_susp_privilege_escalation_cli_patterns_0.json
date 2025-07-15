@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_privilege_escalation_cli_patterns_0",
+  "original_command": "-u system --user system -u NT -u -u 'NT --system -u administrator -c cmd -c -c powershell -c --command cmd --command powershell -c whoami -c wscript -c cscript",
+  "evasions": {
+    "insertion": "-u system --user system -u NT -u -u 'NT --system -u administrator -c cmd -c -c powershell -c --command cmd --command powershell \"-c\" whoami -c wscript -c cscript",
+    "substitution": "-u system --user system -u NT -u -u 'NT --system -u administrator -c cmd -c -c powershell -c --command cmd --command powershell -c whoami -c wscript -c cscript #substitution",
+    "omission": "-u system --user system -u NT -u -u 'NT --system -u administrator -c cmd -c -c powershell -c --command cmd --command powershell -c whoami -c wscript -c cscript # omission",
+    "reordering": "-u system --user system -u NT -u -u 'NT --system -u administrator -c cmd -c -c powershell -c --command cmd --command powershell -c whoami -c wscript -c cscript",
+    "recoding": "powershell.exe -EncodedCommand LQB1ACAAcwB5AHMAdABlAG0AIAAtAC0AdQBzAGUAcgAgAHMAeQBzAHQAZQBtACAALQB1ACAATgBUACAALQB1ACAALQB1ACAAJwBOAFQAIAAtAC0AcwB5AHMAdABlAG0AIAAtAHUAIABhAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByACAALQBjACAAYwBtAGQAIAAtAGMAIAAtAGMAIABwAG8AdwBlAHIAcwBoAGUAbABsACAALQBjACAALQAtAGMAbwBtAG0AYQBuAGQAIABjAG0AZAAgAC0ALQBjAG8AbQBtAGEAbgBkACAAcABvAHcAZQByAHMAaABlAGwAbAAgAC0AYwAgAHcAaABvAGEAbQBpACAALQBjACAAdwBzAGMAcgBpAHAAdAAgAC0AYwAgAGMAcwBjAHIAaQBwAHQA "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_setspn_spn_enumeration_0",
+  "original_command": "\\setspn.exe setspn.exe Query or reset the computer SPN attribute -q /q",
+  "evasions": {
+    "insertion": "\\setspn.exe setspn.exe Query or reset \"the\" computer SPN attribute -q /q",
+    "substitution": "\\setspn.exe setspn.exe Query or reset the computer SPN attribute -q /q #substitution",
+    "omission": "\\setspn setspn Query or reset the computer SPN attribute -q /q",
+    "reordering": "\\setspn.exe setspn.exe Query or reset the computer SPN attribute -q /q",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNldHNwbi5leGUgc2V0c3BuLmV4ZSBRdWVyeSBvciByZXNldCB0aGUgY29tcHV0ZXIgU1BOIGF0dHJpYnV0ZSAtcSAvcQ==')) | Invoke-Expression\" "
+  }
+}

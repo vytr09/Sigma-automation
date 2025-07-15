@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_setup16_custom_lst_execution_0",
+  "original_command": "-m",
+  "evasions": {
+    "insertion": "-m",
+    "substitution": "-m #substitution",
+    "omission": "-m # omission",
+    "reordering": "-m",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW0=')) | Invoke-Expression\" "
+  }
+}

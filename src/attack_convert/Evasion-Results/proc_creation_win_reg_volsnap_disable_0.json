@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_volsnap_disable_0",
+  "original_command": "\\Services\\VSS\\Diag /d Disabled",
+  "evasions": {
+    "insertion": "\\Services\\VSS\\Diag /d \"D\"\"i\"\"s\"\"a\"\"b\"\"l\"\"e\"\"d\"",
+    "substitution": "\\Services\\VSS\\Diag /d Disabled #substitution",
+    "omission": "\\Services\\VSS\\Diag /d Disabled # omission",
+    "reordering": "\\Services\\VSS\\Diag /d Disabled",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNlcnZpY2VzXFZTU1xEaWFnIC9kIERpc2FibGVk')) | Invoke-Expression\" "
+  }
+}

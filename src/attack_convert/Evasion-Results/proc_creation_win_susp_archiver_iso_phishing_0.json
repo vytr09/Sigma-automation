@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_archiver_iso_phishing_0",
+  "original_command": "\\Winrar.exe \\7zFM.exe \\peazip.exe \\isoburn.exe \\PowerISO.exe \\ImgBurn.exe",
+  "evasions": {
+    "insertion": "\\Winrar.exe \\7zFM.exe \\peazip.exe \\isoburn.exe \\PowerISO.exe \"\\ImgBurn.exe\"",
+    "substitution": "\\Winrar.exe \\7zFM.exe \\peazip.exe \\isoburn.exe \\PowerISO.exe \\ImgBurn.exe #substitution",
+    "omission": "\\Winrar \\7zFM \\peazip \\isoburn \\PowerISO \\ImgBurn",
+    "reordering": "\\Winrar.exe \\peazip.exe \\isoburn.exe \\7zFM.exe \\PowerISO.exe \\ImgBurn.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdpbnJhci5leGUgXDd6Rk0uZXhlIFxwZWF6aXAuZXhlIFxpc29idXJuLmV4ZSBcUG93ZXJJU08uZXhlIFxJbWdCdXJuLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

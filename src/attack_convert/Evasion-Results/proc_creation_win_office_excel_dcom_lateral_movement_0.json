@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_office_excel_dcom_lateral_movement_0",
+  "original_command": "\\excel.exe foxprow.exe schdplus.exe winproj.exe \\foxprow.exe \\schdplus.exe \\winproj.exe",
+  "evasions": {
+    "insertion": "\\excel.exe foxprow.exe schdplus.exe winproj.exe \\foxprow.exe \\\"\\schdplus.exe\\\" \\winproj.exe",
+    "substitution": "\\excel.exe foxprow.exe schdplus.exe winproj.exe \\foxprow.exe \\schdplus.exe \\winproj.exe #substitution",
+    "omission": "\\excel foxprow schdplus winproj \\foxprow \\schdplus \\winproj",
+    "reordering": "\\excel.exe foxprow.exe schdplus.exe winproj.exe \\foxprow.exe \\schdplus.exe \\winproj.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4Y2VsLmV4ZSBmb3hwcm93LmV4ZSBzY2hkcGx1cy5leGUgd2lucHJvai5leGUgXGZveHByb3cuZXhlIFxzY2hkcGx1cy5leGUgXHdpbnByb2ouZXhl')) | Invoke-Expression\" "
+  }
+}

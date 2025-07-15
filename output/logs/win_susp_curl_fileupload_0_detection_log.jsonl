@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 10:52:04 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "omission", "command": "curl -F", "status": "DETECTED"}
 {"timestamp": "2025-04-23 10:52:18 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "reordering", "command": "curl.exe -F", "status": "DETECTED"}
 {"timestamp": "2025-04-23 10:52:29 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:06:55 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "original", "command": "curl.exe -F", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:06:59 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "insertion", "command": "curl.exe \\\"-\\\"\\\"F\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:07:03 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "substitution", "command": "curl.exe -F #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:07:06 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "omission", "command": "curl -F", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:07:10 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "reordering", "command": "curl.exe -F", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:07:13 UTC", "rule": "win_susp_curl_fileupload_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3VybC5leGUgLUY=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_copy_dmp_from_share_0",
+  "original_command": "\\cmd.exe Cmd.Exe copy \\\\\\\\ .dmp .dump .hdmp",
+  "evasions": {
+    "insertion": "\\cmd.exe Cmd.Exe copy \\\\\\\\ .dmp \\\".\\\"\\\"d\\\"\\\"u\\\"\\\"m\\\"\\\"p\\\" .hdmp",
+    "substitution": "\\cmd.exe Cmd.Exe copy \\\\\\\\ .dmp .dump .hdmp #substitution",
+    "omission": "\\cmd Cmd copy \\\\\\\\ .dmp .dump .hdmp",
+    "reordering": "\\cmd.exe Cmd.Exe copy \\\\\\\\ .dmp .dump .hdmp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBjb3B5IFxcXFwgLmRtcCAuZHVtcCAuaGRtcA==')) | Invoke-Expression\" "
+  }
+}

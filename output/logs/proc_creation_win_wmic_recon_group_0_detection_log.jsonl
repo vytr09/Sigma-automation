@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 18:08:46 UTC", "rule": "proc_creation_win_wmic_recon_group_0", "phase": "original", "command": "\\wmic.exe wmic.exe group", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:08:53 UTC", "rule": "proc_creation_win_wmic_recon_group_0", "phase": "insertion", "command": "\\wmic.exe wmic\\\".exe\\\" group", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:09:00 UTC", "rule": "proc_creation_win_wmic_recon_group_0", "phase": "substitution", "command": "\\wmic.exe wmic.exe group #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 18:09:07 UTC", "rule": "proc_creation_win_wmic_recon_group_0", "phase": "omission", "command": "\\wmic wmic group", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:09:14 UTC", "rule": "proc_creation_win_wmic_recon_group_0", "phase": "reordering", "command": "\\wmic.exe wmic.exe group", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:09:21 UTC", "rule": "proc_creation_win_wmic_recon_group_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIGdyb3Vw')) | Invoke-Expression\" ", "status": "BYPASSED"}

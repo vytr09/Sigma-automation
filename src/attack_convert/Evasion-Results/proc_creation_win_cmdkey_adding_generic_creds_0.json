@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmdkey_adding_generic_creds_0",
+  "original_command": "\\cmdkey.exe cmdkey.exe -g -u -p",
+  "evasions": {
+    "insertion": "\\cmdkey.exe cmdke\"y.exe\" -g -u -p",
+    "substitution": "\\cmdkey.exe cmdkey.exe -g -u -p #substitution",
+    "omission": "\\cmdkey cmdkey -g -u -p",
+    "reordering": "\\cmdkey.exe -p -g -u cmdkey.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZGtleS5leGUgY21ka2V5LmV4ZSAtZyAtdSAtcA==')) | Invoke-Expression\" "
+  }
+}

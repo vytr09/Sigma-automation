@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_addinutil_uncommon_dir_exec_0",
+  "original_command": "\\addinutil.exe AddInUtil.exe",
+  "evasions": {
+    "insertion": "\\addinutil.exe \\\"AddInUtil.exe\\\"",
+    "substitution": "\\addinutil.exe AddInUtil.exe #substitution",
+    "omission": "\\addinutil AddInUtil",
+    "reordering": "\\addinutil.exe AddInUtil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFkZGludXRpbC5leGUgQWRkSW5VdGlsLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_susp_execution_with_image_extension_0",
+  "original_command": "\\rundll32.exe RUNDLL32.exe .bmp .cr2 .eps .gif .ico .jpeg .jpg .nef .orf .png .raw .sr2 .tif .tiff",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.exe .bmp .cr2 .e\"ps\" .gif .ico .jpeg .jpg .nef .orf .png .raw .sr2 .tif .tiff",
+    "substitution": "\\rundll32.exe RUNDLL32.exe .bmp .cr2 .eps .gif .ico .jpeg .jpg .nef .orf .png .raw .sr2 .tif .tiff #substitution",
+    "omission": "\\rundll32 RUNDLL32 .bmp .cr2 .eps .gif .ico .jpeg .jpg .nef .orf .png .raw .sr2 .tif .tiff",
+    "reordering": "\\rundll32.exe RUNDLL32.exe .bmp .cr2 .eps .gif .ico .jpeg .jpg .nef .orf .png .raw .sr2 .tif .tiff",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5leGUgLmJtcCAuY3IyIC5lcHMgLmdpZiAuaWNvIC5qcGVnIC5qcGcgLm5lZiAub3JmIC5wbmcgLnJhdyAuc3IyIC50aWYgLnRpZmY=')) | Invoke-Expression\" "
+  }
+}

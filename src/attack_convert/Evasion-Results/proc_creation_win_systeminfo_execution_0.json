@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_systeminfo_execution_0",
+  "original_command": "\\systeminfo.exe sysinfo.exe",
+  "evasions": {
+    "insertion": "\\systeminfo.exe sysin\\\"fo.exe\\\"",
+    "substitution": "\\systeminfo.exe sysinfo.exe #substitution",
+    "omission": "\\systeminfo sysinfo",
+    "reordering": "\\systeminfo.exe sysinfo.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN5c3RlbWluZm8uZXhlIHN5c2luZm8uZXhl')) | Invoke-Expression\" "
+  }
+}

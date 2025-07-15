@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:52:12 UTC", "rule": "proc_creation_win_lolbin_wfc_0", "phase": "original", "command": "\\wfc.exe wfc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:52:18 UTC", "rule": "proc_creation_win_lolbin_wfc_0", "phase": "insertion", "command": "\\wfc.exe \\\"wfc\\\".exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:52:24 UTC", "rule": "proc_creation_win_lolbin_wfc_0", "phase": "substitution", "command": "\\wfc.exe wfc.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:52:30 UTC", "rule": "proc_creation_win_lolbin_wfc_0", "phase": "omission", "command": "\\wfc wfc", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:52:36 UTC", "rule": "proc_creation_win_lolbin_wfc_0", "phase": "reordering", "command": "\\wfc.exe wfc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:52:42 UTC", "rule": "proc_creation_win_lolbin_wfc_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdmYy5leGUgd2ZjLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

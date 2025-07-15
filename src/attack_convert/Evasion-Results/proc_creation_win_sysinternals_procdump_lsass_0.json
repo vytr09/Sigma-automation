@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_procdump_lsass_0",
+  "original_command": "-ma ls",
+  "evasions": {
+    "insertion": "-ma \"l\"\"s\"",
+    "substitution": "-ma ls #substitution",
+    "omission": "-ma ls # omission",
+    "reordering": "-ma ls",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW1hIGxz')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_chcp_codepage_lookup_0",
+  "original_command": "\\cmd.exe -c -r -k \\chcp.com",
+  "evasions": {
+    "insertion": "\\cmd.exe -c -r -k \\\"\\chcp.com\\\"",
+    "substitution": "\\cmd.exe -c -r -k \\chcp.com #substitution",
+    "omission": "\\cmd -c -r -k \\chcp.com",
+    "reordering": "\\cmd.exe -r \\chcp.com -c -k",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgLWMgLXIgLWsgXGNoY3AuY29t')) | Invoke-Expression\" "
+  }
+}

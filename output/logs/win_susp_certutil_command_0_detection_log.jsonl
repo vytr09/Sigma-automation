@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 10:14:35 UTC", "rule": "win_susp_certutil_command_0", "phase": "omission", "command": "certutil -URL # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:14:58 UTC", "rule": "win_susp_certutil_command_0", "phase": "reordering", "command": "certutil -URL", "status": "DETECTED"}
 {"timestamp": "2025-04-23 10:15:08 UTC", "rule": "win_susp_certutil_command_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:04:17 UTC", "rule": "win_susp_certutil_command_0", "phase": "original", "command": "certutil /URL", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:04:21 UTC", "rule": "win_susp_certutil_command_0", "phase": "insertion", "command": "certutil /{cmd_part[:mid]}\"{cmd_part[mid:]}\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:04:26 UTC", "rule": "win_susp_certutil_command_0", "phase": "substitution", "command": "certutil /URL #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:04:31 UTC", "rule": "win_susp_certutil_command_0", "phase": "omission", "command": "certutil /URL # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:04:34 UTC", "rule": "win_susp_certutil_command_0", "phase": "reordering", "command": "certutil /URL", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:04:38 UTC", "rule": "win_susp_certutil_command_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y2VydHV0aWwgL1VSTA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

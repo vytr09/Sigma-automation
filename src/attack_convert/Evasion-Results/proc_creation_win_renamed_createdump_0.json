@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_createdump_0",
+  "original_command": "FX_VER_INTERNALNAME_STR -u -f .dmp --full --name .dmp \\createdump.exe",
+  "evasions": {
+    "insertion": "FX_VER_INTERNALNAME_STR -u -f .dmp --full --name \\\".dmp\\\" \\createdump.exe",
+    "substitution": "FX_VER_INTERNALNAME_STR -u -f .dmp --full --name .dmp \\createdump.exe #substitution",
+    "omission": "FX_VER_INTERNALNAME_STR -u -f .dmp --full --name .dmp \\createdump",
+    "reordering": "FX_VER_INTERNALNAME_STR -u -f .dmp --full --name .dmp \\createdump.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RlhfVkVSX0lOVEVSTkFMTkFNRV9TVFIgLXUgLWYgLmRtcCAtLWZ1bGwgLS1uYW1lIC5kbXAgXGNyZWF0ZWR1bXAuZXhl')) | Invoke-Expression\" "
+  }
+}

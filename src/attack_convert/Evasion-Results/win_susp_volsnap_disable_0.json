@@ -2,7 +2,7 @@
   "rule_name": "win_susp_volsnap_disable_0",
   "original_command": "reg add \\Services\\VSS\\Diag /d Disabled",
   "evasions": {
-    "insertion": "reg a\\\"dd\\\" \\Services\\VSS\\Diag /d Disabled",
+    "insertion": "reg add \\Services\\VSS\\Diag /d \\\"Disabled\\\"",
     "substitution": "reg add \\Services\\VSS\\Diag /d Disabled",
     "omission": "reg add \\Services\\VSS\\Diag /d Disabled # omission",
     "reordering": "reg add \\Services\\VSS\\Diag /d Disabled",

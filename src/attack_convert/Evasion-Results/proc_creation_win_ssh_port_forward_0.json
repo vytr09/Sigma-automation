@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ssh_port_forward_0",
+  "original_command": "\\ssh.exe -R",
+  "evasions": {
+    "insertion": "\\ssh.exe \"-\"\"R\"",
+    "substitution": "\\ssh.exe -R #substitution",
+    "omission": "\\ssh -R",
+    "reordering": "\\ssh.exe -R",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNzaC5leGUgLVI=')) | Invoke-Expression\" "
+  }
+}

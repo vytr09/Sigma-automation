@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_creation_temp_folder_0",
+  "original_command": "\\schtasks.exe /create /sc once \\Temp\\",
+  "evasions": {
+    "insertion": "\\schtasks.exe /create /sc once \"\\Te\"mp\\",
+    "substitution": "\\schtasks.exe -create /sc once \\Temp\\",
+    "omission": "\\schtasks /create /sc once \\Temp\\",
+    "reordering": "\\schtasks.exe /create /sc once \\Temp\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvY3JlYXRlIC9zYyBvbmNlIFxUZW1wXA==')) | Invoke-Expression\" "
+  }
+}

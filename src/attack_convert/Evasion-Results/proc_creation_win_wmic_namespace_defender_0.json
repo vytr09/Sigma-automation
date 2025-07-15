@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_namespace_defender_0",
+  "original_command": "wmic.exe \\WMIC.exe /Namespace:\\\\\\\\root\\\\Microsoft\\\\Windows\\\\Defender",
+  "evasions": {
+    "insertion": "wmic.exe \\WMIC.exe \"/Namespace:\\\\\\\\root\\\\Microsoft\\\\Windows\\\\Defender\"",
+    "substitution": "wmic.exe \\WMIC.exe /Namespace:\\\\\\\\root\\\\Microsoft\\\\Windows\\\\Defender #substitution",
+    "omission": "wmic \\WMIC /Namespace:\\\\\\\\root\\\\Microsoft\\\\Windows\\\\Defender",
+    "reordering": "wmic.exe \\WMIC.exe /Namespace:\\\\\\\\root\\\\Microsoft\\\\Windows\\\\Defender",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYy5leGUgXFdNSUMuZXhlIC9OYW1lc3BhY2U6XFxcXHJvb3RcXE1pY3Jvc29mdFxcV2luZG93c1xcRGVmZW5kZXI=')) | Invoke-Expression\" "
+  }
+}

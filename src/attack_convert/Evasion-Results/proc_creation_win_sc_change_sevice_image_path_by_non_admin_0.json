@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_change_sevice_image_path_by_non_admin_0",
+  "original_command": "\\sc.exe config binPath failure command",
+  "evasions": {
+    "insertion": "\\sc.exe config \"binPath\" failure command",
+    "substitution": "\\sc.exe config binPath failure command",
+    "omission": "\\sc config binPath failure command",
+    "reordering": "\\sc.exe config binPath command failure",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBjb25maWcgYmluUGF0aCBmYWlsdXJlIGNvbW1hbmQ=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_livekd_kernel_memory_dump_0",
+  "original_command": "\\livekd.exe \\livekd64.exe livekd.exe -m",
+  "evasions": {
+    "insertion": "\\livekd.exe \\livekd64.exe \"livek\"d.exe -m",
+    "substitution": "\\livekd.exe \\livekd64.exe livekd.exe -m #substitution",
+    "omission": "\\livekd \\livekd64 livekd -m",
+    "reordering": "\\livekd.exe \\livekd64.exe livekd.exe -m",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxpdmVrZC5leGUgXGxpdmVrZDY0LmV4ZSBsaXZla2QuZXhlIC1t')) | Invoke-Expression\" "
+  }
+}

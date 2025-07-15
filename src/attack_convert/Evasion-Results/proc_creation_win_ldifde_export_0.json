@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ldifde_export_0",
+  "original_command": "\\ldifde.exe ldifde.exe -f -i",
+  "evasions": {
+    "insertion": "\\ldifde.exe ldifde.exe \\\"-f\\\" -i",
+    "substitution": "\\ldifde.exe ldifde.exe -f -i #substitution",
+    "omission": "\\ldifde ldifde -f -i",
+    "reordering": "\\ldifde.exe ldifde.exe -i -f",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxkaWZkZS5leGUgbGRpZmRlLmV4ZSAtZiAtaQ==')) | Invoke-Expression\" "
+  }
+}

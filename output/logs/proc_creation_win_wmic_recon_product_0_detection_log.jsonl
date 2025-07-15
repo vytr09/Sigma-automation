@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 18:10:53 UTC", "rule": "proc_creation_win_wmic_recon_product_0", "phase": "original", "command": "\\wmic.exe wmic.exe Product", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:11:05 UTC", "rule": "proc_creation_win_wmic_recon_product_0", "phase": "insertion", "command": "\\wmic.exe \"w\"\"m\"\"i\"\"c\"\".\"\"e\"\"x\"\"e\" Product", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:11:13 UTC", "rule": "proc_creation_win_wmic_recon_product_0", "phase": "substitution", "command": "\\wmic.exe wmic.exe Product #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 18:11:20 UTC", "rule": "proc_creation_win_wmic_recon_product_0", "phase": "omission", "command": "\\wmic wmic Product", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:11:26 UTC", "rule": "proc_creation_win_wmic_recon_product_0", "phase": "reordering", "command": "\\wmic.exe Product wmic.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 18:11:32 UTC", "rule": "proc_creation_win_wmic_recon_product_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIFByb2R1Y3Q=')) | Invoke-Expression\" ", "status": "BYPASSED"}

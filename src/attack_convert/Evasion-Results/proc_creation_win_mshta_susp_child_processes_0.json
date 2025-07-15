@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mshta_susp_child_processes_0",
+  "original_command": "\\mshta.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe \\bitsadmin.exe Cmd.Exe PowerShell.EXE pwsh.dll wscript.exe cscript.exe Bash.exe reg.exe REGSVR32.EXE bitsadmin.exe",
+  "evasions": {
+    "insertion": "\\mshta.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe \\bitsadmin.exe Cmd.Exe PowerSh\\\"ell.EXE\\\" pwsh.dll wscript.exe cscript.exe Bash.exe reg.exe REGSVR32.EXE bitsadmin.exe",
+    "substitution": "\\mshta.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe \\bitsadmin.exe Cmd.Exe PowerShell.EXE pwsh.dll wscript.exe cscript.exe Bash.exe reg.exe REGSVR32.EXE bitsadmin.exe #substitution",
+    "omission": "\\mshta \\cmd \\powershell \\pwsh \\wscript \\cscript \\sh \\bash \\reg \\regsvr32 \\bitsadmin Cmd PowerShell pwsh.dll wscript cscript Bash reg REGSVR32 bitsadmin",
+    "reordering": "\\mshta.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe \\bitsadmin.exe Cmd.Exe PowerShell.EXE pwsh.dll wscript.exe cscript.exe Bash.exe reg.exe REGSVR32.EXE bitsadmin.exe",
+    "recoding": "powershell.exe -EncodedCommand XABtAHMAaAB0AGEALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHcAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABzAGgALgBlAHgAZQAgAFwAYgBhAHMAaAAuAGUAeABlACAAXAByAGUAZwAuAGUAeABlACAAXAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFwAYgBpAHQAcwBhAGQAbQBpAG4ALgBlAHgAZQAgAEMAbQBkAC4ARQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABwAHcAcwBoAC4AZABsAGwAIAB3AHMAYwByAGkAcAB0AC4AZQB4AGUAIABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABCAGEAcwBoAC4AZQB4AGUAIAByAGUAZwAuAGUAeABlACAAUgBFAEcAUwBWAFIAMwAyAC4ARQBYAEUAIABiAGkAdABzAGEAZABtAGkAbgAuAGUAeABlAA== "
+  }
+}

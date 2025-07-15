@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_gup_suspicious_execution_0",
+  "original_command": "\\GUP.exe \\Program Files\\Notepad++\\updater\\GUP.exe \\Program Files (x86)\\Notepad++\\updater\\GUP.exe \\AppData\\Local\\Notepad++\\updater\\GUP.exe \\AppData\\Roaming\\Notepad++\\updater\\GUP.exe",
+  "evasions": {
+    "insertion": "\\GUP.exe \\Program Files\\Notepad++\"\\updater\\GUP.exe\" \\Program Files (x86)\\Notepad++\\updater\\GUP.exe \\AppData\\Local\\Notepad++\\updater\\GUP.exe \\AppData\\Roaming\\Notepad++\\updater\\GUP.exe",
+    "substitution": "\\GUP.exe \\Program Files\\Notepad++\\updater\\GUP.exe \\Program Files (x86)\\Notepad++\\updater\\GUP.exe \\AppData\\Local\\Notepad++\\updater\\GUP.exe \\AppData\\Roaming\\Notepad++\\updater\\GUP.exe #substitution",
+    "omission": "\\GUP \\Program Files\\Notepad++\\updater\\GUP \\Program Files (x86)\\Notepad++\\updater\\GUP \\AppData\\Local\\Notepad++\\updater\\GUP Notepad++\\updater\\GUP",
+    "reordering": "\\GUP.exe \\Program Files\\Notepad++\\updater\\GUP.exe \\Program Files (x86)\\Notepad++\\updater\\GUP.exe \\AppData\\Local\\Notepad++\\updater\\GUP.exe \\AppData\\Roaming\\Notepad++\\updater\\GUP.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEdVUC5leGUgXFByb2dyYW0gRmlsZXNcTm90ZXBhZCsrXHVwZGF0ZXJcR1VQLmV4ZSBcUHJvZ3JhbSBGaWxlcyAoeDg2KVxOb3RlcGFkKytcdXBkYXRlclxHVVAuZXhlIFxBcHBEYXRhXExvY2FsXE5vdGVwYWQrK1x1cGRhdGVyXEdVUC5leGUgXEFwcERhdGFcUm9hbWluZ1xOb3RlcGFkKytcdXBkYXRlclxHVVAuZXhl')) | Invoke-Expression\" "
+  }
+}

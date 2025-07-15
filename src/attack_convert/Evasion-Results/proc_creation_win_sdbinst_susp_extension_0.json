@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sdbinst_susp_extension_0",
+  "original_command": "\\sdbinst.exe sdbinst.exe .sdb -m -bg",
+  "evasions": {
+    "insertion": "\\sdbinst.exe \\\"sdbinst.exe\\\" .sdb -m -bg",
+    "substitution": "\\sdbinst.exe sdbinst.exe .sdb -m -bg #substitution",
+    "omission": "\\sdbinst sdbinst .sdb -m -bg",
+    "reordering": "\\sdbinst.exe sdbinst.exe -m -bg .sdb",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNkYmluc3QuZXhlIHNkYmluc3QuZXhlIC5zZGIgLW0gLWJn')) | Invoke-Expression\" "
+  }
+}

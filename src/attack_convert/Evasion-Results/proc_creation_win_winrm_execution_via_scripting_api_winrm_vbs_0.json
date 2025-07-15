@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winrm_execution_via_scripting_api_winrm_vbs_0",
+  "original_command": "\\cscript.exe cscript.exe winrm invoke Create wmicimv2/Win32_ -r:http",
+  "evasions": {
+    "insertion": "\\cscript.exe cscript.exe winrm invoke Create wmicimv2/Win32_ \"-r:http\"",
+    "substitution": "\\cscript.exe cscript.exe winrm invoke Create wmicimv2/Win32_ -r:http #substitution",
+    "omission": "\\cscript cscript winrm invoke Create wmicimv2/Win32_ -r:http",
+    "reordering": "\\cscript.exe cscript.exe winrm invoke Create wmicimv2/Win32_ -r:http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzY3JpcHQuZXhlIGNzY3JpcHQuZXhlIHdpbnJtIGludm9rZSBDcmVhdGUgd21pY2ltdjIvV2luMzJfIC1yOmh0dHA=')) | Invoke-Expression\" "
+  }
+}

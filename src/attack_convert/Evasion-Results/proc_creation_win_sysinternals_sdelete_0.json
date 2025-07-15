@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_sdelete_0",
+  "original_command": "sdelete.exe -h -c -z /\\?",
+  "evasions": {
+    "insertion": "sdelete.exe -h -c -z \"/\\?\"",
+    "substitution": "sdelete.exe -h -c -z /\\? #substitution",
+    "omission": "sdelete -h -c -z /\\?",
+    "reordering": "sdelete.exe /\\? -z -c -h",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2RlbGV0ZS5leGUgLWggLWMgLXogL1w/')) | Invoke-Expression\" "
+  }
+}

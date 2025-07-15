@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:21:14 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_0", "phase": "original", "command": "PCICFGUI.EXE", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:21:14 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_0", "phase": "insertion", "command": "PCICFGUI.EXE", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:21:14 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_0", "phase": "substitution", "command": "PCICFGUI.EXE #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:21:14 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_0", "phase": "omission", "command": "PCICFGUI", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:21:14 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_0", "phase": "reordering", "command": "PCICFGUI.EXE", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:21:14 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UENJQ0ZHVUkuRVhF')) | Invoke-Expression\" ", "status": "BYPASSED"}

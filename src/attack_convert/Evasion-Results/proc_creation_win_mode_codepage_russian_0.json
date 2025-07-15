@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mode_codepage_russian_0",
+  "original_command": "\\mode.com MODE.COM con cp select=",
+  "evasions": {
+    "insertion": "\\mode.com MODE.COM \\\"c\\\"on cp select=",
+    "substitution": "\\mode.com MODE.COM con cp select= #substitution",
+    "omission": "\\mode.com MODE.COM con cp select= # omission",
+    "reordering": "\\mode.com select= cp MODE.COM con",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1vZGUuY29tIE1PREUuQ09NIGNvbiBjcCBzZWxlY3Q9')) | Invoke-Expression\" "
+  }
+}

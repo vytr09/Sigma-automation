@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_dctask64_0",
+  "original_command": "\\dctask64.exe",
+  "evasions": {
+    "insertion": "\"\\dctask64.exe\"",
+    "substitution": "\\dctask64.exe #substitution",
+    "omission": "\\dctask64",
+    "reordering": "\\dctask64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRjdGFzazY0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

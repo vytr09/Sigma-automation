@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_desktopimgdownldr_susp_execution_0",
+  "original_command": "/lockscreenurl: .jpg .jpeg .png reg delete \\PersonalizationCSP",
+  "evasions": {
+    "insertion": "/lockscreenurl: .jpg .jpeg .p\"ng\" reg delete \\PersonalizationCSP",
+    "substitution": "/lockscreenurl: .jpg .jpeg .png reg delete \\PersonalizationCSP",
+    "omission": "/lockscreenurl: .jpg .jpeg .png reg delete \\PersonalizationCSP # omission",
+    "reordering": "/lockscreenurl: .jpg .jpeg .png reg delete \\PersonalizationCSP",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2xvY2tzY3JlZW51cmw6IC5qcGcgLmpwZWcgLnBuZyByZWcgZGVsZXRlIFxQZXJzb25hbGl6YXRpb25DU1A=')) | Invoke-Expression\" "
+  }
+}

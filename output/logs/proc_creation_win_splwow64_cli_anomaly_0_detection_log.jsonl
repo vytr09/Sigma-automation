@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:14:41 UTC", "rule": "proc_creation_win_splwow64_cli_anomaly_0", "phase": "original", "command": "\\splwow64.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:14:48 UTC", "rule": "proc_creation_win_splwow64_cli_anomaly_0", "phase": "insertion", "command": "\\\"s\"\"p\"\"l\"\"w\"\"o\"\"w\"\"6\"\"4\"\".\"\"e\"\"x\"\"e\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:14:54 UTC", "rule": "proc_creation_win_splwow64_cli_anomaly_0", "phase": "substitution", "command": "\\splwow64.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:15:03 UTC", "rule": "proc_creation_win_splwow64_cli_anomaly_0", "phase": "omission", "command": "\\splwow64", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:15:09 UTC", "rule": "proc_creation_win_splwow64_cli_anomaly_0", "phase": "reordering", "command": "\\splwow64.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:15:15 UTC", "rule": "proc_creation_win_splwow64_cli_anomaly_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNwbHdvdzY0LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

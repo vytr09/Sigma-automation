@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_openwith_0",
+  "original_command": "\\OpenWith.exe /c",
+  "evasions": {
+    "insertion": "\\OpenWith.exe /\"c\"",
+    "substitution": "\\OpenWith.exe /c #substitution",
+    "omission": "\\OpenWith /c",
+    "reordering": "\\OpenWith.exe /c",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE9wZW5XaXRoLmV4ZSAvYw==')) | Invoke-Expression\" "
+  }
+}

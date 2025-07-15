@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_invoke_obfuscation_var_0",
+  "original_command": "<no command found>",
+  "evasions": {
+    "insertion": "<no command found>",
+    "substitution": "<no command found> #substitution",
+    "omission": "<no command found> # omission",
+    "reordering": "<no command found>",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" "
+  }
+}

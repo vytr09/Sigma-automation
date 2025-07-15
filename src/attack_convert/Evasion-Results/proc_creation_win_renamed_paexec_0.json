@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_paexec_0",
+  "original_command": "PAExec.exe \\paexec.exe",
+  "evasions": {
+    "insertion": "PAExec.exe \"\\paexec.exe\"",
+    "substitution": "PAExec.exe \\paexec.exe #substitution",
+    "omission": "PAExec \\paexec",
+    "reordering": "PAExec.exe \\paexec.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UEFFeGVjLmV4ZSBccGFleGVjLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

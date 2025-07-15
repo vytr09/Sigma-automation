@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_hide_services_via_set_service_0",
+  "original_command": "\\pwsh.exe pwsh.dll Set-Service DCLCWPDTSD -SecurityDescriptorSddl -sd",
+  "evasions": {
+    "insertion": "\\pwsh.exe pwsh.dll Set-Service \\\"DCLCWPDTSD\\\" \\\"-SecurityDescriptorSddl\\\" -sd",
+    "substitution": "\\pwsh.exe pwsh.dll Set-Service DCLCWPDTSD -SecurityDescriptorSddl -sd #substitution",
+    "omission": "\\pwsh pwsh.dll Set-Service DCLCWPDTSD -SecurityDescriptorSddl -sd",
+    "reordering": "\\pwsh.exe pwsh.dll DCLCWPDTSD Set-Service -SecurityDescriptorSddl -sd",
+    "recoding": "powershell.exe -EncodedCommand XABwAHcAcwBoAC4AZQB4AGUAIABwAHcAcwBoAC4AZABsAGwAIABTAGUAdAAtAFMAZQByAHYAaQBjAGUAIABEAEMATABDAFcAUABEAFQAUwBEACAALQBTAGUAYwB1AHIAaQB0AHkARABlAHMAYwByAGkAcAB0AG8AcgBTAGQAZABsACAALQBzAGQA "
+  }
+}

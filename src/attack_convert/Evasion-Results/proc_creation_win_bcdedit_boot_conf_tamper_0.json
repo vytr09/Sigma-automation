@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bcdedit_boot_conf_tamper_0",
+  "original_command": "\\bcdedit.exe bcdedit.exe set bootstatuspolicy ignoreallfailures recoveryenabled no",
+  "evasions": {
+    "insertion": "\\bcdedit.exe bcdedit.exe set \"bootstatuspolicy\" ignoreallfailures recoveryenabled no",
+    "substitution": "\\bcdedit.exe bcdedit.exe set bspolicy ignoreallfailures recoveryenabled no",
+    "omission": "\\bcdedit bcdedit set bootstatuspolicy ignoreallfailures recoveryenabled no",
+    "reordering": "\\bcdedit.exe bcdedit.exe set bootstatuspolicy ignoreallfailures recoveryenabled no",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJjZGVkaXQuZXhlIGJjZGVkaXQuZXhlIHNldCBib290c3RhdHVzcG9saWN5IGlnbm9yZWFsbGZhaWx1cmVzIHJlY292ZXJ5ZW5hYmxlZCBubw==')) | Invoke-Expression\" "
+  }
+}

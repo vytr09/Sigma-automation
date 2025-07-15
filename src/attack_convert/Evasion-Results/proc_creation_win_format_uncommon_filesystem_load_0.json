@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_format_uncommon_filesystem_load_0",
+  "original_command": "\\format.com /fs: /fs:exFAT /fs:FAT /fs:NTFS /fs:ReFS /fs:UDF",
+  "evasions": {
+    "insertion": "\\format.com /fs: /fs:exFAT /fs:FAT /fs:NTFS /{cmd_part[:mid]}\"{cmd_part[mid:]}\" /fs:UDF",
+    "substitution": "\\format.com /fs: /fs:exFAT /fs:FAT /fs:NTFS /fs:ReFS /fs:UDF #substitution",
+    "omission": "\\format.com /fs: /fs:exFAT /fs:FAT /fs:NTFS /fs:ReFS /fs:UDF # omission",
+    "reordering": "\\format.com /fs: /fs:exFAT /fs:FAT /fs:NTFS /fs:ReFS /fs:UDF",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZvcm1hdC5jb20gL2ZzOiAvZnM6ZXhGQVQgL2ZzOkZBVCAvZnM6TlRGUyAvZnM6UmVGUyAvZnM6VURG')) | Invoke-Expression\" "
+  }
+}

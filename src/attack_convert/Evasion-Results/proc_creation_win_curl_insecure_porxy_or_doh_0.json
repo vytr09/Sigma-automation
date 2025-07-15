@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_insecure_porxy_or_doh_0",
+  "original_command": "\\curl.exe curl.exe --doh-insecure --proxy-insecure",
+  "evasions": {
+    "insertion": "\\curl.exe curl.exe \"--doh-insecure\" \"--proxy-insecure\"",
+    "substitution": "\\curl.exe curl.exe ---dataoh-insecure --proxy-insecure",
+    "omission": "\\curl curl --doh-insecure --proxy-insecure",
+    "reordering": "\\curl.exe --proxy-insecure --doh-insecure curl.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIC0tZG9oLWluc2VjdXJlIC0tcHJveHktaW5zZWN1cmU=')) | Invoke-Expression\" "
+  }
+}

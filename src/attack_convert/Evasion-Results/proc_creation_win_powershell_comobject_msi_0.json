@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_comobject_msi_0",
+  "original_command": "\\powershell_ise.exe \\powershell.exe \\pwsh.exe PowerShell_ISE.EXE PowerShell.EXE pwsh.dll -ComObject InstallProduct( .Insert( UILevel",
+  "evasions": {
+    "insertion": "\\powershell_ise.exe \\powershell.exe \\pwsh.exe PowerShell_ISE.EXE PowerShell.EXE pwsh.dll -ComObject InstallProduct( .Insert( \"UILevel\"",
+    "substitution": "\\powershell_ise.exe \\powershell.exe \\pwsh.exe PowerShell_ISE.EXE PowerShell.EXE pwsh.dll -ComObject InstallProduct( .Insert( UILevel #substitution",
+    "omission": "\\powershell_ise \\powershell \\pwsh PowerShell_ISE PowerShell pwsh.dll -ComObject InstallProduct( .Insert( UILevel",
+    "reordering": "\\powershell_ise.exe \\powershell.exe \\pwsh.exe PowerShell_ISE.EXE PowerShell.EXE pwsh.dll -ComObject InstallProduct( .Insert( UILevel",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAF8AaQBzAGUALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAF8ASQBTAEUALgBFAFgARQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAC0AQwBvAG0ATwBiAGoAZQBjAHQAIABJAG4AcwB0AGEAbABsAFAAcgBvAGQAdQBjAHQAKAAgAC4ASQBuAHMAZQByAHQAKAAgAFUASQBMAGUAdgBlAGwA "
+  }
+}

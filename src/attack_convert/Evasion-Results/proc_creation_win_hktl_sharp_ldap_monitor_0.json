@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharp_ldap_monitor_0",
+  "original_command": "\\SharpLDAPmonitor.exe SharpLDAPmonitor.exe /user: /pass: /dcip:",
+  "evasions": {
+    "insertion": "\\SharpLDAPmonitor.exe \"SharpLDAPmonitor.exe\" \"/user:\" /pass: /dcip:",
+    "substitution": "\\SharpLDAPmonitor.exe SharpLDAPmonitor.exe /user: /pass: /dcip: #substitution",
+    "omission": "\\SharpLDAPmonitor SharpLDAPmonitor /user: /pass: /dcip:",
+    "reordering": "\\SharpLDAPmonitor.exe SharpLDAPmonitor.exe /user: /pass: /dcip:",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwTERBUG1vbml0b3IuZXhlIFNoYXJwTERBUG1vbml0b3IuZXhlIC91c2VyOiAvcGFzczogL2RjaXA6')) | Invoke-Expression\" "
+  }
+}

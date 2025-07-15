@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_insecure_connection_0",
+  "original_command": "\\curl.exe curl.exe --insecure",
+  "evasions": {
+    "insertion": "\\curl.exe \"c\"\"u\"\"r\"\"l\"\".\"\"e\"\"x\"\"e\" --insecure",
+    "substitution": "\\curl.exe curl.exe ---includensecure",
+    "omission": "\\curl curl --insecure",
+    "reordering": "\\curl.exe curl.exe --insecure",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIC0taW5zZWN1cmU=')) | Invoke-Expression\" "
+  }
+}

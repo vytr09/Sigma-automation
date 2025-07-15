@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_gup_arbitrary_binary_execution_0",
+  "original_command": "\\gup.exe \\explorer.exe \\explorer.exe \\Notepad++\\notepad++.exe",
+  "evasions": {
+    "insertion": "\\gup.exe \\\"\\explorer.exe\\\" \\explorer.exe \\Notepad++\\notepad++.exe",
+    "substitution": "\\gup.exe \\explorer.exe \\explorer.exe \\Notepad++\\notepad++.exe #substitution",
+    "omission": "\\gup \\explorer \\explorer \\Notepad++\\notepad++",
+    "reordering": "\\gup.exe \\explorer.exe \\Notepad++\\notepad++.exe \\explorer.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGd1cC5leGUgXGV4cGxvcmVyLmV4ZSBcZXhwbG9yZXIuZXhlIFxOb3RlcGFkKytcbm90ZXBhZCsrLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

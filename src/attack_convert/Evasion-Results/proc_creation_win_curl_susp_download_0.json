@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_curl_susp_download_0",
+  "original_command": "\\curl.exe %AppData% %Public% %Temp% %tmp% \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ C:\\PerfLogs\\ C:\\ProgramData\\ C:\\Windows\\Temp\\ --silent --show-error --output gfw-httpget- AppData",
+  "evasions": {
+    "insertion": "\\curl.exe %AppData% %Public% %Temp% %tmp% \\AppData\\ \\Desktop\\ \\Temp\\ \"\\Users\\Public\\\" \"C:\\PerfLogs\\\" C:\\ProgramData\\ C:\\Windows\\Temp\\ --silent --show-error --output gfw-httpget- AppData",
+    "substitution": "\\curl.exe %AppData% %Public% %Temp% %tmp% \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ C:\\PerfLogs\\ C:\\ProgramData\\ C:\\Windows\\Temp\\ --silent --show-error ---outpututput gfw-httpget- AppData",
+    "omission": "\\curl %AppData% %Public% %Temp% %tmp% \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ C:\\PerfLogs\\ C:\\ProgramData\\ Temp\\ --silent --show-error --output gfw-httpget- AppData",
+    "reordering": "\\curl.exe %AppData% %Public% %Temp% %tmp% \\AppData\\ \\Desktop\\ \\Temp\\ \\Users\\Public\\ C:\\PerfLogs\\ C:\\ProgramData\\ C:\\Windows\\Temp\\ --silent --show-error --output gfw-httpget- AppData",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlICVBcHBEYXRhJSAlUHVibGljJSAlVGVtcCUgJXRtcCUgXEFwcERhdGFcIFxEZXNrdG9wXCBcVGVtcFwgXFVzZXJzXFB1YmxpY1wgQzpcUGVyZkxvZ3NcIEM6XFByb2dyYW1EYXRhXCBDOlxXaW5kb3dzXFRlbXBcIC0tc2lsZW50IC0tc2hvdy1lcnJvciAtLW91dHB1dCBnZnctaHR0cGdldC0gQXBwRGF0YQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_autohotkey_0",
+  "original_command": "AutoHotkey AutoHotkey.exe AutoHotkey.rc \\AutoHotkey.exe \\AutoHotkey32.exe \\AutoHotkey32_UIA.exe \\AutoHotkey64.exe \\AutoHotkey64_UIA.exe \\AutoHotkeyA32.exe \\AutoHotkeyA32_UIA.exe \\AutoHotkeyU32.exe \\AutoHotkeyU32_UIA.exe \\AutoHotkeyU64.exe \\AutoHotkeyU64_UIA.exe",
+  "evasions": {
+    "insertion": "AutoHotkey AutoHotkey.exe AutoHotkey.rc \\AutoHotkey.exe \\AutoHotkey32.exe \\AutoHotkey32_UIA.exe \\AutoHotkey64.exe \\AutoHotke\"y64_UIA.exe\" \\AutoHotkeyA32.exe \\AutoHotkeyA32_UIA.exe \\AutoHotkeyU32.exe \\AutoHotkeyU32_UIA.exe \\AutoHotkeyU64.exe \\AutoHotkeyU64_UIA.exe",
+    "substitution": "AutoHotkey AutoHotkey.exe AutoHotkey.rc \\AutoHotkey.exe \\AutoHotkey32.exe \\AutoHotkey32_UIA.exe \\AutoHotkey64.exe \\AutoHotkey64_UIA.exe \\AutoHotkeyA32.exe \\AutoHotkeyA32_UIA.exe \\AutoHotkeyU32.exe \\AutoHotkeyU32_UIA.exe \\AutoHotkeyU64.exe \\AutoHotkeyU64_UIA.exe #substitution",
+    "omission": "AutoHotkey AutoHotkey AutoHotkey.rc \\AutoHotkey \\AutoHotkey32 \\AutoHotkey32_UIA \\AutoHotkey64 \\AutoHotkey64_UIA \\AutoHotkeyA32 \\AutoHotkeyA32_UIA \\AutoHotkeyU32 \\AutoHotkeyU32_UIA \\AutoHotkeyU64 \\AutoHotkeyU64_UIA",
+    "reordering": "AutoHotkey AutoHotkey.exe AutoHotkey.rc \\AutoHotkey.exe \\AutoHotkey32.exe \\AutoHotkey32_UIA.exe \\AutoHotkey64.exe \\AutoHotkey64_UIA.exe \\AutoHotkeyA32.exe \\AutoHotkeyA32_UIA.exe \\AutoHotkeyU32.exe \\AutoHotkeyU32_UIA.exe \\AutoHotkeyU64.exe \\AutoHotkeyU64_UIA.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QXV0b0hvdGtleSBBdXRvSG90a2V5LmV4ZSBBdXRvSG90a2V5LnJjIFxBdXRvSG90a2V5LmV4ZSBcQXV0b0hvdGtleTMyLmV4ZSBcQXV0b0hvdGtleTMyX1VJQS5leGUgXEF1dG9Ib3RrZXk2NC5leGUgXEF1dG9Ib3RrZXk2NF9VSUEuZXhlIFxBdXRvSG90a2V5QTMyLmV4ZSBcQXV0b0hvdGtleUEzMl9VSUEuZXhlIFxBdXRvSG90a2V5VTMyLmV4ZSBcQXV0b0hvdGtleVUzMl9VSUEuZXhlIFxBdXRvSG90a2V5VTY0LmV4ZSBcQXV0b0hvdGtleVU2NF9VSUEuZXhl')) | Invoke-Expression\" "
+  }
+}

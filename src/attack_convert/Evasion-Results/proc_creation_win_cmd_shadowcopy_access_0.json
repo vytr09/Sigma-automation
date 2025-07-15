@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_shadowcopy_access_0",
+  "original_command": "copy \\\\\\\\\\?\\\\GLOBALROOT\\\\Device\\\\HarddiskVolumeShadowCopy",
+  "evasions": {
+    "insertion": "copy \\\"\\\\\\\\\\?\\\\GLOBALROOT\\\\Device\\\"\\\\HarddiskVolumeShadowCopy",
+    "substitution": "copy \\\\\\\\\\?\\\\GLOBALROOT\\\\Device\\\\HarddiskVolumeShadowCopy #substitution",
+    "omission": "copy \\\\\\\\\\?\\\\GLOBALROOT\\\\Device\\\\HarddiskVolumeShadowCopy # omission",
+    "reordering": "copy \\\\\\\\\\?\\\\GLOBALROOT\\\\Device\\\\HarddiskVolumeShadowCopy",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29weSBcXFxcXD9cXEdMT0JBTFJPT1RcXERldmljZVxcSGFyZGRpc2tWb2x1bWVTaGFkb3dDb3B5')) | Invoke-Expression\" "
+  }
+}

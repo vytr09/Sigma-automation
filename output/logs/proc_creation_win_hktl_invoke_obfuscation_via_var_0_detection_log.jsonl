@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:48:06 UTC", "rule": "proc_creation_win_hktl_invoke_obfuscation_via_var_0", "phase": "original", "command": "&&set cmd /c -f {0} {1} {2} {3} {4} {5}", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:48:14 UTC", "rule": "proc_creation_win_hktl_invoke_obfuscation_via_var_0", "phase": "insertion", "command": "&&set cmd /c -f {0} {1} {2} {3} {4} {5}", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:48:21 UTC", "rule": "proc_creation_win_hktl_invoke_obfuscation_via_var_0", "phase": "substitution", "command": "&&set cmd -c -f {0} {1} {2} {3} {4} {5}", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:48:28 UTC", "rule": "proc_creation_win_hktl_invoke_obfuscation_via_var_0", "phase": "omission", "command": "&&set cmd /c -f {0} {1} {2} {3} {4} {5} # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:48:34 UTC", "rule": "proc_creation_win_hktl_invoke_obfuscation_via_var_0", "phase": "reordering", "command": "&&set cmd /c -f {0} {1} {2} {3} {4} {5}", "status": "DETECTED"}
+{"timestamp": "2025-06-23 08:48:41 UTC", "rule": "proc_creation_win_hktl_invoke_obfuscation_via_var_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('JiZzZXQgY21kIC9jIC1mIHswfSB7MX0gezJ9IHszfSB7NH0gezV9')) | Invoke-Expression\" ", "status": "BYPASSED"}

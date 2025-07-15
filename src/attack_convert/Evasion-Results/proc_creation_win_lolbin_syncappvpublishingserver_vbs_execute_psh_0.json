@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh_0",
+  "original_command": "\\SyncAppvPublishingServer.vbs ;",
+  "evasions": {
+    "insertion": "\\SyncAppvPublishingServer.vbs \";\"",
+    "substitution": "\\SyncAppvPublishingServer.vbs ; #substitution",
+    "omission": "\\SyncAppvPublishingServer ;",
+    "reordering": "\\SyncAppvPublishingServer.vbs ;",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5bmNBcHB2UHVibGlzaGluZ1NlcnZlci52YnMgOw==')) | Invoke-Expression\" "
+  }
+}

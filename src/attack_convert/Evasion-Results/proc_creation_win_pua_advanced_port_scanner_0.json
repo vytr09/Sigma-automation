@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_advanced_port_scanner_0",
+  "original_command": "advanced_port_scanner Advanced Port Scanner /portable /lng",
+  "evasions": {
+    "insertion": "advanced_port_scanner Advanced Port Scanner /\"p\"\"o\"\"r\"\"t\"\"a\"\"b\"\"l\"\"e\" /\"l\"\"n\"\"g\"",
+    "substitution": "advanced_port_scanner Advanced Port Scanner /portable /lng #substitution",
+    "omission": "advanced_port_scanner Advanced Port Scanner /portable /lng # omission",
+    "reordering": "advanced_port_scanner Advanced Port Scanner /portable /lng",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWR2YW5jZWRfcG9ydF9zY2FubmVyIEFkdmFuY2VkIFBvcnQgU2Nhbm5lciAvcG9ydGFibGUgL2xuZw==')) | Invoke-Expression\" "
+  }
+}

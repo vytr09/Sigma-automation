@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:17:07 UTC", "rule": "proc_creation_win_ssh_port_forward_0", "phase": "original", "command": "\\ssh.exe -R", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:17:14 UTC", "rule": "proc_creation_win_ssh_port_forward_0", "phase": "insertion", "command": "\\ssh.exe \"-\"\"R\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:17:19 UTC", "rule": "proc_creation_win_ssh_port_forward_0", "phase": "substitution", "command": "\\ssh.exe -R #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 16:17:25 UTC", "rule": "proc_creation_win_ssh_port_forward_0", "phase": "omission", "command": "\\ssh -R", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:17:30 UTC", "rule": "proc_creation_win_ssh_port_forward_0", "phase": "reordering", "command": "\\ssh.exe -R", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:17:37 UTC", "rule": "proc_creation_win_ssh_port_forward_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNzaC5leGUgLVI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

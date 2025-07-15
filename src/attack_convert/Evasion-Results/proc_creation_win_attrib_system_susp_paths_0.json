@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_attrib_system_susp_paths_0",
+  "original_command": "\\attrib.exe ATTRIB.EXE +s % \\Users\\Public\\ \\AppData\\Local\\ \\ProgramData\\ \\Downloads\\ \\Windows\\Temp\\ .bat .dll .exe .hta .ps1 .vbe .vbs \\Windows\\TEMP\\ .exe",
+  "evasions": {
+    "insertion": "\\attrib.exe ATTRIB.EXE +s % \\Users\\Public\\ \\AppData\\Local\\ \\ProgramData\\ \\Downloads\\ \\Windows\\Temp\\ .b\\\"at\\\" .dll .exe .hta .ps1 .vbe .vbs \\Windows\\TEMP\\ .exe",
+    "substitution": "\\attrib.exe ATTRIB.EXE +s % \\Users\\Public\\ \\AppData\\Local\\ \\ProgramData\\ \\Downloads\\ \\Windows\\Temp\\ .bat .dll .exe .hta .ps1 .vbe .vbs \\Windows\\TEMP\\ .exe",
+    "omission": "\\attrib ATTRIB +s % \\Users\\Public\\ \\AppData\\Local\\ \\ProgramData\\ \\Downloads\\ \\Windows\\Temp\\ .dll .hta .vbe \\Windows\\TEMP\\",
+    "reordering": "\\attrib.exe ATTRIB.EXE +s % \\Users\\Public\\ \\AppData\\Local\\ \\ProgramData\\ \\Downloads\\ \\Windows\\Temp\\ .bat .dll .exe .hta .ps1 .vbe .vbs \\Windows\\TEMP\\ .exe",
+    "recoding": "powershell.exe -EncodedCommand XABhAHQAdAByAGkAYgAuAGUAeABlACAAQQBUAFQAUgBJAEIALgBFAFgARQAgACsAcwAgACUAIABcAFUAcwBlAHIAcwBcAFAAdQBiAGwAaQBjAFwAIABcAEEAcABwAEQAYQB0AGEAXABMAG8AYwBhAGwAXAAgAFwAUAByAG8AZwByAGEAbQBEAGEAdABhAFwAIABcAEQAbwB3AG4AbABvAGEAZABzAFwAIABcAFcAaQBuAGQAbwB3AHMAXABUAGUAbQBwAFwAIAAuAGIAYQB0ACAALgBkAGwAbAAgAC4AZQB4AGUAIAAuAGgAdABhACAALgBwAHMAMQAgAC4AdgBiAGUAIAAuAHYAYgBzACAAXABXAGkAbgBkAG8AdwBzAFwAVABFAE0AUABcACAALgBlAHgAZQA= "
+  }
+}

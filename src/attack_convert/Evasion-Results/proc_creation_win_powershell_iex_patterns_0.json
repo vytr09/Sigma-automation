@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_iex_patterns_0",
+  "original_command": "\\powershell.exe \\pwsh.exe | iex; | iex | iex} | IEX ; | IEX -Error | IEX (new );IEX ::FromBase64String .GetString([System.Convert]:: )|iex;$ );iex($ );iex $ | IEX | | iex\\",
+  "evasions": {
+    "insertion": "\\powershell.exe \\pwsh.exe | iex; | iex | iex} | IEX ; | IEX -Error | IEX (new );IEX ::FromBase64String .GetString([System.Convert]:: )|iex;$ );iex($ );iex $ | IEX | | iex\\",
+    "substitution": "\\powershell.exe \\pwsh.exe | iex; | iex | iex} | IEX ; | IEX -Error | IEX (new );IEX ::FromBase64String .GetString([System.Convert]:: )|iex;$ );iex($ );iex $ | IEX | | iex\\ #substitution",
+    "omission": "\\powershell \\pwsh | iex; | iex | iex} | IEX ; | IEX -Error | IEX (new );IEX ::FromBase64String .GetString([System.Convert]:: )|iex;$ );iex($ );iex $ | IEX | | iex\\",
+    "reordering": "\\powershell.exe \\pwsh.exe | iex; | iex | iex} | IEX ; | IEX -Error | IEX (new );IEX ::FromBase64String .GetString([System.Convert]:: )|iex;$ );iex($ );iex $ | IEX | | iex\\",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAHwAIABpAGUAeAA7ACAAfAAgAGkAZQB4ACAAfAAgAGkAZQB4AH0AIAB8ACAASQBFAFgAIAA7ACAAfAAgAEkARQBYACAALQBFAHIAcgBvAHIAIAB8ACAASQBFAFgAIAAoAG4AZQB3ACAAKQA7AEkARQBYACAAOgA6AEYAcgBvAG0AQgBhAHMAZQA2ADQAUwB0AHIAaQBuAGcAIAAuAEcAZQB0AFMAdAByAGkAbgBnACgAWwBTAHkAcwB0AGUAbQAuAEMAbwBuAHYAZQByAHQAXQA6ADoAIAApAHwAaQBlAHgAOwAkACAAKQA7AGkAZQB4ACgAJAAgACkAOwBpAGUAeAAgACQAIAB8ACAASQBFAFgAIAB8ACAAfAAgAGkAZQB4AFwA "
+  }
+}

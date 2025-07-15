@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:23:33 UTC", "rule": "proc_creation_win_notepad_local_passwd_discovery_0", "phase": "original", "command": "\\explorer.exe \\notepad.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:23:41 UTC", "rule": "proc_creation_win_notepad_local_passwd_discovery_0", "phase": "insertion", "command": "\\explorer.exe \\\"\\notepad.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:23:47 UTC", "rule": "proc_creation_win_notepad_local_passwd_discovery_0", "phase": "substitution", "command": "\\explorer.exe \\notepad.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:23:54 UTC", "rule": "proc_creation_win_notepad_local_passwd_discovery_0", "phase": "omission", "command": "\\explorer \\notepad", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:23:59 UTC", "rule": "proc_creation_win_notepad_local_passwd_discovery_0", "phase": "reordering", "command": "\\explorer.exe \\notepad.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:24:07 UTC", "rule": "proc_creation_win_notepad_local_passwd_discovery_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGV4cGxvcmVyLmV4ZSBcbm90ZXBhZC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

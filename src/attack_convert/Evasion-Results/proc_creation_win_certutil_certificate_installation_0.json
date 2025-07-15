@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_certificate_installation_0",
+  "original_command": "\\certutil.exe CertUtil.exe -addstore root",
+  "evasions": {
+    "insertion": "\\certutil.exe \"CertUt\"il.exe -addstore root",
+    "substitution": "\\certutil.exe CertUtil.exe --add-store root",
+    "omission": "\\certutil CertUtil -addstore root",
+    "reordering": "\\certutil.exe -addstore root CertUtil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWFkZHN0b3JlIHJvb3Q=')) | Invoke-Expression\" "
+  }
+}

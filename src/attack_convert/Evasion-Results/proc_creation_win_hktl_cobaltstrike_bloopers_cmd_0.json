@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_cobaltstrike_bloopers_cmd_0",
+  "original_command": "Cmd.Exe \\cmd.exe psinject spawnas make_token remote-exec rev2self dcsync logonpasswords execute-assembly getsystem",
+  "evasions": {
+    "insertion": "Cmd.Exe \\cmd.exe psinject spawnas make_token remote-exec rev2self dcsync \\\"l\\\"\\\"o\\\"\\\"g\\\"\\\"o\\\"\\\"n\\\"\\\"p\\\"\\\"a\\\"\\\"s\\\"\\\"s\\\"\\\"w\\\"\\\"o\\\"\\\"r\\\"\\\"d\\\"\\\"s\\\" execute-assembly getsystem",
+    "substitution": "Cmd.Exe \\cmd.exe psinject spawnas make_token remote-exec rev2self dcsync logonpasswords execute-assembly getsystem #substitution",
+    "omission": "Cmd \\cmd psinject spawnas make_token remote-exec rev2self dcsync logonpasswords execute-assembly getsystem",
+    "reordering": "Cmd.Exe \\cmd.exe psinject spawnas make_token remote-exec rev2self dcsync logonpasswords execute-assembly getsystem",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q21kLkV4ZSBcY21kLmV4ZSBwc2luamVjdCBzcGF3bmFzIG1ha2VfdG9rZW4gcmVtb3RlLWV4ZWMgcmV2MnNlbGYgZGNzeW5jIGxvZ29ucGFzc3dvcmRzIGV4ZWN1dGUtYXNzZW1ibHkgZ2V0c3lzdGVt')) | Invoke-Expression\" "
+  }
+}

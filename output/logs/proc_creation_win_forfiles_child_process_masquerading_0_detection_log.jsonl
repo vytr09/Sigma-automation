@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 08:26:03 UTC", "rule": "proc_creation_win_forfiles_child_process_masquerading_0", "phase": "original", "command": "\\cmd.exe \\forfiles.exe \\cmd.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:26:03 UTC", "rule": "proc_creation_win_forfiles_child_process_masquerading_0", "phase": "insertion", "command": "\\cmd.exe \"\\forfiles.exe\" \\cmd.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:26:03 UTC", "rule": "proc_creation_win_forfiles_child_process_masquerading_0", "phase": "substitution", "command": "\\cmd.exe \\forfiles.exe \\cmd.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:26:03 UTC", "rule": "proc_creation_win_forfiles_child_process_masquerading_0", "phase": "omission", "command": "\\cmd \\forfiles \\cmd", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:26:03 UTC", "rule": "proc_creation_win_forfiles_child_process_masquerading_0", "phase": "reordering", "command": "\\cmd.exe \\cmd.exe \\forfiles.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 08:26:03 UTC", "rule": "proc_creation_win_forfiles_child_process_masquerading_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgXGZvcmZpbGVzLmV4ZSBcY21kLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

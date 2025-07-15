@@ -2,7 +2,7 @@
   "rule_name": "win_spn_enum_0",
   "original_command": "setspn.exe -q",
   "evasions": {
-    "insertion": "setspn.exe \\\"-q\\\"",
+    "insertion": "setspn.exe \\\"-\\\"\\\"q\\\"",
     "substitution": "setspn.exe -q #substitution",
     "omission": "setspn -q",
     "reordering": "setspn.exe -q",

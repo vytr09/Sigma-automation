@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:50:54 UTC", "rule": "proc_creation_win_rundll32_sys_0", "phase": "original", "command": "rundll32.exe .sys, .sys", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:51:09 UTC", "rule": "proc_creation_win_rundll32_sys_0", "phase": "insertion", "command": "rundll32.exe .sys, \".s\"ys", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:51:18 UTC", "rule": "proc_creation_win_rundll32_sys_0", "phase": "substitution", "command": "rundll32.exe .sys, .sys #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:51:25 UTC", "rule": "proc_creation_win_rundll32_sys_0", "phase": "omission", "command": "rundll32 .sys, .sys", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:51:32 UTC", "rule": "proc_creation_win_rundll32_sys_0", "phase": "reordering", "command": "rundll32.exe .sys, .sys", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:51:39 UTC", "rule": "proc_creation_win_rundll32_sys_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuZGxsMzIuZXhlIC5zeXMsIC5zeXM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winget_local_install_via_manifest_0",
+  "original_command": "\\winget.exe winget.exe install add -m --manifest",
+  "evasions": {
+    "insertion": "\\winget.exe winget.exe install add \"-\"\"m\" --manifest",
+    "substitution": "\\winget.exe winget.exe install add -m --manifest #substitution",
+    "omission": "\\winget winget install add -m --manifest",
+    "reordering": "\\winget.exe winget.exe --manifest install add -m",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdpbmdldC5leGUgd2luZ2V0LmV4ZSBpbnN0YWxsIGFkZCAtbSAtLW1hbmlmZXN0')) | Invoke-Expression\" "
+  }
+}

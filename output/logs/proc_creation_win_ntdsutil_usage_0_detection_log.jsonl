@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:25:08 UTC", "rule": "proc_creation_win_ntdsutil_usage_0", "phase": "original", "command": "\\ntdsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:25:17 UTC", "rule": "proc_creation_win_ntdsutil_usage_0", "phase": "insertion", "command": "\"\\ntdsutil.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:25:23 UTC", "rule": "proc_creation_win_ntdsutil_usage_0", "phase": "substitution", "command": "\\ntdsutil.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:25:28 UTC", "rule": "proc_creation_win_ntdsutil_usage_0", "phase": "omission", "command": "\\ntdsutil", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:25:34 UTC", "rule": "proc_creation_win_ntdsutil_usage_0", "phase": "reordering", "command": "\\ntdsutil.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:25:40 UTC", "rule": "proc_creation_win_ntdsutil_usage_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG50ZHN1dGlsLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

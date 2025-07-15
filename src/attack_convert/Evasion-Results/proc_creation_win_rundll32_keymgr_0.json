@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_keymgr_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE keymgr KRShowKeyMgr",
+  "evasions": {
+    "insertion": "\\rundll32.exe \\\"RUNDLL32.EXE\\\" \\\"keymgr\\\" KRShowKeyMgr",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE keymgr KRShowKeyMgr #substitution",
+    "omission": "\\rundll32 RUNDLL32 keymgr KRShowKeyMgr",
+    "reordering": "\\rundll32.exe KRShowKeyMgr keymgr RUNDLL32.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUga2V5bWdyIEtSU2hvd0tleU1ncg==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_amsi_init_failed_bypass_0",
+  "original_command": "System.Management.Automation.AmsiUtils amsiInitFailed [Ref].Assembly.GetType SetValue($null,$true) NonPublic,Static",
+  "evasions": {
+    "insertion": "System.Management.Automation.AmsiUtils \\\"amsiInitFailed\\\" \\\"[Ref].Assembly.GetType\\\" SetValue($null,$true) NonPublic,Static",
+    "substitution": "System.Management.Automation.AmsiUtils amsiInitFailed [Ref].Assembly.GetType SetValue($null,$true) NonPublic,Static #substitution",
+    "omission": "System.Management.Automation.AmsiUtils amsiInitFailed [Ref].Assembly.GetType SetValue($null,$true) NonPublic,Static # omission",
+    "reordering": "System.Management.Automation.AmsiUtils SetValue($null,$true) amsiInitFailed [Ref].Assembly.GetType NonPublic,Static",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUwB5AHMAdABlAG0ALgBNAGEAbgBhAGcAZQBtAGUAbgB0AC4AQQB1AHQAbwBtAGEAdABpAG8AbgAuAEEAbQBzAGkAVQB0AGkAbABzACAAYQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkACAAWwBSAGUAZgBdAC4AQQBzAHMAZQBtAGIAbAB5AC4ARwBlAHQAVAB5AHAAZQAgAFMAZQB0AFYAYQBsAHUAZQAoACQAbgB1AGwAbAAsACQAdAByAHUAZQApACAATgBvAG4AUAB1AGIAbABpAGMALABTAHQAYQB0AGkAYwA= "
+  }
+}

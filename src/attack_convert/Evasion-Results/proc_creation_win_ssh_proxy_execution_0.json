@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ssh_proxy_execution_0",
+  "original_command": "\\ssh.exe ProxyCommand= PermitLocalCommand LocalCommand",
+  "evasions": {
+    "insertion": "\\ssh.exe \"ProxyCommand=\" \"PermitLocalCommand\" LocalCommand",
+    "substitution": "\\ssh.exe ProxyCommand= PermitLocalCommand LocalCommand #substitution",
+    "omission": "\\ssh ProxyCommand= PermitLocalCommand LocalCommand",
+    "reordering": "\\ssh.exe ProxyCommand= LocalCommand PermitLocalCommand",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNzaC5leGUgUHJveHlDb21tYW5kPSBQZXJtaXRMb2NhbENvbW1hbmQgTG9jYWxDb21tYW5k')) | Invoke-Expression\" "
+  }
+}

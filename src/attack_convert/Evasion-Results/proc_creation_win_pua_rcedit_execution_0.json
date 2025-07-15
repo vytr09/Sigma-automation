@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_rcedit_execution_0",
+  "original_command": "\\rcedit-x64.exe \\rcedit-x86.exe --set- OriginalFileName CompanyName FileDescription ProductName ProductVersion LegalCopyright",
+  "evasions": {
+    "insertion": "\\rcedit-x64.exe \\\"\\rcedit-x86.exe\\\" --set- OriginalFileName CompanyName FileDescription ProductName ProductVersion LegalCopyright",
+    "substitution": "\\rcedit-x64.exe \\rcedit-x86.exe --set- OriginalFileName CompanyName FileDescription ProductName ProductVersion LegalCopyright #substitution",
+    "omission": "\\rcedit-x64 \\rcedit-x86 --set- OriginalFileName CompanyName FileDescription ProductName ProductVersion LegalCopyright",
+    "reordering": "\\rcedit-x64.exe \\rcedit-x86.exe --set- OriginalFileName CompanyName FileDescription ProductName ProductVersion LegalCopyright",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJjZWRpdC14NjQuZXhlIFxyY2VkaXQteDg2LmV4ZSAtLXNldC0gT3JpZ2luYWxGaWxlTmFtZSBDb21wYW55TmFtZSBGaWxlRGVzY3JpcHRpb24gUHJvZHVjdE5hbWUgUHJvZHVjdFZlcnNpb24gTGVnYWxDb3B5cmlnaHQ=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_bginfo_uncommon_child_process_0",
+  "original_command": "\\bginfo.exe \\bginfo64.exe",
+  "evasions": {
+    "insertion": "\\bginfo.exe \"\\\"\"b\"\"g\"\"i\"\"n\"\"f\"\"o\"\"6\"\"4\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\bginfo.exe \\bginfo64.exe #substitution",
+    "omission": "\\bginfo \\bginfo64",
+    "reordering": "\\bginfo.exe \\bginfo64.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJnaW5mby5leGUgXGJnaW5mbzY0LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

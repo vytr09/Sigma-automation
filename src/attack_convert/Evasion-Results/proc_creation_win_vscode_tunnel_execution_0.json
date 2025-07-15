@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vscode_tunnel_execution_0",
+  "original_command": "None .exe tunnel --name --accept-server-license-terms \\cmd.exe /d /c \\servers\\Stable- code-server.cmd",
+  "evasions": {
+    "insertion": "None .exe tunnel \"-\"\"-\"\"n\"\"a\"\"m\"\"e\" --accept-server-license-terms \\cmd.exe /d /c \\servers\\Stable- code-server.cmd",
+    "substitution": "None .exe tunnel --name --accept-server-license-terms \\cmd.exe /d -c \\servers\\Stable- code-server.cmd",
+    "omission": "None tunnel --name --accept-server-license-terms \\cmd /d /c \\servers\\Stable- code-server",
+    "reordering": "None .exe tunnel --name --accept-server-license-terms \\cmd.exe /d /c \\servers\\Stable- code-server.cmd",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Tm9uZSAuZXhlIHR1bm5lbCAtLW5hbWUgLS1hY2NlcHQtc2VydmVyLWxpY2Vuc2UtdGVybXMgXGNtZC5leGUgL2QgL2MgXHNlcnZlcnNcU3RhYmxlLSBjb2RlLXNlcnZlci5jbWQ=')) | Invoke-Expression\" "
+  }
+}

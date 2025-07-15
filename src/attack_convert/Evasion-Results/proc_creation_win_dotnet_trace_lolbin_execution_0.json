@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dotnet_trace_lolbin_execution_0",
+  "original_command": "\\dotnet-trace.exe dotnet-trace.dll -- collect",
+  "evasions": {
+    "insertion": "\\dotnet-trace.exe dotnet-trace.dll -- \\\"collect\\\"",
+    "substitution": "\\dotnet-trace.exe dotnet-trace.dll -- collect #substitution",
+    "omission": "\\dotnet-trace dotnet-trace.dll -- collect",
+    "reordering": "\\dotnet-trace.exe dotnet-trace.dll collect --",
+    "recoding": "powershell.exe -EncodedCommand XABkAG8AdABuAGUAdAAtAHQAcgBhAGMAZQAuAGUAeABlACAAZABvAHQAbgBlAHQALQB0AHIAYQBjAGUALgBkAGwAbAAgAC0ALQAgAGMAbwBsAGwAZQBjAHQA "
+  }
+}

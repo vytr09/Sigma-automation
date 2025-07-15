@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 16:03:10 UTC", "rule": "proc_creation_win_sc_disable_service_0", "phase": "original", "command": "\\sc.exe sc.exe config start disabled demand", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:03:18 UTC", "rule": "proc_creation_win_sc_disable_service_0", "phase": "insertion", "command": "\\sc.exe sc.exe config start \"disabled\" \"demand\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:03:25 UTC", "rule": "proc_creation_win_sc_disable_service_0", "phase": "substitution", "command": "\\sc.exe sc.exe config start disabled demand", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:03:31 UTC", "rule": "proc_creation_win_sc_disable_service_0", "phase": "omission", "command": "\\sc sc config start disabled demand", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:03:37 UTC", "rule": "proc_creation_win_sc_disable_service_0", "phase": "reordering", "command": "\\sc.exe start sc.exe disabled demand config", "status": "DETECTED"}
+{"timestamp": "2025-06-23 16:03:44 UTC", "rule": "proc_creation_win_sc_disable_service_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgY29uZmlnIHN0YXJ0IGRpc2FibGVkIGRlbWFuZA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

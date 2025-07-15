@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winrm_susp_child_process_0",
+  "original_command": "\\wsmprovhost.exe \\cmd.exe \\sh.exe \\bash.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\schtasks.exe \\certutil.exe \\whoami.exe \\bitsadmin.exe",
+  "evasions": {
+    "insertion": "\\wsmprovhost.exe \\cmd.exe \\sh.exe \\bash.exe \\powershell.exe \\pws\\\"h.exe\\\" \\wsl.exe \\schtasks.exe \\certutil.exe \\whoami.exe \\bitsadmin.exe",
+    "substitution": "\\wsmprovhost.exe \\cmd.exe \\sh.exe \\bash.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\schtasks.exe \\certutil.exe \\whoami.exe \\bitsadmin.exe #substitution",
+    "omission": "\\wsmprovhost \\cmd \\sh \\bash \\powershell \\pwsh \\wsl \\schtasks \\certutil \\whoami \\bitsadmin",
+    "reordering": "\\wsmprovhost.exe \\cmd.exe \\sh.exe \\bash.exe \\powershell.exe \\pwsh.exe \\wsl.exe \\schtasks.exe \\certutil.exe \\whoami.exe \\bitsadmin.exe",
+    "recoding": "powershell.exe -EncodedCommand XAB3AHMAbQBwAHIAbwB2AGgAbwBzAHQALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAcwBoAC4AZQB4AGUAIABcAGIAYQBzAGgALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHcAcwBsAC4AZQB4AGUAIABcAHMAYwBoAHQAYQBzAGsAcwAuAGUAeABlACAAXABjAGUAcgB0AHUAdABpAGwALgBlAHgAZQAgAFwAdwBoAG8AYQBtAGkALgBlAHgAZQAgAFwAYgBpAHQAcwBhAGQAbQBpAG4ALgBlAHgAZQA= "
+  }
+}

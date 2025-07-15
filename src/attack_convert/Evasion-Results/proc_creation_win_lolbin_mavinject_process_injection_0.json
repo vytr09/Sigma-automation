@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_mavinject_process_injection_0",
+  "original_command": "/INJECTRUNNING",
+  "evasions": {
+    "insertion": "/INJECTRUNNING",
+    "substitution": "/INJECTRUNNING #substitution",
+    "omission": "/INJECTRUNNING # omission",
+    "reordering": "/INJECTRUNNING",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L0lOSkVDVFJVTk5JTkc=')) | Invoke-Expression\" "
+  }
+}

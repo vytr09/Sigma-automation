@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_getprocess_lsass_0",
+  "original_command": "Get-Process lsas ps lsas gps lsas",
+  "evasions": {
+    "insertion": "Get-Process lsas \"ps\" \"lsas\" gps lsas",
+    "substitution": "Get-Process lsas ps lsas gps lsas #substitution",
+    "omission": "Get-Process lsas ps lsas gps lsas # omission",
+    "reordering": "Get-Process gps lsas lsas lsas ps",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R2V0LVByb2Nlc3MgbHNhcyBwcyBsc2FzIGdwcyBsc2Fz')) | Invoke-Expression\" "
+  }
+}

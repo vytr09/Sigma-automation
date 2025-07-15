@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_java_susp_child_process_2_0",
+  "original_command": "\\java.exe \\bash.exe \\cmd.exe \\powershell.exe \\pwsh.exe build",
+  "evasions": {
+    "insertion": "\\java.exe \\\"\\bash.exe\\\" \\cmd.exe \\powershell.exe \\pwsh.exe build",
+    "substitution": "\\java.exe \\bash.exe \\cmd.exe \\powershell.exe \\pwsh.exe build #substitution",
+    "omission": "\\java \\bash \\cmd \\powershell \\pwsh build",
+    "reordering": "\\java.exe \\bash.exe build \\pwsh.exe \\cmd.exe \\powershell.exe",
+    "recoding": "powershell.exe -EncodedCommand XABqAGEAdgBhAC4AZQB4AGUAIABcAGIAYQBzAGgALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABiAHUAaQBsAGQA "
+  }
+}

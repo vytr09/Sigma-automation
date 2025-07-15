@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:37:01 UTC", "rule": "proc_creation_win_lolbin_pcwutl_0", "phase": "original", "command": "\\rundll32.exe RUNDLL32.EXE pcwutl LaunchApplication", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:37:10 UTC", "rule": "proc_creation_win_lolbin_pcwutl_0", "phase": "insertion", "command": "\\rundll32.exe RUNDLL32.EXE \\\"pcwutl\\\" LaunchApplication", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:37:16 UTC", "rule": "proc_creation_win_lolbin_pcwutl_0", "phase": "substitution", "command": "\\rundll32.exe RUNDLL32.EXE pcwutl LaunchApplication #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:37:22 UTC", "rule": "proc_creation_win_lolbin_pcwutl_0", "phase": "omission", "command": "\\rundll32 RUNDLL32 pcwutl LaunchApplication", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:37:28 UTC", "rule": "proc_creation_win_lolbin_pcwutl_0", "phase": "reordering", "command": "\\rundll32.exe pcwutl RUNDLL32.EXE LaunchApplication", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:37:35 UTC", "rule": "proc_creation_win_lolbin_pcwutl_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgcGN3dXRsIExhdW5jaEFwcGxpY2F0aW9u')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_winsat_0",
+  "original_command": "\\AppData\\Local\\Temp\\system32\\winsat.exe C:\\Windows \\system32\\winsat.exe",
+  "evasions": {
+    "insertion": "\\AppData\\Local\\Temp\\system32\\winsat.exe C:\\Wi\"ndows\" \\system32\\winsat.exe",
+    "substitution": "\\AppData\\Local\\Temp\\system32\\winsat.exe C:\\Windows \\system32\\winsat.exe #substitution",
+    "omission": "\\AppData\\Local\\Temp\\system32\\winsat C:\\Windows \\system32\\winsat",
+    "reordering": "\\AppData\\Local\\Temp\\system32\\winsat.exe C:\\Windows \\system32\\winsat.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFwcERhdGFcTG9jYWxcVGVtcFxzeXN0ZW0zMlx3aW5zYXQuZXhlIEM6XFdpbmRvd3MgXHN5c3RlbTMyXHdpbnNhdC5leGU=')) | Invoke-Expression\" "
+  }
+}

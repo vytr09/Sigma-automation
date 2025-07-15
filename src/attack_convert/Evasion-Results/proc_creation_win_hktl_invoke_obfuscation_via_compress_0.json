@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_invoke_obfuscation_via_compress_0",
+  "original_command": "new-object text.encoding]::ascii system.io.compression.deflatestream system.io.streamreader readtoend(",
+  "evasions": {
+    "insertion": "new-object text.encoding]::ascii \"system.io.compres\"sion.deflatestream system.io.streamreader readtoend(",
+    "substitution": "new-object text.encoding]::ascii system.io.compression.deflatestream system.io.streamreader readtoend( #substitution",
+    "omission": "new-object text.encoding]::ascii system.io.compression.deflatestream system.io.streamreader readtoend( # omission",
+    "reordering": "new-object system.io.streamreader text.encoding]::ascii readtoend( system.io.compression.deflatestream",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV3LW9iamVjdCB0ZXh0LmVuY29kaW5nXTo6YXNjaWkgc3lzdGVtLmlvLmNvbXByZXNzaW9uLmRlZmxhdGVzdHJlYW0gc3lzdGVtLmlvLnN0cmVhbXJlYWRlciByZWFkdG9lbmQo')) | Invoke-Expression\" "
+  }
+}

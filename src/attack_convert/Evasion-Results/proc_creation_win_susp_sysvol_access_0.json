@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_sysvol_access_0",
+  "original_command": "\\SYSVOL\\ \\policies\\",
+  "evasions": {
+    "insertion": "\\SYSVOL\\ \\poli\"cies\\\"",
+    "substitution": "\\SYSVOL\\ \\policies\\ #substitution",
+    "omission": "\\SYSVOL\\ \\policies\\ # omission",
+    "reordering": "\\SYSVOL\\ \\policies\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNZU1ZPTFwgXHBvbGljaWVzXA==')) | Invoke-Expression\" "
+  }
+}

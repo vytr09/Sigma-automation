@@ -2,7 +2,7 @@
   "rule_name": "win_susp_wmi_execution_0",
   "original_command": "wmic.exe /NODE: process call create",
   "evasions": {
-    "insertion": "wmic.exe /NODE: process call \"create\"",
+    "insertion": "wmic.exe /NODE: process ca\"ll\" create",
     "substitution": "wmic.exe --node= process call create",
     "omission": "wmic /NODE: process call create",
     "reordering": "wmic.exe /NODE: process call create",

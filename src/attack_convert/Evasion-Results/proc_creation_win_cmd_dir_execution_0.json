@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_dir_execution_0",
+  "original_command": "\\cmd.exe Cmd.Exe dir -s",
+  "evasions": {
+    "insertion": "\\cmd.exe \\\"Cmd\\\".Exe dir -s",
+    "substitution": "\\cmd.exe Cmd.Exe dir -s #substitution",
+    "omission": "\\cmd Cmd dir -s",
+    "reordering": "\\cmd.exe dir -s Cmd.Exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBkaXIgLXM=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_wsreset_0",
+  "original_command": "\\wsreset.exe \\conhost.exe CONHOST.EXE",
+  "evasions": {
+    "insertion": "\\wsreset.exe \\conhost.exe \"CONHO\"ST.EXE",
+    "substitution": "\\wsreset.exe \\conhost.exe CONHOST.EXE #substitution",
+    "omission": "\\wsreset \\conhost CONHOST",
+    "reordering": "\\wsreset.exe \\conhost.exe CONHOST.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdzcmVzZXQuZXhlIFxjb25ob3N0LmV4ZSBDT05IT1NULkVYRQ==')) | Invoke-Expression\" "
+  }
+}

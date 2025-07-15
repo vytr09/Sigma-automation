@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_msexchange_transport_agent_0",
+  "original_command": "Install-TransportAgent",
+  "evasions": {
+    "insertion": "Install-TransportAgent",
+    "substitution": "Install-TransportAgent #substitution",
+    "omission": "Install-TransportAgent # omission",
+    "reordering": "Install-TransportAgent",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW5zdGFsbC1UcmFuc3BvcnRBZ2VudA==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 06:54:26 UTC", "rule": "proc_creation_win_calc_uncommon_exec_0", "phase": "original", "command": "\\calc.exe \\calc.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:26 UTC", "rule": "proc_creation_win_calc_uncommon_exec_0", "phase": "insertion", "command": "\\calc.exe \\\"\\cal\\\"c.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:26 UTC", "rule": "proc_creation_win_calc_uncommon_exec_0", "phase": "substitution", "command": "\\calc.exe \\calc.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:26 UTC", "rule": "proc_creation_win_calc_uncommon_exec_0", "phase": "omission", "command": "\\calc \\calc", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:26 UTC", "rule": "proc_creation_win_calc_uncommon_exec_0", "phase": "reordering", "command": "\\calc.exe \\calc.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 06:54:26 UTC", "rule": "proc_creation_win_calc_uncommon_exec_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNhbGMuZXhlIFxjYWxjLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

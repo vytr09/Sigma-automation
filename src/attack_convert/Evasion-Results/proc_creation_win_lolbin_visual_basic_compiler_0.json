@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_visual_basic_compiler_0",
+  "original_command": "\\vbc.exe \\cvtres.exe",
+  "evasions": {
+    "insertion": "\\vbc.exe \"\\\"\"c\"\"v\"\"t\"\"r\"\"e\"\"s\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\vbc.exe \\cvtres.exe #substitution",
+    "omission": "\\vbc \\cvtres",
+    "reordering": "\\vbc.exe \\cvtres.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHZiYy5leGUgXGN2dHJlcy5leGU=')) | Invoke-Expression\" "
+  }
+}

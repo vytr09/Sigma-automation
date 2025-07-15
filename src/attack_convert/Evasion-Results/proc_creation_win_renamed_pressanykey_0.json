@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_pressanykey_0",
+  "original_command": "Microsoft.NodejsTools.PressAnyKey.exe \\Microsoft.NodejsTools.PressAnyKey.exe",
+  "evasions": {
+    "insertion": "Microsoft.NodejsTools.PressAnyKey.exe \\Microsoft.NodejsTo\\\"ols.PressAnyKey.exe\\\"",
+    "substitution": "Microsoft.NodejsTools.PressAnyKey.exe \\Microsoft.NodejsTools.PressAnyKey.exe #substitution",
+    "omission": "Microsoft.NodejsTools.PressAnyKey \\Microsoft.NodejsTools.PressAnyKey",
+    "reordering": "Microsoft.NodejsTools.PressAnyKey.exe \\Microsoft.NodejsTools.PressAnyKey.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TWljcm9zb2Z0Lk5vZGVqc1Rvb2xzLlByZXNzQW55S2V5LmV4ZSBcTWljcm9zb2Z0Lk5vZGVqc1Rvb2xzLlByZXNzQW55S2V5LmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

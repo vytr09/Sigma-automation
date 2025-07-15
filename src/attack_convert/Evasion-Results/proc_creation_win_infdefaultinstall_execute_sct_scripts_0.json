@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_infdefaultinstall_execute_sct_scripts_0",
+  "original_command": "InfDefaultInstall.exe .inf",
+  "evasions": {
+    "insertion": "InfDefaultInstall.exe \\\".inf\\\"",
+    "substitution": "InfDefaultInstall.exe .inf #substitution",
+    "omission": "InfDefaultInstall .inf",
+    "reordering": "InfDefaultInstall.exe .inf",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW5mRGVmYXVsdEluc3RhbGwuZXhlIC5pbmY=')) | Invoke-Expression\" "
+  }
+}

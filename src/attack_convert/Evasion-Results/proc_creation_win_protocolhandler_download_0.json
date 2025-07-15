@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_protocolhandler_download_0",
+  "original_command": "\\protocolhandler.exe ProtocolHandler.exe ftp:// http:// https://",
+  "evasions": {
+    "insertion": "\\protocolhandler.exe ProtocolHandler.exe ftp:// http:// \"http\"s://",
+    "substitution": "\\protocolhandler.exe ProtocolHandler.exe ftp:// http:// https:// #substitution",
+    "omission": "\\protocolhandler ProtocolHandler ftp:// http:// https://",
+    "reordering": "\\protocolhandler.exe https:// ProtocolHandler.exe http:// ftp://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHByb3RvY29saGFuZGxlci5leGUgUHJvdG9jb2xIYW5kbGVyLmV4ZSBmdHA6Ly8gaHR0cDovLyBodHRwczovLw==')) | Invoke-Expression\" "
+  }
+}

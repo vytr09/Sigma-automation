@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_keyscrambler_susp_child_process_0",
+  "original_command": "\\KeyScrambler.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe Cmd.Exe cscript.exe mshta.exe PowerShell.EXE pwsh.dll regsvr32.exe RUNDLL32.EXE wscript.exe",
+  "evasions": {
+    "insertion": "\\KeyScrambler.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\\"\\wscript.exe\\\" \\\"Cmd.Exe\\\" cscript.exe mshta.exe PowerShell.EXE pwsh.dll regsvr32.exe RUNDLL32.EXE wscript.exe",
+    "substitution": "\\KeyScrambler.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe Cmd.Exe cscript.exe mshta.exe PowerShell.EXE pwsh.dll regsvr32.exe RUNDLL32.EXE wscript.exe #substitution",
+    "omission": "\\KeyScrambler \\cmd \\cscript \\mshta \\powershell \\pwsh \\regsvr32 \\rundll32 \\wscript Cmd cscript mshta PowerShell pwsh.dll regsvr32 RUNDLL32 wscript",
+    "reordering": "\\KeyScrambler.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\regsvr32.exe \\rundll32.exe \\wscript.exe Cmd.Exe cscript.exe mshta.exe PowerShell.EXE pwsh.dll regsvr32.exe RUNDLL32.EXE wscript.exe",
+    "recoding": "powershell.exe -EncodedCommand XABLAGUAeQBTAGMAcgBhAG0AYgBsAGUAcgAuAGUAeABlACAAXABjAG0AZAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAG0AcwBoAHQAYQAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAcgBlAGcAcwB2AHIAMwAyAC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAXAB3AHMAYwByAGkAcAB0AC4AZQB4AGUAIABDAG0AZAAuAEUAeABlACAAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAbQBzAGgAdABhAC4AZQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABwAHcAcwBoAC4AZABsAGwAIAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFIAVQBOAEQATABMADMAMgAuAEUAWABFACAAdwBzAGMAcgBpAHAAdAAuAGUAeABlAA== "
+  }
+}

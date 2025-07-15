@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msohtmed_download_0",
+  "original_command": "\\MSOHTMED.exe MsoHtmEd.exe ftp:// http:// https://",
+  "evasions": {
+    "insertion": "\\MSOHTMED.exe MsoHtmEd.exe ftp:// htt\"p://\" https://",
+    "substitution": "\\MSOHTMED.exe MsoHtmEd.exe ftp:// http:// https:// #substitution",
+    "omission": "\\MSOHTMED MsoHtmEd ftp:// http:// https://",
+    "reordering": "\\MSOHTMED.exe ftp:// https:// MsoHtmEd.exe http://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1TT0hUTUVELmV4ZSBNc29IdG1FZC5leGUgZnRwOi8vIGh0dHA6Ly8gaHR0cHM6Ly8=')) | Invoke-Expression\" "
+  }
+}

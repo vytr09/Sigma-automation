@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_sysinternals_sdelete_0",
+  "original_command": "sdelete.exe \\sdelete.exe \\sdelete64.exe",
+  "evasions": {
+    "insertion": "sdelete.exe \"\\sdelete.exe\" \"\\sdelete64.exe\"",
+    "substitution": "sdelete.exe \\sdelete.exe \\sdelete64.exe #substitution",
+    "omission": "sdelete \\sdelete \\sdelete64",
+    "reordering": "sdelete.exe \\sdelete64.exe \\sdelete.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2RlbGV0ZS5leGUgXHNkZWxldGUuZXhlIFxzZGVsZXRlNjQuZXhl')) | Invoke-Expression\" "
+  }
+}

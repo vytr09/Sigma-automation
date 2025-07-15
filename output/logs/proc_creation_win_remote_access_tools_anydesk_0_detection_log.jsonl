@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:17:47 UTC", "rule": "proc_creation_win_remote_access_tools_anydesk_0", "phase": "original", "command": "\\AnyDesk.exe \\AnyDeskMSI.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:47 UTC", "rule": "proc_creation_win_remote_access_tools_anydesk_0", "phase": "insertion", "command": "\\\"A\"\"n\"\"y\"\"D\"\"e\"\"s\"\"k\"\".\"\"e\"\"x\"\"e\" \\AnyDeskMSI.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:47 UTC", "rule": "proc_creation_win_remote_access_tools_anydesk_0", "phase": "substitution", "command": "\\AnyDesk.exe \\AnyDeskMSI.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:47 UTC", "rule": "proc_creation_win_remote_access_tools_anydesk_0", "phase": "omission", "command": "\\AnyDesk \\AnyDeskMSI", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:47 UTC", "rule": "proc_creation_win_remote_access_tools_anydesk_0", "phase": "reordering", "command": "\\AnyDesk.exe \\AnyDeskMSI.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:17:47 UTC", "rule": "proc_creation_win_remote_access_tools_anydesk_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFueURlc2suZXhlIFxBbnlEZXNrTVNJLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

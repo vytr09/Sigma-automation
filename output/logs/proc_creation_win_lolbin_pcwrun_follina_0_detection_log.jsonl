@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:36:23 UTC", "rule": "proc_creation_win_lolbin_pcwrun_follina_0", "phase": "original", "command": "\\pcwrun.exe ../", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:36:30 UTC", "rule": "proc_creation_win_lolbin_pcwrun_follina_0", "phase": "insertion", "command": "\\\"\\pcwrun.exe\\\" ../", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:36:37 UTC", "rule": "proc_creation_win_lolbin_pcwrun_follina_0", "phase": "substitution", "command": "\\pcwrun.exe ../ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:36:42 UTC", "rule": "proc_creation_win_lolbin_pcwrun_follina_0", "phase": "omission", "command": "\\pcwrun ../", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:36:48 UTC", "rule": "proc_creation_win_lolbin_pcwrun_follina_0", "phase": "reordering", "command": "\\pcwrun.exe ../", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:36:54 UTC", "rule": "proc_creation_win_lolbin_pcwrun_follina_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBjd3J1bi5leGUgLi4v')) | Invoke-Expression\" ", "status": "BYPASSED"}

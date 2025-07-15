@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_remotefxvgpudisablement_abuse_0",
+  "original_command": "Invoke-ATHRemoteFXvGPUDisablementCommand Invoke-ATHRemoteFXvGPUDisableme",
+  "evasions": {
+    "insertion": "Invoke-ATHRemoteFXvGPUDisablementCommand \"Invoke-ATHRemoteFXvGPUDisableme\"",
+    "substitution": "Invoke-ATHRemoteFXvGPUDisablementCommand Invoke-ATHRemoteFXvGPUDisableme #substitution",
+    "omission": "Invoke-ATHRemoteFXvGPUDisablementCommand Invoke-ATHRemoteFXvGPUDisableme # omission",
+    "reordering": "Invoke-ATHRemoteFXvGPUDisablementCommand Invoke-ATHRemoteFXvGPUDisableme",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW52b2tlLUFUSFJlbW90ZUZYdkdQVURpc2FibGVtZW50Q29tbWFuZCBJbnZva2UtQVRIUmVtb3RlRlh2R1BVRGlzYWJsZW1l')) | Invoke-Expression\" "
+  }
+}

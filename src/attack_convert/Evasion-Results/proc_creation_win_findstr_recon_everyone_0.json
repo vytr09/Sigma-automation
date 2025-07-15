@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_findstr_recon_everyone_0",
+  "original_command": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE 'Everyone' 'BUILTIN\\' icacls findstr Everyone",
+  "evasions": {
+    "insertion": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE 'Everyone' \\\"'BUILTIN\\'\\\" icacls findstr Everyone",
+    "substitution": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE 'Everyone' 'BUILTIN\\' icacls findstr Everyone #substitution",
+    "omission": "\\find \\findstr FIND FINDSTR 'Everyone' 'BUILTIN\\' icacls findstr Everyone",
+    "reordering": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE 'Everyone' 'BUILTIN\\' icacls findstr Everyone",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZpbmQuZXhlIFxmaW5kc3RyLmV4ZSBGSU5ELkVYRSBGSU5EU1RSLkVYRSAnRXZlcnlvbmUnICdCVUlMVElOXCcgaWNhY2xzIGZpbmRzdHIgRXZlcnlvbmU=')) | Invoke-Expression\" "
+  }
+}

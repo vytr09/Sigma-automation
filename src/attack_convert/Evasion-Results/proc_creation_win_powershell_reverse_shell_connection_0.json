@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_reverse_shell_connection_0",
+  "original_command": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Net.Sockets.TCPClient .GetStream( .Write(",
+  "evasions": {
+    "insertion": "PowerShell.EXE pwsh.dll \\powershell.exe \\\"\\pwsh.exe\\\" Net.Sockets.TCPClient .GetStream( .Write(",
+    "substitution": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Net.Sockets.TCPClient .GetStream( .Write( #substitution",
+    "omission": "PowerShell pwsh.dll \\powershell \\pwsh Net.Sockets.TCPClient .GetStream( .Write(",
+    "reordering": "PowerShell.EXE pwsh.dll \\powershell.exe \\pwsh.exe Net.Sockets.TCPClient .GetStream( .Write(",
+    "recoding": "powershell.exe -EncodedCommand UABvAHcAZQByAFMAaABlAGwAbAAuAEUAWABFACAAcAB3AHMAaAAuAGQAbABsACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAE4AZQB0AC4AUwBvAGMAawBlAHQAcwAuAFQAQwBQAEMAbABpAGUAbgB0ACAALgBHAGUAdABTAHQAcgBlAGEAbQAoACAALgBXAHIAaQB0AGUAKAA= "
+  }
+}

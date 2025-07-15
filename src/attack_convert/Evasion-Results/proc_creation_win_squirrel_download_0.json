@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_squirrel_download_0",
+  "original_command": "\\squirrel.exe \\update.exe --download --update --updateRollback= http",
+  "evasions": {
+    "insertion": "\\\"\\squirrel.exe\\\" \\update.exe --download --update --updateRollback= http",
+    "substitution": "\\squirrel.exe \\update.exe --download --update --updateRollback= http #substitution",
+    "omission": "\\squirrel \\update --download --update --updateRollback= http",
+    "reordering": "\\squirrel.exe --download --updateRollback= \\update.exe --update http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNxdWlycmVsLmV4ZSBcdXBkYXRlLmV4ZSAtLWRvd25sb2FkIC0tdXBkYXRlIC0tdXBkYXRlUm9sbGJhY2s9IGh0dHA=')) | Invoke-Expression\" "
+  }
+}

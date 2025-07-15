@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_gup_download_0",
+  "original_command": "\\GUP.exe gup.exe -unzipTo http \\notepad++.exe",
+  "evasions": {
+    "insertion": "\\GUP.exe gup.exe -unzipTo http \\notepa\\\"d++.exe\\\"",
+    "substitution": "\\GUP.exe gup.exe -unzipTo http \\notepad++.exe #substitution",
+    "omission": "\\GUP gup -unzipTo http \\notepad++",
+    "reordering": "\\GUP.exe -unzipTo http \\notepad++.exe gup.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEdVUC5leGUgZ3VwLmV4ZSAtdW56aXBUbyBodHRwIFxub3RlcGFkKysuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_remove_mppreference_0",
+  "original_command": "Remove-MpPreference -ControlledFolderAccessProtectedFolders -AttackSurfaceReductionRules_Ids -AttackSurfaceReductionRules_Actions -CheckForSignaturesBeforeRunningScan",
+  "evasions": {
+    "insertion": "Remove-MpPreference -ControlledFolderAccessProtectedFolders \"-AttackSurfaceReductionRules_Ids\" -AttackSurfaceReductionRules_Actions -CheckForSignaturesBeforeRunningScan",
+    "substitution": "Remove-MpPreference -ControlledFolderAccessProtectedFolders -AttackSurfaceReductionRules_Ids -AttackSurfaceReductionRules_Actions -CheckForSignaturesBeforeRunningScan #substitution",
+    "omission": "Remove-MpPreference -ControlledFolderAccessProtectedFolders -AttackSurfaceReductionRules_Ids -AttackSurfaceReductionRules_Actions -CheckForSignaturesBeforeRunningScan # omission",
+    "reordering": "Remove-MpPreference -CheckForSignaturesBeforeRunningScan -ControlledFolderAccessProtectedFolders -AttackSurfaceReductionRules_Actions -AttackSurfaceReductionRules_Ids",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UmVtb3ZlLU1wUHJlZmVyZW5jZSAtQ29udHJvbGxlZEZvbGRlckFjY2Vzc1Byb3RlY3RlZEZvbGRlcnMgLUF0dGFja1N1cmZhY2VSZWR1Y3Rpb25SdWxlc19JZHMgLUF0dGFja1N1cmZhY2VSZWR1Y3Rpb25SdWxlc19BY3Rpb25zIC1DaGVja0ZvclNpZ25hdHVyZXNCZWZvcmVSdW5uaW5nU2Nhbg==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_ntfs_short_name_use_image_0",
+  "original_command": "\\WebEx\\WebexHost.exe \\thor\\thor64.exe \\VCREDI~1.EXE",
+  "evasions": {
+    "insertion": "\\WebEx\\WebexHost.exe \\thor\\thor64.exe \"\\\"\"V\"\"C\"\"R\"\"E\"\"D\"\"I\"\"~\"\"1\"\".\"\"E\"\"X\"\"E\"",
+    "substitution": "\\WebEx\\WebexHost.exe \\thor\\thor64.exe \\VCREDI~1.EXE #substitution",
+    "omission": "\\WebEx\\WebexHost \\thor\\thor64 \\VCREDI~1",
+    "reordering": "\\WebEx\\WebexHost.exe \\thor\\thor64.exe \\VCREDI~1.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdlYkV4XFdlYmV4SG9zdC5leGUgXHRob3JcdGhvcjY0LmV4ZSBcVkNSRURJfjEuRVhF')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_csvde_export_0",
+  "original_command": "\\csvde.exe csvde.exe -f -i",
+  "evasions": {
+    "insertion": "\\csvde.exe \"csvde.exe\" \"-f\" -i",
+    "substitution": "\\csvde.exe csvde.exe -f -i #substitution",
+    "omission": "\\csvde csvde -f -i",
+    "reordering": "\\csvde.exe -f csvde.exe -i",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzdmRlLmV4ZSBjc3ZkZS5leGUgLWYgLWk=')) | Invoke-Expression\" "
+  }
+}

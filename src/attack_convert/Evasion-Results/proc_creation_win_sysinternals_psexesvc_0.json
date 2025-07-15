@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_psexesvc_0",
+  "original_command": "psexesvc.exe",
+  "evasions": {
+    "insertion": "psexesvc.exe",
+    "substitution": "psexesvc.exe #substitution",
+    "omission": "psexesvc",
+    "reordering": "psexesvc.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cHNleGVzdmMuZXhl')) | Invoke-Expression\" "
+  }
+}

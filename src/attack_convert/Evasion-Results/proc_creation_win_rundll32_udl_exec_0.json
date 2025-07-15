@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_udl_exec_0",
+  "original_command": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE oledb32.dll ,OpenDSLFile \\\\Users\\\\ \\\\Downloads\\\\",
+  "evasions": {
+    "insertion": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE oledb32.dll ,OpenDSLFile \\\\Users\\\\ \\\\Down\"loads\\\\\"",
+    "substitution": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE oledb32.dll ,OpenDSLFile \\\\Users\\\\ \\\\Downloads\\\\ #substitution",
+    "omission": "\\explorer \\rundll32 RUNDLL32 oledb32.dll ,OpenDSLFile \\\\Users\\\\ \\\\Downloads\\\\",
+    "reordering": "\\explorer.exe \\rundll32.exe RUNDLL32.EXE oledb32.dll ,OpenDSLFile \\\\Users\\\\ \\\\Downloads\\\\",
+    "recoding": "powershell.exe -EncodedCommand XABlAHgAcABsAG8AcgBlAHIALgBlAHgAZQAgAFwAcgB1AG4AZABsAGwAMwAyAC4AZQB4AGUAIABSAFUATgBEAEwATAAzADIALgBFAFgARQAgAG8AbABlAGQAYgAzADIALgBkAGwAbAAgACwATwBwAGUAbgBEAFMATABGAGkAbABlACAAXABcAFUAcwBlAHIAcwBcAFwAIABcAFwARABvAHcAbgBsAG8AYQBkAHMAXABcAA== "
+  }
+}

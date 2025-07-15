@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_schedule_type_0",
+  "original_command": "\\schtasks.exe schtasks.exe ONLOGON ONSTART ONCE ONIDLE NT AUT SYSTEM HIGHEST",
+  "evasions": {
+    "insertion": "\\schtasks.exe schtasks.exe ONLOGON ONSTART ONCE ONIDLE NT AUT \\\"SYSTEM\\\" \\\"HIGHEST\\\"",
+    "substitution": "\\schtasks.exe schtasks.exe ONLOGON ONSTART ONCE ONIDLE NT AUT SYSTEM HIGHEST #substitution",
+    "omission": "\\schtasks schtasks ONLOGON ONSTART ONCE ONIDLE NT AUT SYSTEM HIGHEST",
+    "reordering": "\\schtasks.exe schtasks.exe ONLOGON ONSTART ONCE ONIDLE NT AUT SYSTEM HIGHEST",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSBzY2h0YXNrcy5leGUgT05MT0dPTiBPTlNUQVJUIE9OQ0UgT05JRExFIE5UIEFVVCBTWVNURU0gSElHSEVTVA==')) | Invoke-Expression\" "
+  }
+}

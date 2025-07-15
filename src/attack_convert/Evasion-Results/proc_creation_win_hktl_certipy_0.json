@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_certipy_0",
+  "original_command": "\\Certipy.exe Certipy.exe Certipy account auth cert find forge ptt relay req shadow template -bloodhound -ca-pfx -dc-ip -kirbi -old-bloodhound -pfx -target -template -username -vulnerable auth -pfx shadow auto shadow list",
+  "evasions": {
+    "insertion": "\\Certipy.exe Certipy.exe Certipy account auth cert find forge ptt relay req shadow template \\\"-bloodhound\\\" -ca-pfx -dc-ip -kirbi -old-bloodhound -pfx -target -template -username -vulnerable auth -pfx shadow auto shadow list",
+    "substitution": "\\Certipy.exe Certipy.exe Certipy account auth cert find forge ptt relay req shadow template -bloodhound -ca-pfx -dc-ip -kirbi -old-bloodhound -pfx -target -template -username -vulnerable auth -pfx shadow auto shadow list #substitution",
+    "omission": "\\Certipy Certipy Certipy account auth cert find forge ptt relay req shadow template -bloodhound -ca-pfx -dc-ip -kirbi -old-bloodhound -pfx -target -template -username -vulnerable auth -pfx shadow auto shadow list",
+    "reordering": "\\Certipy.exe Certipy.exe Certipy account auth cert find forge ptt relay req shadow template -bloodhound -ca-pfx -dc-ip -kirbi -old-bloodhound -pfx -target -template -username -vulnerable auth -pfx shadow auto shadow list",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENlcnRpcHkuZXhlIENlcnRpcHkuZXhlIENlcnRpcHkgYWNjb3VudCBhdXRoIGNlcnQgZmluZCBmb3JnZSBwdHQgcmVsYXkgcmVxIHNoYWRvdyB0ZW1wbGF0ZSAtYmxvb2Rob3VuZCAtY2EtcGZ4IC1kYy1pcCAta2lyYmkgLW9sZC1ibG9vZGhvdW5kIC1wZnggLXRhcmdldCAtdGVtcGxhdGUgLXVzZXJuYW1lIC12dWxuZXJhYmxlIGF1dGggLXBmeCBzaGFkb3cgYXV0byBzaGFkb3cgbGlzdA==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_remote_0",
+  "original_command": "\\remote.exe remote.exe",
+  "evasions": {
+    "insertion": "\\remote.exe \\\"remot\\\"e.exe",
+    "substitution": "\\remote.exe remote.exe #substitution",
+    "omission": "\\remote remote",
+    "reordering": "\\remote.exe remote.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlbW90ZS5leGUgcmVtb3RlLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

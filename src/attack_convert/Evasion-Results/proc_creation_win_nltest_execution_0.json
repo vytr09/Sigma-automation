@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_nltest_execution_0",
+  "original_command": "\\nltest.exe nltestrk.exe",
+  "evasions": {
+    "insertion": "\\nltest.exe \\\"nltest\\\"rk.exe",
+    "substitution": "\\nltest.exe nltestrk.exe #substitution",
+    "omission": "\\nltest nltestrk",
+    "reordering": "\\nltest.exe nltestrk.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5sdGVzdC5leGUgbmx0ZXN0cmsuZXhl')) | Invoke-Expression\" "
+  }
+}

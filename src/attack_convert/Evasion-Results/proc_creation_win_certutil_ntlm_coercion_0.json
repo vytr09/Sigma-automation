@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certutil_ntlm_coercion_0",
+  "original_command": "\\certutil.exe CertUtil.exe -syncwithWU \\\\\\\\",
+  "evasions": {
+    "insertion": "\\\"\\certutil.exe\\\" CertUtil.exe -syncwithWU \\\\\\\\",
+    "substitution": "\\certutil.exe CertUtil.exe -syncwithWU \\\\\\\\ #substitution",
+    "omission": "\\certutil CertUtil -syncwithWU \\\\\\\\",
+    "reordering": "\\certutil.exe \\\\\\\\ -syncwithWU CertUtil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLXN5bmN3aXRoV1UgXFxcXA==')) | Invoke-Expression\" "
+  }
+}

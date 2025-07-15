@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_add_run_key_0",
+  "original_command": "\\reg.exe reg add Software\\Microsoft\\Windows\\CurrentVersion\\Run \\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run \\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+  "evasions": {
+    "insertion": "\\reg.exe reg add Software\\Microsoft\\Windows\\CurrentVersion\\Run \"\\Software\\WOW6432Node\\Microso\"ft\\Windows\\CurrentVersion\\Run \\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+    "substitution": "\\reg.exe reg add Software\\Microsoft\\Windows\\CurrentVersion\\Run \\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run \\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+    "omission": "\\reg.exe reg add Software\\Microsoft\\Windows\\CurrentVersion\\Run \\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run \\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run # omission",
+    "reordering": "\\reg.exe reg \\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run Software\\Microsoft\\Windows\\CurrentVersion\\Run add \\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnIGFkZCBTb2Z0d2FyZVxNaWNyb3NvZnRcV2luZG93c1xDdXJyZW50VmVyc2lvblxSdW4gXFNvZnR3YXJlXFdPVzY0MzJOb2RlXE1pY3Jvc29mdFxXaW5kb3dzXEN1cnJlbnRWZXJzaW9uXFJ1biBcU29mdHdhcmVcTWljcm9zb2Z0XFdpbmRvd3NcQ3VycmVudFZlcnNpb25cUG9saWNpZXNcRXhwbG9yZXJcUnVu')) | Invoke-Expression\" "
+  }
+}

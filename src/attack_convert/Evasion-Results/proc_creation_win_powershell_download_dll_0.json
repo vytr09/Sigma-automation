@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_download_dll_0",
+  "original_command": "Invoke-WebRequest IWR http OutFile .dll",
+  "evasions": {
+    "insertion": "Invoke-WebRequest IWR \"ht\"tp OutFile .dll",
+    "substitution": "Invoke-WebRequest IWR http OutFile .dll #substitution",
+    "omission": "Invoke-WebRequest IWR http OutFile .dll # omission",
+    "reordering": "Invoke-WebRequest http IWR OutFile .dll",
+    "recoding": "powershell.exe -EncodedCommand SQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAASQBXAFIAIABoAHQAdABwACAATwB1AHQARgBpAGwAZQAgAC4AZABsAGwA "
+  }
+}

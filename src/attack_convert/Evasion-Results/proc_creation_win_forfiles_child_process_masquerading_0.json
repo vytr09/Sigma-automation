@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_forfiles_child_process_masquerading_0",
+  "original_command": "\\cmd.exe \\forfiles.exe \\cmd.exe",
+  "evasions": {
+    "insertion": "\\cmd.exe \"\\forfiles.exe\" \\cmd.exe",
+    "substitution": "\\cmd.exe \\forfiles.exe \\cmd.exe #substitution",
+    "omission": "\\cmd \\forfiles \\cmd",
+    "reordering": "\\cmd.exe \\cmd.exe \\forfiles.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgXGZvcmZpbGVzLmV4ZSBcY21kLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

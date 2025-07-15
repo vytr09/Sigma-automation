@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:56:32 UTC", "rule": "proc_creation_win_msdt_susp_cab_options_0", "phase": "original", "command": "\\msdt.exe msdt.exe -cab", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:56:40 UTC", "rule": "proc_creation_win_msdt_susp_cab_options_0", "phase": "insertion", "command": "\\msdt.exe \\\"m\\\"\\\"s\\\"\\\"d\\\"\\\"t\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" -cab", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:56:47 UTC", "rule": "proc_creation_win_msdt_susp_cab_options_0", "phase": "substitution", "command": "\\msdt.exe msdt.exe -cab #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:56:53 UTC", "rule": "proc_creation_win_msdt_susp_cab_options_0", "phase": "omission", "command": "\\msdt msdt -cab", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:57:02 UTC", "rule": "proc_creation_win_msdt_susp_cab_options_0", "phase": "reordering", "command": "\\msdt.exe msdt.exe -cab", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:57:19 UTC", "rule": "proc_creation_win_msdt_susp_cab_options_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zZHQuZXhlIG1zZHQuZXhlIC1jYWI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

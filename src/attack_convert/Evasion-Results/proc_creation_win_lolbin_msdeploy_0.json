@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_msdeploy_0",
+  "original_command": "verb:sync -source:RunCommand -dest:runCommand \\msdeploy.exe",
+  "evasions": {
+    "insertion": "verb:sync \\\"-source:RunCommand\\\" -dest:runCommand \\msdeploy.exe",
+    "substitution": "verb:sync -source:RunCommand -dest:runCommand \\msdeploy.exe #substitution",
+    "omission": "verb:sync -source:RunCommand -dest:runCommand \\msdeploy",
+    "reordering": "verb:sync \\msdeploy.exe -dest:runCommand -source:RunCommand",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dmVyYjpzeW5jIC1zb3VyY2U6UnVuQ29tbWFuZCAtZGVzdDpydW5Db21tYW5kIFxtc2RlcGxveS5leGU=')) | Invoke-Expression\" "
+  }
+}

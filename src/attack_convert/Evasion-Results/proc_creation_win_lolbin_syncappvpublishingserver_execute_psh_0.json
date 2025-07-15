@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_syncappvpublishingserver_execute_psh_0",
+  "original_command": "\\SyncAppvPublishingServer.exe syncappvpublishingserver.exe",
+  "evasions": {
+    "insertion": "\\SyncAppvPublishingServer.exe \"s\"\"y\"\"n\"\"c\"\"a\"\"p\"\"p\"\"v\"\"p\"\"u\"\"b\"\"l\"\"i\"\"s\"\"h\"\"i\"\"n\"\"g\"\"s\"\"e\"\"r\"\"v\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\SyncAppvPublishingServer.exe syncappvpublishingserver.exe #substitution",
+    "omission": "\\SyncAppvPublishingServer syncappvpublishingserver",
+    "reordering": "\\SyncAppvPublishingServer.exe syncappvpublishingserver.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5bmNBcHB2UHVibGlzaGluZ1NlcnZlci5leGUgc3luY2FwcHZwdWJsaXNoaW5nc2VydmVyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:44:39 UTC", "rule": "proc_creation_win_powershell_decode_gzip_0", "phase": "original", "command": "GZipStream ::Decompress", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:44:46 UTC", "rule": "proc_creation_win_powershell_decode_gzip_0", "phase": "insertion", "command": "GZipStream \\\"::Deco\\\"mpress", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:44:53 UTC", "rule": "proc_creation_win_powershell_decode_gzip_0", "phase": "substitution", "command": "GZipStream ::Decompress #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:44:59 UTC", "rule": "proc_creation_win_powershell_decode_gzip_0", "phase": "omission", "command": "GZipStream ::Decompress # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:45:08 UTC", "rule": "proc_creation_win_powershell_decode_gzip_0", "phase": "reordering", "command": "GZipStream ::Decompress", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:45:17 UTC", "rule": "proc_creation_win_powershell_decode_gzip_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R1ppcFN0cmVhbSA6OkRlY29tcHJlc3M=')) | Invoke-Expression\" ", "status": "BYPASSED"}

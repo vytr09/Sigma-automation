@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dumpminitool_execution_0",
+  "original_command": "\\DumpMinitool.exe \\DumpMinitool.x86.exe \\DumpMinitool.arm64.exe DumpMinitool.exe DumpMinitool.x86.exe DumpMinitool.arm64.exe Full Mini WithHeap",
+  "evasions": {
+    "insertion": "\\DumpMinitool.exe \\DumpMinitool.x86.exe \\DumpMinitool.arm64.exe DumpMinitool.exe DumpMinitool.x86.exe DumpMinitool.arm64.exe Full \"Mi\"ni WithHeap",
+    "substitution": "\\DumpMinitool.exe \\DumpMinitool.x86.exe \\DumpMinitool.arm64.exe DumpMinitool.exe DumpMinitool.x86.exe DumpMinitool.arm64.exe Full Mini WithHeap #substitution",
+    "omission": "\\DumpMinitool \\DumpMinitool.x86 \\DumpMinitool.arm64 DumpMinitool DumpMinitool.x86 DumpMinitool.arm64 Full Mini WithHeap",
+    "reordering": "\\DumpMinitool.exe \\DumpMinitool.x86.exe \\DumpMinitool.arm64.exe DumpMinitool.exe DumpMinitool.x86.exe DumpMinitool.arm64.exe Full Mini WithHeap",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XER1bXBNaW5pdG9vbC5leGUgXER1bXBNaW5pdG9vbC54ODYuZXhlIFxEdW1wTWluaXRvb2wuYXJtNjQuZXhlIER1bXBNaW5pdG9vbC5leGUgRHVtcE1pbml0b29sLng4Ni5leGUgRHVtcE1pbml0b29sLmFybTY0LmV4ZSBGdWxsIE1pbmkgV2l0aEhlYXA=')) | Invoke-Expression\" "
+  }
+}

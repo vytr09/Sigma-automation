@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:43:56 UTC", "rule": "proc_creation_win_powershell_create_service_0", "phase": "original", "command": "New-Service -BinaryPathName", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:44:05 UTC", "rule": "proc_creation_win_powershell_create_service_0", "phase": "insertion", "command": "New-Service \\\"-Binary\\\"PathName", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:44:13 UTC", "rule": "proc_creation_win_powershell_create_service_0", "phase": "substitution", "command": "New-Service -BinaryPathName #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:44:20 UTC", "rule": "proc_creation_win_powershell_create_service_0", "phase": "omission", "command": "New-Service -BinaryPathName # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:44:26 UTC", "rule": "proc_creation_win_powershell_create_service_0", "phase": "reordering", "command": "New-Service -BinaryPathName", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:44:33 UTC", "rule": "proc_creation_win_powershell_create_service_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TmV3LVNlcnZpY2UgLUJpbmFyeVBhdGhOYW1l')) | Invoke-Expression\" ", "status": "BYPASSED"}

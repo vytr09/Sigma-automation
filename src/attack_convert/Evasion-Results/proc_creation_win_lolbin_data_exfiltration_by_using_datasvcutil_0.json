@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_data_exfiltration_by_using_datasvcutil_0",
+  "original_command": "/in: /out: /uri: \\DataSvcUtil.exe DataSvcUtil.exe",
+  "evasions": {
+    "insertion": "/in: /out: /uri: \\\"\\\\\"\\\"D\\\"\\\"a\\\"\\\"t\\\"\\\"a\\\"\\\"S\\\"\\\"v\\\"\\\"c\\\"\\\"U\\\"\\\"t\\\"\\\"i\\\"\\\"l\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" DataSvcUtil.exe",
+    "substitution": "/in: /out: /uri: \\DataSvcUtil.exe DataSvcUtil.exe #substitution",
+    "omission": "/in: /out: /uri: \\DataSvcUtil DataSvcUtil",
+    "reordering": "/in: /out: /uri: \\DataSvcUtil.exe DataSvcUtil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2luOiAvb3V0OiAvdXJpOiBcRGF0YVN2Y1V0aWwuZXhlIERhdGFTdmNVdGlsLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

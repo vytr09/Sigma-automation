@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_winrm_remote_powershell_session_process_0",
+  "original_command": "\\wsmprovhost.exe \\wsmprovhost.exe",
+  "evasions": {
+    "insertion": "\\wsmprovhost.exe \"\\wsmprovhost.exe\"",
+    "substitution": "\\wsmprovhost.exe \\wsmprovhost.exe #substitution",
+    "omission": "\\wsmprovhost \\wsmprovhost",
+    "reordering": "\\wsmprovhost.exe \\wsmprovhost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdzbXByb3Zob3N0LmV4ZSBcd3NtcHJvdmhvc3QuZXhl')) | Invoke-Expression\" "
+  }
+}

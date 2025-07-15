@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_htran_or_natbypass_0",
+  "original_command": "\\htran.exe \\lcx.exe .exe -tran .exe -slave",
+  "evasions": {
+    "insertion": "\\htran.exe \\lcx.exe .exe -tran .exe \"-slave\"",
+    "substitution": "\\htran.exe \\lcx.exe .exe -tran .exe -slave #substitution",
+    "omission": "\\htran \\lcx -tran -slave",
+    "reordering": "\\htran.exe -tran .exe \\lcx.exe -slave .exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGh0cmFuLmV4ZSBcbGN4LmV4ZSAuZXhlIC10cmFuIC5leGUgLXNsYXZl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_shell32_susp_execution_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE shell32.dll Control_RunDLL %AppData% %LocalAppData% %Temp% %tmp% \\AppData\\ \\Temp\\ \\Users\\Public\\",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE shell32.dll Control_RunDLL %AppData% %LocalAppData% %Temp% %tmp% \\AppData\\ \"\\Temp\\\" \\Users\\Public\\",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE shell32.dll Control_RunDLL %AppData% %LocalAppData% %Temp% %tmp% \\AppData\\ \\Temp\\ \\Users\\Public\\ #substitution",
+    "omission": "\\rundll32 RUNDLL32 shell32.dll Control_RunDLL %AppData% %LocalAppData% %Temp% %tmp% \\AppData\\ \\Temp\\ \\Users\\Public\\",
+    "reordering": "\\rundll32.exe RUNDLL32.EXE shell32.dll Control_RunDLL %AppData% %LocalAppData% %Temp% %tmp% \\AppData\\ \\Temp\\ \\Users\\Public\\",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFIAVQBOAEQATABMADMAMgAuAEUAWABFACAAcwBoAGUAbABsADMAMgAuAGQAbABsACAAQwBvAG4AdAByAG8AbABfAFIAdQBuAEQATABMACAAJQBBAHAAcABEAGEAdABhACUAIAAlAEwAbwBjAGEAbABBAHAAcABEAGEAdABhACUAIAAlAFQAZQBtAHAAJQAgACUAdABtAHAAJQAgAFwAQQBwAHAARABhAHQAYQBcACAAXABUAGUAbQBwAFwAIABcAFUAcwBlAHIAcwBcAFAAdQBiAGwAaQBjAFwA "
+  }
+}

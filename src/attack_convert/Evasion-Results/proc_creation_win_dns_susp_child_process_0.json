@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dns_susp_child_process_0",
+  "original_command": "\\dns.exe \\conhost.exe",
+  "evasions": {
+    "insertion": "\\dns.exe \\conho\\\"st.exe\\\"",
+    "substitution": "\\dns.exe \\conhost.exe #substitution",
+    "omission": "\\dns \\conhost",
+    "reordering": "\\dns.exe \\conhost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRucy5leGUgXGNvbmhvc3QuZXhl')) | Invoke-Expression\" "
+  }
+}

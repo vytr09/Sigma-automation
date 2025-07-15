@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_anydesk_0",
+  "original_command": "\\AnyDesk.exe \\AnyDeskMSI.exe",
+  "evasions": {
+    "insertion": "\\\"A\"\"n\"\"y\"\"D\"\"e\"\"s\"\"k\"\".\"\"e\"\"x\"\"e\" \\AnyDeskMSI.exe",
+    "substitution": "\\AnyDesk.exe \\AnyDeskMSI.exe #substitution",
+    "omission": "\\AnyDesk \\AnyDeskMSI",
+    "reordering": "\\AnyDesk.exe \\AnyDeskMSI.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFueURlc2suZXhlIFxBbnlEZXNrTVNJLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

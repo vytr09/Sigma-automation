@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certoc_load_dll_susp_locations_0",
+  "original_command": "\\certoc.exe CertOC.exe -LoadDLL \\Appdata\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ C:\\Windows\\Tasks\\ C:\\Windows\\Temp\\",
+  "evasions": {
+    "insertion": "\\certoc.exe CertOC.exe -LoadDLL \\Appdata\\Local\\Temp\\ \\\"\\Desktop\\\\\" \\\"\\Downloads\\\\\" \\Users\\Public\\ C:\\Windows\\Tasks\\ C:\\Windows\\Temp\\",
+    "substitution": "\\certoc.exe CertOC.exe -LoadDLL \\Appdata\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ C:\\Windows\\Tasks\\ C:\\Windows\\Temp\\ #substitution",
+    "omission": "\\certoc CertOC -LoadDLL \\Appdata\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ Tasks\\ Temp\\",
+    "reordering": "\\certoc.exe CertOC.exe -LoadDLL \\Appdata\\Local\\Temp\\ \\Desktop\\ \\Downloads\\ \\Users\\Public\\ C:\\Windows\\Tasks\\ C:\\Windows\\Temp\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnRvYy5leGUgQ2VydE9DLmV4ZSAtTG9hZERMTCBcQXBwZGF0YVxMb2NhbFxUZW1wXCBcRGVza3RvcFwgXERvd25sb2Fkc1wgXFVzZXJzXFB1YmxpY1wgQzpcV2luZG93c1xUYXNrc1wgQzpcV2luZG93c1xUZW1wXA==')) | Invoke-Expression\" "
+  }
+}

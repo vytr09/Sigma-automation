@@ -2,7 +2,7 @@
   "rule_name": "win_new_service_creation_0",
   "original_command": "powershell.exe new-service",
   "evasions": {
-    "insertion": "powershell.exe new-s\"ervice\"",
+    "insertion": "powershell.exe \"new-s\"ervice",
     "substitution": "powershell.exe new-service #substitution",
     "omission": "powershell new-service",
     "reordering": "powershell.exe new-service",

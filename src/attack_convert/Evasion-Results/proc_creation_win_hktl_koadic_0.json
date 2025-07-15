@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_koadic_0",
+  "original_command": "\\cmd.exe Cmd.Exe /q /c chcp",
+  "evasions": {
+    "insertion": "\"\\cmd.exe\" Cmd.Exe /q /c chcp",
+    "substitution": "\\cmd.exe Cmd.Exe /q -c chcp",
+    "omission": "\\cmd Cmd /q /c chcp",
+    "reordering": "\\cmd.exe Cmd.Exe /q /c chcp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSAvcSAvYyBjaGNw')) | Invoke-Expression\" "
+  }
+}

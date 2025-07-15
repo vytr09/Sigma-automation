@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:20:10 UTC", "rule": "proc_creation_win_jsc_execution_0", "phase": "original", "command": "\\jsc.exe jsc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:20:27 UTC", "rule": "proc_creation_win_jsc_execution_0", "phase": "insertion", "command": "\"\\jsc.exe\" jsc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:20:33 UTC", "rule": "proc_creation_win_jsc_execution_0", "phase": "substitution", "command": "\\jsc.exe jsc.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:20:39 UTC", "rule": "proc_creation_win_jsc_execution_0", "phase": "omission", "command": "\\jsc jsc", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:20:45 UTC", "rule": "proc_creation_win_jsc_execution_0", "phase": "reordering", "command": "\\jsc.exe jsc.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:20:52 UTC", "rule": "proc_creation_win_jsc_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGpzYy5leGUganNjLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

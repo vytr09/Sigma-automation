@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_megasync_0",
+  "original_command": "megasync.exe \\megasync.exe",
+  "evasions": {
+    "insertion": "megasync.exe \"\\megasync.exe\"",
+    "substitution": "megasync.exe \\megasync.exe #substitution",
+    "omission": "megasync \\megasync",
+    "reordering": "megasync.exe \\megasync.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bWVnYXN5bmMuZXhlIFxtZWdhc3luYy5leGU=')) | Invoke-Expression\" "
+  }
+}

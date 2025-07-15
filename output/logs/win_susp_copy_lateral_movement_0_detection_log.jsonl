@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 10:40:57 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "omission", "command": "copy \\ADMIN$ # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 10:41:05 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "reordering", "command": "copy \\ADMIN$", "status": "DETECTED"}
 {"timestamp": "2025-04-23 10:41:13 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:05:39 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "original", "command": "copy \\ADMIN$", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:05:42 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "insertion", "command": "copy \"\\ADMIN$\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:05:46 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "substitution", "command": "copy \\ADMIN$ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:05:49 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "omission", "command": "copy \\ADMIN$ # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:05:53 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "reordering", "command": "copy \\ADMIN$", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:05:56 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAYwBvAHAAeQAgAFwAQQBEAE0ASQBOACQA ", "status": "BYPASSED"}

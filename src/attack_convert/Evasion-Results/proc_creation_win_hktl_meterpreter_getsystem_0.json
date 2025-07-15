@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_meterpreter_getsystem_0",
+  "original_command": "\\services.exe /c echo \\pipe\\ cmd %COMSPEC% rundll32 .dll,a /p: MpCmdRun",
+  "evasions": {
+    "insertion": "\\services.exe /c echo \"\\pi\"pe\\ cmd %COMSPEC% rundll32 .dll,a /p: MpCmdRun",
+    "substitution": "\\services.exe -c echo \\pipe\\ cmd %COMSPEC% rundll32 .dll,a /p: MpCmdRun",
+    "omission": "\\services /c echo \\pipe\\ cmd %COMSPEC% rundll32 .dll,a /p: MpCmdRun",
+    "reordering": "\\services.exe /c echo \\pipe\\ cmd %COMSPEC% rundll32 .dll,a /p: MpCmdRun",
+    "recoding": "powershell.exe -EncodedCommand XABzAGUAcgB2AGkAYwBlAHMALgBlAHgAZQAgAC8AYwAgAGUAYwBoAG8AIABcAHAAaQBwAGUAXAAgAGMAbQBkACAAJQBDAE8ATQBTAFAARQBDACUAIAByAHUAbgBkAGwAbAAzADIAIAAuAGQAbABsACwAYQAgAC8AcAA6ACAATQBwAEMAbQBkAFIAdQBuAA== "
+  }
+}

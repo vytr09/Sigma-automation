@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:35:27 UTC", "rule": "proc_creation_win_uac_bypass_ieinstal_0", "phase": "original", "command": "\\ieinstal.exe consent.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:27 UTC", "rule": "proc_creation_win_uac_bypass_ieinstal_0", "phase": "insertion", "command": "\\ieinstal.exe \\\"conse\\\"nt.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:27 UTC", "rule": "proc_creation_win_uac_bypass_ieinstal_0", "phase": "substitution", "command": "\\ieinstal.exe consent.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:27 UTC", "rule": "proc_creation_win_uac_bypass_ieinstal_0", "phase": "omission", "command": "\\ieinstal consent", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:27 UTC", "rule": "proc_creation_win_uac_bypass_ieinstal_0", "phase": "reordering", "command": "\\ieinstal.exe consent.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:35:27 UTC", "rule": "proc_creation_win_uac_bypass_ieinstal_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGllaW5zdGFsLmV4ZSBjb25zZW50LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_process_creation_0",
+  "original_command": "\\wmic.exe wmic.exe process call create",
+  "evasions": {
+    "insertion": "\\wmic.exe wmic.exe process ca\\\"ll\\\" create",
+    "substitution": "\\wmic.exe wmic.exe process --call create",
+    "omission": "\\wmic wmic process call create",
+    "reordering": "\\wmic.exe wmic.exe process create call",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIHByb2Nlc3MgY2FsbCBjcmVhdGU=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_rmdir_execution_0",
+  "original_command": "\\cmd.exe Cmd.Exe rmdir /s /q",
+  "evasions": {
+    "insertion": "\\cmd.exe Cmd.Exe \\\"r\\\"\\\"m\\\"\\\"d\\\"\\\"i\\\"\\\"r\\\" /s /q",
+    "substitution": "\\cmd.exe Cmd.Exe rmdir /s -q",
+    "omission": "\\cmd Cmd rmdir /s /q",
+    "reordering": "\\cmd.exe Cmd.Exe rmdir /s /q",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBybWRpciAvcyAvcQ==')) | Invoke-Expression\" "
+  }
+}

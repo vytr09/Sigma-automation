@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:56:10 UTC", "rule": "proc_creation_win_schtasks_creation_temp_folder_0", "phase": "original", "command": "\\schtasks.exe /create /sc once \\Temp\\", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:56:10 UTC", "rule": "proc_creation_win_schtasks_creation_temp_folder_0", "phase": "insertion", "command": "\\schtasks.exe /create /sc once \"\\Te\"mp\\", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:56:10 UTC", "rule": "proc_creation_win_schtasks_creation_temp_folder_0", "phase": "substitution", "command": "\\schtasks.exe -create /sc once \\Temp\\", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:56:10 UTC", "rule": "proc_creation_win_schtasks_creation_temp_folder_0", "phase": "omission", "command": "\\schtasks /create /sc once \\Temp\\", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:56:10 UTC", "rule": "proc_creation_win_schtasks_creation_temp_folder_0", "phase": "reordering", "command": "\\schtasks.exe /create /sc once \\Temp\\", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:56:10 UTC", "rule": "proc_creation_win_schtasks_creation_temp_folder_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvY3JlYXRlIC9zYyBvbmNlIFxUZW1wXA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

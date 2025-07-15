@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cloudflared_quicktunnel_execution_0",
+  "original_command": "\\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe -url tunnel .exe -url .exe --url -url -no-autoupdate",
+  "evasions": {
+    "insertion": "\\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe -url tunnel .exe -url .exe --url \"-url\" -no-autoupdate",
+    "substitution": "\\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe -url tunnel .exe -url .exe --url -url -no-autoupdate #substitution",
+    "omission": "\\cloudflared \\cloudflared-windows-386 \\cloudflared-windows-amd64 -url tunnel -url --url -url -no-autoupdate",
+    "reordering": "\\cloudflared.exe \\cloudflared-windows-386.exe \\cloudflared-windows-amd64.exe -url tunnel .exe -url .exe --url -url -no-autoupdate",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsb3VkZmxhcmVkLmV4ZSBcY2xvdWRmbGFyZWQtd2luZG93cy0zODYuZXhlIFxjbG91ZGZsYXJlZC13aW5kb3dzLWFtZDY0LmV4ZSAtdXJsIHR1bm5lbCAuZXhlIC11cmwgLmV4ZSAtLXVybCAtdXJsIC1uby1hdXRvdXBkYXRl')) | Invoke-Expression\" "
+  }
+}

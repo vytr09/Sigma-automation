@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sigverif_uncommon_child_process_0",
+  "original_command": "\\sigverif.exe",
+  "evasions": {
+    "insertion": "\\\"\\sigverif.exe\\\"",
+    "substitution": "\\sigverif.exe #substitution",
+    "omission": "\\sigverif",
+    "reordering": "\\sigverif.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNpZ3ZlcmlmLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

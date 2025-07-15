@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 09:13:47 UTC", "rule": "win_powershell_bitsjob_0", "phase": "omission", "command": "powershell Start-BitsTransfer", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:13:54 UTC", "rule": "win_powershell_bitsjob_0", "phase": "reordering", "command": "powershell.exe Start-BitsTransfer", "status": "DETECTED"}
 {"timestamp": "2025-04-23 09:14:05 UTC", "rule": "win_powershell_bitsjob_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUwB0AGEAcgB0AC0AQgBpAHQAcwBUAHIAYQBuAHMAZgBlAHIA", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:57:43 UTC", "rule": "win_powershell_bitsjob_0", "phase": "original", "command": "powershell.exe Start-BitsTransfer", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:57:52 UTC", "rule": "win_powershell_bitsjob_0", "phase": "insertion", "command": "powershell.exe Start-Bit\"sTransfer\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:57:57 UTC", "rule": "win_powershell_bitsjob_0", "phase": "substitution", "command": "powershell.exe Start-BitsTransfer #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:58:02 UTC", "rule": "win_powershell_bitsjob_0", "phase": "omission", "command": "powershell Start-BitsTransfer", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:58:06 UTC", "rule": "win_powershell_bitsjob_0", "phase": "reordering", "command": "powershell.exe Start-BitsTransfer", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:58:09 UTC", "rule": "win_powershell_bitsjob_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUwB0AGEAcgB0AC0AQgBpAHQAcwBUAHIAYQBuAHMAZgBlAHIA ", "status": "BYPASSED"}

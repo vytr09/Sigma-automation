@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_svchost_execution_with_no_cli_flags_0",
+  "original_command": "\\svchost.exe \\rpcnet.exe \\rpcnetp.exe",
+  "evasions": {
+    "insertion": "\"\\svchost.exe\" \\rpcnet.exe \\rpcnetp.exe",
+    "substitution": "\\svchost.exe \\rpcnet.exe \\rpcnetp.exe #substitution",
+    "omission": "\\svchost \\rpcnet \\rpcnetp",
+    "reordering": "\\svchost.exe \\rpcnet.exe \\rpcnetp.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIFxycGNuZXQuZXhlIFxycGNuZXRwLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

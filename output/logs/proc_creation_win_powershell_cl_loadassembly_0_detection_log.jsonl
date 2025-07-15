@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 10:42:38 UTC", "rule": "proc_creation_win_powershell_cl_loadassembly_0", "phase": "original", "command": "LoadAssemblyFromPath LoadAssemblyFromNS", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:42:47 UTC", "rule": "proc_creation_win_powershell_cl_loadassembly_0", "phase": "insertion", "command": "LoadAssemblyFromPath LoadAssem\"blyFromNS\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:42:54 UTC", "rule": "proc_creation_win_powershell_cl_loadassembly_0", "phase": "substitution", "command": "LoadAssemblyFromPath LoadAssemblyFromNS #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:43:01 UTC", "rule": "proc_creation_win_powershell_cl_loadassembly_0", "phase": "omission", "command": "LoadAssemblyFromPath LoadAssemblyFromNS # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 10:43:08 UTC", "rule": "proc_creation_win_powershell_cl_loadassembly_0", "phase": "reordering", "command": "LoadAssemblyFromPath LoadAssemblyFromNS", "status": "DETECTED"}
+{"timestamp": "2025-06-23 10:43:15 UTC", "rule": "proc_creation_win_powershell_cl_loadassembly_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('TG9hZEFzc2VtYmx5RnJvbVBhdGggTG9hZEFzc2VtYmx5RnJvbU5T')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:29:08 UTC", "rule": "proc_creation_win_tscon_rdp_session_hijacking_0", "phase": "original", "command": "\\tscon.exe tscon.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:29:16 UTC", "rule": "proc_creation_win_tscon_rdp_session_hijacking_0", "phase": "insertion", "command": "\\tscon.exe \\\"tscon.exe\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:29:22 UTC", "rule": "proc_creation_win_tscon_rdp_session_hijacking_0", "phase": "substitution", "command": "\\tscon.exe tscon.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:29:29 UTC", "rule": "proc_creation_win_tscon_rdp_session_hijacking_0", "phase": "omission", "command": "\\tscon tscon", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:29:35 UTC", "rule": "proc_creation_win_tscon_rdp_session_hijacking_0", "phase": "reordering", "command": "\\tscon.exe tscon.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:29:42 UTC", "rule": "proc_creation_win_tscon_rdp_session_hijacking_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRzY29uLmV4ZSB0c2Nvbi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

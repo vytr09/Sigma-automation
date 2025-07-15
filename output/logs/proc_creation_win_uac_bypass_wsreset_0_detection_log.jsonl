@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:37:55 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_0", "phase": "original", "command": "\\wsreset.exe \\conhost.exe CONHOST.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:38:06 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_0", "phase": "insertion", "command": "\\wsreset.exe \\conhost.exe \"CONHO\"ST.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:38:15 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_0", "phase": "substitution", "command": "\\wsreset.exe \\conhost.exe CONHOST.EXE #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:38:23 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_0", "phase": "omission", "command": "\\wsreset \\conhost CONHOST", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:38:29 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_0", "phase": "reordering", "command": "\\wsreset.exe \\conhost.exe CONHOST.EXE", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:38:36 UTC", "rule": "proc_creation_win_uac_bypass_wsreset_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdzcmVzZXQuZXhlIFxjb25ob3N0LmV4ZSBDT05IT1NULkVYRQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

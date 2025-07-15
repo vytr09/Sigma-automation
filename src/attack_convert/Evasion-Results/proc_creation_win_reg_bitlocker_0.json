@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_bitlocker_0",
+  "original_command": "REG ADD \\SOFTWARE\\Policies\\Microsoft\\FVE /v /f EnableBDEWithNoTPM UseAdvancedStartup UseTPM UseTPMKey UseTPMKeyPIN RecoveryKeyMessageSource UseTPMPIN RecoveryKeyMessage",
+  "evasions": {
+    "insertion": "REG ADD \\SOFTWARE\\Policies\\Microsoft\\FVE /v /f EnableBDEWithNoTPM UseAdvancedStartup Use\"TPM\" UseTPMKey UseTPMKeyPIN RecoveryKeyMessageSource UseTPMPIN RecoveryKeyMessage",
+    "substitution": "REG ADD \\SOFTWARE\\Policies\\Microsoft\\FVE /v /f EnableBDEWithNoTPM UseAdvancedStartup UseTPM UseTPMKey UseTPMKeyPIN RecoveryKeyMessageSource UseTPMPIN RecoveryKeyMessage",
+    "omission": "REG ADD \\SOFTWARE\\Policies\\Microsoft\\FVE /v /f EnableBDEWithNoTPM UseAdvancedStartup UseTPM UseTPMKey UseTPMKeyPIN RecoveryKeyMessageSource UseTPMPIN RecoveryKeyMessage # omission",
+    "reordering": "REG ADD \\SOFTWARE\\Policies\\Microsoft\\FVE /v /f EnableBDEWithNoTPM UseAdvancedStartup UseTPM UseTPMKey UseTPMKeyPIN RecoveryKeyMessageSource UseTPMPIN RecoveryKeyMessage",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UkVHIEFERCBcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XEZWRSAvdiAvZiBFbmFibGVCREVXaXRoTm9UUE0gVXNlQWR2YW5jZWRTdGFydHVwIFVzZVRQTSBVc2VUUE1LZXkgVXNlVFBNS2V5UElOIFJlY292ZXJ5S2V5TWVzc2FnZVNvdXJjZSBVc2VUUE1QSU4gUmVjb3ZlcnlLZXlNZXNzYWdl')) | Invoke-Expression\" "
+  }
+}

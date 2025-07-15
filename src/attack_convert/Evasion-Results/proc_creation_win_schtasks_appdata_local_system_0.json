@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_appdata_local_system_0",
+  "original_command": "\\schtasks.exe /Create /RU /TR C:\\Users\\ \\AppData\\Local\\ NT AUT SYSTEM \\schtasks.exe /TN TVInstallRestore",
+  "evasions": {
+    "insertion": "\\schtasks.exe /Create /RU /TR C:\\Users\\ \\AppData\\Local\\ NT AUT SYSTEM \\schtasks.exe /TN \\\"TVInstal\\\"lRestore",
+    "substitution": "\\schtasks.exe /Create /RU /TR C:\\Users\\ \\AppData\\Local\\ NT AUT SYSTEM \\schtasks.exe /TN TVInstallRestore #substitution",
+    "omission": "\\schtasks /Create /RU /TR AppData\\Local\\ NT AUT SYSTEM \\schtasks /TN TVInstallRestore",
+    "reordering": "\\schtasks.exe /Create /RU /TR C:\\Users\\ \\AppData\\Local\\ NT AUT SYSTEM \\schtasks.exe /TN TVInstallRestore",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvQ3JlYXRlIC9SVSAvVFIgQzpcVXNlcnNcIFxBcHBEYXRhXExvY2FsXCBOVCBBVVQgU1lTVEVNIFxzY2h0YXNrcy5leGUgL1ROIFRWSW5zdGFsbFJlc3RvcmU=')) | Invoke-Expression\" "
+  }
+}

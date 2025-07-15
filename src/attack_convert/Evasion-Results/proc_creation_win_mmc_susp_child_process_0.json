@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_mmc_susp_child_process_0",
+  "original_command": "\\mmc.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe",
+  "evasions": {
+    "insertion": "\\mmc.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\\"\\bash.exe\\\" \\reg.exe \\regsvr32.exe",
+    "substitution": "\\mmc.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe #substitution",
+    "omission": "\\mmc \\cmd \\powershell \\pwsh \\wscript \\cscript \\sh \\bash \\reg \\regsvr32",
+    "reordering": "\\mmc.exe \\cmd.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\cscript.exe \\sh.exe \\bash.exe \\reg.exe \\regsvr32.exe",
+    "recoding": "powershell.exe -EncodedCommand XABtAG0AYwAuAGUAeABlACAAXABjAG0AZAAuAGUAeABlACAAXABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFwAdwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABjAHMAYwByAGkAcAB0AC4AZQB4AGUAIABcAHMAaAAuAGUAeABlACAAXABiAGEAcwBoAC4AZQB4AGUAIABcAHIAZQBnAC4AZQB4AGUAIABcAHIAZQBnAHMAdgByADMAMgAuAGUAeABlAA== "
+  }
+}

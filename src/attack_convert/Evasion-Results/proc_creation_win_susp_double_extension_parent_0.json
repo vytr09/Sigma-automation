@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_double_extension_parent_0",
+  "original_command": ".doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js .doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js",
+  "evasions": {
+    "insertion": ".doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js .doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js \".\"\"x\"\"l\"\"s\"\"x\"\".\"\"j\"\"s\" .ppt.js .pptx.js .rtf.js .pdf.js .txt.js",
+    "substitution": ".doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js .doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js #substitution",
+    "omission": ".doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc .docx .xls .xlsx .ppt .pptx .rtf .pdf .txt .doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc .docx .xls .xlsx .ppt .pptx .rtf .pdf .txt",
+    "reordering": ".doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js .doc.lnk .docx.lnk .xls.lnk .xlsx.lnk .ppt.lnk .pptx.lnk .rtf.lnk .pdf.lnk .txt.lnk .doc.js .docx.js .xls.js .xlsx.js .ppt.js .pptx.js .rtf.js .pdf.js .txt.js",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LmRvYy5sbmsgLmRvY3gubG5rIC54bHMubG5rIC54bHN4LmxuayAucHB0LmxuayAucHB0eC5sbmsgLnJ0Zi5sbmsgLnBkZi5sbmsgLnR4dC5sbmsgLmRvYy5qcyAuZG9jeC5qcyAueGxzLmpzIC54bHN4LmpzIC5wcHQuanMgLnBwdHguanMgLnJ0Zi5qcyAucGRmLmpzIC50eHQuanMgLmRvYy5sbmsgLmRvY3gubG5rIC54bHMubG5rIC54bHN4LmxuayAucHB0LmxuayAucHB0eC5sbmsgLnJ0Zi5sbmsgLnBkZi5sbmsgLnR4dC5sbmsgLmRvYy5qcyAuZG9jeC5qcyAueGxzLmpzIC54bHN4LmpzIC5wcHQuanMgLnBwdHguanMgLnJ0Zi5qcyAucGRmLmpzIC50eHQuanM=')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_lsa_disable_restricted_admin_0",
+  "original_command": "\\System\\CurrentControlSet\\Control\\Lsa\\ DisableRestrictedAdmin",
+  "evasions": {
+    "insertion": "\"\\System\\CurrentControlSet\\Control\\Lsa\\\" DisableRestrictedAdmin",
+    "substitution": "\\System\\CurrentControlSet\\Control\\Lsa\\ DisableRestrictedAdmin #substitution",
+    "omission": "\\System\\CurrentControlSet\\Control\\Lsa\\ DisableRestrictedAdmin # omission",
+    "reordering": "\\System\\CurrentControlSet\\Control\\Lsa\\ DisableRestrictedAdmin",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbVxDdXJyZW50Q29udHJvbFNldFxDb250cm9sXExzYVwgRGlzYWJsZVJlc3RyaWN0ZWRBZG1pbg==')) | Invoke-Expression\" "
+  }
+}

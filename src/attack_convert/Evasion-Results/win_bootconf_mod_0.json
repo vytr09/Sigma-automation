@@ -2,10 +2,10 @@
   "rule_name": "win_bootconf_mod_0",
   "original_command": "bcdedit.exe set bootstatuspolicy ignoreallfailures",
   "evasions": {
-    "insertion": "bcdedit.exe set bootstatuspolicy ignoreal\\\"lfailures\\\"",
+    "insertion": "bcdedit.exe set \\\"bootstat\\\"uspolicy ignoreallfailures",
     "substitution": "bcdedit.exe set bspolicy ignoreallfailures",
     "omission": "bcdedit set bootstatuspolicy ignoreallfailures",
-    "reordering": "bcdedit.exe set ignoreallfailures bootstatuspolicy",
+    "reordering": "bcdedit.exe ignoreallfailures bootstatuspolicy set",
     "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YmNkZWRpdC5leGUgc2V0IGJvb3RzdGF0dXNwb2xpY3kgaWdub3JlYWxsZmFpbHVyZXM=')) | Invoke-Expression\" "
   }
 }

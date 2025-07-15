@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:44:15 UTC", "rule": "proc_creation_win_lolbin_sftp_0", "phase": "original", "command": "\\sftp.exe -D .. -D C:\\", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:44:22 UTC", "rule": "proc_creation_win_lolbin_sftp_0", "phase": "insertion", "command": "\\sftp.exe -D .. -D \\\"C\\\"\\\":\\\"\\\"\\\\\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:44:28 UTC", "rule": "proc_creation_win_lolbin_sftp_0", "phase": "substitution", "command": "\\sftp.exe -D .. -D C:\\ #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:44:34 UTC", "rule": "proc_creation_win_lolbin_sftp_0", "phase": "omission", "command": "\\sftp -D .. -D C:\\", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:44:40 UTC", "rule": "proc_creation_win_lolbin_sftp_0", "phase": "reordering", "command": "\\sftp.exe C:\\ .. -D -D", "status": "DETECTED"}
+{"timestamp": "2025-06-23 09:44:46 UTC", "rule": "proc_creation_win_lolbin_sftp_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNmdHAuZXhlIC1EIC4uIC1EIEM6XA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

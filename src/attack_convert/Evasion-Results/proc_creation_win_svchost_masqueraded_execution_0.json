@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_svchost_masqueraded_execution_0",
+  "original_command": "\\svchost.exe svchost.exe",
+  "evasions": {
+    "insertion": "\\\"\\svchost.exe\\\" svchost.exe",
+    "substitution": "\\svchost.exe svchost.exe #substitution",
+    "omission": "\\svchost svchost",
+    "reordering": "\\svchost.exe svchost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIHN2Y2hvc3QuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_inline_file_download_0",
+  "original_command": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe http",
+  "evasions": {
+    "insertion": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe \"h\"\"t\"\"t\"\"p\"",
+    "substitution": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe http #substitution",
+    "omission": "\\brave \\chrome \\msedge \\opera \\vivaldi http",
+    "reordering": "\\brave.exe \\opera.exe \\msedge.exe http \\chrome.exe \\vivaldi.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcY2hyb21lLmV4ZSBcbXNlZGdlLmV4ZSBcb3BlcmEuZXhlIFx2aXZhbGRpLmV4ZSBodHRw')) | Invoke-Expression\" "
+  }
+}

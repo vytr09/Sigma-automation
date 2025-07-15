@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_idiagnostic_profile_0",
+  "original_command": "\\DllHost.exe /Processid:{12C21EA7-2EB8-4B55-9249-AC243DA8C666}",
+  "evasions": {
+    "insertion": "\\DllHost.exe /\"P\"\"r\"\"o\"\"c\"\"e\"\"s\"\"s\"\"i\"\"d\"\":\"\"{\"\"1\"\"2\"\"C\"\"2\"\"1\"\"E\"\"A\"\"7\"\"-\"\"2\"\"E\"\"B\"\"8\"\"-\"\"4\"\"B\"\"5\"\"5\"\"-\"\"9\"\"2\"\"4\"\"9\"\"-\"\"A\"\"C\"\"2\"\"4\"\"3\"\"D\"\"A\"\"8\"\"C\"\"6\"\"6\"\"6\"\"}\"",
+    "substitution": "\\DllHost.exe /Processid:{12C21EA7-2EB8-4B55-9249-AC243DA8C666} #substitution",
+    "omission": "\\DllHost /Processid:{12C21EA7-2EB8-4B55-9249-AC243DA8C666}",
+    "reordering": "\\DllHost.exe /Processid:{12C21EA7-2EB8-4B55-9249-AC243DA8C666}",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XERsbEhvc3QuZXhlIC9Qcm9jZXNzaWQ6ezEyQzIxRUE3LTJFQjgtNEI1NS05MjQ5LUFDMjQzREE4QzY2Nn0=')) | Invoke-Expression\" "
+  }
+}

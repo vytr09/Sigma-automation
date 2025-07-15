@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_winpwn_0",
+  "original_command": "Offline_Winpwn WinPwn WinPwn.exe WinPwn.ps1",
+  "evasions": {
+    "insertion": "Offline_Winpwn WinPwn \"W\"\"i\"\"n\"\"P\"\"w\"\"n\"\".\"\"e\"\"x\"\"e\" WinPwn.ps1",
+    "substitution": "Offline_Winpwn WinPwn WinPwn.exe WinPwn.ps1 #substitution",
+    "omission": "Offline_Winpwn WinPwn WinPwn WinPwn",
+    "reordering": "Offline_Winpwn WinPwn WinPwn.exe WinPwn.ps1",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('T2ZmbGluZV9XaW5wd24gV2luUHduIFdpblB3bi5leGUgV2luUHduLnBzMQ==')) | Invoke-Expression\" "
+  }
+}

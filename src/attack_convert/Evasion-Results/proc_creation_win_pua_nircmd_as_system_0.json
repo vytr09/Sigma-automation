@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nircmd_as_system_0",
+  "original_command": "runassystem",
+  "evasions": {
+    "insertion": "runassystem",
+    "substitution": "runassystem #substitution",
+    "omission": "runassystem # omission",
+    "reordering": "runassystem",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuYXNzeXN0ZW0=')) | Invoke-Expression\" "
+  }
+}

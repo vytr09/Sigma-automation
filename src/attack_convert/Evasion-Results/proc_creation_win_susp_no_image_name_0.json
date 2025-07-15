@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_no_image_name_0",
+  "original_command": "\\.exe",
+  "evasions": {
+    "insertion": "\\\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\.exe #substitution",
+    "omission": "\\",
+    "reordering": "\\.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XC5leGU=')) | Invoke-Expression\" "
+  }
+}

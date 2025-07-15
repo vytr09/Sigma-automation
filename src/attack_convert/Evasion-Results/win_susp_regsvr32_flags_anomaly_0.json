@@ -2,7 +2,7 @@
   "rule_name": "win_susp_regsvr32_flags_anomaly_0",
   "original_command": "regsvr32.exe /i:",
   "evasions": {
-    "insertion": "regsvr32.exe /\"i\"\":\"",
+    "insertion": "regsvr32.exe /\"{cmd_part}\"",
     "substitution": "regsvr32.exe /install:",
     "omission": "regsvr32 /i:",
     "reordering": "regsvr32.exe /i:",

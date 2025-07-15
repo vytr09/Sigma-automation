@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_wmiexec_default_powershell_0",
+  "original_command": "-NoP -NoL -sta -NonI -W Hidden -Exec Bypass -Enc",
+  "evasions": {
+    "insertion": "-NoP -NoL -sta -NonI -W Hidden -Exec \"Byp\"ass -Enc",
+    "substitution": "-NoP -NoL -sta -NonI -W Hidden -Exec Bypass -Enc #substitution",
+    "omission": "-NoP -NoL -sta -NonI -W Hidden -Exec Bypass -Enc # omission",
+    "reordering": "-NoP -NoL -sta -NonI -W Hidden -Exec Bypass -Enc",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBOAG8AUAAgAC0ATgBvAEwAIAAtAHMAdABhACAALQBOAG8AbgBJACAALQBXACAASABpAGQAZABlAG4AIAAtAEUAeABlAGMAIABCAHkAcABhAHMAcwAgAC0ARQBuAGMA "
+  }
+}

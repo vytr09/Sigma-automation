@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_offlinescannershell_mpclient_sideloading_0",
+  "original_command": "\\OfflineScannerShell.exe OfflineScannerShell.exe",
+  "evasions": {
+    "insertion": "\\OfflineScannerShell.exe OfflineScan\"nerShell.exe\"",
+    "substitution": "\\OfflineScannerShell.exe OfflineScannerShell.exe #substitution",
+    "omission": "\\OfflineScannerShell OfflineScannerShell",
+    "reordering": "\\OfflineScannerShell.exe OfflineScannerShell.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE9mZmxpbmVTY2FubmVyU2hlbGwuZXhlIE9mZmxpbmVTY2FubmVyU2hlbGwuZXhl')) | Invoke-Expression\" "
+  }
+}

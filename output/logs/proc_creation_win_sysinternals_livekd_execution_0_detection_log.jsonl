@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:14:12 UTC", "rule": "proc_creation_win_sysinternals_livekd_execution_0", "phase": "original", "command": "\\livekd.exe \\livekd64.exe livekd.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:14:12 UTC", "rule": "proc_creation_win_sysinternals_livekd_execution_0", "phase": "insertion", "command": "\\livekd.exe \\livekd64.exe livek\\\"d.exe\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:14:12 UTC", "rule": "proc_creation_win_sysinternals_livekd_execution_0", "phase": "substitution", "command": "\\livekd.exe \\livekd64.exe livekd.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:14:12 UTC", "rule": "proc_creation_win_sysinternals_livekd_execution_0", "phase": "omission", "command": "\\livekd \\livekd64 livekd", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:14:12 UTC", "rule": "proc_creation_win_sysinternals_livekd_execution_0", "phase": "reordering", "command": "\\livekd.exe \\livekd64.exe livekd.exe", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:14:12 UTC", "rule": "proc_creation_win_sysinternals_livekd_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxpdmVrZC5leGUgXGxpdmVrZDY0LmV4ZSBsaXZla2QuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

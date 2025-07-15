@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_ttdinject_0",
+  "original_command": "ttdinject.exe TTDInject.EXE",
+  "evasions": {
+    "insertion": "ttdinject.exe \\\"TTDInject.EXE\\\"",
+    "substitution": "ttdinject.exe TTDInject.EXE #substitution",
+    "omission": "ttdinject TTDInject",
+    "reordering": "ttdinject.exe TTDInject.EXE",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dHRkaW5qZWN0LmV4ZSBUVERJbmplY3QuRVhF')) | Invoke-Expression\" "
+  }
+}

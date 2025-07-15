@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_ftp_arbitrary_command_execution_0",
+  "original_command": "\\ftp.exe \\ftp.exe ftp.exe -s:",
+  "evasions": {
+    "insertion": "\\ftp.exe \\ftp.exe ftp.exe \"-s:\"",
+    "substitution": "\\ftp.exe \\ftp.exe ftp.exe -s: #substitution",
+    "omission": "\\ftp \\ftp ftp -s:",
+    "reordering": "\\ftp.exe -s: ftp.exe \\ftp.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZ0cC5leGUgXGZ0cC5leGUgZnRwLmV4ZSAtczo=')) | Invoke-Expression\" "
+  }
+}

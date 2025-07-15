@@ -5,7 +5,7 @@
     "insertion": "netsh i p =3389 \\\"c\\\"",
     "substitution": "netsh i p =3389 c #substitution",
     "omission": "netsh i p =3389 c # omission",
-    "reordering": "netsh i c =3389 p",
+    "reordering": "netsh i p c =3389",
     "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2ggaSBwID0zMzg5IGM=')) | Invoke-Expression\" "
   }
 }

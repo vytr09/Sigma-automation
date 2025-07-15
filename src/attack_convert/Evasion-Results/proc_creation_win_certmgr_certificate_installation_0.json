@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certmgr_certificate_installation_0",
+  "original_command": "\\CertMgr.exe CERTMGT.EXE /add root",
+  "evasions": {
+    "insertion": "\\CertMgr.exe \\\"CERTM\\\"GT.EXE /add root",
+    "substitution": "\\CertMgr.exe CERTMGT.EXE /add root #substitution",
+    "omission": "\\CertMgr CERTMGT /add root",
+    "reordering": "\\CertMgr.exe CERTMGT.EXE /add root",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENlcnRNZ3IuZXhlIENFUlRNR1QuRVhFIC9hZGQgcm9vdA==')) | Invoke-Expression\" "
+  }
+}

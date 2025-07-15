@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_sharp_impersonation_0",
+  "original_command": "\\SharpImpersonation.exe SharpImpersonation.exe user: binary: user: shellcode: technique:CreateProcessAsUserW technique:ImpersonateLoggedOnuser",
+  "evasions": {
+    "insertion": "\\SharpImpersonation.exe SharpImpersonation.exe user: binary: us\\\"er:\\\" shellcode: technique:CreateProcessAsUserW technique:ImpersonateLoggedOnuser",
+    "substitution": "\\SharpImpersonation.exe SharpImpersonation.exe user: binary: user: shellcode: technique:CreateProcessAsUserW technique:ImpersonateLoggedOnuser #substitution",
+    "omission": "\\SharpImpersonation SharpImpersonation user: binary: user: shellcode: technique:CreateProcessAsUserW technique:ImpersonateLoggedOnuser",
+    "reordering": "\\SharpImpersonation.exe SharpImpersonation.exe user: binary: user: shellcode: technique:CreateProcessAsUserW technique:ImpersonateLoggedOnuser",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwSW1wZXJzb25hdGlvbi5leGUgU2hhcnBJbXBlcnNvbmF0aW9uLmV4ZSB1c2VyOiBiaW5hcnk6IHVzZXI6IHNoZWxsY29kZTogdGVjaG5pcXVlOkNyZWF0ZVByb2Nlc3NBc1VzZXJXIHRlY2huaXF1ZTpJbXBlcnNvbmF0ZUxvZ2dlZE9udXNlcg==')) | Invoke-Expression\" "
+  }
+}

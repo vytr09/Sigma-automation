@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_non_exe_image_0",
+  "original_command": ".bin .cgi .com .exe .scr .tmp .rbf .rbs .dat .ngn :\\Program Files (x86)\\MyQ\\Server\\pcltool.dll :\\Program Files\\MyQ\\Server\\pcltool.dll \\LZMA_EXE com.docker.service",
+  "evasions": {
+    "insertion": ".bin .cgi .com .exe .scr .tmp .rbf .rbs .dat .ngn :\\Program Files (x86)\\MyQ\\Server\\pcltool.dll :\\Program Files\\MyQ\\Server\\pcltool.dll \\LZM\"A_EXE\" com.docker.service",
+    "substitution": ".bin .cgi .com .exe .scr .tmp .rbf .rbs .dat .ngn :\\Program Files (x86)\\MyQ\\Server\\pcltool.dll :\\Program Files\\MyQ\\Server\\pcltool.dll \\LZMA_EXE com.docker.service #substitution",
+    "omission": ".bin .cgi .com .scr .tmp .rbf .rbs .dat .ngn :\\Program Files (x86)\\MyQ\\Server\\pcltool.dll :\\Program Files\\MyQ\\Server\\pcltool.dll \\LZMA_EXE com.docker.service",
+    "reordering": ".bin .cgi .com .exe .scr .tmp .rbf .rbs .dat .ngn :\\Program Files (x86)\\MyQ\\Server\\pcltool.dll :\\Program Files\\MyQ\\Server\\pcltool.dll \\LZMA_EXE com.docker.service",
+    "recoding": "powershell.exe -EncodedCommand LgBiAGkAbgAgAC4AYwBnAGkAIAAuAGMAbwBtACAALgBlAHgAZQAgAC4AcwBjAHIAIAAuAHQAbQBwACAALgByAGIAZgAgAC4AcgBiAHMAIAAuAGQAYQB0ACAALgBuAGcAbgAgADoAXABQAHIAbwBnAHIAYQBtACAARgBpAGwAZQBzACAAKAB4ADgANgApAFwATQB5AFEAXABTAGUAcgB2AGUAcgBcAHAAYwBsAHQAbwBvAGwALgBkAGwAbAAgADoAXABQAHIAbwBnAHIAYQBtACAARgBpAGwAZQBzAFwATQB5AFEAXABTAGUAcgB2AGUAcgBcAHAAYwBsAHQAbwBvAGwALgBkAGwAbAAgAFwATABaAE0AQQBfAEUAWABFACAAYwBvAG0ALgBkAG8AYwBrAGUAcgAuAHMAZQByAHYAaQBjAGUA "
+  }
+}

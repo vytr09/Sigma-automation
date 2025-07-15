@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_gpscript_0",
+  "original_command": "\\gpscript.exe GPSCRIPT.EXE /logon /startup",
+  "evasions": {
+    "insertion": "\"\\gpscript.exe\" GPSCRIPT.EXE /logon /startup",
+    "substitution": "\\gpscript.exe GPSCRIPT.EXE /logon /startup",
+    "omission": "\\gpscript GPSCRIPT /logon /startup",
+    "reordering": "\\gpscript.exe GPSCRIPT.EXE /logon /startup",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwc2NyaXB0LmV4ZSBHUFNDUklQVC5FWEUgL2xvZ29uIC9zdGFydHVw')) | Invoke-Expression\" "
+  }
+}

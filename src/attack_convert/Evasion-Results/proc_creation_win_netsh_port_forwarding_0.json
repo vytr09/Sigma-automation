@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_port_forwarding_0",
+  "original_command": "\\netsh.exe netsh.exe interface portproxy add v4tov4 i p a v connectp listena c=",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe interface portproxy add v4tov4 i p a v \"connectp\" \"listena\" c=",
+    "substitution": "\\netsh.exe netsh.exe interface portproxy add v4tov4 i p a v connectp listena c= #substitution",
+    "omission": "\\netsh netsh interface portproxy add v4tov4 i p a v connectp listena c=",
+    "reordering": "\\netsh.exe netsh.exe interface portproxy add v4tov4 i p a v connectp listena c=",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgaW50ZXJmYWNlIHBvcnRwcm94eSBhZGQgdjR0b3Y0IGkgcCBhIHYgY29ubmVjdHAgbGlzdGVuYSBjPQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_simple_help_0",
+  "original_command": "\\SimpleService.exe",
+  "evasions": {
+    "insertion": "\\\"S\"\"i\"\"m\"\"p\"\"l\"\"e\"\"S\"\"e\"\"r\"\"v\"\"i\"\"c\"\"e\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\SimpleService.exe #substitution",
+    "omission": "\\SimpleService",
+    "reordering": "\\SimpleService.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNpbXBsZVNlcnZpY2UuZXhl')) | Invoke-Expression\" "
+  }
+}

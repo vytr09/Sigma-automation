@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 17:15:45 UTC", "rule": "proc_creation_win_sysinternals_procdump_lsass_0", "phase": "original", "command": "-ma ls", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:15:52 UTC", "rule": "proc_creation_win_sysinternals_procdump_lsass_0", "phase": "insertion", "command": "-ma \"l\"\"s\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:15:58 UTC", "rule": "proc_creation_win_sysinternals_procdump_lsass_0", "phase": "substitution", "command": "-ma ls #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:16:06 UTC", "rule": "proc_creation_win_sysinternals_procdump_lsass_0", "phase": "omission", "command": "-ma ls # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 17:16:12 UTC", "rule": "proc_creation_win_sysinternals_procdump_lsass_0", "phase": "reordering", "command": "-ma ls", "status": "DETECTED"}
+{"timestamp": "2025-06-23 17:16:18 UTC", "rule": "proc_creation_win_sysinternals_procdump_lsass_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW1hIGxz')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:58:24 UTC", "rule": "proc_creation_win_schtasks_powershell_persistence_0", "phase": "original", "command": "-k netsvcs -s Schedule", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:58:24 UTC", "rule": "proc_creation_win_schtasks_powershell_persistence_0", "phase": "insertion", "command": "-k netsvcs -s \\\"Sche\\\"dule", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:58:24 UTC", "rule": "proc_creation_win_schtasks_powershell_persistence_0", "phase": "substitution", "command": "-k netsvcs -s Schedule #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:58:24 UTC", "rule": "proc_creation_win_schtasks_powershell_persistence_0", "phase": "omission", "command": "-k netsvcs -s Schedule # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:58:24 UTC", "rule": "proc_creation_win_schtasks_powershell_persistence_0", "phase": "reordering", "command": "-k -s Schedule netsvcs", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:58:24 UTC", "rule": "proc_creation_win_schtasks_powershell_persistence_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWsgbmV0c3ZjcyAtcyBTY2hlZHVsZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_zipexec_0",
+  "original_command": "/generic:Microsoft_Windows_Shell_ZipFolder:filename= .zip /pass: /user: /delete Microsoft_Windows_Shell_ZipFolder:filename= .zip",
+  "evasions": {
+    "insertion": "/generic:Microsoft_Windows_Shell_ZipFolder:filename= .zip /pass: /user: /{cmd_part[:mid]}\"{cmd_part[mid:]}\" Microsoft_Windows_Shell_ZipFolder:filename= .zip",
+    "substitution": "/generic:Microsoft_Windows_Shell_ZipFolder:filename= .zip /pass: /user: /delete Microsoft_Windows_Shell_ZipFolder:filename= .zip #substitution",
+    "omission": "/generic:Microsoft_Windows_Shell_ZipFolder:filename= .zip /pass: /user: /delete Microsoft_Windows_Shell_ZipFolder:filename= .zip # omission",
+    "reordering": "/generic:Microsoft_Windows_Shell_ZipFolder:filename= .zip /pass: /user: /delete Microsoft_Windows_Shell_ZipFolder:filename= .zip",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2dlbmVyaWM6TWljcm9zb2Z0X1dpbmRvd3NfU2hlbGxfWmlwRm9sZGVyOmZpbGVuYW1lPSAuemlwIC9wYXNzOiAvdXNlcjogL2RlbGV0ZSBNaWNyb3NvZnRfV2luZG93c19TaGVsbF9aaXBGb2xkZXI6ZmlsZW5hbWU9IC56aXA=')) | Invoke-Expression\" "
+  }
+}

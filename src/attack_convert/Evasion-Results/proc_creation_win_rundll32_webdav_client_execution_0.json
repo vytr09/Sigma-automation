@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_webdav_client_execution_0",
+  "original_command": "\\svchost.exe \\rundll32.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie",
+  "evasions": {
+    "insertion": "\\svchost.exe \\rundll32.exe RUNDLL32.EXE \"C\"\":\"\"\\\"\"w\"\"i\"\"n\"\"d\"\"o\"\"w\"\"s\"\"\\\"\"s\"\"y\"\"s\"\"t\"\"e\"\"m\"\"3\"\"2\"\"\\\"\"d\"\"a\"\"v\"\"c\"\"l\"\"n\"\"t\"\".\"\"d\"\"l\"\"l\"\",\"\"D\"\"a\"\"v\"\"S\"\"e\"\"t\"\"C\"\"o\"\"o\"\"k\"\"i\"\"e\"",
+    "substitution": "\\svchost.exe \\rundll32.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie #substitution",
+    "omission": "\\svchost \\rundll32 RUNDLL32 davclnt.dll,DavSetCookie",
+    "reordering": "\\svchost.exe RUNDLL32.EXE C:\\windows\\system32\\davclnt.dll,DavSetCookie \\rundll32.exe",
+    "recoding": "powershell.exe -EncodedCommand XABzAHYAYwBoAG8AcwB0AC4AZQB4AGUAIABcAHIAdQBuAGQAbABsADMAMgAuAGUAeABlACAAUgBVAE4ARABMAEwAMwAyAC4ARQBYAEUAIABDADoAXAB3AGkAbgBkAG8AdwBzAFwAcwB5AHMAdABlAG0AMwAyAFwAZABhAHYAYwBsAG4AdAAuAGQAbABsACwARABhAHYAUwBlAHQAQwBvAG8AawBpAGUA "
+  }
+}

@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 11:01:27 UTC", "rule": "win_susp_disable_raccine_0", "phase": "omission", "command": "schtasks /DELETE Raccine Rules Updater # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:01:38 UTC", "rule": "win_susp_disable_raccine_0", "phase": "reordering", "command": "schtasks Updater Rules /DELETE Raccine", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:01:49 UTC", "rule": "win_susp_disable_raccine_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:08:32 UTC", "rule": "win_susp_disable_raccine_0", "phase": "original", "command": "schtasks /DELETE Raccine Rules Updater", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:08:36 UTC", "rule": "win_susp_disable_raccine_0", "phase": "insertion", "command": "schtasks /DELETE Raccine \"Rules\" Updater", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:08:39 UTC", "rule": "win_susp_disable_raccine_0", "phase": "substitution", "command": "schtasks /DELETE Raccine Rules Updater #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:08:43 UTC", "rule": "win_susp_disable_raccine_0", "phase": "omission", "command": "schtasks /DELETE Raccine Rules Updater # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:08:46 UTC", "rule": "win_susp_disable_raccine_0", "phase": "reordering", "command": "schtasks /DELETE Raccine Rules Updater", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:08:50 UTC", "rule": "win_susp_disable_raccine_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2NodGFza3MgL0RFTEVURSBSYWNjaW5lIFJ1bGVzIFVwZGF0ZXI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

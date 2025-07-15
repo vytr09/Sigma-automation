@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_inline_vbs_0",
+  "original_command": "rundll32.exe Execute RegRead window.close",
+  "evasions": {
+    "insertion": "rundll32.exe Execute \\\"RegRead\\\" window.close",
+    "substitution": "rundll32.exe Execute RegRead window.close #substitution",
+    "omission": "rundll32 Execute RegRead window.close",
+    "reordering": "rundll32.exe window.close Execute RegRead",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuZGxsMzIuZXhlIEV4ZWN1dGUgUmVnUmVhZCB3aW5kb3cuY2xvc2U=')) | Invoke-Expression\" "
+  }
+}

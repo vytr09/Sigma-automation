@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_xordump_0",
+  "original_command": "\\xordump.exe -process lsass.exe -m comsvcs -m dbghelp -m dbgcore",
+  "evasions": {
+    "insertion": "\\xordump.exe -process lsass.exe -m comsvcs -m dbghelp \\\"-m\\\" \\\"dbgcore\\\"",
+    "substitution": "\\xordump.exe -process lsass.exe -m comsvcs -m dbghelp -m dbgcore #substitution",
+    "omission": "\\xordump -process lsass -m comsvcs -m dbghelp -m dbgcore",
+    "reordering": "\\xordump.exe -process lsass.exe -m comsvcs -m dbghelp -m dbgcore",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHhvcmR1bXAuZXhlIC1wcm9jZXNzIGxzYXNzLmV4ZSAtbSBjb21zdmNzIC1tIGRiZ2hlbHAgLW0gZGJnY29yZQ==')) | Invoke-Expression\" "
+  }
+}

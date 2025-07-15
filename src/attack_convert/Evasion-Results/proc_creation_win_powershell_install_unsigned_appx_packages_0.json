@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_install_unsigned_appx_packages_0",
+  "original_command": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-AppPackage Add-AppxPackage -AllowUnsigned",
+  "evasions": {
+    "insertion": "\\powershell.exe \"\\pwsh.exe\" \"PowerShell.EXE\" pwsh.dll Add-AppPackage Add-AppxPackage -AllowUnsigned",
+    "substitution": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-AppPackage Add-AppxPackage -AllowUnsigned #substitution",
+    "omission": "\\powershell \\pwsh PowerShell pwsh.dll Add-AppPackage Add-AppxPackage -AllowUnsigned",
+    "reordering": "\\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll Add-AppPackage Add-AppxPackage -AllowUnsigned",
+    "recoding": "powershell.exe -EncodedCommand XABwAG8AdwBlAHIAcwBoAGUAbABsAC4AZQB4AGUAIABcAHAAdwBzAGgALgBlAHgAZQAgAFAAbwB3AGUAcgBTAGgAZQBsAGwALgBFAFgARQAgAHAAdwBzAGgALgBkAGwAbAAgAEEAZABkAC0AQQBwAHAAUABhAGMAawBhAGcAZQAgAEEAZABkAC0AQQBwAHAAeABQAGEAYwBrAGEAZwBlACAALQBBAGwAbABvAHcAVQBuAHMAaQBnAG4AZQBkAA== "
+  }
+}

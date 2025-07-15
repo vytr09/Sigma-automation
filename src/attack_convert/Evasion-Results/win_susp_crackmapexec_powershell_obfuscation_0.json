@@ -2,7 +2,7 @@
   "rule_name": "win_susp_crackmapexec_powershell_obfuscation_0",
   "original_command": "powershell.exe ( $env:Public[13]+$env:Public[5]+'x')",
   "evasions": {
-    "insertion": "powershell.exe \"(\" $env:Public[13]+$env:Public[5]+'x')",
+    "insertion": "powershell.exe ( \\\"$env:Public[13]+$env:Public[5]+'x')\\\"",
     "substitution": "powershell.exe ( $env:Public[13]+$env:Public[5]+'x') #substitution",
     "omission": "powershell ( $env:Public[13]+$env:Public[5]+'x')",
     "reordering": "powershell.exe $env:Public[13]+$env:Public[5]+'x') (",

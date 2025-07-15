@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmi_backdoor_exchange_transport_agent_0",
+  "original_command": "\\EdgeTransport.exe \\Bin\\OleConverter.exe",
+  "evasions": {
+    "insertion": "\\EdgeTransport.exe \\Bin\\OleCo\"nverter.exe\"",
+    "substitution": "\\EdgeTransport.exe \\Bin\\OleConverter.exe #substitution",
+    "omission": "\\EdgeTransport \\Bin\\OleConverter",
+    "reordering": "\\EdgeTransport.exe \\Bin\\OleConverter.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEVkZ2VUcmFuc3BvcnQuZXhlIFxCaW5cT2xlQ29udmVydGVyLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

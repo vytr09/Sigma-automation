@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_findstr_lsass_0",
+  "original_command": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE lsass /i /i lsass.exe findstr findstr lsass findstr.exe findstr.exe lsass",
+  "evasions": {
+    "insertion": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE lsass /i /i \\\"lsass.exe\\\" findstr findstr lsass findstr.exe findstr.exe lsass",
+    "substitution": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE lsass /i /i lsass.exe findstr findstr lsass findstr.exe findstr.exe lsass #substitution",
+    "omission": "\\find \\findstr FIND FINDSTR lsass /i /i lsass findstr findstr lsass findstr findstr lsass",
+    "reordering": "\\find.exe \\findstr.exe FIND.EXE FINDSTR.EXE lsass /i /i lsass.exe findstr findstr lsass findstr.exe findstr.exe lsass",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZpbmQuZXhlIFxmaW5kc3RyLmV4ZSBGSU5ELkVYRSBGSU5EU1RSLkVYRSBsc2FzcyAvaSAvaSBsc2Fzcy5leGUgZmluZHN0ciBmaW5kc3RyIGxzYXNzIGZpbmRzdHIuZXhlIGZpbmRzdHIuZXhlIGxzYXNz')) | Invoke-Expression\" "
+  }
+}

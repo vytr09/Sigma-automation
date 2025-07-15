@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_disable_ie_features_0",
+  "original_command": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2",
+  "evasions": {
+    "insertion": "-name IEHarden -value 0 -name DEPOff -value 1 -n\"ame\" DisableFirstRunCustomize -value 2",
+    "substitution": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2 #substitution",
+    "omission": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2 # omission",
+    "reordering": "-name IEHarden -value 0 -name DEPOff -value 1 -name DisableFirstRunCustomize -value 2",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW5hbWUgSUVIYXJkZW4gLXZhbHVlIDAgLW5hbWUgREVQT2ZmIC12YWx1ZSAxIC1uYW1lIERpc2FibGVGaXJzdFJ1bkN1c3RvbWl6ZSAtdmFsdWUgMg==')) | Invoke-Expression\" "
+  }
+}

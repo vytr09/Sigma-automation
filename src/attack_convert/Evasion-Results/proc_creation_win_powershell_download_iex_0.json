@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_download_iex_0",
+  "original_command": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr ;iex $ | IEX |IEX I`E`X I`EX IE`X iex IEX ( IEX( Invoke-Expression",
+  "evasions": {
+    "insertion": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr ;iex $ | IEX |IEX I`E`X I`EX IE`X iex IEX ( IEX( Invoke-Expression",
+    "substitution": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr ;iex $ | IEX |IEX I`E`X I`EX IE`X iex IEX ( IEX( Invoke-Expression #substitution",
+    "omission": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr ;iex $ | IEX |IEX I`E`X I`EX IE`X iex IEX ( IEX( Invoke-Expression # omission",
+    "reordering": ".DownloadString( .DownloadFile( Invoke-WebRequest iwr ;iex $ | IEX |IEX I`E`X I`EX IE`X iex IEX ( IEX( Invoke-Expression",
+    "recoding": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAgAC4ARABvAHcAbgBsAG8AYQBkAEYAaQBsAGUAKAAgAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAGkAdwByACAAOwBpAGUAeAAgACQAIAB8ACAASQBFAFgAIAB8AEkARQBYACAASQBgAEUAYABYACAASQBgAEUAWAAgAEkARQBgAFgAIABpAGUAeAAgAEkARQBYACAAKAAgAEkARQBYACgAIABJAG4AdgBvAGsAZQAtAEUAeABwAHIAZQBzAHMAaQBvAG4A "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_creation_0",
+  "original_command": "\\schtasks.exe /create",
+  "evasions": {
+    "insertion": "\"\\schtasks.exe\" /create",
+    "substitution": "\\schtasks.exe -create",
+    "omission": "\\schtasks /create",
+    "reordering": "\\schtasks.exe /create",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvY3JlYXRl')) | Invoke-Expression\" "
+  }
+}

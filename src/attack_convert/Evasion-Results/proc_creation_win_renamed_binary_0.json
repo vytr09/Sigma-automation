@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_binary_0",
+  "original_command": "Cmd.Exe CONHOST.EXE 7z.exe WinRAR.exe wevtutil.exe net.exe net1.exe netsh.exe InstallUtil.exe \\cmd.exe \\conhost.exe \\7z.exe \\WinRAR.exe \\wevtutil.exe \\net.exe \\net1.exe \\netsh.exe \\InstallUtil.exe",
+  "evasions": {
+    "insertion": "Cmd.Exe \"CONHO\"ST.EXE 7z.exe WinRAR.exe wevtutil.exe net.exe net1.exe netsh.exe InstallUtil.exe \\cmd.exe \\conhost.exe \\7z.exe \\WinRAR.exe \\wevtutil.exe \\net.exe \\net1.exe \\netsh.exe \\InstallUtil.exe",
+    "substitution": "Cmd.Exe CONHOST.EXE 7z.exe WinRAR.exe wevtutil.exe net.exe net1.exe netsh.exe InstallUtil.exe \\cmd.exe \\conhost.exe \\7z.exe \\WinRAR.exe \\wevtutil.exe \\net.exe \\net1.exe \\netsh.exe \\InstallUtil.exe #substitution",
+    "omission": "Cmd CONHOST 7z WinRAR wevtutil net net1 netsh InstallUtil \\cmd \\conhost \\7z \\WinRAR \\wevtutil \\net \\net1 \\netsh \\InstallUtil",
+    "reordering": "Cmd.Exe CONHOST.EXE 7z.exe WinRAR.exe wevtutil.exe net.exe net1.exe netsh.exe InstallUtil.exe \\cmd.exe \\conhost.exe \\7z.exe \\WinRAR.exe \\wevtutil.exe \\net.exe \\net1.exe \\netsh.exe \\InstallUtil.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q21kLkV4ZSBDT05IT1NULkVYRSA3ei5leGUgV2luUkFSLmV4ZSB3ZXZ0dXRpbC5leGUgbmV0LmV4ZSBuZXQxLmV4ZSBuZXRzaC5leGUgSW5zdGFsbFV0aWwuZXhlIFxjbWQuZXhlIFxjb25ob3N0LmV4ZSBcN3ouZXhlIFxXaW5SQVIuZXhlIFx3ZXZ0dXRpbC5leGUgXG5ldC5leGUgXG5ldDEuZXhlIFxuZXRzaC5leGUgXEluc3RhbGxVdGlsLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

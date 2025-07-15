@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_web_request_cmd_and_cmdlets_0",
+  "original_command": "[System.Net.WebRequest]::create curl Invoke-RestMethod Invoke-WebRequest iwr Net.WebClient Resume-BitsTransfer Start-BitsTransfer wget WinHttp.WinHttpRequest",
+  "evasions": {
+    "insertion": "[System.Net.WebRequest]::create curl Invoke-RestMethod Invoke-WebRequest iwr Net.WebClient \\\"Resume-Bi\\\"tsTransfer Start-BitsTransfer wget WinHttp.WinHttpRequest",
+    "substitution": "[System.Net.WebRequest]::create curl Invoke--rejectestMethod Invoke-WebRequest iwr Net.WebClient Resume-BitsTransfer Start-BitsTransfer wget WinHttp.WinHttpRequest",
+    "omission": "[System.Net.WebRequest]::create curl Invoke-RestMethod Invoke-WebRequest iwr Net.WebClient Resume-BitsTransfer Start-BitsTransfer wget WinHttp.WinHttpRequest # omission",
+    "reordering": "[System.Net.WebRequest]::create curl Invoke-RestMethod Invoke-WebRequest iwr Net.WebClient Resume-BitsTransfer Start-BitsTransfer wget WinHttp.WinHttpRequest",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('W1N5c3RlbS5OZXQuV2ViUmVxdWVzdF06OmNyZWF0ZSBjdXJsIEludm9rZS1SZXN0TWV0aG9kIEludm9rZS1XZWJSZXF1ZXN0IGl3ciBOZXQuV2ViQ2xpZW50IFJlc3VtZS1CaXRzVHJhbnNmZXIgU3RhcnQtQml0c1RyYW5zZmVyIHdnZXQgV2luSHR0cC5XaW5IdHRwUmVxdWVzdA==')) | Invoke-Expression\" "
+  }
+}

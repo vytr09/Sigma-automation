@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_invoke_obfuscation_via_var_0",
+  "original_command": "&&set cmd /c -f {0} {1} {2} {3} {4} {5}",
+  "evasions": {
+    "insertion": "&&set cmd /c -f {0} {1} {2} {3} {4} {5}",
+    "substitution": "&&set cmd -c -f {0} {1} {2} {3} {4} {5}",
+    "omission": "&&set cmd /c -f {0} {1} {2} {3} {4} {5} # omission",
+    "reordering": "&&set cmd /c -f {0} {1} {2} {3} {4} {5}",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('JiZzZXQgY21kIC9jIC1mIHswfSB7MX0gezJ9IHszfSB7NH0gezV9')) | Invoke-Expression\" "
+  }
+}

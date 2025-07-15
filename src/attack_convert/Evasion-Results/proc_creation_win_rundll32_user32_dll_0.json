@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_rundll32_user32_dll_0",
+  "original_command": "\\rundll32.exe RUNDLL32.EXE \\cmd.exe user32.dll, LockWorkStation",
+  "evasions": {
+    "insertion": "\\rundll32.exe RUNDLL32.EXE \\cmd.exe \"user32.dll,\" \"LockWorkStation\"",
+    "substitution": "\\rundll32.exe RUNDLL32.EXE \\cmd.exe user32.dll, LockWorkStation #substitution",
+    "omission": "\\rundll32 RUNDLL32 \\cmd user32.dll, LockWorkStation",
+    "reordering": "\\rundll32.exe RUNDLL32.EXE \\cmd.exe user32.dll, LockWorkStation",
+    "recoding": "powershell.exe -EncodedCommand XAByAHUAbgBkAGwAbAAzADIALgBlAHgAZQAgAFIAVQBOAEQATABMADMAMgAuAEUAWABFACAAXABjAG0AZAAuAGUAeABlACAAdQBzAGUAcgAzADIALgBkAGwAbAAsACAATABvAGMAawBXAG8AcgBrAFMAdABhAHQAaQBvAG4A "
+  }
+}

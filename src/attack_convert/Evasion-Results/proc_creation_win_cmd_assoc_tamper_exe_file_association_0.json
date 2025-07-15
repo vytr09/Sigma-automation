@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_assoc_tamper_exe_file_association_0",
+  "original_command": "\\cmd.exe Cmd.Exe assoc exefile .exe=exefile",
+  "evasions": {
+    "insertion": "\\\"c\"\"m\"\"d\"\".\"\"e\"\"x\"\"e\" Cmd.Exe assoc exefile .exe=exefile",
+    "substitution": "\\cmd.exe Cmd.Exe assoc exefile .exe=exefile #substitution",
+    "omission": "\\cmd Cmd assoc exefile =exefile",
+    "reordering": "\\cmd.exe Cmd.Exe .exe=exefile exefile assoc",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgQ21kLkV4ZSBhc3NvYyBleGVmaWxlIC5leGU9ZXhlZmlsZQ==')) | Invoke-Expression\" "
+  }
+}

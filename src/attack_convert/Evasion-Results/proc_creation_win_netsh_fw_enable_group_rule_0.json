@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_enable_group_rule_0",
+  "original_command": "\\netsh.exe netsh.exe advfirewall firewall set rule group= new enable=Yes",
+  "evasions": {
+    "insertion": "\\netsh.exe \\\"netsh.exe\\\" \\\"advfirewall\\\" firewall set rule group= new enable=Yes",
+    "substitution": "\\netsh.exe netsh.exe adv-fw firewall set rule group= new enable=Yes",
+    "omission": "\\netsh netsh advfirewall firewall set rule group= new enable=Yes",
+    "reordering": "\\netsh.exe netsh.exe advfirewall firewall set rule group= new enable=Yes",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgYWR2ZmlyZXdhbGwgZmlyZXdhbGwgc2V0IHJ1bGUgZ3JvdXA9IG5ldyBlbmFibGU9WWVz')) | Invoke-Expression\" "
+  }
+}

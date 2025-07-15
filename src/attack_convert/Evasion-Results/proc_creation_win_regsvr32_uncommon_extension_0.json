@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regsvr32_uncommon_extension_0",
+  "original_command": "\\regsvr32.exe REGSVR32.EXE .ax .cpl .dll .ocx .ppl .bav",
+  "evasions": {
+    "insertion": "\\regsvr32.exe REGSVR32.EXE .ax .cpl \\\".\\\"\\\"d\\\"\\\"l\\\"\\\"l\\\" .ocx .ppl .bav",
+    "substitution": "\\regsvr32.exe REGSVR32.EXE .ax .cpl .dll .ocx .ppl .bav #substitution",
+    "omission": "\\regsvr32.exe REGSVR32.EXE .ax .cpl .dll .ocx .ppl .bav # omission",
+    "reordering": "\\regsvr32.exe REGSVR32.EXE .ax .cpl .dll .ocx .ppl .bav",
+    "recoding": "powershell.exe -EncodedCommand XAByAGUAZwBzAHYAcgAzADIALgBlAHgAZQAgAFIARQBHAFMAVgBSADMAMgAuAEUAWABFACAALgBhAHgAIAAuAGMAcABsACAALgBkAGwAbAAgAC4AbwBjAHgAIAAuAHAAcABsACAALgBiAGEAdgA= "
+  }
+}

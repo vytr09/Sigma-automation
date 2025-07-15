@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_defender_exclusion_0",
+  "original_command": "Add-MpPreference Set-MpPreference -ExclusionPath -ExclusionExtension -ExclusionProcess -ExclusionIpAddress",
+  "evasions": {
+    "insertion": "Add-MpPreference Set-MpPreference \\\"-\\\"\\\"E\\\"\\\"x\\\"\\\"c\\\"\\\"l\\\"\\\"u\\\"\\\"s\\\"\\\"i\\\"\\\"o\\\"\\\"n\\\"\\\"P\\\"\\\"a\\\"\\\"t\\\"\\\"h\\\" -ExclusionExtension -ExclusionProcess -ExclusionIpAddress",
+    "substitution": "Add-MpPreference Set-MpPreference -ExclusionPath -ExclusionExtension -ExclusionProcess -ExclusionIpAddress #substitution",
+    "omission": "Add-MpPreference Set-MpPreference -ExclusionPath -ExclusionExtension -ExclusionProcess -ExclusionIpAddress # omission",
+    "reordering": "Add-MpPreference -ExclusionPath -ExclusionProcess -ExclusionIpAddress Set-MpPreference -ExclusionExtension",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QWRkLU1wUHJlZmVyZW5jZSBTZXQtTXBQcmVmZXJlbmNlIC1FeGNsdXNpb25QYXRoIC1FeGNsdXNpb25FeHRlbnNpb24gLUV4Y2x1c2lvblByb2Nlc3MgLUV4Y2x1c2lvbklwQWRkcmVzcw==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:31:16 UTC", "rule": "proc_creation_win_lolbin_extrac32_ads_0", "phase": "original", "command": "extrac32.exe .cab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:31:16 UTC", "rule": "proc_creation_win_lolbin_extrac32_ads_0", "phase": "insertion", "command": "extrac32.exe .c\\\"ab\\\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:31:16 UTC", "rule": "proc_creation_win_lolbin_extrac32_ads_0", "phase": "substitution", "command": "extrac32.exe .cab #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:31:16 UTC", "rule": "proc_creation_win_lolbin_extrac32_ads_0", "phase": "omission", "command": "extrac32 .cab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:31:16 UTC", "rule": "proc_creation_win_lolbin_extrac32_ads_0", "phase": "reordering", "command": "extrac32.exe .cab", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:31:16 UTC", "rule": "proc_creation_win_lolbin_extrac32_ads_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXh0cmFjMzIuZXhlIC5jYWI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

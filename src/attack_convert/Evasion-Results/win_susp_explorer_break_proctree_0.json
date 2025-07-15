@@ -2,7 +2,7 @@
   "rule_name": "win_susp_explorer_break_proctree_0",
   "original_command": "explorer.exe /root,",
   "evasions": {
-    "insertion": "explorer.exe /\"{cmd_part[:mid]}\"{cmd_part[mid:]}",
+    "insertion": "explorer.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\"",
     "substitution": "explorer.exe /root, #substitution",
     "omission": "explorer /root,",
     "reordering": "explorer.exe /root,",

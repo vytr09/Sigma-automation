@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:46:44 UTC", "rule": "proc_creation_win_pua_defendercheck_0", "phase": "original", "command": "\\DefenderCheck.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:46:57 UTC", "rule": "proc_creation_win_pua_defendercheck_0", "phase": "insertion", "command": "\"\\DefenderCheck.exe\"", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:47:09 UTC", "rule": "proc_creation_win_pua_defendercheck_0", "phase": "substitution", "command": "\\DefenderCheck.exe #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:47:16 UTC", "rule": "proc_creation_win_pua_defendercheck_0", "phase": "omission", "command": "\\DefenderCheck", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:47:22 UTC", "rule": "proc_creation_win_pua_defendercheck_0", "phase": "reordering", "command": "\\DefenderCheck.exe", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:47:30 UTC", "rule": "proc_creation_win_pua_defendercheck_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XERlZmVuZGVyQ2hlY2suZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

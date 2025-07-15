@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_addinutil_uncommon_cmdline_0",
+  "original_command": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: -AddInRoot: -AddInRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA -PipelineRoot: -PipelineRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA",
+  "evasions": {
+    "insertion": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: -AddInRoot: -AddInRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA -PipelineRoot: -PipelineRoot:C:\\Program Files (x86)\\Common \\\"Files\\Microsoft\\\" \\\"Shared\\VSTA\\\"",
+    "substitution": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: -AddInRoot: -AddInRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA -PipelineRoot: -PipelineRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA #substitution",
+    "omission": "\\addinutil AddInUtil -AddInRoot: -PipelineRoot: -AddInRoot: -AddInRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA -PipelineRoot: -PipelineRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA",
+    "reordering": "\\addinutil.exe AddInUtil.exe -AddInRoot: -PipelineRoot: -AddInRoot: -AddInRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA -PipelineRoot: -PipelineRoot:C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTA",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFkZGludXRpbC5leGUgQWRkSW5VdGlsLmV4ZSAtQWRkSW5Sb290OiAtUGlwZWxpbmVSb290OiAtQWRkSW5Sb290OiAtQWRkSW5Sb290OkM6XFByb2dyYW0gRmlsZXMgKHg4NilcQ29tbW9uIEZpbGVzXE1pY3Jvc29mdCBTaGFyZWRcVlNUQSAtUGlwZWxpbmVSb290OiAtUGlwZWxpbmVSb290OkM6XFByb2dyYW0gRmlsZXMgKHg4NilcQ29tbW9uIEZpbGVzXE1pY3Jvc29mdCBTaGFyZWRcVlNUQQ==')) | Invoke-Expression\" "
+  }
+}

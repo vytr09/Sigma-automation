@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_attrib_hiding_files_0",
+  "original_command": "\\attrib.exe ATTRIB.EXE +h \\desktop.ini \\cmd.exe",
+  "evasions": {
+    "insertion": "\\attrib.exe ATTRIB.EXE +h \\desktop.ini \\\"\\cmd.exe\\\"",
+    "substitution": "\\attrib.exe ATTRIB.EXE +h \\desktop.ini \\cmd.exe",
+    "omission": "\\attrib ATTRIB +h \\desktop.ini \\cmd",
+    "reordering": "\\attrib.exe \\cmd.exe ATTRIB.EXE \\desktop.ini +h",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGF0dHJpYi5leGUgQVRUUklCLkVYRSAraCBcZGVza3RvcC5pbmkgXGNtZC5leGU=')) | Invoke-Expression\" "
+  }
+}

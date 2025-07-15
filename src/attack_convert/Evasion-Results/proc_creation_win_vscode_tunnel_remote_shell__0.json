@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_vscode_tunnel_remote_shell__0",
+  "original_command": "\\server\\node.exe .vscode-server \\powershell.exe \\pwsh.exe \\terminal\\browser\\media\\shellIntegration.ps1 \\wsl.exe \\bash.exe",
+  "evasions": {
+    "insertion": "\\server\\node.exe .vscode-server \"\\powershell.exe\" \\pwsh.exe \\terminal\\browser\\media\\shellIntegration.ps1 \\wsl.exe \\bash.exe",
+    "substitution": "\\server\\node.exe .vscode-server \\powershell.exe \\pwsh.exe \\terminal\\browser\\media\\shellIntegration.ps1 \\wsl.exe \\bash.exe #substitution",
+    "omission": "\\server\\node .vscode-server \\powershell \\pwsh \\terminal\\browser\\media\\shellIntegration \\wsl \\bash",
+    "reordering": "\\server\\node.exe .vscode-server \\powershell.exe \\pwsh.exe \\terminal\\browser\\media\\shellIntegration.ps1 \\wsl.exe \\bash.exe",
+    "recoding": "powershell.exe -EncodedCommand XABzAGUAcgB2AGUAcgBcAG4AbwBkAGUALgBlAHgAZQAgAC4AdgBzAGMAbwBkAGUALQBzAGUAcgB2AGUAcgAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHQAZQByAG0AaQBuAGEAbABcAGIAcgBvAHcAcwBlAHIAXABtAGUAZABpAGEAXABzAGgAZQBsAGwASQBuAHQAZQBnAHIAYQB0AGkAbwBuAC4AcABzADEAIABcAHcAcwBsAC4AZQB4AGUAIABcAGIAYQBzAGgALgBlAHgAZQA= "
+  }
+}

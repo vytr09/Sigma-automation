@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_download_office_domain_0",
+  "original_command": "\\curl.exe \\wget.exe Invoke-WebRequest iwr curl wget Start-BitsTransfer .DownloadFile( .DownloadString( https://attachment.outlook.live.net/owa/ https://onenoteonlinesync.onenote.com/onenoteonlinesync/",
+  "evasions": {
+    "insertion": "\\curl.exe \\wget.exe Invoke-WebRequest iwr curl wget Start-BitsTransfer \\\".DownloadFile(\\\" \\\".DownloadString(\\\" https://attachment.outlook.live.net/owa/ https://onenoteonlinesync.onenote.com/onenoteonlinesync/",
+    "substitution": "\\curl.exe \\wget.exe Invoke-WebRequest iwr curl wget Start-BitsTransfer .DownloadFile( .DownloadString( https://attachment.outlook.live.net/owa/ https://onenoteonlinesync.onenote.com/onenoteonlinesync/ #substitution",
+    "omission": "\\curl \\wget Invoke-WebRequest iwr curl wget Start-BitsTransfer .DownloadFile( .DownloadString( https://attachment.outlook.live.net/owa/ https://onenoteonlinesync.onenote.com/onenoteonlinesync/",
+    "reordering": "\\curl.exe \\wget.exe Invoke-WebRequest iwr curl wget Start-BitsTransfer .DownloadFile( .DownloadString( https://attachment.outlook.live.net/owa/ https://onenoteonlinesync.onenote.com/onenoteonlinesync/",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIFx3Z2V0LmV4ZSBJbnZva2UtV2ViUmVxdWVzdCBpd3IgY3VybCB3Z2V0IFN0YXJ0LUJpdHNUcmFuc2ZlciAuRG93bmxvYWRGaWxlKCAuRG93bmxvYWRTdHJpbmcoIGh0dHBzOi8vYXR0YWNobWVudC5vdXRsb29rLmxpdmUubmV0L293YS8gaHR0cHM6Ly9vbmVub3Rlb25saW5lc3luYy5vbmVub3RlLmNvbS9vbmVub3Rlb25saW5lc3luYy8=')) | Invoke-Expression\" "
+  }
+}

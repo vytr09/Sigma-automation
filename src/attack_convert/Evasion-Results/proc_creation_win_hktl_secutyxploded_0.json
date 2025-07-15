@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_hktl_secutyxploded_0",
+  "original_command": "PasswordDump.exe PasswordDump.exe",
+  "evasions": {
+    "insertion": "PasswordDump.exe \\\"PasswordDump.exe\\\"",
+    "substitution": "PasswordDump.exe PasswordDump.exe #substitution",
+    "omission": "PasswordDump PasswordDump",
+    "reordering": "PasswordDump.exe PasswordDump.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UGFzc3dvcmREdW1wLmV4ZSBQYXNzd29yZER1bXAuZXhl')) | Invoke-Expression\" "
+  }
+}

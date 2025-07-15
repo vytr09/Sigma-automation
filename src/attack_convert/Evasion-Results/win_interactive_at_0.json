@@ -2,7 +2,7 @@
   "rule_name": "win_interactive_at_0",
   "original_command": "at.exe interactive",
   "evasions": {
-    "insertion": "at.exe \\\"inter\\\"active",
+    "insertion": "at.exe inter\\\"active\\\"",
     "substitution": "at.exe interactive #substitution",
     "omission": "at interactive",
     "reordering": "at.exe interactive",

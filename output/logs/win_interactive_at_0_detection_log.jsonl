@@ -4,15 +4,3 @@
 {"timestamp": "2025-04-23 08:57:27 UTC", "rule": "win_interactive_at_0", "phase": "omission", "command": "at interactive", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:57:37 UTC", "rule": "win_interactive_at_0", "phase": "reordering", "command": "at.exe interactive", "status": "DETECTED"}
 {"timestamp": "2025-04-23 08:57:45 UTC", "rule": "win_interactive_at_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:33:19 UTC", "rule": "win_interactive_at_0", "phase": "original", "command": "at.exe interactive", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:26 UTC", "rule": "win_interactive_at_0", "phase": "insertion", "command": "at.exe \\\"inter\\\"active", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:29 UTC", "rule": "win_interactive_at_0", "phase": "substitution", "command": "at.exe interactive #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:33:31 UTC", "rule": "win_interactive_at_0", "phase": "omission", "command": "at interactive", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 02:33:40 UTC", "rule": "win_interactive_at_0", "phase": "reordering", "command": "at.exe interactive", "status": "DETECTED"}
-{"timestamp": "2025-05-23 02:33:48 UTC", "rule": "win_interactive_at_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YXQuZXhlIGludGVyYWN0aXZl')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:52:59 UTC", "rule": "win_interactive_at_0", "phase": "original", "command": "at.exe interactive", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:53:02 UTC", "rule": "win_interactive_at_0", "phase": "insertion", "command": "at.exe \\\"i\\\"\\\"n\\\"\\\"t\\\"\\\"e\\\"\\\"r\\\"\\\"a\\\"\\\"c\\\"\\\"t\\\"\\\"i\\\"\\\"v\\\"\\\"e\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:53:06 UTC", "rule": "win_interactive_at_0", "phase": "substitution", "command": "at.exe interactive #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:53:09 UTC", "rule": "win_interactive_at_0", "phase": "omission", "command": "at interactive", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:53:12 UTC", "rule": "win_interactive_at_0", "phase": "reordering", "command": "at.exe interactive", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:53:16 UTC", "rule": "win_interactive_at_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YXQuZXhlIGludGVyYWN0aXZl')) | Invoke-Expression\" ", "status": "BYPASSED"}

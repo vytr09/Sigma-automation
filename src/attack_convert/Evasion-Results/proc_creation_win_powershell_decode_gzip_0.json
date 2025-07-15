@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_powershell_decode_gzip_0",
+  "original_command": "GZipStream ::Decompress",
+  "evasions": {
+    "insertion": "GZipStream \\\"::Deco\\\"mpress",
+    "substitution": "GZipStream ::Decompress #substitution",
+    "omission": "GZipStream ::Decompress # omission",
+    "reordering": "GZipStream ::Decompress",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R1ppcFN0cmVhbSA6OkRlY29tcHJlc3M=')) | Invoke-Expression\" "
+  }
+}

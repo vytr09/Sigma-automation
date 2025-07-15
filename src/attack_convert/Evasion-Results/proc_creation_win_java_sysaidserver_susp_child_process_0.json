@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_java_sysaidserver_susp_child_process_0",
+  "original_command": "\\java.exe \\javaw.exe SysAidServer",
+  "evasions": {
+    "insertion": "\\java.exe \\\"\\javaw.exe\\\" SysAidServer",
+    "substitution": "\\java.exe \\javaw.exe SysAidServer #substitution",
+    "omission": "\\java \\javaw SysAidServer",
+    "reordering": "\\java.exe \\javaw.exe SysAidServer",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGphdmEuZXhlIFxqYXZhdy5leGUgU3lzQWlkU2VydmVy')) | Invoke-Expression\" "
+  }
+}

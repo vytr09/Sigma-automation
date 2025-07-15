@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wget_download_susp_locations_0",
+  "original_command": "\\wget.exe wget.exe http --output-document :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Help\\ :\\Windows\\Temp\\ \\Temporary Internet :\\Users\\ \\Favorites\\ :\\Users\\ \\Favourites\\ :\\Users\\ \\Contacts\\ :\\Users\\ \\Pictures\\",
+  "evasions": {
+    "insertion": "\\wget.exe wget.exe http --output-document :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ \\\":\\Windows\\Help\\\\\" \\\":\\Windows\\Temp\\\\\" \\Temporary Internet :\\Users\\ \\Favorites\\ :\\Users\\ \\Favourites\\ :\\Users\\ \\Contacts\\ :\\Users\\ \\Pictures\\",
+    "substitution": "\\wget.exe wget.exe http --output-document :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Help\\ :\\Windows\\Temp\\ \\Temporary Internet :\\Users\\ \\Favorites\\ :\\Users\\ \\Favourites\\ :\\Users\\ \\Contacts\\ :\\Users\\ \\Pictures\\ #substitution",
+    "omission": "\\wget wget http --output-document :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Help\\ :\\Windows\\Temp\\ \\Temporary Internet :\\Users\\ \\Favorites\\ :\\Users\\ \\Favourites\\ :\\Users\\ \\Contacts\\ :\\Users\\ \\Pictures\\",
+    "reordering": "\\wget.exe wget.exe http --output-document :\\PerfLogs\\ :\\Temp\\ :\\Users\\Public\\ :\\Windows\\Help\\ :\\Windows\\Temp\\ \\Temporary Internet :\\Users\\ \\Favorites\\ :\\Users\\ \\Favourites\\ :\\Users\\ \\Contacts\\ :\\Users\\ \\Pictures\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdnZXQuZXhlIHdnZXQuZXhlIGh0dHAgLS1vdXRwdXQtZG9jdW1lbnQgOlxQZXJmTG9nc1wgOlxUZW1wXCA6XFVzZXJzXFB1YmxpY1wgOlxXaW5kb3dzXEhlbHBcIDpcV2luZG93c1xUZW1wXCBcVGVtcG9yYXJ5IEludGVybmV0IDpcVXNlcnNcIFxGYXZvcml0ZXNcIDpcVXNlcnNcIFxGYXZvdXJpdGVzXCA6XFVzZXJzXCBcQ29udGFjdHNcIDpcVXNlcnNcIFxQaWN0dXJlc1w=')) | Invoke-Expression\" "
+  }
+}

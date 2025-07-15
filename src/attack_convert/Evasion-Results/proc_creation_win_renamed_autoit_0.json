@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_autoit_0",
+  "original_command": "/AutoIt3ExecuteScript /ErrorStdOut AutoIt3.exe AutoIt2.exe AutoIt.exe \\AutoIt.exe \\AutoIt2.exe \\AutoIt3_x64.exe \\AutoIt3.exe",
+  "evasions": {
+    "insertion": "/AutoIt3ExecuteScript /ErrorStdOut AutoIt3.exe AutoI\"t2.exe\" AutoIt.exe \\AutoIt.exe \\AutoIt2.exe \\AutoIt3_x64.exe \\AutoIt3.exe",
+    "substitution": "/AutoIt3ExecuteScript /ErrorStdOut AutoIt3.exe AutoIt2.exe AutoIt.exe \\AutoIt.exe \\AutoIt2.exe \\AutoIt3_x64.exe \\AutoIt3.exe #substitution",
+    "omission": "/AutoIt3ExecuteScript /ErrorStdOut AutoIt3 AutoIt2 AutoIt \\AutoIt \\AutoIt2 \\AutoIt3_x64 \\AutoIt3",
+    "reordering": "/AutoIt3ExecuteScript /ErrorStdOut AutoIt3.exe AutoIt2.exe AutoIt.exe \\AutoIt.exe \\AutoIt2.exe \\AutoIt3_x64.exe \\AutoIt3.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L0F1dG9JdDNFeGVjdXRlU2NyaXB0IC9FcnJvclN0ZE91dCBBdXRvSXQzLmV4ZSBBdXRvSXQyLmV4ZSBBdXRvSXQuZXhlIFxBdXRvSXQuZXhlIFxBdXRvSXQyLmV4ZSBcQXV0b0l0M194NjQuZXhlIFxBdXRvSXQzLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

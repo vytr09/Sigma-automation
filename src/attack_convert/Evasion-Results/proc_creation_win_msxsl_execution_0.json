@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msxsl_execution_0",
+  "original_command": "\\msxsl.exe",
+  "evasions": {
+    "insertion": "\\\"\\msxsl.exe\\\"",
+    "substitution": "\\msxsl.exe #substitution",
+    "omission": "\\msxsl",
+    "reordering": "\\msxsl.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zeHNsLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

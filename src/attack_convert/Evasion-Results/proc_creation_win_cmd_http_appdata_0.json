@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_http_appdata_0",
+  "original_command": "\\cmd.exe http :// %AppData%",
+  "evasions": {
+    "insertion": "\\cmd.exe http \\\"://\\\" %AppData%",
+    "substitution": "\\cmd.exe http :// %AppData% #substitution",
+    "omission": "\\cmd http :// %AppData%",
+    "reordering": "\\cmd.exe http %AppData% ://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZC5leGUgaHR0cCA6Ly8gJUFwcERhdGEl')) | Invoke-Expression\" "
+  }
+}

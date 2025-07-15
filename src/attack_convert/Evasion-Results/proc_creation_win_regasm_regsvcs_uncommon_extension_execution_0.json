@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_regasm_regsvcs_uncommon_extension_execution_0",
+  "original_command": "\\Regsvcs.exe \\Regasm.exe RegSvcs.exe RegAsm.exe .dat .gif .jpeg .jpg .png .txt",
+  "evasions": {
+    "insertion": "\\Regsvcs.exe \\Regasm.exe RegSvcs.exe RegAsm.exe .dat .gif .jpeg \".j\"pg .png .txt",
+    "substitution": "\\Regsvcs.exe \\Regasm.exe RegSvcs.exe RegAsm.exe .dat .gif .jpeg .jpg .png .txt #substitution",
+    "omission": "\\Regsvcs \\Regasm RegSvcs RegAsm .dat .gif .jpeg .jpg .png .txt",
+    "reordering": "\\Regsvcs.exe \\Regasm.exe RegSvcs.exe RegAsm.exe .dat .gif .jpeg .jpg .png .txt",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFJlZ3N2Y3MuZXhlIFxSZWdhc20uZXhlIFJlZ1N2Y3MuZXhlIFJlZ0FzbS5leGUgLmRhdCAuZ2lmIC5qcGVnIC5qcGcgLnBuZyAudHh0')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_register_app_0",
+  "original_command": "\\register_app.vbs -register",
+  "evasions": {
+    "insertion": "\\register_app.vbs \"-register\"",
+    "substitution": "\\register_app.vbs -register #substitution",
+    "omission": "\\register_app -register",
+    "reordering": "\\register_app.vbs -register",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2lzdGVyX2FwcC52YnMgLXJlZ2lzdGVy')) | Invoke-Expression\" "
+  }
+}

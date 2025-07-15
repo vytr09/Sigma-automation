@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 09:33:24 UTC", "rule": "proc_creation_win_lolbin_mpiexec_0", "phase": "original", "command": "\\mpiexec.exe /n 1 -n 1", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:33:24 UTC", "rule": "proc_creation_win_lolbin_mpiexec_0", "phase": "insertion", "command": "\\mpiexec.exe /n 1 \"-n\" \"1\"", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:33:24 UTC", "rule": "proc_creation_win_lolbin_mpiexec_0", "phase": "substitution", "command": "\\mpiexec.exe /n 1 -n 1 #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:33:24 UTC", "rule": "proc_creation_win_lolbin_mpiexec_0", "phase": "omission", "command": "\\mpiexec /n 1 -n 1", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:33:24 UTC", "rule": "proc_creation_win_lolbin_mpiexec_0", "phase": "reordering", "command": "\\mpiexec.exe /n 1 -n 1", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 09:33:24 UTC", "rule": "proc_creation_win_lolbin_mpiexec_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1waWV4ZWMuZXhlIC9uIDEgLW4gMQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lodctr_performance_counter_tampering_0",
+  "original_command": "\\lodctr.exe LODCTR.EXE -r",
+  "evasions": {
+    "insertion": "\\lodctr.exe LODCT\"R.EXE\" -r",
+    "substitution": "\\lodctr.exe LODCTR.EXE -r #substitution",
+    "omission": "\\lodctr LODCTR -r",
+    "reordering": "\\lodctr.exe LODCTR.EXE -r",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxvZGN0ci5leGUgTE9EQ1RSLkVYRSAtcg==')) | Invoke-Expression\" "
+  }
+}

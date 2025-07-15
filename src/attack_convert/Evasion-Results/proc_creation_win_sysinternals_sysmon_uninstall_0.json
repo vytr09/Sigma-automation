@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_sysmon_uninstall_0",
+  "original_command": "\\Sysmon64.exe \\Sysmon.exe -u",
+  "evasions": {
+    "insertion": "\\Sysmon64.exe \\\"\\\\\"\\\"S\\\"\\\"y\\\"\\\"s\\\"\\\"m\\\"\\\"o\\\"\\\"n\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" -u",
+    "substitution": "\\Sysmon64.exe \\Sysmon.exe -u #substitution",
+    "omission": "\\Sysmon64 \\Sysmon -u",
+    "reordering": "\\Sysmon64.exe -u \\Sysmon.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c21vbjY0LmV4ZSBcU3lzbW9uLmV4ZSAtdQ==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_reg_enable_windows_recall_0",
+  "original_command": "\\reg.exe reg.exe Microsoft\\Windows\\WindowsAI DisableAIDataAnalysis add 0 delete",
+  "evasions": {
+    "insertion": "\\reg.exe reg.exe Microsoft\\Windows\\WindowsAI DisableAIDataAnalysis \"a\"dd 0 delete",
+    "substitution": "\\reg.exe reg.exe Microsoft\\Windows\\WindowsAI DisableAIDataAnalysis add 0 delete",
+    "omission": "\\reg reg Microsoft\\Windows\\WindowsAI DisableAIDataAnalysis add 0 delete",
+    "reordering": "\\reg.exe reg.exe Microsoft\\Windows\\WindowsAI DisableAIDataAnalysis add 0 delete",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZy5leGUgcmVnLmV4ZSBNaWNyb3NvZnRcV2luZG93c1xXaW5kb3dzQUkgRGlzYWJsZUFJRGF0YUFuYWx5c2lzIGFkZCAwIGRlbGV0ZQ==')) | Invoke-Expression\" "
+  }
+}

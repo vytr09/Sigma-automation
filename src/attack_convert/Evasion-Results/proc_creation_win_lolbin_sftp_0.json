@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_sftp_0",
+  "original_command": "\\sftp.exe -D .. -D C:\\",
+  "evasions": {
+    "insertion": "\\sftp.exe -D .. -D \\\"C\\\"\\\":\\\"\\\"\\\\\"",
+    "substitution": "\\sftp.exe -D .. -D C:\\ #substitution",
+    "omission": "\\sftp -D .. -D C:\\",
+    "reordering": "\\sftp.exe C:\\ .. -D -D",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNmdHAuZXhlIC1EIC4uIC1EIEM6XA==')) | Invoke-Expression\" "
+  }
+}

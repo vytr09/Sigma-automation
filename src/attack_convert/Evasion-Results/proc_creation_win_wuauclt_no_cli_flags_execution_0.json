@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wuauclt_no_cli_flags_execution_0",
+  "original_command": "\\Wuauclt.exe Wuauclt.exe",
+  "evasions": {
+    "insertion": "\\\"\\Wuauclt.exe\\\" Wuauclt.exe",
+    "substitution": "\\Wuauclt.exe Wuauclt.exe #substitution",
+    "omission": "\\Wuauclt Wuauclt",
+    "reordering": "\\Wuauclt.exe Wuauclt.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFd1YXVjbHQuZXhlIFd1YXVjbHQuZXhl')) | Invoke-Expression\" "
+  }
+}

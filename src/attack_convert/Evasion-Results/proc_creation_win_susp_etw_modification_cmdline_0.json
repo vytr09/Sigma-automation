@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_susp_etw_modification_cmdline_0",
+  "original_command": "COMPlus_ETWEnabled COMPlus_ETWFlags",
+  "evasions": {
+    "insertion": "COMPlus_ETWEnabled \\\"C\\\"\\\"O\\\"\\\"M\\\"\\\"P\\\"\\\"l\\\"\\\"u\\\"\\\"s\\\"\\\"_\\\"\\\"E\\\"\\\"T\\\"\\\"W\\\"\\\"F\\\"\\\"l\\\"\\\"a\\\"\\\"g\\\"\\\"s\\\"",
+    "substitution": "COMPlus_ETWEnabled COMPlus_ETWFlags #substitution",
+    "omission": "COMPlus_ETWEnabled COMPlus_ETWFlags # omission",
+    "reordering": "COMPlus_ETWEnabled COMPlus_ETWFlags",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q09NUGx1c19FVFdFbmFibGVkIENPTVBsdXNfRVRXRmxhZ3M=')) | Invoke-Expression\" "
+  }
+}

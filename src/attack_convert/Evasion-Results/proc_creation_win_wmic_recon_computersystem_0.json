@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_computersystem_0",
+  "original_command": "\\wmic.exe wmic.exe computersystem",
+  "evasions": {
+    "insertion": "\\wmic.exe wmic.exe \"c\"\"o\"\"m\"\"p\"\"u\"\"t\"\"e\"\"r\"\"s\"\"y\"\"s\"\"t\"\"e\"\"m\"",
+    "substitution": "\\wmic.exe wmic.exe computersystem #substitution",
+    "omission": "\\wmic wmic computersystem",
+    "reordering": "\\wmic.exe computersystem wmic.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIGNvbXB1dGVyc3lzdGVt')) | Invoke-Expression\" "
+  }
+}

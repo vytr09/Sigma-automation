@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_browsers_chromium_headless_file_download_0",
+  "original_command": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless dump-dom http",
+  "evasions": {
+    "insertion": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe \"--headless\" \"dump-dom\" http",
+    "substitution": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless dump-dom http #substitution",
+    "omission": "\\brave \\chrome \\msedge \\opera \\vivaldi --headless dump-dom http",
+    "reordering": "\\brave.exe \\chrome.exe \\msedge.exe \\opera.exe \\vivaldi.exe --headless dump-dom http",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGJyYXZlLmV4ZSBcY2hyb21lLmV4ZSBcbXNlZGdlLmV4ZSBcb3BlcmEuZXhlIFx2aXZhbGRpLmV4ZSAtLWhlYWRsZXNzIGR1bXAtZG9tIGh0dHA=')) | Invoke-Expression\" "
+  }
+}

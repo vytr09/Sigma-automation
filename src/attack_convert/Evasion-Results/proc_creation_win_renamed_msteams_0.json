@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_renamed_msteams_0",
+  "original_command": "msteams.exe teams.exe \\msteams.exe \\teams.exe",
+  "evasions": {
+    "insertion": "msteams.exe teams.exe \\mstea\\\"ms.exe\\\" \\teams.exe",
+    "substitution": "msteams.exe teams.exe \\msteams.exe \\teams.exe #substitution",
+    "omission": "msteams teams \\msteams \\teams",
+    "reordering": "msteams.exe teams.exe \\teams.exe \\msteams.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXN0ZWFtcy5leGUgdGVhbXMuZXhlIFxtc3RlYW1zLmV4ZSBcdGVhbXMuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_uac_bypass_ntfs_reparse_point_0",
+  "original_command": "C:\\Users\\ \\AppData\\Local\\Temp\\ \\dismhost.exe { \\DismHost.exe",
+  "evasions": {
+    "insertion": "C:\\Users\\ \\AppData\\Local\\Temp\\ \\dismhost.exe { \"\\DismHost.exe\"",
+    "substitution": "C:\\Users\\ \\AppData\\Local\\Temp\\ \\dismhost.exe { \\DismHost.exe #substitution",
+    "omission": "AppData\\Local\\Temp\\ \\dismhost { \\DismHost",
+    "reordering": "C:\\Users\\ \\dismhost.exe \\AppData\\Local\\Temp\\ { \\DismHost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QzpcVXNlcnNcIFxBcHBEYXRhXExvY2FsXFRlbXBcIFxkaXNtaG9zdC5leGUgeyBcRGlzbUhvc3QuZXhl')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_whoami_execution_from_high_priv_process_0",
+  "original_command": "whoami.exe \\whoami.exe",
+  "evasions": {
+    "insertion": "whoami.exe \\\"\\whoami.exe\\\"",
+    "substitution": "whoami.exe \\whoami.exe #substitution",
+    "omission": "whoami \\whoami",
+    "reordering": "whoami.exe \\whoami.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d2hvYW1pLmV4ZSBcd2hvYW1pLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

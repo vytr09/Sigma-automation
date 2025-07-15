@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_certoc_load_dll_0",
+  "original_command": "\\certoc.exe CertOC.exe -LoadDLL",
+  "evasions": {
+    "insertion": "\\certoc.exe \"CertOC.exe\" -LoadDLL",
+    "substitution": "\\certoc.exe CertOC.exe -LoadDLL #substitution",
+    "omission": "\\certoc CertOC -LoadDLL",
+    "reordering": "\\certoc.exe CertOC.exe -LoadDLL",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnRvYy5leGUgQ2VydE9DLmV4ZSAtTG9hZERMTA==')) | Invoke-Expression\" "
+  }
+}

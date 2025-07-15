@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_remote_access_tools_anydesk_revoked_cert_0",
+  "original_command": "\\AnyDesk.exe --remove --uninstall",
+  "evasions": {
+    "insertion": "\\AnyDesk.exe --remove \"--uninstall\"",
+    "substitution": "\\AnyDesk.exe --remove --uninstall #substitution",
+    "omission": "\\AnyDesk --remove --uninstall",
+    "reordering": "\\AnyDesk.exe --remove --uninstall",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFueURlc2suZXhlIC0tcmVtb3ZlIC0tdW5pbnN0YWxs')) | Invoke-Expression\" "
+  }
+}

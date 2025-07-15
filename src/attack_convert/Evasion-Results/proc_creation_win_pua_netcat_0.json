@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_netcat_0",
+  "original_command": "\\nc.exe \\ncat.exe \\netcat.exe -lvp -lvnp -l -v -p -lv -p -l --proxy-type http -vnl --exec -vnl -e --lua-exec --sh-exec",
+  "evasions": {
+    "insertion": "\\nc.exe \\ncat.exe \\netcat.exe -lvp -lvnp -l -v -p -lv -p -l --proxy-type http -vnl --e\\\"xec\\\" -vnl -e --lua-exec --sh-exec",
+    "substitution": "\\nc.exe \\ncat.exe \\netcat.exe -lvp -lvnp -l -v -p -lv -p -l --proxy-type http -vnl --exec -vnl -e --lua-exec --sh-exec #substitution",
+    "omission": "\\nc \\ncat \\netcat -lvp -lvnp -l -v -p -lv -p -l --proxy-type http -vnl --exec -vnl -e --lua-exec --sh-exec",
+    "reordering": "\\nc.exe \\ncat.exe \\netcat.exe -lvp -lvnp -l -v -p -lv -p -l --proxy-type http -vnl --exec -vnl -e --lua-exec --sh-exec",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5jLmV4ZSBcbmNhdC5leGUgXG5ldGNhdC5leGUgLWx2cCAtbHZucCAtbCAtdiAtcCAtbHYgLXAgLWwgLS1wcm94eS10eXBlIGh0dHAgLXZubCAtLWV4ZWMgLXZubCAtZSAtLWx1YS1leGVjIC0tc2gtZXhlYw==')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_7zip_exfil_dmp_files_0",
+  "original_command": "7-Zip \\7z.exe \\7zr.exe \\7za.exe 7z.exe 7za.exe .dmp .dump .hdmp",
+  "evasions": {
+    "insertion": "7-Zip \\7z.exe \\7zr.exe \\7za.exe 7z.exe 7za.exe .dmp .dump \\\".\\\"\\\"h\\\"\\\"d\\\"\\\"m\\\"\\\"p\\\"",
+    "substitution": "7-Zip \\7z.exe \\7zr.exe \\7za.exe 7z.exe 7za.exe .dmp .dump .hdmp #substitution",
+    "omission": "7-Zip \\7z \\7zr \\7za 7z 7za .dmp .dump .hdmp",
+    "reordering": "7-Zip \\7z.exe \\7zr.exe \\7za.exe 7z.exe 7za.exe .dmp .dump .hdmp",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Ny1aaXAgXDd6LmV4ZSBcN3pyLmV4ZSBcN3phLmV4ZSA3ei5leGUgN3phLmV4ZSAuZG1wIC5kdW1wIC5oZG1w')) | Invoke-Expression\" "
+  }
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:02:55 UTC", "rule": "proc_creation_win_regedit_export_keys_0", "phase": "original", "command": "\\regedit.exe REGEDIT.EXE -E hklm hkey_local_machine", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:03:06 UTC", "rule": "proc_creation_win_regedit_export_keys_0", "phase": "insertion", "command": "\\regedit.exe REGEDIT.EXE \"-E\" \"hklm\" hkey_local_machine", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:03:11 UTC", "rule": "proc_creation_win_regedit_export_keys_0", "phase": "substitution", "command": "\\regedit.exe REGEDIT.EXE -E hklm hkey_local_machine #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:03:19 UTC", "rule": "proc_creation_win_regedit_export_keys_0", "phase": "omission", "command": "\\regedit REGEDIT -E hklm hkey_local_machine", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:03:25 UTC", "rule": "proc_creation_win_regedit_export_keys_0", "phase": "reordering", "command": "\\regedit.exe hklm REGEDIT.EXE -E hkey_local_machine", "status": "DETECTED"}
+{"timestamp": "2025-06-23 15:03:31 UTC", "rule": "proc_creation_win_regedit_export_keys_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2VkaXQuZXhlIFJFR0VESVQuRVhFIC1FIGhrbG0gaGtleV9sb2NhbF9tYWNoaW5l')) | Invoke-Expression\" ", "status": "BYPASSED"}

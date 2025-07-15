@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_netsh_fw_add_rule_0",
+  "original_command": "\\netsh.exe netsh.exe firewall add advfirewall firewall add rule name=Dropbox dir=in action=allow advfirewall firewall add rule name=Dropbox dir=in action=allow",
+  "evasions": {
+    "insertion": "\\netsh.exe netsh.exe firewall add advfirewall firewall add rule name=Dropbox dir=in \"action\"=allow advfirewall firewall add rule name=Dropbox dir=in action=allow",
+    "substitution": "\\netsh.exe netsh.exe firewall add advfirewall firewall add-rule name=Dropbox dir=in action=allow advfirewall firewall add-rule name=Dropbox dir=in action=allow",
+    "omission": "\\netsh netsh firewall add advfirewall firewall add rule name=Dropbox dir=in action=allow advfirewall firewall add rule name=Dropbox dir=in action=allow",
+    "reordering": "\\netsh.exe netsh.exe firewall add advfirewall firewall add rule name=Dropbox dir=in action=allow advfirewall firewall add rule name=Dropbox dir=in action=allow",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgZmlyZXdhbGwgYWRkIGFkdmZpcmV3YWxsIGZpcmV3YWxsIGFkZCBydWxlIG5hbWU9RHJvcGJveCBkaXI9aW4gYWN0aW9uPWFsbG93IGFkdmZpcmV3YWxsIGZpcmV3YWxsIGFkZCBydWxlIG5hbWU9RHJvcGJveCBkaXI9aW4gYWN0aW9uPWFsbG93')) | Invoke-Expression\" "
+  }
+}

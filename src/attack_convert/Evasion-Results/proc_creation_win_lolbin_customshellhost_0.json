@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_lolbin_customshellhost_0",
+  "original_command": "\\CustomShellHost.exe",
+  "evasions": {
+    "insertion": "\\\"C\"\"u\"\"s\"\"t\"\"o\"\"m\"\"S\"\"h\"\"e\"\"l\"\"l\"\"H\"\"o\"\"s\"\"t\"\".\"\"e\"\"x\"\"e\"",
+    "substitution": "\\CustomShellHost.exe #substitution",
+    "omission": "\\CustomShellHost",
+    "reordering": "\\CustomShellHost.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEN1c3RvbVNoZWxsSG9zdC5leGU=')) | Invoke-Expression\" "
+  }
+}

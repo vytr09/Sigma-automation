@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_nltest_recon_0",
+  "original_command": "\\nltest.exe nltestrk.exe server query /user all_trusts dclist: dnsgetdc: domain_trusts dsgetdc: parentdomain trusted_domains",
+  "evasions": {
+    "insertion": "\\nltest.exe nltestrk.exe server query /\"u\"\"s\"\"e\"\"r\" all_trusts dclist: dnsgetdc: domain_trusts dsgetdc: parentdomain trusted_domains",
+    "substitution": "\\nltest.exe nltestrk.exe server query /user all_trusts dclist: dnsgetdc: domain_trusts dsgetdc: parentdomain trusted_domains #substitution",
+    "omission": "\\nltest nltestrk server query /user all_trusts dclist: dnsgetdc: domain_trusts dsgetdc: parentdomain trusted_domains",
+    "reordering": "\\nltest.exe nltestrk.exe server query /user all_trusts dclist: dnsgetdc: domain_trusts dsgetdc: parentdomain trusted_domains",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5sdGVzdC5leGUgbmx0ZXN0cmsuZXhlIHNlcnZlciBxdWVyeSAvdXNlciBhbGxfdHJ1c3RzIGRjbGlzdDogZG5zZ2V0ZGM6IGRvbWFpbl90cnVzdHMgZHNnZXRkYzogcGFyZW50ZG9tYWluIHRydXN0ZWRfZG9tYWlucw==')) | Invoke-Expression\" "
+  }
+}

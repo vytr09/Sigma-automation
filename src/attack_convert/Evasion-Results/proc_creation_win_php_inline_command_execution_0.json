@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_php_inline_command_execution_0",
+  "original_command": "\\php.exe php.exe -r",
+  "evasions": {
+    "insertion": "\\php.exe \\\"p\\\"\\\"h\\\"\\\"p\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" -r",
+    "substitution": "\\php.exe php.exe -r #substitution",
+    "omission": "\\php php -r",
+    "reordering": "\\php.exe php.exe -r",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBocC5leGUgcGhwLmV4ZSAtcg==')) | Invoke-Expression\" "
+  }
+}

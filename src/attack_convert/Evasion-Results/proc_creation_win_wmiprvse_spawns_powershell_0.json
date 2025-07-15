@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmiprvse_spawns_powershell_0",
+  "original_command": "\\WmiPrvSE.exe \\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll",
+  "evasions": {
+    "insertion": "\\WmiPrvSE.exe \\powershell.exe \\pwsh.exe PowerShell.EXE \\\"pwsh\\\".dll",
+    "substitution": "\\WmiPrvSE.exe \\powershell.exe \\pwsh.exe PowerShell.EXE pwsh.dll #substitution",
+    "omission": "\\WmiPrvSE \\powershell \\pwsh PowerShell pwsh.dll",
+    "reordering": "\\WmiPrvSE.exe PowerShell.EXE \\pwsh.exe \\powershell.exe pwsh.dll",
+    "recoding": "powershell.exe -EncodedCommand XABXAG0AaQBQAHIAdgBTAEUALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABQAG8AdwBlAHIAUwBoAGUAbABsAC4ARQBYAEUAIABwAHcAcwBoAC4AZABsAGwA "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_cmd_stdin_redirect_0",
+  "original_command": "Cmd.Exe \\cmd.exe <",
+  "evasions": {
+    "insertion": "Cmd.Exe \\cmd.exe <",
+    "substitution": "Cmd.Exe \\cmd.exe < #substitution",
+    "omission": "Cmd \\cmd <",
+    "reordering": "Cmd.Exe \\cmd.exe <",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q21kLkV4ZSBcY21kLmV4ZSA8')) | Invoke-Expression\" "
+  }
+}

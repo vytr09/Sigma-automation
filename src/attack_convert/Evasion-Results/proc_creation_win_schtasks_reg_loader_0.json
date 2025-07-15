@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_schtasks_reg_loader_0",
+  "original_command": "\\schtasks.exe schtasks.exe /Create Get-ItemProperty gp HKCU: HKLM: registry:: HKEY_ FromBase64String encodedcommand",
+  "evasions": {
+    "insertion": "\\schtasks.exe schtasks.exe /Create \"Get-Item\"Property gp HKCU: HKLM: registry:: HKEY_ FromBase64String encodedcommand",
+    "substitution": "\\schtasks.exe schtasks.exe /Create Get-ItemProperty gp HKCU: HKLM: registry:: HKEY_ FromBase64String encodedcommand #substitution",
+    "omission": "\\schtasks schtasks /Create Get-ItemProperty gp HKCU: HKLM: registry:: HKEY_ FromBase64String encodedcommand",
+    "reordering": "\\schtasks.exe schtasks.exe /Create Get-ItemProperty gp HKCU: HKLM: registry:: HKEY_ FromBase64String encodedcommand",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSBzY2h0YXNrcy5leGUgL0NyZWF0ZSBHZXQtSXRlbVByb3BlcnR5IGdwIEhLQ1U6IEhLTE06IHJlZ2lzdHJ5OjogSEtFWV8gRnJvbUJhc2U2NFN0cmluZyBlbmNvZGVkY29tbWFuZA==')) | Invoke-Expression\" "
+  }
+}

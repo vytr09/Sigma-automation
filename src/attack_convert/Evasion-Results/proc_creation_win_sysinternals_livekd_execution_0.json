@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sysinternals_livekd_execution_0",
+  "original_command": "\\livekd.exe \\livekd64.exe livekd.exe",
+  "evasions": {
+    "insertion": "\\livekd.exe \\livekd64.exe livek\\\"d.exe\\\"",
+    "substitution": "\\livekd.exe \\livekd64.exe livekd.exe #substitution",
+    "omission": "\\livekd \\livekd64 livekd",
+    "reordering": "\\livekd.exe \\livekd64.exe livekd.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxpdmVrZC5leGUgXGxpdmVrZDY0LmV4ZSBsaXZla2QuZXhl')) | Invoke-Expression\" "
+  }
+}

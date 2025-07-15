@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_wmic_recon_group_0",
+  "original_command": "\\wmic.exe wmic.exe group",
+  "evasions": {
+    "insertion": "\\wmic.exe wmic\\\".exe\\\" group",
+    "substitution": "\\wmic.exe wmic.exe group #substitution",
+    "omission": "\\wmic wmic group",
+    "reordering": "\\wmic.exe wmic.exe group",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIGdyb3Vw')) | Invoke-Expression\" "
+  }
+}

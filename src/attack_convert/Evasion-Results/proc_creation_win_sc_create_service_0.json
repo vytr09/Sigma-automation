@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_create_service_0",
+  "original_command": "\\sc.exe create binPath",
+  "evasions": {
+    "insertion": "\\sc.exe \"create\" binPath",
+    "substitution": "\\sc.exe create binPath",
+    "omission": "\\sc create binPath",
+    "reordering": "\\sc.exe binPath create",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBjcmVhdGUgYmluUGF0aA==')) | Invoke-Expression\" "
+  }
+}

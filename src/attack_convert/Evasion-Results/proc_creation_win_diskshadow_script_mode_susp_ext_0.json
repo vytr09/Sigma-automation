@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_diskshadow_script_mode_susp_ext_0",
+  "original_command": "diskshadow.exe \\diskshadow.exe -s .txt",
+  "evasions": {
+    "insertion": "diskshadow.exe \\\"\\disksh\\\"adow.exe -s .txt",
+    "substitution": "diskshadow.exe \\diskshadow.exe -s .txt #substitution",
+    "omission": "diskshadow \\diskshadow -s .txt",
+    "reordering": "diskshadow.exe .txt \\diskshadow.exe -s",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZGlza3NoYWRvdy5leGUgXGRpc2tzaGFkb3cuZXhlIC1zIC50eHQ=')) | Invoke-Expression\" "
+  }
+}

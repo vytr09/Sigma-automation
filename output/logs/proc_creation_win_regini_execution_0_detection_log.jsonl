@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 15:05:22 UTC", "rule": "proc_creation_win_regini_execution_0", "phase": "original", "command": "\\regini.exe REGINI.EXE", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:05:22 UTC", "rule": "proc_creation_win_regini_execution_0", "phase": "insertion", "command": "\"\\regini.exe\" REGINI.EXE", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:05:22 UTC", "rule": "proc_creation_win_regini_execution_0", "phase": "substitution", "command": "\\regini.exe REGINI.EXE #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:05:22 UTC", "rule": "proc_creation_win_regini_execution_0", "phase": "omission", "command": "\\regini REGINI", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:05:22 UTC", "rule": "proc_creation_win_regini_execution_0", "phase": "reordering", "command": "\\regini.exe REGINI.EXE", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 15:05:22 UTC", "rule": "proc_creation_win_regini_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlZ2luaS5leGUgUkVHSU5JLkVYRQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

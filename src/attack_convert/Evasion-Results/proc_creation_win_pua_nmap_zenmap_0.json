@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_pua_nmap_zenmap_0",
+  "original_command": "\\nmap.exe \\zennmap.exe nmap.exe zennmap.exe",
+  "evasions": {
+    "insertion": "\\nmap.exe \\zennmap.exe nmap\".exe\" zennmap.exe",
+    "substitution": "\\nmap.exe \\zennmap.exe nmap.exe zennmap.exe #substitution",
+    "omission": "\\nmap \\zennmap nmap zennmap",
+    "reordering": "\\nmap.exe \\zennmap.exe zennmap.exe nmap.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5tYXAuZXhlIFx6ZW5ubWFwLmV4ZSBubWFwLmV4ZSB6ZW5ubWFwLmV4ZQ==')) | Invoke-Expression\" "
+  }
+}

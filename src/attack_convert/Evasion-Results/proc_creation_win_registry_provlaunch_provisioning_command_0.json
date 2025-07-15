@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_provlaunch_provisioning_command_0",
+  "original_command": "SOFTWARE\\Microsoft\\Provisioning\\Commands\\",
+  "evasions": {
+    "insertion": "\\\"SOFTWARE\\Microsoft\\Provisioning\\Commands\\\\\"",
+    "substitution": "SOFTWARE\\Microsoft\\Provisioning\\Commands\\ #substitution",
+    "omission": "SOFTWARE\\Microsoft\\Provisioning\\Commands\\ # omission",
+    "reordering": "SOFTWARE\\Microsoft\\Provisioning\\Commands\\",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('U09GVFdBUkVcTWljcm9zb2Z0XFByb3Zpc2lvbmluZ1xDb21tYW5kc1w=')) | Invoke-Expression\" "
+  }
+}

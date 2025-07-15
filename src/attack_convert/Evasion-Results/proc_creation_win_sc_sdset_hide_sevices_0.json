@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_sc_sdset_hide_sevices_0",
+  "original_command": "\\sc.exe sc.exe sdset DCLCWPDTSD",
+  "evasions": {
+    "insertion": "\\sc.exe sc.exe sdset \\\"DCLCWPDTSD\\\"",
+    "substitution": "\\sc.exe sc.exe sdset DCLCWPDTSD #substitution",
+    "omission": "\\sc sc sdset DCLCWPDTSD",
+    "reordering": "\\sc.exe sdset sc.exe DCLCWPDTSD",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgc2RzZXQgRENMQ1dQRFRTRA==')) | Invoke-Expression\" "
+  }
+}

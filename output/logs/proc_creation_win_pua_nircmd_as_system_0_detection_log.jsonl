@@ -1,0 +1,6 @@
+{"timestamp": "2025-06-23 14:52:34 UTC", "rule": "proc_creation_win_pua_nircmd_as_system_0", "phase": "original", "command": "runassystem", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:52:41 UTC", "rule": "proc_creation_win_pua_nircmd_as_system_0", "phase": "insertion", "command": "runassystem", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:52:47 UTC", "rule": "proc_creation_win_pua_nircmd_as_system_0", "phase": "substitution", "command": "runassystem #substitution", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:52:52 UTC", "rule": "proc_creation_win_pua_nircmd_as_system_0", "phase": "omission", "command": "runassystem # omission", "status": "BYPASSED"}
+{"timestamp": "2025-06-23 14:53:00 UTC", "rule": "proc_creation_win_pua_nircmd_as_system_0", "phase": "reordering", "command": "runassystem", "status": "DETECTED"}
+{"timestamp": "2025-06-23 14:53:06 UTC", "rule": "proc_creation_win_pua_nircmd_as_system_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cnVuYXNzeXN0ZW0=')) | Invoke-Expression\" ", "status": "BYPASSED"}

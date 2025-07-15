@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_registry_set_unsecure_powershell_policy_0",
+  "original_command": "\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy \\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy Bypass RemoteSigned Unrestricted",
+  "evasions": {
+    "insertion": "\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy \\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy Bypass RemoteSigned \\\"Unrest\\\"ricted",
+    "substitution": "\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy \\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy Bypass RemoteSigned Unrestricted #substitution",
+    "omission": "\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy \\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy Bypass RemoteSigned Unrestricted # omission",
+    "reordering": "\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy \\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy Bypass Unrestricted RemoteSigned",
+    "recoding": "powershell.exe -EncodedCommand XABTAGgAZQBsAGwASQBkAHMAXABNAGkAYwByAG8AcwBvAGYAdAAuAFAAbwB3AGUAcgBTAGgAZQBsAGwAXABFAHgAZQBjAHUAdABpAG8AbgBQAG8AbABpAGMAeQAgAFwAUABvAGwAaQBjAGkAZQBzAFwATQBpAGMAcgBvAHMAbwBmAHQAXABXAGkAbgBkAG8AdwBzAFwAUABvAHcAZQByAFMAaABlAGwAbABcAEUAeABlAGMAdQB0AGkAbwBuAFAAbwBsAGkAYwB5ACAAQgB5AHAAYQBzAHMAIABSAGUAbQBvAHQAZQBTAGkAZwBuAGUAZAAgAFUAbgByAGUAcwB0AHIAaQBjAHQAZQBkAA== "
+  }
+}

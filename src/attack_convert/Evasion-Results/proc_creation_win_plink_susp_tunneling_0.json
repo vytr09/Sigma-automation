@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_plink_susp_tunneling_0",
+  "original_command": "\\plink.exe :127.0.0.1:3389 \\plink.exe :3389 -P 443 -P 22",
+  "evasions": {
+    "insertion": "\\plink.exe :127.0.0.1:3389 \\plink.exe :3389 -P \\\"443\\\" \\\"-P\\\" 22",
+    "substitution": "\\plink.exe :127.0.0.1:3389 \\plink.exe :3389 -P 443 -P 22 #substitution",
+    "omission": "\\plink :127.0.0.1:3389 \\plink :3389 -P 443 -P 22",
+    "reordering": "\\plink.exe :127.0.0.1:3389 \\plink.exe :3389 -P 443 -P 22",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBsaW5rLmV4ZSA6MTI3LjAuMC4xOjMzODkgXHBsaW5rLmV4ZSA6MzM4OSAtUCA0NDMgLVAgMjI=')) | Invoke-Expression\" "
+  }
+}

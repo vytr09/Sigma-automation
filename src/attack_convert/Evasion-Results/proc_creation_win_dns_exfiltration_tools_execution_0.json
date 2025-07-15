@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_dns_exfiltration_tools_execution_0",
+  "original_command": "\\iodine.exe",
+  "evasions": {
+    "insertion": "\"\\iodine.exe\"",
+    "substitution": "\\iodine.exe #substitution",
+    "omission": "\\iodine",
+    "reordering": "\\iodine.exe",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGlvZGluZS5leGU=')) | Invoke-Expression\" "
+  }
+}

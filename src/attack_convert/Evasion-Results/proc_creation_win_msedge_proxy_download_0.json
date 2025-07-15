@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_msedge_proxy_download_0",
+  "original_command": "\\msedge_proxy.exe msedge_proxy.exe http:// https://",
+  "evasions": {
+    "insertion": "\\msedge_proxy.exe \\\"m\\\"\\\"s\\\"\\\"e\\\"\\\"d\\\"\\\"g\\\"\\\"e\\\"\\\"_\\\"\\\"p\\\"\\\"r\\\"\\\"o\\\"\\\"x\\\"\\\"y\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" http:// https://",
+    "substitution": "\\msedge_proxy.exe msedge_proxy.exe http:// https:// #substitution",
+    "omission": "\\msedge_proxy msedge_proxy http:// https://",
+    "reordering": "\\msedge_proxy.exe https:// msedge_proxy.exe http://",
+    "recoding": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zZWRnZV9wcm94eS5leGUgbXNlZGdlX3Byb3h5LmV4ZSBodHRwOi8vIGh0dHBzOi8v')) | Invoke-Expression\" "
+  }
+}

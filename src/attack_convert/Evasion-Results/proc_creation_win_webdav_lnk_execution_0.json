@@ -1,0 +1,11 @@
+{
+  "rule_name": "proc_creation_win_webdav_lnk_execution_0",
+  "original_command": "\\explorer.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\DavWWWRoot\\",
+  "evasions": {
+    "insertion": "\\explorer.exe \\cmd.exe \\\"\\cscript.exe\\\" \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\DavWWWRoot\\",
+    "substitution": "\\explorer.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\DavWWWRoot\\ #substitution",
+    "omission": "\\explorer \\cmd \\cscript \\mshta \\powershell \\pwsh \\wscript \\DavWWWRoot\\",
+    "reordering": "\\explorer.exe \\cmd.exe \\cscript.exe \\mshta.exe \\powershell.exe \\pwsh.exe \\wscript.exe \\DavWWWRoot\\",
+    "recoding": "powershell.exe -EncodedCommand XABlAHgAcABsAG8AcgBlAHIALgBlAHgAZQAgAFwAYwBtAGQALgBlAHgAZQAgAFwAYwBzAGMAcgBpAHAAdAAuAGUAeABlACAAXABtAHMAaAB0AGEALgBlAHgAZQAgAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAXABwAHcAcwBoAC4AZQB4AGUAIABcAHcAcwBjAHIAaQBwAHQALgBlAHgAZQAgAFwARABhAHYAVwBXAFcAUgBvAG8AdABcAA== "
+  }
+}
