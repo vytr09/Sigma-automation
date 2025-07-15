@@ -4,39 +4,3 @@
 {"timestamp": "2025-04-23 11:54:48 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:54:58 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg /d add Disabled \\Services\\VSS\\Diag", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:55:05 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:49 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:49 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg add \\\"\\Services\\VSS\\Diag\\\" /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:49 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:49 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:49 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:49 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBcU2VydmljZXNcVlNTXERpYWcgL2QgRGlzYWJsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:32 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:32 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg add \"\\Services\\VSS\\Diag\" /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:32 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:32 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:32 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:32 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBcU2VydmljZXNcVlNTXERpYWcgL2QgRGlzYWJsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:19:01 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:19:01 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg \\\"add\\\" \\\"\\Services\\VSS\\Diag\\\" /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:19:01 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:19:01 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:19:01 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:19:01 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBcU2VydmljZXNcVlNTXERpYWcgL2QgRGlzYWJsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:26 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:26 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg add \\Services\\VSS\\Diag \"/d\" \"Disabled\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:26 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:26 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:26 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:26 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBcU2VydmljZXNcVlNTXERpYWcgL2QgRGlzYWJsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:53 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:53 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg add \\Services\\VSS\\Diag /d \"D\"\"i\"\"s\"\"a\"\"b\"\"l\"\"e\"\"d\"", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:53 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:53 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:53 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:53 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBcU2VydmljZXNcVlNTXERpYWcgL2QgRGlzYWJsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:46 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:46 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg add \\Services\\VSS\\Diag /\"{cmd_part}\" Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:46 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:46 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:46 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:46 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmVnIGFkZCBcU2VydmljZXNcVlNTXERpYWcgL2QgRGlzYWJsZWQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 11:57:21 UTC", "rule": "win_susp_wmi_execution_0", "phase": "omission", "command": "wmic /NODE: process call create", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:57:28 UTC", "rule": "win_susp_wmi_execution_0", "phase": "reordering", "command": "wmic.exe process create /NODE: call", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:57:35 UTC", "rule": "win_susp_wmi_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:19:19 UTC", "rule": "win_susp_wmi_execution_0", "phase": "original", "command": "wmic.exe /NODE: process call create", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:19:22 UTC", "rule": "win_susp_wmi_execution_0", "phase": "insertion", "command": "wmic.exe /NODE: process call cre\"ate\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:19:26 UTC", "rule": "win_susp_wmi_execution_0", "phase": "substitution", "command": "wmic.exe --node= process call create", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:19:29 UTC", "rule": "win_susp_wmi_execution_0", "phase": "omission", "command": "wmic /NODE: process call create", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:19:32 UTC", "rule": "win_susp_wmi_execution_0", "phase": "reordering", "command": "wmic.exe /NODE: process call create", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:19:36 UTC", "rule": "win_susp_wmi_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d21pYy5leGUgL05PREU6IHByb2Nlc3MgY2FsbCBjcmVhdGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

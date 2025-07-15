@@ -10,9 +10,3 @@
 {"timestamp": "2025-04-23 11:51:18 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "omission", "command": "svchost", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:51:25 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "reordering", "command": "svchost.exe", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:51:33 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:17:09 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "original", "command": "svchost.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:17:12 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "insertion", "command": "svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:17:16 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "substitution", "command": "svchost.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:17:20 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "omission", "command": "svchost", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:17:24 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "reordering", "command": "svchost.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:17:28 UTC", "rule": "win_susp_svchost_no_cli_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c3ZjaG9zdC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

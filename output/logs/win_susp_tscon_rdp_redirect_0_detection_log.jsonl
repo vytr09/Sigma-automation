@@ -4,9 +4,3 @@
 {"timestamp": "2025-04-23 11:54:06 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "omission", "command": "/dest:rdp-tcp: # omission", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:54:13 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "reordering", "command": "/dest:rdp-tcp:", "status": "DETECTED"}
 {"timestamp": "2025-04-23 11:54:21 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:21 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "original", "command": "/dest:rdp-tcp:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:18:26 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "insertion", "command": "/dest:rdp-tcp:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:18:30 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "substitution", "command": "/dest:rdp-tcp: #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:34 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "omission", "command": "/dest:rdp-tcp: # omission", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:18:38 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "reordering", "command": "/dest:rdp-tcp:", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:18:42 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2Rlc3Q6cmRwLXRjcDo=')) | Invoke-Expression\" ", "status": "BYPASSED"}

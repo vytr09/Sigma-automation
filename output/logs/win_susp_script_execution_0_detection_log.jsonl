@@ -4,39 +4,3 @@
 {"timestamp": "2025-04-23 11:48:34 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript .vba", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:48:50 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe .vba", "status": "BYPASSED"}
 {"timestamp": "2025-04-23 11:49:02 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:21 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe .jse", "status": "DETECTED"}
-{"timestamp": "2025-05-23 06:59:26 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe .j\\\"se\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 06:59:30 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe .jse #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 06:59:35 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript .jse", "status": "DETECTED"}
-{"timestamp": "2025-05-23 06:59:39 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe .jse", "status": "DETECTED"}
-{"timestamp": "2025-05-23 06:59:44 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgLmpzZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:04 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe \\cscript.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:09:09 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe \"\\cscri\"pt.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:09:14 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe \\cscript.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:09:18 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript \\cscript", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:09:23 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe \\cscript.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:09:28 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgXGNzY3JpcHQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:18:34 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe \\cscript.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:18:39 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe \\\"\\cscript.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:18:43 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe \\cscript.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:18:47 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript \\cscript", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:18:52 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe \\cscript.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:18:57 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgXGNzY3JpcHQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:28:57 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe \\cscript.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:29:04 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe \"\\cscri\"pt.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:29:08 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe \\cscript.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:29:13 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript \\cscript", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:29:17 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe \\cscript.exe", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:29:21 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgXGNzY3JpcHQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:27 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe .jse", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:44:31 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe \\\".\\\"\\\"j\\\"\\\"s\\\"\\\"e\\\"", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:44:35 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe .jse #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 07:44:40 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript .jse", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:44:44 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe .jse", "status": "DETECTED"}
-{"timestamp": "2025-05-23 07:44:49 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgLmpzZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:15:57 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe .vba", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:16:04 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe \\\".v\\\"ba", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:16:08 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe .vba #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:16:11 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript .vba", "status": "BYPASSED"}
-{"timestamp": "2025-05-23 08:16:15 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe .vba", "status": "DETECTED"}
-{"timestamp": "2025-05-23 08:16:18 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('d3NjcmlwdC5leGUgLnZiYQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}
