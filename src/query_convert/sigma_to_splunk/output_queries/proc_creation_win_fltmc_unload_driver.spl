@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\fltMC.exe" OR Original_File_Name="fltMC.exe") | search (Process_Command_Line="*unload*") | search (Parent_Process_Name="C:\Users\*" AND Parent_Process_Name="*\AppData\Local\Temp\*" AND Parent_Process_Name="*\endpoint-protection-installer-x64.tmp" AND Process_Command_Line="*unload rtp_filesystem_filter") | search (Parent_Process_Name="C:\Program Files (x86)\ManageEngine\uems_agent\bin\dcfaservice64.exe" AND Process_Command_Line="*unload DFMFilter")
+| table _time, New_Process_Name, Process_Command_Line

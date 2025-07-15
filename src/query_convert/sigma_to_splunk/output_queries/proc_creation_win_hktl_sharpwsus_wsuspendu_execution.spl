@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="* -Inject *") | search ((Process_Command_Line="* -PayloadArgs *" OR Process_Command_Line="* -PayloadFile *")) | search ((Process_Command_Line="* approve *" OR Process_Command_Line="* create *" OR Process_Command_Line="* check *" OR Process_Command_Line="* delete *")) | search ((Process_Command_Line="* /payload:*" OR Process_Command_Line="* /payload=*" OR Process_Command_Line="* /updateid:*" OR Process_Command_Line="* /updateid=*"))
+| table _time, New_Process_Name, Process_Command_Line

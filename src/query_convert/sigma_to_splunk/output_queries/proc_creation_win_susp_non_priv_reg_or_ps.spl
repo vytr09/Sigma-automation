@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="['reg ', 'add']" OR Process_Command_Line="*['powershell', 'set-itemproperty', ' sp ', 'new-itemproperty']*") | search ((Process_Integrity_Level="Medium" OR Process_Integrity_Level="S-1-16-8192") AND (Process_Command_Line="ControlSet" OR Process_Command_Line="Services") AND (Process_Command_Line="*ImagePath*" OR Process_Command_Line="*FailureCommand*" OR Process_Command_Line="*ServiceDLL*"))
+| table _time, New_Process_Name, Process_Command_Line

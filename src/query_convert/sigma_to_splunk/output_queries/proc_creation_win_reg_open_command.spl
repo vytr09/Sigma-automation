@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="reg" OR Process_Command_Line="add" OR Process_Command_Line="hkcu\software\classes\ms-settings\shell\open\command" OR Process_Command_Line="/ve " OR Process_Command_Line="/d")) OR ((Process_Command_Line="reg" OR Process_Command_Line="add" OR Process_Command_Line="hkcu\software\classes\ms-settings\shell\open\command" OR Process_Command_Line="/v" OR Process_Command_Line="DelegateExecute")) OR ((Process_Command_Line="reg" OR Process_Command_Line="delete" OR Process_Command_Line="hkcu\software\classes\ms-settings"))
+| table _time, New_Process_Name, Process_Command_Line

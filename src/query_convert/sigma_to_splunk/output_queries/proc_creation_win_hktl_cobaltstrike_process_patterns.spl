@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*cmd.exe /C whoami" AND Parent_Process_Name="C:\Temp\*") OR ((Parent_Process_Name="*\runonce.exe" OR Parent_Process_Name="*\dllhost.exe") AND (Process_Command_Line="cmd.exe /c echo" OR Process_Command_Line="> \\\\.\\pipe")) OR ((Parent_Process_Command_Line="cmd.exe /C echo" OR Parent_Process_Command_Line=" > \\\\.\\pipe") AND Process_Command_Line="*conhost.exe 0xffffffff -ForceV1") OR (Parent_Process_Command_Line="*/C whoami" AND Process_Command_Line="*conhost.exe 0xffffffff -ForceV1")
+| table _time, New_Process_Name, Process_Command_Line

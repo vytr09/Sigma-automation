@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\bitsadmin.exe" OR Original_File_Name="bitsadmin.exe") | search (Process_Command_Line="* /transfer *") | search ((Process_Command_Line="* /create *" OR Process_Command_Line="* /addfile *")) | search (Process_Command_Line="*http*")
+| table _time, New_Process_Name, Process_Command_Line

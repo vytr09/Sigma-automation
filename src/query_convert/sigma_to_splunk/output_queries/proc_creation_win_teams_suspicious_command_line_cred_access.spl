@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*\Microsoft\Teams\Cookies*" OR Process_Command_Line="*\Microsoft\Teams\Local Storage\leveldb*")) OR (New_Process_Name="*\Microsoft\Teams\current\Teams.exe")
+| table _time, New_Process_Name, Process_Command_Line

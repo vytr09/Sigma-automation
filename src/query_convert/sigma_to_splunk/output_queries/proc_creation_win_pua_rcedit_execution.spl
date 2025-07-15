@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\rcedit-x64.exe', '\\rcedit-x86.exe']" OR Description="Edit resources of exe" OR Product="rcedit") | search (Process_Command_Line="*--set-*") | search ((Process_Command_Line="*OriginalFileName*" OR Process_Command_Line="*CompanyName*" OR Process_Command_Line="*FileDescription*" OR Process_Command_Line="*ProductName*" OR Process_Command_Line="*ProductVersion*" OR Process_Command_Line="*LegalCopyright*"))
+| table _time, New_Process_Name, Process_Command_Line

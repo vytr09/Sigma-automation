@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="['PowerShell.EXE', 'pwsh.dll']" OR New_Process_Name="*['\\powershell.exe', '\\pwsh.exe']") | search ((Process_Command_Line=" Net.Sockets.TCPClient" OR Process_Command_Line=".GetStream(" OR Process_Command_Line=".Write("))
+| table _time, New_Process_Name, Process_Command_Line

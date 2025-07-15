@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*ipconfig*|*find*" OR Process_Command_Line="*net*|*find*" OR Process_Command_Line="*netstat*|*find*" OR Process_Command_Line="*ping*|*find*" OR Process_Command_Line="*systeminfo*|*find*" OR Process_Command_Line="*tasklist*|*find*" OR Process_Command_Line="*whoami*|*find*"))
+| table _time, New_Process_Name, Process_Command_Line

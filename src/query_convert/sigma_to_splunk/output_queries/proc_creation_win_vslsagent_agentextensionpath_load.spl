@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\vsls-agent.exe" AND Process_Command_Line="*--agentExtensionPath*") | search (Process_Command_Line="*Microsoft.VisualStudio.LiveShare.Agent.*")
+| table _time, New_Process_Name, Process_Command_Line

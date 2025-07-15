@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\winlogon.exe" OR Parent_Process_Name="*\services.exe" OR Parent_Process_Name="*\lsass.exe" OR Parent_Process_Name="*\csrss.exe" OR Parent_Process_Name="*\smss.exe" OR Parent_Process_Name="*\wininit.exe" OR Parent_Process_Name="*\spoolsv.exe" OR Parent_Process_Name="*\searchindexer.exe") AND (User="*AUTHORI*" OR User="*AUTORI*")) | search (New_Process_Name="*['\\powershell.exe', '\\pwsh.exe', '\\cmd.exe']" OR Original_File_Name="['PowerShell.EXE', 'pwsh.dll', 'Cmd.Exe']") | search ((Process_Command_Line=" route " OR Process_Command_Line=" ADD "))
+| table _time, New_Process_Name, Process_Command_Line

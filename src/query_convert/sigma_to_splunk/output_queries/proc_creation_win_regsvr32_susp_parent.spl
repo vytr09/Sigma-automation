@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\cmd.exe" OR Parent_Process_Name="*\cscript.exe" OR Parent_Process_Name="*\mshta.exe" OR Parent_Process_Name="*\powershell_ise.exe" OR Parent_Process_Name="*\powershell.exe" OR Parent_Process_Name="*\pwsh.exe" OR Parent_Process_Name="*\wscript.exe") AND New_Process_Name="*\regsvr32.exe") OR (Parent_Process_Name="C:\Windows\System32\cmd.exe" AND Process_Command_Line="* /s C:\Windows\System32\RpcProxy\RpcProxy.dll")
+| table _time, New_Process_Name, Process_Command_Line

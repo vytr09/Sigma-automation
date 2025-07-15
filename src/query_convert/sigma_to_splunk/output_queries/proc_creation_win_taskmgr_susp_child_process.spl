@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\taskmgr.exe") OR ((New_Process_Name="*:\Windows\System32\mmc.exe" OR New_Process_Name="*:\Windows\System32\resmon.exe" OR New_Process_Name="*:\Windows\System32\Taskmgr.exe"))
+| table _time, New_Process_Name, Process_Command_Line

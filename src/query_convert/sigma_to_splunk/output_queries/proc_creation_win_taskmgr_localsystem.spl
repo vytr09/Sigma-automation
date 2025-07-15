@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((User="*AUTHORI*" OR User="*AUTORI*") AND New_Process_Name="*\taskmgr.exe")
+| table _time, New_Process_Name, Process_Command_Line

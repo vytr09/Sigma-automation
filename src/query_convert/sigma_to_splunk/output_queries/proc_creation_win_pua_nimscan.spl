@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\NimScan.exe" OR Hashes="*['IMPHASH=41BB1C7571B3A724EB83A1D2B96DBB8C', 'IMPHASH=B1B6ADACB172795480179EFD18A29549', 'IMPHASH=0D1F896DC7642AD8384F9042F30279C2']*")
+| table _time, New_Process_Name, Process_Command_Line

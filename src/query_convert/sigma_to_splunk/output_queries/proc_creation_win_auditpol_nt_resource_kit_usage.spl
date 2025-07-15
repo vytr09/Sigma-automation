@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*/logon:none*" OR Process_Command_Line="*/system:none*" OR Process_Command_Line="*/sam:none*" OR Process_Command_Line="*/privilege:none*" OR Process_Command_Line="*/object:none*" OR Process_Command_Line="*/process:none*" OR Process_Command_Line="*/policy:none*"))
+| table _time, New_Process_Name, Process_Command_Line

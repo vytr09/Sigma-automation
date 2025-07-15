@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\amazon-ssm-agent.exe" AND (Process_Command_Line="-register " OR Process_Command_Line="-code " OR Process_Command_Line="-id " OR Process_Command_Line="-region "))
+| table _time, New_Process_Name, Process_Command_Line

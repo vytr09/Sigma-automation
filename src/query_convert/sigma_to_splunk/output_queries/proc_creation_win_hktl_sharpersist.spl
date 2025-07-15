@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\SharPersist.exe" OR Product="SharPersist") OR ((Process_Command_Line="* -t schtask -c *" OR Process_Command_Line="* -t startupfolder -c *")) OR ((Process_Command_Line=" -t reg -c " OR Process_Command_Line=" -m add")) OR ((Process_Command_Line=" -t service -c " OR Process_Command_Line=" -m add")) OR ((Process_Command_Line=" -t schtask -c " OR Process_Command_Line=" -m add"))
+| table _time, New_Process_Name, Process_Command_Line

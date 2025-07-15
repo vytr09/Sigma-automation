@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\runonce.exe" OR Description="Run Once Wrapper") | search (Process_Command_Line="*/AlternateShellStartup*" OR Process_Command_Line="*/r")
+| table _time, New_Process_Name, Process_Command_Line

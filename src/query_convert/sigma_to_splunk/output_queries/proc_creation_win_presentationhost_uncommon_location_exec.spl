@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\presentationhost.exe" OR Original_File_Name="PresentationHost.exe") | search (Process_Command_Line="*.xbap*") | search ((Process_Command_Line="* C:\Windows\*" OR Process_Command_Line="* C:\Program Files*"))
+| table _time, New_Process_Name, Process_Command_Line

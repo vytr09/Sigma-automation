@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*.doc*" OR Process_Command_Line="*.docx*" OR Process_Command_Line="*.xls*" OR Process_Command_Line="*.xlsx*" OR Process_Command_Line="*.ppt*" OR Process_Command_Line="*.pptx*" OR Process_Command_Line="*.rtf*" OR Process_Command_Line="*.pdf*" OR Process_Command_Line="*.txt*")) OR ((Process_Command_Line="dir " OR Process_Command_Line=" /b " OR Process_Command_Line=" /s ")) OR (Original_File_Name="FINDSTR.EXE" AND (Process_Command_Line="* /e *" OR Process_Command_Line="* /si *"))
+| table _time, New_Process_Name, Process_Command_Line

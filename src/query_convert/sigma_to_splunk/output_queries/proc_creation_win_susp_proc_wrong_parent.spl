@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\svchost.exe" OR New_Process_Name="*\taskhost.exe" OR New_Process_Name="*\lsm.exe" OR New_Process_Name="*\lsass.exe" OR New_Process_Name="*\services.exe" OR New_Process_Name="*\lsaiso.exe" OR New_Process_Name="*\csrss.exe" OR New_Process_Name="*\wininit.exe" OR New_Process_Name="*\winlogon.exe")) OR (Parent_Process_Name="*['\\SavService.exe', '\\ngen.exe']" OR Parent_Process_Name="*['\\System32\\', '\\SysWOW64\\']*") OR ((Parent_Process_Name="*\Windows Defender\*" OR Parent_Process_Name="*\Microsoft Security Client\*") AND Parent_Process_Name="*\MsMpEng.exe") OR (Parent_Process_Name="None" OR Parent_Process_Name="['', '-']")
+| table _time, New_Process_Name, Process_Command_Line

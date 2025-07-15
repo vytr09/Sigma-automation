@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\System\CurrentControlSet\Control\Lsa" OR Process_Command_Line="NoLMHash" OR Process_Command_Line=" 0"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Product="Sysinternals DebugView") | search (Original_File_Name="Dbgview.exe" AND New_Process_Name="*\Dbgview.exe")
+| table _time, New_Process_Name, Process_Command_Line

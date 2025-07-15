@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\LocalPotato.exe") OR ((Process_Command_Line=".exe -i C:\" OR Process_Command_Line="-o Windows\")) OR ((Hashes="*IMPHASH=E1742EE971D6549E8D4D81115F88F1FC*" OR Hashes="*IMPHASH=DD82066EFBA94D7556EF582F247C8BB5*"))
+| table _time, New_Process_Name, Process_Command_Line

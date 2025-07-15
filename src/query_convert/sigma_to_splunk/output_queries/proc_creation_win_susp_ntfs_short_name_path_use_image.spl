@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*~1\*" OR New_Process_Name="*~2\*")) OR (Parent_Process_Name="['C:\\Windows\\System32\\Dism.exe', 'C:\\Windows\\System32\\cleanmgr.exe']" OR Parent_Process_Name="*['\\WebEx\\WebexHost.exe', '\\thor\\thor64.exe']" OR Product="InstallShield (R)" OR Description="InstallShield (R) Setup Engine" OR Company="InstallShield Software Corporation") OR (New_Process_Name="['\\AppData\\', '\\Temp\\']" OR New_Process_Name="*['~1\\unzip.exe', '~1\\7zG.exe']")
+| table _time, New_Process_Name, Process_Command_Line

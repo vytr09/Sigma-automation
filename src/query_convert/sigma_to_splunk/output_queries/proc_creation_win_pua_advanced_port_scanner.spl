@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\advanced_port_scanner*" OR Original_File_Name="*advanced_port_scanner*" OR Description="*Advanced Port Scanner*") OR ((Process_Command_Line="/portable" OR Process_Command_Line="/lng"))
+| table _time, New_Process_Name, Process_Command_Line

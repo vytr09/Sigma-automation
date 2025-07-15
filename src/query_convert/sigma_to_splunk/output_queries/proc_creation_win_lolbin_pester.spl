@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\powershell.exe" OR Parent_Process_Name="*\pwsh.exe") AND Parent_Process_Command_Line="*\WindowsPowerShell\Modules\Pester\*") | search ((Parent_Process_Command_Line="*{ Invoke-Pester -EnableExit ;*" OR Parent_Process_Command_Line="*{ Get-Help "*"))
+| table _time, New_Process_Name, Process_Command_Line

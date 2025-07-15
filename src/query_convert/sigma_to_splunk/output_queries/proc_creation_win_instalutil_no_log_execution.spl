@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\InstallUtil.exe" AND New_Process_Name="*Microsoft.NET\Framework*" AND (Process_Command_Line="/logfile= " OR Process_Command_Line="/LogToConsole=false"))
+| table _time, New_Process_Name, Process_Command_Line

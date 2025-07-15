@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\nimgrab.exe") OR ((Hashes="*MD5=2DD44C3C29D667F5C0EF5F9D7C7FFB8B*" OR Hashes="*SHA256=F266609E91985F0FE3E31C5E8FAEEEC4FFA5E0322D8B6F15FE69F4C5165B9559*" OR Hashes="*IMPHASH=C07FDDD21D123EA9B3A08EEF44AAAC45*"))
+| table _time, New_Process_Name, Process_Command_Line

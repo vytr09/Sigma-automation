@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\wmic.exe" AND Process_Command_Line="-format") OR ((Process_Command_Line="*Format:List*" OR Process_Command_Line="*Format:htable*" OR Process_Command_Line="*Format:hform*" OR Process_Command_Line="*Format:table*" OR Process_Command_Line="*Format:mof*" OR Process_Command_Line="*Format:value*" OR Process_Command_Line="*Format:rawxml*" OR Process_Command_Line="*Format:xml*" OR Process_Command_Line="*Format:csv*"))
+| table _time, New_Process_Name, Process_Command_Line

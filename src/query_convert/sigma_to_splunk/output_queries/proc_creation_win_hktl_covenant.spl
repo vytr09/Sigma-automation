@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="-Sta" OR Process_Command_Line="-Nop" OR Process_Command_Line="-Window" OR Process_Command_Line="Hidden") AND (Process_Command_Line="*-Command*" OR Process_Command_Line="*-EncodedCommand*")) OR ((Process_Command_Line="*sv o (New-Object IO.MemorySteam);sv d *" OR Process_Command_Line="*mshta file.hta*" OR Process_Command_Line="*GruntHTTP*" OR Process_Command_Line="*-EncodedCommand cwB2ACAAbwAgA*"))
+| table _time, New_Process_Name, Process_Command_Line

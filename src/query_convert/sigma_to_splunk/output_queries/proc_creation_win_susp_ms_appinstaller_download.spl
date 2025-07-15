@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="ms-appinstaller://?source=" OR Process_Command_Line="http"))
+| table _time, New_Process_Name, Process_Command_Line

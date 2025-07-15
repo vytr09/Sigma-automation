@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\squirrel.exe" OR New_Process_Name="*\update.exe")) | search ((Process_Command_Line="* --download *" OR Process_Command_Line="* --update *" OR Process_Command_Line="* --updateRollback=*")) | search (Process_Command_Line="*http*")
+| table _time, New_Process_Name, Process_Command_Line

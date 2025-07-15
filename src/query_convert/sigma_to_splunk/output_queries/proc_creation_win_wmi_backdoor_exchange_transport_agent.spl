@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\EdgeTransport.exe") OR (New_Process_Name="C:\Windows\System32\conhost.exe") OR (New_Process_Name="C:\Program Files\Microsoft\Exchange Server\*" AND New_Process_Name="*\Bin\OleConverter.exe")
+| table _time, New_Process_Name, Process_Command_Line

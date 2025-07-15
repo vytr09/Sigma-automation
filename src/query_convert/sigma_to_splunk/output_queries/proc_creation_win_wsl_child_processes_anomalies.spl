@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\wsl.exe" OR Parent_Process_Name="*\wslhost.exe")) OR ((New_Process_Name="*\calc.exe" OR New_Process_Name="*\cmd.exe" OR New_Process_Name="*\cscript.exe" OR New_Process_Name="*\mshta.exe" OR New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe" OR New_Process_Name="*\regsvr32.exe" OR New_Process_Name="*\rundll32.exe" OR New_Process_Name="*\wscript.exe")) OR ((New_Process_Name="*\AppData\Local\Temp\*" OR New_Process_Name="*C:\Users\Public\*" OR New_Process_Name="*C:\Windows\Temp\*" OR New_Process_Name="*C:\Temp\*" OR New_Process_Name="*\Downloads\*" OR New_Process_Name="*\Desktop\*"))
+| table _time, New_Process_Name, Process_Command_Line

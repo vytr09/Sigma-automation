@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="tunnel " OR Process_Command_Line="service" OR Process_Command_Line="internal-run" OR Process_Command_Line="tunnel-service.log"))
+| table _time, New_Process_Name, Process_Command_Line

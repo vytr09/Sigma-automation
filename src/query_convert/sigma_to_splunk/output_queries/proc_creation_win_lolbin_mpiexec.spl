@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\mpiexec.exe" OR Hashes="*IMPHASH=d8b52ef6aaa3a81501bdfff9dbb96217*") | search ((Process_Command_Line="* /n 1 *" OR Process_Command_Line="* -n 1 *"))
+| table _time, New_Process_Name, Process_Command_Line

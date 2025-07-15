@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\powershell.exe', '\\pwsh.exe']" OR Original_File_Name="['PowerShell.EXE', 'pwsh.dll']") | search ((Process_Command_Line="*Import-Module *" OR Process_Command_Line="*ipmo *")) | search (Process_Command_Line="*Microsoft.ActiveDirectory.Management.dll*")
+| table _time, New_Process_Name, Process_Command_Line

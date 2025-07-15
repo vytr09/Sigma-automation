@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*Remove-MpPreference*") | search ((Process_Command_Line="*-ControlledFolderAccessProtectedFolders *" OR Process_Command_Line="*-AttackSurfaceReductionRules_Ids *" OR Process_Command_Line="*-AttackSurfaceReductionRules_Actions *" OR Process_Command_Line="*-CheckForSignaturesBeforeRunningScan *"))
+| table _time, New_Process_Name, Process_Command_Line

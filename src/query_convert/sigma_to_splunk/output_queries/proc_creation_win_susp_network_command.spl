@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*ipconfig /all*" OR Process_Command_Line="*netsh interface show interface*" OR Process_Command_Line="*arp -a*" OR Process_Command_Line="*nbtstat -n*" OR Process_Command_Line="*net config*" OR Process_Command_Line="*route print*"))
+| table _time, New_Process_Name, Process_Command_Line

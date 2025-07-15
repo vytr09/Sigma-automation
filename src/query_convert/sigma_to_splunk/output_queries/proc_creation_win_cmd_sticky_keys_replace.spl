@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="copy " OR Process_Command_Line="/y " OR Process_Command_Line="C:\windows\system32\cmd.exe C:\windows\system32\sethc.exe"))
+| table _time, New_Process_Name, Process_Command_Line

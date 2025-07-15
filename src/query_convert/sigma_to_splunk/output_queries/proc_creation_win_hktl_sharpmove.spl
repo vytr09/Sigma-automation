@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\SharpMove.exe" OR Original_File_Name="SharpMove.exe") | search (Process_Command_Line="*computername=*") | search ((Process_Command_Line="*action=create*" OR Process_Command_Line="*action=dcom*" OR Process_Command_Line="*action=executevbs*" OR Process_Command_Line="*action=hijackdcom*" OR Process_Command_Line="*action=modschtask*" OR Process_Command_Line="*action=modsvc*" OR Process_Command_Line="*action=query*" OR Process_Command_Line="*action=scm*" OR Process_Command_Line="*action=startservice*" OR Process_Command_Line="*action=taskscheduler*"))
+| table _time, New_Process_Name, Process_Command_Line

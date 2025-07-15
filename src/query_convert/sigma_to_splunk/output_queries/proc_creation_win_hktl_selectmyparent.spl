@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\SelectMyParent.exe" OR Process_Command_Line="*['PPID-spoof', 'ppid_spoof', 'spoof-ppid', 'spoof_ppid', 'ppidspoof', 'spoofppid', 'spoofedppid', ' -spawnto ']*" OR Original_File_Name="*['PPID-spoof', 'ppid_spoof', 'spoof-ppid', 'spoof_ppid', 'ppidspoof', 'spoofppid', 'spoofedppid']*" OR Description="SelectMyParent" OR Hashes="*['IMPHASH=04D974875BD225F00902B4CAD9AF3FBC', 'IMPHASH=A782AF154C9E743DDF3F3EB2B8F3D16E', 'IMPHASH=89059503D7FBF470E68F7E63313DA3AD', 'IMPHASH=CA28337632625C8281AB8A130B3D6BAD']*")
+| table _time, New_Process_Name, Process_Command_Line

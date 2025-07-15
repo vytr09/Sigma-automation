@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\schtasks.exe" AND (Process_Command_Line=" /delete " OR Process_Command_Line="/tn \*" OR Process_Command_Line=" /f"))
+| table _time, New_Process_Name, Process_Command_Line

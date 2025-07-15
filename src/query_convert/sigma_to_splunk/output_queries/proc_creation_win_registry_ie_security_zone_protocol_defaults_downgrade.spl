@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProtocolDefaults" OR Process_Command_Line="http" OR Process_Command_Line=" 0"))
+| table _time, New_Process_Name, Process_Command_Line

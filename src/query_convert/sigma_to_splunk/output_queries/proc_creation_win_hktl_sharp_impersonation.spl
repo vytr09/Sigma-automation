@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\SharpImpersonation.exe" OR Original_File_Name="SharpImpersonation.exe") OR (Process_Command_Line="[' user:', ' binary:']" OR Process_Command_Line="[' user:', ' shellcode:']" OR Process_Command_Line="*[' technique:CreateProcessAsUserW', ' technique:ImpersonateLoggedOnuser']*")
+| table _time, New_Process_Name, Process_Command_Line

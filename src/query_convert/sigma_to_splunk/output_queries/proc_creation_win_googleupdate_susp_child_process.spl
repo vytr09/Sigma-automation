@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\GoogleUpdate.exe") OR (New_Process_Name="*\Google*" OR New_Process_Name="*['\\setup.exe', 'chrome_updater.exe', 'chrome_installer.exe']") OR (New_Process_Name="None")
+| table _time, New_Process_Name, Process_Command_Line

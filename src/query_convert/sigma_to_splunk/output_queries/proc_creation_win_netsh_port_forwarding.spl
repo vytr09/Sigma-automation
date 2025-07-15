@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\netsh.exe" OR Original_File_Name="netsh.exe") OR ((Process_Command_Line="interface" OR Process_Command_Line="portproxy" OR Process_Command_Line="add" OR Process_Command_Line="v4tov4")) OR ((Process_Command_Line="i " OR Process_Command_Line="p " OR Process_Command_Line="a " OR Process_Command_Line="v ")) OR ((Process_Command_Line="connectp" OR Process_Command_Line="listena" OR Process_Command_Line="c="))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\w3wp.exe") OR (Process_Command_Line="*appcmd.exe add module*") OR (Process_Command_Line="* system.enterpriseservices.internal.publish*" AND New_Process_Name="*\powershell.exe") OR ((Process_Command_Line="gacutil" OR Process_Command_Line=" /I"))
+| table _time, New_Process_Name, Process_Command_Line

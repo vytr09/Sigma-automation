@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\HarddiskVolumeShadowCopy" OR Process_Command_Line="System32\config\sam")) | search ((Process_Command_Line="*Copy-Item*" OR Process_Command_Line="*cp $_.*" OR Process_Command_Line="*cpi $_.*" OR Process_Command_Line="*copy $_.*" OR Process_Command_Line="*.File]::Copy(*"))
+| table _time, New_Process_Name, Process_Command_Line

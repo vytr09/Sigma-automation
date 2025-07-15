@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\xordump.exe" OR Process_Command_Line="*[' -process lsass.exe ', ' -m comsvcs ', ' -m dbghelp ', ' -m dbgcore ']*")
+| table _time, New_Process_Name, Process_Command_Line

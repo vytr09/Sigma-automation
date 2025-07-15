@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe") AND Process_Command_Line="\s-\s*<")
+| table _time, New_Process_Name, Process_Command_Line

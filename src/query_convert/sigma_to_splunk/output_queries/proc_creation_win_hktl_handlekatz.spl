@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\loader.exe" AND Process_Command_Line="*--pid:*") OR ((Hashes="*IMPHASH=38D9E015591BBFD4929E0D0F47FA0055*" OR Hashes="*IMPHASH=0E2216679CA6E1094D63322E3412D650*")) OR ((Process_Command_Line="--pid:" OR Process_Command_Line="--outfile:") AND (Process_Command_Line="*.dmp*" OR Process_Command_Line="*lsass*" OR Process_Command_Line="*.obf*" OR Process_Command_Line="*dump*"))
+| table _time, New_Process_Name, Process_Command_Line

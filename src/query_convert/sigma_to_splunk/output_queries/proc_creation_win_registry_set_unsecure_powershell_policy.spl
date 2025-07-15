@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*\ShellIds\Microsoft.PowerShell\ExecutionPolicy*" OR Process_Command_Line="*\Policies\Microsoft\Windows\PowerShell\ExecutionPolicy*")) | search ((Process_Command_Line="*Bypass*" OR Process_Command_Line="*RemoteSigned*" OR Process_Command_Line="*Unrestricted*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\npc.exe") OR ((Process_Command_Line=" -server=" OR Process_Command_Line=" -vkey=" OR Process_Command_Line=" -password=")) OR (Process_Command_Line="* -config=npc*") OR ((Hashes="*MD5=AE8ACF66BFE3A44148964048B826D005*" OR Hashes="*SHA1=CEA49E9B9B67F3A13AD0BE1C2655293EA3C18181*" OR Hashes="*SHA256=5A456283392FFCEEEACA3D3426C306EB470304637520D72FED1CC1FEBBBD6856*"))
+| table _time, New_Process_Name, Process_Command_Line

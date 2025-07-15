@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*^^*" OR Process_Command_Line="*^|^*" OR Process_Command_Line="*,;,*" OR Process_Command_Line="*;;;;*" OR Process_Command_Line="*;; ;;*" OR Process_Command_Line="*(,(,*" OR Process_Command_Line="*%COMSPEC:~*" OR Process_Command_Line="* c^m^d*" OR Process_Command_Line="*^c^m^d*" OR Process_Command_Line="* c^md*" OR Process_Command_Line="* cm^d*" OR Process_Command_Line="*^cm^d*" OR Process_Command_Line="* s^et *" OR Process_Command_Line="* s^e^t *" OR Process_Command_Line="* se^t *"))
+| table _time, New_Process_Name, Process_Command_Line

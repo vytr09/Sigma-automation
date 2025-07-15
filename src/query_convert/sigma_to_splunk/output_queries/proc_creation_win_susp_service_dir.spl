@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\Users\Public\*" OR New_Process_Name="*\$Recycle.bin*" OR New_Process_Name="*\Users\All Users\*" OR New_Process_Name="*\Users\Default\*" OR New_Process_Name="*\Users\Contacts\*" OR New_Process_Name="*\Users\Searches\*" OR New_Process_Name="*C:\Perflogs\*" OR New_Process_Name="*\config\systemprofile\*" OR New_Process_Name="*\Windows\Fonts\*" OR New_Process_Name="*\Windows\IME\*" OR New_Process_Name="*\Windows\addins\*") AND (Parent_Process_Name="*\services.exe" OR Parent_Process_Name="*\svchost.exe"))
+| table _time, New_Process_Name, Process_Command_Line

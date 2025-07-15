@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="TeamViewer_Desktop.exe" AND Parent_Process_Name="TeamViewer_Service.exe" AND Process_Command_Line="*TeamViewer_Desktop.exe --IPCport 5939 --Module 1")
+| table _time, New_Process_Name, Process_Command_Line

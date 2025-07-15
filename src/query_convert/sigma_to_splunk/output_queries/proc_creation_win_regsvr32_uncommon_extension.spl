@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\regsvr32.exe" OR Original_File_Name="REGSVR32.EXE") OR ((Process_Command_Line="*.ax*" OR Process_Command_Line="*.cpl*" OR Process_Command_Line="*.dll*" OR Process_Command_Line="*.ocx*")) OR (Process_Command_Line="*.ppl*") OR (Process_Command_Line="*.bav*") OR (Process_Command_Line="None") OR (Process_Command_Line="")
+| table _time, New_Process_Name, Process_Command_Line

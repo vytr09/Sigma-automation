@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\wscript.exe" OR Parent_Process_Name="*\cscript.exe")) OR ((New_Process_Name="*\cmd.exe" OR New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe")) OR ((Process_Command_Line="mshta" OR Process_Command_Line="http")) OR ((Process_Command_Line="*rundll32*" OR Process_Command_Line="*regsvr32*" OR Process_Command_Line="*msiexec*")) OR (New_Process_Name="*\rundll32.exe") OR (New_Process_Name="*\rundll32.exe" AND (Process_Command_Line="*UpdatePerUserSystemParameters*" OR Process_Command_Line="*PrintUIEntry*" OR Process_Command_Line="*ClearMyTracksByProcess*"))
+| table _time, New_Process_Name, Process_Command_Line

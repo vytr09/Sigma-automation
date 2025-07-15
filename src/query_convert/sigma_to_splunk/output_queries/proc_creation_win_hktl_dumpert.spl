@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Hashes="*MD5=09D278F9DE118EF09163C6140255C690*" OR Process_Command_Line="*Dumpert.dll*")
+| table _time, New_Process_Name, Process_Command_Line

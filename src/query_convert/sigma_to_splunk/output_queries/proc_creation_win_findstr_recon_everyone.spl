@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\find.exe', '\\findstr.exe']" OR Original_File_Name="['FIND.EXE', 'FINDSTR.EXE']") | search ((Process_Command_Line="*"Everyone"*" OR Process_Command_Line="*'Everyone'*" OR Process_Command_Line="*"BUILTIN\\"*" OR Process_Command_Line="*'BUILTIN\'*")) | search ((Process_Command_Line="icacls " OR Process_Command_Line="findstr " OR Process_Command_Line="Everyone"))
+| table _time, New_Process_Name, Process_Command_Line

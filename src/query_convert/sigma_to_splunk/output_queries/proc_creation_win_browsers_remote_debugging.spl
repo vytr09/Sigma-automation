@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="* --remote-debugging-*") OR (New_Process_Name="*\firefox.exe" AND Process_Command_Line="* -start-debugger-server*")
+| table _time, New_Process_Name, Process_Command_Line

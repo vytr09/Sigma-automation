@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*X509Enrollment.CBinaryConverter*" OR Process_Command_Line="*884e2002-217d-11da-b2a4-000e7bbb2b09*"))
+| table _time, New_Process_Name, Process_Command_Line

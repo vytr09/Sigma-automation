@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\DllHost.exe" AND (Parent_Process_Command_Line="* /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7}*" OR Parent_Process_Command_Line="* /Processid:{3E000D72-A845-4CD9-BD83-80C07C3B881F}*" OR Parent_Process_Command_Line="* /Processid:{BD54C901-076B-434E-B6C7-17C531F4AB41}*" OR Parent_Process_Command_Line="* /Processid:{D2E7041B-2927-42FB-8E9F-7CE93B6DC937}*" OR Parent_Process_Command_Line="* /Processid:{E9495B87-D950-4AB5-87A5-FF6D70BF3E90}*") AND (Process_Integrity_Level="High" OR Process_Integrity_Level="System" OR Process_Integrity_Level="S-1-16-16384" OR Process_Integrity_Level="S-1-16-12288"))
+| table _time, New_Process_Name, Process_Command_Line

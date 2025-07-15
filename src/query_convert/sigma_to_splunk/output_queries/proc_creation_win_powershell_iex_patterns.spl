@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe") AND (Process_Command_Line="* | iex;*" OR Process_Command_Line="* | iex *" OR Process_Command_Line="* | iex}*" OR Process_Command_Line="* | IEX ;*" OR Process_Command_Line="* | IEX -Error*" OR Process_Command_Line="* | IEX (new*" OR Process_Command_Line="*);IEX *")) | search ((Process_Command_Line="*::FromBase64String*" OR Process_Command_Line="*.GetString([System.Convert]::*")) | search ((Process_Command_Line="*)|iex;$*" OR Process_Command_Line="*);iex($*" OR Process_Command_Line="*);iex $*" OR Process_Command_Line="* | IEX | *" OR Process_Command_Line="* | iex\"*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="C:\Windows\System32\*" OR New_Process_Name="C:\Windows\SysWOW64\*")) | search ((Parent_Process_Command_Line="cmd.exe /c" OR Parent_Process_Command_Line="RoamDiag.cmd" OR Parent_Process_Command_Line="-outputpath"))
+| table _time, New_Process_Name, Process_Command_Line

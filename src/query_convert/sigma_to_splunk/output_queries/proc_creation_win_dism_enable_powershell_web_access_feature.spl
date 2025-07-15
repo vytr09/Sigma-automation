@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\dism.exe" OR Original_File_Name="DISM.EXE") | search ((Process_Command_Line="WindowsPowerShellWebAccess" OR Process_Command_Line="/online" OR Process_Command_Line="/enable-feature"))
+| table _time, New_Process_Name, Process_Command_Line

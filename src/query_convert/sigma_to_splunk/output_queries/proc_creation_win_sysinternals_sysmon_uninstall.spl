@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\Sysmon64.exe', '\\Sysmon.exe']" OR Description="System activity monitor") | search (Process_Command_Line="-u")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\msdt.exe" AND Process_Command_Line="*\WINDOWS\diagnostics\index\PCWDiagnostic.xml*") | search ((Process_Command_Line="* -af *" OR Process_Command_Line="* /af *")) | search (Parent_Process_Name="*\pcwrun.exe")
+| table _time, New_Process_Name, Process_Command_Line

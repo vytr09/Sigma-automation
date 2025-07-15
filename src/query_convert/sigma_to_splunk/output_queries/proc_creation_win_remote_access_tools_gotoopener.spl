@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Description="GoTo Opener" OR Product="GoTo Opener" OR Company="LogMeIn, Inc.")
+| table _time, New_Process_Name, Process_Command_Line

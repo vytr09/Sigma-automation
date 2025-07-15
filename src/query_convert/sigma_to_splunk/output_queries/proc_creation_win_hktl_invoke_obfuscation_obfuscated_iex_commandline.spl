@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="\$PSHome\[\s*\d{1,3}\s*\]\s*\+\s*\$PSHome\[" OR Process_Command_Line="\$ShellId\[\s*\d{1,3}\s*\]\s*\+\s*\$ShellId\[" OR Process_Command_Line="\$env:Public\[\s*\d{1,3}\s*\]\s*\+\s*\$env:Public\[" OR Process_Command_Line="\$env:ComSpec\[(\s*\d{1,3}\s*,){2}" OR Process_Command_Line="\*mdr\*\W\s*\)\.Name" OR Process_Command_Line="\$VerbosePreference\.ToString\(" OR Process_Command_Line="\[String\]\s*\$VerbosePreference")
+| table _time, New_Process_Name, Process_Command_Line

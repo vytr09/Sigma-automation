@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\brave.exe" OR New_Process_Name="*\chrome.exe" OR New_Process_Name="*\msedge.exe" OR New_Process_Name="*\opera.exe" OR New_Process_Name="*\vivaldi.exe")) | search (Process_Command_Line="*http*") | search ((Process_Command_Line="*.7z" OR Process_Command_Line="*.dat" OR Process_Command_Line="*.dll" OR Process_Command_Line="*.exe" OR Process_Command_Line="*.hta" OR Process_Command_Line="*.ps1" OR Process_Command_Line="*.psm1" OR Process_Command_Line="*.txt" OR Process_Command_Line="*.vbe" OR Process_Command_Line="*.vbs" OR Process_Command_Line="*.zip"))
+| table _time, New_Process_Name, Process_Command_Line

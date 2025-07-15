@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*iex *" OR Process_Command_Line="*Invoke-Expression *" OR Process_Command_Line="*Invoke-Command *" OR Process_Command_Line="*icm *")) | search ((Process_Command_Line="*cat *" OR Process_Command_Line="*get-content *" OR Process_Command_Line="*type *")) | search (Process_Command_Line="* -raw*")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\CoercedPotato.exe") OR (Process_Command_Line="* --exploitId *") OR ((Hashes="*IMPHASH=A75D7669DB6B2E107A44C4057FF7F7D6*" OR Hashes="*IMPHASH=F91624350E2C678C5DCBE5E1F24E22C9*" OR Hashes="*IMPHASH=14C81850A079A87E83D50CA41C709A15*"))
+| table _time, New_Process_Name, Process_Command_Line

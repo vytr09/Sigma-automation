@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*echo *" OR Process_Command_Line="*copy *" OR Process_Command_Line="*type *" OR Process_Command_Line="*file createnew*")) | search ((Process_Command_Line="* C:\Windows\System32\Tasks\*" OR Process_Command_Line="* C:\Windows\SysWow64\Tasks\*"))
+| table _time, New_Process_Name, Process_Command_Line

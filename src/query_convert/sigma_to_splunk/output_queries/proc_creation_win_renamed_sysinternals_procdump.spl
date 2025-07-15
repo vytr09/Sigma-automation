@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="procdump") | search ((Process_Command_Line=" -ma " OR Process_Command_Line=" -mp ")) | search (Process_Command_Line=" /accepteula") | search ((New_Process_Name="*\procdump.exe" OR New_Process_Name="*\procdump64.exe"))
+| table _time, New_Process_Name, Process_Command_Line

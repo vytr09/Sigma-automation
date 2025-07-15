@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\mshta.exe") | search (New_Process_Name="*['\\cmd.exe', '\\powershell.exe', '\\pwsh.exe', '\\wscript.exe', '\\cscript.exe', '\\sh.exe', '\\bash.exe', '\\reg.exe', '\\regsvr32.exe', '\\bitsadmin.exe']" OR Original_File_Name="['Cmd.Exe', 'PowerShell.EXE', 'pwsh.dll', 'wscript.exe', 'cscript.exe', 'Bash.exe', 'reg.exe', 'REGSVR32.EXE', 'bitsadmin.exe']")
+| table _time, New_Process_Name, Process_Command_Line

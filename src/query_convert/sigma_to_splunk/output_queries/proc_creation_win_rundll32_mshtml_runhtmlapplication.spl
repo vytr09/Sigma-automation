@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\..\" OR Process_Command_Line="mshtml") AND (Process_Command_Line="*#135*" OR Process_Command_Line="*RunHTMLApplication*"))
+| table _time, New_Process_Name, Process_Command_Line

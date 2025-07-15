@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="REG" OR Process_Command_Line="ADD" OR Process_Command_Line="\SOFTWARE\Policies\Microsoft\FVE" OR Process_Command_Line="/v" OR Process_Command_Line="/f") AND (Process_Command_Line="*EnableBDEWithNoTPM*" OR Process_Command_Line="*UseAdvancedStartup*" OR Process_Command_Line="*UseTPM*" OR Process_Command_Line="*UseTPMKey*" OR Process_Command_Line="*UseTPMKeyPIN*" OR Process_Command_Line="*RecoveryKeyMessageSource*" OR Process_Command_Line="*UseTPMPIN*" OR Process_Command_Line="*RecoveryKeyMessage*"))
+| table _time, New_Process_Name, Process_Command_Line

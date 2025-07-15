@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*txt:*") OR ((Process_Command_Line="type " OR Process_Command_Line=" > ")) OR ((Process_Command_Line="makecab " OR Process_Command_Line=".cab")) OR ((Process_Command_Line="reg " OR Process_Command_Line=" export ")) OR ((Process_Command_Line="regedit " OR Process_Command_Line=" /E ")) OR ((Process_Command_Line="esentutl " OR Process_Command_Line=" /y " OR Process_Command_Line=" /d " OR Process_Command_Line=" /o "))
+| table _time, New_Process_Name, Process_Command_Line

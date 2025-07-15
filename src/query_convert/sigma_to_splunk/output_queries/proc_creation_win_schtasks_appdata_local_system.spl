@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\schtasks.exe" AND (Process_Command_Line="/Create" OR Process_Command_Line="/RU" OR Process_Command_Line="/TR" OR Process_Command_Line="C:\Users\" OR Process_Command_Line="\AppData\Local\") AND (Process_Command_Line="*NT AUT*" OR Process_Command_Line="* SYSTEM *")) | search ((Parent_Process_Name="\AppData\Local\Temp\" OR Parent_Process_Name="TeamViewer_.exe") AND New_Process_Name="*\schtasks.exe" AND Process_Command_Line="*/TN TVInstallRestore*")
+| table _time, New_Process_Name, Process_Command_Line

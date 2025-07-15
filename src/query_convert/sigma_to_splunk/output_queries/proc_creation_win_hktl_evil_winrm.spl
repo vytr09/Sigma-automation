@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\ruby.exe" AND (Process_Command_Line="-i " OR Process_Command_Line="-u " OR Process_Command_Line="-p "))
+| table _time, New_Process_Name, Process_Command_Line

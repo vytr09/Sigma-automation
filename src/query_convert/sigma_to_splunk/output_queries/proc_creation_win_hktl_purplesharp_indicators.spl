@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\purplesharp*" OR Original_File_Name="PurpleSharp.exe") OR ((Process_Command_Line="*xyz123456.exe*" OR Process_Command_Line="*PurpleSharp*"))
+| table _time, New_Process_Name, Process_Command_Line

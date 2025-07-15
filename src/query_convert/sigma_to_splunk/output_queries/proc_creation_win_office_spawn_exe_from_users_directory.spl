@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\WINWORD.EXE" OR Parent_Process_Name="*\EXCEL.EXE" OR Parent_Process_Name="*\POWERPNT.exe" OR Parent_Process_Name="*\MSPUB.exe" OR Parent_Process_Name="*\VISIO.exe" OR Parent_Process_Name="*\MSACCESS.exe" OR Parent_Process_Name="*\EQNEDT32.exe") AND New_Process_Name="C:\users\*" AND New_Process_Name="*.exe") | search (New_Process_Name="*\Teams.exe")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*:\Windows\Microsoft.NET\Framework\*" OR New_Process_Name="*:\Windows\Microsoft.NET\Framework64\*" OR New_Process_Name="*:\Windows\Microsoft.NET\FrameworkArm\*" OR New_Process_Name="*:\Windows\Microsoft.NET\FrameworkArm64\*") AND New_Process_Name="*\aspnet_compiler.exe" AND (Process_Command_Line="*\Users\Public\*" OR Process_Command_Line="*\AppData\Local\Temp\*" OR Process_Command_Line="*\AppData\Local\Roaming\*" OR Process_Command_Line="*:\Temp\*" OR Process_Command_Line="*:\Windows\Temp\*" OR Process_Command_Line="*:\Windows\System32\Tasks\*" OR Process_Command_Line="*:\Windows\Tasks\*"))
+| table _time, New_Process_Name, Process_Command_Line

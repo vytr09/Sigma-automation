@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\netsh.exe" OR Original_File_Name="netsh.exe") | search ((Process_Command_Line="advfirewall" OR Process_Command_Line="firewall" OR Process_Command_Line="set" OR Process_Command_Line="rule" OR Process_Command_Line="group=" OR Process_Command_Line="new" OR Process_Command_Line="enable=Yes"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\cmd.exe" AND (Process_Command_Line="http" OR Process_Command_Line="://" OR Process_Command_Line="%AppData%"))
+| table _time, New_Process_Name, Process_Command_Line

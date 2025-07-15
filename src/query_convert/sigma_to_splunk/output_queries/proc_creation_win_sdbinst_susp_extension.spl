@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\sdbinst.exe" OR Original_File_Name="sdbinst.exe") OR (Process_Command_Line="*.sdb*") OR (Process_Command_Line="*[' -c', ' -f', ' -mm', ' -t']" OR Process_Command_Line="* -m -bg*") OR (Process_Command_Line="None") OR (Process_Command_Line="")
+| table _time, New_Process_Name, Process_Command_Line

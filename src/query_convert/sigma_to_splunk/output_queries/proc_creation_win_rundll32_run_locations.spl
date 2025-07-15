@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*[':\\RECYCLER\\', ':\\SystemVolumeInformation\\']*" OR New_Process_Name="['C:\\Windows\\Tasks\\', 'C:\\Windows\\debug\\', 'C:\\Windows\\fonts\\', 'C:\\Windows\\help\\', 'C:\\Windows\\drivers\\', 'C:\\Windows\\addins\\', 'C:\\Windows\\cursors\\', 'C:\\Windows\\system32\\tasks\\']*")
+| table _time, New_Process_Name, Process_Command_Line

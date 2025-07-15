@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*\\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy*") | search ((Process_Command_Line="*\\NTDS.dit*" OR Process_Command_Line="*\\SYSTEM*" OR Process_Command_Line="*\\SECURITY*"))
+| table _time, New_Process_Name, Process_Command_Line

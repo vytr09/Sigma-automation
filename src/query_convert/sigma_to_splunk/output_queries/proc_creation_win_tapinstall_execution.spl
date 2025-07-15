@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\tapinstall.exe") OR ((New_Process_Name="*:\Program Files\Avast Software\SecureLine VPN\*" OR New_Process_Name="*:\Program Files (x86)\Avast Software\SecureLine VPN\*")) OR (New_Process_Name="*:\Program Files\OpenVPN Connect\drivers\tap\*") OR (New_Process_Name="*:\Program Files (x86)\Proton Technologies\ProtonVPNTap\installer\*")
+| table _time, New_Process_Name, Process_Command_Line

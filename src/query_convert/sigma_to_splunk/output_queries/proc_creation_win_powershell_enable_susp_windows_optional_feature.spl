@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="Enable-WindowsOptionalFeature" OR Process_Command_Line="-Online" OR Process_Command_Line="-FeatureName")) | search ((Process_Command_Line="*TelnetServer*" OR Process_Command_Line="*Internet-Explorer-Optional-amd64*" OR Process_Command_Line="*TFTP*" OR Process_Command_Line="*SMB1Protocol*" OR Process_Command_Line="*Client-ProjFS*" OR Process_Command_Line="*Microsoft-Windows-Subsystem-Linux*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*[System.Net.WebRequest]::create*" OR Process_Command_Line="*curl *" OR Process_Command_Line="*Invoke-RestMethod*" OR Process_Command_Line="*Invoke-WebRequest*" OR Process_Command_Line="*iwr *" OR Process_Command_Line="*Net.WebClient*" OR Process_Command_Line="*Resume-BitsTransfer*" OR Process_Command_Line="*Start-BitsTransfer*" OR Process_Command_Line="*wget *" OR Process_Command_Line="*WinHttp.WinHttpRequest*"))
+| table _time, New_Process_Name, Process_Command_Line

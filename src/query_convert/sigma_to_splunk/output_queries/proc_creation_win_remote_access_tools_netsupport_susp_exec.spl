@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\client32.exe" OR Product="*NetSupport Remote Control*" OR Original_File_Name="*client32.exe*" OR Hashes="*IMPHASH=a9d50692e95b79723f3e76fcf70d023e*") | search ((New_Process_Name="C:\Program Files\*" OR New_Process_Name="C:\Program Files (x86)\*"))
+| table _time, New_Process_Name, Process_Command_Line

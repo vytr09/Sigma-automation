@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*TVqQAAMAAAAEAAAA*" OR Process_Command_Line="*TVpQAAIAAAAEAA8A*" OR Process_Command_Line="*TVqAAAEAAAAEABAA*" OR Process_Command_Line="*TVoAAAAAAAAAAAAA*" OR Process_Command_Line="*TVpTAQEAAAAEAAAA*"))
+| table _time, New_Process_Name, Process_Command_Line

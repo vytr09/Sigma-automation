@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="MpCmdRun.exe" OR New_Process_Name="*\MpCmdRun.exe" OR Process_Command_Line="*MpCmdRun.exe*" OR Description="Microsoft Malware Protection Command Line Utility") | search ((Process_Command_Line="DownloadFile" OR Process_Command_Line="url"))
+| table _time, New_Process_Name, Process_Command_Line

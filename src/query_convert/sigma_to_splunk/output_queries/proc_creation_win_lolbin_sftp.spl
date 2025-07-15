@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\sftp.exe" AND (Process_Command_Line="* -D ..*" OR Process_Command_Line="* -D C:\*"))
+| table _time, New_Process_Name, Process_Command_Line

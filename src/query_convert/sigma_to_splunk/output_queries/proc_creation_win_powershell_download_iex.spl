@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*.DownloadString(*" OR Process_Command_Line="*.DownloadFile(*" OR Process_Command_Line="*Invoke-WebRequest *" OR Process_Command_Line="*iwr *")) | search ((Process_Command_Line="*;iex $*" OR Process_Command_Line="*| IEX*" OR Process_Command_Line="*|IEX *" OR Process_Command_Line="*I`E`X*" OR Process_Command_Line="*I`EX*" OR Process_Command_Line="*IE`X*" OR Process_Command_Line="*iex *" OR Process_Command_Line="*IEX (*" OR Process_Command_Line="*IEX(*" OR Process_Command_Line="*Invoke-Expression*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\brave.exe" OR Parent_Process_Name="*\CCleanerBrowser.exe" OR Parent_Process_Name="*\chrome.exe" OR Parent_Process_Name="*\chromium.exe" OR Parent_Process_Name="*\firefox.exe" OR Parent_Process_Name="*\iexplore.exe" OR Parent_Process_Name="*\microsoftedge.exe" OR Parent_Process_Name="*\msedge.exe" OR Parent_Process_Name="*\opera.exe" OR Parent_Process_Name="*\vivaldi.exe" OR Parent_Process_Name="*\whale.exe" OR Parent_Process_Name="*\outlook.exe")) | search (New_Process_Name="*\mstsc.exe" OR Original_File_Name="mstsc.exe")
+| table _time, New_Process_Name, Process_Command_Line

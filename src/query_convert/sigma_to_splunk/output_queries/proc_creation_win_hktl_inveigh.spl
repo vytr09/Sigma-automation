@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\Inveigh.exe" OR Original_File_Name="['\\Inveigh.exe', '\\Inveigh.dll']" OR Description="Inveigh" OR Process_Command_Line="*[' -SpooferIP', ' -ReplyToIPs ', ' -ReplyToDomains ', ' -ReplyToMACs ', ' -SnifferIP']*")
+| table _time, New_Process_Name, Process_Command_Line

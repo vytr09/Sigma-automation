@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\*") OR (New_Process_Name="None") OR ((New_Process_Name="-" OR New_Process_Name="")) OR (New_Process_Name="['System', 'Registry', 'MemCompression', 'vmmem']" OR Process_Command_Line="['Registry', 'MemCompression', 'vmmem']")
+| table _time, New_Process_Name, Process_Command_Line

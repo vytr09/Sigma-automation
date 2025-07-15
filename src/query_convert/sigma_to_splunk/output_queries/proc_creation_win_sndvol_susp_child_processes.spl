@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\SndVol.exe") OR (New_Process_Name="*\rundll32.exe" AND Process_Command_Line="* shell32.dll,Control_RunDLL *")
+| table _time, New_Process_Name, Process_Command_Line

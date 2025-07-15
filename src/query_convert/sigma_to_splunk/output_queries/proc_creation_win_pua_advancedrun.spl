@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="AdvancedRun.exe" OR Process_Command_Line="[' /EXEFilename ', ' /Run']" OR Process_Command_Line="[' /WindowState 0', ' /RunAs ', ' /CommandLine ']")
+| table _time, New_Process_Name, Process_Command_Line

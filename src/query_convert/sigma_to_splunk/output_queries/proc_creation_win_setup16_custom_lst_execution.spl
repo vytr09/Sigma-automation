@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="C:\Windows\SysWOW64\setup16.exe" AND Parent_Process_Command_Line="* -m *") OR (New_Process_Name="C:\~MSSETUP.T\*")
+| table _time, New_Process_Name, Process_Command_Line

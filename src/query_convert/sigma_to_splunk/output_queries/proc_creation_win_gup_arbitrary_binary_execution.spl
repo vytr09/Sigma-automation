@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\gup.exe" AND New_Process_Name="*\explorer.exe") OR (New_Process_Name="*\explorer.exe" AND Process_Command_Line="*\Notepad++\notepad++.exe*") OR (Parent_Process_Name="*\Notepad++\updater\*") OR (Process_Command_Line="None")
+| table _time, New_Process_Name, Process_Command_Line

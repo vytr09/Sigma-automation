@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\Microsoft\Office\" OR Process_Command_Line="\Excel\Security" OR Process_Command_Line="PythonFunctionWarnings") AND Process_Command_Line="* 0*")
+| table _time, New_Process_Name, Process_Command_Line

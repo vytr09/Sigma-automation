@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\sqlcmd.exe") | search ((Process_Command_Line="SELECT" OR Process_Command_Line="TOP" OR Process_Command_Line="[VeeamBackup].[dbo].[Credentials]"))
+| table _time, New_Process_Name, Process_Command_Line

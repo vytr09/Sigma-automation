@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\mode.com" OR Original_File_Name="MODE.COM") | search ((Process_Command_Line=" con " OR Process_Command_Line=" cp " OR Process_Command_Line=" select=") AND (Process_Command_Line="*=1251" OR Process_Command_Line="*=866"))
+| table _time, New_Process_Name, Process_Command_Line

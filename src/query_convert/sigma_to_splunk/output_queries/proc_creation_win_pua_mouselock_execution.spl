@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Product="*Mouse Lock*" OR Company="*Misc314*" OR Process_Command_Line="*Mouse Lock_*")
+| table _time, New_Process_Name, Process_Command_Line

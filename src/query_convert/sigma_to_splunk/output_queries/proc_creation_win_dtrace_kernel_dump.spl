@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\dtrace.exe" AND Process_Command_Line="*lkd(0)*") OR ((Process_Command_Line="syscall:::return" OR Process_Command_Line="lkd("))
+| table _time, New_Process_Name, Process_Command_Line

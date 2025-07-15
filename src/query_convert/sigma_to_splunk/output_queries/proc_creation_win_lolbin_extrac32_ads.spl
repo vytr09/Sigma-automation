@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="extrac32.exe" OR Process_Command_Line=".cab") AND Process_Command_Line=":[^\\]")
+| table _time, New_Process_Name, Process_Command_Line

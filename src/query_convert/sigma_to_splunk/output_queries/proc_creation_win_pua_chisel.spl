@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\chisel.exe") | search ((Process_Command_Line="*exe client *" OR Process_Command_Line="*exe server *")) | search ((Process_Command_Line="*-socks5*" OR Process_Command_Line="*-reverse*" OR Process_Command_Line="* r:*" OR Process_Command_Line="*:127.0.0.1:*" OR Process_Command_Line="*-tls-skip-verify *" OR Process_Command_Line="*:socks*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\wuauclt.exe" OR Original_File_Name="wuauclt.exe") | search ((Process_Command_Line="UpdateDeploymentProvider" OR Process_Command_Line="RunHandlerComServer")) | search (Process_Command_Line="* /UpdateDeploymentProvider UpdateDeploymentProvider.dll *") | search (Process_Command_Line="* wuaueng.dll *") | search ((Process_Command_Line="*:\Windows\UUS\Packages\Preview\amd64\updatedeploy.dll /ClassId*" OR Process_Command_Line="*:\Windows\UUS\amd64\UpdateDeploy.dll /ClassId*")) | search ((Process_Command_Line=":\Windows\WinSxS\" OR Process_Command_Line="\UpdateDeploy.dll /ClassId "))
+| table _time, New_Process_Name, Process_Command_Line

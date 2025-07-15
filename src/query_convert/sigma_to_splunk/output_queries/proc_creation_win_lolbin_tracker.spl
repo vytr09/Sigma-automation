@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\tracker.exe" OR Description="Tracker") | search ((Process_Command_Line="* /d *" OR Process_Command_Line="* /c *")) | search (Process_Command_Line="* /ERRORREPORT:PROMPT *") | search ((Parent_Process_Name="*\Msbuild\Current\Bin\MSBuild.exe" OR Parent_Process_Name="*\Msbuild\Current\Bin\amd64\MSBuild.exe"))
+| table _time, New_Process_Name, Process_Command_Line

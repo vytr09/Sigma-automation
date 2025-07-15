@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\Adobe Creative Cloud Experience\libs\node.exe") | search (Process_Command_Line="*Adobe Creative Cloud Experience\js*")
+| table _time, New_Process_Name, Process_Command_Line

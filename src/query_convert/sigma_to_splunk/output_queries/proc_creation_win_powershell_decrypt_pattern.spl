@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe") AND (Original_File_Name="PowerShell.EXE" OR Original_File_Name="pwsh.dll")) | search ((Process_Command_Line="*Get-ChildItem *" OR Process_Command_Line="*dir *" OR Process_Command_Line="*gci *" OR Process_Command_Line="*ls *")) | search ((Process_Command_Line="*Get-Content *" OR Process_Command_Line="*gc *" OR Process_Command_Line="*cat *" OR Process_Command_Line="*type *" OR Process_Command_Line="*ReadAllBytes*")) | search (Process_Command_Line="[' ^| ', '\\*.lnk', '-Recurse', '-Skip ']" OR Process_Command_Line="[' -ExpandProperty ', '\\*.lnk', 'WriteAllBytes', ' .length ']")
+| table _time, New_Process_Name, Process_Command_Line

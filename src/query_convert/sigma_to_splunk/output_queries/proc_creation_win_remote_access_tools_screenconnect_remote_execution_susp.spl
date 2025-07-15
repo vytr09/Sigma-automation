@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Command_Line=":\Windows\TEMP\ScreenConnect\" OR Parent_Process_Command_Line="run.cmd") AND (New_Process_Name="*\bitsadmin.exe" OR New_Process_Name="*\cmd.exe" OR New_Process_Name="*\curl.exe" OR New_Process_Name="*\dllhost.exe" OR New_Process_Name="*\net.exe" OR New_Process_Name="*\nltest.exe" OR New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe" OR New_Process_Name="*\rundll32.exe" OR New_Process_Name="*\wevtutil.exe"))
+| table _time, New_Process_Name, Process_Command_Line

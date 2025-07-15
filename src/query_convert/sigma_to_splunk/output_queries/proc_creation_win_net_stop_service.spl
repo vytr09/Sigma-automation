@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="['net.exe', 'net1.exe']" OR New_Process_Name="*['\\net.exe', '\\net1.exe']") | search (Process_Command_Line="* stop *")
+| table _time, New_Process_Name, Process_Command_Line

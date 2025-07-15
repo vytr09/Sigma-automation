@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Description="WMI Commandline Utility" OR Original_File_Name="wmic.exe" OR New_Process_Name="*\WMIC.exe") | search ((Process_Command_Line="*LOGICALDISK get Name,Size,FreeSpace*" OR Process_Command_Line="*os get Caption,OSArchitecture,Version*"))
+| table _time, New_Process_Name, Process_Command_Line

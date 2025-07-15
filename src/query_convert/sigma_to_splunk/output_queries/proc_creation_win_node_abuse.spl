@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\node.exe" AND (Process_Command_Line="* -e *" OR Process_Command_Line="* --eval *")) OR ((Process_Command_Line=".exec(" OR Process_Command_Line="net.socket" OR Process_Command_Line=".connect" OR Process_Command_Line="child_process"))
+| table _time, New_Process_Name, Process_Command_Line

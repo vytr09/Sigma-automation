@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="set" OR Process_Command_Line="&&" OR Process_Command_Line="mshta" OR Process_Command_Line="vbscript:createobject" OR Process_Command_Line=".run" OR Process_Command_Line="(window.close)"))
+| table _time, New_Process_Name, Process_Command_Line

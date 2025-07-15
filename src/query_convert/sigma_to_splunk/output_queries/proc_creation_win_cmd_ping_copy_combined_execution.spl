@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\cmd.exe" OR Original_File_Name="Cmd.Exe") | search ((Process_Command_Line="ping" OR Process_Command_Line="copy ")) | search (Process_Command_Line=" -n ") | search (Process_Command_Line=" -y ")
+| table _time, New_Process_Name, Process_Command_Line

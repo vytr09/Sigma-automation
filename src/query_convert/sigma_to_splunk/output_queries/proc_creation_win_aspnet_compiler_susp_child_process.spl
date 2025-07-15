@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\aspnet_compiler.exe") | search (New_Process_Name="*['\\calc.exe', '\\notepad.exe']" OR New_Process_Name="*['\\Users\\Public\\', '\\AppData\\Local\\Temp\\', '\\AppData\\Local\\Roaming\\', ':\\Temp\\', ':\\Windows\\Temp\\', ':\\Windows\\System32\\Tasks\\', ':\\Windows\\Tasks\\']*")
+| table _time, New_Process_Name, Process_Command_Line

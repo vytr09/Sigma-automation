@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Hashes="*IMPHASH=6834B1B94E49701D77CCB3C0895E1AFD*" OR Hashes="*IMPHASH=1BB6F93B129F398C7C4A76BB97450BBA*" OR Hashes="*IMPHASH=FAA2AC19875FADE461C8D89DCF2710A3*" OR Hashes="*IMPHASH=F1039CED4B91572AB7847D26032E6BBF*")) OR (New_Process_Name="*\dctask64.exe")
+| table _time, New_Process_Name, Process_Command_Line

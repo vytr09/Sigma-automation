@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\curl.exe', '\\wget.exe']" OR Process_Command_Line="*['Invoke-WebRequest', 'iwr ', 'curl ', 'wget ', 'Start-BitsTransfer', '.DownloadFile(', '.DownloadString(']*") | search ((Process_Command_Line="*https://attachment.outlook.live.net/owa/*" OR Process_Command_Line="*https://onenoteonlinesync.onenote.com/onenoteonlinesync/*"))
+| table _time, New_Process_Name, Process_Command_Line

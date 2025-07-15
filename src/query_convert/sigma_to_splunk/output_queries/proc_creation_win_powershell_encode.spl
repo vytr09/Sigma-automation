@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe") AND (Process_Command_Line="* -e *" OR Process_Command_Line="* -en *" OR Process_Command_Line="* -enc *" OR Process_Command_Line="* -enco*" OR Process_Command_Line="* -ec *")) OR (Process_Command_Line="* -Encoding *") OR ((Parent_Process_Name="*C:\Packages\Plugins\Microsoft.GuestConfiguration.ConfigurationforWindows\*" OR Parent_Process_Name="*\gc_worker.exe*"))
+| table _time, New_Process_Name, Process_Command_Line

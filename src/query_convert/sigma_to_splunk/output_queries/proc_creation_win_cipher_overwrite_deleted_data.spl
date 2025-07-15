@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="CIPHER.EXE" OR New_Process_Name="*\cipher.exe") | search (Process_Command_Line="* /w:*")
+| table _time, New_Process_Name, Process_Command_Line

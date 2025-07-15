@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\powershell.exe" OR Parent_Process_Name="*\pwsh.exe") AND New_Process_Name="*\powershell.exe" AND Process_Command_Line="* -nologo -windowstyle minimized -file *") | search ((Process_Command_Line="*\AppData\Local\Temp\*" OR Process_Command_Line="*\Windows\Temp\*"))
+| table _time, New_Process_Name, Process_Command_Line

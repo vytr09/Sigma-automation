@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\link.exe" AND Process_Command_Line="*LINK /*") OR ((Parent_Process_Name="C:\Program Files\Microsoft Visual Studio\*" OR Parent_Process_Name="C:\Program Files (x86)\Microsoft Visual Studio\*") AND (Parent_Process_Name="*\VC\bin\*" OR Parent_Process_Name="*\VC\Tools\*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line=" -n ") | search (Process_Command_Line="*Nul*") | search ((Process_Command_Line=" -f " OR Process_Command_Line=" -q ")) | search ((Process_Command_Line="ping" OR Process_Command_Line="del "))
+| table _time, New_Process_Name, Process_Command_Line

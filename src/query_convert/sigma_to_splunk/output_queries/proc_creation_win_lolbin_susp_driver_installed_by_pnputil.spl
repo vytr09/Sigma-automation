@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*-i*" OR Process_Command_Line="*/install*" OR Process_Command_Line="*-a*" OR Process_Command_Line="*/add-driver*" OR Process_Command_Line="*.inf*") AND New_Process_Name="*\pnputil.exe")
+| table _time, New_Process_Name, Process_Command_Line

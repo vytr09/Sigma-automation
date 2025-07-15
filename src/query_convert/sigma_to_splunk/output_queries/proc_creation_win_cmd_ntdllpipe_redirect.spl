@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*type %windir%\system32\ntdll.dll*" OR Process_Command_Line="*type %systemroot%\system32\ntdll.dll*" OR Process_Command_Line="*type c:\windows\system32\ntdll.dll*" OR Process_Command_Line="*\\ntdll.dll > \\\\.\\pipe\\*"))
+| table _time, New_Process_Name, Process_Command_Line

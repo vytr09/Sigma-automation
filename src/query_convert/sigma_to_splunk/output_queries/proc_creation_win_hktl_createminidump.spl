@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\CreateMiniDump.exe" OR Hashes="*IMPHASH=4a07f944a83e8a7c2525efa35dd30e2f*")
+| table _time, New_Process_Name, Process_Command_Line

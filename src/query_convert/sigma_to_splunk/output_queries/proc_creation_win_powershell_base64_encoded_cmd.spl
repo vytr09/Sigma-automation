@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\powershell.exe', '\\pwsh.exe']" OR Original_File_Name="['PowerShell.EXE', 'pwsh.dll']") | search (Process_Command_Line="* -e*") | search ((Process_Command_Line="* JAB*" OR Process_Command_Line="* SUVYI*" OR Process_Command_Line="* SQBFAFgA*" OR Process_Command_Line="* aQBlAHgA*" OR Process_Command_Line="* aWV4I*" OR Process_Command_Line="* IAA*" OR Process_Command_Line="* IAB*" OR Process_Command_Line="* UwB*" OR Process_Command_Line="* cwB*")) | search ((Process_Command_Line="*.exe -ENCOD *" OR Process_Command_Line="* BA^J e-*")) | search (Process_Command_Line="* -ExecutionPolicy remotesigned *")
+| table _time, New_Process_Name, Process_Command_Line

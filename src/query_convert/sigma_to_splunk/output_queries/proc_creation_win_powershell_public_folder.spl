@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe") AND (Process_Command_Line="*-f C:\Users\Public*" OR Process_Command_Line="*-f "C:\Users\Public*" OR Process_Command_Line="*-f %Public%*" OR Process_Command_Line="*-fi C:\Users\Public*" OR Process_Command_Line="*-fi "C:\Users\Public*" OR Process_Command_Line="*-fi %Public%*" OR Process_Command_Line="*-fil C:\Users\Public*" OR Process_Command_Line="*-fil "C:\Users\Public*" OR Process_Command_Line="*-fil %Public%*" OR Process_Command_Line="*-file C:\Users\Public*" OR Process_Command_Line="*-file "C:\Users\Public*" OR Process_Command_Line="*-file %Public%*"))
+| table _time, New_Process_Name, Process_Command_Line

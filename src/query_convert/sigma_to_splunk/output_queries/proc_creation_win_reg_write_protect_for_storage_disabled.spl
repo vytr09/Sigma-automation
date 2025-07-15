@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\System\CurrentControlSet\Control" OR Process_Command_Line="Write Protection" OR Process_Command_Line="0" OR Process_Command_Line="storage"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\control.exe" AND Parent_Process_Name="*\WorkFolders.exe") | search (New_Process_Name="C:\Windows\System32\control.exe")
+| table _time, New_Process_Name, Process_Command_Line

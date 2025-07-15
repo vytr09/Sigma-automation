@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="Cmd.Exe" OR New_Process_Name="*\cmd.exe") | search ((Process_Command_Line="cmd *" OR Process_Command_Line="cmd.exe*" OR Process_Command_Line="c:\windows\system32\cmd.exe*") AND (Process_Command_Line="*psinject*" OR Process_Command_Line="*spawnas*" OR Process_Command_Line="*make_token*" OR Process_Command_Line="*remote-exec*" OR Process_Command_Line="*rev2self*" OR Process_Command_Line="*dcsync*" OR Process_Command_Line="*logonpasswords*" OR Process_Command_Line="*execute-assembly*" OR Process_Command_Line="*getsystem*"))
+| table _time, New_Process_Name, Process_Command_Line

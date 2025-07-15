@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\msra.exe" AND Parent_Process_Command_Line="*msra.exe" AND (New_Process_Name="*\arp.exe" OR New_Process_Name="*\cmd.exe" OR New_Process_Name="*\net.exe" OR New_Process_Name="*\netstat.exe" OR New_Process_Name="*\nslookup.exe" OR New_Process_Name="*\route.exe" OR New_Process_Name="*\schtasks.exe" OR New_Process_Name="*\whoami.exe"))
+| table _time, New_Process_Name, Process_Command_Line

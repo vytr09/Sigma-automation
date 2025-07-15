@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*transport=dt_socket,address=*") | search ((Process_Command_Line="*jre1.*" OR Process_Command_Line="*jdk1.*")) | search ((Process_Command_Line="*address=127.0.0.1*" OR Process_Command_Line="*address=localhost*"))
+| table _time, New_Process_Name, Process_Command_Line

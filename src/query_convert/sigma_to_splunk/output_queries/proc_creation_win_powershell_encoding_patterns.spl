@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\powershell.exe', '\\pwsh.exe']" OR Original_File_Name="['PowerShell.EXE', 'pwsh.dll']") | search ((Process_Command_Line="*ToInt*" OR Process_Command_Line="*ToDecimal*" OR Process_Command_Line="*ToByte*" OR Process_Command_Line="*ToUint*" OR Process_Command_Line="*ToSingle*" OR Process_Command_Line="*ToSByte*")) | search ((Process_Command_Line="*ToChar*" OR Process_Command_Line="*ToString*" OR Process_Command_Line="*String*")) | search ((Process_Command_Line="char" OR Process_Command_Line="join")) | search ((Process_Command_Line="split" OR Process_Command_Line="join"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*/factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b}*" OR Process_Command_Line="['explorer.exe', ' /root,']")
+| table _time, New_Process_Name, Process_Command_Line

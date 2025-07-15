@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Integrity_Level="Medium" OR Process_Integrity_Level="S-1-16-8192") AND (Process_Command_Line="ControlSet" OR Process_Command_Line="services") AND (Process_Command_Line="*\ImagePath*" OR Process_Command_Line="*\FailureCommand*" OR Process_Command_Line="*\ServiceDll*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="['Excel.exe', 'MSACCESS.EXE', 'MSPUB.EXE', 'OneNote.exe', 'OneNoteM.exe', 'OUTLOOK.EXE', 'POWERPNT.EXE', 'WinWord.exe']" OR Description="['Microsoft Access', 'Microsoft Excel', 'Microsoft OneNote', 'Microsoft Outlook', 'Microsoft PowerPoint', 'Microsoft Publisher', 'Microsoft Word', 'Sent to OneNote Tool']") OR ((New_Process_Name="*\EXCEL.exe" OR New_Process_Name="*\excelcnv.exe" OR New_Process_Name="*\MSACCESS.exe" OR New_Process_Name="*\MSPUB.EXE" OR New_Process_Name="*\ONENOTE.EXE" OR New_Process_Name="*\ONENOTEM.EXE" OR New_Process_Name="*\OUTLOOK.EXE" OR New_Process_Name="*\POWERPNT.EXE" OR New_Process_Name="*\WINWORD.exe"))
+| table _time, New_Process_Name, Process_Command_Line

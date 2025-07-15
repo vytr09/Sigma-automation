@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\wab.exe" OR New_Process_Name="*\wabmig.exe")) | search ((New_Process_Name="C:\Windows\WinSxS\*" OR New_Process_Name="C:\Program Files\Windows Mail\*" OR New_Process_Name="C:\Program Files (x86)\Windows Mail\*"))
+| table _time, New_Process_Name, Process_Command_Line

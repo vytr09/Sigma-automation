@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="::FromBase64String" OR Process_Command_Line="*['OgA6AEYAcgBvAG0AQgBhAHMAZQA2ADQAUwB0AHIAaQBuAGcA', 'oAOgBGAHIAbwBtAEIAYQBzAGUANgA0AFMAdAByAGkAbgBnA', '6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZw']*")
+| table _time, New_Process_Name, Process_Command_Line

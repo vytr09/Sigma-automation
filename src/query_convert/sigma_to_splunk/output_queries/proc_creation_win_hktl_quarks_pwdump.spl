@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\QuarksPwDump.exe") OR ((Process_Command_Line=" -dhl" OR Process_Command_Line=" --dump-hash-local" OR Process_Command_Line=" -dhdc" OR Process_Command_Line=" --dump-hash-domain-cached" OR Process_Command_Line=" --dump-bitlocker" OR Process_Command_Line=" -dhd " OR Process_Command_Line=" --dump-hash-domain " OR Process_Command_Line="--ntds-file"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="* -u system *" OR Process_Command_Line="* --user system *" OR Process_Command_Line="* -u NT*" OR Process_Command_Line="* -u "NT*" OR Process_Command_Line="* -u 'NT*" OR Process_Command_Line="* --system *" OR Process_Command_Line="* -u administrator *")) | search ((Process_Command_Line="* -c cmd*" OR Process_Command_Line="* -c "cmd*" OR Process_Command_Line="* -c powershell*" OR Process_Command_Line="* -c "powershell*" OR Process_Command_Line="* --command cmd*" OR Process_Command_Line="* --command powershell*" OR Process_Command_Line="* -c whoami*" OR Process_Command_Line="* -c wscript*" OR Process_Command_Line="* -c cscript*"))
+| table _time, New_Process_Name, Process_Command_Line

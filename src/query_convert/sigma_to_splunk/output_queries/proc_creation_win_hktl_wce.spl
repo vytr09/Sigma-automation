@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Hashes="*IMPHASH=a53a02b997935fd8eedcb5f7abab9b9f*" OR Hashes="*IMPHASH=e96a73c7bf33a464c510ede582318bf2*")) OR (Process_Command_Line="*.exe -S" AND Parent_Process_Name="*\services.exe") OR (New_Process_Name="*\clussvc.exe")
+| table _time, New_Process_Name, Process_Command_Line

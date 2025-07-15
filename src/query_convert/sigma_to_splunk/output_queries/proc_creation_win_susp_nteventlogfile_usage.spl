@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*Win32_NTEventlogFile*") | search ((Process_Command_Line="*.BackupEventlog(*" OR Process_Command_Line="*.ChangeSecurityPermissions(*" OR Process_Command_Line="*.ChangeSecurityPermissionsEx(*" OR Process_Command_Line="*.ClearEventLog(*" OR Process_Command_Line="*.Delete(*" OR Process_Command_Line="*.DeleteEx(*" OR Process_Command_Line="*.Rename(*" OR Process_Command_Line="*.TakeOwnerShip(*" OR Process_Command_Line="*.TakeOwnerShipEx(*"))
+| table _time, New_Process_Name, Process_Command_Line

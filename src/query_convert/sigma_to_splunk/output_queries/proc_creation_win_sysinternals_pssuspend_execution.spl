@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="pssuspend.exe" OR New_Process_Name="*['\\pssuspend.exe', '\\pssuspend64.exe']")
+| table _time, New_Process_Name, Process_Command_Line

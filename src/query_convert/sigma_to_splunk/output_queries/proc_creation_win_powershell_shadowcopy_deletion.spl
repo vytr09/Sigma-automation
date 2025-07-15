@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*Get-WmiObject*" OR Process_Command_Line="*gwmi*" OR Process_Command_Line="*Get-CimInstance*" OR Process_Command_Line="*gcim*")) | search (Process_Command_Line="*Win32_ShadowCopy*") | search ((Process_Command_Line="*.Delete()*" OR Process_Command_Line="*Remove-WmiObject*" OR Process_Command_Line="*rwmi*" OR Process_Command_Line="*Remove-CimInstance*" OR Process_Command_Line="*rcim*"))
+| table _time, New_Process_Name, Process_Command_Line

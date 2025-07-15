@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\w3wp.exe" OR Parent_Process_Name="*\w3wp.exe") | search ((Process_Command_Line="*&ipconfig&echo*" OR Process_Command_Line="*&quser&echo*" OR Process_Command_Line="*&whoami&echo*" OR Process_Command_Line="*&c:&echo*" OR Process_Command_Line="*&cd&echo*" OR Process_Command_Line="*&dir&echo*" OR Process_Command_Line="*&echo [E]*" OR Process_Command_Line="*&echo [S]*"))
+| table _time, New_Process_Name, Process_Command_Line

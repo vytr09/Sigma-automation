@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\rar.exe', '\\winrar.exe']" OR Description="Command line RAR") OR (New_Process_Name="*\UnRAR.exe") OR ((New_Process_Name="*:\Program Files (x86)\WinRAR\*" OR New_Process_Name="*:\Program Files\WinRAR\*")) OR (New_Process_Name="*:\Windows\Temp\*")
+| table _time, New_Process_Name, Process_Command_Line

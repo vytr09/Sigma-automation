@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\addinutil.exe" OR Original_File_Name="AddInUtil.exe") OR ((New_Process_Name="*:\Windows\Microsoft.NET\Framework\*" OR New_Process_Name="*:\Windows\Microsoft.NET\Framework64\*" OR New_Process_Name="*:\Windows\Microsoft.NET\FrameworkArm\*" OR New_Process_Name="*:\Windows\Microsoft.NET\FrameworkArm64\*" OR New_Process_Name="*:\Windows\WinSxS\*"))
+| table _time, New_Process_Name, Process_Command_Line

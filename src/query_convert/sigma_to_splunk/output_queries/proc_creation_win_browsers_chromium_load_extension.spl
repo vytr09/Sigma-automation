@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\brave.exe" OR New_Process_Name="*\chrome.exe" OR New_Process_Name="*\msedge.exe" OR New_Process_Name="*\opera.exe" OR New_Process_Name="*\vivaldi.exe") AND Process_Command_Line="*--load-extension=*")
+| table _time, New_Process_Name, Process_Command_Line

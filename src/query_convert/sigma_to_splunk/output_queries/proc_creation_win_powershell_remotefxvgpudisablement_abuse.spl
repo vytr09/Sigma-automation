@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*Invoke-ATHRemoteFXvGPUDisablementCommand*" OR Process_Command_Line="*Invoke-ATHRemoteFXvGPUDisableme*"))
+| table _time, New_Process_Name, Process_Command_Line

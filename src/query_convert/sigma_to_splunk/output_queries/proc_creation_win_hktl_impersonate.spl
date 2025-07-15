@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*impersonate.exe*") | search ((Process_Command_Line="* list *" OR Process_Command_Line="* exec *" OR Process_Command_Line="* adduser *")) | search ((Hashes="*MD5=9520714AB576B0ED01D1513691377D01*" OR Hashes="*SHA256=E81CC96E2118DC4FBFE5BAD1604E0AC7681960143E2101E1A024D52264BB0A8A*" OR Hashes="*IMPHASH=0A358FFC1697B7A07D0E817AC740DF62*"))
+| table _time, New_Process_Name, Process_Command_Line

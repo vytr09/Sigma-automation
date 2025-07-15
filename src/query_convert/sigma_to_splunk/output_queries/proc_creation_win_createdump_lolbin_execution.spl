@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\createdump.exe" OR Original_File_Name="FX_VER_INTERNALNAME_STR") | search ((Process_Command_Line="* -u *" OR Process_Command_Line="* --full *" OR Process_Command_Line="* -f *" OR Process_Command_Line="* --name *" OR Process_Command_Line="*.dmp *"))
+| table _time, New_Process_Name, Process_Command_Line

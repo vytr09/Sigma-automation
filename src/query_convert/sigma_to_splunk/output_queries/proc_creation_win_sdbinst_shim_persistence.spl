@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\sdbinst.exe" OR Original_File_Name="sdbinst.exe") | search (Process_Command_Line="*.sdb*") | search (Parent_Process_Name="*\msiexec.exe" AND (Process_Command_Line="*:\Program Files (x86)\IIS Express\iisexpressshim.sdb*" OR Process_Command_Line="*:\Program Files\IIS Express\iisexpressshim.sdb*"))
+| table _time, New_Process_Name, Process_Command_Line

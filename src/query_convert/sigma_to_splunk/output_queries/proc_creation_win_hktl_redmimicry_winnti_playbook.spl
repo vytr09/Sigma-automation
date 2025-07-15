@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\rundll32.exe" OR New_Process_Name="*\cmd.exe") AND (Process_Command_Line="*gthread-3.6.dll*" OR Process_Command_Line="*\Windows\Temp\tmp.bat*" OR Process_Command_Line="*sigcmm-2.4.dll*"))
+| table _time, New_Process_Name, Process_Command_Line

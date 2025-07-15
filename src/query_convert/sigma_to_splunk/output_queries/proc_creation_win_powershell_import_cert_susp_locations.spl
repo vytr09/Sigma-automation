@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="Import-Certificate" OR Process_Command_Line=" -FilePath " OR Process_Command_Line="Cert:\LocalMachine\Root") AND (Process_Command_Line="*\AppData\Local\Temp\*" OR Process_Command_Line="*:\Windows\TEMP\*" OR Process_Command_Line="*\Desktop\*" OR Process_Command_Line="*\Downloads\*" OR Process_Command_Line="*\Perflogs\*" OR Process_Command_Line="*:\Users\Public\*"))
+| table _time, New_Process_Name, Process_Command_Line

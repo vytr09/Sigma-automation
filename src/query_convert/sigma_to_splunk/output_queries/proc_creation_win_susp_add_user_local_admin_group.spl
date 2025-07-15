@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="['localgroup ', ' /add']" OR Process_Command_Line="['Add-LocalGroupMember ', ' -Group ']") | search ((Process_Command_Line="* administrators *" OR Process_Command_Line="* administrateur*"))
+| table _time, New_Process_Name, Process_Command_Line

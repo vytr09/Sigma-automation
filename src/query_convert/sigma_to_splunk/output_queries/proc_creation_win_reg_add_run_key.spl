@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\reg.exe" AND (Process_Command_Line="reg" OR Process_Command_Line=" add ") AND (Process_Command_Line="*Software\Microsoft\Windows\CurrentVersion\Run*" OR Process_Command_Line="*\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Run*" OR Process_Command_Line="*\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run*"))
+| table _time, New_Process_Name, Process_Command_Line

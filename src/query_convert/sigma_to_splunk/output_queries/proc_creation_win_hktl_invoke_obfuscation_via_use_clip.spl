@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="(?i)echo.*clip.*&&.*(Clipboard|i`?n`?v`?o`?k`?e`?)")
+| table _time, New_Process_Name, Process_Command_Line

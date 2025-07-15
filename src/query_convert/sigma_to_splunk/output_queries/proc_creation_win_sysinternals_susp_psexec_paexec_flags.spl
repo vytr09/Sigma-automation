@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line=" -s cmd" OR Process_Command_Line=" -s -i cmd" OR Process_Command_Line=" -i -s cmd" OR Process_Command_Line=" -s pwsh" OR Process_Command_Line=" -s -i pwsh" OR Process_Command_Line=" -i -s pwsh" OR Process_Command_Line=" -s powershell" OR Process_Command_Line=" -s -i powershell" OR Process_Command_Line=" -i -s powershell")) OR ((Process_Command_Line="*paexec*" OR Process_Command_Line="*PsExec*" OR Process_Command_Line="*accepteula*"))
+| table _time, New_Process_Name, Process_Command_Line

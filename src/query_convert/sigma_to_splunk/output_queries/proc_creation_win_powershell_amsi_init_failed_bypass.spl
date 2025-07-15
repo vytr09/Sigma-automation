@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="['System.Management.Automation.AmsiUtils', 'amsiInitFailed']" OR Process_Command_Line="['[Ref].Assembly.GetType', 'SetValue($null,$true)', 'NonPublic,Static']")
+| table _time, New_Process_Name, Process_Command_Line

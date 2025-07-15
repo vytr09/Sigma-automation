@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe" OR New_Process_Name="*\cmd.exe") AND (Parent_Process_Command_Line="MsiExec.exe" OR Parent_Process_Command_Line="-Embedding ")) OR (New_Process_Name="*:\Windows\System32\cmd.exe" AND Process_Command_Line="*C:\Program Files\SplunkUniversalForwarder\bin\*") OR (Process_Command_Line="*\DismFoDInstall.cmd*" OR Parent_Process_Command_Line="['\\MsiExec.exe -Embedding ', 'Global\\MSI0000']")
+| table _time, New_Process_Name, Process_Command_Line

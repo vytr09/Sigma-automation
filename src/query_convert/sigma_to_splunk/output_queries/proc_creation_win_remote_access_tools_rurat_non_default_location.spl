@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\rutserv.exe', '\\rfusclient.exe']" OR Product="Remote Utilities") | search ((New_Process_Name="C:\Program Files\Remote Utilities*" OR New_Process_Name="C:\Program Files (x86)\Remote Utilities*"))
+| table _time, New_Process_Name, Process_Command_Line

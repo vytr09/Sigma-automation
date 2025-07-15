@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*['\\AnyDesk.exe', '\\AnyDeskMSI.exe']" OR Description="AnyDesk" OR Product="AnyDesk" OR Company="AnyDesk Software GmbH")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="reg" OR Process_Command_Line="add")) | search ((Process_Command_Line="d 4" OR Process_Command_Line="v Start") AND (Process_Command_Line="*\AppIDSvc*" OR Process_Command_Line="*\MsMpSvc*" OR Process_Command_Line="*\NisSrv*" OR Process_Command_Line="*\SecurityHealthService*" OR Process_Command_Line="*\Sense*" OR Process_Command_Line="*\UsoSvc*" OR Process_Command_Line="*\WdBoot*" OR Process_Command_Line="*\WdFilter*" OR Process_Command_Line="*\WdNisDrv*" OR Process_Command_Line="*\WdNisSvc*" OR Process_Command_Line="*\WinDefend*" OR Process_Command_Line="*\wscsvc*" OR Process_Command_Line="*\wuauserv*"))
+| table _time, New_Process_Name, Process_Command_Line

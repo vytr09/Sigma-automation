@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\htran.exe" OR New_Process_Name="*\lcx.exe")) OR ((Process_Command_Line="*.exe -tran *" OR Process_Command_Line="*.exe -slave *"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe") AND (Process_Command_Line="Pester" OR Process_Command_Line="Get-Help")) | search (New_Process_Name="*\cmd.exe" AND (Process_Command_Line="pester" OR Process_Command_Line=";")) | search ((Process_Command_Line="*help*" OR Process_Command_Line="*\?*"))
+| table _time, New_Process_Name, Process_Command_Line

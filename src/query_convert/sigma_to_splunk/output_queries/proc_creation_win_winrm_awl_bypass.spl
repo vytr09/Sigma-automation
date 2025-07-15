@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*format:pretty*" OR Process_Command_Line="*format:"pretty"*" OR Process_Command_Line="*format:"text"*" OR Process_Command_Line="*format:text*")) | search ((New_Process_Name="C:\Windows\System32\*" OR New_Process_Name="C:\Windows\SysWOW64\*")) | search (Process_Command_Line="*winrm*")
+| table _time, New_Process_Name, Process_Command_Line

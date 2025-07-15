@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\VMwareToolBoxCmd.exe" OR Original_File_Name="toolbox-cmd.exe") | search ((Process_Command_Line=" script " OR Process_Command_Line=" set "))
+| table _time, New_Process_Name, Process_Command_Line

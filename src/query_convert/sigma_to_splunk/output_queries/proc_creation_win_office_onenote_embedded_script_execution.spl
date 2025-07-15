@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\onenote.exe" AND (New_Process_Name="*\cmd.exe" OR New_Process_Name="*\cscript.exe" OR New_Process_Name="*\mshta.exe" OR New_Process_Name="*\powershell.exe" OR New_Process_Name="*\pwsh.exe" OR New_Process_Name="*\wscript.exe") AND (Process_Command_Line="*\exported\*" OR Process_Command_Line="*\onenoteofflinecache_files\*"))
+| table _time, New_Process_Name, Process_Command_Line

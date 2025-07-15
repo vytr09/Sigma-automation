@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Parent_Process_Name="*\cmd.exe" OR Parent_Process_Name="*\cscript.exe" OR Parent_Process_Name="*\mshta.exe" OR Parent_Process_Name="*\powershell.exe" OR Parent_Process_Name="*\pwsh.exe" OR Parent_Process_Name="*\regsvr32.exe" OR Parent_Process_Name="*\rundll32.exe" OR Parent_Process_Name="*\schtasks.exe" OR Parent_Process_Name="*\wmic.exe" OR Parent_Process_Name="*\wscript.exe" OR Parent_Process_Name="*\wsl.exe")) | search (New_Process_Name="*\msdt.exe" OR Original_File_Name="msdt.exe")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="&&set" OR Process_Command_Line="cmd" OR Process_Command_Line="/c" OR Process_Command_Line="-f") AND (Process_Command_Line="*{0}*" OR Process_Command_Line="*{1}*" OR Process_Command_Line="*{2}*" OR Process_Command_Line="*{3}*" OR Process_Command_Line="*{4}*" OR Process_Command_Line="*{5}*"))
+| table _time, New_Process_Name, Process_Command_Line

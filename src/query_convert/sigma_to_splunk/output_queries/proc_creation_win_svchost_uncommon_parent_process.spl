@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\svchost.exe") OR ((Parent_Process_Name="*\Mrt.exe" OR Parent_Process_Name="*\MsMpEng.exe" OR Parent_Process_Name="*\ngen.exe" OR Parent_Process_Name="*\rpcnet.exe" OR Parent_Process_Name="*\services.exe" OR Parent_Process_Name="*\TiWorker.exe")) OR (Parent_Process_Name="None") OR ((Parent_Process_Name="-" OR Parent_Process_Name=""))
+| table _time, New_Process_Name, Process_Command_Line

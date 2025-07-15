@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*IEX ((New-Object Net.WebClient).DownloadString*" OR Process_Command_Line="*IEX (New-Object Net.WebClient).DownloadString*" OR Process_Command_Line="*IEX((New-Object Net.WebClient).DownloadString*" OR Process_Command_Line="*IEX(New-Object Net.WebClient).DownloadString*" OR Process_Command_Line="* -command (New-Object System.Net.WebClient).DownloadFile(*" OR Process_Command_Line="* -c (New-Object System.Net.WebClient).DownloadFile(*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*grpconv.exe -o*" OR Process_Command_Line="*grpconv -o*"))
+| table _time, New_Process_Name, Process_Command_Line

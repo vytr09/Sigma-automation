@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\where.exe" OR Original_File_Name="where.exe") | search ((Process_Command_Line="*places.sqlite*" OR Process_Command_Line="*cookies.sqlite*" OR Process_Command_Line="*formhistory.sqlite*" OR Process_Command_Line="*logins.json*" OR Process_Command_Line="*key4.db*" OR Process_Command_Line="*key3.db*" OR Process_Command_Line="*sessionstore.jsonlz4*" OR Process_Command_Line="*History*" OR Process_Command_Line="*Bookmarks*" OR Process_Command_Line="*Cookies*" OR Process_Command_Line="*Login Data*"))
+| table _time, New_Process_Name, Process_Command_Line

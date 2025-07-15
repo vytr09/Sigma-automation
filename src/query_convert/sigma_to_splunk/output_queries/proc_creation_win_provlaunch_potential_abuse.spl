@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\provlaunch.exe") OR (New_Process_Name="*['\\calc.exe', '\\cmd.exe', '\\cscript.exe', '\\mshta.exe', '\\notepad.exe', '\\powershell.exe', '\\pwsh.exe', '\\regsvr32.exe', '\\rundll32.exe', '\\wscript.exe']" OR New_Process_Name="*[':\\PerfLogs\\', ':\\Temp\\', ':\\Users\\Public\\', '\\AppData\\Temp\\', '\\Windows\\System32\\Tasks\\', '\\Windows\\Tasks\\', '\\Windows\\Temp\\']*")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*-m 1M*" OR Process_Command_Line="*-m 2M*" OR Process_Command_Line="*-m 3M*") AND (Process_Command_Line="restrict=off" OR Process_Command_Line="-netdev " OR Process_Command_Line="connect=" OR Process_Command_Line="-nographic")) OR ((Process_Command_Line="* -cdrom *" OR Process_Command_Line="* type=virt *" OR Process_Command_Line="* -blockdev *"))
+| table _time, New_Process_Name, Process_Command_Line

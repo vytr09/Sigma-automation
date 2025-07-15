@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\nc.exe" OR New_Process_Name="*\ncat.exe" OR New_Process_Name="*\netcat.exe")) OR ((Process_Command_Line="* -lvp *" OR Process_Command_Line="* -lvnp*" OR Process_Command_Line="* -l -v -p *" OR Process_Command_Line="* -lv -p *" OR Process_Command_Line="* -l --proxy-type http *" OR Process_Command_Line="* -vnl --exec *" OR Process_Command_Line="* -vnl -e *" OR Process_Command_Line="* --lua-exec *" OR Process_Command_Line="* --sh-exec *"))
+| table _time, New_Process_Name, Process_Command_Line

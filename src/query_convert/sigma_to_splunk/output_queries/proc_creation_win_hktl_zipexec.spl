@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="/generic:Microsoft_Windows_Shell_ZipFolder:filename=" OR Process_Command_Line=".zip" OR Process_Command_Line="/pass:" OR Process_Command_Line="/user:")) | search ((Process_Command_Line="/delete" OR Process_Command_Line="Microsoft_Windows_Shell_ZipFolder:filename=" OR Process_Command_Line=".zip"))
+| table _time, New_Process_Name, Process_Command_Line

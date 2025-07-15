@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line=" -name IEHarden " OR Process_Command_Line=" -value 0 ")) OR ((Process_Command_Line=" -name DEPOff " OR Process_Command_Line=" -value 1 ")) OR ((Process_Command_Line=" -name DisableFirstRunCustomize " OR Process_Command_Line=" -value 2 "))
+| table _time, New_Process_Name, Process_Command_Line

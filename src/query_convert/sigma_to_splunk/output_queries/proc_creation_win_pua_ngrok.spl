@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="* tcp 139*" OR Process_Command_Line="* tcp 445*" OR Process_Command_Line="* tcp 3389*" OR Process_Command_Line="* tcp 5985*" OR Process_Command_Line="* tcp 5986*")) OR ((Process_Command_Line=" start " OR Process_Command_Line="--all" OR Process_Command_Line="--config" OR Process_Command_Line=".yml")) OR (New_Process_Name="*ngrok.exe" AND (Process_Command_Line="* tcp *" OR Process_Command_Line="* http *" OR Process_Command_Line="* authtoken *")) OR ((Process_Command_Line="*.exe authtoken *" OR Process_Command_Line="*.exe start --all*"))
+| table _time, New_Process_Name, Process_Command_Line

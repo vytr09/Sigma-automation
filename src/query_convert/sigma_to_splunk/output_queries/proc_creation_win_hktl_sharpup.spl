@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\SharpUp.exe" OR Description="SharpUp" OR Process_Command_Line="*['HijackablePaths', 'UnquotedServicePath', 'ProcessDLLHijack', 'ModifiableServiceBinaries', 'ModifiableScheduledTask', 'DomainGPPPassword', 'CachedGPPPassword']*")
+| table _time, New_Process_Name, Process_Command_Line

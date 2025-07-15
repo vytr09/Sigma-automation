@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*['lsass.dmp', 'lsass.zip', 'lsass.rar', 'Andrew.dmp', 'Coredump.dmp', 'NotLSASS.zip', 'lsass_2', 'lsassdump', 'lsassdmp']*" OR Process_Command_Line="['lsass', '.dmp']" OR Process_Command_Line="['SQLDmpr', '.mdmp']" OR Process_Command_Line="['nanodump', '.dmp']")
+| table _time, New_Process_Name, Process_Command_Line

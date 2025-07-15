@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\SysmonEOP.exe") OR ((Hashes="*IMPHASH=22F4089EB8ABA31E1BB162C6D9BF72E5*" OR Hashes="*IMPHASH=5123FA4C4384D431CD0D893EEB49BBEC*"))
+| table _time, New_Process_Name, Process_Command_Line

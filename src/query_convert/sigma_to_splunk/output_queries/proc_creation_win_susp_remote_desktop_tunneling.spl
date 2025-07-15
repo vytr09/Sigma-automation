@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Process_Command_Line="*:3389*") | search ((Process_Command_Line="* -L *" OR Process_Command_Line="* -P *" OR Process_Command_Line="* -R *" OR Process_Command_Line="* -pw *" OR Process_Command_Line="* -ssh *"))
+| table _time, New_Process_Name, Process_Command_Line

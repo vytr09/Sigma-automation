@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\explorer.exe" AND New_Process_Name="*\notepad.exe" AND (Process_Command_Line="*password*.txt" OR Process_Command_Line="*password*.csv" OR Process_Command_Line="*password*.doc" OR Process_Command_Line="*password*.xls"))
+| table _time, New_Process_Name, Process_Command_Line

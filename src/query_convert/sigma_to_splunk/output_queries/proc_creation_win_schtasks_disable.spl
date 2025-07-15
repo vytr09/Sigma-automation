@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\schtasks.exe" AND (Process_Command_Line="/Change" OR Process_Command_Line="/TN" OR Process_Command_Line="/disable") AND (Process_Command_Line="*\Windows\BitLocker*" OR Process_Command_Line="*\Windows\ExploitGuard*" OR Process_Command_Line="*\Windows\ExploitGuard\ExploitGuard MDM policy Refresh*" OR Process_Command_Line="*\Windows\SystemRestore\SR*" OR Process_Command_Line="*\Windows\UpdateOrchestrator\*" OR Process_Command_Line="*\Windows\Windows Defender\*" OR Process_Command_Line="*\Windows\WindowsBackup\*" OR Process_Command_Line="*\Windows\WindowsUpdate\*"))
+| table _time, New_Process_Name, Process_Command_Line

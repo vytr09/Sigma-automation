@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Product="SQLite" OR New_Process_Name="*['\\sqlite.exe', '\\sqlite3.exe']") | search ((Process_Command_Line="*\User Data\*" OR Process_Command_Line="*\Opera Software\*" OR Process_Command_Line="*\ChromiumViewer\*")) | search ((Process_Command_Line="*Login Data*" OR Process_Command_Line="*Cookies*" OR Process_Command_Line="*Web Data*" OR Process_Command_Line="*History*" OR Process_Command_Line="*Bookmarks*"))
+| table _time, New_Process_Name, Process_Command_Line

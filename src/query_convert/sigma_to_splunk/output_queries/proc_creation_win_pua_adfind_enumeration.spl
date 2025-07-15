@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*lockoutduration*" OR Process_Command_Line="*lockoutthreshold*" OR Process_Command_Line="*lockoutobservationwindow*" OR Process_Command_Line="*maxpwdage*" OR Process_Command_Line="*minpwdage*" OR Process_Command_Line="*minpwdlength*" OR Process_Command_Line="*pwdhistorylength*" OR Process_Command_Line="*pwdproperties*")) OR (Process_Command_Line="*-sc admincountdmp*") OR (Process_Command_Line="*-sc exchaddresses*")
+| table _time, New_Process_Name, Process_Command_Line

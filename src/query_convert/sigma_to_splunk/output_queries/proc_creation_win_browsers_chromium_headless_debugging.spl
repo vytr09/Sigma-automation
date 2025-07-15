@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="--remote-debugging-" OR Process_Command_Line="--user-data-dir" OR Process_Command_Line="--headless"))
+| table _time, New_Process_Name, Process_Command_Line

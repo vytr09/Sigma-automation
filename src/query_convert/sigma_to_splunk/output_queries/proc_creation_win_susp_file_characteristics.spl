@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Description="\?" AND FileVersion="\?") | search (Description="\?" AND Product="\?") | search (Description="\?" AND Company="\?") | search (New_Process_Name="*\Downloads\*")
+| table _time, New_Process_Name, Process_Command_Line

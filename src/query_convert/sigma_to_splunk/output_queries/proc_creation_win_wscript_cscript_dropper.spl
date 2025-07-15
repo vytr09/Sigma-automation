@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\wscript.exe" OR New_Process_Name="*\cscript.exe")) | search ((Process_Command_Line="*:\Temp\*" OR Process_Command_Line="*:\Tmp\*" OR Process_Command_Line="*:\Users\Public\*" OR Process_Command_Line="*:\Windows\Temp\*" OR Process_Command_Line="*\AppData\Local\Temp\*")) | search ((Process_Command_Line="*.js*" OR Process_Command_Line="*.jse*" OR Process_Command_Line="*.vba*" OR Process_Command_Line="*.vbe*" OR Process_Command_Line="*.vbs*" OR Process_Command_Line="*.wsf*"))
+| table _time, New_Process_Name, Process_Command_Line

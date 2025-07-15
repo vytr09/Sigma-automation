@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="C:\WINDOWS\system32\wbem\scrcons.exe" AND Parent_Process_Name="C:\Windows\System32\svchost.exe")
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*\PDQDeployRunner-*") | search (New_Process_Name="*['\\bash.exe', '\\certutil.exe', '\\cmd.exe', '\\csc.exe', '\\cscript.exe', '\\dllhost.exe', '\\mshta.exe', '\\msiexec.exe', '\\regsvr32.exe', '\\rundll32.exe', '\\scriptrunner.exe', '\\wmic.exe', '\\wscript.exe', '\\wsl.exe']" OR New_Process_Name="*[':\\ProgramData\\', ':\\Users\\Public\\', ':\\Windows\\TEMP\\', '\\AppData\\Local\\Temp']*" OR Process_Command_Line="*[' -decode ', ' -enc ', ' -encodedcommand ', ' -w hidden', 'DownloadString', 'FromBase64String', 'http', 'iex ', 'Invoke-']*")
+| table _time, New_Process_Name, Process_Command_Line

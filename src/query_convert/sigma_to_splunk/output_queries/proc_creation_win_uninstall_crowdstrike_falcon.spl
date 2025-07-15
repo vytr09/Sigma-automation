@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\WindowsSensor.exe" OR Process_Command_Line=" /uninstall" OR Process_Command_Line=" /quiet"))
+| table _time, New_Process_Name, Process_Command_Line

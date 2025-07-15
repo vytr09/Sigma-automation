@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\frpc.exe" OR New_Process_Name="*\frps.exe")) OR (Process_Command_Line="*\frpc.ini*") OR ((Hashes="*MD5=7D9C233B8C9E3F0EA290D2B84593C842*" OR Hashes="*SHA1=06DDC9280E1F1810677935A2477012960905942F*" OR Hashes="*SHA256=57B0936B8D336D8E981C169466A15A5FD21A7D5A2C7DAF62D5E142EE860E387C*"))
+| table _time, New_Process_Name, Process_Command_Line

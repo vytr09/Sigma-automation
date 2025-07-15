@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="tasklist /fi " OR Process_Command_Line="Imagename eq lsass.exe") AND (Process_Command_Line="*cmd.exe /c *" OR Process_Command_Line="*cmd.exe /r *" OR Process_Command_Line="*cmd.exe /k *" OR Process_Command_Line="*cmd /c *" OR Process_Command_Line="*cmd /r *" OR Process_Command_Line="*cmd /k *") AND (User="*AUTHORI*" OR User="*AUTORI*")) OR ((Process_Command_Line="do rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump" OR Process_Command_Line="\Windows\Temp\" OR Process_Command_Line=" full" OR Process_Command_Line="%%B")) OR ((Process_Command_Line="tasklist /v /fo csv" OR Process_Command_Line="findstr /i "lsass""))
+| table _time, New_Process_Name, Process_Command_Line

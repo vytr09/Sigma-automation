@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((New_Process_Name="*\MpCmdRun.exe" OR New_Process_Name="*\NisSrv.exe")) OR ((New_Process_Name="C:\Program Files (x86)\Windows Defender\*" OR New_Process_Name="C:\Program Files\Microsoft Security Client\*" OR New_Process_Name="C:\Program Files\Windows Defender\*" OR New_Process_Name="C:\ProgramData\Microsoft\Windows Defender\Platform\*" OR New_Process_Name="C:\Windows\WinSxS\*"))
+| table _time, New_Process_Name, Process_Command_Line

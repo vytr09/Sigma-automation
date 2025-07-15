@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line=" tunnel " OR Process_Command_Line=" run ") AND (Process_Command_Line="*-config *" OR Process_Command_Line="*-credentials-contents *" OR Process_Command_Line="*-credentials-file *" OR Process_Command_Line="*-token *"))
+| table _time, New_Process_Name, Process_Command_Line

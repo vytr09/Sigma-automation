@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Original_File_Name="python.exe" OR New_Process_Name="*['python.exe', 'python3.exe', 'python2.exe']") | search (Process_Command_Line="* -c*") | search (Parent_Process_Name="C:\Program Files\Python*" AND Parent_Process_Name="*\python.exe" AND Parent_Process_Command_Line="*-E -s -m ensurepip -U --default-pip*") | search (Parent_Process_Name="*\AppData\Local\Programs\Microsoft VS Code\Code.exe") | search ((Process_Command_Line="<pip-setuptools-caller>" OR Process_Command_Line="exec(compile("))
+| table _time, New_Process_Name, Process_Command_Line

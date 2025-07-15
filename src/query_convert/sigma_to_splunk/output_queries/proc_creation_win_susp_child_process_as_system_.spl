@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((ParentUser="*AUTHORI*" OR ParentUser="*AUTORI*") AND (ParentUser="*\NETWORK SERVICE" OR ParentUser="*\LOCAL SERVICE") AND (User="*AUTHORI*" OR User="*AUTORI*") AND (User="*\SYSTEM" OR User="*\Système" OR User="*\СИСТЕМА") AND (Process_Integrity_Level="System" OR Process_Integrity_Level="S-1-16-16384")) OR (New_Process_Name="*\rundll32.exe" AND Process_Command_Line="*DavSetCookie*")
+| table _time, New_Process_Name, Process_Command_Line

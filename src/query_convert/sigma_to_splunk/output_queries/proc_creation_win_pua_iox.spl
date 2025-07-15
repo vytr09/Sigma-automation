@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\iox.exe") OR ((Process_Command_Line="*.exe fwd -l *" OR Process_Command_Line="*.exe fwd -r *" OR Process_Command_Line="*.exe proxy -l *" OR Process_Command_Line="*.exe proxy -r *")) OR ((Hashes="*MD5=9DB2D314DD3F704A02051EF5EA210993*" OR Hashes="*SHA1=039130337E28A6623ECF9A0A3DA7D92C5964D8DD*" OR Hashes="*SHA256=C6CF82919B809967D9D90EA73772A8AA1C1EB3BC59252D977500F64F1A0D6731*"))
+| table _time, New_Process_Name, Process_Command_Line

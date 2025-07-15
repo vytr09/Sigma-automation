@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\plink.exe" AND Process_Command_Line="*:127.0.0.1:3389*") | search (New_Process_Name="*\plink.exe" AND Process_Command_Line="*:3389*") | search ((Process_Command_Line="* -P 443*" OR Process_Command_Line="* -P 22*"))
+| table _time, New_Process_Name, Process_Command_Line

@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="*~1\*" OR Process_Command_Line="*~2\*")) | search (Parent_Process_Name="['C:\\Windows\\System32\\Dism.exe', 'C:\\Windows\\System32\\cleanmgr.exe', 'C:\\Program Files\\GPSoftware\\Directory Opus\\dopus.exe']" OR Parent_Process_Name="*['\\WebEx\\WebexHost.exe', '\\thor\\thor64.exe', '\\veam.backup.shell.exe', '\\winget.exe', '\\Everything\\Everything.exe']" OR Parent_Process_Name="*\AppData\Local\Temp\WinGet\*" OR Process_Command_Line="*['\\appdata\\local\\webex\\webex64\\meetings\\wbxreport.exe', 'C:\\Program Files\\Git\\post-install.bat', 'C:\\Program Files\\Git\\cmd\\scalar.exe']*")
+| table _time, New_Process_Name, Process_Command_Line

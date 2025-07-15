@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Product="*AutoHotkey*" OR Description="*AutoHotkey*" OR Original_File_Name="['AutoHotkey.exe', 'AutoHotkey.rc']") | search (New_Process_Name="*['\\AutoHotkey.exe', '\\AutoHotkey32.exe', '\\AutoHotkey32_UIA.exe', '\\AutoHotkey64.exe', '\\AutoHotkey64_UIA.exe', '\\AutoHotkeyA32.exe', '\\AutoHotkeyA32_UIA.exe', '\\AutoHotkeyU32.exe', '\\AutoHotkeyU32_UIA.exe', '\\AutoHotkeyU64.exe', '\\AutoHotkeyU64_UIA.exe']" OR New_Process_Name="*\AutoHotkey*")
+| table _time, New_Process_Name, Process_Command_Line

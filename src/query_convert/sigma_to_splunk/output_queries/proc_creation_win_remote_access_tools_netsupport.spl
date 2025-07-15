@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Description="NetSupport Client Configurator" OR Product="NetSupport Remote Control" OR Company="NetSupport Ltd" OR Original_File_Name="PCICFGUI.EXE")
+| table _time, New_Process_Name, Process_Command_Line

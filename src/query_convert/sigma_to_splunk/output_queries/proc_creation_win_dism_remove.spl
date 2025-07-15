@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\DismHost.exe" AND (Parent_Process_Command_Line="/Online" OR Parent_Process_Command_Line="/Disable-Feature")) OR (New_Process_Name="*\Dism.exe" AND (Process_Command_Line="/Online" OR Process_Command_Line="/Disable-Feature"))
+| table _time, New_Process_Name, Process_Command_Line

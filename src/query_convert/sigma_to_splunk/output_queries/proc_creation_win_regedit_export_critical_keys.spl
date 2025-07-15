@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\regedit.exe" OR Original_File_Name="REGEDIT.EXE") | search (Process_Command_Line=" -E ") | search ((Process_Command_Line="*hklm*" OR Process_Command_Line="*hkey_local_machine*")) | search ((Process_Command_Line="*\system" OR Process_Command_Line="*\sam" OR Process_Command_Line="*\security"))
+| table _time, New_Process_Name, Process_Command_Line

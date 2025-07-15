@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="taskkill " OR Process_Command_Line="RaccineSettings.exe")) OR ((Process_Command_Line="reg.exe" OR Process_Command_Line="delete" OR Process_Command_Line="Raccine Tray")) OR ((Process_Command_Line="schtasks" OR Process_Command_Line="/DELETE" OR Process_Command_Line="Raccine Rules Updater"))
+| table _time, New_Process_Name, Process_Command_Line

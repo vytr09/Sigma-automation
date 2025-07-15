@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\explorer.exe" AND Process_Command_Line="*/NOUACCHECK*") OR (Parent_Process_Command_Line="C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule" OR Parent_Process_Name="C:\Windows\System32\svchost.exe")
+| table _time, New_Process_Name, Process_Command_Line

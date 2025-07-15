@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search ((Process_Command_Line="\register_app.vbs" OR Process_Command_Line="-register"))
+| table _time, New_Process_Name, Process_Command_Line

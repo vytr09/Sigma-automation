@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (Parent_Process_Name="*['.doc.lnk', '.docx.lnk', '.xls.lnk', '.xlsx.lnk', '.ppt.lnk', '.pptx.lnk', '.rtf.lnk', '.pdf.lnk', '.txt.lnk', '.doc.js', '.docx.js', '.xls.js', '.xlsx.js', '.ppt.js', '.pptx.js', '.rtf.js', '.pdf.js', '.txt.js']" OR Parent_Process_Command_Line="*['.doc.lnk', '.docx.lnk', '.xls.lnk', '.xlsx.lnk', '.ppt.lnk', '.pptx.lnk', '.rtf.lnk', '.pdf.lnk', '.txt.lnk', '.doc.js', '.docx.js', '.xls.js', '.xlsx.js', '.ppt.js', '.pptx.js', '.rtf.js', '.pdf.js', '.txt.js']*")
+| table _time, New_Process_Name, Process_Command_Line

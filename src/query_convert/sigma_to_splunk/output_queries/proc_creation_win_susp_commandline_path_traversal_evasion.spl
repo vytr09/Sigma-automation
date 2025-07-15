@@ -1,0 +1,3 @@
+index=* sourcetype="WinEventLog:Security" EventCode=4688
+ | search (New_Process_Name="*\Windows\*" AND (Process_Command_Line="*\..\Windows\*" OR Process_Command_Line="*\..\System32\*" OR Process_Command_Line="*\..\..\*")) OR (Process_Command_Line="*.exe\..\*") OR (Process_Command_Line="*\Google\Drive\googledrivesync.exe\..\*") OR (Process_Command_Line="*\Citrix\Virtual Smart Card\Citrix.Authentication.VirtualSmartcard.Launcher.exe\..\*")
+| table _time, New_Process_Name, Process_Command_Line
