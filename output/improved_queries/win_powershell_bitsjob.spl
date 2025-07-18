@@ -1,2 +1,0 @@
-index=* sourcetype="WinEventLog:Security" EventCode=4688
-| search New_Process_Name="*\\powershell.exe" OR "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAUwB0AGEAcgB0AC0AQgBpAHQAcwBUAHIAYQBuAHMAZgBlAHIA"| search Process_Command_Line="*Start-BitsTransfer*"  | table _time, New_Process_Name, Process_Command_Line
