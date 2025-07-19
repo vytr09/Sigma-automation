@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:41:06 UTC", "rule": "proc_creation_win_hktl_edrsilencer_0", "phase": "original", "command": "\\EDRSilencer.exe EDRSilencer.exe EDRSilencer", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:41:12 UTC", "rule": "proc_creation_win_hktl_edrsilencer_0", "phase": "insertion", "command": "\\EDRSilencer.exe \\\"EDRSile\\\"ncer.exe EDRSilencer", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:41:18 UTC", "rule": "proc_creation_win_hktl_edrsilencer_0", "phase": "substitution", "command": "\\EDRSilencer.exe EDRSilencer.exe EDRSilencer #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:41:24 UTC", "rule": "proc_creation_win_hktl_edrsilencer_0", "phase": "omission", "command": "\\EDRSilencer EDRSilencer EDRSilencer", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:41:30 UTC", "rule": "proc_creation_win_hktl_edrsilencer_0", "phase": "reordering", "command": "\\EDRSilencer.exe EDRSilencer EDRSilencer.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:41:37 UTC", "rule": "proc_creation_win_hktl_edrsilencer_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEVEUlNpbGVuY2VyLmV4ZSBFRFJTaWxlbmNlci5leGUgRURSU2lsZW5jZXI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

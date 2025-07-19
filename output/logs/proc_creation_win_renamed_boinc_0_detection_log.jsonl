@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:25:22 UTC", "rule": "proc_creation_win_renamed_boinc_0", "phase": "original", "command": "BOINC.exe \\BOINC.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:25:28 UTC", "rule": "proc_creation_win_renamed_boinc_0", "phase": "insertion", "command": "BOINC.exe \\BOIN\"C.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:25:34 UTC", "rule": "proc_creation_win_renamed_boinc_0", "phase": "substitution", "command": "BOINC.exe \\BOINC.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:25:40 UTC", "rule": "proc_creation_win_renamed_boinc_0", "phase": "omission", "command": "BOINC \\BOINC", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:25:46 UTC", "rule": "proc_creation_win_renamed_boinc_0", "phase": "reordering", "command": "BOINC.exe \\BOINC.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:25:55 UTC", "rule": "proc_creation_win_renamed_boinc_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Qk9JTkMuZXhlIFxCT0lOQy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:27:44 UTC", "rule": "win_susp_bginfo_0", "phase": "original", "command": "bginfo.exe /popup /nolicprompt", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:27:51 UTC", "rule": "win_susp_bginfo_0", "phase": "insertion", "command": "bginfo.exe #injected /popup /nolicprompt", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:27:58 UTC", "rule": "win_susp_bginfo_0", "phase": "substitution", "command": "bginfo.exe /popup /nolicprompt #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:28:05 UTC", "rule": "win_susp_bginfo_0", "phase": "omission", "command": "bginfo /popup /nolicprompt", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:28:13 UTC", "rule": "win_susp_bginfo_0", "phase": "reordering", "command": "bginfo.exe /nolicprompt /popup", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:12:30 UTC", "rule": "win_susp_bginfo_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

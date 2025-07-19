@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:21:08 UTC", "rule": "proc_creation_win_systeminfo_execution_0", "phase": "original", "command": "\\systeminfo.exe sysinfo.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:21:15 UTC", "rule": "proc_creation_win_systeminfo_execution_0", "phase": "insertion", "command": "\\systeminfo.exe sysin\\\"fo.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:21:21 UTC", "rule": "proc_creation_win_systeminfo_execution_0", "phase": "substitution", "command": "\\systeminfo.exe sysinfo.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:21:27 UTC", "rule": "proc_creation_win_systeminfo_execution_0", "phase": "omission", "command": "\\systeminfo sysinfo", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:21:34 UTC", "rule": "proc_creation_win_systeminfo_execution_0", "phase": "reordering", "command": "\\systeminfo.exe sysinfo.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:21:41 UTC", "rule": "proc_creation_win_systeminfo_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN5c3RlbWluZm8uZXhlIHN5c2luZm8uZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

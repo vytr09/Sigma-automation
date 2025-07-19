@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:40:37 UTC", "rule": "proc_creation_win_ruby_inline_command_execution_0", "phase": "original", "command": "\\ruby.exe ruby.exe -e", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:40:44 UTC", "rule": "proc_creation_win_ruby_inline_command_execution_0", "phase": "insertion", "command": "\\ruby.exe \\\"ruby.exe\\\" \\\"-e\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:40:50 UTC", "rule": "proc_creation_win_ruby_inline_command_execution_0", "phase": "substitution", "command": "\\ruby.exe ruby.exe -e #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:40:57 UTC", "rule": "proc_creation_win_ruby_inline_command_execution_0", "phase": "omission", "command": "\\ruby ruby -e", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:41:04 UTC", "rule": "proc_creation_win_ruby_inline_command_execution_0", "phase": "reordering", "command": "\\ruby.exe ruby.exe -e", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:41:11 UTC", "rule": "proc_creation_win_ruby_inline_command_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1YnkuZXhlIHJ1YnkuZXhlIC1l')) | Invoke-Expression\" ", "status": "BYPASSED"}

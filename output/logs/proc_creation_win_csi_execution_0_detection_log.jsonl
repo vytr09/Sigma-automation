@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:55:16 UTC", "rule": "proc_creation_win_csi_execution_0", "phase": "original", "command": "\\csi.exe \\rcsi.exe csi.exe rcsi.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:55:16 UTC", "rule": "proc_creation_win_csi_execution_0", "phase": "insertion", "command": "\\csi.exe \\\"\\rcsi.exe\\\" csi.exe rcsi.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:55:16 UTC", "rule": "proc_creation_win_csi_execution_0", "phase": "substitution", "command": "\\csi.exe \\rcsi.exe csi.exe rcsi.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:55:16 UTC", "rule": "proc_creation_win_csi_execution_0", "phase": "omission", "command": "\\csi \\rcsi csi rcsi", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:55:16 UTC", "rule": "proc_creation_win_csi_execution_0", "phase": "reordering", "command": "\\csi.exe rcsi.exe \\rcsi.exe csi.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:55:16 UTC", "rule": "proc_creation_win_csi_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNzaS5leGUgXHJjc2kuZXhlIGNzaS5leGUgcmNzaS5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:08:47 UTC", "rule": "proc_creation_win_sc_stop_service_0", "phase": "original", "command": "sc.exe \\sc.exe stop", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:08:54 UTC", "rule": "proc_creation_win_sc_stop_service_0", "phase": "insertion", "command": "sc.exe \\sc.exe \"stop\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:09:02 UTC", "rule": "proc_creation_win_sc_stop_service_0", "phase": "substitution", "command": "sc.exe \\sc.exe stop", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:09:09 UTC", "rule": "proc_creation_win_sc_stop_service_0", "phase": "omission", "command": "sc \\sc stop", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:09:14 UTC", "rule": "proc_creation_win_sc_stop_service_0", "phase": "reordering", "command": "sc.exe stop \\sc.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:09:20 UTC", "rule": "proc_creation_win_sc_stop_service_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2MuZXhlIFxzYy5leGUgc3RvcA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

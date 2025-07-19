@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:38:38 UTC", "rule": "proc_creation_win_hktl_coercedpotato_0", "phase": "original", "command": "\\CoercedPotato.exe --exploitId", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:38:38 UTC", "rule": "proc_creation_win_hktl_coercedpotato_0", "phase": "insertion", "command": "\\CoercedPotato.exe --exp\"loitId\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:38:38 UTC", "rule": "proc_creation_win_hktl_coercedpotato_0", "phase": "substitution", "command": "\\CoercedPotato.exe --exploitId #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:38:38 UTC", "rule": "proc_creation_win_hktl_coercedpotato_0", "phase": "omission", "command": "\\CoercedPotato --exploitId", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:38:38 UTC", "rule": "proc_creation_win_hktl_coercedpotato_0", "phase": "reordering", "command": "\\CoercedPotato.exe --exploitId", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:38:38 UTC", "rule": "proc_creation_win_hktl_coercedpotato_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENvZXJjZWRQb3RhdG8uZXhlIC0tZXhwbG9pdElk')) | Invoke-Expression\" ", "status": "BYPASSED"}

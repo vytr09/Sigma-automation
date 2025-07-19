@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 18:03:24 UTC", "rule": "proc_creation_win_winrm_awl_bypass_0", "phase": "original", "command": "format:pretty format: format: format:text winrm", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:24 UTC", "rule": "proc_creation_win_winrm_awl_bypass_0", "phase": "insertion", "command": "format:pretty format: \\\"for\\\"mat: format:text winrm", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:24 UTC", "rule": "proc_creation_win_winrm_awl_bypass_0", "phase": "substitution", "command": "format:pretty format: format: format:text winrm #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:24 UTC", "rule": "proc_creation_win_winrm_awl_bypass_0", "phase": "omission", "command": "format:pretty format: format: format:text winrm # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:24 UTC", "rule": "proc_creation_win_winrm_awl_bypass_0", "phase": "reordering", "command": "format:pretty format: format:text winrm format:", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:24 UTC", "rule": "proc_creation_win_winrm_awl_bypass_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Zm9ybWF0OnByZXR0eSBmb3JtYXQ6IGZvcm1hdDogZm9ybWF0OnRleHQgd2lucm0=')) | Invoke-Expression\" ", "status": "BYPASSED"}

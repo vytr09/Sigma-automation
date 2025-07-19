@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 06:57:35 UTC", "rule": "proc_creation_win_certoc_download_direct_ip_0", "phase": "original", "command": "\\certoc.exe CertOC.exe -GetCACAPS", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:57:35 UTC", "rule": "proc_creation_win_certoc_download_direct_ip_0", "phase": "insertion", "command": "\\certoc.exe CertOC.exe \"-\"\"G\"\"e\"\"t\"\"C\"\"A\"\"C\"\"A\"\"P\"\"S\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:57:35 UTC", "rule": "proc_creation_win_certoc_download_direct_ip_0", "phase": "substitution", "command": "\\certoc.exe CertOC.exe -GetCACAPS #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:57:35 UTC", "rule": "proc_creation_win_certoc_download_direct_ip_0", "phase": "omission", "command": "\\certoc CertOC -GetCACAPS", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:57:35 UTC", "rule": "proc_creation_win_certoc_download_direct_ip_0", "phase": "reordering", "command": "\\certoc.exe CertOC.exe -GetCACAPS", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:57:35 UTC", "rule": "proc_creation_win_certoc_download_direct_ip_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnRvYy5leGUgQ2VydE9DLmV4ZSAtR2V0Q0FDQVBT')) | Invoke-Expression\" ", "status": "BYPASSED"}

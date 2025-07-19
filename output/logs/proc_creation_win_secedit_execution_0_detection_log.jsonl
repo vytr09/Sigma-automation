@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:10:24 UTC", "rule": "proc_creation_win_secedit_execution_0", "phase": "original", "command": "\\secedit.exe SeCEdit /export /cfg /configure /db", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:10:32 UTC", "rule": "proc_creation_win_secedit_execution_0", "phase": "insertion", "command": "\\secedit.exe \\\"SeCEdit\\\" /export /cfg /configure /db", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:10:38 UTC", "rule": "proc_creation_win_secedit_execution_0", "phase": "substitution", "command": "\\secedit.exe SeCEdit /export /cfg /configure /db #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:10:45 UTC", "rule": "proc_creation_win_secedit_execution_0", "phase": "omission", "command": "\\secedit SeCEdit /export /cfg /configure /db", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:10:50 UTC", "rule": "proc_creation_win_secedit_execution_0", "phase": "reordering", "command": "\\secedit.exe SeCEdit /export /cfg /configure /db", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:10:58 UTC", "rule": "proc_creation_win_secedit_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNlY2VkaXQuZXhlIFNlQ0VkaXQgL2V4cG9ydCAvY2ZnIC9jb25maWd1cmUgL2Ri')) | Invoke-Expression\" ", "status": "BYPASSED"}

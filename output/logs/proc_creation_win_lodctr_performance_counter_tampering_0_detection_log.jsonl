@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:24:54 UTC", "rule": "proc_creation_win_lodctr_performance_counter_tampering_0", "phase": "original", "command": "\\lodctr.exe LODCTR.EXE -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:25:02 UTC", "rule": "proc_creation_win_lodctr_performance_counter_tampering_0", "phase": "insertion", "command": "\\lodctr.exe LODCT\"R.EXE\" -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:25:11 UTC", "rule": "proc_creation_win_lodctr_performance_counter_tampering_0", "phase": "substitution", "command": "\\lodctr.exe LODCTR.EXE -r #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:25:18 UTC", "rule": "proc_creation_win_lodctr_performance_counter_tampering_0", "phase": "omission", "command": "\\lodctr LODCTR -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:25:23 UTC", "rule": "proc_creation_win_lodctr_performance_counter_tampering_0", "phase": "reordering", "command": "\\lodctr.exe LODCTR.EXE -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:25:30 UTC", "rule": "proc_creation_win_lodctr_performance_counter_tampering_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxvZGN0ci5leGUgTE9EQ1RSLkVYRSAtcg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

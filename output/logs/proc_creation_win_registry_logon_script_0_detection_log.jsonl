@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:06:43 UTC", "rule": "proc_creation_win_registry_logon_script_0", "phase": "original", "command": "UserInitMprLogonScript", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:06:49 UTC", "rule": "proc_creation_win_registry_logon_script_0", "phase": "insertion", "command": "UserInitMprLogonScript", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:06:56 UTC", "rule": "proc_creation_win_registry_logon_script_0", "phase": "substitution", "command": "UserInitMprLogonScript #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:07:03 UTC", "rule": "proc_creation_win_registry_logon_script_0", "phase": "omission", "command": "UserInitMprLogonScript # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:07:10 UTC", "rule": "proc_creation_win_registry_logon_script_0", "phase": "reordering", "command": "UserInitMprLogonScript", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:07:16 UTC", "rule": "proc_creation_win_registry_logon_script_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('VXNlckluaXRNcHJMb2dvblNjcmlwdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

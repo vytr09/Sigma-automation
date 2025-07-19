@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:22:50 UTC", "rule": "proc_creation_win_findstr_subfolder_search_0", "phase": "original", "command": "findstr findstr.exe FINDSTR.EXE -s -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:23:06 UTC", "rule": "proc_creation_win_findstr_subfolder_search_0", "phase": "insertion", "command": "findstr findstr.exe FINDSTR.EXE \\\"-\\\"\\\"s\\\" -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:23:19 UTC", "rule": "proc_creation_win_findstr_subfolder_search_0", "phase": "substitution", "command": "findstr findstr.exe FINDSTR.EXE -s -i #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:23:27 UTC", "rule": "proc_creation_win_findstr_subfolder_search_0", "phase": "omission", "command": "findstr findstr FINDSTR -s -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:23:36 UTC", "rule": "proc_creation_win_findstr_subfolder_search_0", "phase": "reordering", "command": "findstr -s findstr.exe FINDSTR.EXE -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:23:42 UTC", "rule": "proc_creation_win_findstr_subfolder_search_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZmluZHN0ciBmaW5kc3RyLmV4ZSBGSU5EU1RSLkVYRSAtcyAtaQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

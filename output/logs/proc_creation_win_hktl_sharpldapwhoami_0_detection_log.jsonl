@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:59:42 UTC", "rule": "proc_creation_win_hktl_sharpldapwhoami_0", "phase": "original", "command": "\\SharpLdapWhoami.exe SharpLdapWhoami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:59:50 UTC", "rule": "proc_creation_win_hktl_sharpldapwhoami_0", "phase": "insertion", "command": "\\SharpLdapWhoami.exe \\\"SharpLdapWhoami\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:59:56 UTC", "rule": "proc_creation_win_hktl_sharpldapwhoami_0", "phase": "substitution", "command": "\\SharpLdapWhoami.exe SharpLdapWhoami #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:00:06 UTC", "rule": "proc_creation_win_hktl_sharpldapwhoami_0", "phase": "omission", "command": "\\SharpLdapWhoami SharpLdapWhoami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:00:13 UTC", "rule": "proc_creation_win_hktl_sharpldapwhoami_0", "phase": "reordering", "command": "\\SharpLdapWhoami.exe SharpLdapWhoami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:00:19 UTC", "rule": "proc_creation_win_hktl_sharpldapwhoami_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwTGRhcFdob2FtaS5leGUgU2hhcnBMZGFwV2hvYW1p')) | Invoke-Expression\" ", "status": "BYPASSED"}

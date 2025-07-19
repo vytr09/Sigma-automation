@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:06:20 UTC", "rule": "win_netsh_port_fwd_0", "phase": "original", "command": "netsh interface portproxy add v4tov4", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:06:26 UTC", "rule": "win_netsh_port_fwd_0", "phase": "insertion", "command": "netsh\ninterface\nportproxy\nadd\nv4tov4", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:06:33 UTC", "rule": "win_netsh_port_fwd_0", "phase": "substitution", "command": "netsh interface portproxy add v4tov4 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:06:40 UTC", "rule": "win_netsh_port_fwd_0", "phase": "omission", "command": "netsh interface portproxy add v4tov4 # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:06:47 UTC", "rule": "win_netsh_port_fwd_0", "phase": "reordering", "command": "netsh v4tov4 interface add portproxy", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:06:54 UTC", "rule": "win_netsh_port_fwd_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

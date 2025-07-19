@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:43:03 UTC", "rule": "proc_creation_win_virtualbox_vboxdrvinst_execution_0", "phase": "original", "command": "\\VBoxDrvInst.exe driver executeinf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:43:14 UTC", "rule": "proc_creation_win_virtualbox_vboxdrvinst_execution_0", "phase": "insertion", "command": "\\VBoxDrvInst.exe \"driver\" executeinf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:43:20 UTC", "rule": "proc_creation_win_virtualbox_vboxdrvinst_execution_0", "phase": "substitution", "command": "\\VBoxDrvInst.exe driver executeinf #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:43:26 UTC", "rule": "proc_creation_win_virtualbox_vboxdrvinst_execution_0", "phase": "omission", "command": "\\VBoxDrvInst driver executeinf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:43:33 UTC", "rule": "proc_creation_win_virtualbox_vboxdrvinst_execution_0", "phase": "reordering", "command": "\\VBoxDrvInst.exe driver executeinf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:43:39 UTC", "rule": "proc_creation_win_virtualbox_vboxdrvinst_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZCb3hEcnZJbnN0LmV4ZSBkcml2ZXIgZXhlY3V0ZWluZg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

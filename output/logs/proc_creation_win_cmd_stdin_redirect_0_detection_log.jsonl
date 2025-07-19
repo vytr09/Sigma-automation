@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:47:11 UTC", "rule": "proc_creation_win_cmd_stdin_redirect_0", "phase": "original", "command": "Cmd.Exe \\cmd.exe <", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:47:11 UTC", "rule": "proc_creation_win_cmd_stdin_redirect_0", "phase": "insertion", "command": "Cmd.Exe \\cmd.exe <", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:47:11 UTC", "rule": "proc_creation_win_cmd_stdin_redirect_0", "phase": "substitution", "command": "Cmd.Exe \\cmd.exe < #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:47:11 UTC", "rule": "proc_creation_win_cmd_stdin_redirect_0", "phase": "omission", "command": "Cmd \\cmd <", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:47:11 UTC", "rule": "proc_creation_win_cmd_stdin_redirect_0", "phase": "reordering", "command": "Cmd.Exe \\cmd.exe <", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:47:11 UTC", "rule": "proc_creation_win_cmd_stdin_redirect_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Q21kLkV4ZSBcY21kLmV4ZSA8')) | Invoke-Expression\" ", "status": "BYPASSED"}

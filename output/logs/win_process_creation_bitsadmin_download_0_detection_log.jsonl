@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:19:26 UTC", "rule": "win_process_creation_bitsadmin_download_0", "phase": "original", "command": "bitsadmin.exe /transfer copy bitsadmin.exe", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:19:35 UTC", "rule": "win_process_creation_bitsadmin_download_0", "phase": "insertion", "command": "#hijack bitsadmin.exe /transfer copy bitsadmin.exe", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:19:48 UTC", "rule": "win_process_creation_bitsadmin_download_0", "phase": "substitution", "command": "bitsadmin.exe /transfer copy bitsadmin.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:19:54 UTC", "rule": "win_process_creation_bitsadmin_download_0", "phase": "omission", "command": "bitsadmin /transfer copy bitsadmin", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:20:02 UTC", "rule": "win_process_creation_bitsadmin_download_0", "phase": "reordering", "command": "bitsadmin.exe bitsadmin.exe copy /transfer", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:20:10 UTC", "rule": "win_process_creation_bitsadmin_download_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

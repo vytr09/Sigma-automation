@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:04:53 UTC", "rule": "proc_creation_win_susp_remote_desktop_tunneling_0", "phase": "original", "command": ":3389 -L -P -R -pw -ssh", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:05:01 UTC", "rule": "proc_creation_win_susp_remote_desktop_tunneling_0", "phase": "insertion", "command": ":3389 -L \"-P\" \"-R\" -pw -ssh", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:05:13 UTC", "rule": "proc_creation_win_susp_remote_desktop_tunneling_0", "phase": "substitution", "command": ":3389 -L -P -R -pw -ssh #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:05:19 UTC", "rule": "proc_creation_win_susp_remote_desktop_tunneling_0", "phase": "omission", "command": ":3389 -L -P -R -pw -ssh # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:05:25 UTC", "rule": "proc_creation_win_susp_remote_desktop_tunneling_0", "phase": "reordering", "command": ":3389 -ssh -R -P -L -pw", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:05:32 UTC", "rule": "proc_creation_win_susp_remote_desktop_tunneling_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OjMzODkgLUwgLVAgLVIgLXB3IC1zc2g=')) | Invoke-Expression\" ", "status": "BYPASSED"}

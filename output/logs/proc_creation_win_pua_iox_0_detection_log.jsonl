@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:48:25 UTC", "rule": "proc_creation_win_pua_iox_0", "phase": "original", "command": "\\iox.exe .exe fwd -l .exe fwd -r .exe proxy -l .exe proxy -r", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:25 UTC", "rule": "proc_creation_win_pua_iox_0", "phase": "insertion", "command": "\\iox.exe .exe \"fwd\" \"-l\" .exe fwd -r .exe proxy -l .exe proxy -r", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:25 UTC", "rule": "proc_creation_win_pua_iox_0", "phase": "substitution", "command": "\\iox.exe .exe fwd -l .exe fwd -r .exe proxy -l .exe proxy -r #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:25 UTC", "rule": "proc_creation_win_pua_iox_0", "phase": "omission", "command": "\\iox fwd -l fwd -r proxy -l proxy -r", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:25 UTC", "rule": "proc_creation_win_pua_iox_0", "phase": "reordering", "command": "\\iox.exe .exe fwd -l .exe fwd -r .exe proxy -l .exe proxy -r", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:25 UTC", "rule": "proc_creation_win_pua_iox_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGlveC5leGUgLmV4ZSBmd2QgLWwgLmV4ZSBmd2QgLXIgLmV4ZSBwcm94eSAtbCAuZXhlIHByb3h5IC1y')) | Invoke-Expression\" ", "status": "BYPASSED"}

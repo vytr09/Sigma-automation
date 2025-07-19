@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:40:43 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "original", "command": "xcopy.exe /S /E /C /Q /H \\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:49 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "insertion", "command": "xcopy.exe\t/S\t/E\t/C\t/Q\t/H\t\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:58 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "substitution", "command": "xcopy.exe --subdirs --everything --continue --quiet --hidden \\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:41:04 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "omission", "command": "xcopy /S /E /Q /H \\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:41:10 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "reordering", "command": "xcopy.exe /S /Q /E /H /C \\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:41:15 UTC", "rule": "win_apt_bear_activity_gtr19_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

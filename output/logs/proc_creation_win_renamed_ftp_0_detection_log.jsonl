@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:27:44 UTC", "rule": "proc_creation_win_renamed_ftp_0", "phase": "original", "command": "ftp.exe \\ftp.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:27:52 UTC", "rule": "proc_creation_win_renamed_ftp_0", "phase": "insertion", "command": "ftp.exe \\\"f\"\"t\"\"p\"\".\"\"e\"\"x\"\"e\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:28:02 UTC", "rule": "proc_creation_win_renamed_ftp_0", "phase": "substitution", "command": "ftp.exe \\ftp.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:28:08 UTC", "rule": "proc_creation_win_renamed_ftp_0", "phase": "omission", "command": "ftp \\ftp", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:28:15 UTC", "rule": "proc_creation_win_renamed_ftp_0", "phase": "reordering", "command": "ftp.exe \\ftp.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:28:22 UTC", "rule": "proc_creation_win_renamed_ftp_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZnRwLmV4ZSBcZnRwLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

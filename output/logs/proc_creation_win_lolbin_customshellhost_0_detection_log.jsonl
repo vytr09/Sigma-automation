@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:26:50 UTC", "rule": "proc_creation_win_lolbin_customshellhost_0", "phase": "original", "command": "\\CustomShellHost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:26:50 UTC", "rule": "proc_creation_win_lolbin_customshellhost_0", "phase": "insertion", "command": "\\\"C\"\"u\"\"s\"\"t\"\"o\"\"m\"\"S\"\"h\"\"e\"\"l\"\"l\"\"H\"\"o\"\"s\"\"t\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:26:50 UTC", "rule": "proc_creation_win_lolbin_customshellhost_0", "phase": "substitution", "command": "\\CustomShellHost.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:26:50 UTC", "rule": "proc_creation_win_lolbin_customshellhost_0", "phase": "omission", "command": "\\CustomShellHost", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:26:50 UTC", "rule": "proc_creation_win_lolbin_customshellhost_0", "phase": "reordering", "command": "\\CustomShellHost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:26:50 UTC", "rule": "proc_creation_win_lolbin_customshellhost_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEN1c3RvbVNoZWxsSG9zdC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

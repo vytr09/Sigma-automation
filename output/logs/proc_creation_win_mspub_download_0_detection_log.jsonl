@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:07:49 UTC", "rule": "proc_creation_win_mspub_download_0", "phase": "original", "command": "\\MSPUB.exe MSPUB.exe ftp:// http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:07:57 UTC", "rule": "proc_creation_win_mspub_download_0", "phase": "insertion", "command": "\\MSPUB.exe MSPUB.exe ftp:// http:// \\\"https://\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:08:04 UTC", "rule": "proc_creation_win_mspub_download_0", "phase": "substitution", "command": "\\MSPUB.exe MSPUB.exe ftp:// http:// https:// #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:08:14 UTC", "rule": "proc_creation_win_mspub_download_0", "phase": "omission", "command": "\\MSPUB MSPUB ftp:// http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:08:20 UTC", "rule": "proc_creation_win_mspub_download_0", "phase": "reordering", "command": "\\MSPUB.exe ftp:// http:// https:// MSPUB.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:08:26 UTC", "rule": "proc_creation_win_mspub_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1TUFVCLmV4ZSBNU1BVQi5leGUgZnRwOi8vIGh0dHA6Ly8gaHR0cHM6Ly8=')) | Invoke-Expression\" ", "status": "BYPASSED"}

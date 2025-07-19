@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:54:27 UTC", "rule": "proc_creation_win_runonce_execution_0", "phase": "original", "command": "\\runonce.exe /AlternateShellStartup", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:54:36 UTC", "rule": "proc_creation_win_runonce_execution_0", "phase": "insertion", "command": "\\runonce.exe /{cmd_part[:mid]}\"{cmd_part[mid:]}\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:54:43 UTC", "rule": "proc_creation_win_runonce_execution_0", "phase": "substitution", "command": "\\runonce.exe /AlternateShellStartup #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:54:52 UTC", "rule": "proc_creation_win_runonce_execution_0", "phase": "omission", "command": "\\runonce /AlternateShellStartup", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:55:01 UTC", "rule": "proc_creation_win_runonce_execution_0", "phase": "reordering", "command": "\\runonce.exe /AlternateShellStartup", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:55:09 UTC", "rule": "proc_creation_win_runonce_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bm9uY2UuZXhlIC9BbHRlcm5hdGVTaGVsbFN0YXJ0dXA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

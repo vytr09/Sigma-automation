@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:26:57 UTC", "rule": "proc_creation_win_renamed_curl_0", "phase": "original", "command": "curl.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:27:06 UTC", "rule": "proc_creation_win_renamed_curl_0", "phase": "insertion", "command": "curl.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:27:11 UTC", "rule": "proc_creation_win_renamed_curl_0", "phase": "substitution", "command": "curl.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:27:17 UTC", "rule": "proc_creation_win_renamed_curl_0", "phase": "omission", "command": "curl", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:27:23 UTC", "rule": "proc_creation_win_renamed_curl_0", "phase": "reordering", "command": "curl.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:27:29 UTC", "rule": "proc_creation_win_renamed_curl_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y3VybC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

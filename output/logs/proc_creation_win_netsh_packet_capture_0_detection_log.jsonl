@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:20:10 UTC", "rule": "proc_creation_win_netsh_packet_capture_0", "phase": "original", "command": "\\netsh.exe netsh.exe trace start", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:20:21 UTC", "rule": "proc_creation_win_netsh_packet_capture_0", "phase": "insertion", "command": "\\netsh.exe netsh.exe trace \\\"st\\\"art", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:20:28 UTC", "rule": "proc_creation_win_netsh_packet_capture_0", "phase": "substitution", "command": "\\netsh.exe netsh.exe trace start #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:20:35 UTC", "rule": "proc_creation_win_netsh_packet_capture_0", "phase": "omission", "command": "\\netsh netsh trace start", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:20:41 UTC", "rule": "proc_creation_win_netsh_packet_capture_0", "phase": "reordering", "command": "\\netsh.exe start trace netsh.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:20:48 UTC", "rule": "proc_creation_win_netsh_packet_capture_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldHNoLmV4ZSBuZXRzaC5leGUgdHJhY2Ugc3RhcnQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

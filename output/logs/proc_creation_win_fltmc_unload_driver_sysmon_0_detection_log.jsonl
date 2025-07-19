@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:24:59 UTC", "rule": "proc_creation_win_fltmc_unload_driver_sysmon_0", "phase": "original", "command": "\\fltMC.exe fltMC.exe unload sysmon", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:25:18 UTC", "rule": "proc_creation_win_fltmc_unload_driver_sysmon_0", "phase": "insertion", "command": "\\fltMC.exe fltMC.exe unl\\\"oad\\\" sysmon", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:25:25 UTC", "rule": "proc_creation_win_fltmc_unload_driver_sysmon_0", "phase": "substitution", "command": "\\fltMC.exe fltMC.exe unload sysmon #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:25:32 UTC", "rule": "proc_creation_win_fltmc_unload_driver_sysmon_0", "phase": "omission", "command": "\\fltMC fltMC unload sysmon", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:25:39 UTC", "rule": "proc_creation_win_fltmc_unload_driver_sysmon_0", "phase": "reordering", "command": "\\fltMC.exe fltMC.exe unload sysmon", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:25:55 UTC", "rule": "proc_creation_win_fltmc_unload_driver_sysmon_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZsdE1DLmV4ZSBmbHRNQy5leGUgdW5sb2FkIHN5c21vbg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

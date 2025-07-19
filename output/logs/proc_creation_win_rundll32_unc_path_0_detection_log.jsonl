@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:52:37 UTC", "rule": "proc_creation_win_rundll32_unc_path_0", "phase": "original", "command": "\\rundll32.exe RUNDLL32.EXE rundll32 \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:52:44 UTC", "rule": "proc_creation_win_rundll32_unc_path_0", "phase": "insertion", "command": "\\rundll32.exe RUNDLL32.EXE \\\"r\\\"\\\"u\\\"\\\"n\\\"\\\"d\\\"\\\"l\\\"\\\"l\\\"\\\"3\\\"\\\"2\\\" \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:52:50 UTC", "rule": "proc_creation_win_rundll32_unc_path_0", "phase": "substitution", "command": "\\rundll32.exe RUNDLL32.EXE rundll32 \\\\\\\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:52:58 UTC", "rule": "proc_creation_win_rundll32_unc_path_0", "phase": "omission", "command": "\\rundll32 RUNDLL32 rundll32 \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:53:04 UTC", "rule": "proc_creation_win_rundll32_unc_path_0", "phase": "reordering", "command": "\\rundll32.exe \\\\\\\\ rundll32 RUNDLL32.EXE", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:53:10 UTC", "rule": "proc_creation_win_rundll32_unc_path_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUgcnVuZGxsMzIgXFxcXA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

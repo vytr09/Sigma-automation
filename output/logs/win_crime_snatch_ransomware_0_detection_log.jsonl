@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:53:13 UTC", "rule": "win_crime_snatch_ransomware_0", "phase": "original", "command": "net stop SuperBackupMan", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:53:21 UTC", "rule": "win_crime_snatch_ransomware_0", "phase": "insertion", "command": "net stop && SuperBackupMan", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:53:28 UTC", "rule": "win_crime_snatch_ransomware_0", "phase": "substitution", "command": "net stop SuperBackupMan #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:53:34 UTC", "rule": "win_crime_snatch_ransomware_0", "phase": "omission", "command": "net stop SuperBackupMan # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:53:41 UTC", "rule": "win_crime_snatch_ransomware_0", "phase": "reordering", "command": "net SuperBackupMan stop", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:53:48 UTC", "rule": "win_crime_snatch_ransomware_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

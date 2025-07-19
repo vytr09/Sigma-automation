@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:57:52 UTC", "rule": "win_lsass_dump_0", "phase": "original", "command": "werfault.exe lsass .dmp", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:57:59 UTC", "rule": "win_lsass_dump_0", "phase": "insertion", "command": "werfault.exe\tlsass\t.dmp", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:58:06 UTC", "rule": "win_lsass_dump_0", "phase": "substitution", "command": "werfault.exe lsass .dmp #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:58:13 UTC", "rule": "win_lsass_dump_0", "phase": "omission", "command": "werfault lsass .dmp", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:58:21 UTC", "rule": "win_lsass_dump_0", "phase": "reordering", "command": "werfault.exe .dmp lsass", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:58:27 UTC", "rule": "win_lsass_dump_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

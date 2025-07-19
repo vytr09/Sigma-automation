@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:24:45 UTC", "rule": "proc_creation_win_susp_child_process_as_system__0", "phase": "original", "command": "\\rundll32.exe DavSetCookie", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:24:45 UTC", "rule": "proc_creation_win_susp_child_process_as_system__0", "phase": "insertion", "command": "\\rundll32.exe \\\"DavSetCookie\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:24:45 UTC", "rule": "proc_creation_win_susp_child_process_as_system__0", "phase": "substitution", "command": "\\rundll32.exe DavSetCookie #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:24:45 UTC", "rule": "proc_creation_win_susp_child_process_as_system__0", "phase": "omission", "command": "\\rundll32 DavSetCookie", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:24:45 UTC", "rule": "proc_creation_win_susp_child_process_as_system__0", "phase": "reordering", "command": "\\rundll32.exe DavSetCookie", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:24:45 UTC", "rule": "proc_creation_win_susp_child_process_as_system__0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBEYXZTZXRDb29raWU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

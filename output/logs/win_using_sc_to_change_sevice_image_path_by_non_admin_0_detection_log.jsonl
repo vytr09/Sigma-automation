@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:59:14 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "original", "command": "sc.exe config binPath", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:59:21 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "insertion", "command": "sc.exe\tconfig\tbinPath", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:59:29 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "substitution", "command": "sc.exe config binPath #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:59:35 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "omission", "command": "sc config binPath", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:59:42 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "reordering", "command": "sc.exe binPath config", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:59:49 UTC", "rule": "win_using_sc_to_change_sevice_image_path_by_non_admin_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

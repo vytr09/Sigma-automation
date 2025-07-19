@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:07:42 UTC", "rule": "proc_creation_win_susp_sysvol_access_0", "phase": "original", "command": "\\SYSVOL\\ \\policies\\", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:07:42 UTC", "rule": "proc_creation_win_susp_sysvol_access_0", "phase": "insertion", "command": "\\SYSVOL\\ \\poli\"cies\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:07:42 UTC", "rule": "proc_creation_win_susp_sysvol_access_0", "phase": "substitution", "command": "\\SYSVOL\\ \\policies\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:07:42 UTC", "rule": "proc_creation_win_susp_sysvol_access_0", "phase": "omission", "command": "\\SYSVOL\\ \\policies\\ # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:07:42 UTC", "rule": "proc_creation_win_susp_sysvol_access_0", "phase": "reordering", "command": "\\SYSVOL\\ \\policies\\", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:07:42 UTC", "rule": "proc_creation_win_susp_sysvol_access_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNZU1ZPTFwgXHBvbGljaWVzXA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

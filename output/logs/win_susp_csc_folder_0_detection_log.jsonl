@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 10:45:10 UTC", "rule": "win_susp_csc_folder_0", "phase": "original", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:45:30 UTC", "rule": "win_susp_csc_folder_0", "phase": "insertion", "command": "csc.exe\n\\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:45:39 UTC", "rule": "win_susp_csc_folder_0", "phase": "substitution", "command": "csc.exe \\Windows\\Temp\\\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:45:50 UTC", "rule": "win_susp_csc_folder_0", "phase": "omission", "command": "csc \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:45:59 UTC", "rule": "win_susp_csc_folder_0", "phase": "reordering", "command": "csc.exe \\Windows\\Temp\\\\", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:46:12 UTC", "rule": "win_susp_csc_folder_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

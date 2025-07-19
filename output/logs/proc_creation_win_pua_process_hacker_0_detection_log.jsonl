@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:53:42 UTC", "rule": "proc_creation_win_pua_process_hacker_0", "phase": "original", "command": "\\ProcessHacker.exe ProcessHacker.exe Process Hacker", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:42 UTC", "rule": "proc_creation_win_pua_process_hacker_0", "phase": "insertion", "command": "\\ProcessHacker.exe ProcessHacker.exe \\\"Process\\\" \\\"Hacker\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:42 UTC", "rule": "proc_creation_win_pua_process_hacker_0", "phase": "substitution", "command": "\\ProcessHacker.exe ProcessHacker.exe Process Hacker #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:42 UTC", "rule": "proc_creation_win_pua_process_hacker_0", "phase": "omission", "command": "\\ProcessHacker ProcessHacker Process Hacker", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:42 UTC", "rule": "proc_creation_win_pua_process_hacker_0", "phase": "reordering", "command": "\\ProcessHacker.exe ProcessHacker.exe Process Hacker", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:42 UTC", "rule": "proc_creation_win_pua_process_hacker_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFByb2Nlc3NIYWNrZXIuZXhlIFByb2Nlc3NIYWNrZXIuZXhlIFByb2Nlc3MgSGFja2Vy')) | Invoke-Expression\" ", "status": "BYPASSED"}

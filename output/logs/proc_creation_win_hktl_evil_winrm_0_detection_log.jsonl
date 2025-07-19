@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:42:38 UTC", "rule": "proc_creation_win_hktl_evil_winrm_0", "phase": "original", "command": "\\ruby.exe -i -u -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:42:45 UTC", "rule": "proc_creation_win_hktl_evil_winrm_0", "phase": "insertion", "command": "\\ruby.exe -i \\\"-u\\\" -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:42:53 UTC", "rule": "proc_creation_win_hktl_evil_winrm_0", "phase": "substitution", "command": "\\ruby.exe -i -u -p #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:43:03 UTC", "rule": "proc_creation_win_hktl_evil_winrm_0", "phase": "omission", "command": "\\ruby -i -u -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:43:11 UTC", "rule": "proc_creation_win_hktl_evil_winrm_0", "phase": "reordering", "command": "\\ruby.exe -u -i -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:43:18 UTC", "rule": "proc_creation_win_hktl_evil_winrm_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1YnkuZXhlIC1pIC11IC1w')) | Invoke-Expression\" ", "status": "BYPASSED"}

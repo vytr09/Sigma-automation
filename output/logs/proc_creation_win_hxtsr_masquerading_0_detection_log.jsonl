@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:08:37 UTC", "rule": "proc_creation_win_hxtsr_masquerading_0", "phase": "original", "command": "\\hxtsr.exe \\hxtsr.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:37 UTC", "rule": "proc_creation_win_hxtsr_masquerading_0", "phase": "insertion", "command": "\\hxtsr.exe \\\"\\hxtsr.exe\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:37 UTC", "rule": "proc_creation_win_hxtsr_masquerading_0", "phase": "substitution", "command": "\\hxtsr.exe \\hxtsr.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:37 UTC", "rule": "proc_creation_win_hxtsr_masquerading_0", "phase": "omission", "command": "\\hxtsr \\hxtsr", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:37 UTC", "rule": "proc_creation_win_hxtsr_masquerading_0", "phase": "reordering", "command": "\\hxtsr.exe \\hxtsr.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:37 UTC", "rule": "proc_creation_win_hxtsr_masquerading_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGh4dHNyLmV4ZSBcaHh0c3IuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

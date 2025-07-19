@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:42:39 UTC", "rule": "proc_creation_win_lolbin_runexehelper_0", "phase": "original", "command": "\\runexehelper.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:42:39 UTC", "rule": "proc_creation_win_lolbin_runexehelper_0", "phase": "insertion", "command": "\\\"r\"\"u\"\"n\"\"e\"\"x\"\"e\"\"h\"\"e\"\"l\"\"p\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:42:39 UTC", "rule": "proc_creation_win_lolbin_runexehelper_0", "phase": "substitution", "command": "\\runexehelper.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:42:39 UTC", "rule": "proc_creation_win_lolbin_runexehelper_0", "phase": "omission", "command": "\\runexehelper", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:42:39 UTC", "rule": "proc_creation_win_lolbin_runexehelper_0", "phase": "reordering", "command": "\\runexehelper.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:42:39 UTC", "rule": "proc_creation_win_lolbin_runexehelper_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmV4ZWhlbHBlci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

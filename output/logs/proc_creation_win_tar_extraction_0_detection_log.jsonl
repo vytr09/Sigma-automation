@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:23:55 UTC", "rule": "proc_creation_win_tar_extraction_0", "phase": "original", "command": "\\tar.exe bsdtar -x", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:24:02 UTC", "rule": "proc_creation_win_tar_extraction_0", "phase": "insertion", "command": "\\tar.exe \\\"b\\\"\\\"s\\\"\\\"d\\\"\\\"t\\\"\\\"a\\\"\\\"r\\\" -x", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:24:11 UTC", "rule": "proc_creation_win_tar_extraction_0", "phase": "substitution", "command": "\\tar.exe bsdtar -x #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:24:17 UTC", "rule": "proc_creation_win_tar_extraction_0", "phase": "omission", "command": "\\tar bsdtar -x", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:24:22 UTC", "rule": "proc_creation_win_tar_extraction_0", "phase": "reordering", "command": "\\tar.exe -x bsdtar", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:24:28 UTC", "rule": "proc_creation_win_tar_extraction_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRhci5leGUgYnNkdGFyIC14')) | Invoke-Expression\" ", "status": "BYPASSED"}

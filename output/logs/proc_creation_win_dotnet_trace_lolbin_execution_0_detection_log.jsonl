@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:13:20 UTC", "rule": "proc_creation_win_dotnet_trace_lolbin_execution_0", "phase": "original", "command": "\\dotnet-trace.exe dotnet-trace.dll -- collect", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:13:25 UTC", "rule": "proc_creation_win_dotnet_trace_lolbin_execution_0", "phase": "insertion", "command": "\\dotnet-trace.exe dotnet-trace.dll -- \\\"collect\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:13:31 UTC", "rule": "proc_creation_win_dotnet_trace_lolbin_execution_0", "phase": "substitution", "command": "\\dotnet-trace.exe dotnet-trace.dll -- collect #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:13:36 UTC", "rule": "proc_creation_win_dotnet_trace_lolbin_execution_0", "phase": "omission", "command": "\\dotnet-trace dotnet-trace.dll -- collect", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:13:41 UTC", "rule": "proc_creation_win_dotnet_trace_lolbin_execution_0", "phase": "reordering", "command": "\\dotnet-trace.exe dotnet-trace.dll collect --", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:13:47 UTC", "rule": "proc_creation_win_dotnet_trace_lolbin_execution_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABkAG8AdABuAGUAdAAtAHQAcgBhAGMAZQAuAGUAeABlACAAZABvAHQAbgBlAHQALQB0AHIAYQBjAGUALgBkAGwAbAAgAC0ALQAgAGMAbwBsAGwAZQBjAHQA ", "status": "BYPASSED"}

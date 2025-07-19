@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:57:16 UTC", "rule": "proc_creation_win_curl_cookie_hijacking_0", "phase": "original", "command": "\\curl.exe curl.exe --cookie-jar", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:57:16 UTC", "rule": "proc_creation_win_curl_cookie_hijacking_0", "phase": "insertion", "command": "\\curl.exe curl.exe \\\"--cook\\\"ie-jar", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:57:16 UTC", "rule": "proc_creation_win_curl_cookie_hijacking_0", "phase": "substitution", "command": "\\curl.exe curl.exe ---cookie-jarookie-jar", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:57:16 UTC", "rule": "proc_creation_win_curl_cookie_hijacking_0", "phase": "omission", "command": "\\curl curl --cookie-jar", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:57:16 UTC", "rule": "proc_creation_win_curl_cookie_hijacking_0", "phase": "reordering", "command": "\\curl.exe --cookie-jar curl.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:57:16 UTC", "rule": "proc_creation_win_curl_cookie_hijacking_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGN1cmwuZXhlIGN1cmwuZXhlIC0tY29va2llLWphcg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

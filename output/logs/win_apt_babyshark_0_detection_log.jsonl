@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:40:08 UTC", "rule": "win_apt_babyshark_0", "phase": "original", "command": "reg query \\\"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:14 UTC", "rule": "win_apt_babyshark_0", "phase": "insertion", "command": "reg #inserted query \\\"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:20 UTC", "rule": "win_apt_babyshark_0", "phase": "substitution", "command": "reg query \\\"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\\\" #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:25 UTC", "rule": "win_apt_babyshark_0", "phase": "omission", "command": "reg query \\\"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server Client\\Default\\\" # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:32 UTC", "rule": "win_apt_babyshark_0", "phase": "reordering", "command": "reg Client\\Default\\\" query \\\"HKEY_CURRENT_USER\\Software\\Microsoft\\Terminal Server", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:40:37 UTC", "rule": "win_apt_babyshark_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:07:17 UTC", "rule": "proc_creation_win_sc_sdset_hide_sevices_0", "phase": "original", "command": "\\sc.exe sc.exe sdset DCLCWPDTSD", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:07:23 UTC", "rule": "proc_creation_win_sc_sdset_hide_sevices_0", "phase": "insertion", "command": "\\sc.exe sc.exe sdset \\\"DCLCWPDTSD\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:07:30 UTC", "rule": "proc_creation_win_sc_sdset_hide_sevices_0", "phase": "substitution", "command": "\\sc.exe sc.exe sdset DCLCWPDTSD #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:07:36 UTC", "rule": "proc_creation_win_sc_sdset_hide_sevices_0", "phase": "omission", "command": "\\sc sc sdset DCLCWPDTSD", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:07:42 UTC", "rule": "proc_creation_win_sc_sdset_hide_sevices_0", "phase": "reordering", "command": "\\sc.exe sdset sc.exe DCLCWPDTSD", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:07:48 UTC", "rule": "proc_creation_win_sc_sdset_hide_sevices_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjLmV4ZSBzYy5leGUgc2RzZXQgRENMQ1dQRFRTRA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

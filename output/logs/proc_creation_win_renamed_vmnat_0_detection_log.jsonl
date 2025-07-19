@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:39:11 UTC", "rule": "proc_creation_win_renamed_vmnat_0", "phase": "original", "command": "vmnat.exe vmnat.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:39:18 UTC", "rule": "proc_creation_win_renamed_vmnat_0", "phase": "insertion", "command": "vmnat.exe vmna\\\"t.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:39:24 UTC", "rule": "proc_creation_win_renamed_vmnat_0", "phase": "substitution", "command": "vmnat.exe vmnat.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:39:30 UTC", "rule": "proc_creation_win_renamed_vmnat_0", "phase": "omission", "command": "vmnat vmnat", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:39:37 UTC", "rule": "proc_creation_win_renamed_vmnat_0", "phase": "reordering", "command": "vmnat.exe vmnat.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:39:43 UTC", "rule": "proc_creation_win_renamed_vmnat_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('dm1uYXQuZXhlIHZtbmF0LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

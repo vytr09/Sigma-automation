@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:58:41 UTC", "rule": "proc_creation_win_susp_network_scan_loop_0", "phase": "original", "command": "for foreach nslookup ping", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:58:52 UTC", "rule": "proc_creation_win_susp_network_scan_loop_0", "phase": "insertion", "command": "for foreach nslookup \\\"p\\\"\\\"i\\\"\\\"n\\\"\\\"g\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:59:09 UTC", "rule": "proc_creation_win_susp_network_scan_loop_0", "phase": "substitution", "command": "for foreach nslookup ping #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:59:22 UTC", "rule": "proc_creation_win_susp_network_scan_loop_0", "phase": "omission", "command": "for foreach nslookup ping # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:59:42 UTC", "rule": "proc_creation_win_susp_network_scan_loop_0", "phase": "reordering", "command": "for foreach ping nslookup", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:00:06 UTC", "rule": "proc_creation_win_susp_network_scan_loop_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Zm9yIGZvcmVhY2ggbnNsb29rdXAgcGluZw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

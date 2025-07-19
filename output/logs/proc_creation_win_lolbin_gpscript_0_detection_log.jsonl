@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:31:27 UTC", "rule": "proc_creation_win_lolbin_gpscript_0", "phase": "original", "command": "\\gpscript.exe GPSCRIPT.EXE /logon /startup", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:27 UTC", "rule": "proc_creation_win_lolbin_gpscript_0", "phase": "insertion", "command": "\"\\gpscript.exe\" GPSCRIPT.EXE /logon /startup", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:27 UTC", "rule": "proc_creation_win_lolbin_gpscript_0", "phase": "substitution", "command": "\\gpscript.exe GPSCRIPT.EXE /logon /startup", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:27 UTC", "rule": "proc_creation_win_lolbin_gpscript_0", "phase": "omission", "command": "\\gpscript GPSCRIPT /logon /startup", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:27 UTC", "rule": "proc_creation_win_lolbin_gpscript_0", "phase": "reordering", "command": "\\gpscript.exe GPSCRIPT.EXE /logon /startup", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:27 UTC", "rule": "proc_creation_win_lolbin_gpscript_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwc2NyaXB0LmV4ZSBHUFNDUklQVC5FWEUgL2xvZ29uIC9zdGFydHVw')) | Invoke-Expression\" ", "status": "BYPASSED"}

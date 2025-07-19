@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:43:45 UTC", "rule": "proc_creation_win_hktl_gmer_0", "phase": "original", "command": "\\gmer.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:43:45 UTC", "rule": "proc_creation_win_hktl_gmer_0", "phase": "insertion", "command": "\\\"g\"\"m\"\"e\"\"r\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:43:45 UTC", "rule": "proc_creation_win_hktl_gmer_0", "phase": "substitution", "command": "\\gmer.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:43:45 UTC", "rule": "proc_creation_win_hktl_gmer_0", "phase": "omission", "command": "\\gmer", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:43:45 UTC", "rule": "proc_creation_win_hktl_gmer_0", "phase": "reordering", "command": "\\gmer.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:43:45 UTC", "rule": "proc_creation_win_hktl_gmer_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdtZXIuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

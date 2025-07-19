@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:33:14 UTC", "rule": "proc_creation_win_susp_hidden_dir_index_allocation_0", "phase": "original", "command": "::$index_allocation", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:33:14 UTC", "rule": "proc_creation_win_susp_hidden_dir_index_allocation_0", "phase": "insertion", "command": "::$index_allocation", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:33:14 UTC", "rule": "proc_creation_win_susp_hidden_dir_index_allocation_0", "phase": "substitution", "command": "::$index_allocation #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:33:14 UTC", "rule": "proc_creation_win_susp_hidden_dir_index_allocation_0", "phase": "omission", "command": "::$index_allocation # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:33:14 UTC", "rule": "proc_creation_win_susp_hidden_dir_index_allocation_0", "phase": "reordering", "command": "::$index_allocation", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:33:14 UTC", "rule": "proc_creation_win_susp_hidden_dir_index_allocation_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAOgA6ACQAaQBuAGQAZQB4AF8AYQBsAGwAbwBjAGEAdABpAG8AbgA= ", "status": "BYPASSED"}

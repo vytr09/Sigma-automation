@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:54:28 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "original", "command": "reg add \\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:54:35 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "insertion", "command": "reg \"add \\Services\\VSS\\Diag /d Disabled\"", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:54:41 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "substitution", "command": "reg add \\Services\\VSS\\Diag /d Disabled #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:54:48 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "omission", "command": "reg add \\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:54:58 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "reordering", "command": "reg /d add Disabled \\Services\\VSS\\Diag", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:55:05 UTC", "rule": "win_susp_volsnap_disable_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

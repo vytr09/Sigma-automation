@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:22:27 UTC", "rule": "proc_creation_win_takeown_recursive_own_0", "phase": "original", "command": "\\takeown.exe /f /r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:22:35 UTC", "rule": "proc_creation_win_takeown_recursive_own_0", "phase": "insertion", "command": "\\takeown.exe /\"{cmd_part1}\" /\"{cmd_part2}\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:22:40 UTC", "rule": "proc_creation_win_takeown_recursive_own_0", "phase": "substitution", "command": "\\takeown.exe /f /r #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:22:46 UTC", "rule": "proc_creation_win_takeown_recursive_own_0", "phase": "omission", "command": "\\takeown /f /r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:22:52 UTC", "rule": "proc_creation_win_takeown_recursive_own_0", "phase": "reordering", "command": "\\takeown.exe /f /r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:22:58 UTC", "rule": "proc_creation_win_takeown_recursive_own_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRha2Vvd24uZXhlIC9mIC9y')) | Invoke-Expression\" ", "status": "BYPASSED"}

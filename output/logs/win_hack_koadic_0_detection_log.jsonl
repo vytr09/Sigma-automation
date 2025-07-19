@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:55:39 UTC", "rule": "win_hack_koadic_0", "phase": "original", "command": "cmd.exe /q /c chcp", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:55:45 UTC", "rule": "win_hack_koadic_0", "phase": "insertion", "command": "#hijack cmd.exe /q /c chcp", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:55:51 UTC", "rule": "win_hack_koadic_0", "phase": "substitution", "command": "cmd.exe /q -c chcp", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:55:58 UTC", "rule": "win_hack_koadic_0", "phase": "omission", "command": "cmd /q chcp", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:56:05 UTC", "rule": "win_hack_koadic_0", "phase": "reordering", "command": "cmd.exe chcp /c /q", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:56:11 UTC", "rule": "win_hack_koadic_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

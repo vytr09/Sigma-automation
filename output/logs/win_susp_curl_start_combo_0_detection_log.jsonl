@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 10:52:44 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "original", "command": "curl start", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:53:00 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "insertion", "command": "curl #injected start", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:53:26 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "substitution", "command": "curl start #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:53:42 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "omission", "command": "curl start # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:53:55 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "reordering", "command": "curl start", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:54:48 UTC", "rule": "win_susp_curl_start_combo_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

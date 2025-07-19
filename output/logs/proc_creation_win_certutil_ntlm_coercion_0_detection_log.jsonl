@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:04:37 UTC", "rule": "proc_creation_win_certutil_ntlm_coercion_0", "phase": "original", "command": "\\certutil.exe CertUtil.exe -syncwithWU \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:04:44 UTC", "rule": "proc_creation_win_certutil_ntlm_coercion_0", "phase": "insertion", "command": "\\\"\\certutil.exe\\\" CertUtil.exe -syncwithWU \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:04:50 UTC", "rule": "proc_creation_win_certutil_ntlm_coercion_0", "phase": "substitution", "command": "\\certutil.exe CertUtil.exe -syncwithWU \\\\\\\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:04:56 UTC", "rule": "proc_creation_win_certutil_ntlm_coercion_0", "phase": "omission", "command": "\\certutil CertUtil -syncwithWU \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:05:05 UTC", "rule": "proc_creation_win_certutil_ntlm_coercion_0", "phase": "reordering", "command": "\\certutil.exe \\\\\\\\ -syncwithWU CertUtil.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:05:13 UTC", "rule": "proc_creation_win_certutil_ntlm_coercion_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLXN5bmN3aXRoV1UgXFxcXA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:44:05 UTC", "rule": "proc_creation_win_lolbin_settingsynchost_0", "phase": "original", "command": "cmd.exe /c RoamDiag.cmd -outputpath", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:44:05 UTC", "rule": "proc_creation_win_lolbin_settingsynchost_0", "phase": "insertion", "command": "cmd.exe /c RoamDiag.cmd \"-outp\"utpath", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:44:05 UTC", "rule": "proc_creation_win_lolbin_settingsynchost_0", "phase": "substitution", "command": "cmd.exe -c RoamDiag.cmd -outputpath", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:44:05 UTC", "rule": "proc_creation_win_lolbin_settingsynchost_0", "phase": "omission", "command": "cmd /c RoamDiag -outputpath", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:44:05 UTC", "rule": "proc_creation_win_lolbin_settingsynchost_0", "phase": "reordering", "command": "cmd.exe /c RoamDiag.cmd -outputpath", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:44:05 UTC", "rule": "proc_creation_win_lolbin_settingsynchost_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y21kLmV4ZSAvYyBSb2FtRGlhZy5jbWQgLW91dHB1dHBhdGg=')) | Invoke-Expression\" ", "status": "BYPASSED"}

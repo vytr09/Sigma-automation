@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:16:34 UTC", "rule": "proc_creation_win_reg_nolmhash_0", "phase": "original", "command": "\\System\\CurrentControlSet\\Control\\Lsa NoLMHash 0", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:16:34 UTC", "rule": "proc_creation_win_reg_nolmhash_0", "phase": "insertion", "command": "\\System\\CurrentControlSet\\Control\\Lsa NoLMHash \"0\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:16:34 UTC", "rule": "proc_creation_win_reg_nolmhash_0", "phase": "substitution", "command": "\\System\\CurrentControlSet\\Control\\Lsa NoLMHash 0 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:16:34 UTC", "rule": "proc_creation_win_reg_nolmhash_0", "phase": "omission", "command": "\\System\\CurrentControlSet\\Control\\Lsa NoLMHash 0 # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:16:34 UTC", "rule": "proc_creation_win_reg_nolmhash_0", "phase": "reordering", "command": "\\System\\CurrentControlSet\\Control\\Lsa 0 NoLMHash", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:16:34 UTC", "rule": "proc_creation_win_reg_nolmhash_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFN5c3RlbVxDdXJyZW50Q29udHJvbFNldFxDb250cm9sXExzYSBOb0xNSGFzaCAw')) | Invoke-Expression\" ", "status": "BYPASSED"}

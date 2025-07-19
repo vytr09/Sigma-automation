@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:31:33 UTC", "rule": "proc_creation_win_lolbin_ie4uinit_0", "phase": "original", "command": "\\ie4uinit.exe IE4UINIT.EXE", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:33 UTC", "rule": "proc_creation_win_lolbin_ie4uinit_0", "phase": "insertion", "command": "\\ie4uinit.exe \"IE4UIN\"IT.EXE", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:33 UTC", "rule": "proc_creation_win_lolbin_ie4uinit_0", "phase": "substitution", "command": "\\ie4uinit.exe IE4UINIT.EXE #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:33 UTC", "rule": "proc_creation_win_lolbin_ie4uinit_0", "phase": "omission", "command": "\\ie4uinit IE4UINIT", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:33 UTC", "rule": "proc_creation_win_lolbin_ie4uinit_0", "phase": "reordering", "command": "\\ie4uinit.exe IE4UINIT.EXE", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:31:33 UTC", "rule": "proc_creation_win_lolbin_ie4uinit_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGllNHVpbml0LmV4ZSBJRTRVSU5JVC5FWEU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

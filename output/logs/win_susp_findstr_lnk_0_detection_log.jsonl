@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:10:23 UTC", "rule": "win_susp_findstr_lnk_0", "phase": "original", "command": "findstr.exe .lnk", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:11:28 UTC", "rule": "win_susp_findstr_lnk_0", "phase": "insertion", "command": "#hijack findstr.exe .lnk", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:11:46 UTC", "rule": "win_susp_findstr_lnk_0", "phase": "substitution", "command": "findstr.exe .lnk #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:12:30 UTC", "rule": "win_susp_findstr_lnk_0", "phase": "omission", "command": "findstr .lnk", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:12:55 UTC", "rule": "win_susp_findstr_lnk_0", "phase": "reordering", "command": "findstr.exe .lnk", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:13:39 UTC", "rule": "win_susp_findstr_lnk_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

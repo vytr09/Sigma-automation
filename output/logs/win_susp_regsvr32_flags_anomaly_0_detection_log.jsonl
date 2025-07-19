@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:45:43 UTC", "rule": "win_susp_regsvr32_flags_anomaly_0", "phase": "original", "command": "regsvr32.exe /i:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:45:55 UTC", "rule": "win_susp_regsvr32_flags_anomaly_0", "phase": "insertion", "command": "regsvr32.exe\t/i:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:46:04 UTC", "rule": "win_susp_regsvr32_flags_anomaly_0", "phase": "substitution", "command": "regsvr32.exe /install:", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:46:11 UTC", "rule": "win_susp_regsvr32_flags_anomaly_0", "phase": "omission", "command": "regsvr32 /i:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:46:18 UTC", "rule": "win_susp_regsvr32_flags_anomaly_0", "phase": "reordering", "command": "regsvr32.exe /i:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:46:25 UTC", "rule": "win_susp_regsvr32_flags_anomaly_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

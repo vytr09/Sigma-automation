@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:59:32 UTC", "rule": "proc_creation_win_hktl_sharpevtmute_0", "phase": "original", "command": "\\SharpEvtMute.exe --Filter --Encoded --Filter \\", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:59:32 UTC", "rule": "proc_creation_win_hktl_sharpevtmute_0", "phase": "insertion", "command": "\\SharpEvtMute.exe --Filter \\\"--Encoded\\\" --Filter \\", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:59:32 UTC", "rule": "proc_creation_win_hktl_sharpevtmute_0", "phase": "substitution", "command": "\\SharpEvtMute.exe --Filter --Encoded --Filter \\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:59:32 UTC", "rule": "proc_creation_win_hktl_sharpevtmute_0", "phase": "omission", "command": "\\SharpEvtMute --Filter --Encoded --Filter \\", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:59:32 UTC", "rule": "proc_creation_win_hktl_sharpevtmute_0", "phase": "reordering", "command": "\\SharpEvtMute.exe --Filter --Filter --Encoded \\", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:59:32 UTC", "rule": "proc_creation_win_hktl_sharpevtmute_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwRXZ0TXV0ZS5leGUgLS1GaWx0ZXIgLS1FbmNvZGVkIC0tRmlsdGVyIFw=')) | Invoke-Expression\" ", "status": "BYPASSED"}

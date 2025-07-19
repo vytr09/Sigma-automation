@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:33:03 UTC", "rule": "proc_creation_win_uac_bypass_fodhelper_0", "phase": "original", "command": "\\fodhelper.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:33:03 UTC", "rule": "proc_creation_win_uac_bypass_fodhelper_0", "phase": "insertion", "command": "\"\\fodhelper.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:33:03 UTC", "rule": "proc_creation_win_uac_bypass_fodhelper_0", "phase": "substitution", "command": "\\fodhelper.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:33:03 UTC", "rule": "proc_creation_win_uac_bypass_fodhelper_0", "phase": "omission", "command": "\\fodhelper", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:33:03 UTC", "rule": "proc_creation_win_uac_bypass_fodhelper_0", "phase": "reordering", "command": "\\fodhelper.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:33:03 UTC", "rule": "proc_creation_win_uac_bypass_fodhelper_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZvZGhlbHBlci5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

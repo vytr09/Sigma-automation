@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 10:55:20 UTC", "rule": "win_susp_desktopimgdownldr_0", "phase": "original", "command": "reg delete \\PersonalizationCSP", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:55:49 UTC", "rule": "win_susp_desktopimgdownldr_0", "phase": "insertion", "command": "#hijack reg delete \\PersonalizationCSP", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:56:21 UTC", "rule": "win_susp_desktopimgdownldr_0", "phase": "substitution", "command": "reg delete \\PersonalizationCSP #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:56:40 UTC", "rule": "win_susp_desktopimgdownldr_0", "phase": "omission", "command": "reg delete \\PersonalizationCSP # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:56:57 UTC", "rule": "win_susp_desktopimgdownldr_0", "phase": "reordering", "command": "reg \\PersonalizationCSP delete", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:57:21 UTC", "rule": "win_susp_desktopimgdownldr_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

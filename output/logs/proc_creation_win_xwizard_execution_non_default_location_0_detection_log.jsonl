@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 18:24:59 UTC", "rule": "proc_creation_win_xwizard_execution_non_default_location_0", "phase": "original", "command": "\\xwizard.exe xwizard.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:59 UTC", "rule": "proc_creation_win_xwizard_execution_non_default_location_0", "phase": "insertion", "command": "\\xwizard.exe xwiza\\\"rd.exe\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:59 UTC", "rule": "proc_creation_win_xwizard_execution_non_default_location_0", "phase": "substitution", "command": "\\xwizard.exe xwizard.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:59 UTC", "rule": "proc_creation_win_xwizard_execution_non_default_location_0", "phase": "omission", "command": "\\xwizard xwizard", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:59 UTC", "rule": "proc_creation_win_xwizard_execution_non_default_location_0", "phase": "reordering", "command": "\\xwizard.exe xwizard.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:59 UTC", "rule": "proc_creation_win_xwizard_execution_non_default_location_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHh3aXphcmQuZXhlIHh3aXphcmQuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

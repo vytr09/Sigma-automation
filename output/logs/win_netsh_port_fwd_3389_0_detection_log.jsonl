@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:07:01 UTC", "rule": "win_netsh_port_fwd_3389_0", "phase": "original", "command": "netsh i p =3389 c", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:07:09 UTC", "rule": "win_netsh_port_fwd_3389_0", "phase": "insertion", "command": "netsh i #injected p =3389 c", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:07:18 UTC", "rule": "win_netsh_port_fwd_3389_0", "phase": "substitution", "command": "netsh i p =3389 c #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:07:25 UTC", "rule": "win_netsh_port_fwd_3389_0", "phase": "omission", "command": "netsh i p =3389 c # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:07:31 UTC", "rule": "win_netsh_port_fwd_3389_0", "phase": "reordering", "command": "netsh c =3389 p i", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:07:38 UTC", "rule": "win_netsh_port_fwd_3389_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

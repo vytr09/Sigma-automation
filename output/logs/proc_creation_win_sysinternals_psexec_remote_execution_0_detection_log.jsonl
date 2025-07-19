@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:17:38 UTC", "rule": "proc_creation_win_sysinternals_psexec_remote_execution_0", "phase": "original", "command": "accepteula -u -p \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:17:44 UTC", "rule": "proc_creation_win_sysinternals_psexec_remote_execution_0", "phase": "insertion", "command": "accepteula \"-u\" \"-p\" \\\\\\\\", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:17:51 UTC", "rule": "proc_creation_win_sysinternals_psexec_remote_execution_0", "phase": "substitution", "command": "accepteula -u -p \\\\\\\\ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:17:57 UTC", "rule": "proc_creation_win_sysinternals_psexec_remote_execution_0", "phase": "omission", "command": "accepteula -u -p \\\\\\\\ # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:18:04 UTC", "rule": "proc_creation_win_sysinternals_psexec_remote_execution_0", "phase": "reordering", "command": "accepteula -u \\\\\\\\ -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:18:13 UTC", "rule": "proc_creation_win_sysinternals_psexec_remote_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('YWNjZXB0ZXVsYSAtdSAtcCBcXFxc')) | Invoke-Expression\" ", "status": "BYPASSED"}

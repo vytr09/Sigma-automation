@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:28:09 UTC", "rule": "proc_creation_win_powershell_token_obfuscation_0", "phase": "original", "command": "${env:path}", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:28:09 UTC", "rule": "proc_creation_win_powershell_token_obfuscation_0", "phase": "insertion", "command": "${env:path}", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:28:09 UTC", "rule": "proc_creation_win_powershell_token_obfuscation_0", "phase": "substitution", "command": "${env:path} #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:28:09 UTC", "rule": "proc_creation_win_powershell_token_obfuscation_0", "phase": "omission", "command": "${env:path} # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:28:09 UTC", "rule": "proc_creation_win_powershell_token_obfuscation_0", "phase": "reordering", "command": "${env:path}", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:28:09 UTC", "rule": "proc_creation_win_powershell_token_obfuscation_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAAJAB7AGUAbgB2ADoAcABhAHQAaAB9AA== ", "status": "BYPASSED"}

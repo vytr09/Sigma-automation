@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:17:27 UTC", "rule": "proc_creation_win_reg_volsnap_disable_0", "phase": "original", "command": "\\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:17:27 UTC", "rule": "proc_creation_win_reg_volsnap_disable_0", "phase": "insertion", "command": "\\Services\\VSS\\Diag /d \"D\"\"i\"\"s\"\"a\"\"b\"\"l\"\"e\"\"d\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:17:27 UTC", "rule": "proc_creation_win_reg_volsnap_disable_0", "phase": "substitution", "command": "\\Services\\VSS\\Diag /d Disabled #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:17:27 UTC", "rule": "proc_creation_win_reg_volsnap_disable_0", "phase": "omission", "command": "\\Services\\VSS\\Diag /d Disabled # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:17:27 UTC", "rule": "proc_creation_win_reg_volsnap_disable_0", "phase": "reordering", "command": "\\Services\\VSS\\Diag /d Disabled", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:17:27 UTC", "rule": "proc_creation_win_reg_volsnap_disable_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNlcnZpY2VzXFZTU1xEaWFnIC9kIERpc2FibGVk')) | Invoke-Expression\" ", "status": "BYPASSED"}

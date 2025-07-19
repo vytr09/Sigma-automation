@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:01:06 UTC", "rule": "proc_creation_win_hktl_sharp_chisel_0", "phase": "original", "command": "\\SharpChisel.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:01:18 UTC", "rule": "proc_creation_win_hktl_sharp_chisel_0", "phase": "insertion", "command": "\\\"\\SharpChisel.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:01:26 UTC", "rule": "proc_creation_win_hktl_sharp_chisel_0", "phase": "substitution", "command": "\\SharpChisel.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:01:33 UTC", "rule": "proc_creation_win_hktl_sharp_chisel_0", "phase": "omission", "command": "\\SharpChisel", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:01:39 UTC", "rule": "proc_creation_win_hktl_sharp_chisel_0", "phase": "reordering", "command": "\\SharpChisel.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:01:49 UTC", "rule": "proc_creation_win_hktl_sharp_chisel_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNoYXJwQ2hpc2VsLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

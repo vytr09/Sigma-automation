@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:57:16 UTC", "rule": "proc_creation_win_query_session_exfil_0", "phase": "original", "command": ":\\Windows\\System32\\query.exe session > process >", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:57:16 UTC", "rule": "proc_creation_win_query_session_exfil_0", "phase": "insertion", "command": ":\\Windows\\System32\\query.exe session > process >", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:57:16 UTC", "rule": "proc_creation_win_query_session_exfil_0", "phase": "substitution", "command": ":\\Windows\\System32\\query.exe session > process > #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:57:16 UTC", "rule": "proc_creation_win_query_session_exfil_0", "phase": "omission", "command": ":\\Windows\\System32\\query session > process >", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:57:16 UTC", "rule": "proc_creation_win_query_session_exfil_0", "phase": "reordering", "command": ":\\Windows\\System32\\query.exe session > process >", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:57:16 UTC", "rule": "proc_creation_win_query_session_exfil_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('OlxXaW5kb3dzXFN5c3RlbTMyXHF1ZXJ5LmV4ZSBzZXNzaW9uID4gcHJvY2VzcyA+')) | Invoke-Expression\" ", "status": "BYPASSED"}

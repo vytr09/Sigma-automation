@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:19:18 UTC", "rule": "proc_creation_win_netsh_helper_dll_persistence_0", "phase": "original", "command": "netsh.exe \\netsh.exe add helper", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:19:26 UTC", "rule": "proc_creation_win_netsh_helper_dll_persistence_0", "phase": "insertion", "command": "netsh.exe \\\"\\nets\\\"h.exe add helper", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:19:38 UTC", "rule": "proc_creation_win_netsh_helper_dll_persistence_0", "phase": "substitution", "command": "netsh.exe \\netsh.exe add helper #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:19:45 UTC", "rule": "proc_creation_win_netsh_helper_dll_persistence_0", "phase": "omission", "command": "netsh \\netsh add helper", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:19:52 UTC", "rule": "proc_creation_win_netsh_helper_dll_persistence_0", "phase": "reordering", "command": "netsh.exe \\netsh.exe add helper", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:19:59 UTC", "rule": "proc_creation_win_netsh_helper_dll_persistence_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bmV0c2guZXhlIFxuZXRzaC5leGUgYWRkIGhlbHBlcg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

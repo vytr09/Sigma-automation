@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 18:16:17 UTC", "rule": "proc_creation_win_wmic_squiblytwo_bypass_0", "phase": "original", "command": "\\wmic.exe wmic.exe format: http", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:16:17 UTC", "rule": "proc_creation_win_wmic_squiblytwo_bypass_0", "phase": "insertion", "command": "\\wmic.exe wmic.exe \\\"format:\\\" http", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:16:17 UTC", "rule": "proc_creation_win_wmic_squiblytwo_bypass_0", "phase": "substitution", "command": "\\wmic.exe wmic.exe format: http #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:16:17 UTC", "rule": "proc_creation_win_wmic_squiblytwo_bypass_0", "phase": "omission", "command": "\\wmic wmic format: http", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:16:17 UTC", "rule": "proc_creation_win_wmic_squiblytwo_bypass_0", "phase": "reordering", "command": "\\wmic.exe format: http wmic.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:16:17 UTC", "rule": "proc_creation_win_wmic_squiblytwo_bypass_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdtaWMuZXhlIHdtaWMuZXhlIGZvcm1hdDogaHR0cA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

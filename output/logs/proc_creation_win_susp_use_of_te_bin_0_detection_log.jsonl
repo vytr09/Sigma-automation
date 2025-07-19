@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:08:40 UTC", "rule": "proc_creation_win_susp_use_of_te_bin_0", "phase": "original", "command": "\\te.exe \\te.exe \\te.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:08:47 UTC", "rule": "proc_creation_win_susp_use_of_te_bin_0", "phase": "insertion", "command": "\\te.exe \\te.exe \\te\".exe\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:08:53 UTC", "rule": "proc_creation_win_susp_use_of_te_bin_0", "phase": "substitution", "command": "\\te.exe \\te.exe \\te.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:08:59 UTC", "rule": "proc_creation_win_susp_use_of_te_bin_0", "phase": "omission", "command": "\\te \\te \\te", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:09:08 UTC", "rule": "proc_creation_win_susp_use_of_te_bin_0", "phase": "reordering", "command": "\\te.exe \\te.exe \\te.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:09:15 UTC", "rule": "proc_creation_win_susp_use_of_te_bin_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRlLmV4ZSBcdGUuZXhlIFx0ZS5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

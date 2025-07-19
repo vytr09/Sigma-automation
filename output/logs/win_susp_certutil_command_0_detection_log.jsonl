@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 10:14:06 UTC", "rule": "win_susp_certutil_command_0", "phase": "original", "command": "certutil -URL", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:14:16 UTC", "rule": "win_susp_certutil_command_0", "phase": "insertion", "command": "certutil\t-URL", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:14:28 UTC", "rule": "win_susp_certutil_command_0", "phase": "substitution", "command": "certutil -URL #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:14:35 UTC", "rule": "win_susp_certutil_command_0", "phase": "omission", "command": "certutil -URL # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:14:58 UTC", "rule": "win_susp_certutil_command_0", "phase": "reordering", "command": "certutil -URL", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:15:08 UTC", "rule": "win_susp_certutil_command_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

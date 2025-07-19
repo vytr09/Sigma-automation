@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:56:24 UTC", "rule": "proc_creation_win_schtasks_delete_all_0", "phase": "original", "command": "\\schtasks.exe /delete /tn \\ /f", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:56:32 UTC", "rule": "proc_creation_win_schtasks_delete_all_0", "phase": "insertion", "command": "\\schtasks.exe /\"{cmd_part1}\" /\"{cmd_part2}\" \\ /f", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:56:37 UTC", "rule": "proc_creation_win_schtasks_delete_all_0", "phase": "substitution", "command": "\\schtasks.exe -delete /tn \\ /f", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:56:44 UTC", "rule": "proc_creation_win_schtasks_delete_all_0", "phase": "omission", "command": "\\schtasks /delete /tn \\ /f", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:56:50 UTC", "rule": "proc_creation_win_schtasks_delete_all_0", "phase": "reordering", "command": "\\schtasks.exe /delete /tn \\ /f", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:56:58 UTC", "rule": "proc_creation_win_schtasks_delete_all_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvZGVsZXRlIC90biBcIC9m')) | Invoke-Expression\" ", "status": "BYPASSED"}

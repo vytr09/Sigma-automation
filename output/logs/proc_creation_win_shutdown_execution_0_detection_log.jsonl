@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:12:05 UTC", "rule": "proc_creation_win_shutdown_execution_0", "phase": "original", "command": "\\shutdown.exe /r /s", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:12:12 UTC", "rule": "proc_creation_win_shutdown_execution_0", "phase": "insertion", "command": "\\shutdown.exe /\"{cmd_part}\" /s", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:12:18 UTC", "rule": "proc_creation_win_shutdown_execution_0", "phase": "substitution", "command": "\\shutdown.exe /r /s #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:12:24 UTC", "rule": "proc_creation_win_shutdown_execution_0", "phase": "omission", "command": "\\shutdown /r /s", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:12:30 UTC", "rule": "proc_creation_win_shutdown_execution_0", "phase": "reordering", "command": "\\shutdown.exe /r /s", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:12:36 UTC", "rule": "proc_creation_win_shutdown_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNodXRkb3duLmV4ZSAvciAvcw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

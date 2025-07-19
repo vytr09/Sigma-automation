@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:48:18 UTC", "rule": "proc_creation_win_pua_frp_0", "phase": "original", "command": "\\frpc.exe \\frps.exe \\frpc.ini", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:18 UTC", "rule": "proc_creation_win_pua_frp_0", "phase": "insertion", "command": "\\frpc.exe \\\"\\frps.exe\\\" \\frpc.ini", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:18 UTC", "rule": "proc_creation_win_pua_frp_0", "phase": "substitution", "command": "\\frpc.exe \\frps.exe \\frpc.ini #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:18 UTC", "rule": "proc_creation_win_pua_frp_0", "phase": "omission", "command": "\\frpc \\frps \\frpc.ini", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:18 UTC", "rule": "proc_creation_win_pua_frp_0", "phase": "reordering", "command": "\\frpc.exe \\frpc.ini \\frps.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:48:18 UTC", "rule": "proc_creation_win_pua_frp_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGZycGMuZXhlIFxmcnBzLmV4ZSBcZnJwYy5pbmk=')) | Invoke-Expression\" ", "status": "BYPASSED"}

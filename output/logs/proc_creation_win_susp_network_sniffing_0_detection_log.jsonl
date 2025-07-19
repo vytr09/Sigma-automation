@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:00:17 UTC", "rule": "proc_creation_win_susp_network_sniffing_0", "phase": "original", "command": "\\tshark.exe -i \\windump.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:00:26 UTC", "rule": "proc_creation_win_susp_network_sniffing_0", "phase": "insertion", "command": "\\\"\\tshark.exe\\\" -i \\windump.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:00:34 UTC", "rule": "proc_creation_win_susp_network_sniffing_0", "phase": "substitution", "command": "\\tshark.exe -i \\windump.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:00:40 UTC", "rule": "proc_creation_win_susp_network_sniffing_0", "phase": "omission", "command": "\\tshark -i \\windump", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:00:58 UTC", "rule": "proc_creation_win_susp_network_sniffing_0", "phase": "reordering", "command": "\\tshark.exe -i \\windump.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:01:12 UTC", "rule": "proc_creation_win_susp_network_sniffing_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHRzaGFyay5leGUgLWkgXHdpbmR1bXAuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

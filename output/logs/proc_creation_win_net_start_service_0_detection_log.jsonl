@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:21:28 UTC", "rule": "proc_creation_win_net_start_service_0", "phase": "original", "command": "\\net.exe \\net1.exe net.exe net1.exe start", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:28 UTC", "rule": "proc_creation_win_net_start_service_0", "phase": "insertion", "command": "\\net.exe \"\\\"\"n\"\"e\"\"t\"\"1\"\".\"\"e\"\"x\"\"e\" net.exe net1.exe start", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:28 UTC", "rule": "proc_creation_win_net_start_service_0", "phase": "substitution", "command": "\\net.exe \\net1.exe net.exe net1.exe start #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:28 UTC", "rule": "proc_creation_win_net_start_service_0", "phase": "omission", "command": "\\net \\net1 net net1 start", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:28 UTC", "rule": "proc_creation_win_net_start_service_0", "phase": "reordering", "command": "\\net.exe \\net1.exe net.exe net1.exe start", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:28 UTC", "rule": "proc_creation_win_net_start_service_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgc3RhcnQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:21:39 UTC", "rule": "proc_creation_win_net_user_add_0", "phase": "original", "command": "\\net.exe \\net1.exe net.exe net1.exe user add", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:39 UTC", "rule": "proc_creation_win_net_user_add_0", "phase": "insertion", "command": "\\net.exe \\net1.exe net.exe net1.exe \"user\" \"add\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:39 UTC", "rule": "proc_creation_win_net_user_add_0", "phase": "substitution", "command": "\\net.exe \\net1.exe net.exe net1.exe user add #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:39 UTC", "rule": "proc_creation_win_net_user_add_0", "phase": "omission", "command": "\\net \\net1 net net1 user add", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:39 UTC", "rule": "proc_creation_win_net_user_add_0", "phase": "reordering", "command": "\\net.exe net.exe net1.exe \\net1.exe user add", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:21:39 UTC", "rule": "proc_creation_win_net_user_add_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5ldC5leGUgXG5ldDEuZXhlIG5ldC5leGUgbmV0MS5leGUgdXNlciBhZGQ=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:35:49 UTC", "rule": "proc_creation_win_uac_bypass_pkgmgr_dism_0", "phase": "original", "command": "\\pkgmgr.exe \\dism.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:35:56 UTC", "rule": "proc_creation_win_uac_bypass_pkgmgr_dism_0", "phase": "insertion", "command": "\\pkgmgr.exe \\dis\\\"m.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:36:02 UTC", "rule": "proc_creation_win_uac_bypass_pkgmgr_dism_0", "phase": "substitution", "command": "\\pkgmgr.exe \\dism.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:36:10 UTC", "rule": "proc_creation_win_uac_bypass_pkgmgr_dism_0", "phase": "omission", "command": "\\pkgmgr \\dism", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:36:17 UTC", "rule": "proc_creation_win_uac_bypass_pkgmgr_dism_0", "phase": "reordering", "command": "\\pkgmgr.exe \\dism.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:36:22 UTC", "rule": "proc_creation_win_uac_bypass_pkgmgr_dism_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBrZ21nci5leGUgXGRpc20uZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

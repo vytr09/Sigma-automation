@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 06:55:32 UTC", "rule": "proc_creation_win_certmgr_certificate_installation_0", "phase": "original", "command": "\\CertMgr.exe CERTMGT.EXE /add root", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:56:00 UTC", "rule": "proc_creation_win_certmgr_certificate_installation_0", "phase": "insertion", "command": "\\CertMgr.exe \\\"CERTM\\\"GT.EXE /add root", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:56:06 UTC", "rule": "proc_creation_win_certmgr_certificate_installation_0", "phase": "substitution", "command": "\\CertMgr.exe CERTMGT.EXE /add root #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:56:19 UTC", "rule": "proc_creation_win_certmgr_certificate_installation_0", "phase": "omission", "command": "\\CertMgr CERTMGT /add root", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:56:36 UTC", "rule": "proc_creation_win_certmgr_certificate_installation_0", "phase": "reordering", "command": "\\CertMgr.exe CERTMGT.EXE /add root", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:56:44 UTC", "rule": "proc_creation_win_certmgr_certificate_installation_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XENlcnRNZ3IuZXhlIENFUlRNR1QuRVhFIC9hZGQgcm9vdA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

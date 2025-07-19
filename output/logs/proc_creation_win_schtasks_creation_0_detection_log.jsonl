@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:55:30 UTC", "rule": "proc_creation_win_schtasks_creation_0", "phase": "original", "command": "\\schtasks.exe /create", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:55:38 UTC", "rule": "proc_creation_win_schtasks_creation_0", "phase": "insertion", "command": "\"\\schtasks.exe\" /create", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:55:44 UTC", "rule": "proc_creation_win_schtasks_creation_0", "phase": "substitution", "command": "\\schtasks.exe -create", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:55:50 UTC", "rule": "proc_creation_win_schtasks_creation_0", "phase": "omission", "command": "\\schtasks /create", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:55:58 UTC", "rule": "proc_creation_win_schtasks_creation_0", "phase": "reordering", "command": "\\schtasks.exe /create", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:56:05 UTC", "rule": "proc_creation_win_schtasks_creation_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvY3JlYXRl')) | Invoke-Expression\" ", "status": "BYPASSED"}

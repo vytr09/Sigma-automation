@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:20:28 UTC", "rule": "proc_creation_win_remote_access_tools_logmein_0", "phase": "original", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:20:28 UTC", "rule": "proc_creation_win_remote_access_tools_logmein_0", "phase": "insertion", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:20:28 UTC", "rule": "proc_creation_win_remote_access_tools_logmein_0", "phase": "substitution", "command": "<no command found> #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:20:28 UTC", "rule": "proc_creation_win_remote_access_tools_logmein_0", "phase": "omission", "command": "<no command found> # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:20:28 UTC", "rule": "proc_creation_win_remote_access_tools_logmein_0", "phase": "reordering", "command": "<no command found>", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:20:28 UTC", "rule": "proc_creation_win_remote_access_tools_logmein_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('PG5vIGNvbW1hbmQgZm91bmQ+')) | Invoke-Expression\" ", "status": "BYPASSED"}

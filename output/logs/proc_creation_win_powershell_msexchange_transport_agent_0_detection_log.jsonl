@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:12:18 UTC", "rule": "proc_creation_win_powershell_msexchange_transport_agent_0", "phase": "original", "command": "Install-TransportAgent", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:12:34 UTC", "rule": "proc_creation_win_powershell_msexchange_transport_agent_0", "phase": "insertion", "command": "Install-TransportAgent", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:12:45 UTC", "rule": "proc_creation_win_powershell_msexchange_transport_agent_0", "phase": "substitution", "command": "Install-TransportAgent #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:13:02 UTC", "rule": "proc_creation_win_powershell_msexchange_transport_agent_0", "phase": "omission", "command": "Install-TransportAgent # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:13:12 UTC", "rule": "proc_creation_win_powershell_msexchange_transport_agent_0", "phase": "reordering", "command": "Install-TransportAgent", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:13:23 UTC", "rule": "proc_creation_win_powershell_msexchange_transport_agent_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('SW5zdGFsbC1UcmFuc3BvcnRBZ2VudA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

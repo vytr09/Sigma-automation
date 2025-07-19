@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:39:23 UTC", "rule": "proc_creation_win_ultravnc_0", "phase": "original", "command": "VNCViewer.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:39:23 UTC", "rule": "proc_creation_win_ultravnc_0", "phase": "insertion", "command": "VNCViewer.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:39:23 UTC", "rule": "proc_creation_win_ultravnc_0", "phase": "substitution", "command": "VNCViewer.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:39:23 UTC", "rule": "proc_creation_win_ultravnc_0", "phase": "omission", "command": "VNCViewer", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:39:23 UTC", "rule": "proc_creation_win_ultravnc_0", "phase": "reordering", "command": "VNCViewer.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:39:23 UTC", "rule": "proc_creation_win_ultravnc_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Vk5DVmlld2VyLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

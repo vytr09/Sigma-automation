@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:21:40 UTC", "rule": "proc_creation_win_kd_execution_0", "phase": "original", "command": "\\kd.exe kd.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:21:47 UTC", "rule": "proc_creation_win_kd_execution_0", "phase": "insertion", "command": "\\\"k\"\"d\"\".\"\"e\"\"x\"\"e\" kd.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:21:52 UTC", "rule": "proc_creation_win_kd_execution_0", "phase": "substitution", "command": "\\kd.exe kd.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:21:59 UTC", "rule": "proc_creation_win_kd_execution_0", "phase": "omission", "command": "\\kd kd", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:22:06 UTC", "rule": "proc_creation_win_kd_execution_0", "phase": "reordering", "command": "\\kd.exe kd.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:22:12 UTC", "rule": "proc_creation_win_kd_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGtkLmV4ZSBrZC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

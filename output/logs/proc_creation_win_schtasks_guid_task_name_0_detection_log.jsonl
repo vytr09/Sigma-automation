@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:57:26 UTC", "rule": "proc_creation_win_schtasks_guid_task_name_0", "phase": "original", "command": "\\schtasks.exe /Create /TN /TN '{ /TN { } }' }", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:57:26 UTC", "rule": "proc_creation_win_schtasks_guid_task_name_0", "phase": "insertion", "command": "\\schtasks.exe /Create /TN /TN '{ /TN { } \\\"}\\\"\\\"'\\\" }", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:57:26 UTC", "rule": "proc_creation_win_schtasks_guid_task_name_0", "phase": "substitution", "command": "\\schtasks.exe /Create /TN /TN '{ /TN { } }' } #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:57:26 UTC", "rule": "proc_creation_win_schtasks_guid_task_name_0", "phase": "omission", "command": "\\schtasks /Create /TN /TN '{ /TN { } }' }", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:57:26 UTC", "rule": "proc_creation_win_schtasks_guid_task_name_0", "phase": "reordering", "command": "\\schtasks.exe /Create /TN /TN '{ /TN { } }' }", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:57:26 UTC", "rule": "proc_creation_win_schtasks_guid_task_name_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNjaHRhc2tzLmV4ZSAvQ3JlYXRlIC9UTiAvVE4gJ3sgL1ROIHsgfSB9JyB9')) | Invoke-Expression\" ", "status": "BYPASSED"}

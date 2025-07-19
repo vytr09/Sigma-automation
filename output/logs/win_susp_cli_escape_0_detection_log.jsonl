@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 10:38:05 UTC", "rule": "win_susp_cli_escape_0", "phase": "original", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:38:19 UTC", "rule": "win_susp_cli_escape_0", "phase": "insertion", "command": "h\\\"t\\\"t\\\"p # inserted", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:38:26 UTC", "rule": "win_susp_cli_escape_0", "phase": "substitution", "command": "h\\\"t\\\"t\\\"p #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:38:36 UTC", "rule": "win_susp_cli_escape_0", "phase": "omission", "command": "h\\\"t\\\"t\\\"p # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:38:47 UTC", "rule": "win_susp_cli_escape_0", "phase": "reordering", "command": "h\\\"t\\\"t\\\"p", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:38:54 UTC", "rule": "win_susp_cli_escape_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:05:46 UTC", "rule": "proc_creation_win_hktl_uacme_0", "phase": "original", "command": "Akagi.exe Akagi64.exe \\Akagi64.exe \\Akagi.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:46 UTC", "rule": "proc_creation_win_hktl_uacme_0", "phase": "insertion", "command": "Akagi.exe \"A\"\"k\"\"a\"\"g\"\"i\"\"6\"\"4\"\".\"\"e\"\"x\"\"e\" \\Akagi64.exe \\Akagi.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:46 UTC", "rule": "proc_creation_win_hktl_uacme_0", "phase": "substitution", "command": "Akagi.exe Akagi64.exe \\Akagi64.exe \\Akagi.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:46 UTC", "rule": "proc_creation_win_hktl_uacme_0", "phase": "omission", "command": "Akagi Akagi64 \\Akagi64 \\Akagi", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:46 UTC", "rule": "proc_creation_win_hktl_uacme_0", "phase": "reordering", "command": "Akagi.exe \\Akagi64.exe \\Akagi.exe Akagi64.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:46 UTC", "rule": "proc_creation_win_hktl_uacme_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('QWthZ2kuZXhlIEFrYWdpNjQuZXhlIFxBa2FnaTY0LmV4ZSBcQWthZ2kuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

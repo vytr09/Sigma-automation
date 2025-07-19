@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:59:33 UTC", "rule": "proc_creation_win_rasdial_execution_0", "phase": "original", "command": "rasdial.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:59:40 UTC", "rule": "proc_creation_win_rasdial_execution_0", "phase": "insertion", "command": "rasdial.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:59:46 UTC", "rule": "proc_creation_win_rasdial_execution_0", "phase": "substitution", "command": "rasdial.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:59:52 UTC", "rule": "proc_creation_win_rasdial_execution_0", "phase": "omission", "command": "rasdial", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:00:03 UTC", "rule": "proc_creation_win_rasdial_execution_0", "phase": "reordering", "command": "rasdial.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:00:11 UTC", "rule": "proc_creation_win_rasdial_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('cmFzZGlhbC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

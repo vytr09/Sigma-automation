@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:27:40 UTC", "rule": "proc_creation_win_cloudflared_portable_execution_0", "phase": "original", "command": "\\cloudflared.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:27:40 UTC", "rule": "proc_creation_win_cloudflared_portable_execution_0", "phase": "insertion", "command": "\\\"c\"\"l\"\"o\"\"u\"\"d\"\"f\"\"l\"\"a\"\"r\"\"e\"\"d\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:27:40 UTC", "rule": "proc_creation_win_cloudflared_portable_execution_0", "phase": "substitution", "command": "\\cloudflared.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:27:40 UTC", "rule": "proc_creation_win_cloudflared_portable_execution_0", "phase": "omission", "command": "\\cloudflared", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:27:40 UTC", "rule": "proc_creation_win_cloudflared_portable_execution_0", "phase": "reordering", "command": "\\cloudflared.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:27:40 UTC", "rule": "proc_creation_win_cloudflared_portable_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsb3VkZmxhcmVkLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

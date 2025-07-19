@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 06:59:31 UTC", "rule": "proc_creation_win_certutil_decode_0", "phase": "original", "command": "\\certutil.exe CertUtil.exe -decode -decodehex", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:59:38 UTC", "rule": "proc_creation_win_certutil_decode_0", "phase": "insertion", "command": "\\certutil.exe CertUtil.exe \\\"-\\\"\\\"d\\\"\\\"e\\\"\\\"c\\\"\\\"o\\\"\\\"d\\\"\\\"e\\\" -decodehex", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:59:44 UTC", "rule": "proc_creation_win_certutil_decode_0", "phase": "substitution", "command": "\\certutil.exe CertUtil.exe --decode --decodehex", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:59:59 UTC", "rule": "proc_creation_win_certutil_decode_0", "phase": "omission", "command": "\\certutil CertUtil -decode -decodehex", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:00:24 UTC", "rule": "proc_creation_win_certutil_decode_0", "phase": "reordering", "command": "\\certutil.exe -decode -decodehex CertUtil.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:00:33 UTC", "rule": "proc_creation_win_certutil_decode_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgLWRlY29kZSAtZGVjb2RlaGV4')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:29:10 UTC", "rule": "proc_creation_win_susp_embed_exe_lnk_0", "phase": "original", "command": "powershell .lnk", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:29:10 UTC", "rule": "proc_creation_win_susp_embed_exe_lnk_0", "phase": "insertion", "command": "powershell \".l\"nk", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:29:10 UTC", "rule": "proc_creation_win_susp_embed_exe_lnk_0", "phase": "substitution", "command": "powershell .lnk #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:29:10 UTC", "rule": "proc_creation_win_susp_embed_exe_lnk_0", "phase": "omission", "command": "powershell .lnk # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:29:10 UTC", "rule": "proc_creation_win_susp_embed_exe_lnk_0", "phase": "reordering", "command": "powershell .lnk", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:29:10 UTC", "rule": "proc_creation_win_susp_embed_exe_lnk_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAgAC4AbABuAGsA ", "status": "BYPASSED"}

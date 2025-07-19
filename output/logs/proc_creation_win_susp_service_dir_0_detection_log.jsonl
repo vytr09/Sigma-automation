@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:06:50 UTC", "rule": "proc_creation_win_susp_service_dir_0", "phase": "original", "command": "\\services.exe \\svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:06:50 UTC", "rule": "proc_creation_win_susp_service_dir_0", "phase": "insertion", "command": "\"\\services.exe\" \\svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:06:50 UTC", "rule": "proc_creation_win_susp_service_dir_0", "phase": "substitution", "command": "\\services.exe \\svchost.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:06:50 UTC", "rule": "proc_creation_win_susp_service_dir_0", "phase": "omission", "command": "\\services \\svchost", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:06:50 UTC", "rule": "proc_creation_win_susp_service_dir_0", "phase": "reordering", "command": "\\services.exe \\svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:06:50 UTC", "rule": "proc_creation_win_susp_service_dir_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNlcnZpY2VzLmV4ZSBcc3ZjaG9zdC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

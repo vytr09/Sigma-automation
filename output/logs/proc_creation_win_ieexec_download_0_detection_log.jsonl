@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:09:19 UTC", "rule": "proc_creation_win_ieexec_download_0", "phase": "original", "command": "\\IEExec.exe IEExec.exe http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:09:26 UTC", "rule": "proc_creation_win_ieexec_download_0", "phase": "insertion", "command": "\"\\IEExec.exe\" IEExec.exe http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:09:32 UTC", "rule": "proc_creation_win_ieexec_download_0", "phase": "substitution", "command": "\\IEExec.exe IEExec.exe http:// https:// #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:09:37 UTC", "rule": "proc_creation_win_ieexec_download_0", "phase": "omission", "command": "\\IEExec IEExec http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:09:43 UTC", "rule": "proc_creation_win_ieexec_download_0", "phase": "reordering", "command": "\\IEExec.exe https:// http:// IEExec.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:09:49 UTC", "rule": "proc_creation_win_ieexec_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XElFRXhlYy5leGUgSUVFeGVjLmV4ZSBodHRwOi8vIGh0dHBzOi8v')) | Invoke-Expression\" ", "status": "BYPASSED"}

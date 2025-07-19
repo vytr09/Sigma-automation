@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:06:07 UTC", "rule": "proc_creation_win_hktl_winpwn_0", "phase": "original", "command": "Offline_Winpwn WinPwn WinPwn.exe WinPwn.ps1", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:06:13 UTC", "rule": "proc_creation_win_hktl_winpwn_0", "phase": "insertion", "command": "Offline_Winpwn WinPwn \"W\"\"i\"\"n\"\"P\"\"w\"\"n\"\".\"\"e\"\"x\"\"e\" WinPwn.ps1", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:06:18 UTC", "rule": "proc_creation_win_hktl_winpwn_0", "phase": "substitution", "command": "Offline_Winpwn WinPwn WinPwn.exe WinPwn.ps1 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:06:23 UTC", "rule": "proc_creation_win_hktl_winpwn_0", "phase": "omission", "command": "Offline_Winpwn WinPwn WinPwn WinPwn", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:06:29 UTC", "rule": "proc_creation_win_hktl_winpwn_0", "phase": "reordering", "command": "Offline_Winpwn WinPwn WinPwn.exe WinPwn.ps1", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:06:35 UTC", "rule": "proc_creation_win_hktl_winpwn_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('T2ZmbGluZV9XaW5wd24gV2luUHduIFdpblB3bi5leGUgV2luUHduLnBzMQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

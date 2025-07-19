@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:00:55 UTC", "rule": "proc_creation_win_regasm_no_flag_or_dll_execution_0", "phase": "original", "command": "\\RegAsm.exe RegAsm.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:00:55 UTC", "rule": "proc_creation_win_regasm_no_flag_or_dll_execution_0", "phase": "insertion", "command": "\\RegAsm.exe \"RegAs\"m.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:00:55 UTC", "rule": "proc_creation_win_regasm_no_flag_or_dll_execution_0", "phase": "substitution", "command": "\\RegAsm.exe RegAsm.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:00:55 UTC", "rule": "proc_creation_win_regasm_no_flag_or_dll_execution_0", "phase": "omission", "command": "\\RegAsm RegAsm", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:00:55 UTC", "rule": "proc_creation_win_regasm_no_flag_or_dll_execution_0", "phase": "reordering", "command": "\\RegAsm.exe RegAsm.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:00:55 UTC", "rule": "proc_creation_win_regasm_no_flag_or_dll_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFJlZ0FzbS5leGUgUmVnQXNtLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

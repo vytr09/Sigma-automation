@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 06:57:43 UTC", "rule": "proc_creation_win_certoc_load_dll_0", "phase": "original", "command": "\\certoc.exe CertOC.exe -LoadDLL", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:57:50 UTC", "rule": "proc_creation_win_certoc_load_dll_0", "phase": "insertion", "command": "\\certoc.exe \"CertOC.exe\" -LoadDLL", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:57:57 UTC", "rule": "proc_creation_win_certoc_load_dll_0", "phase": "substitution", "command": "\\certoc.exe CertOC.exe -LoadDLL #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:58:06 UTC", "rule": "proc_creation_win_certoc_load_dll_0", "phase": "omission", "command": "\\certoc CertOC -LoadDLL", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:58:29 UTC", "rule": "proc_creation_win_certoc_load_dll_0", "phase": "reordering", "command": "\\certoc.exe CertOC.exe -LoadDLL", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:58:35 UTC", "rule": "proc_creation_win_certoc_load_dll_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnRvYy5leGUgQ2VydE9DLmV4ZSAtTG9hZERMTA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:17:48 UTC", "rule": "proc_creation_win_esentutl_params_0", "phase": "original", "command": "esentutl /p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:17:58 UTC", "rule": "proc_creation_win_esentutl_params_0", "phase": "insertion", "command": "esentutl /\"p\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:18:06 UTC", "rule": "proc_creation_win_esentutl_params_0", "phase": "substitution", "command": "esentutl /p #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:13 UTC", "rule": "proc_creation_win_esentutl_params_0", "phase": "omission", "command": "esentutl /p # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:20 UTC", "rule": "proc_creation_win_esentutl_params_0", "phase": "reordering", "command": "esentutl /p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:18:30 UTC", "rule": "proc_creation_win_esentutl_params_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZXNlbnR1dGwgL3A=')) | Invoke-Expression\" ", "status": "BYPASSED"}

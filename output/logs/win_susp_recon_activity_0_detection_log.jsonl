@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:44:50 UTC", "rule": "win_susp_recon_activity_0", "phase": "original", "command": "net group \\\"enterprise admins\\\" /domain", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:45:05 UTC", "rule": "win_susp_recon_activity_0", "phase": "insertion", "command": "#hijack net group \\\"enterprise admins\\\" /domain", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:45:14 UTC", "rule": "win_susp_recon_activity_0", "phase": "substitution", "command": "net group \\\"enterprise admins\\\" /domain #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:45:22 UTC", "rule": "win_susp_recon_activity_0", "phase": "omission", "command": "net group \\\"enterprise admins\\\" /domain # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:45:28 UTC", "rule": "win_susp_recon_activity_0", "phase": "reordering", "command": "net /domain admins\\\" \\\"enterprise group", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:45:35 UTC", "rule": "win_susp_recon_activity_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

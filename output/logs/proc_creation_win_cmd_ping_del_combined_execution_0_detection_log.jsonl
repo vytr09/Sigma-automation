@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:44:55 UTC", "rule": "proc_creation_win_cmd_ping_del_combined_execution_0", "phase": "original", "command": "-n Nul -f -q ping del", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:45:15 UTC", "rule": "proc_creation_win_cmd_ping_del_combined_execution_0", "phase": "insertion", "command": "-n Nul -f -q pi\"ng\" del", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:45:23 UTC", "rule": "proc_creation_win_cmd_ping_del_combined_execution_0", "phase": "substitution", "command": "-n Nul -f -q ping del #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:45:32 UTC", "rule": "proc_creation_win_cmd_ping_del_combined_execution_0", "phase": "omission", "command": "-n Nul -f -q ping del # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:45:41 UTC", "rule": "proc_creation_win_cmd_ping_del_combined_execution_0", "phase": "reordering", "command": "-n del Nul -f -q ping", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:45:50 UTC", "rule": "proc_creation_win_cmd_ping_del_combined_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LW4gTnVsIC1mIC1xIHBpbmcgZGVs')) | Invoke-Expression\" ", "status": "BYPASSED"}

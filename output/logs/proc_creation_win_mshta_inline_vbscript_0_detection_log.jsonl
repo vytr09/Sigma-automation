@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:59:28 UTC", "rule": "proc_creation_win_mshta_inline_vbscript_0", "phase": "original", "command": "Wscript. .Shell .Run", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:59:35 UTC", "rule": "proc_creation_win_mshta_inline_vbscript_0", "phase": "insertion", "command": "Wscript. .Shell .R\\\"un\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:59:40 UTC", "rule": "proc_creation_win_mshta_inline_vbscript_0", "phase": "substitution", "command": "Wscript. .Shell .Run #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:59:46 UTC", "rule": "proc_creation_win_mshta_inline_vbscript_0", "phase": "omission", "command": "Wscript. .Shell .Run # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:59:52 UTC", "rule": "proc_creation_win_mshta_inline_vbscript_0", "phase": "reordering", "command": "Wscript. .Run .Shell", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:59:58 UTC", "rule": "proc_creation_win_mshta_inline_vbscript_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('V3NjcmlwdC4gLlNoZWxsIC5SdW4=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:34:24 UTC", "rule": "proc_creation_win_php_inline_command_execution_0", "phase": "original", "command": "\\php.exe php.exe -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:34:31 UTC", "rule": "proc_creation_win_php_inline_command_execution_0", "phase": "insertion", "command": "\\php.exe \\\"p\\\"\\\"h\\\"\\\"p\\\"\\\".\\\"\\\"e\\\"\\\"x\\\"\\\"e\\\" -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:34:37 UTC", "rule": "proc_creation_win_php_inline_command_execution_0", "phase": "substitution", "command": "\\php.exe php.exe -r #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:34:43 UTC", "rule": "proc_creation_win_php_inline_command_execution_0", "phase": "omission", "command": "\\php php -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:34:49 UTC", "rule": "proc_creation_win_php_inline_command_execution_0", "phase": "reordering", "command": "\\php.exe php.exe -r", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:34:56 UTC", "rule": "proc_creation_win_php_inline_command_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBocC5leGUgcGhwLmV4ZSAtcg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

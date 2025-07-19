@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:16:24 UTC", "rule": "proc_creation_win_sysinternals_psexec_execution_0", "phase": "original", "command": "\\psexec.exe psexec.c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:16:30 UTC", "rule": "proc_creation_win_sysinternals_psexec_execution_0", "phase": "insertion", "command": "\\psexec.exe \\\"psex\\\"ec.c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:16:36 UTC", "rule": "proc_creation_win_sysinternals_psexec_execution_0", "phase": "substitution", "command": "\\psexec.exe psexec.c #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:16:42 UTC", "rule": "proc_creation_win_sysinternals_psexec_execution_0", "phase": "omission", "command": "\\psexec psexec.c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:16:48 UTC", "rule": "proc_creation_win_sysinternals_psexec_execution_0", "phase": "reordering", "command": "\\psexec.exe psexec.c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:16:54 UTC", "rule": "proc_creation_win_sysinternals_psexec_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBzZXhlYy5leGUgcHNleGVjLmM=')) | Invoke-Expression\" ", "status": "BYPASSED"}

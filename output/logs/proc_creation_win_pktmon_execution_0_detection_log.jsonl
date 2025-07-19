@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:35:43 UTC", "rule": "proc_creation_win_pktmon_execution_0", "phase": "original", "command": "\\pktmon.exe PktMon.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:35:50 UTC", "rule": "proc_creation_win_pktmon_execution_0", "phase": "insertion", "command": "\\pktmon.exe PktMo\"n.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:35:56 UTC", "rule": "proc_creation_win_pktmon_execution_0", "phase": "substitution", "command": "\\pktmon.exe PktMon.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:36:02 UTC", "rule": "proc_creation_win_pktmon_execution_0", "phase": "omission", "command": "\\pktmon PktMon", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:36:14 UTC", "rule": "proc_creation_win_pktmon_execution_0", "phase": "reordering", "command": "\\pktmon.exe PktMon.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:36:20 UTC", "rule": "proc_creation_win_pktmon_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBrdG1vbi5leGUgUGt0TW9uLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

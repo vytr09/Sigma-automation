@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:35:29 UTC", "rule": "proc_creation_win_renamed_rundll32_dllregisterserver_0", "phase": "original", "command": "DllRegisterServer \\rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:35:37 UTC", "rule": "proc_creation_win_renamed_rundll32_dllregisterserver_0", "phase": "insertion", "command": "DllRegisterServer \\\"\\rundll32.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:35:43 UTC", "rule": "proc_creation_win_renamed_rundll32_dllregisterserver_0", "phase": "substitution", "command": "DllRegisterServer \\rundll32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:35:49 UTC", "rule": "proc_creation_win_renamed_rundll32_dllregisterserver_0", "phase": "omission", "command": "DllRegisterServer \\rundll32", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:35:57 UTC", "rule": "proc_creation_win_renamed_rundll32_dllregisterserver_0", "phase": "reordering", "command": "DllRegisterServer \\rundll32.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:36:05 UTC", "rule": "proc_creation_win_renamed_rundll32_dllregisterserver_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RGxsUmVnaXN0ZXJTZXJ2ZXIgXHJ1bmRsbDMyLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

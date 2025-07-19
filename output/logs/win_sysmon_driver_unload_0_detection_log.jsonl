@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:57:47 UTC", "rule": "win_sysmon_driver_unload_0", "phase": "original", "command": "fltmc.exe unload sys", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:57:59 UTC", "rule": "win_sysmon_driver_unload_0", "phase": "insertion", "command": "fltmc.exe #injected unload sys", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:58:07 UTC", "rule": "win_sysmon_driver_unload_0", "phase": "substitution", "command": "fltmc.exe unload sys #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:58:14 UTC", "rule": "win_sysmon_driver_unload_0", "phase": "omission", "command": "fltmc unload sys", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:58:22 UTC", "rule": "win_sysmon_driver_unload_0", "phase": "reordering", "command": "fltmc.exe sys unload", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:59:05 UTC", "rule": "win_sysmon_driver_unload_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

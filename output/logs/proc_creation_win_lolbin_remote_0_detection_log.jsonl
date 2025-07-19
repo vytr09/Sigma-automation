@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:41:12 UTC", "rule": "proc_creation_win_lolbin_remote_0", "phase": "original", "command": "\\remote.exe remote.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:41:19 UTC", "rule": "proc_creation_win_lolbin_remote_0", "phase": "insertion", "command": "\\remote.exe \\\"remot\\\"e.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:41:26 UTC", "rule": "proc_creation_win_lolbin_remote_0", "phase": "substitution", "command": "\\remote.exe remote.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:41:33 UTC", "rule": "proc_creation_win_lolbin_remote_0", "phase": "omission", "command": "\\remote remote", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:41:40 UTC", "rule": "proc_creation_win_lolbin_remote_0", "phase": "reordering", "command": "\\remote.exe remote.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:41:46 UTC", "rule": "proc_creation_win_lolbin_remote_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJlbW90ZS5leGUgcmVtb3RlLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

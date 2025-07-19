@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:27:14 UTC", "rule": "win_susp_ping_hex_ip_0", "phase": "original", "command": "\\ping.exe 0x", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:27:42 UTC", "rule": "win_susp_ping_hex_ip_0", "phase": "insertion", "command": "\\ping.exe #injected 0x", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:27:53 UTC", "rule": "win_susp_ping_hex_ip_0", "phase": "substitution", "command": "\\ping.exe 0x #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:28:05 UTC", "rule": "win_susp_ping_hex_ip_0", "phase": "omission", "command": "\\ping 0x", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:28:15 UTC", "rule": "win_susp_ping_hex_ip_0", "phase": "reordering", "command": "\\ping.exe 0x", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:28:34 UTC", "rule": "win_susp_ping_hex_ip_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

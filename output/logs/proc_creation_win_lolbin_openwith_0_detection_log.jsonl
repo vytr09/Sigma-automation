@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:34:54 UTC", "rule": "proc_creation_win_lolbin_openwith_0", "phase": "original", "command": "\\OpenWith.exe /c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:35:02 UTC", "rule": "proc_creation_win_lolbin_openwith_0", "phase": "insertion", "command": "\\OpenWith.exe /\"c\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:35:12 UTC", "rule": "proc_creation_win_lolbin_openwith_0", "phase": "substitution", "command": "\\OpenWith.exe /c #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:35:18 UTC", "rule": "proc_creation_win_lolbin_openwith_0", "phase": "omission", "command": "\\OpenWith /c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:35:24 UTC", "rule": "proc_creation_win_lolbin_openwith_0", "phase": "reordering", "command": "\\OpenWith.exe /c", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:35:31 UTC", "rule": "proc_creation_win_lolbin_openwith_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE9wZW5XaXRoLmV4ZSAvYw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

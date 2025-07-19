@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 18:01:49 UTC", "rule": "proc_creation_win_winget_add_susp_custom_source_0", "phase": "original", "command": "\\winget.exe winget.exe source add", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:01:49 UTC", "rule": "proc_creation_win_winget_add_susp_custom_source_0", "phase": "insertion", "command": "\\winget.exe winget.exe source \\\"add\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:01:49 UTC", "rule": "proc_creation_win_winget_add_susp_custom_source_0", "phase": "substitution", "command": "\\winget.exe winget.exe source add #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:01:49 UTC", "rule": "proc_creation_win_winget_add_susp_custom_source_0", "phase": "omission", "command": "\\winget winget source add", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:01:49 UTC", "rule": "proc_creation_win_winget_add_susp_custom_source_0", "phase": "reordering", "command": "\\winget.exe add winget.exe source", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:01:49 UTC", "rule": "proc_creation_win_winget_add_susp_custom_source_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdpbmdldC5leGUgd2luZ2V0LmV4ZSBzb3VyY2UgYWRk')) | Invoke-Expression\" ", "status": "BYPASSED"}

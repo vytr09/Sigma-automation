@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:57:03 UTC", "rule": "win_interactive_at_0", "phase": "original", "command": "at.exe interactive", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:57:10 UTC", "rule": "win_interactive_at_0", "phase": "insertion", "command": "at.exe ^ interactive", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:57:20 UTC", "rule": "win_interactive_at_0", "phase": "substitution", "command": "at.exe interactive #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:57:27 UTC", "rule": "win_interactive_at_0", "phase": "omission", "command": "at interactive", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:57:37 UTC", "rule": "win_interactive_at_0", "phase": "reordering", "command": "at.exe interactive", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:57:45 UTC", "rule": "win_interactive_at_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

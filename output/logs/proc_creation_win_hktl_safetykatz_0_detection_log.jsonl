@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:57:19 UTC", "rule": "proc_creation_win_hktl_safetykatz_0", "phase": "original", "command": "\\SafetyKatz.exe SafetyKatz.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:57:28 UTC", "rule": "proc_creation_win_hktl_safetykatz_0", "phase": "insertion", "command": "\\SafetyKatz.exe SafetyK\\\"atz.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:57:35 UTC", "rule": "proc_creation_win_hktl_safetykatz_0", "phase": "substitution", "command": "\\SafetyKatz.exe SafetyKatz.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:57:41 UTC", "rule": "proc_creation_win_hktl_safetykatz_0", "phase": "omission", "command": "\\SafetyKatz SafetyKatz", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:57:47 UTC", "rule": "proc_creation_win_hktl_safetykatz_0", "phase": "reordering", "command": "\\SafetyKatz.exe SafetyKatz.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:57:53 UTC", "rule": "proc_creation_win_hktl_safetykatz_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNhZmV0eUthdHouZXhlIFNhZmV0eUthdHouZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

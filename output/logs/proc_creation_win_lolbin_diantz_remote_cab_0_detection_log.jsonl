@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:29:52 UTC", "rule": "proc_creation_win_lolbin_diantz_remote_cab_0", "phase": "original", "command": "diantz.exe \\\\\\\\ .cab", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:29:59 UTC", "rule": "proc_creation_win_lolbin_diantz_remote_cab_0", "phase": "insertion", "command": "diantz.exe \\\\\\\\ \".\"\"c\"\"a\"\"b\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:30:08 UTC", "rule": "proc_creation_win_lolbin_diantz_remote_cab_0", "phase": "substitution", "command": "diantz.exe \\\\\\\\ .cab #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:30:14 UTC", "rule": "proc_creation_win_lolbin_diantz_remote_cab_0", "phase": "omission", "command": "diantz \\\\\\\\ .cab", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:30:22 UTC", "rule": "proc_creation_win_lolbin_diantz_remote_cab_0", "phase": "reordering", "command": "diantz.exe \\\\\\\\ .cab", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:30:28 UTC", "rule": "proc_creation_win_lolbin_diantz_remote_cab_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('ZGlhbnR6LmV4ZSBcXFxcIC5jYWI=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:33:33 UTC", "rule": "proc_creation_win_perl_inline_command_execution_0", "phase": "original", "command": "\\perl.exe perl.exe -e", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:33:49 UTC", "rule": "proc_creation_win_perl_inline_command_execution_0", "phase": "insertion", "command": "\\\"\\perl.exe\\\" perl.exe -e", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:33:58 UTC", "rule": "proc_creation_win_perl_inline_command_execution_0", "phase": "substitution", "command": "\\perl.exe perl.exe -e #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:34:04 UTC", "rule": "proc_creation_win_perl_inline_command_execution_0", "phase": "omission", "command": "\\perl perl -e", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:34:11 UTC", "rule": "proc_creation_win_perl_inline_command_execution_0", "phase": "reordering", "command": "\\perl.exe -e perl.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:34:18 UTC", "rule": "proc_creation_win_perl_inline_command_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBlcmwuZXhlIHBlcmwuZXhlIC1l')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:54:26 UTC", "rule": "proc_creation_win_hktl_purplesharp_indicators_0", "phase": "original", "command": "PurpleSharp.exe xyz123456.exe PurpleSharp", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:54:36 UTC", "rule": "proc_creation_win_hktl_purplesharp_indicators_0", "phase": "insertion", "command": "PurpleSharp.exe \"xyz123\"456.exe PurpleSharp", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:54:44 UTC", "rule": "proc_creation_win_hktl_purplesharp_indicators_0", "phase": "substitution", "command": "PurpleSharp.exe xyz123456.exe PurpleSharp #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:54:55 UTC", "rule": "proc_creation_win_hktl_purplesharp_indicators_0", "phase": "omission", "command": "PurpleSharp xyz123456 PurpleSharp", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:55:09 UTC", "rule": "proc_creation_win_hktl_purplesharp_indicators_0", "phase": "reordering", "command": "PurpleSharp.exe PurpleSharp xyz123456.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:55:16 UTC", "rule": "proc_creation_win_hktl_purplesharp_indicators_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('UHVycGxlU2hhcnAuZXhlIHh5ejEyMzQ1Ni5leGUgUHVycGxlU2hhcnA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

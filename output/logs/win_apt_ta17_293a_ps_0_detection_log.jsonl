@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:45:36 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "original", "command": "ps.exe -accepteula", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:45:43 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "insertion", "command": "#hijack ps.exe -accepteula", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:45:50 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "substitution", "command": "ps.exe -accepteula #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:45:57 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "omission", "command": "ps -accepteula", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:46:04 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "reordering", "command": "ps.exe -accepteula", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:46:20 UTC", "rule": "win_apt_ta17_293a_ps_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

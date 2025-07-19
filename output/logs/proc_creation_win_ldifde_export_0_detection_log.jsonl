@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:23:35 UTC", "rule": "proc_creation_win_ldifde_export_0", "phase": "original", "command": "\\ldifde.exe ldifde.exe -f -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:23:42 UTC", "rule": "proc_creation_win_ldifde_export_0", "phase": "insertion", "command": "\\ldifde.exe ldifde.exe \\\"-f\\\" -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:23:47 UTC", "rule": "proc_creation_win_ldifde_export_0", "phase": "substitution", "command": "\\ldifde.exe ldifde.exe -f -i #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:23:52 UTC", "rule": "proc_creation_win_ldifde_export_0", "phase": "omission", "command": "\\ldifde ldifde -f -i", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:23:58 UTC", "rule": "proc_creation_win_ldifde_export_0", "phase": "reordering", "command": "\\ldifde.exe ldifde.exe -i -f", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:24:06 UTC", "rule": "proc_creation_win_ldifde_export_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxkaWZkZS5leGUgbGRpZmRlLmV4ZSAtZiAtaQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

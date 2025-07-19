@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:49:35 UTC", "rule": "proc_creation_win_lolbin_utilityfunctions_0", "phase": "original", "command": "UtilityFunctions.ps1 RegSnapin", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:49:41 UTC", "rule": "proc_creation_win_lolbin_utilityfunctions_0", "phase": "insertion", "command": "UtilityFunctions.ps1 RegS\"napin\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:49:47 UTC", "rule": "proc_creation_win_lolbin_utilityfunctions_0", "phase": "substitution", "command": "UtilityFunctions.ps1 RegSnapin #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:49:54 UTC", "rule": "proc_creation_win_lolbin_utilityfunctions_0", "phase": "omission", "command": "UtilityFunctions RegSnapin", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:49:59 UTC", "rule": "proc_creation_win_lolbin_utilityfunctions_0", "phase": "reordering", "command": "UtilityFunctions.ps1 RegSnapin", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:50:09 UTC", "rule": "proc_creation_win_lolbin_utilityfunctions_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('VXRpbGl0eUZ1bmN0aW9ucy5wczEgUmVnU25hcGlu')) | Invoke-Expression\" ", "status": "BYPASSED"}

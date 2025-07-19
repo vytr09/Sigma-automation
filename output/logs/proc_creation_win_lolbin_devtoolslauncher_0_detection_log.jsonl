@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:29:04 UTC", "rule": "proc_creation_win_lolbin_devtoolslauncher_0", "phase": "original", "command": "\\devtoolslauncher.exe LaunchForDeploy", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:29:15 UTC", "rule": "proc_creation_win_lolbin_devtoolslauncher_0", "phase": "insertion", "command": "\\devtoolslauncher.exe \"LaunchF\"orDeploy", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:29:21 UTC", "rule": "proc_creation_win_lolbin_devtoolslauncher_0", "phase": "substitution", "command": "\\devtoolslauncher.exe LaunchForDeploy #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:29:28 UTC", "rule": "proc_creation_win_lolbin_devtoolslauncher_0", "phase": "omission", "command": "\\devtoolslauncher LaunchForDeploy", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:29:34 UTC", "rule": "proc_creation_win_lolbin_devtoolslauncher_0", "phase": "reordering", "command": "\\devtoolslauncher.exe LaunchForDeploy", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:29:39 UTC", "rule": "proc_creation_win_lolbin_devtoolslauncher_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGRldnRvb2xzbGF1bmNoZXIuZXhlIExhdW5jaEZvckRlcGxveQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

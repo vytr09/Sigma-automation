@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:51:38 UTC", "rule": "proc_creation_win_conhost_legacy_option_0", "phase": "original", "command": "conhost.exe 0xffffffff -ForceV1", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:51:50 UTC", "rule": "proc_creation_win_conhost_legacy_option_0", "phase": "insertion", "command": "conhost.exe \\\"0xffffffff\\\" -ForceV1", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:51:58 UTC", "rule": "proc_creation_win_conhost_legacy_option_0", "phase": "substitution", "command": "conhost.exe 0xffffffff -ForceV1 #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:52:09 UTC", "rule": "proc_creation_win_conhost_legacy_option_0", "phase": "omission", "command": "conhost 0xffffffff -ForceV1", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:52:18 UTC", "rule": "proc_creation_win_conhost_legacy_option_0", "phase": "reordering", "command": "conhost.exe -ForceV1 0xffffffff", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:52:26 UTC", "rule": "proc_creation_win_conhost_legacy_option_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('Y29uaG9zdC5leGUgMHhmZmZmZmZmZiAtRm9yY2VWMQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

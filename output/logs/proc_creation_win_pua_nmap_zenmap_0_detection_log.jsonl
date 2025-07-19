@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:53:11 UTC", "rule": "proc_creation_win_pua_nmap_zenmap_0", "phase": "original", "command": "\\nmap.exe \\zennmap.exe nmap.exe zennmap.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:11 UTC", "rule": "proc_creation_win_pua_nmap_zenmap_0", "phase": "insertion", "command": "\\nmap.exe \\zennmap.exe nmap\".exe\" zennmap.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:11 UTC", "rule": "proc_creation_win_pua_nmap_zenmap_0", "phase": "substitution", "command": "\\nmap.exe \\zennmap.exe nmap.exe zennmap.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:11 UTC", "rule": "proc_creation_win_pua_nmap_zenmap_0", "phase": "omission", "command": "\\nmap \\zennmap nmap zennmap", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:11 UTC", "rule": "proc_creation_win_pua_nmap_zenmap_0", "phase": "reordering", "command": "\\nmap.exe \\zennmap.exe zennmap.exe nmap.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:53:11 UTC", "rule": "proc_creation_win_pua_nmap_zenmap_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG5tYXAuZXhlIFx6ZW5ubWFwLmV4ZSBubWFwLmV4ZSB6ZW5ubWFwLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

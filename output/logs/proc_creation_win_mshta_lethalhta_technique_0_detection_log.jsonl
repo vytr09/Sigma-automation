@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:01:18 UTC", "rule": "proc_creation_win_mshta_lethalhta_technique_0", "phase": "original", "command": "\\svchost.exe \\mshta.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:01:25 UTC", "rule": "proc_creation_win_mshta_lethalhta_technique_0", "phase": "insertion", "command": "\\svchost.exe \\msht\\\"a.exe\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:01:32 UTC", "rule": "proc_creation_win_mshta_lethalhta_technique_0", "phase": "substitution", "command": "\\svchost.exe \\mshta.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:01:39 UTC", "rule": "proc_creation_win_mshta_lethalhta_technique_0", "phase": "omission", "command": "\\svchost \\mshta", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:01:46 UTC", "rule": "proc_creation_win_mshta_lethalhta_technique_0", "phase": "reordering", "command": "\\svchost.exe \\mshta.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:01:53 UTC", "rule": "proc_creation_win_mshta_lethalhta_technique_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIFxtc2h0YS5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

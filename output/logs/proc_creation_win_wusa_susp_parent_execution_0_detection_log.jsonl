@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 18:24:45 UTC", "rule": "proc_creation_win_wusa_susp_parent_execution_0", "phase": "original", "command": "\\wusa.exe .msu", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:45 UTC", "rule": "proc_creation_win_wusa_susp_parent_execution_0", "phase": "insertion", "command": "\\wusa.exe \".msu\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:45 UTC", "rule": "proc_creation_win_wusa_susp_parent_execution_0", "phase": "substitution", "command": "\\wusa.exe .msu #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:45 UTC", "rule": "proc_creation_win_wusa_susp_parent_execution_0", "phase": "omission", "command": "\\wusa .msu", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:45 UTC", "rule": "proc_creation_win_wusa_susp_parent_execution_0", "phase": "reordering", "command": "\\wusa.exe .msu", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:24:45 UTC", "rule": "proc_creation_win_wusa_susp_parent_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHd1c2EuZXhlIC5tc3U=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:17:51 UTC", "rule": "win_susp_iss_module_install_0", "phase": "original", "command": "\\APPCMD.EXE install module /name:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:18:05 UTC", "rule": "win_susp_iss_module_install_0", "phase": "insertion", "command": "\\APPCMD.EXE install && module /name:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:18:25 UTC", "rule": "win_susp_iss_module_install_0", "phase": "substitution", "command": "\\APPCMD.EXE install module /name: #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:18:44 UTC", "rule": "win_susp_iss_module_install_0", "phase": "omission", "command": "\\APPCMD.EXE install module /name: # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:19:13 UTC", "rule": "win_susp_iss_module_install_0", "phase": "reordering", "command": "\\APPCMD.EXE install /name: module", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:20:07 UTC", "rule": "win_susp_iss_module_install_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

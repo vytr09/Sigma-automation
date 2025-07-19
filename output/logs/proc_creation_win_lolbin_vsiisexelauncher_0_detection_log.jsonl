@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:51:32 UTC", "rule": "proc_creation_win_lolbin_vsiisexelauncher_0", "phase": "original", "command": "\\VSIISExeLauncher.exe VSIISExeLauncher.exe -p -a", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:51:39 UTC", "rule": "proc_creation_win_lolbin_vsiisexelauncher_0", "phase": "insertion", "command": "\\VSIISExeLauncher.exe \"VSIISExeLauncher.exe\" \"-p\" -a", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:51:45 UTC", "rule": "proc_creation_win_lolbin_vsiisexelauncher_0", "phase": "substitution", "command": "\\VSIISExeLauncher.exe VSIISExeLauncher.exe -p -a #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:51:51 UTC", "rule": "proc_creation_win_lolbin_vsiisexelauncher_0", "phase": "omission", "command": "\\VSIISExeLauncher VSIISExeLauncher -p -a", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:51:57 UTC", "rule": "proc_creation_win_lolbin_vsiisexelauncher_0", "phase": "reordering", "command": "\\VSIISExeLauncher.exe -p -a VSIISExeLauncher.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:52:03 UTC", "rule": "proc_creation_win_lolbin_vsiisexelauncher_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZTSUlTRXhlTGF1bmNoZXIuZXhlIFZTSUlTRXhlTGF1bmNoZXIuZXhlIC1wIC1h')) | Invoke-Expression\" ", "status": "BYPASSED"}

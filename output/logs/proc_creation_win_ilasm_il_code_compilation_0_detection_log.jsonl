@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:12:58 UTC", "rule": "proc_creation_win_ilasm_il_code_compilation_0", "phase": "original", "command": "\\ilasm.exe ilasm.exe /dll /exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:13:07 UTC", "rule": "proc_creation_win_ilasm_il_code_compilation_0", "phase": "insertion", "command": "\\ilasm.exe ilasm.exe /dll /\"{cmd_part}\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:13:13 UTC", "rule": "proc_creation_win_ilasm_il_code_compilation_0", "phase": "substitution", "command": "\\ilasm.exe ilasm.exe /dll /exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:13:19 UTC", "rule": "proc_creation_win_ilasm_il_code_compilation_0", "phase": "omission", "command": "\\ilasm ilasm /dll /exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:13:24 UTC", "rule": "proc_creation_win_ilasm_il_code_compilation_0", "phase": "reordering", "command": "\\ilasm.exe ilasm.exe /dll /exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:13:30 UTC", "rule": "proc_creation_win_ilasm_il_code_compilation_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGlsYXNtLmV4ZSBpbGFzbS5leGUgL2RsbCAvZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

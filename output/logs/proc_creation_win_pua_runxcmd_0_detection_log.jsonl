@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:54:40 UTC", "rule": "proc_creation_win_pua_runxcmd_0", "phase": "original", "command": "/account=system /account=ti /exec=", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:54:40 UTC", "rule": "proc_creation_win_pua_runxcmd_0", "phase": "insertion", "command": "/account=system /account=ti /\"{cmd_part[:mid]}\"{cmd_part[mid:]}", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:54:40 UTC", "rule": "proc_creation_win_pua_runxcmd_0", "phase": "substitution", "command": "/account=system /account=ti /exec= #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:54:40 UTC", "rule": "proc_creation_win_pua_runxcmd_0", "phase": "omission", "command": "/account=system /account=ti /exec= # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:54:40 UTC", "rule": "proc_creation_win_pua_runxcmd_0", "phase": "reordering", "command": "/account=system /account=ti /exec=", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:54:40 UTC", "rule": "proc_creation_win_pua_runxcmd_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('L2FjY291bnQ9c3lzdGVtIC9hY2NvdW50PXRpIC9leGVjPQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

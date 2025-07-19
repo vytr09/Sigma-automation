@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:39:12 UTC", "rule": "proc_creation_win_lolbin_pubprn_0", "phase": "original", "command": "\\pubprn.vbs script:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:39:20 UTC", "rule": "proc_creation_win_lolbin_pubprn_0", "phase": "insertion", "command": "\\\"p\"\"u\"\"b\"\"p\"\"r\"\"n\"\".\"\"v\"\"b\"\"s\" script:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:39:26 UTC", "rule": "proc_creation_win_lolbin_pubprn_0", "phase": "substitution", "command": "\\pubprn.vbs script: #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:39:32 UTC", "rule": "proc_creation_win_lolbin_pubprn_0", "phase": "omission", "command": "\\pubprn script:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:39:38 UTC", "rule": "proc_creation_win_lolbin_pubprn_0", "phase": "reordering", "command": "\\pubprn.vbs script:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:39:44 UTC", "rule": "proc_creation_win_lolbin_pubprn_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHB1YnBybi52YnMgc2NyaXB0Og==')) | Invoke-Expression\" ", "status": "BYPASSED"}

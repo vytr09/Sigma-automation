@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:25:53 UTC", "rule": "win_susp_adfind_0", "phase": "original", "command": "adfind.exe objectcategory", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:26:02 UTC", "rule": "win_susp_adfind_0", "phase": "insertion", "command": "adfind.exe #injected objectcategory", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:26:09 UTC", "rule": "win_susp_adfind_0", "phase": "substitution", "command": "adfind.exe objectcategory #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:26:15 UTC", "rule": "win_susp_adfind_0", "phase": "omission", "command": "adfind objectcategory", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:26:23 UTC", "rule": "win_susp_adfind_0", "phase": "reordering", "command": "adfind.exe objectcategory", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:26:32 UTC", "rule": "win_susp_adfind_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

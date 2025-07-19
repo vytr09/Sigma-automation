@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:53:15 UTC", "rule": "proc_creation_win_susp_ms_appinstaller_download_0", "phase": "original", "command": "ms-appinstaller://?source= http", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:53:15 UTC", "rule": "proc_creation_win_susp_ms_appinstaller_download_0", "phase": "insertion", "command": "ms-appinstaller://?source= \\\"ht\\\"tp", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:53:15 UTC", "rule": "proc_creation_win_susp_ms_appinstaller_download_0", "phase": "substitution", "command": "ms-appinstaller://?source= http #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:53:15 UTC", "rule": "proc_creation_win_susp_ms_appinstaller_download_0", "phase": "omission", "command": "ms-appinstaller://?source= http # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:53:15 UTC", "rule": "proc_creation_win_susp_ms_appinstaller_download_0", "phase": "reordering", "command": "ms-appinstaller://?source= http", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:53:15 UTC", "rule": "proc_creation_win_susp_ms_appinstaller_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXMtYXBwaW5zdGFsbGVyOi8vP3NvdXJjZT0gaHR0cA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

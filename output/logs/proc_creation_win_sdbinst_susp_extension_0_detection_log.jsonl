@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:09:32 UTC", "rule": "proc_creation_win_sdbinst_susp_extension_0", "phase": "original", "command": "\\sdbinst.exe sdbinst.exe .sdb -m -bg", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:09:32 UTC", "rule": "proc_creation_win_sdbinst_susp_extension_0", "phase": "insertion", "command": "\\sdbinst.exe \\\"sdbinst.exe\\\" .sdb -m -bg", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:09:32 UTC", "rule": "proc_creation_win_sdbinst_susp_extension_0", "phase": "substitution", "command": "\\sdbinst.exe sdbinst.exe .sdb -m -bg #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:09:32 UTC", "rule": "proc_creation_win_sdbinst_susp_extension_0", "phase": "omission", "command": "\\sdbinst sdbinst .sdb -m -bg", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:09:32 UTC", "rule": "proc_creation_win_sdbinst_susp_extension_0", "phase": "reordering", "command": "\\sdbinst.exe sdbinst.exe -m -bg .sdb", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:09:32 UTC", "rule": "proc_creation_win_sdbinst_susp_extension_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNkYmluc3QuZXhlIHNkYmluc3QuZXhlIC5zZGIgLW0gLWJn')) | Invoke-Expression\" ", "status": "BYPASSED"}

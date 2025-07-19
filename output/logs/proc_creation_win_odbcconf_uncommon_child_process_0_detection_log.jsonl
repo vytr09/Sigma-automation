@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:29:42 UTC", "rule": "proc_creation_win_odbcconf_uncommon_child_process_0", "phase": "original", "command": "\\odbcconf.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:29:42 UTC", "rule": "proc_creation_win_odbcconf_uncommon_child_process_0", "phase": "insertion", "command": "\"\\odbcconf.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:29:42 UTC", "rule": "proc_creation_win_odbcconf_uncommon_child_process_0", "phase": "substitution", "command": "\\odbcconf.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:29:42 UTC", "rule": "proc_creation_win_odbcconf_uncommon_child_process_0", "phase": "omission", "command": "\\odbcconf", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:29:42 UTC", "rule": "proc_creation_win_odbcconf_uncommon_child_process_0", "phase": "reordering", "command": "\\odbcconf.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:29:42 UTC", "rule": "proc_creation_win_odbcconf_uncommon_child_process_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG9kYmNjb25mLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

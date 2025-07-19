@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:05:01 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "original", "command": "explorer.exe /root,", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:05:34 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "insertion", "command": "#hijack explorer.exe /root,", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:07:11 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "substitution", "command": "explorer.exe /root, #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:08:29 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "omission", "command": "explorer /root,", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:09:08 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "reordering", "command": "explorer.exe /root,", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:09:43 UTC", "rule": "win_susp_explorer_break_proctree_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

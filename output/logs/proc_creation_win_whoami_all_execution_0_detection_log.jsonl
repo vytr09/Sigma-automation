@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:55:59 UTC", "rule": "proc_creation_win_whoami_all_execution_0", "phase": "original", "command": "\\whoami.exe whoami.exe -all", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:56:13 UTC", "rule": "proc_creation_win_whoami_all_execution_0", "phase": "insertion", "command": "\\whoami.exe \\\"whoami.exe\\\" \\\"-all\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:56:20 UTC", "rule": "proc_creation_win_whoami_all_execution_0", "phase": "substitution", "command": "\\whoami.exe whoami.exe -all #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:56:26 UTC", "rule": "proc_creation_win_whoami_all_execution_0", "phase": "omission", "command": "\\whoami whoami -all", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:56:33 UTC", "rule": "proc_creation_win_whoami_all_execution_0", "phase": "reordering", "command": "\\whoami.exe whoami.exe -all", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:56:44 UTC", "rule": "proc_creation_win_whoami_all_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdob2FtaS5leGUgd2hvYW1pLmV4ZSAtYWxs')) | Invoke-Expression\" ", "status": "BYPASSED"}

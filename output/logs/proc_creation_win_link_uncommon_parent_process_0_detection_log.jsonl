@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:24:46 UTC", "rule": "proc_creation_win_link_uncommon_parent_process_0", "phase": "original", "command": "\\link.exe LINK /", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:24:46 UTC", "rule": "proc_creation_win_link_uncommon_parent_process_0", "phase": "insertion", "command": "\\link.exe \"LINK\" \"/\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:24:46 UTC", "rule": "proc_creation_win_link_uncommon_parent_process_0", "phase": "substitution", "command": "\\link.exe LINK / #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:24:46 UTC", "rule": "proc_creation_win_link_uncommon_parent_process_0", "phase": "omission", "command": "\\link LINK /", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:24:46 UTC", "rule": "proc_creation_win_link_uncommon_parent_process_0", "phase": "reordering", "command": "\\link.exe LINK /", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:24:46 UTC", "rule": "proc_creation_win_link_uncommon_parent_process_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGxpbmsuZXhlIExJTksgLw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

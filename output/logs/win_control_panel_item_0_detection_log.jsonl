@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:51:41 UTC", "rule": "win_control_panel_item_0", "phase": "original", "command": "reg add CurrentVersion\\\\Control Panel\\\\CPLs", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:51:47 UTC", "rule": "win_control_panel_item_0", "phase": "insertion", "command": "reg add && CurrentVersion\\\\Control Panel\\\\CPLs", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:51:54 UTC", "rule": "win_control_panel_item_0", "phase": "substitution", "command": "reg add CurrentVersion\\\\Control Panel\\\\CPLs #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:52:01 UTC", "rule": "win_control_panel_item_0", "phase": "omission", "command": "reg add CurrentVersion\\\\Control Panel\\\\CPLs # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:52:08 UTC", "rule": "win_control_panel_item_0", "phase": "reordering", "command": "reg CurrentVersion\\\\Control add Panel\\\\CPLs", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:52:17 UTC", "rule": "win_control_panel_item_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

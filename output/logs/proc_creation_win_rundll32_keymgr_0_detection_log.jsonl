@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:43:06 UTC", "rule": "proc_creation_win_rundll32_keymgr_0", "phase": "original", "command": "\\rundll32.exe RUNDLL32.EXE keymgr KRShowKeyMgr", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:43:14 UTC", "rule": "proc_creation_win_rundll32_keymgr_0", "phase": "insertion", "command": "\\rundll32.exe \\\"RUNDLL32.EXE\\\" \\\"keymgr\\\" KRShowKeyMgr", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:43:20 UTC", "rule": "proc_creation_win_rundll32_keymgr_0", "phase": "substitution", "command": "\\rundll32.exe RUNDLL32.EXE keymgr KRShowKeyMgr #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:43:26 UTC", "rule": "proc_creation_win_rundll32_keymgr_0", "phase": "omission", "command": "\\rundll32 RUNDLL32 keymgr KRShowKeyMgr", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:43:31 UTC", "rule": "proc_creation_win_rundll32_keymgr_0", "phase": "reordering", "command": "\\rundll32.exe KRShowKeyMgr keymgr RUNDLL32.EXE", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:43:38 UTC", "rule": "proc_creation_win_rundll32_keymgr_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJ1bmRsbDMyLmV4ZSBSVU5ETEwzMi5FWEUga2V5bWdyIEtSU2hvd0tleU1ncg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

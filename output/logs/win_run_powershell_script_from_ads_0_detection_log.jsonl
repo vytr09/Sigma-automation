@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:22:48 UTC", "rule": "win_run_powershell_script_from_ads_0", "phase": "original", "command": "powershell.exe Get-Content -Stream", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:22:56 UTC", "rule": "win_run_powershell_script_from_ads_0", "phase": "insertion", "command": "powershell.exe #injected Get-Content -Stream", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:23:05 UTC", "rule": "win_run_powershell_script_from_ads_0", "phase": "substitution", "command": "powershell.exe Get-Content -Stream #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:23:13 UTC", "rule": "win_run_powershell_script_from_ads_0", "phase": "omission", "command": "powershell Get-Content -Stream", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:23:22 UTC", "rule": "win_run_powershell_script_from_ads_0", "phase": "reordering", "command": "powershell.exe -Stream Get-Content", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:23:35 UTC", "rule": "win_run_powershell_script_from_ads_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAARwBlAHQALQBDAG8AbgB0AGUAbgB0ACAALQBTAHQAcgBlAGEAbQA=", "status": "BYPASSED"}

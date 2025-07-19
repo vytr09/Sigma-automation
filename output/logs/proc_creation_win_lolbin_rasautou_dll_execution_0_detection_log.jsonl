@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:39:50 UTC", "rule": "proc_creation_win_lolbin_rasautou_dll_execution_0", "phase": "original", "command": "\\rasautou.exe rasdlui.exe -d -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:39:58 UTC", "rule": "proc_creation_win_lolbin_rasautou_dll_execution_0", "phase": "insertion", "command": "\\rasautou.exe rasdlui.exe \\\"-d\\\" -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:40:06 UTC", "rule": "proc_creation_win_lolbin_rasautou_dll_execution_0", "phase": "substitution", "command": "\\rasautou.exe rasdlui.exe -d -p #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:40:13 UTC", "rule": "proc_creation_win_lolbin_rasautou_dll_execution_0", "phase": "omission", "command": "\\rasautou rasdlui -d -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:40:19 UTC", "rule": "proc_creation_win_lolbin_rasautou_dll_execution_0", "phase": "reordering", "command": "\\rasautou.exe -d rasdlui.exe -p", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:40:25 UTC", "rule": "proc_creation_win_lolbin_rasautou_dll_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJhc2F1dG91LmV4ZSByYXNkbHVpLmV4ZSAtZCAtcA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

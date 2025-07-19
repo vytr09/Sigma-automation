@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:35:37 UTC", "rule": "proc_creation_win_lolbin_pcalua_0", "phase": "original", "command": "\\pcalua.exe -a", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:35:44 UTC", "rule": "proc_creation_win_lolbin_pcalua_0", "phase": "insertion", "command": "\\pcalua.exe \\\"-\\\"\\\"a\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:35:50 UTC", "rule": "proc_creation_win_lolbin_pcalua_0", "phase": "substitution", "command": "\\pcalua.exe -a #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:35:56 UTC", "rule": "proc_creation_win_lolbin_pcalua_0", "phase": "omission", "command": "\\pcalua -a", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:36:02 UTC", "rule": "proc_creation_win_lolbin_pcalua_0", "phase": "reordering", "command": "\\pcalua.exe -a", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:36:10 UTC", "rule": "proc_creation_win_lolbin_pcalua_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBjYWx1YS5leGUgLWE=')) | Invoke-Expression\" ", "status": "BYPASSED"}

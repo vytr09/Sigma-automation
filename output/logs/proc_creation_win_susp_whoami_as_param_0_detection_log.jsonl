@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:10:51 UTC", "rule": "proc_creation_win_susp_whoami_as_param_0", "phase": "original", "command": ".exe whoami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:10:58 UTC", "rule": "proc_creation_win_susp_whoami_as_param_0", "phase": "insertion", "command": ".exe \"who\"ami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:11:06 UTC", "rule": "proc_creation_win_susp_whoami_as_param_0", "phase": "substitution", "command": ".exe whoami #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:11:13 UTC", "rule": "proc_creation_win_susp_whoami_as_param_0", "phase": "omission", "command": "whoami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:11:20 UTC", "rule": "proc_creation_win_susp_whoami_as_param_0", "phase": "reordering", "command": ".exe whoami", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:11:26 UTC", "rule": "proc_creation_win_susp_whoami_as_param_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LmV4ZSB3aG9hbWk=')) | Invoke-Expression\" ", "status": "BYPASSED"}

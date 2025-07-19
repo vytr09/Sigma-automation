@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:48:11 UTC", "rule": "win_susp_script_execution_0", "phase": "original", "command": "wscript.exe .vba", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:48:18 UTC", "rule": "win_susp_script_execution_0", "phase": "insertion", "command": "wscript.exe ^ .vba", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:48:26 UTC", "rule": "win_susp_script_execution_0", "phase": "substitution", "command": "wscript.exe .vba #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:48:34 UTC", "rule": "win_susp_script_execution_0", "phase": "omission", "command": "wscript .vba", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:48:50 UTC", "rule": "win_susp_script_execution_0", "phase": "reordering", "command": "wscript.exe .vba", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:49:02 UTC", "rule": "win_susp_script_execution_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

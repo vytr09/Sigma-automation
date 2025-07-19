@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:39:27 UTC", "rule": "win_susp_procdump_0", "phase": "original", "command": "-ma lsass -ma ls", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:40:09 UTC", "rule": "win_susp_procdump_0", "phase": "insertion", "command": "-ma ^ lsass ^ -ma ^ ls", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:40:19 UTC", "rule": "win_susp_procdump_0", "phase": "substitution", "command": "-ma lsass -ma ls #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:40:30 UTC", "rule": "win_susp_procdump_0", "phase": "omission", "command": "-ma lsass -ma ls # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:40:41 UTC", "rule": "win_susp_procdump_0", "phase": "reordering", "command": "-ma ls lsass -ma", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:40:49 UTC", "rule": "win_susp_procdump_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

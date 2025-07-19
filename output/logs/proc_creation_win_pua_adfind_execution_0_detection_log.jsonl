@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:39:07 UTC", "rule": "proc_creation_win_pua_adfind_execution_0", "phase": "original", "command": "\\AdFind.exe AdFind.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:39:07 UTC", "rule": "proc_creation_win_pua_adfind_execution_0", "phase": "insertion", "command": "\\AdFind.exe AdFin\"d.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:39:07 UTC", "rule": "proc_creation_win_pua_adfind_execution_0", "phase": "substitution", "command": "\\AdFind.exe AdFind.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:39:07 UTC", "rule": "proc_creation_win_pua_adfind_execution_0", "phase": "omission", "command": "\\AdFind AdFind", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:39:07 UTC", "rule": "proc_creation_win_pua_adfind_execution_0", "phase": "reordering", "command": "\\AdFind.exe AdFind.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:39:07 UTC", "rule": "proc_creation_win_pua_adfind_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XEFkRmluZC5leGUgQWRGaW5kLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

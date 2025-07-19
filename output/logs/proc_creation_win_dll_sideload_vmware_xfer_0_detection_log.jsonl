@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:09:10 UTC", "rule": "proc_creation_win_dll_sideload_vmware_xfer_0", "phase": "original", "command": "\\VMwareXferlogs.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:09:10 UTC", "rule": "proc_creation_win_dll_sideload_vmware_xfer_0", "phase": "insertion", "command": "\\\"V\"\"M\"\"w\"\"a\"\"r\"\"e\"\"X\"\"f\"\"e\"\"r\"\"l\"\"o\"\"g\"\"s\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:09:10 UTC", "rule": "proc_creation_win_dll_sideload_vmware_xfer_0", "phase": "substitution", "command": "\\VMwareXferlogs.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:09:10 UTC", "rule": "proc_creation_win_dll_sideload_vmware_xfer_0", "phase": "omission", "command": "\\VMwareXferlogs", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:09:10 UTC", "rule": "proc_creation_win_dll_sideload_vmware_xfer_0", "phase": "reordering", "command": "\\VMwareXferlogs.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:09:10 UTC", "rule": "proc_creation_win_dll_sideload_vmware_xfer_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFZNd2FyZVhmZXJsb2dzLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

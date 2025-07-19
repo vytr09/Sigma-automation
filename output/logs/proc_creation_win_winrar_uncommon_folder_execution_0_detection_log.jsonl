@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 18:03:17 UTC", "rule": "proc_creation_win_winrar_uncommon_folder_execution_0", "phase": "original", "command": "\\rar.exe \\winrar.exe \\UnRAR.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:17 UTC", "rule": "proc_creation_win_winrar_uncommon_folder_execution_0", "phase": "insertion", "command": "\\rar.exe \\winrar.exe \\\"U\"\"n\"\"R\"\"A\"\"R\"\".\"\"e\"\"x\"\"e\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:17 UTC", "rule": "proc_creation_win_winrar_uncommon_folder_execution_0", "phase": "substitution", "command": "\\rar.exe \\winrar.exe \\UnRAR.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:17 UTC", "rule": "proc_creation_win_winrar_uncommon_folder_execution_0", "phase": "omission", "command": "\\rar \\winrar \\UnRAR", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:17 UTC", "rule": "proc_creation_win_winrar_uncommon_folder_execution_0", "phase": "reordering", "command": "\\rar.exe \\UnRAR.exe \\winrar.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 18:03:17 UTC", "rule": "proc_creation_win_winrar_uncommon_folder_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHJhci5leGUgXHdpbnJhci5leGUgXFVuUkFSLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

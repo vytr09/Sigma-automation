@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:06:35 UTC", "rule": "proc_creation_win_msohtmed_download_0", "phase": "original", "command": "\\MSOHTMED.exe MsoHtmEd.exe ftp:// http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:06:47 UTC", "rule": "proc_creation_win_msohtmed_download_0", "phase": "insertion", "command": "\\MSOHTMED.exe MsoHtmEd.exe ftp:// htt\"p://\" https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:06:55 UTC", "rule": "proc_creation_win_msohtmed_download_0", "phase": "substitution", "command": "\\MSOHTMED.exe MsoHtmEd.exe ftp:// http:// https:// #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:07:02 UTC", "rule": "proc_creation_win_msohtmed_download_0", "phase": "omission", "command": "\\MSOHTMED MsoHtmEd ftp:// http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:07:10 UTC", "rule": "proc_creation_win_msohtmed_download_0", "phase": "reordering", "command": "\\MSOHTMED.exe ftp:// https:// MsoHtmEd.exe http://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:07:40 UTC", "rule": "proc_creation_win_msohtmed_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XE1TT0hUTUVELmV4ZSBNc29IdG1FZC5leGUgZnRwOi8vIGh0dHA6Ly8gaHR0cHM6Ly8=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:31:18 UTC", "rule": "proc_creation_win_gpg4win_portable_execution_0", "phase": "original", "command": "\\gpg.exe \\gpg2.exe gpg.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:31:18 UTC", "rule": "proc_creation_win_gpg4win_portable_execution_0", "phase": "insertion", "command": "\\gpg.exe \\gpg2.exe gpg\\\".exe\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:31:18 UTC", "rule": "proc_creation_win_gpg4win_portable_execution_0", "phase": "substitution", "command": "\\gpg.exe \\gpg2.exe gpg.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:31:18 UTC", "rule": "proc_creation_win_gpg4win_portable_execution_0", "phase": "omission", "command": "\\gpg \\gpg2 gpg", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:31:18 UTC", "rule": "proc_creation_win_gpg4win_portable_execution_0", "phase": "reordering", "command": "\\gpg.exe \\gpg2.exe gpg.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:31:18 UTC", "rule": "proc_creation_win_gpg4win_portable_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwZy5leGUgXGdwZzIuZXhlIGdwZy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

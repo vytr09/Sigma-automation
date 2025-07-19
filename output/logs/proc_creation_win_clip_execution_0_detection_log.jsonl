@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:25:30 UTC", "rule": "proc_creation_win_clip_execution_0", "phase": "original", "command": "\\clip.exe clip.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:25:52 UTC", "rule": "proc_creation_win_clip_execution_0", "phase": "insertion", "command": "\\clip.exe \\\"clip\\\".exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:26:33 UTC", "rule": "proc_creation_win_clip_execution_0", "phase": "substitution", "command": "\\clip.exe clip.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:26:48 UTC", "rule": "proc_creation_win_clip_execution_0", "phase": "omission", "command": "\\clip clip", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:27:06 UTC", "rule": "proc_creation_win_clip_execution_0", "phase": "reordering", "command": "\\clip.exe clip.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:27:21 UTC", "rule": "proc_creation_win_clip_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsaXAuZXhlIGNsaXAuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:13:33 UTC", "rule": "proc_creation_win_sysinternals_eula_accepted_0", "phase": "original", "command": "-accepteula", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:13:39 UTC", "rule": "proc_creation_win_sysinternals_eula_accepted_0", "phase": "insertion", "command": "-accepteula", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:13:45 UTC", "rule": "proc_creation_win_sysinternals_eula_accepted_0", "phase": "substitution", "command": "-accepteula #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:13:51 UTC", "rule": "proc_creation_win_sysinternals_eula_accepted_0", "phase": "omission", "command": "-accepteula # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:13:57 UTC", "rule": "proc_creation_win_sysinternals_eula_accepted_0", "phase": "reordering", "command": "-accepteula", "status": "DETECTED"}
-{"timestamp": "2025-06-23 17:14:04 UTC", "rule": "proc_creation_win_sysinternals_eula_accepted_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LWFjY2VwdGV1bGE=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:47:47 UTC", "rule": "proc_creation_win_wab_execution_from_non_default_location_0", "phase": "original", "command": "\\wab.exe \\wabmig.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:47:47 UTC", "rule": "proc_creation_win_wab_execution_from_non_default_location_0", "phase": "insertion", "command": "\\wab.exe \"\\wabm\"ig.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:47:47 UTC", "rule": "proc_creation_win_wab_execution_from_non_default_location_0", "phase": "substitution", "command": "\\wab.exe \\wabmig.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:47:47 UTC", "rule": "proc_creation_win_wab_execution_from_non_default_location_0", "phase": "omission", "command": "\\wab \\wabmig", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:47:47 UTC", "rule": "proc_creation_win_wab_execution_from_non_default_location_0", "phase": "reordering", "command": "\\wab.exe \\wabmig.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:47:47 UTC", "rule": "proc_creation_win_wab_execution_from_non_default_location_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHdhYi5leGUgXHdhYm1pZy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

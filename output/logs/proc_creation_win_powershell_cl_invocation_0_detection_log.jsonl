@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:41:53 UTC", "rule": "proc_creation_win_powershell_cl_invocation_0", "phase": "original", "command": "SyncInvoke", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:42:00 UTC", "rule": "proc_creation_win_powershell_cl_invocation_0", "phase": "insertion", "command": "SyncInvoke", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:42:07 UTC", "rule": "proc_creation_win_powershell_cl_invocation_0", "phase": "substitution", "command": "SyncInvoke #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:42:15 UTC", "rule": "proc_creation_win_powershell_cl_invocation_0", "phase": "omission", "command": "SyncInvoke # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:42:22 UTC", "rule": "proc_creation_win_powershell_cl_invocation_0", "phase": "reordering", "command": "SyncInvoke", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:42:30 UTC", "rule": "proc_creation_win_powershell_cl_invocation_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('U3luY0ludm9rZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

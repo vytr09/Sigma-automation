@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:32:35 UTC", "rule": "proc_creation_win_office_winword_dll_load_0", "phase": "original", "command": "\\WINWORD.exe WinWord.exe /l .dll", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:32:41 UTC", "rule": "proc_creation_win_office_winword_dll_load_0", "phase": "insertion", "command": "\\WINWORD.exe WinWord.exe /l \".\"\"d\"\"l\"\"l\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:32:47 UTC", "rule": "proc_creation_win_office_winword_dll_load_0", "phase": "substitution", "command": "\\WINWORD.exe WinWord.exe /l .dll #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:32:53 UTC", "rule": "proc_creation_win_office_winword_dll_load_0", "phase": "omission", "command": "\\WINWORD WinWord /l .dll", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:32:58 UTC", "rule": "proc_creation_win_office_winword_dll_load_0", "phase": "reordering", "command": "\\WINWORD.exe WinWord.exe /l .dll", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:33:05 UTC", "rule": "proc_creation_win_office_winword_dll_load_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABXAEkATgBXAE8AUgBEAC4AZQB4AGUAIABXAGkAbgBXAG8AcgBkAC4AZQB4AGUAIAAvAGwAIAAuAGQAbABsAA== ", "status": "BYPASSED"}

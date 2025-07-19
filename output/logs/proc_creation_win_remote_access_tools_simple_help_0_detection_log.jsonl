@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:22:37 UTC", "rule": "proc_creation_win_remote_access_tools_simple_help_0", "phase": "original", "command": "\\SimpleService.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:22:45 UTC", "rule": "proc_creation_win_remote_access_tools_simple_help_0", "phase": "insertion", "command": "\\\"S\"\"i\"\"m\"\"p\"\"l\"\"e\"\"S\"\"e\"\"r\"\"v\"\"i\"\"c\"\"e\"\".\"\"e\"\"x\"\"e\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:22:52 UTC", "rule": "proc_creation_win_remote_access_tools_simple_help_0", "phase": "substitution", "command": "\\SimpleService.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:23:02 UTC", "rule": "proc_creation_win_remote_access_tools_simple_help_0", "phase": "omission", "command": "\\SimpleService", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:23:08 UTC", "rule": "proc_creation_win_remote_access_tools_simple_help_0", "phase": "reordering", "command": "\\SimpleService.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:23:14 UTC", "rule": "proc_creation_win_remote_access_tools_simple_help_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNpbXBsZVNlcnZpY2UuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

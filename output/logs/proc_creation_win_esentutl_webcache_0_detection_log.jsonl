@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:18:47 UTC", "rule": "proc_creation_win_esentutl_webcache_0", "phase": "original", "command": "\\esentutl.exe esentutl.exe -r \\Windows\\WebCache", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:47 UTC", "rule": "proc_creation_win_esentutl_webcache_0", "phase": "insertion", "command": "\\esentutl.exe esentu\\\"tl.exe\\\" -r \\Windows\\WebCache", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:47 UTC", "rule": "proc_creation_win_esentutl_webcache_0", "phase": "substitution", "command": "\\esentutl.exe esentutl.exe -r \\Windows\\WebCache #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:47 UTC", "rule": "proc_creation_win_esentutl_webcache_0", "phase": "omission", "command": "\\esentutl esentutl -r \\Windows\\WebCache", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:47 UTC", "rule": "proc_creation_win_esentutl_webcache_0", "phase": "reordering", "command": "\\esentutl.exe \\Windows\\WebCache -r esentutl.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:18:47 UTC", "rule": "proc_creation_win_esentutl_webcache_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGVzZW50dXRsLmV4ZSBlc2VudHV0bC5leGUgLXIgXFdpbmRvd3NcV2ViQ2FjaGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

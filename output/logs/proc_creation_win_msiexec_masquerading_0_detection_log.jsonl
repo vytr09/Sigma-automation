@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:05:19 UTC", "rule": "proc_creation_win_msiexec_masquerading_0", "phase": "original", "command": "\\msiexec.exe \\msiexec.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:05:19 UTC", "rule": "proc_creation_win_msiexec_masquerading_0", "phase": "insertion", "command": "\\msiexec.exe \\msiex\"ec.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:05:19 UTC", "rule": "proc_creation_win_msiexec_masquerading_0", "phase": "substitution", "command": "\\msiexec.exe \\msiexec.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:05:19 UTC", "rule": "proc_creation_win_msiexec_masquerading_0", "phase": "omission", "command": "\\msiexec \\msiexec", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:05:19 UTC", "rule": "proc_creation_win_msiexec_masquerading_0", "phase": "reordering", "command": "\\msiexec.exe \\msiexec.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:05:19 UTC", "rule": "proc_creation_win_msiexec_masquerading_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XG1zaWV4ZWMuZXhlIFxtc2lleGVjLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

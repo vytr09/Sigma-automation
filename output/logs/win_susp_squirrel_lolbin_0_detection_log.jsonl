@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:50:02 UTC", "rule": "win_susp_squirrel_lolbin_0", "phase": "original", "command": "update.exe --processStartAndWait .exe", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:50:09 UTC", "rule": "win_susp_squirrel_lolbin_0", "phase": "insertion", "command": "update.exe ^ --processStartAndWait ^ .exe", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:50:16 UTC", "rule": "win_susp_squirrel_lolbin_0", "phase": "substitution", "command": "update.exe --processStartAndWait .exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:50:23 UTC", "rule": "win_susp_squirrel_lolbin_0", "phase": "omission", "command": "update --processStartAndWait .exe", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:50:31 UTC", "rule": "win_susp_squirrel_lolbin_0", "phase": "reordering", "command": "update.exe .exe --processStartAndWait", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:50:38 UTC", "rule": "win_susp_squirrel_lolbin_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

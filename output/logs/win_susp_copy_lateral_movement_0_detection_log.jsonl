@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 10:40:33 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "original", "command": "copy \\ADMIN$", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:40:41 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "insertion", "command": "copy ^ \\ADMIN$", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:40:48 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "substitution", "command": "copy \\ADMIN$ #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:40:57 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "omission", "command": "copy \\ADMIN$ # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 10:41:05 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "reordering", "command": "copy \\ADMIN$", "status": "DETECTED"}
-{"timestamp": "2025-04-23 10:41:13 UTC", "rule": "win_susp_copy_lateral_movement_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

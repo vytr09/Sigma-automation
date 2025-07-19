@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:23:27 UTC", "rule": "proc_creation_win_remote_access_tools_ultraviewer_0", "phase": "original", "command": "UltraViewer_Desktop.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:23:27 UTC", "rule": "proc_creation_win_remote_access_tools_ultraviewer_0", "phase": "insertion", "command": "UltraViewer_Desktop.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:23:27 UTC", "rule": "proc_creation_win_remote_access_tools_ultraviewer_0", "phase": "substitution", "command": "UltraViewer_Desktop.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:23:27 UTC", "rule": "proc_creation_win_remote_access_tools_ultraviewer_0", "phase": "omission", "command": "UltraViewer_Desktop", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:23:27 UTC", "rule": "proc_creation_win_remote_access_tools_ultraviewer_0", "phase": "reordering", "command": "UltraViewer_Desktop.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:23:27 UTC", "rule": "proc_creation_win_remote_access_tools_ultraviewer_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('VWx0cmFWaWV3ZXJfRGVza3RvcC5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

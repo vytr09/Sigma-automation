@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:57:22 UTC", "rule": "proc_creation_win_quickassist_execution_0", "phase": "original", "command": "\\QuickAssist.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:57:29 UTC", "rule": "proc_creation_win_quickassist_execution_0", "phase": "insertion", "command": "\"\\QuickAssist.exe\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:57:36 UTC", "rule": "proc_creation_win_quickassist_execution_0", "phase": "substitution", "command": "\\QuickAssist.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:57:42 UTC", "rule": "proc_creation_win_quickassist_execution_0", "phase": "omission", "command": "\\QuickAssist", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:57:50 UTC", "rule": "proc_creation_win_quickassist_execution_0", "phase": "reordering", "command": "\\QuickAssist.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:57:59 UTC", "rule": "proc_creation_win_quickassist_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFF1aWNrQXNzaXN0LmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

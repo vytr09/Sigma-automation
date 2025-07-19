@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:35:08 UTC", "rule": "proc_creation_win_hktl_adcspwn_0", "phase": "original", "command": "--adcs --port", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:35:14 UTC", "rule": "proc_creation_win_hktl_adcspwn_0", "phase": "insertion", "command": "--adcs --p\\\"ort\\\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:35:19 UTC", "rule": "proc_creation_win_hktl_adcspwn_0", "phase": "substitution", "command": "--adcs --port #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:35:25 UTC", "rule": "proc_creation_win_hktl_adcspwn_0", "phase": "omission", "command": "--adcs --port # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:35:30 UTC", "rule": "proc_creation_win_hktl_adcspwn_0", "phase": "reordering", "command": "--adcs --port", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:35:37 UTC", "rule": "proc_creation_win_hktl_adcspwn_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LS1hZGNzIC0tcG9ydA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:08:43 UTC", "rule": "proc_creation_win_icacls_deny_0", "phase": "original", "command": "iCACLS.EXE \\icacls.exe /deny S-1-1-0:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:08:49 UTC", "rule": "proc_creation_win_icacls_deny_0", "phase": "insertion", "command": "iCACLS.EXE \\icacls.exe /\"{cmd_part}\" S-1-1-0:", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:54 UTC", "rule": "proc_creation_win_icacls_deny_0", "phase": "substitution", "command": "iCACLS.EXE \\icacls.exe /deny S-1-1-0: #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:08:59 UTC", "rule": "proc_creation_win_icacls_deny_0", "phase": "omission", "command": "iCACLS \\icacls /deny S-1-1-0:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:09:08 UTC", "rule": "proc_creation_win_icacls_deny_0", "phase": "reordering", "command": "iCACLS.EXE \\icacls.exe /deny S-1-1-0:", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:09:14 UTC", "rule": "proc_creation_win_icacls_deny_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aUNBQ0xTLkVYRSBcaWNhY2xzLmV4ZSAvZGVueSBTLTEtMS0wOg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

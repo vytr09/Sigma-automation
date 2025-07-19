@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:19:00 UTC", "rule": "proc_creation_win_sysinternals_sdelete_0", "phase": "original", "command": "sdelete.exe -h -c -z /\\?", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:19:00 UTC", "rule": "proc_creation_win_sysinternals_sdelete_0", "phase": "insertion", "command": "sdelete.exe -h -c -z \"/\\?\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:19:00 UTC", "rule": "proc_creation_win_sysinternals_sdelete_0", "phase": "substitution", "command": "sdelete.exe -h -c -z /\\? #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:19:00 UTC", "rule": "proc_creation_win_sysinternals_sdelete_0", "phase": "omission", "command": "sdelete -h -c -z /\\?", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:19:00 UTC", "rule": "proc_creation_win_sysinternals_sdelete_0", "phase": "reordering", "command": "sdelete.exe /\\? -z -c -h", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:19:00 UTC", "rule": "proc_creation_win_sysinternals_sdelete_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2RlbGV0ZS5leGUgLWggLWMgLXogL1w/')) | Invoke-Expression\" ", "status": "BYPASSED"}

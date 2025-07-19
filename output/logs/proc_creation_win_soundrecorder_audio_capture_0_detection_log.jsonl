@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:14:04 UTC", "rule": "proc_creation_win_soundrecorder_audio_capture_0", "phase": "original", "command": "\\SoundRecorder.exe /FILE", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:14:12 UTC", "rule": "proc_creation_win_soundrecorder_audio_capture_0", "phase": "insertion", "command": "\\SoundRecorder.exe /\"{cmd_part}\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:14:17 UTC", "rule": "proc_creation_win_soundrecorder_audio_capture_0", "phase": "substitution", "command": "\\SoundRecorder.exe /FILE #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:14:23 UTC", "rule": "proc_creation_win_soundrecorder_audio_capture_0", "phase": "omission", "command": "\\SoundRecorder /FILE", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:14:29 UTC", "rule": "proc_creation_win_soundrecorder_audio_capture_0", "phase": "reordering", "command": "\\SoundRecorder.exe /FILE", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:14:36 UTC", "rule": "proc_creation_win_soundrecorder_audio_capture_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFNvdW5kUmVjb3JkZXIuZXhlIC9GSUxF')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:36:16 UTC", "rule": "proc_creation_win_lolbin_pcwrun_0", "phase": "original", "command": "\\pcwrun.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:36:16 UTC", "rule": "proc_creation_win_lolbin_pcwrun_0", "phase": "insertion", "command": "\"\\pcwrun.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:36:16 UTC", "rule": "proc_creation_win_lolbin_pcwrun_0", "phase": "substitution", "command": "\\pcwrun.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:36:16 UTC", "rule": "proc_creation_win_lolbin_pcwrun_0", "phase": "omission", "command": "\\pcwrun", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:36:16 UTC", "rule": "proc_creation_win_lolbin_pcwrun_0", "phase": "reordering", "command": "\\pcwrun.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:36:16 UTC", "rule": "proc_creation_win_lolbin_pcwrun_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHBjd3J1bi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

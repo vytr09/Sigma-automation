@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 14:02:58 UTC", "rule": "proc_creation_win_powershell_getprocess_lsass_0", "phase": "original", "command": "Get-Process lsas ps lsas gps lsas", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:03:18 UTC", "rule": "proc_creation_win_powershell_getprocess_lsass_0", "phase": "insertion", "command": "Get-Process lsas \"ps\" \"lsas\" gps lsas", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:03:32 UTC", "rule": "proc_creation_win_powershell_getprocess_lsass_0", "phase": "substitution", "command": "Get-Process lsas ps lsas gps lsas #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:03:47 UTC", "rule": "proc_creation_win_powershell_getprocess_lsass_0", "phase": "omission", "command": "Get-Process lsas ps lsas gps lsas # omission", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 14:04:05 UTC", "rule": "proc_creation_win_powershell_getprocess_lsass_0", "phase": "reordering", "command": "Get-Process gps lsas lsas lsas ps", "status": "DETECTED"}
-{"timestamp": "2025-06-23 14:04:20 UTC", "rule": "proc_creation_win_powershell_getprocess_lsass_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('R2V0LVByb2Nlc3MgbHNhcyBwcyBsc2FzIGdwcyBsc2Fz')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:38:26 UTC", "rule": "proc_creation_win_lolbin_printbrm_0", "phase": "original", "command": "\\PrintBrm.exe -f .zip", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:38:37 UTC", "rule": "proc_creation_win_lolbin_printbrm_0", "phase": "insertion", "command": "\\\"\\PrintBrm.exe\\\" -f .zip", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:38:43 UTC", "rule": "proc_creation_win_lolbin_printbrm_0", "phase": "substitution", "command": "\\PrintBrm.exe -f .zip #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:38:50 UTC", "rule": "proc_creation_win_lolbin_printbrm_0", "phase": "omission", "command": "\\PrintBrm -f .zip", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:38:56 UTC", "rule": "proc_creation_win_lolbin_printbrm_0", "phase": "reordering", "command": "\\PrintBrm.exe -f .zip", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:39:03 UTC", "rule": "proc_creation_win_lolbin_printbrm_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XFByaW50QnJtLmV4ZSAtZiAuemlw')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 17:11:47 UTC", "rule": "proc_creation_win_svchost_masqueraded_execution_0", "phase": "original", "command": "\\svchost.exe svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:11:47 UTC", "rule": "proc_creation_win_svchost_masqueraded_execution_0", "phase": "insertion", "command": "\\\"\\svchost.exe\\\" svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:11:47 UTC", "rule": "proc_creation_win_svchost_masqueraded_execution_0", "phase": "substitution", "command": "\\svchost.exe svchost.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:11:47 UTC", "rule": "proc_creation_win_svchost_masqueraded_execution_0", "phase": "omission", "command": "\\svchost svchost", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:11:47 UTC", "rule": "proc_creation_win_svchost_masqueraded_execution_0", "phase": "reordering", "command": "\\svchost.exe svchost.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 17:11:47 UTC", "rule": "proc_creation_win_svchost_masqueraded_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHN2Y2hvc3QuZXhlIHN2Y2hvc3QuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

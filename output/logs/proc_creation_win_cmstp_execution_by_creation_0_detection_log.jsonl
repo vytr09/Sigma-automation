@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:49:31 UTC", "rule": "proc_creation_win_cmstp_execution_by_creation_0", "phase": "original", "command": "\\cmstp.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:49:31 UTC", "rule": "proc_creation_win_cmstp_execution_by_creation_0", "phase": "insertion", "command": "\\\"\\cmstp.exe\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:49:31 UTC", "rule": "proc_creation_win_cmstp_execution_by_creation_0", "phase": "substitution", "command": "\\cmstp.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:49:31 UTC", "rule": "proc_creation_win_cmstp_execution_by_creation_0", "phase": "omission", "command": "\\cmstp", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:49:31 UTC", "rule": "proc_creation_win_cmstp_execution_by_creation_0", "phase": "reordering", "command": "\\cmstp.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:49:31 UTC", "rule": "proc_creation_win_cmstp_execution_by_creation_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtc3RwLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

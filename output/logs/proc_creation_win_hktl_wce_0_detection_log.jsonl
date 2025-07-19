@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:05:52 UTC", "rule": "proc_creation_win_hktl_wce_0", "phase": "original", "command": "\\services.exe \\clussvc.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:52 UTC", "rule": "proc_creation_win_hktl_wce_0", "phase": "insertion", "command": "\\services.exe \"\\cluss\"vc.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:52 UTC", "rule": "proc_creation_win_hktl_wce_0", "phase": "substitution", "command": "\\services.exe \\clussvc.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:52 UTC", "rule": "proc_creation_win_hktl_wce_0", "phase": "omission", "command": "\\services \\clussvc", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:52 UTC", "rule": "proc_creation_win_hktl_wce_0", "phase": "reordering", "command": "\\services.exe \\clussvc.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:05:52 UTC", "rule": "proc_creation_win_hktl_wce_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNlcnZpY2VzLmV4ZSBcY2x1c3N2Yy5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 10:02:59 UTC", "rule": "proc_creation_win_msiexec_dll_0", "phase": "original", "command": "\\msiexec.exe \\msiexec.exe -z .dll", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:03:09 UTC", "rule": "proc_creation_win_msiexec_dll_0", "phase": "insertion", "command": "\\msiexec.exe \\msiexec.exe -z .d\"ll\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:03:17 UTC", "rule": "proc_creation_win_msiexec_dll_0", "phase": "substitution", "command": "\\msiexec.exe \\msiexec.exe -z .dll #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 10:03:23 UTC", "rule": "proc_creation_win_msiexec_dll_0", "phase": "omission", "command": "\\msiexec \\msiexec -z .dll", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:03:30 UTC", "rule": "proc_creation_win_msiexec_dll_0", "phase": "reordering", "command": "\\msiexec.exe \\msiexec.exe -z .dll", "status": "DETECTED"}
-{"timestamp": "2025-06-23 10:03:37 UTC", "rule": "proc_creation_win_msiexec_dll_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABtAHMAaQBlAHgAZQBjAC4AZQB4AGUAIABcAG0AcwBpAGUAeABlAGMALgBlAHgAZQAgAC0AegAgAC4AZABsAGwA ", "status": "BYPASSED"}

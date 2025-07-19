@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:31:24 UTC", "rule": "win_susp_powershell_empire_uac_bypass_0", "phase": "original", "command": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:31:41 UTC", "rule": "win_susp_powershell_empire_uac_bypass_0", "phase": "insertion", "command": "-NoP -NonI && -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:31:49 UTC", "rule": "win_susp_powershell_empire_uac_bypass_0", "phase": "substitution", "command": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:31:59 UTC", "rule": "win_susp_powershell_empire_uac_bypass_0", "phase": "omission", "command": "-NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\\\Microsoft\\\\Windows Update # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:33:13 UTC", "rule": "win_susp_powershell_empire_uac_bypass_0", "phase": "reordering", "command": "-NoP -NonI HKCU:Software\\\\Microsoft\\\\Windows -w -c Update Hidden $x=$((gp", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:33:27 UTC", "rule": "win_susp_powershell_empire_uac_bypass_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

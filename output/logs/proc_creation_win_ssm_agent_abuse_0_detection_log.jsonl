@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:18:27 UTC", "rule": "proc_creation_win_ssm_agent_abuse_0", "phase": "original", "command": "\\amazon-ssm-agent.exe -register -code -id -region", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:18:36 UTC", "rule": "proc_creation_win_ssm_agent_abuse_0", "phase": "insertion", "command": "\\amazon-ssm-agent.exe \\\"-reg\\\"ister -code -id -region", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:18:43 UTC", "rule": "proc_creation_win_ssm_agent_abuse_0", "phase": "substitution", "command": "\\amazon-ssm-agent.exe -register -code -id -region #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:19:13 UTC", "rule": "proc_creation_win_ssm_agent_abuse_0", "phase": "omission", "command": "\\amazon-ssm-agent -register -code -id -region", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:19:24 UTC", "rule": "proc_creation_win_ssm_agent_abuse_0", "phase": "reordering", "command": "\\amazon-ssm-agent.exe -code -register -region -id", "status": "DETECTED"}
-{"timestamp": "2025-06-23 16:19:31 UTC", "rule": "proc_creation_win_ssm_agent_abuse_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGFtYXpvbi1zc20tYWdlbnQuZXhlIC1yZWdpc3RlciAtY29kZSAtaWQgLXJlZ2lvbg==')) | Invoke-Expression\" ", "status": "BYPASSED"}

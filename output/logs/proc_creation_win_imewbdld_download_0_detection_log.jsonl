@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:14:19 UTC", "rule": "proc_creation_win_imewbdld_download_0", "phase": "original", "command": "\\IMEWDBLD.exe imewdbld.exe http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:14:25 UTC", "rule": "proc_creation_win_imewbdld_download_0", "phase": "insertion", "command": "\\IMEWDBLD.exe imewdbld.exe http:// \"h\"\"t\"\"t\"\"p\"\"s\"\":\"\"/\"\"/\"", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:14:30 UTC", "rule": "proc_creation_win_imewbdld_download_0", "phase": "substitution", "command": "\\IMEWDBLD.exe imewdbld.exe http:// https:// #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:14:35 UTC", "rule": "proc_creation_win_imewbdld_download_0", "phase": "omission", "command": "\\IMEWDBLD imewdbld http:// https://", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:14:40 UTC", "rule": "proc_creation_win_imewbdld_download_0", "phase": "reordering", "command": "\\IMEWDBLD.exe http:// https:// imewdbld.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:14:46 UTC", "rule": "proc_creation_win_imewbdld_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XElNRVdEQkxELmV4ZSBpbWV3ZGJsZC5leGUgaHR0cDovLyBodHRwczovLw==')) | Invoke-Expression\" ", "status": "BYPASSED"}

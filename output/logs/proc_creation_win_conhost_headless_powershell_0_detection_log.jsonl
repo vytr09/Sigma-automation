@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:50:47 UTC", "rule": "proc_creation_win_conhost_headless_powershell_0", "phase": "original", "command": "\\conhost.exe CONHOST.EXE --headless powershell", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:50:55 UTC", "rule": "proc_creation_win_conhost_headless_powershell_0", "phase": "insertion", "command": "\\conhost.exe CONHOST.EXE \\\"--headless\\\" powershell", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:51:06 UTC", "rule": "proc_creation_win_conhost_headless_powershell_0", "phase": "substitution", "command": "\\conhost.exe CONHOST.EXE --headless powershell #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:51:14 UTC", "rule": "proc_creation_win_conhost_headless_powershell_0", "phase": "omission", "command": "\\conhost CONHOST --headless powershell", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:51:22 UTC", "rule": "proc_creation_win_conhost_headless_powershell_0", "phase": "reordering", "command": "\\conhost.exe --headless powershell CONHOST.EXE", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:51:30 UTC", "rule": "proc_creation_win_conhost_headless_powershell_0", "phase": "recoding", "command": "powershell.exe -EncodedCommand XABjAG8AbgBoAG8AcwB0AC4AZQB4AGUAIABDAE8ATgBIAE8AUwBUAC4ARQBYAEUAIAAtAC0AaABlAGEAZABsAGUAcwBzACAAcABvAHcAZQByAHMAaABlAGwAbAA= ", "status": "BYPASSED"}

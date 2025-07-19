@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:21:21 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0", "phase": "original", "command": "\\client32.exe client32.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:21:21 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0", "phase": "insertion", "command": "\\client32.exe client\"32.exe\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:21:21 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0", "phase": "substitution", "command": "\\client32.exe client32.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:21:21 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0", "phase": "omission", "command": "\\client32 client32", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:21:21 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0", "phase": "reordering", "command": "\\client32.exe client32.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:21:21 UTC", "rule": "proc_creation_win_remote_access_tools_netsupport_susp_exec_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNsaWVudDMyLmV4ZSBjbGllbnQzMi5leGU=')) | Invoke-Expression\" ", "status": "BYPASSED"}

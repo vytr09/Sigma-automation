@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 11:53:42 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "original", "command": "/dest:rdp-tcp:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:53:50 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "insertion", "command": "/dest:rdp-tcp: # inserted", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:53:59 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "substitution", "command": "/dest:rdp-tcp: #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:54:06 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "omission", "command": "/dest:rdp-tcp: # omission", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 11:54:13 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "reordering", "command": "/dest:rdp-tcp:", "status": "DETECTED"}
-{"timestamp": "2025-04-23 11:54:21 UTC", "rule": "win_susp_tscon_rdp_redirect_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

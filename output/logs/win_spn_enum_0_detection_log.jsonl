@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 09:25:09 UTC", "rule": "win_spn_enum_0", "phase": "original", "command": "setspn.exe -q", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:25:16 UTC", "rule": "win_spn_enum_0", "phase": "insertion", "command": "setspn.exe ^ -q", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:25:22 UTC", "rule": "win_spn_enum_0", "phase": "substitution", "command": "setspn.exe -q #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 09:25:32 UTC", "rule": "win_spn_enum_0", "phase": "omission", "command": "setspn -q", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:25:39 UTC", "rule": "win_spn_enum_0", "phase": "reordering", "command": "setspn.exe -q", "status": "DETECTED"}
-{"timestamp": "2025-04-23 09:25:46 UTC", "rule": "win_spn_enum_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

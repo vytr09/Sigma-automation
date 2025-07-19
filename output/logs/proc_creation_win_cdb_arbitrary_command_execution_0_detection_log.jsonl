@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 06:54:36 UTC", "rule": "proc_creation_win_cdb_arbitrary_command_execution_0", "phase": "original", "command": "\\cdb.exe CDB.Exe -c -cf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:54:47 UTC", "rule": "proc_creation_win_cdb_arbitrary_command_execution_0", "phase": "insertion", "command": "\\cdb.exe \\\"CDB\\\".Exe -c -cf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:55:02 UTC", "rule": "proc_creation_win_cdb_arbitrary_command_execution_0", "phase": "substitution", "command": "\\cdb.exe CDB.Exe -c -cf #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 06:55:11 UTC", "rule": "proc_creation_win_cdb_arbitrary_command_execution_0", "phase": "omission", "command": "\\cdb CDB -c -cf", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:55:18 UTC", "rule": "proc_creation_win_cdb_arbitrary_command_execution_0", "phase": "reordering", "command": "\\cdb.exe -c -cf CDB.Exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 06:55:26 UTC", "rule": "proc_creation_win_cdb_arbitrary_command_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNkYi5leGUgQ0RCLkV4ZSAtYyAtY2Y=')) | Invoke-Expression\" ", "status": "BYPASSED"}

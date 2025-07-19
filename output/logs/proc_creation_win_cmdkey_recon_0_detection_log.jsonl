@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:31:41 UTC", "rule": "proc_creation_win_cmdkey_recon_0", "phase": "original", "command": "\\cmdkey.exe cmdkey.exe -l", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:31:53 UTC", "rule": "proc_creation_win_cmdkey_recon_0", "phase": "insertion", "command": "\\cmdkey.exe \"cmdkey.exe\" -l", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:32:03 UTC", "rule": "proc_creation_win_cmdkey_recon_0", "phase": "substitution", "command": "\\cmdkey.exe cmdkey.exe -l #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:32:16 UTC", "rule": "proc_creation_win_cmdkey_recon_0", "phase": "omission", "command": "\\cmdkey cmdkey -l", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:32:26 UTC", "rule": "proc_creation_win_cmdkey_recon_0", "phase": "reordering", "command": "\\cmdkey.exe cmdkey.exe -l", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:32:35 UTC", "rule": "proc_creation_win_cmdkey_recon_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNtZGtleS5leGUgY21ka2V5LmV4ZSAtbA==')) | Invoke-Expression\" ", "status": "BYPASSED"}

@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 15:32:20 UTC", "rule": "proc_creation_win_renamed_msteams_0", "phase": "original", "command": "msteams.exe teams.exe \\msteams.exe \\teams.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:32:28 UTC", "rule": "proc_creation_win_renamed_msteams_0", "phase": "insertion", "command": "msteams.exe teams.exe \\mstea\\\"ms.exe\\\" \\teams.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:32:36 UTC", "rule": "proc_creation_win_renamed_msteams_0", "phase": "substitution", "command": "msteams.exe teams.exe \\msteams.exe \\teams.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 15:32:42 UTC", "rule": "proc_creation_win_renamed_msteams_0", "phase": "omission", "command": "msteams teams \\msteams \\teams", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:32:48 UTC", "rule": "proc_creation_win_renamed_msteams_0", "phase": "reordering", "command": "msteams.exe teams.exe \\teams.exe \\msteams.exe", "status": "DETECTED"}
-{"timestamp": "2025-06-23 15:32:56 UTC", "rule": "proc_creation_win_renamed_msteams_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('bXN0ZWFtcy5leGUgdGVhbXMuZXhlIFxtc3RlYW1zLmV4ZSBcdGVhbXMuZXhl')) | Invoke-Expression\" ", "status": "BYPASSED"}

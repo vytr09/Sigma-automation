@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 16:13:20 UTC", "rule": "proc_creation_win_sigverif_uncommon_child_process_0", "phase": "original", "command": "\\sigverif.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:13:20 UTC", "rule": "proc_creation_win_sigverif_uncommon_child_process_0", "phase": "insertion", "command": "\\\"\\sigverif.exe\\\"", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:13:20 UTC", "rule": "proc_creation_win_sigverif_uncommon_child_process_0", "phase": "substitution", "command": "\\sigverif.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:13:20 UTC", "rule": "proc_creation_win_sigverif_uncommon_child_process_0", "phase": "omission", "command": "\\sigverif", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:13:20 UTC", "rule": "proc_creation_win_sigverif_uncommon_child_process_0", "phase": "reordering", "command": "\\sigverif.exe", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 16:13:20 UTC", "rule": "proc_creation_win_sigverif_uncommon_child_process_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHNpZ3ZlcmlmLmV4ZQ==')) | Invoke-Expression\" ", "status": "BYPASSED"}

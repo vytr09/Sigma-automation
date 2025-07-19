@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 07:00:41 UTC", "rule": "proc_creation_win_certutil_download_0", "phase": "original", "command": "\\certutil.exe CertUtil.exe urlcache verifyctl http", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:00:48 UTC", "rule": "proc_creation_win_certutil_download_0", "phase": "insertion", "command": "\\\"\\certutil.exe\\\" CertUtil.exe urlcache verifyctl http", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:00:54 UTC", "rule": "proc_creation_win_certutil_download_0", "phase": "substitution", "command": "\\certutil.exe CertUtil.exe urlcache verifyctl http #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 07:01:00 UTC", "rule": "proc_creation_win_certutil_download_0", "phase": "omission", "command": "\\certutil CertUtil urlcache verifyctl http", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:01:06 UTC", "rule": "proc_creation_win_certutil_download_0", "phase": "reordering", "command": "\\certutil.exe urlcache verifyctl CertUtil.exe http", "status": "DETECTED"}
-{"timestamp": "2025-06-23 07:01:12 UTC", "rule": "proc_creation_win_certutil_download_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGNlcnR1dGlsLmV4ZSBDZXJ0VXRpbC5leGUgdXJsY2FjaGUgdmVyaWZ5Y3RsIGh0dHA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

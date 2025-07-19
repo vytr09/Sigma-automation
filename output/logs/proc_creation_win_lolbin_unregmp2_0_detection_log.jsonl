@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 09:48:43 UTC", "rule": "proc_creation_win_lolbin_unregmp2_0", "phase": "original", "command": "\\unregmp2.exe unregmp2.exe /HideWMP", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:48:57 UTC", "rule": "proc_creation_win_lolbin_unregmp2_0", "phase": "insertion", "command": "\\unregmp2.exe \"u\"\"n\"\"r\"\"e\"\"g\"\"m\"\"p\"\"2\"\".\"\"e\"\"x\"\"e\" /HideWMP", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:49:09 UTC", "rule": "proc_creation_win_lolbin_unregmp2_0", "phase": "substitution", "command": "\\unregmp2.exe unregmp2.exe /HideWMP #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 09:49:15 UTC", "rule": "proc_creation_win_lolbin_unregmp2_0", "phase": "omission", "command": "\\unregmp2 unregmp2 /HideWMP", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:49:21 UTC", "rule": "proc_creation_win_lolbin_unregmp2_0", "phase": "reordering", "command": "\\unregmp2.exe unregmp2.exe /HideWMP", "status": "DETECTED"}
-{"timestamp": "2025-06-23 09:49:28 UTC", "rule": "proc_creation_win_lolbin_unregmp2_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XHVucmVnbXAyLmV4ZSB1bnJlZ21wMi5leGUgL0hpZGVXTVA=')) | Invoke-Expression\" ", "status": "BYPASSED"}

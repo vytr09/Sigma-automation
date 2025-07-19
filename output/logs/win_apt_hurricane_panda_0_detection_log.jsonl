@@ -1,6 +1,0 @@
-{"timestamp": "2025-04-23 08:43:52 UTC", "rule": "win_apt_hurricane_panda_0", "phase": "original", "command": "\\Win64.exe", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:43:59 UTC", "rule": "win_apt_hurricane_panda_0", "phase": "insertion", "command": "\\Win64.exe # inserted", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:44:10 UTC", "rule": "win_apt_hurricane_panda_0", "phase": "substitution", "command": "\\Win64.exe #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-04-23 08:44:16 UTC", "rule": "win_apt_hurricane_panda_0", "phase": "omission", "command": "\\Win64", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:44:23 UTC", "rule": "win_apt_hurricane_panda_0", "phase": "reordering", "command": "\\Win64.exe", "status": "DETECTED"}
-{"timestamp": "2025-04-23 08:44:30 UTC", "rule": "win_apt_hurricane_panda_0", "phase": "recoding", "command": "<recoding not applicable>", "status": "BYPASSED"}

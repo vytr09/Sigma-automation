@@ -1,6 +1,0 @@
-{"timestamp": "2025-06-23 08:31:29 UTC", "rule": "proc_creation_win_gpresult_execution_0", "phase": "original", "command": "\\gpresult.exe /z /v", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:31:35 UTC", "rule": "proc_creation_win_gpresult_execution_0", "phase": "insertion", "command": "\\\"g\"\"p\"\"r\"\"e\"\"s\"\"u\"\"l\"\"t\"\".\"\"e\"\"x\"\"e\" /z /v", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:31:41 UTC", "rule": "proc_creation_win_gpresult_execution_0", "phase": "substitution", "command": "\\gpresult.exe /z /v #substitution", "status": "BYPASSED"}
-{"timestamp": "2025-06-23 08:31:47 UTC", "rule": "proc_creation_win_gpresult_execution_0", "phase": "omission", "command": "\\gpresult /z /v", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:31:52 UTC", "rule": "proc_creation_win_gpresult_execution_0", "phase": "reordering", "command": "\\gpresult.exe /z /v", "status": "DETECTED"}
-{"timestamp": "2025-06-23 08:31:58 UTC", "rule": "proc_creation_win_gpresult_execution_0", "phase": "recoding", "command": "powershell.exe -NoProfile -Command \"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('XGdwcmVzdWx0LmV4ZSAveiAvdg==')) | Invoke-Expression\" ", "status": "BYPASSED"}
